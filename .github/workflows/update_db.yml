@@ -1,11 +1,11 @@
 name: Update Database
 
 on:
-  push:     # 當推送提交到儲存庫時觸發
+  push:
     branches:
-      - main   # 指定在 main 分支上觸發
-  schedule: # 定時觸發
-    - cron: '0 0 * * 0'  # 每周日 00:00 自動運行
+      - main
+  schedule:
+    - cron: '0 0 * * 0'
 
 jobs:
   update-db:
@@ -41,6 +41,4 @@ jobs:
         git config user.name "${{ secrets.USER_NAME }}"
         git add backend/mydatabase.db
         git commit -m "Update database"
-        git push
-      env:
-        GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+        git push https://HoshiMin-db:${{ secrets.PAT_TOKEN }}@github.com/HoshiMin-db/HoshiHo_SongList.git
