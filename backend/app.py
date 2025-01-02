@@ -105,14 +105,14 @@ c.execute('''CREATE TABLE IF NOT EXISTS Songs (
 # 插入 'A-Z' 頁面的資料（忽略 alphabet 欄位）
 for row in parsed_az_data:
     song_name, singer, source, note, live_date = row[1:][0], row[1:][1], row[1:][2], row[1:][3], row[1:][4]
-    tag = ', '.join(filter(None, [row[1:][5], row[1:][6], row[1:][7], row[1:][8], row[1:][9]]))
+    tag = ', '.join(map(str, filter(None, [row[1:][5], row[1:][6], row[1:][7], row[1:][8], row[1:][9]])))
     c.execute('INSERT INTO Songs (song_name, singer, source, note, live_date, tag) VALUES (?, ?, ?, ?, ?, ?)',
               (song_name[0], singer[0], source[0], note[0], live_date[0], tag))
 
 # 插入 '五十音順' 頁面的資料（忽略 alphabet 欄位）
 for row in parsed_kana_data:
     song_name, singer, source, note, live_date = row[1:][0], row[1:][1], row[1:][2], row[1:][3], row[1:][4]
-    tag = ', '.join(filter(None, [row[1:][5], row[1:][6], row[1:][7], row[1:][8], row[1:][9]])) 
+    tag = ', '.join(map(str, filter(None, [row[1:][5], row[1:][6], row[1:][7], row[1:][8], row[1:][9]]))) 
     c.execute('INSERT INTO Songs (song_name, singer, source, note, live_date, tag) VALUES (?, ?, ?, ?, ?, ?)',
               (song_name[0], singer[0], source[0], note[0], live_date[0], tag))
     
