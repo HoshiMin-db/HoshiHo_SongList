@@ -27,7 +27,14 @@ def update_database(data):
     for row in data[1:]:  # 跳過表頭
         timestamp, comment, tag = row[:3]  # 假設前3列為時間戳、留言、標籤
         c.execute('INSERT INTO Comments (timestamp, comment, tag) VALUES (?, ?, ?)', (timestamp, comment, tag))
-
+        
+# 根據顏色分類並插入資料
+    for i, row in enumerate(data[1:], start=2): # 跳過表頭 
+        timestamp, comment = row[:2] 
+        color = sheet.cell(i, 2).format['backgroundColor'] 
+        tag = 'Red' if color == {'red': 1, 'green': 0, 'blue': 0} else 'Other' # 根據顏色來分類 
+        c.execute('INSERT INTO Comments (timestamp, comment, tag) VALUES (?, ?, ?)', (timestamp, comment, tag))
+    
     conn.commit()
     conn.close()
 
