@@ -31,6 +31,6 @@ jobs:
 
     - name: Update SQLite DB
       run: |
-        python backend/app.py
+        python app.py
       env:
         GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
