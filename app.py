@@ -65,26 +65,6 @@ def get_tag_from_format(cell_format):
         tag.append('Blocked by Copyright')
     return ', '.join(tag)
 
-def parse_data(data, formats):
-    parsed_data = []
-    for row_index, row in enumerate(data[1:], start=2):  # 跳過第一行表頭
-        parsed_row = []
-        for col_index, cell in enumerate(row, start=1):
-            cell_value = extract_hyperlink(cell)
-            cell_format = formats.get((row_index, col_index), {})
-            tag = get_tag_from_format(cell_format)
-            parsed_row.append((cell_value, tag))
-        parsed_data.append(parsed_row)
-    return parsed_data
-
-# 獲取單元格格式
-sheet_id = '1uKBjtCfLZKnyVZK04NH6k6BQmkq7_K2m2qP9OVezT0A'
-az_formats = get_cell_format(sheet_id, 'A-Z')
-kana_formats = get_cell_format(sheet_id, '五十音順')
-
-parsed_az_data = parse_data(az_data, az_formats)
-parsed_kana_data = parse_data(kana_data, kana_formats)
-
 # 設置資料庫文件路徑
 backend_dir = os.path.join(os.path.dirname(__file__), 'backend')
 if not os.path.exists(backend_dir):
@@ -107,28 +87,32 @@ try:
                  source TEXT,
                  note TEXT,
                  live_date TEXT,
-                 tag TEXT)''')
+                 live_date_link TEXT
+                 )''')
 
-    # 插入 'A-Z' 頁面的資料（忽略 alphabet 欄位）
-    for row in parsed_az_data:
-        song_name, singer, source, note, live_date = row[1:][0], row[1:][1], row[1:][2], row[1:][3], row[1:][4]
-        tag = ', '.join(map(str, filter(None, [row[1:][5], row[1:][6], row[1:][7], row[1:][8], row[1:][9]])))
-        c.execute('INSERT INTO Songs (song_name, singer, source, note, live_date, tag) VALUES (?, ?, ?, ?, ?, ?)',
-                  (song_name[0], singer[0], source[0], note[0], live_date[0], tag))
+    # 插入 'A-Z' 頁面的資料
+    for row_index, row in enumerate(az_data[1:], start=2):  # 跳過第一行表頭
+        song_name, singer, source, note = row[:4]  # 抓取前四個欄位為資料
+        for col_index in range(4, len(row)):  # 處理每個 live_date
+            live_date = row[col_index]
+            # 獲取單元格格式，提取超連結
+            cell_format = get_cell_format(sheet_id, f"A-Z!{chr(65 + col_index)}{row_index}")
+            live_date_link = extract_hyperlink({'hyperlink': cell_format.get('hyperlink', live_date), 'value': live_date})
+            c.execute('INSERT INTO Songs (song_name, singer, source, note, live_date, live_date_link) VALUES (?, ?, ?, ?, ?, ?)',
+                      (song_name, singer, source, note, live_date, live_date_link))
 
-    # 插入 '五十音順' 頁面的資料（忽略 alphabet 欄位）
-    for row in parsed_kana_data:
-        song_name, singer, source, note, live_date = row[1:][0], row[1:][1], row[1:][2], row[1:][3], row[1:][4]
-        tag = ', '.join(map(str, filter(None, [row[1:][5], row[1:][6], row[1:][7], row[1:][8], row[1:][9]]))) 
-        c.execute('INSERT INTO Songs (song_name, singer, source, note, live_date, tag) VALUES (?, ?, ?, ?, ?, ?)',
-                  (song_name[0], singer[0], source[0], note[0], live_date[0], tag))
-    
-    # 提交更改並關閉連接 
-    conn.commit() 
+    # 插入 '五十音順' 頁面的資料
+    for row_index, row in enumerate(kana_data[1:], start=2):  # 跳過第一行表頭
+        song_name, singer, source, note = row[:4]  # 抓取前四個欄位為資料
+        for col_index in range(4, len(row)):  # 處理每個 live_date
+            live_date = row[col_index]
+            # 獲取單元格格式，提取超連結
+            cell_format = get_cell_format(sheet_id, f"五十音順!{chr(65 + col_index)}{row_index}")
+            live_date_link = extract_hyperlink({'hyperlink': cell_format.get('hyperlink', live_date), 'value': live_date})
+            c.execute('INSERT INTO Songs (song_name, singer, source, note, live_date, live_date_link) VALUES (?, ?, ?, ?, ?, ?)',
+                      (song_name, singer, source, note, live_date, live_date_link))
+
+    # 提交更改並關閉連接
+    conn.commit()
     conn.close()
-    print("Google Sheets 的資料已經成功匯入 SQLite 資料庫，並加入了顏色和格式的 tag。")
-
-except sqlite3.OperationalError as e:
-    print(f"Error: {e}")
-except Exception as e:
-    print(f"An unexpected error occurred: {e}")
+    print("Google Sheets 的
