@@ -1,3 +1,7 @@
+# Data Search
+
+這是一個簡單的數據查詢網站，從 Google Sheets 中抓取資料並展示在網頁上。
+
 <!DOCTYPE html>
 <html>
 <head>
