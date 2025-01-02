@@ -1,8 +1,9 @@
 name: Update Database
 
 on:
-  schedule:
-    - cron: '0 0 * * 0'  # 每周日 00:00 自動運行
+  push:     # 當推送提交到儲存庫時觸發
+    branches:
+      - main   # 指定在 main 分支上觸發
 
 jobs:
   update-db:
