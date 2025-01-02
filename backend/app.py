@@ -10,8 +10,12 @@ scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/au
 creds = ServiceAccountCredentials.from_json_keyfile_dict(credentials_info, scope)
 client = gspread.authorize(creds)
 
-# 打開 Google Sheets
-sheet = client.open('你的Google Sheets名稱')
+try:
+    # 使用超連結打開 Google Sheets
+    sheet = client.open_by_url('https://docs.google.com/spreadsheets/d/1uKBjtCfLZKnyVZK04NH6k6BQmkq7_K2m2qP9OVezT0A/edit?usp=sharing')
+except gspread.exceptions.SpreadsheetNotFound:
+    print("Google Sheets 找不到，請檢查超連結和共享設置")
+    exit(1)
 
 # 獲取 'A-Z' 頁面的資料
 az_worksheet = sheet.worksheet('A-Z')
