@@ -91,8 +91,8 @@ print(f"Database path: {db_path}")
 
 # 連接到 SQLite 資料庫
 try:
-conn = sqlite3.connect(db_path)
-c = conn.cursor()
+    conn = sqlite3.connect(db_path)
+    c = conn.cursor()
 
 # 創建表格（如果還沒有）
 c.execute('''CREATE TABLE IF NOT EXISTS Songs (
