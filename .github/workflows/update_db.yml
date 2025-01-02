@@ -9,7 +9,7 @@ on:
 
 jobs:
   update-db:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
@@ -41,4 +41,6 @@ jobs:
         git config user.name "${{ secrets.USER_NAME }}"
         git add backend/mydatabase.db
         git commit -m "Update database"
-        git push https://HoshiMin-db:${{ secrets.PAT_TOKEN }}@github.com/HoshiMin-db/HoshiHo_SongList.git
+        git push https://HoshiMin-db:${{ secrets.PAT_TOKEN }}@github.com/HoshiMin-db/HoshiHo_SongList
+      env:
+        PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
