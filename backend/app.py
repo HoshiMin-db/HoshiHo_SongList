@@ -11,7 +11,7 @@ creds = ServiceAccountCredentials.from_json_keyfile_dict(credentials_info, scope
 client = gspread.authorize(creds)
 
 # 打開 Google Sheets
-sheet = client.open('HoshiHo歌單')
+sheet = client.open('你的Google Sheets名稱')
 
 # 獲取 'A-Z' 頁面的資料
 az_worksheet = sheet.worksheet('A-Z')
@@ -56,8 +56,11 @@ def parse_data(data, worksheet):
 parsed_az_data = parse_data(az_data, az_worksheet)
 parsed_kana_data = parse_data(kana_data, kana_worksheet)
 
+# 設置資料庫文件路徑
+db_path = os.path.join(os.path.dirname(__file__), 'mydatabase.db')
+
 # 連接到 SQLite 資料庫
-conn = sqlite3.connect('mydatabase.db')
+conn = sqlite3.connect(db_path)
 c = conn.cursor()
 
 # 創建表格（如果還沒有）
