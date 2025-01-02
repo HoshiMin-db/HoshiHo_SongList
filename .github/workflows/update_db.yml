@@ -34,3 +34,13 @@ jobs:
         python app.py
       env:
         GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.email "your-email@example.com"
+        git config --global user.name "Your Name"
+        git add backend/mydatabase.db
+        git commit -m "Update database"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
