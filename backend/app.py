@@ -112,4 +112,12 @@ for row in parsed_az_data:
 # 插入 '五十音順' 頁面的資料（忽略 alphabet 欄位）
 for row in parsed_kana_data:
     song_name, singer, source, note, live_date = row[1:][0], row[1:][1], row[1:][2], row[1:][3], row[1:][4]
-    tag = ', '.join(filter(None, [row[1:][5], row[1:][6], row
+    tag = ', '.join(filter(None, [row[1:][5], row[1:][6], row[1:][7], row[1:][8], row[1:][9]])) 
+    c.execute('INSERT INTO Songs (song_name, singer, source, note, live_date, tag) VALUES (?, ?, ?, ?, ?, ?)',
+              (song_name[0], singer[0], source[0], note[0], live_date[0], tag))
+    
+# 提交更改並關閉連接 
+conn.commit() 
+conn.close()
+
+print("Google Sheets 的資料已經成功匯入 SQLite 資料庫，並加入了顏色和格式的 tag。")
