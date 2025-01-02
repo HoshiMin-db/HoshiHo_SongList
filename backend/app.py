@@ -86,9 +86,11 @@ parsed_az_data = parse_data(az_data, az_formats)
 parsed_kana_data = parse_data(kana_data, kana_formats)
 
 # 設置資料庫文件路徑
-db_path = os.path.join(os.path.dirname(__file__), 'backend', 'mydatabase.db')
+db_path = os.path.join(backend_dir, 'mydatabase.db') 
+print(f"Database path: {db_path}")
 
 # 連接到 SQLite 資料庫
+try:
 conn = sqlite3.connect(db_path)
 c = conn.cursor()
 
