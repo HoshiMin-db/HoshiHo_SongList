@@ -121,5 +121,7 @@ for row in parsed_kana_data:
 # 提交更改並關閉連接 
 conn.commit() 
 conn.close()
-
 print("Google Sheets 的資料已經成功匯入 SQLite 資料庫，並加入了顏色和格式的 tag。")
+
+except sqlite3.OperationalError as e: print(f"Error: {e}") 
+except Exception as e: print(f"An unexpected error occurred: {e}")
