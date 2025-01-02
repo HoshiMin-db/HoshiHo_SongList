@@ -1,0 +1,33 @@
+name: Update Database
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'  # 每周日 00:00 自動運行
+
+jobs:
+  update-db:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install gspread oauth2client sqlite3
+
+    - name: Create credentials file
+      run: |
+        echo "${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}" > credentials.json
+
+    - name: Update SQLite DB
+      run: |
+        python backend/app.py
+      env:
+        GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
