@@ -91,7 +91,7 @@ if not os.path.exists(backend_dir):
     print(f"Creating directory: {backend_dir}")
     os.makedirs(backend_dir)
 
-db_path = os.path.join(backend_dir, 'mydatabase.db') 
+db_path = os.path.join(backend_dir, 'mydatabase.db')
 print(f"Database path: {db_path}")
 
 # 連接到 SQLite 資料庫
