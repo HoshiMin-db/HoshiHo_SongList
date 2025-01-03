@@ -24,15 +24,12 @@
 <table id="songTable">
     <thead>
         <tr>
-            <!-- 這些是表頭，可以根據你的需要進行更改 -->
             <th>A-Z</th>
             <th>曲名</th>
             <th>歌手</th>
             <th>出典</th>
             <th>備注</th>
-            <th>日期1</th>
-            <th>日期2</th>
-            <th>日期3</th>
+            <th>日期</th>
         </tr>
     </thead>
     <tbody>
@@ -51,21 +48,43 @@
         })
         .then(data => {
             const table = document.getElementById('songTable').getElementsByTagName('tbody')[0];
-            const dateColumns = ['日期1', '日期2', '日期3'];
 
-            data.forEach(row => {
-                const newRow = table.insertRow();
-                newRow.insertCell().textContent = ''; // A-Z
-                newRow.insertCell().textContent = row.song_name;
-                newRow.insertCell().textContent = row.artist;
-                newRow.insertCell().textContent = row.source;
-                newRow.insertCell().textContent = ''; // 備注
+            // 按song_name分組並排序
+            const groupedData = data.reduce((acc, row) => {
+                if (!acc[row.song_name]) {
+                    acc[row.song_name] = [];
+                }
+                acc[row.song_name].push(row);
+                return acc;
+            }, {});
 
-                dateColumns.forEach((col, index) => {
-                    const newCell = newRow.insertCell();
+            Object.values(groupedData).forEach(group => {
+                group.sort((a, b) => new Date(b.date) - new Date(a.date));
+            });
+
+            // 生成表格內容
+            Object.entries(groupedData).forEach(([song_name, rows]) => {
+                rows.forEach((row, index) => {
+                    const newRow = table.insertRow();
+                    if (index === 0) {
+                        newRow.insertCell().textContent = ''; // A-Z
+                        newRow.insertCell().textContent = row.song_name;
+                        newRow.insertCell().textContent = row.artist;
+                        newRow.insertCell().textContent = row.source;
+                        newRow.insertCell().textContent = ''; // 備注
+                    } else {
+                        newRow.insertCell().textContent = ''; // A-Z
+                        newRow.insertCell().textContent = ''; // 曲名
+                        newRow.insertCell().textContent = ''; // 歌手
+                        newRow.insertCell().textContent = ''; // 出典
+                        newRow.insertCell().textContent = ''; // 備注
+                    }
+
+                    const dateCell = newRow.insertCell();
                     const link = document.createElement('a');
+                    const [year, month, day] = row.date.split('-');
                     link.href = row.link;
-                    link.textContent = row.date;
+                    link.textContent = `${day}/${month}/${year}`;
                     link.target = '_blank';
                     link.onclick = function(event) {
                         event.preventDefault();
@@ -78,7 +97,7 @@
                         miniPlayer.allowFullscreen = true;
                         document.body.appendChild(miniPlayer);
                     };
-                    newCell.appendChild(link);
+                    dateCell.appendChild(link);
                 });
             });
         })
