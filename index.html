@@ -139,7 +139,7 @@
             container.innerHTML = '';
 
             data.forEach(row => {
-                if (!row['歌曲名稱']) return; // 跳過空行
+                if (!row.歌曲名稱) return; // 跳過空行
                 
                 const div = document.createElement('div');
                 div.className = 'data-item';
@@ -149,14 +149,14 @@
                 titleDiv.style.fontSize = '18px';
                 titleDiv.style.fontWeight = 'bold';
                 titleDiv.style.marginBottom = '8px';
-                titleDiv.textContent = row['歌曲名稱'];
+                titleDiv.textContent = row.歌曲名稱;
                 div.appendChild(titleDiv);
                 
                 // 歌手名稱
-                if (row['歌手']) {
+                if (row.歌手) {
                     const artistDiv = document.createElement('div');
                     artistDiv.style.color = '#666';
-                    artistDiv.textContent = row['歌手'];
+                    artistDiv.textContent = row.歌手;
                     div.appendChild(artistDiv);
                 }
                 
@@ -166,8 +166,8 @@
                 tagsDiv.innerHTML = '';
                 
                 // 根據特定關鍵字添加標籤
-                if (row['標籤']) {
-                    const tags = row['標籤'].split(',').map(tag => tag.trim());
+                if (row.標籤) {
+                    const tags = row.標籤.split(',').map(tag => tag.trim());
                     tags.forEach(tag => {
                         if (tag.includes('魔法前')) tagsDiv.innerHTML += createTagSpan('魔法前', 'magic-before');
                         if (tag.includes('魔法後')) tagsDiv.innerHTML += createTagSpan('魔法後', 'magic-after');
@@ -178,29 +178,4 @@
                 }
                 
                 div.appendChild(tagsDiv);
-                container.appendChild(div);
-            });
-        }
-
-        function getFilteredData() {
-            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-            let dataToShow = allData;
-
-            if (searchTerm) {
-                dataToShow = dataToShow.filter(row => 
-                    Object.values(row).some(value => 
-                        String(value).toLowerCase().includes(searchTerm)
-                    )
-                );
-            }
-
-            return dataToShow;
-        }
-
-        function switchView(view) {
-            currentView = view;
-            document.querySelectorAll('.tab-button').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            event.target.classList.add('active');
-            displayData(getFilteredData());
+                container.append
