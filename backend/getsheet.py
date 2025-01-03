@@ -23,20 +23,40 @@ def get_sheet_data():
     sheet = service.spreadsheets()
     
     # 獲取“A-Z”頁的數據
-    result_az = sheet.values().get(spreadsheetId=SHEET_ID, range=RANGE_NAME_AZ).execute()
-    values_az = result_az.get('values', [])
-    
+    result_az = sheet.get(
+        spreadsheetId=SHEET_ID, ranges=RANGE_NAME_AZ, includeGridData=True
+    ).execute()
+    values_az = result_az.get('sheets', [])[0].get('data', [])[0].get('rowData', [])
+
     # 獲取“五十音順”頁的數據
-    result_50音順 = sheet.values().get(spreadsheetId=SHEET_ID, range=RANGE_NAME_50音順).execute()
-    values_50音順 = result_50音順.get('values', [])
+    result_50音順 = sheet.get(
+        spreadsheetId=SHEET_ID, ranges=RANGE_NAME_50音順, includeGridData=True
+    ).execute()
+    values_50音順 = result_50音順.get('sheets', [])[0].get('data', [])[0].get('rowData', [])
 
     # 檢查數據是否存在
     if not values_az or not values_50音順:
         raise ValueError("表單數據為空")
 
+    def extract_values_with_links(row_data):
+        row = []
+        for cell in row_data['values']:
+            if 'hyperlink' in cell['userEnteredValue']:
+                value = f'=HYPERLINK("{cell["userEnteredValue"]["hyperlink"]}", "{cell["formattedValue"]}")'
+            else:
+                value = cell['formattedValue']
+            row.append(value)
+        return row
+
+    # 處理A-Z頁的數據
+    data_az = [extract_values_with_links(row) for row in values_az]
+
+    # 處理五十音順頁的數據
+    data_50音順 = [extract_values_with_links(row) for row in values_50音順]
+
     # 創建DataFrame，不使用列名
-    df_az = pd.DataFrame(values_az[1:])
-    df_50音順 = pd.DataFrame(values_50音順[1:])
+    df_az = pd.DataFrame(data_az[1:])
+    df_50音順 = pd.DataFrame(data_50音順[1:])
     
     # 保留前五列
     df_az_columns_to_keep = df_az.iloc[:, :5]
