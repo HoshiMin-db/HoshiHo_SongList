@@ -22,11 +22,11 @@ def get_sheet_data():
     service = build('sheets', 'v4', credentials=credentials)
     sheet = service.spreadsheets()
     
-    # 獲取“`A-Z`”頁的數據
+    # 獲取“A-Z”頁的數據
     result_az = sheet.values().get(spreadsheetId=SHEET_ID, range=RANGE_NAME_AZ).execute()
     values_az = result_az.get('values', [])
     
-    # 獲取“`五十音順`”頁的數據
+    # 獲取“五十音順”頁的數據
     result_50音順 = sheet.values().get(spreadsheetId=SHEET_ID, range=RANGE_NAME_50音順).execute()
     values_50音順 = result_50音順.get('values', [])
 
@@ -35,8 +35,8 @@ def get_sheet_data():
         raise ValueError("表單數據為空")
 
     # 創建DataFrame，不使用列名
-    df_az = pd.DataFrame(values_az[1:], columns=values_az[0])
-    df_50音順 = pd.DataFrame(values_50音順[1:], columns=values_50音順[0])
+    df_az = pd.DataFrame(values_az[1:])
+    df_50音順 = pd.DataFrame(values_50音順[1:])
     
     # 保留前五列
     df_az_columns_to_keep = df_az.iloc[:, :5]
