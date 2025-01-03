@@ -5,29 +5,41 @@ from googleapiclient.discovery import build
 import json
 
 def get_sheet_data():
+    # 從環境變量獲取Google Sheets憑證信息
     credentials_info = json.loads(os.getenv('GOOGLE_SHEETS_CREDENTIALS'))
 
+    # 使用憑證信息創建憑證
     credentials = service_account.Credentials.from_service_account_info(
         credentials_info, scopes=['https://www.googleapis.com/auth/spreadsheets.readonly']
     )
 
+    # 定義Google Sheets的ID和範圍
     SHEET_ID = '1uKBjtCfLZKnyVZK04NH6k6BQmkq7_K2m2qP9OVezT0A'
     RANGE_NAME = 'A-Z!A:Z'
 
+    # 構建Google Sheets服務
     service = build('sheets', 'v4', credentials=credentials)
     sheet = service.spreadsheets()
+    
+    # 獲取表單數據
     result = sheet.values().get(spreadsheetId=SHEET_ID, range=RANGE_NAME).execute()
     values = result.get('values', [])
 
+    # 創建DataFrame並動態設置列名
     df = pd.DataFrame(values[1:], columns=values[0])
+    
+    # 保留前五列
     columns_to_keep = df.columns[:5]
+    # 獲取其餘列並反轉順序
     columns_to_reverse = df.columns[5:][::-1]
-    df = df[columns_to_keep.to_list() + columns_to_reverse.to_list()]
+    
+    # 創建新的DataFrame，保留前五列和前三個日期列
     df = pd.concat([df[columns_to_keep], df[columns_to_reverse[:3]]], axis=1)
 
     return df.to_dict(orient='records')
 
 if __name__ == '__main__':
+    # 獲取表單數據並存儲到data.json文件中
     data = get_sheet_data()
     with open('data.json', 'w') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
