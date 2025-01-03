@@ -21,7 +21,7 @@ jobs:
 
     - name: Run the script to update data
       run: |
-        python getsheet.py
+        python backend/getsheet.py
 
     - name: Check for changes
       id: check_for_changes
