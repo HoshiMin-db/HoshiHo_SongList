@@ -25,6 +25,10 @@ def get_sheet_data():
     result = sheet.values().get(spreadsheetId=SHEET_ID, range=RANGE_NAME).execute()
     values = result.get('values', [])
 
+    # 檢查數據是否存在
+    if not values:
+        raise ValueError("表單數據為空")
+
     # 創建DataFrame並動態設置列名
     df = pd.DataFrame(values[1:], columns=values[0])
     
