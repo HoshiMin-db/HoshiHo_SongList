@@ -40,11 +40,11 @@ def get_sheet_data():
 
     def extract_values_with_links(row_data):
         row = []
-        for cell in row_data['values']:
-            if 'hyperlink' in cell['userEnteredValue']:
+        for cell in row_data.get('values', []):
+            if 'userEnteredValue' in cell and 'hyperlink' in cell['userEnteredValue']:
                 value = f'=HYPERLINK("{cell["userEnteredValue"]["hyperlink"]}", "{cell["formattedValue"]}")'
             else:
-                value = cell['formattedValue']
+                value = cell.get('formattedValue', '')
             row.append(value)
         return row
 
