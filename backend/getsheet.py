@@ -29,18 +29,18 @@ def get_sheet_data():
     if not values:
         raise ValueError("表單數據為空")
 
-    # 創建DataFrame並動態設置列名
-    df = pd.DataFrame(values[1:], columns=values[0])
+    # 創建DataFrame，不使用列名
+    df = pd.DataFrame(values[1:])
     
     # 保留前五列
-    columns_to_keep = df.columns[:5]
+    df_columns_to_keep = df.iloc[:, :5]
     # 獲取其餘列並反轉順序
-    columns_to_reverse = df.columns[5:][::-1]
+    df_columns_to_reverse = df.iloc[:, 5:][::-1]
     
     # 創建新的DataFrame，保留前五列和前三個日期列
-    df = pd.concat([df[columns_to_keep], df[columns_to_reverse[:3]]], axis=1)
+    df_final = pd.concat([df_columns_to_keep, df_columns_to_reverse.iloc[:, :3]], axis=1)
 
-    return df.to_dict(orient='records')
+    return df_final.to_dict(orient='records')
 
 if __name__ == '__main__':
     # 獲取表單數據並存儲到data.json文件中
