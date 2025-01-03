@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
   schedule:
-    - cron: '0 0 * * 0'  # 每週日的 UTC 時間 00:00 運行
+    - cron: '0 0 * * 0'  # Every Sunday at UTC 00:00
 
 jobs:
   update-data:
@@ -17,7 +17,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.x'  # 使用你需要的 Python 版本
+        python-version: '3.x'  # Use the version of Python you need
 
     - name: Install dependencies
       run: |
@@ -33,7 +33,7 @@ jobs:
       env:
         GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
       run: |
-        python backend/getsheet.py  # 使用正確的路徑
+        python backend/getsheet.py  # Use the correct path
 
     - name: Check for changes
       id: check_for_changes
@@ -43,6 +43,7 @@ jobs:
           echo "::set-output name=changes::No"
         else
           echo "::set-output name=changes::Yes"
+        fi
 
     - name: Commit and push changes
       if: steps.check_for_changes.outputs.changes == 'Yes'
