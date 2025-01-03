@@ -30,6 +30,8 @@ jobs:
         git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
 
     - name: Run the script to update data
+      env:
+        GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
       run: |
         python backend/getsheet.py  # 使用正確的路徑
 
