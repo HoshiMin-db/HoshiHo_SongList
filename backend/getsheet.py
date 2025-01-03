@@ -2,14 +2,15 @@ import os
 import pandas as pd
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
+import json
 
 def get_sheet_data():
-    # 設定 Google Sheets API
-    SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
-    SERVICE_ACCOUNT_FILE = 'path/to/your/service-account-file.json'
+    # 從環境變數中讀取憑證內容
+    credentials_info = json.loads(os.getenv('GOOGLE_SHEETS_CREDENTIALS'))
     
-    credentials = service_account.Credentials.from_service_account_file(
-        SERVICE_ACCOUNT_FILE, scopes=SCOPES)
+    credentials = service_account.Credentials.from_service_account_info(
+        credentials_info, scopes=['https://www.googleapis.com/auth/spreadsheets.readonly']
+    )
 
     # 設定 Google Sheets ID 和工作表名稱
     SHEET_ID = '1uKBjtCfLZKnyVZK04NH6k6BQmkq7_K2m2qP9OVezT0A'
