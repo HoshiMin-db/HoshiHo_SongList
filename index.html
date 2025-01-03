@@ -43,15 +43,20 @@
 <script>
     // 使用JavaScript讀取data.json並生成表格
     fetch('data.json')
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
+            }
+            return response.json();
+        })
         .then(data => {
             const table = document.getElementById('songTable').getElementsByTagName('tbody')[0];
             data.forEach(row => {
                 const newRow = table.insertRow();
-                row.forEach(cell => {
+                for (let cell of row) {
                     const newCell = newRow.insertCell();
                     newCell.textContent = cell;
-                });
+                }
             });
         })
         .catch(error => console.error('Error loading data:', error));
