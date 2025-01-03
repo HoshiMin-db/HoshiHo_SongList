@@ -1,41 +1,41 @@
-name: Update Google Sheets Data
+name: Update Data
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
   schedule:
-    - cron: '0 0 * * *'  # 每天運行一次，可以根據需求調整
-  workflow_dispatch:
+    - cron: '0 0 * * 0'  # 每週日的 UTC 時間 00:00 運行
 
 jobs:
   update-data:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.x
+    - name: Set up Git config
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib pandas
+    - name: Run the script to update data
+      run: |
+        python getsheet.py
 
-      - name: Run getsheet.py
-        env:
-          GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
-        run: |
-          python backend/getsheet.py > data.json
+    - name: Check for changes
+      id: check_for_changes
+      run: |
+        git add data.json
+        if git diff-index --quiet HEAD; then
+          echo "::set-output name=changes::No"
+        else
+          echo "::set-output name=changes::Yes"
 
-      - name: Commit updated data
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add data.json
-          git commit -m 'Update Google Sheets data'
-          git push
+    - name: Commit and push changes
+      if: steps.check_for_changes.outputs.changes == 'Yes'
+      run: |
+        git commit -m "Update data.json"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
