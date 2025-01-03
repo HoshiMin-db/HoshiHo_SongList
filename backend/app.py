@@ -1,11 +1,12 @@
-from flask import Flask, jsonify, render_template
+from flask import Flask, jsonify, send_from_directory
 from getsheet import get_sheet_data
+import os
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return send_from_directory(os.getcwd(), 'index.html')
 
 @app.route('/data')
 def data():
