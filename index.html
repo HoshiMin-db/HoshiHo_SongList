@@ -51,12 +51,35 @@
         })
         .then(data => {
             const table = document.getElementById('songTable').getElementsByTagName('tbody')[0];
+            const dateColumns = ['日期1', '日期2', '日期3'];
+
             data.forEach(row => {
                 const newRow = table.insertRow();
-                for (let cell of row) {
+                newRow.insertCell().textContent = ''; // A-Z
+                newRow.insertCell().textContent = row.song_name;
+                newRow.insertCell().textContent = row.artist;
+                newRow.insertCell().textContent = row.source;
+                newRow.insertCell().textContent = ''; // 備注
+
+                dateColumns.forEach((col, index) => {
                     const newCell = newRow.insertCell();
-                    newCell.textContent = cell;
-                }
+                    const link = document.createElement('a');
+                    link.href = row.link;
+                    link.textContent = row.date;
+                    link.target = '_blank';
+                    link.onclick = function(event) {
+                        event.preventDefault();
+                        const miniPlayer = document.createElement('iframe');
+                        miniPlayer.width = '560';
+                        miniPlayer.height = '315';
+                        miniPlayer.src = link.href.replace('watch?v=', 'embed/');
+                        miniPlayer.frameBorder = '0';
+                        miniPlayer.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+                        miniPlayer.allowFullscreen = true;
+                        document.body.appendChild(miniPlayer);
+                    };
+                    newCell.appendChild(link);
+                });
             });
         })
         .catch(error => console.error('Error loading data:', error));
