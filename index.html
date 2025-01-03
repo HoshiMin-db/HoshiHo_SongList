@@ -82,6 +82,7 @@
 
                     const dateCell = newRow.insertCell();
                     const link = document.createElement('a');
+                    // 假設日期格式為 `yyyy-mm-dd`
                     const [year, month, day] = row.date.split('-');
                     link.href = row.link;
                     link.textContent = `${day}/${month}/${year}`;
