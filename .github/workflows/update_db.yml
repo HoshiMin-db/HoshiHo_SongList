@@ -1,46 +1,41 @@
-name: Update Database
+name: Update Google Sheets Data
 
 on:
   push:
     branches:
       - main
   schedule:
-    - cron: '0 0 * * 0'
+    - cron: '0 0 * * *'  # 每天運行一次，可以根據需求調整
+  workflow_dispatch:
 
 jobs:
-  update-db:
+  update-data:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install gspread oauth2client google-api-python-client
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install google-api-python-client google-auth-httplib2 google-auth-oauthlib pandas
 
-    - name: Create credentials file
-      run: |
-        echo "${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}" > credentials.json
+      - name: Run getsheet.py
+        env:
+          GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
+        run: |
+          python backend/getsheet.py > data.json
 
-    - name: Update SQLite DB
-      run: |
-        python app.py
-      env:
-        GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
-
-    - name: Commit and push changes
-      run: |
-        git config user.email "${{ secrets.USER_EMAIL }}"
-        git config user.name "${{ secrets.USER_NAME }}"
-        git add backend/mydatabase.db
-        git commit -m "Update database"
-        git push https://HoshiMin-db:${{ secrets.PAT_TOKEN }}@github.com/HoshiMin-db/HoshiHo_SongList
-      env:
-        PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+      - name: Commit updated data
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add data.json
+          git commit -m 'Update Google Sheets data'
+          git push
