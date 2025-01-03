@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoshiHo歌單</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .header h1 {
+            color: #6a5acd;
+        }
+        
+        .controls {
+            margin-bottom: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .tab-buttons {
+            margin-bottom: 15px;
+        }
+        
+        .tab-button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: #e0e0e0;
+            transition: all 0.3s;
+        }
+        
+        .tab-button.active {
+            background-color: #6a5acd;
+            color: white;
+        }
+        
+        #searchInput {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        .data-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .data-item {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        
+        .data-item:hover {
+            transform: translateY(-3px);
+        }
+
+        .cell {
+            padding: 4px;
+            margin: 2px 0;
+            border-radius: 4px;
+        }
+        
+        .tag {
+            display: inline-block;
+            padding: 2px 8px;
+            margin: 2px;
+            border-radius: 12px;
+            font-size: 12px;
+            color: white;
+        }
+        
+        .magic-before { background-color: #FF69B4; }
+        .magic-after { background-color: #9370DB; }
+        .acapella { background-color: #20B2AA; }
+        .members-only { background-color: #FF8C00; }
+        .copyright-restricted { color: red; font-weight: bold; }
+        .acapella { background-color: #ADD8E6; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🌟 HoshiHo歌單 💐</h1>
+        <p>總曲數：<span id="songCount">792</span></p>
+    </div>
+    
+    <div class="controls">
+        <div class="tab-buttons">
+            <button class="tab-button active" onclick="switchView('all')">全部</button>
+            <button class="tab-button" onclick="switchView('az')">A-Z</button>
+            <button class="tab-button" onclick="switchView('gojuon')">五十音順</button>
+        </div>
+        <input type="text" id="searchInput" placeholder="搜尋歌曲名稱或歌手...">
+    </div>
+    
+    <div id="dataContainer" class="data-container"></div>
+
+    <script>
+        let allData = [];
+        let currentView = 'all';
+
+        async function fetchData() {
+            const response = await fetch('/data');
+            const data = await response.json();
+            allData = data;
+            displayData(data);
+        }
+
+        function createTagSpan(text, className) {
+            return `<span class="tag ${className}">${text}</span>`;
+        }
+
+        function displayData(data) {
+            const container = document.getElementById('dataContainer');
+            container.innerHTML = '';
+
+            data.forEach(row => {
+                if (!row.歌曲名稱) return; // 跳過空行
+                
+                const div = document.createElement('div');
+                div.className = 'data-item';
+                
+                // 歌曲名稱
+                const titleDiv = document.createElement('div');
+                titleDiv.style.fontSize = '18px';
+                titleDiv.style.fontWeight = 'bold';
+                titleDiv.style.marginBottom = '8px';
+                titleDiv.textContent = row.歌曲名稱;
+                div.appendChild(titleDiv);
+                
+                // 歌手名稱
+                if (row.歌手) {
+                    const artistDiv = document.createElement('div');
+                    artistDiv.style.color = '#666';
+                    artistDiv.textContent = row.歌手;
+                    div.appendChild(artistDiv);
+                }
+                
+                // 標籤區域
+                const tagsDiv = document.createElement('div');
+                tagsDiv.style.marginTop = '8px';
+                tagsDiv.innerHTML = '';
+                
+                // 根據特定關鍵字添加標籤
+                if (row.標籤) {
+                    const tags = row.標籤.split(',').map(tag => tag.trim());
+                    tags.forEach(tag => {
+                        if (tag.includes('魔法前')) tagsDiv.innerHTML += createTagSpan('魔法前', 'magic-before');
+                        if (tag.includes('魔法後')) tagsDiv.innerHTML += createTagSpan('魔法後', 'magic-after');
+                        if (tag.includes('清唱')) tagsDiv.innerHTML += createTagSpan('清唱', 'acapella');
+                        if (tag.includes('會限')) tagsDiv.innerHTML += createTagSpan('會限', 'members-only');
+                        if (tag.includes('版權限制')) tagsDiv.innerHTML += createTagSpan('版權限制', 'copyright-restricted');
+                    });
+                }
+                
+                div.appendChild(tagsDiv);
+                container.append
