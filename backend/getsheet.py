@@ -40,12 +40,12 @@ def get_sheet_data():
 
     def extract_values_with_links(row_data):
         row = []
-        for cell in row_data.get('values', []):
-            if 'userEnteredValue' in cell and 'hyperlink' in cell['userEnteredValue']:
-                value = f'=HYPERLINK("{cell["userEnteredValue"]["hyperlink"]}", "{cell["formattedValue"]}")'
-            else:
-                value = cell.get('formattedValue', '')
-            row.append(value)
+        for cell_data in row_data.get('values', []):
+            cell = cell_data.get('formattedValue', '')
+            if 'hyperlink' in cell_data.get('effectiveValue', {}):
+                hyperlink = cell_data['effectiveValue']['hyperlink']
+                cell = f'=HYPERLINK("{hyperlink}", "{cell}")'
+            row.append(cell)
         return row
 
     # 處理A-Z頁的數據
