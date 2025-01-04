@@ -134,12 +134,13 @@
             // 更新總曲數
             songCountElement.textContent = allData.length;
 
-            // 按song_name分組並排序
+            // 按song_name和artist分組並排序
             const groupedData = data.reduce((acc, row) => {
-                if (!acc[row.song_name]) {
-                    acc[row.song_name] = [];
+                const key = `${row.song_name}-${row.artist}`;
+                if (!acc[key]) {
+                    acc[key] = [];
                 }
-                acc[row.song_name].push(row);
+                acc[key].push(row);
                 return acc;
             }, {});
 
@@ -148,12 +149,12 @@
             });
 
             // 生成表格內容
-            Object.entries(groupedData).forEach(([song_name, rows]) => {
+            Object.entries(groupedData).forEach(([key, rows]) => {
                 const maxRows = Math.min(rows.length, 3); // 最多顯示3次日期
                 const newRow = table.insertRow();
 
                 newRow.insertCell().textContent = ''; // A-Z
-                newRow.insertCell().textContent = song_name;
+                newRow.insertCell().textContent = rows[0].song_name;
                 newRow.insertCell().textContent = rows[0].artist;
                 newRow.insertCell().textContent = rows[0].source;
                 newRow.insertCell().textContent = ''; // 備注
@@ -199,12 +200,13 @@
             row.source.toLowerCase().includes(searchTerm.toLowerCase())
         );
 
-        // 按song_name分組並排序
+        // 按song_name和artist分組並排序
         const groupedData = filteredData.reduce((acc, row) => {
-            if (!acc[row.song_name]) {
-                acc[row.song_name] = [];
+            const key = `${row.song_name}-${row.artist}`;
+            if (!acc[key]) {
+                acc[key] = [];
             }
-            acc[row.song_name].push(row);
+            acc[key].push(row);
             return acc;
         }, {});
 
@@ -213,12 +215,12 @@
         });
 
         // 生成表格內容
-        Object.entries(groupedData).forEach(([song_name, rows]) => {
+        Object.entries(groupedData).forEach(([key, rows]) => {
             const maxRows = Math.min(rows.length, 3); // 最多顯示3次日期
             const newRow = table.insertRow();
 
             newRow.insertCell().textContent = ''; // A-Z
-            newRow.insertCell().textContent = song_name;
+            newRow.insertCell().textContent = rows[0].song_name;
             newRow.insertCell().textContent = rows[0].artist;
             newRow.insertCell().textContent = rows[0].source;
             newRow.insertCell().textContent = ''; // 備注
