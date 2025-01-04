@@ -129,6 +129,11 @@
         a:hover {
             text-decoration: underline;
         }
+
+        .lock-icon {
+            color: red;
+            margin-left: 5px;
+        }
     </style>
 </head>
 <body>
@@ -168,6 +173,7 @@
             const searchInput = document.getElementById('searchInput');
             const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
             const validUrls = ['https://www.youtube.com'];
+            const memberExclusiveDates = ['02122023', '04112023', '11112023', '16122023', '18112023', '23122023', '25112023', '28102023', '31122023'];
 
             function fetchData(callback) {
                 fetch('data.json')
@@ -248,6 +254,14 @@
                                 }
                             };
                             dateCell.appendChild(link);
+
+                            // 添加鎖符號
+                            if (memberExclusiveDates.includes(date)) {
+                                const lockIcon = document.createElement('span');
+                                lockIcon.classList.add('lock-icon');
+                                lockIcon.textContent = '🔒';
+                                dateCell.appendChild(lockIcon);
+                            }
                         }
                     }
                 });
