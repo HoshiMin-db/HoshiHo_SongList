@@ -12,6 +12,11 @@
             padding: 20px;
         }
 
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
         .search-container {
             margin-bottom: 20px;
         }
@@ -45,7 +50,10 @@
 </head>
 <body>
 
-<h1>歌曲列表</h1>
+<div class="header">
+    <h1>🌟 HoshiHo歌單 💐</h1>
+    <p>總曲數：<span id="songCount">0</span></p>
+</div>
 
 <div class="search-container">
     <input type="text" id="searchInput" placeholder="搜尋...">
@@ -79,6 +87,11 @@
         })
         .then(data => {
             const table = document.getElementById('songTable').getElementsByTagName('tbody')[0];
+            const songCountElement = document.getElementById('songCount');
+            allData = data;
+
+            // 更新總曲數
+            songCountElement.textContent = allData.length;
 
             // 按song_name分組並排序
             const groupedData = data.reduce((acc, row) => {
@@ -137,8 +150,6 @@
                     dateCell.appendChild(link);
                 });
             });
-
-            allData = data;
         })
         .catch(error => console.error('Error loading data:', error));
 
