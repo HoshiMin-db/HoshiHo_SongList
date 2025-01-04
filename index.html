@@ -6,7 +6,7 @@
     <title>歌曲列表</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Microsoft JhengHei', '微軟正黑體', sans-serif; /* 微軟黑體 */
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
@@ -41,6 +41,15 @@
         th, td {
             padding: 8px;
             text-align: left;
+            white-space: nowrap; /* 防止文本換行 */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 200px; /* 設定最大寬度 */
+            position: relative;
+        }
+        td:hover {
+            overflow: auto; /* 滑動效果 */
+            white-space: normal; /* 允許文本換行 */
         }
 
         th {
