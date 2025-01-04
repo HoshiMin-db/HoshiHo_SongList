@@ -42,6 +42,10 @@
             padding: 8px;
             text-align: left;
         }
+
+        th {
+            cursor: pointer;
+        }
         
         iframe {
             margin-top: 20px;
@@ -126,7 +130,6 @@
 
                     const dateCell = newRow.insertCell();
                     const link = document.createElement('a');
-                    // 假設日期格式為 `ddmmyyyy`
                     const date = row.date;
                     const formattedDate = `${date.substring(0, 2)}/${date.substring(2, 4)}/${date.substring(4)}`;
                     link.href = row.link;
@@ -150,6 +153,9 @@
                     dateCell.appendChild(link);
                 });
             });
+
+            // 表格按曲名排序
+            sortTable();
         })
         .catch(error => console.error('Error loading data:', error));
 
@@ -196,7 +202,6 @@
 
                 const dateCell = newRow.insertCell();
                 const link = document.createElement('a');
-                // 假設日期格式為 `ddmmyyyy`
                 const date = row.date;
                 const formattedDate = `${date.substring(0, 2)}/${date.substring(2, 4)}/${date.substring(4)}`;
                 link.href = row.link;
@@ -220,11 +225,25 @@
                 dateCell.appendChild(link);
             });
         });
+
+        // 表格按曲名排序
+        sortTable();
     }
 
     document.getElementById('searchInput').addEventListener('input', (e) => {
         filterData(e.target.value);
     });
+
+    function sortTable() {
+        const table = document.getElementById('songTable');
+        const rows = Array.from(table.rows).slice(1);
+        rows.sort((a, b) => {
+            const aText = a.cells[1].textContent.toLowerCase();
+            const bText = b.cells[1].textContent.toLowerCase();
+            return aText > bText ? 1 : -1;
+        });
+        rows.forEach(row => table.appendChild(row));
+    }
 
 </script>
 
