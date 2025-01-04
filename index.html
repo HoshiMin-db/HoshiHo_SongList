@@ -92,6 +92,7 @@
             const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
             const validUrls = ['https://www.youtube.com'];
 
+            // 從 data.json 動態加載數據
             function fetchData(callback) {
                 fetch('data.json')
                     .then(response => response.json())
@@ -107,7 +108,10 @@
                     row.source.toLowerCase().includes(query)
                 );
 
+                // 清空現有的表格內容
                 songTableBody.innerHTML = '';
+
+                // 顯示篩選後的數據
                 displayData(filteredData);
             }
 
@@ -117,6 +121,7 @@
             });
 
             function displayData(data) {
+                // 按 song_name 和 artist 分組並排序
                 const groupedData = data.reduce((acc, row) => {
                     const key = `${row.song_name}-${row.artist}`;
                     if (!acc[key]) {
@@ -130,6 +135,7 @@
                     group.sort((a, b) => new Date(b.date.substring(4, 8) + '-' + b.date.substring(2, 4) + '-' + b.date.substring(0, 2)) - new Date(a.date.substring(4, 8) + '-' + a.date.substring(2, 4) + '-' + a.date.substring(0, 2)));
                 });
 
+                // 生成表格內容
                 Object.entries(groupedData).forEach(([key, rows]) => {
                     const maxRows = Math.min(rows.length, 3);
                     const newRow = songTableBody.insertRow();
@@ -166,6 +172,7 @@
                     }
                 });
 
+                // 表格按曲名排序
                 sortTable();
             }
 
@@ -187,6 +194,7 @@
                 floatingPlayer.src = '';
             }
 
+            // 初始加載所有數據
             fetchData(data => fetchAndDisplayData('', data));
         });
     </script>
