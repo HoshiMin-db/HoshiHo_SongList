@@ -173,7 +173,6 @@
             const searchInput = document.getElementById('searchInput');
             const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
             const validUrls = ['https://www.youtube.com'];
-            const memberExclusiveDates = ['02122023', '04112023', '11112023', '16122023', '18112023', '23122023', '25112023', '28102023', '31122023'];
 
             function fetchData(callback) {
                 fetch('data.json')
@@ -215,8 +214,8 @@
                 }, {});
 
                 Object.values(groupedData).forEach(group => {
-                    group.sort((a, b) => new Date(b.date.substring(4, 8) + '-' + b.date.substring(2, 4) + '-' + b.date.substring(0, 2)) - 
-                                       new Date(a.date.substring(4, 8) + '-' + a.date.substring(2, 4) + '-' + a.date.substring(0, 2)));
+                    group.sort((a, b) => new Date(b.date.substring(0, 4) + '-' + b.date.substring(4, 6) + '-' + b.date.substring(6)) - 
+                                       new Date(a.date.substring(0, 4) + '-' + a.date.substring(4, 6) + '-' + a.date.substring(6)));
                 });
 
                 // 生成表格內容
@@ -238,7 +237,7 @@
                             const row = rows[i];
                             const link = document.createElement('a');
                             const date = row.date;
-                            const formattedDate = `${date.substring(0, 2)}/${date.substring(2, 4)}/${date.substring(4)}`;
+                            const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
                             link.href = row.link;
                             link.textContent = formattedDate;
                             link.target = '_blank';
@@ -256,7 +255,7 @@
                             dateCell.appendChild(link);
 
                             // 添加鎖符號
-                            if (memberExclusiveDates.includes(date)) {
+                            if (row.is_member_exclusive) {
                                 const lockIcon = document.createElement('span');
                                 lockIcon.classList.add('lock-icon');
                                 lockIcon.textContent = '🔒';
