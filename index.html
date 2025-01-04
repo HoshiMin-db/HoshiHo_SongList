@@ -3,22 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>歌曲列表</title>
+    <title>HoshiHo歌單</title>
     <style>
         body {
             font-family: 'Microsoft JhengHei', '微軟正黑體', sans-serif;
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            background-color: #f5f5f5;
         }
 
         .header {
             text-align: center;
             margin-bottom: 20px;
+            color: #333;
+        }
+
+        .header h1 {
+            color: #6a5acd;
         }
 
         .search-container {
             margin-bottom: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
         #searchInput {
@@ -26,7 +36,7 @@
             padding: 12px 20px;
             margin: 8px 0;
             box-sizing: border-box;
-            border: 2px solid #ccc;
+            border: 2px solid #ddd;
             border-radius: 4px;
             font-size: 16px;
         }
@@ -34,12 +44,16 @@
         table {
             width: 100%;
             border-collapse: collapse;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
+
         table, th, td {
-            border: 1px solid black;
+            border: 1px solid #ddd;
         }
+
         th, td {
-            padding: 8px;
+            padding: 12px;
             text-align: left;
             white-space: nowrap;
             overflow: hidden;
@@ -47,17 +61,30 @@
             max-width: 200px;
             position: relative;
         }
+
         td:hover {
-            overflow: auto;
+            overflow: visible;
             white-space: normal;
+            background-color: #f8f8f8;
+            z-index: 1;
         }
 
         th {
+            background-color: #6a5acd;
+            color: white;
             cursor: pointer;
         }
 
-        iframe {
-            margin-top: 20px;
+        th:hover {
+            background-color: #5849b8;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
         }
 
         .floating-player-container {
@@ -66,33 +93,82 @@
             right: 20px;
             width: 320px;
             height: 180px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
             display: none;
             background-color: white;
             z-index: 1000;
+            border-radius: 8px;
+            overflow: hidden;
         }
+
         .floating-player {
             width: 100%;
             height: calc(100% - 30px);
             border: none;
         }
+
         .close-btn {
             width: 100%;
             height: 30px;
-            background-color: #f00;
-            color: #fff;
+            background-color: #6a5acd;
+            color: white;
             text-align: center;
             line-height: 30px;
             cursor: pointer;
         }
+
+        .close-btn:hover {
+            background-color: #5849b8;
+        }
+
+        a {
+            color: #6a5acd;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🌟 HoshiHo歌單 💐</h1>
+        <p>總曲數：<span id="songCount">792</span></p>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="搜尋歌曲名稱、歌手或出典...">
+    </div>
+
+    <table id="songTable">
+        <thead>
+            <tr>
+                <th>A-Z</th>
+                <th>曲名</th>
+                <th>歌手</th>
+                <th>出典</th>
+                <th>備注</th>
+                <th>日期1</th>
+                <th>日期2</th>
+                <th>日期3</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <div id="floatingPlayerContainer" class="floating-player-container">
+        <div class="close-btn" onclick="closeFloatingPlayer()">關閉</div>
+        <iframe id="floatingPlayer" class="floating-player"></iframe>
+    </div>
+
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const searchInput = document.getElementById('searchInput');
             const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
             const validUrls = ['https://www.youtube.com'];
 
-            // 從 data.json 動態加載數據
             function fetchData(callback) {
                 fetch('data.json')
                     .then(response => response.json())
@@ -102,14 +178,15 @@
             }
 
             function fetchAndDisplayData(query, allData) {
-                const filteredData = allData.filter(row => 
+                // 清空表格内容
+                songTableBody.innerHTML = '';
+
+                // 篩選數據
+                const filteredData = allData.filter(row =>
                     row.song_name.toLowerCase().includes(query) ||
                     row.artist.toLowerCase().includes(query) ||
                     row.source.toLowerCase().includes(query)
                 );
-
-                // 清空現有的表格內容
-                songTableBody.innerHTML = '';
 
                 // 顯示篩選後的數據
                 displayData(filteredData);
@@ -132,20 +209,23 @@
                 }, {});
 
                 Object.values(groupedData).forEach(group => {
-                    group.sort((a, b) => new Date(b.date.substring(4, 8) + '-' + b.date.substring(2, 4) + '-' + b.date.substring(0, 2)) - new Date(a.date.substring(4, 8) + '-' + a.date.substring(2, 4) + '-' + a.date.substring(0, 2)));
+                    group.sort((a, b) => new Date(b.date.substring(4, 8) + '-' + b.date.substring(2, 4) + '-' + b.date.substring(0, 2)) - 
+                                       new Date(a.date.substring(4, 8) + '-' + a.date.substring(2, 4) + '-' + a.date.substring(0, 2)));
                 });
 
                 // 生成表格內容
                 Object.entries(groupedData).forEach(([key, rows]) => {
                     const maxRows = Math.min(rows.length, 3);
                     const newRow = songTableBody.insertRow();
-
-                    newRow.insertCell().textContent = '';
+                    
+                    // 添加單元格
+                    newRow.insertCell().textContent = rows[0].song_name.charAt(0).toUpperCase(); // A-Z
                     newRow.insertCell().textContent = rows[0].song_name;
                     newRow.insertCell().textContent = rows[0].artist;
                     newRow.insertCell().textContent = rows[0].source;
-                    newRow.insertCell().textContent = '';
-
+                    newRow.insertCell().textContent = rows[0].note || '';  // 備注
+                    
+                    // 添加日期
                     for (let i = 0; i < 3; i++) {
                         const dateCell = newRow.insertCell();
                         if (i < maxRows) {
@@ -164,7 +244,7 @@
                                     floatingPlayer.src = link.href.replace('watch?v=', 'embed/');
                                     floatingPlayerContainer.style.display = 'block';
                                 } else {
-                                    alert('Invalid URL');
+                                    alert('無效的URL');
                                 }
                             };
                             dateCell.appendChild(link);
@@ -178,13 +258,15 @@
 
             function sortTable() {
                 const table = document.getElementById('songTable');
-                const rows = Array.from(table.rows).slice(1);
+                const rows = Array.from(table.getElementsByTagName('tbody')[0].rows);
+                
                 rows.sort((a, b) => {
                     const aText = a.cells[1].textContent.toLowerCase();
                     const bText = b.cells[1].textContent.toLowerCase();
-                    return aText > bText ? 1 : -1;
+                    return aText.localeCompare(bText, 'zh-Hant');
                 });
-                rows.forEach(row => table.appendChild(row));
+
+                rows.forEach(row => table.getElementsByTagName('tbody')[0].appendChild(row));
             }
 
             function closeFloatingPlayer() {
@@ -198,41 +280,5 @@
             fetchData(data => fetchAndDisplayData('', data));
         });
     </script>
-</head>
-<body>
-
-<div class="header">
-    <h1>🌟 HoshiHo歌單 💐</h1>
-    <p>總曲數：<span id="songCount">0</span></p>
-</div>
-
-<div class="search-container">
-    <input type="text" id="searchInput" placeholder="搜尋...">
-</div>
-
-<table id="songTable">
-    <thead>
-        <tr>
-            <th>A-Z</th>
-            <th>曲名</th>
-            <th>歌手</th>
-            <th>出典</th>
-            <th>備注</th>
-            <th>日期1</th>
-            <th>日期2</th>
-            <th>日期3</th>
-        </tr>
-    </thead>
-    <tbody>
-        <!-- 表格數據將由JavaScript動態生成 -->
-    </tbody>
-</table>
-
-<!-- 浮動小窗播放器 -->
-<div id="floatingPlayerContainer" class="floating-player-container">
-    <div class="close-btn" onclick="closeFloatingPlayer()">關閉</div>
-    <iframe id="floatingPlayer" class="floating-player"></iframe>
-</div>
-
 </body>
 </html>
