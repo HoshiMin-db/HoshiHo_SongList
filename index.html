@@ -87,6 +87,89 @@
             cursor: pointer;
         }
     </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const searchInput = document.getElementById('searchInput');
+            const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
+            const validUrls = ['https://www.youtube.com'];
+
+            function fetchAndDisplayData(query) {
+                fetch(`/search?query=${encodeURIComponent(query)}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        songTableBody.innerHTML = ''; // 清空表格內容
+                        displayData(data);
+                    });
+            }
+
+            searchInput.addEventListener('input', function(e) {
+                const query = e.target.value;
+                fetchAndDisplayData(query);
+            });
+
+            function displayData(data) {
+                Object.entries(data).forEach(([key, rows]) => {
+                    const maxRows = Math.min(rows.length, 3); // 最多顯示3次日期
+                    const newRow = songTableBody.insertRow();
+
+                    newRow.insertCell().textContent = ''; // A-Z
+                    newRow.insertCell().textContent = rows[0].song_name;
+                    newRow.insertCell().textContent = rows[0].artist;
+                    newRow.insertCell().textContent = rows[0].source;
+                    newRow.insertCell().textContent = ''; // 備注
+
+                    for (let i = 0; i < 3; i++) {
+                        const dateCell = newRow.insertCell();
+                        if (i < maxRows) {
+                            const row = rows[i];
+                            const link = document.createElement('a');
+                            const date = row.date;
+                            const formattedDate = `${date.substring(0, 2)}/${date.substring(2, 4)}/${date.substring(4)}`;
+                            link.href = row.link;
+                            link.textContent = formattedDate;
+                            link.target = '_blank';
+                            link.onclick = function(event) {
+                                event.preventDefault();
+                                if (validUrls.some(validUrl => link.href.startsWith(validUrl))) {
+                                    const floatingPlayerContainer = document.getElementById('floatingPlayerContainer');
+                                    const floatingPlayer = document.getElementById('floatingPlayer');
+                                    floatingPlayer.src = link.href.replace('watch?v=', 'embed/');
+                                    floatingPlayerContainer.style.display = 'block';
+                                } else {
+                                    alert('Invalid URL');
+                                }
+                            };
+                            dateCell.appendChild(link);
+                        }
+                    }
+                });
+
+                // 表格按曲名排序
+                sortTable();
+            }
+
+            function sortTable() {
+                const table = document.getElementById('songTable');
+                const rows = Array.from(table.rows).slice(1);
+                rows.sort((a, b) => {
+                    const aText = a.cells[1].textContent.toLowerCase();
+                    const bText = b.cells[1].textContent.toLowerCase();
+                    return aText > bText ? 1 : -1;
+                });
+                rows.forEach(row => table.appendChild(row));
+            }
+
+            function closeFloatingPlayer() {
+                const floatingPlayerContainer = document.getElementById('floatingPlayerContainer');
+                floatingPlayerContainer.style.display = 'none';
+                const floatingPlayer = document.getElementById('floatingPlayer');
+                floatingPlayer.src = ''; // 停止播放
+            }
+
+            // 初始加載所有數據
+            fetchAndDisplayData('');
+        });
+    </script>
 </head>
 <body>
 
@@ -122,121 +205,6 @@
     <div class="close-btn" onclick="closeFloatingPlayer()">關閉</div>
     <iframe id="floatingPlayer" class="floating-player"></iframe>
 </div>
-
-<script>
-    // 使用JavaScript讀取data.json並生成表格
-    let allData = [];
-    const validUrls = ['https://www.youtube.com'];
-
-    fetch('data.json')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok ' + response.statusText);
-            }
-            return response.json();
-        })
-        .then(data => {
-            allData = data;
-
-            // 更新總曲數
-            document.getElementById('songCount').textContent = allData.length;
-
-            // 初始化顯示所有數據
-            displayData(allData);
-        })
-        .catch(error => console.error('Error loading data:', error));
-
-    function displayData(data) {
-        const table = document.getElementById('songTable').getElementsByTagName('tbody')[0];
-        table.innerHTML = ''; // 清空表格內容
-
-        // 按song_name和artist分組並排序
-        const groupedData = data.reduce((acc, row) => {
-            const key = `${row.song_name}-${row.artist}`;
-            if (!acc[key]) {
-                acc[key] = [];
-            }
-            acc[key].push(row);
-            return acc;
-        }, {});
-
-        Object.values(groupedData).forEach(group => {
-            group.sort((a, b) => new Date(b.date.substring(4, 8) + '-' + b.date.substring(2, 4) + '-' + b.date.substring(0, 2)) - new Date(a.date.substring(4, 8) + '-' + a.date.substring(2, 4) + '-' + a.date.substring(0, 2)));
-        });
-
-        // 生成表格內容
-        Object.entries(groupedData).forEach(([key, rows]) => {
-            const maxRows = Math.min(rows.length, 3); // 最多顯示3次日期
-            const newRow = table.insertRow();
-
-            newRow.insertCell().textContent = ''; // A-Z
-            newRow.insertCell().textContent = rows[0].song_name;
-            newRow.insertCell().textContent = rows[0].artist;
-            newRow.insertCell().textContent = rows[0].source;
-            newRow.insertCell().textContent = ''; // 備注
-
-            for (let i = 0; i < 3; i++) {
-                const dateCell = newRow.insertCell();
-                if (i < maxRows) {
-                    const row = rows[i];
-                    const link = document.createElement('a');
-                    const date = row.date;
-                    const formattedDate = `${date.substring(0, 2)}/${date.substring(2, 4)}/${date.substring(4)}`;
-                    link.href = row.link;
-                    link.textContent = formattedDate;
-                    link.target = '_blank';
-                    link.onclick = function(event) {
-                        event.preventDefault();
-                        if (validUrls.some(validUrl => link.href.startsWith(validUrl))) {
-                            const floatingPlayerContainer = document.getElementById('floatingPlayerContainer');
-                            const floatingPlayer = document.getElementById('floatingPlayer');
-                            floatingPlayer.src = link.href.replace('watch?v=', 'embed/');
-                            floatingPlayerContainer.style.display = 'block';
-                        } else {
-                            alert('Invalid URL');
-                        }
-                    };
-                    dateCell.appendChild(link);
-                }
-            }
-        });
-
-        // 表格按曲名排序
-        sortTable();
-    }
-
-    function filterData(searchTerm) {
-        const filteredData = allData.filter(row => 
-            row.song_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            row.artist.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            row.source.toLowerCase().includes(searchTerm.toLowerCase())
-        );
-        displayData(filteredData);
-    }
-
-    document.getElementById('searchInput').addEventListener('input', (e) => {
-        filterData(e.target.value);
-    });
-
-    function sortTable() {
-        const table = document.getElementById('songTable');
-        const rows = Array.from(table.rows).slice(1);
-        rows.sort((a, b) => {
-            const aText = a.cells[1].textContent.toLowerCase();
-            const bText = b.cells[1].textContent.toLowerCase();
-            return aText > bText ? 1 : -1;
-        });
-        rows.forEach(row => table.appendChild(row));
-    }
-
-    function closeFloatingPlayer() {
-        const floatingPlayerContainer = document.getElementById('floatingPlayerContainer');
-        floatingPlayerContainer.style.display = 'none';
-        const floatingPlayer = document.getElementById('floatingPlayer');
-        floatingPlayer.src = ''; // 停止播放
-    }
-
-</script>
 
 </body>
 </html>
