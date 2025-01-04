@@ -136,81 +136,22 @@
             return response.json();
         })
         .then(data => {
-            const table = document.getElementById('songTable').getElementsByTagName('tbody')[0];
-            const songCountElement = document.getElementById('songCount');
             allData = data;
 
             // 更新總曲數
-            songCountElement.textContent = allData.length;
+            document.getElementById('songCount').textContent = allData.length;
 
-            // 按song_name和artist分組並排序
-            const groupedData = data.reduce((acc, row) => {
-                const key = `${row.song_name}-${row.artist}`;
-                if (!acc[key]) {
-                    acc[key] = [];
-                }
-                acc[key].push(row);
-                return acc;
-            }, {});
-
-            Object.values(groupedData).forEach(group => {
-                group.sort((a, b) => new Date(b.date.substring(4, 8) + '-' + b.date.substring(2, 4) + '-' + b.date.substring(0, 2)) - new Date(a.date.substring(4, 8) + '-' + a.date.substring(2, 4) + '-' + a.date.substring(0, 2)));
-            });
-
-            // 生成表格內容
-            Object.entries(groupedData).forEach(([key, rows]) => {
-                const maxRows = Math.min(rows.length, 3); // 最多顯示3次日期
-                const newRow = table.insertRow();
-
-                newRow.insertCell().textContent = ''; // A-Z
-                newRow.insertCell().textContent = rows[0].song_name;
-                newRow.insertCell().textContent = rows[0].artist;
-                newRow.insertCell().textContent = rows[0].source;
-                newRow.insertCell().textContent = ''; // 備注
-
-                for (let i = 0; i < 3; i++) {
-                    const dateCell = newRow.insertCell();
-                    if (i < maxRows) {
-                        const row = rows[i];
-                        const link = document.createElement('a');
-                        const date = row.date;
-                        const formattedDate = `${date.substring(0, 2)}/${date.substring(2, 4)}/${date.substring(4)}`;
-                        link.href = row.link;
-                        link.textContent = formattedDate;
-                        link.target = '_blank';
-                        link.onclick = function(event) {
-                            event.preventDefault();
-                            if (validUrls.some(validUrl => link.href.startsWith(validUrl))) {
-                                const floatingPlayerContainer = document.getElementById('floatingPlayerContainer');
-                                const floatingPlayer = document.getElementById('floatingPlayer');
-                                floatingPlayer.src = link.href.replace('watch?v=', 'embed/');
-                                floatingPlayerContainer.style.display = 'block';
-                            } else {
-                                alert('Invalid URL');
-                            }
-                        };
-                        dateCell.appendChild(link);
-                    }
-                }
-            });
-
-            // 表格按曲名排序
-            sortTable();
+            // 初始化顯示所有數據
+            displayData(allData);
         })
         .catch(error => console.error('Error loading data:', error));
 
-    function filterData(searchTerm) {
+    function displayData(data) {
         const table = document.getElementById('songTable').getElementsByTagName('tbody')[0];
         table.innerHTML = ''; // 清空表格內容
 
-        const filteredData = allData.filter(row => 
-            row.song_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            row.artist.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            row.source.toLowerCase().includes(searchTerm.toLowerCase())
-        );
-
         // 按song_name和artist分組並排序
-        const groupedData = filteredData.reduce((acc, row) => {
+        const groupedData = data.reduce((acc, row) => {
             const key = `${row.song_name}-${row.artist}`;
             if (!acc[key]) {
                 acc[key] = [];
@@ -262,6 +203,15 @@
 
         // 表格按曲名排序
         sortTable();
+    }
+
+    function filterData(searchTerm) {
+        const filteredData = allData.filter(row => 
+            row.song_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+            row.artist.toLowerCase().includes(searchTerm.toLowerCase()) ||
+            row.source.toLowerCase().includes(searchTerm.toLowerCase())
+        );
+        displayData(filteredData);
     }
 
     document.getElementById('searchInput').addEventListener('input', (e) => {
