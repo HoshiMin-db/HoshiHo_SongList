@@ -6,7 +6,7 @@
     <title>歌曲列表</title>
     <style>
         body {
-            font-family: 'Microsoft JhengHei', '微軟正黑體', sans-serif; /* 微軟黑體 */
+            font-family: 'Microsoft JhengHei', '微軟正黑體', sans-serif;
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
@@ -41,15 +41,15 @@
         th, td {
             padding: 8px;
             text-align: left;
-            white-space: nowrap; /* 防止文本換行 */
+            white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            max-width: 200px; /* 設定最大寬度 */
+            max-width: 200px;
             position: relative;
         }
         td:hover {
-            overflow: auto; /* 滑動效果 */
-            white-space: normal; /* 允許文本換行 */
+            overflow: auto;
+            white-space: normal;
         }
 
         th {
@@ -60,21 +60,20 @@
             margin-top: 20px;
         }
 
-        /* 浮動小窗樣式 */
         .floating-player-container {
             position: fixed;
             bottom: 20px;
             right: 20px;
             width: 320px;
-            height: 180px; /* 16:9 ratio */
+            height: 180px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            display: none; /* 初始不顯示 */
+            display: none;
             background-color: white;
             z-index: 1000;
         }
         .floating-player {
             width: 100%;
-            height: calc(100% - 30px); /* 留出空間給關閉按鈕 */
+            height: calc(100% - 30px);
             border: none;
         }
         .close-btn {
@@ -93,35 +92,31 @@
             const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
             const validUrls = ['https://www.youtube.com'];
 
-            // 模擬的數據，可以從後端獲取
-            const allData = [
-                // 在這裡插入你的歌曲數據
-                {"song_name": "Song1", "artist": "Artist1", "source": "Source1", "date": "01012025", "link": "https://www.youtube.com/watch?v=example1"},
-                {"song_name": "Song2", "artist": "Artist2", "source": "Source2", "date": "02012025", "link": "https://www.youtube.com/watch?v=example2"},
-                // 添加更多數據...
-            ];
+            function fetchData(callback) {
+                fetch('data.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        callback(data);
+                    });
+            }
 
-            function fetchAndDisplayData(query) {
+            function fetchAndDisplayData(query, allData) {
                 const filteredData = allData.filter(row => 
                     row.song_name.toLowerCase().includes(query) ||
                     row.artist.toLowerCase().includes(query) ||
                     row.source.toLowerCase().includes(query)
                 );
-                
-                // 清空現有的表格內容
+
                 songTableBody.innerHTML = '';
-                
-                // 顯示篩選後的數據
                 displayData(filteredData);
             }
 
             searchInput.addEventListener('input', function(e) {
                 const query = e.target.value.toLowerCase();
-                fetchAndDisplayData(query);
+                fetchData(data => fetchAndDisplayData(query, data));
             });
 
             function displayData(data) {
-                // 按song_name和artist分組並排序
                 const groupedData = data.reduce((acc, row) => {
                     const key = `${row.song_name}-${row.artist}`;
                     if (!acc[key]) {
@@ -135,16 +130,15 @@
                     group.sort((a, b) => new Date(b.date.substring(4, 8) + '-' + b.date.substring(2, 4) + '-' + b.date.substring(0, 2)) - new Date(a.date.substring(4, 8) + '-' + a.date.substring(2, 4) + '-' + a.date.substring(0, 2)));
                 });
 
-                // 生成表格內容
                 Object.entries(groupedData).forEach(([key, rows]) => {
-                    const maxRows = Math.min(rows.length, 3); // 最多顯示3次日期
+                    const maxRows = Math.min(rows.length, 3);
                     const newRow = songTableBody.insertRow();
 
-                    newRow.insertCell().textContent = ''; // A-Z
+                    newRow.insertCell().textContent = '';
                     newRow.insertCell().textContent = rows[0].song_name;
                     newRow.insertCell().textContent = rows[0].artist;
                     newRow.insertCell().textContent = rows[0].source;
-                    newRow.insertCell().textContent = ''; // 備注
+                    newRow.insertCell().textContent = '';
 
                     for (let i = 0; i < 3; i++) {
                         const dateCell = newRow.insertCell();
@@ -172,7 +166,6 @@
                     }
                 });
 
-                // 表格按曲名排序
                 sortTable();
             }
 
@@ -191,11 +184,10 @@
                 const floatingPlayerContainer = document.getElementById('floatingPlayerContainer');
                 floatingPlayerContainer.style.display = 'none';
                 const floatingPlayer = document.getElementById('floatingPlayer');
-                floatingPlayer.src = ''; // 停止播放
+                floatingPlayer.src = '';
             }
 
-            // 初始加載所有數據
-            fetchAndDisplayData('');
+            fetchData(data => fetchAndDisplayData('', data));
         });
     </script>
 </head>
