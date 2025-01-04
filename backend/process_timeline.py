@@ -23,9 +23,9 @@ def process_timeline(file_path, date_str):
         
         # 解析每行時間軸信息
         for line in lines[1:]:
-            match = re.match(r'(\d{2}:\d{2}:\d{2}) - (.*?) - (.*?) - (.*)', line)
-            if match:
-                time_str, song_name, artist, source = match.groups()
+            parts = line.strip().split(' | ')
+            if len(parts) == 4:
+                time_str, song_name, artist, source = parts
                 link = create_link(video_id, time_str)
                 data.append({
                     'date': date_str,
