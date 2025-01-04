@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>歌曲列表</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .search-container {
+            margin-bottom: 20px;
+        }
+        
+        #searchInput {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
@@ -16,11 +37,20 @@
             padding: 8px;
             text-align: left;
         }
+        
+        iframe {
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
 
 <h1>歌曲列表</h1>
+
+<div class="search-container">
+    <input type="text" id="searchInput" placeholder="搜尋...">
+</div>
+
 <table id="songTable">
     <thead>
         <tr>
@@ -39,6 +69,7 @@
 
 <script>
     // 使用JavaScript讀取data.json並生成表格
+    let allData = [];
     fetch('data.json')
         .then(response => {
             if (!response.ok) {
@@ -82,13 +113,18 @@
 
                     const dateCell = newRow.insertCell();
                     const link = document.createElement('a');
-                    // 假設日期格式為 `yyyy-mm-dd`
-                    const [year, month, day] = row.date.split('-');
+                    // 假設日期格式為 `ddmmyyyy`
+                    const date = row.date;
+                    const formattedDate = `${date.substring(0, 2)}/${date.substring(2, 4)}/${date.substring(4)}`;
                     link.href = row.link;
-                    link.textContent = `${day}/${month}/${year}`;
+                    link.textContent = formattedDate;
                     link.target = '_blank';
                     link.onclick = function(event) {
                         event.preventDefault();
+                        const existingIframe = document.querySelector('iframe');
+                        if (existingIframe) {
+                            existingIframe.parentNode.removeChild(existingIframe);
+                        }
                         const miniPlayer = document.createElement('iframe');
                         miniPlayer.width = '560';
                         miniPlayer.height = '315';
@@ -101,8 +137,84 @@
                     dateCell.appendChild(link);
                 });
             });
+
+            allData = data;
         })
         .catch(error => console.error('Error loading data:', error));
+
+    function filterData(searchTerm) {
+        const table = document.getElementById('songTable').getElementsByTagName('tbody')[0];
+        table.innerHTML = ''; // 清空表格內容
+
+        const filteredData = allData.filter(row => 
+            row.song_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+            row.artist.toLowerCase().includes(searchTerm.toLowerCase()) ||
+            row.source.toLowerCase().includes(searchTerm.toLowerCase())
+        );
+
+        // 按song_name分組並排序
+        const groupedData = filteredData.reduce((acc, row) => {
+            if (!acc[row.song_name]) {
+                acc[row.song_name] = [];
+            }
+            acc[row.song_name].push(row);
+            return acc;
+        }, {});
+
+        Object.values(groupedData).forEach(group => {
+            group.sort((a, b) => new Date(b.date) - new Date(a.date));
+        });
+
+        // 生成表格內容
+        Object.entries(groupedData).forEach(([song_name, rows]) => {
+            rows.forEach((row, index) => {
+                const newRow = table.insertRow();
+                if (index === 0) {
+                    newRow.insertCell().textContent = ''; // A-Z
+                    newRow.insertCell().textContent = row.song_name;
+                    newRow.insertCell().textContent = row.artist;
+                    newRow.insertCell().textContent = row.source;
+                    newRow.insertCell().textContent = ''; // 備注
+                } else {
+                    newRow.insertCell().textContent = ''; // A-Z
+                    newRow.insertCell().textContent = ''; // 曲名
+                    newRow.insertCell().textContent = ''; // 歌手
+                    newRow.insertCell().textContent = ''; // 出典
+                    newRow.insertCell().textContent = ''; // 備注
+                }
+
+                const dateCell = newRow.insertCell();
+                const link = document.createElement('a');
+                // 假設日期格式為 `ddmmyyyy`
+                const date = row.date;
+                const formattedDate = `${date.substring(0, 2)}/${date.substring(2, 4)}/${date.substring(4)}`;
+                link.href = row.link;
+                link.textContent = formattedDate;
+                link.target = '_blank';
+                link.onclick = function(event) {
+                    event.preventDefault();
+                    const existingIframe = document.querySelector('iframe');
+                    if (existingIframe) {
+                        existingIframe.parentNode.removeChild(existingIframe);
+                    }
+                    const miniPlayer = document.createElement('iframe');
+                    miniPlayer.width = '560';
+                    miniPlayer.height = '315';
+                    miniPlayer.src = link.href.replace('watch?v=', 'embed/');
+                    miniPlayer.frameBorder = '0';
+                    miniPlayer.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+                    miniPlayer.allowFullscreen = true;
+                    document.body.appendChild(miniPlayer);
+                };
+                dateCell.appendChild(link);
+            });
+        });
+    }
+
+    document.getElementById('searchInput').addEventListener('input', (e) => {
+        filterData(e.target.value);
+    });
+
 </script>
 
 </body>
