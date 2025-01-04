@@ -5,6 +5,8 @@ from datetime import datetime
 
 def parse_time(time_str):
     """將時間字符串轉換為秒數"""
+    # 確保用半角字符 ':'
+    time_str = time_str.replace('：', ':')
     parts = list(map(int, time_str.split(':')))
     return parts[0] * 3600 + parts[1] * 60 + parts[2]
 
@@ -45,8 +47,11 @@ def main():
     for filename in os.listdir(timeline_dir):
         file_path = os.path.join(timeline_dir, filename)
         date_str = filename.split('.')[0]  # 假設文件名是日期格式
-        data = process_timeline(file_path, date_str)
-        all_data.extend(data)
+        try:
+            data = process_timeline(file_path, date_str)
+            all_data.extend(data)
+        except Exception as e:
+            print(f"Error processing file {file_path}: {e}")
     
     # 將數據保存到data.json文件中
     with open('data.json', 'w', encoding='utf-8') as f:
