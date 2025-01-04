@@ -26,9 +26,6 @@ jobs:
     - name: Run timeline parser
       run: python backend/process_timeline.py
 
-    - name: Run sheet parser
-      run: python backend/getsheet.py
-
     - name: Commit changes
       id: commit
       run: |
