@@ -93,22 +93,50 @@
             const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
             const validUrls = ['https://www.youtube.com'];
 
+            // 模擬的數據，可以從後端獲取
+            const allData = [
+                // 在這裡插入你的歌曲數據
+                {"song_name": "Song1", "artist": "Artist1", "source": "Source1", "date": "01012025", "link": "https://www.youtube.com/watch?v=example1"},
+                {"song_name": "Song2", "artist": "Artist2", "source": "Source2", "date": "02012025", "link": "https://www.youtube.com/watch?v=example2"},
+                // 添加更多數據...
+            ];
+
             function fetchAndDisplayData(query) {
-                fetch(`/search?query=${encodeURIComponent(query)}`)
-                    .then(response => response.json())
-                    .then(data => {
-                        songTableBody.innerHTML = ''; // 清空表格內容
-                        displayData(data);
-                    });
+                const filteredData = allData.filter(row => 
+                    row.song_name.toLowerCase().includes(query) ||
+                    row.artist.toLowerCase().includes(query) ||
+                    row.source.toLowerCase().includes(query)
+                );
+                
+                // 清空現有的表格內容
+                songTableBody.innerHTML = '';
+                
+                // 顯示篩選後的數據
+                displayData(filteredData);
             }
 
             searchInput.addEventListener('input', function(e) {
-                const query = e.target.value;
+                const query = e.target.value.toLowerCase();
                 fetchAndDisplayData(query);
             });
 
             function displayData(data) {
-                Object.entries(data).forEach(([key, rows]) => {
+                // 按song_name和artist分組並排序
+                const groupedData = data.reduce((acc, row) => {
+                    const key = `${row.song_name}-${row.artist}`;
+                    if (!acc[key]) {
+                        acc[key] = [];
+                    }
+                    acc[key].push(row);
+                    return acc;
+                }, {});
+
+                Object.values(groupedData).forEach(group => {
+                    group.sort((a, b) => new Date(b.date.substring(4, 8) + '-' + b.date.substring(2, 4) + '-' + b.date.substring(0, 2)) - new Date(a.date.substring(4, 8) + '-' + a.date.substring(2, 4) + '-' + a.date.substring(0, 2)));
+                });
+
+                // 生成表格內容
+                Object.entries(groupedData).forEach(([key, rows]) => {
                     const maxRows = Math.min(rows.length, 3); // 最多顯示3次日期
                     const newRow = songTableBody.insertRow();
 
