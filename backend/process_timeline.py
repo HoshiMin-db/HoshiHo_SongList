@@ -3,6 +3,9 @@ import re
 import os
 from datetime import datetime
 
+# 這些日期是會員限定直播
+member_exclusive_dates = ['20231202', '20231104', '20231111', '20231216', '20231118', '20231223', '20231125', '20231028', '20231231']
+
 def parse_time(time_str):
     """將時間字符串轉換為秒數"""
     # 確保用半角字符 ':'
@@ -29,13 +32,15 @@ def process_timeline(file_path, date_str):
             if len(parts) == 4:
                 time_str, song_name, artist, source = parts
                 link = create_link(video_id, time_str)
+                is_member_exclusive = date_str in member_exclusive_dates
                 data.append({
                     'date': date_str,
                     'time': time_str,
                     'song_name': song_name,
                     'artist': artist,
                     'source': source,
-                    'link': link
+                    'link': link,
+                    'is_member_exclusive': is_member_exclusive
                 })
     return data
 
