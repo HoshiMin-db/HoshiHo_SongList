@@ -1981,6 +1981,16 @@
     },
     {
         "date": "20231209",
+        "time": "02:03:29",
+        "song_name": "あなたがいた森",
+        "artist": "樹海",
+        "source": "Fate/stay night",
+        "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=7409s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20231209",
         "time": "02:15:12",
         "song_name": "笑顔に会いたい",
         "artist": "濱田理恵",
@@ -2016,6 +2026,36 @@
         "artist": "伊集加代子",
         "source": "アルプスの少女ハイジ",
         "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=10824s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20231209",
+        "time": "03:06:43",
+        "song_name": "ペリーヌものがたり",
+        "artist": "大杉久美子",
+        "source": "ペリーヌ物語",
+        "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=11203s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20231209",
+        "time": "03:06:44",
+        "song_name": "気まぐれバロン",
+        "artist": "大杉久美子",
+        "source": "ペリーヌ物語",
+        "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=11204s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20231209",
+        "time": "03:16:16",
+        "song_name": "きこえるかしら",
+        "artist": "大和田りつこ",
+        "source": "赤毛のアン",
+        "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=11776s",
         "is_member_exclusive": false,
         "is_acapella": false
     },
@@ -2061,6 +2101,16 @@
     },
     {
         "date": "20231209",
+        "time": "03:53:53",
+        "song_name": "Do-Re-Mi",
+        "artist": "Julie Andrews",
+        "source": "The Sound Of Music",
+        "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=14033s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20231209",
         "time": "03:58:27",
         "song_name": "My Favourite Things",
         "artist": "Julie Andrews",
@@ -2082,7 +2132,7 @@
     {
         "date": "20231209",
         "time": "04:18:37",
-        "song_name": "Love with You~愛のプレゼント~",
+        "song_name": "Love with you ~愛のプレゼント~",
         "artist": "小林千絵",
         "source": "牧場の少女カトリ",
         "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=15517s",
