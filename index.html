@@ -255,8 +255,8 @@
                             link.textContent = formattedDate;
                             link.target = '_blank';
                             link.onclick = function(event) {
-                                event.preventDefault();
-                                  if (validUrls.some(validUrl => link.href.startsWith(validUrl))) {
+    event.preventDefault();
+    if (validUrls.some(validUrl => link.href.startsWith(validUrl))) {
         const floatingPlayerContainer = document.getElementById('floatingPlayerContainer');
         const floatingPlayer = document.getElementById('floatingPlayer');
         floatingPlayer.src = createYoutubeEmbed(link.href);
@@ -296,16 +296,24 @@
         rows.forEach(row => table.getElementsByTagName('tbody')[0].appendChild(row));
     }
 function createYoutubeEmbed(url) {
-        // 提取 YouTube 視頻 ID
-        let videoId = '';
-        const urlObj = new URL(url);
-        if (url.includes('watch?v=')) {
-            videoId = urlObj.searchParams.get('v');
-        } else if (url.includes('youtu.be/')) {
-            videoId = urlObj.pathname.substring(1);
+    let videoId = '';
+    let startTime = 0;
+    const urlObj = new URL(url);
+
+    if (url.includes('watch?v=')) {
+        videoId = urlObj.searchParams.get('v');
+        if (urlObj.searchParams.get('t')) {
+            startTime = urlObj.searchParams.get('t').replace('s', '');
         }
-        return `https://www.youtube.com/embed/${videoId}`;
+    } else if (url.includes('youtu.be/')) {
+        videoId = urlObj.pathname.substring(1);
+        if (urlObj.searchParams.get('t')) {
+            startTime = urlObj.searchParams.get('t').replace('s', '');
+        }
     }
+
+    return `https://www.youtube.com/embed/${videoId}?start=${startTime}`;
+}
             function closeFloatingPlayer() {
         const floatingPlayerContainer = document.getElementById('floatingPlayerContainer');
         const floatingPlayer = document.getElementById('floatingPlayer');
