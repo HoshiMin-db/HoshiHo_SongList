@@ -1,5 +1,4 @@
 import os
-import re
 import json
 import base64
 from googleapiclient.discovery import build
@@ -9,11 +8,18 @@ from datetime import datetime, timedelta
 # 從環境變量中讀取 Google API 憑證
 google_sheets_credentials = os.getenv('GOOGLE_SHEETS_CREDENTIALS')
 google_api_key = os.getenv('GOOGLE_API_KEY')
-credentials_info = json.loads(base64.b64decode(google_sheets_credentials))
-credentials = service_account.Credentials.from_service_account_info(credentials_info)
+
+if not google_sheets_credentials or not google_api_key:
+    raise ValueError("Missing Google API credentials or API key")
+
+try:
+    credentials_info = json.loads(base64.b64decode(google_sheets_credentials))
+    credentials = service_account.Credentials.from_service_account_info(credentials_info)
+except Exception as e:
+    raise ValueError("Invalid Google Sheets credentials") from e
 
 # YouTube Data API 客戶端
-youtube = build('youtube', 'v3', developerKey=google_api_key)
+youtube = build('youtube', 'v3', credentials=credentials, developerKey=google_api_key)
 
 # 設定過濾日期 (日本標準時間)
 FILTER_DATE = datetime.strptime('2024-01-25', '%Y-%m-%d')
@@ -39,10 +45,7 @@ def get_video_ids_from_playlist(playlist_id):
     return video_ids
 
 def get_video_date(video_id):
-    request = youtube.videos().list(
-        part='snippet',
-        id=video_id
-    )
+    request = youtube.videos().list(part='snippet', id=video_id)
     response = request.execute()
     video_date_str = response['items'][0]['snippet']['publishedAt']
     video_date = datetime.strptime(video_date_str, '%Y-%m-%dT%H:%M:%SZ')
@@ -50,11 +53,7 @@ def get_video_date(video_id):
 
 def get_comments(video_id):
     comments = []
-    request = youtube.commentThreads().list(
-        part='snippet',
-        videoId=video_id,
-        maxResults=100
-    )
+    request = youtube.commentThreads().list(part='snippet', videoId=video_id, maxResults=100)
     while request:
         response = request.execute()
         for item in response['items']:
