@@ -67,6 +67,7 @@ def get_comments(video_id):
 
 def extract_timestamps(comments):
     timestamps = []
+    # 更新正則表達式來匹配提供的時間軸留言格式
     pattern = re.compile(r'(\d{2}:\d{2}:\d{2})\s+(.+)\s+/\s+(.+)')
     for comment in comments:
         matches = pattern.findall(comment)
