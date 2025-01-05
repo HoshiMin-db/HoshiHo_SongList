@@ -28,6 +28,15 @@ document.addEventListener("DOMContentLoaded", function() {
             row.artist.toLowerCase().includes(query) ||
             row.source.toLowerCase().includes(query)
         );
+        // 插入替換簡化曲名的代碼
+        const replaceSongs = {
+            'rorikami': '粛聖‼ ロリ神レクイエム☆'
+    };
+        filteredData.forEach(row => {
+            if (replaceSongs[row.song_name]) {
+                row.song_name = replaceSongs[row.song_name];
+        }
+    });
 
         // 顯示篩選後的數據
         displayData(filteredData);
