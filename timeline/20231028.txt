@@ -1,6 +1,6 @@
 ID = amLonY7YKrs
 
-00:11:55 |  魔女と旋律の街 | Fty
+00:11:55 | 魔女と旋律の街 | Fty
 
 00:20:29 | 旅の途中 | 清浦夏実 | 狼と香辛料
 
@@ -14,7 +14,7 @@ ID = amLonY7YKrs
 
 01:47:03 | Weiß ～幻想への誘い～ | 霜月はるか†Revo(Sound Horizon)
 
-02:02:00 | EXEC_PHANTASMAGORIA/. | みとせのりこ、霜月はるか、志方あきこ | アルトネリコ
+02:02:00 | EXEC_PHANTASMAGORIA/. | みとせのりこ、志方あきこ、霜月はるか | アルトネリコ
 
 02:16:30 | EXEC_COSMOFLIPS/. | KOKIA | アルトネリコ
 
