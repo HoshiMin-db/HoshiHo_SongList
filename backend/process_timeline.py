@@ -24,10 +24,21 @@ def main():
                 result = subprocess.run(['python', 'backend/process_timeline_new.py', file_path], capture_output=True, text=True)
             
             if result.returncode == 0:
-                data = json.loads(result.stdout)
-                for item in data:
-                    item['date'] = date_str
-                all_data.extend(data)
+                # 檢查 result.stdout 是否為空
+                if not result.stdout:
+                    print(f"Error: No output received from the command for file {file_path}.")
+                    continue
+                
+                # 打印 result.stdout 的內容
+                print(f"Command output for {file_path}:", result.stdout)
+                
+                try:
+                    data = json.loads(result.stdout)
+                    for item in data:
+                        item['date'] = date_str
+                    all_data.extend(data)
+                except json.JSONDecodeError as e:
+                    print(f"Error decoding JSON for file {file_path}: {e}")
             else:
                 print(f"Error processing file {file_path}: {result.stderr}")
     
