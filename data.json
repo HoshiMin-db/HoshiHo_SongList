@@ -271,6 +271,16 @@
     },
     {
         "date": "20231216",
+        "time": "00:58:53",
+        "song_name": "Cadena",
+        "artist": "山本美禰子",
+        "source": "メルルのアトリエ",
+        "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=3533s",
+        "is_member_exclusive": true,
+        "is_acapella": true
+    },
+    {
+        "date": "20231216",
         "time": "01:43:20",
         "song_name": "ジョジョ～その血の運命～",
         "artist": "富永TOMMY弘明",
