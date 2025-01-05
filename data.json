@@ -1412,9 +1412,9 @@
     {
         "date": "20240127",
         "time": "03:00:22",
-        "song_name": "二人三脚 /『Tales of Symphonia -Knight of Ratatosk-』misono",
-        "artist": "",
-        "source": "",
+        "song_name": "二人三脚",
+        "artist": "misono",
+        "source": "Tales of Symphonia -Knight of Ratatosk-",
         "link": "https://www.youtube.com/watch?v=kw8Ia8qEJ74&t=10822s",
         "is_member_exclusive": false,
         "is_acapella": false
