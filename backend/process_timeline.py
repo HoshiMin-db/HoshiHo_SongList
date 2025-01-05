@@ -4,7 +4,6 @@ from datetime import datetime
 
 def parse_time(time_str):
     """將時間字符串轉換為秒數"""
-    # 確保用半角字符 ':'
     time_str = time_str.replace('：', ':')
     parts = list(map(int, time_str.split(':')))
     return parts[0] * 3600 + parts[1] * 60 + parts[2]
