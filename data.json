@@ -2332,7 +2332,7 @@
     {
         "date": "20240216",
         "time": "02:30:13",
-        "song_name": "BEYOND THE TIME (メビウスの宇宙を越えて)",
+        "song_name": "BEYOND THE TIME(メビウスの宇宙を越えて)",
         "artist": "TM NETWORK",
         "source": "機動戦士ガンダム 逆襲のシャア",
         "link": "https://www.youtube.com/watch?v=Z-1sxd5PK_M&t=9013s",
@@ -2362,7 +2362,7 @@
     {
         "date": "20240216",
         "time": "03:02:10",
-        "song_name": "ETERNAL WIND〜ほほえみは光る風の中〜",
+        "song_name": "ETERNAL WIND～ほほえみの風～",
         "artist": "森口博子",
         "source": "機動戦士ガンダムF91",
         "link": "https://www.youtube.com/watch?v=Z-1sxd5PK_M&t=10930s",
@@ -2482,12 +2482,12 @@
     {
         "date": "20240216",
         "time": "05:01:23",
-        "song_name": "愛の輪郭（フィールド）",
+        "song_name": "愛の輪郭(フィールド)",
         "artist": "KOKIA",
         "source": "ブレンパワード",
         "link": "https://www.youtube.com/watch?v=Z-1sxd5PK_M&t=18083s",
         "is_member_exclusive": false,
-        "is_acapella": false
+        "is_acapella": true
     },
     {
         "date": "20240216",
