@@ -283,25 +283,38 @@
             }
 
             function sortTable() {
-                const table = document.getElementById('songTable');
-                const rows = Array.from(table.getElementsByTagName('tbody')[0].rows);
-                
-                rows.sort((a, b) => {
-                    const aText = a.cells[1].textContent.toLowerCase();
-                    const bText = b.cells[1].textContent.toLowerCase();
-                    return aText.localeCompare(bText, 'zh-Hant');
-                });
+        const table = document.getElementById('songTable');
+        const rows = Array.from(table.getElementsByTagName('tbody')[0].rows);
+        
+        // 使用日文排序
+        rows.sort((a, b) => {
+            const aText = a.cells[1].textContent;
+            const bText = b.cells[1].textContent;
+            return aText.localeCompare(bText, 'ja-JP');
+        });
 
-                rows.forEach(row => table.getElementsByTagName('tbody')[0].appendChild(row));
-            }
-
+        rows.forEach(row => table.getElementsByTagName('tbody')[0].appendChild(row));
+    }
+function createYoutubeEmbed(url) {
+        // 提取 YouTube 視頻 ID
+        let videoId = '';
+        const urlObj = new URL(url);
+        if (url.includes('watch?v=')) {
+            videoId = urlObj.searchParams.get('v');
+        } else if (url.includes('youtu.be/')) {
+            videoId = urlObj.pathname.substring(1);
+        }
+        return `https://www.youtube.com/embed/${videoId}`;
+    }
             function closeFloatingPlayer() {
-                const floatingPlayerContainer = document.getElementById('floatingPlayerContainer');
-                floatingPlayerContainer.style.display = 'none';
-                const floatingPlayer = document.getElementById('floatingPlayer');
-                floatingPlayer.src = '';
-            }
+        const floatingPlayerContainer = document.getElementById('floatingPlayerContainer');
+        const floatingPlayer = document.getElementById('floatingPlayer');
+        floatingPlayer.src = ''; // 清空 src 來停止播放
+        floatingPlayerContainer.style.display = 'none';
+    }
 
+    // 將 closeFloatingPlayer 添加到全局作用域
+    window.closeFloatingPlayer = closeFloatingPlayer;
             // 初始加載所有數據
             fetchData(data => fetchAndDisplayData('', data));
         });
