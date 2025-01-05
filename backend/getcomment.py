@@ -1,25 +1,23 @@
 import os
 import json
-import base64
 from googleapiclient.discovery import build
 from google.oauth2 import service_account
 from datetime import datetime, timedelta
 
 # 從環境變量中讀取 Google API 憑證
 google_sheets_credentials = os.getenv('GOOGLE_SHEETS_CREDENTIALS')
-google_api_key = os.getenv('GOOGLE_API_KEY')
 
-if not google_sheets_credentials or not google_api_key:
-    raise ValueError("Missing Google API credentials or API key")
+if not google_sheets_credentials:
+    raise ValueError("Missing Google Sheets credentials")
 
 try:
-    credentials_info = json.loads(base64.b64decode(google_sheets_credentials))
+    credentials_info = json.loads(google_sheets_credentials)
     credentials = service_account.Credentials.from_service_account_info(credentials_info)
 except Exception as e:
     raise ValueError("Invalid Google Sheets credentials") from e
 
 # YouTube Data API 客戶端
-youtube = build('youtube', 'v3', credentials=credentials, developerKey=google_api_key)
+youtube = build('youtube', 'v3', credentials=credentials)
 
 # 設定過濾日期 (日本標準時間)
 FILTER_DATE = datetime.strptime('2024-01-25', '%Y-%m-%d')
