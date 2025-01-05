@@ -24,7 +24,7 @@ ID = 70E6Ns3_THo
 
 02:59:51　Shangri-La  / 『蒼穹のファフナー』angela
 
-03:14:23　Mystic Girl  / 『蒼穹のファフナー』柏原真智子 (アカペラ)
+03:14:23　Mystic Girl  / 『蒼穹のファフナー』柏原真智子
 
 03:24:02　Separation  / 『蒼穹のファフナー』angela
 
@@ -36,7 +36,7 @@ ID = 70E6Ns3_THo
 
 04:00:00　ウンディーネ  / 『ARIA The ANIMATION』牧野由依 (Short Ver.)
 
-04:05:33　バルカローレ  / 『ARIA The ANIMATION』河井英里 (アカペラ)
+04:05:33　バルカローレ  / 『ARIA The ANIMATION』河井英里
 
 04:18:58　エンジェル☆うっきー  / 『ギャラクシーエンジェル』エンジェル隊
 
