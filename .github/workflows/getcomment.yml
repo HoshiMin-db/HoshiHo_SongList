@@ -2,7 +2,7 @@ name: Get YouTube Comments
 
 on:
   schedule:
-    - cron: '0 3 * * 1'  # 每周一 UTC 時間上午 3 時（日本標準時間中午 12 時）
+    - cron: '0 3 * * 1'  # 每周一UTC時間上午3時（日本標準時間中午12時）
   push:
     paths:
       - 'README.md'
