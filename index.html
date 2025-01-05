@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -115,6 +115,7 @@
             text-align: center;
             line-height: 30px;
             cursor: pointer;
+            user-select: none; /* 防止文字被選中 */
         }
 
         .close-btn:hover {
@@ -163,24 +164,36 @@
         </tbody>
     </table>
 
+    <!-- 修改浮動播放器容器 -->
     <div id="floatingPlayerContainer" class="floating-player-container">
         <div class="close-btn" onclick="closeFloatingPlayer()">關閉</div>
-        <iframe id="floatingPlayer" class="floating-player"></iframe>
+        <iframe id="floatingPlayer" class="floating-player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
     </div>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const searchInput = document.getElementById('searchInput');
-            const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
-            const validUrls = ['https://www.youtube.com'];
+    document.addEventListener("DOMContentLoaded", function() {
+        const searchInput = document.getElementById('searchInput');
+        const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
+        const validUrls = ['https://www.youtube.com'];
+        let totalSongCount = 0; // 添加總歌曲數變量
 
-            function fetchData(callback) {
-                fetch('data.json')
-                    .then(response => response.json())
-                    .then(data => {
-                        callback(data);
-                    });
-            }
+        function fetchData(callback) {
+            fetch('data.json')
+                .then(response => response.json())
+                .then(data => {
+                    // 初始化時設置總歌曲數
+                    if (totalSongCount === 0) {
+                        const uniqueSongs = new Set(data.map(item => `${item.song_name}-${item.artist}`));
+                        totalSongCount = uniqueSongs.size;
+                        document.getElementById('songCount').textContent = totalSongCount;
+                }
+                callback(data);
+            });
+    }
 
             function fetchAndDisplayData(query, allData) {
                 // 清空表格内容
