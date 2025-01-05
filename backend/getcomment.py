@@ -8,11 +8,12 @@ from datetime import datetime, timedelta
 
 # 從環境變量中讀取 Google API 憑證
 google_sheets_credentials = os.getenv('GOOGLE_SHEETS_CREDENTIALS')
+google_api_key = os.getenv('GOOGLE_API_KEY')
 credentials_info = json.loads(base64.b64decode(google_sheets_credentials))
 credentials = service_account.Credentials.from_service_account_info(credentials_info)
 
 # YouTube Data API 客戶端
-youtube = build('youtube', 'v3', credentials=credentials)
+youtube = build('youtube', 'v3', developerKey=google_api_key)
 
 # 設定過濾日期 (日本標準時間)
 FILTER_DATE = datetime.strptime('2024-01-25', '%Y-%m-%d')
