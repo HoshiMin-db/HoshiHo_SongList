@@ -34,11 +34,13 @@ def get_video_ids_from_playlist(playlist_id):
     )
     while request:
         response = request.execute()
+        print(f"Fetched {len(response['items'])} items from playlist")
         for item in response['items']:
             video_id = item['contentDetails']['videoId']
             video_date = get_video_date(video_id)
             # 將 UTC 時間轉換為 JST 時間
             video_date_jst = video_date + JST_OFFSET
+            print(f"Video ID: {video_id}, Video Date (JST): {video_date_jst}")
             if video_date_jst > FILTER_DATE:
                 video_ids.append((video_id, video_date_jst))
         request = youtube.playlistItems().list_next(request, response)
@@ -56,6 +58,7 @@ def get_comments(video_id):
     request = youtube.commentThreads().list(part='snippet', videoId=video_id, maxResults=100)
     while request:
         response = request.execute()
+        print(f"Fetched {len(response['items'])} comments for video ID: {video_id}")
         for item in response['items']:
             comment = item['snippet']['topLevelComment']['snippet']['textDisplay']
             comments.append(comment)
@@ -69,6 +72,7 @@ def extract_timestamps(comments):
         matches = pattern.findall(comment)
         for match in matches:
             timestamps.append(match)
+    print(f"Extracted {len(timestamps)} timestamps from comments")
     return timestamps
 
 def write_timestamps_to_file(video_id, video_date, timestamps):
@@ -94,12 +98,15 @@ def main():
     playlist_id = 'PL7H5HbMMfm_lUoLIkPAZkhF_W0oDf5WEk'
     
     video_ids_dates = get_video_ids_from_playlist(playlist_id)
+    print(f"Found {len(video_ids_dates)} videos after filtering by date")
     
     for video_id, video_date in video_ids_dates:
         comments = get_comments(video_id)
         timestamps = extract_timestamps(comments)
         if timestamps:
             write_timestamps_to_file(video_id, video_date, timestamps)
+        else:
+            print(f"No timestamps found for video ID: {video_id}")
 
 if __name__ == '__main__':
     main()
