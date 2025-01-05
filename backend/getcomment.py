@@ -68,10 +68,11 @@ def get_comments(video_id):
 def extract_timestamps(comments):
     timestamps = []
     # 更新正則表達式來匹配提供的時間軸留言格式
-    pattern = re.compile(r'(\d{2}:\d{2}:\d{2})　(.+)\s/\s(.*)')
+    pattern = re.compile(r'(\d{2}:\d{2}:\d{2})\s+(.+)\s/\s(.*)')
     for comment in comments:
         matches = pattern.findall(comment)
         for match in matches:
+            print(f"Match found: {match}")
             timestamps.append(match)
     print(f"Extracted {len(timestamps)} timestamps from comments")
     return timestamps
@@ -88,7 +89,7 @@ def write_timestamps_to_file(video_id, video_date, timestamps):
         for time, song, artist in timestamps:
             f.write(f'{time} | {song} | {artist} | \n')
     
-    print(f"File {file_name} has been created successfully.")
+    print(f"File {file_name} has been created successfully at {file_path}.")
 
 def main():
     playlist_id = 'PL7H5HbMMfm_lUoLIkPAZkhF_W0oDf5WEk'
