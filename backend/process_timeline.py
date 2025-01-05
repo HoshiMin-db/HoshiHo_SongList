@@ -19,7 +19,6 @@ def load_exceptions(exceptions_file):
     acapella_songs = {}  # 按日期存儲清唱標籤
     global_acapella_songs = set()  # 存儲沒有日期的清唱曲名
     acapella_songs_with_artist = {}  # 存儲有日期和歌手的清唱歌曲
-    replace_songs = {}  # 存儲替換規則
 
     with open(exceptions_file, 'r', encoding='utf-8') as f:
         lines = f.readlines()
@@ -43,12 +42,10 @@ def load_exceptions(exceptions_file):
                     if artist not in acapella_songs[date]:
                         acapella_songs[date][artist] = set()
                     acapella_songs[date][artist].add(song_name)
-            elif parts[0] == 'replace_songs':
-                replace_songs[parts[1]] = parts[2]
     
-    return member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist, replace_songs
+    return member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist
 
-def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist, replace_songs):
+def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist):
     data = []
     with open(file_path, 'r', encoding='utf-8') as f:
         lines = f.readlines()
@@ -61,10 +58,6 @@ def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs
             parts = line.strip().split(' | ')
             if len(parts) == 4:
                 time_str, song_name, artist, source = parts
-
-                # 應用替換規則
-                if song_name in replace_songs:
-                    song_name = replace_songs[song_name]
 
                 link = create_link(video_id, time_str)
                 is_member_exclusive = date_str in member_exclusive_dates
@@ -91,7 +84,7 @@ def main():
     all_data = []
 
     # 讀取例外規則
-    member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist, replace_songs = load_exceptions(exceptions_file)
+    member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist = load_exceptions(exceptions_file)
     
     # 遍歷timeline資料夾中的所有文件
     for filename in os.listdir(timeline_dir):
@@ -101,7 +94,7 @@ def main():
         date_str = filename.split('.')[0]  # 假設文件名是日期格式
         
         try:
-            data = process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist, replace_songs)
+            data = process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist)
             all_data.extend(data)
         except Exception as e:
             print(f"Error processing file {file_path}: {e}")
