@@ -32,18 +32,23 @@ def get_video_ids_from_playlist(playlist_id):
         playlistId=playlist_id,
         maxResults=50
     )
+    
     while request:
         response = request.execute()
         print(f"Fetched {len(response['items'])} items from playlist")
+        
         for item in response['items']:
             video_id = item['contentDetails']['videoId']
             video_date = get_video_date(video_id)
             # 將 UTC 時間轉換為 JST 時間
             video_date_jst = video_date + JST_OFFSET
             print(f"Video ID: {video_id}, Video Date (JST): {video_date_jst}")
+            
             if video_date_jst > FILTER_DATE:
                 video_ids.append((video_id, video_date_jst))
+                
         request = youtube.playlistItems().list_next(request, response)
+    
     return video_ids
 
 def get_video_date(video_id):
@@ -56,35 +61,42 @@ def get_video_date(video_id):
 def get_comments(video_id):
     comments = []
     request = youtube.commentThreads().list(part='snippet', videoId=video_id, maxResults=100)
+    
     while request:
         response = request.execute()
         print(f"Fetched {len(response['items'])} comments for video ID: {video_id}")
+        
         for item in response['items']:
             comment = item['snippet']['topLevelComment']['snippet']['textDisplay']
             comments.append(comment)
+            
         request = youtube.commentThreads().list_next(request, response)
+    
     return comments
 
 def extract_timestamps(comments):
     timestamps = []
-    # 更新正則表達式來匹配提供的時間軸留言格式
-    pattern = re.compile(r'(\d{2}:\d{2}:\d{2})\s+(.+?)\s*/\s*『?(.*?)』?\s*(.+)')
+    # 更新正則表達式來匹配新的時間軸留言格式
+    pattern = re.compile(r'\d+[.．]?\s+(\d{2}:\d{2}:\d{2})\s+(.+?)\s*/\s*(?:『(.+?)』)?(.+)?')
+    
     for comment in comments:
         matches = pattern.findall(comment)
         for match in matches:
             time, song, source, artist = match
-            # 處理沒有出處的情況
-            if not source:
-                source = ''
+            # 移除可能的前後空白
+            song = song.strip()
+            source = source.strip() if source else ''
+            artist = artist.strip() if artist else ''
+            
             timestamps.append((time, song, artist, source))
-            print(f"Match found: {match}")
+            print(f"Match found: {(time, song, artist, source)}")
+    
     print(f"Extracted {len(timestamps)} timestamps from comments")
     return timestamps
 
 def write_timestamps_to_file(video_id, video_date, timestamps):
     output_dir = 'timeline'
     os.makedirs(output_dir, exist_ok=True)
-    
     file_name = video_date.strftime('%Y%m%d') + '.txt'
     file_path = os.path.join(output_dir, file_name)
     
@@ -97,7 +109,6 @@ def write_timestamps_to_file(video_id, video_date, timestamps):
 
 def main():
     playlist_id = 'PL7H5HbMMfm_lUoLIkPAZkhF_W0oDf5WEk'
-    
     video_ids_dates = get_video_ids_from_playlist(playlist_id)
     print(f"Found {len(video_ids_dates)} videos after filtering by date")
     
