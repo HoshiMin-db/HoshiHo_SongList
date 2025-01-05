@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", function() {
     let totalSongCount = 0; // 添加總歌曲數變量
 
     function fetchData(callback) {
-        fetch('data.json')
+        // 使用 no-cache 確保獲取最新資料
+        fetch('data.json', { cache: 'no-cache' })
             .then(response => response.json())
             .then(data => {
                 // 初始化時設置總歌曲數
