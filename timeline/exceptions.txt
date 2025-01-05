@@ -1,5 +1,7 @@
 member_exclusive_dates|20231028,20231104,20231111,20231118,20231125,20231202,20231216,20231223,20231231
 
+replace_songs|rorikami|粛聖!! ロリ神レクイエム☆
+
 acapella_songs|Cadena|山本美禰子
 acapella_songs|Eternal Love 2003|飯島真理
 acapella_songs|Falling, The Star Light|山本美禰子
