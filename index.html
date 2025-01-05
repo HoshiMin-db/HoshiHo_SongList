@@ -135,6 +135,45 @@
             color: red;
             margin-left: 5px;
         }
+
+        .acapella {
+            background-color: #e0f7fa; /* 淺藍色背景 */
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .search-container {
+                padding: 10px;
+            }
+
+            #searchInput {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            th, td {
+                padding: 8px;
+                font-size: 14px;
+            }
+
+            .floating-player-container {
+                width: 100%;
+                height: auto;
+                bottom: 10px;
+                right: 10px;
+            }
+
+            .floating-player {
+                height: 200px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -267,12 +306,15 @@
 };
                             dateCell.appendChild(link);
 
-                            // 添加鎖符號
+                            // 添加鎖符號和清唱標籤
                             if (row.is_member_exclusive) {
                                 const lockIcon = document.createElement('span');
                                 lockIcon.classList.add('lock-icon');
                                 lockIcon.textContent = '🔒';
                                 dateCell.appendChild(lockIcon);
+                            }
+                            if (row.is_acapella) {
+                                dateCell.classList.add('acapella');
                             }
                         }
                     }
