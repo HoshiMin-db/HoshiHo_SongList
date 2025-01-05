@@ -81,14 +81,6 @@ def main():
     timeline_dir = 'timeline'
     exceptions_file = os.path.join(timeline_dir, 'exceptions.txt')
     all_data = []
-    processed_files_path = os.path.join('backend', 'processed_files.json')
-    
-    # 讀取已經處理的文件信息
-    if os.path.exists(processed_files_path):
-        with open(processed_files_path, 'r', encoding='utf-8') as f:
-            processed = json.load(f)
-    else:
-        processed = {}
 
     # 讀取例外規則
     member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist = load_exceptions(exceptions_file)
@@ -100,25 +92,15 @@ def main():
         file_path = os.path.join(timeline_dir, filename)
         date_str = filename.split('.')[0]  # 假設文件名是日期格式
         
-        # 獲取文件的修改時間
-        modified_time = os.path.getmtime(file_path)
-        
-        # 如果文件未處理過或有更新
-        if filename not in processed or processed[filename] < modified_time:
-            try:
-                data = process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist)
-                all_data.extend(data)
-                processed[filename] = modified_time
-            except Exception as e:
-                print(f"Error processing file {file_path}: {e}")
+        try:
+            data = process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist)
+            all_data.extend(data)
+        except Exception as e:
+            print(f"Error processing file {file_path}: {e}")
     
     # 將數據保存到data.json文件中
     with open('data.json', 'w', encoding='utf-8') as f:
         json.dump(all_data, f, ensure_ascii=False, indent=4)
-    
-    # 保存已處理的文件信息
-    with open(processed_files_path, 'w', encoding='utf-8') as f:
-        json.dump(processed, f, ensure_ascii=False, indent=4)
 
 if __name__ == '__main__':
     main()
