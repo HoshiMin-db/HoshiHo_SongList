@@ -256,15 +256,15 @@
                             link.target = '_blank';
                             link.onclick = function(event) {
                                 event.preventDefault();
-                                if (validUrls.some(validUrl => link.href.startsWith(validUrl))) {
-                                    const floatingPlayerContainer = document.getElementById('floatingPlayerContainer');
-                                    const floatingPlayer = document.getElementById('floatingPlayer');
-                                    floatingPlayer.src = link.href.replace('watch?v=', 'embed/');
-                                    floatingPlayerContainer.style.display = 'block';
-                                } else {
-                                    alert('無效的URL');
-                                }
-                            };
+                                  if (validUrls.some(validUrl => link.href.startsWith(validUrl))) {
+        const floatingPlayerContainer = document.getElementById('floatingPlayerContainer');
+        const floatingPlayer = document.getElementById('floatingPlayer');
+        floatingPlayer.src = createYoutubeEmbed(link.href);
+        floatingPlayerContainer.style.display = 'block';
+    } else {
+        alert('無效的URL');
+    }
+};
                             dateCell.appendChild(link);
 
                             // 添加鎖符號
