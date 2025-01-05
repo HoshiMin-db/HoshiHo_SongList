@@ -28,6 +28,7 @@ jobs:
     - name: Run getcomment script
       run: python backend/getcomment.py
       env:
+        GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
         GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
 
     - name: Commit and push changes
