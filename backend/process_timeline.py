@@ -1,3 +1,50 @@
+import json
+import os
+from datetime import datetime
+
+def parse_time(time_str):
+    """將時間字符串轉換為秒數"""
+    time_str = time_str.replace('：', ':')
+    parts = list(map(int, time_str.split(':')))
+    return parts[0] * 3600 + parts[1] * 60 + parts[2]
+
+def create_link(video_id, time_str):
+    """根據影片ID和時間創建超連結"""
+    time_in_seconds = parse_time(time_str)
+    return f"https://www.youtube.com/watch?v={video_id}&t={time_in_seconds}s"
+
+def load_exceptions(exceptions_file):
+    """從指定文件讀取例外規則"""
+    member_exclusive_dates = set()
+    acapella_songs = {}  # 按日期存儲清唱標籤
+    global_acapella_songs = set()  # 存儲沒有日期的清唱曲名
+    acapella_songs_with_artist = {}  # 存儲有日期和歌手的清唱歌曲
+
+    with open(exceptions_file, 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+        for line in lines:
+            parts = line.strip().split('|')
+            if parts[0] == 'member_exclusive_dates':
+                dates = parts[1].split(',')
+                member_exclusive_dates.update(dates)
+            elif parts[0] == 'acapella_songs':
+                if len(parts) == 2:
+                    global_acapella_songs.add(parts[1])  # 沒有日期和歌手的曲名
+                elif len(parts) == 3:
+                    song_name, artist = parts[1], parts[2]
+                    if artist not in acapella_songs_with_artist:
+                        acapella_songs_with_artist[artist] = set()
+                    acapella_songs_with_artist[artist].add(song_name)
+                elif len(parts) == 4:
+                    song_name, artist, date = parts[1], parts[2], parts[3]
+                    if date not in acapella_songs:
+                        acapella_songs[date] = {}
+                    if artist not in acapella_songs[date]:
+                        acapella_songs[date][artist] = set()
+                    acapella_songs[date][artist].add(song_name)
+
+    return member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist
+
 def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist):
     data = []
     with open(file_path, 'r', encoding='utf-8') as f:
