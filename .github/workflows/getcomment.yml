@@ -31,12 +31,16 @@ jobs:
         GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
         GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
 
-    - name: Commit and push changes
+    - name: Check for changes
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git add timeline/
-        git commit -m 'Add new comments to timeline'
-        git push
+        if git diff-index --quiet HEAD --; then
+          echo "No changes to commit"
+        else
+          git commit -m 'Add new comments to timeline'
+          git push
+        fi
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
