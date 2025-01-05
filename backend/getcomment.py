@@ -1,9 +1,9 @@
 import os
 import json
+import re
 from googleapiclient.discovery import build
 from google.oauth2 import service_account
 from datetime import datetime, timedelta
-import re
 
 # 從環境變量中讀取 Google API 憑證
 google_sheets_credentials = os.getenv('GOOGLE_SHEETS_CREDENTIALS')
@@ -87,6 +87,8 @@ def write_timestamps_to_file(video_id, video_date, timestamps):
         f.write(f'ID = {video_id}\n')
         for time, song, artist in timestamps:
             f.write(f'{time} | {song} | {artist} | \n')
+    
+    print(f"File {file_name} has been created successfully.")
 
 def main():
     playlist_id = 'PL7H5HbMMfm_lUoLIkPAZkhF_W0oDf5WEk'
