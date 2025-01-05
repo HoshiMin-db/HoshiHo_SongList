@@ -1,0 +1,34 @@
+member_exclusive_dates|20231028,20231104,20231111,20231118,20231125,20231202,20231216,20231223,20231231
+
+acapella_songs|Cadena|山本美禰子
+acapella_songs|Eternal Love 2003|飯島真理
+acapella_songs|Falling, The Star Light|山本美禰子
+acapella_songs|Follow the Nightingale|KOKIA
+acapella_songs|Ievan polkka
+acapella_songs|JUSTITIA|Lia
+acapella_songs|Lilium|野間久美子|20240607
+acapella_songs|Mystic Girl|柏原真智子
+acapella_songs|pastel pure|ALI PROJECT
+acapella_songs|POWDER SNOW
+acapella_songs|Road to Glory～for Dragon Nest|KOKIA
+acapella_songs|Romantic Chaser|小枝
+acapella_songs|Snow Rain|植田佳奈
+acapella_songs|Twinkle Snow|津田朱里
+acapella_songs|York of love.|石橋優子
+acapella_songs|愛の輪郭(フィールド)|KOKIA
+acapella_songs|祈りの彼方|志方あきこ
+acapella_songs|片翼の天使
+acapella_songs|コッコロ
+acapella_songs|さくら|真宮寺さくら(横山智佐)
+acapella_songs|邪魔はさせない|奥井雅美
+acapella_songs|真実の行方|三谷朋世
+acapella_songs|絶対運命黙示録
+acapella_songs|大譜歌
+acapella_songs|誰ガ為ノ世界|志方あきこ|20240524
+acapella_songs|調和 oto~with reflection~|KOKIA
+acapella_songs|虹の旋律
+acapella_songs|バルカローレ
+acapella_songs|花咲く乙女
+acapella_songs|やさしい両手|三谷朋世
+acapella_songs|優しくキミは微笑んでいた|三谷朋世
+acapella_songs|恋獄|霜月はるか
