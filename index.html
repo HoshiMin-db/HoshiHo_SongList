@@ -213,11 +213,12 @@
         </iframe>
     </div>
 
+    <!-- 引用外部 JavaScript 文件 -->
+    <script src="js/youtube-player.js"></script>
     <script>
     document.addEventListener("DOMContentLoaded", function() {
         const searchInput = document.getElementById('searchInput');
         const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
-        const validUrls = ['https://www.youtube.com'];
         let totalSongCount = 0; // 添加總歌曲數變量
 
         function fetchData(callback) {
@@ -294,16 +295,9 @@
                             link.textContent = formattedDate;
                             link.target = '_blank';
                             link.onclick = function(event) {
-    event.preventDefault();
-    if (validUrls.some(validUrl => link.href.startsWith(validUrl))) {
-        const floatingPlayerContainer = document.getElementById('floatingPlayerContainer');
-        const floatingPlayer = document.getElementById('floatingPlayer');
-        floatingPlayer.src = createYoutubeEmbed(link.href);
-        floatingPlayerContainer.style.display = 'block';
-    } else {
-        alert('無效的URL');
-    }
-};
+                                event.preventDefault();
+                                openFloatingPlayer(link.href);
+                            };
                             dateCell.appendChild(link);
 
                             // 添加鎖符號和清唱標籤
@@ -325,46 +319,19 @@
             }
 
             function sortTable() {
-        const table = document.getElementById('songTable');
-        const rows = Array.from(table.getElementsByTagName('tbody')[0].rows);
-        
-        // 使用日文排序
-        rows.sort((a, b) => {
-            const aText = a.cells[1].textContent;
-            const bText = b.cells[1].textContent;
-            return aText.localeCompare(bText, 'ja-JP');
-        });
+                const table = document.getElementById('songTable');
+                const rows = Array.from(table.getElementsByTagName('tbody')[0].rows);
+                
+                // 使用日文排序
+                rows.sort((a, b) => {
+                    const aText = a.cells[1].textContent;
+                    const bText = b.cells[1].textContent;
+                    return aText.localeCompare(bText, 'ja-JP');
+                });
 
-        rows.forEach(row => table.getElementsByTagName('tbody')[0].appendChild(row));
-    }
-function createYoutubeEmbed(url) {
-    let videoId = '';
-    let startTime = 0;
-    const urlObj = new URL(url);
+                rows.forEach(row => table.getElementsByTagName('tbody')[0].appendChild(row));
+            }
 
-    if (url.includes('watch?v=')) {
-        videoId = urlObj.searchParams.get('v');
-        if (urlObj.searchParams.get('t')) {
-            startTime = urlObj.searchParams.get('t').replace('s', '');
-        }
-    } else if (url.includes('youtu.be/')) {
-        videoId = urlObj.pathname.substring(1);
-        if (urlObj.searchParams.get('t')) {
-            startTime = urlObj.searchParams.get('t').replace('s', '');
-        }
-    }
-
-    return `https://www.youtube.com/embed/${videoId}?start=${startTime}`;
-}
-            function closeFloatingPlayer() {
-        const floatingPlayerContainer = document.getElementById('floatingPlayerContainer');
-        const floatingPlayer = document.getElementById('floatingPlayer');
-        floatingPlayer.src = ''; // 清空 src 來停止播放
-        floatingPlayerContainer.style.display = 'none';
-    }
-
-    // 將 closeFloatingPlayer 添加到全局作用域
-    window.closeFloatingPlayer = closeFloatingPlayer;
             // 初始加載所有數據
             fetchData(data => fetchAndDisplayData('', data));
         });
