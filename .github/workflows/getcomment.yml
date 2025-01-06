@@ -25,17 +25,17 @@ jobs:
           python -m pip install --upgrade pip
           pip install google-api-python-client google-auth google-auth-oauthlib google-auth-httplib2
 
+      - name: Configure Git Identity
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+
       - name: Check and Fetch Comments
         env:
           GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
         run: |
           python backend/getcomment.py
-
-      - name: Configure Git Identity
-        run: |
-          git config user.name "GitHub Actions Bot"
-          git config user.email "actions@github.com"
 
       - name: Commit and Push changes
         run: |
