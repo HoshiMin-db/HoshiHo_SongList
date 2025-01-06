@@ -1,7 +1,10 @@
+// js/data.js
+import { normalizeString, sortTable } from './utils.js';
+
 let allData = [];
 let totalSongCount = 0;
 
-function fetchData(callback) {
+export function fetchData(callback) {
     fetch('data.json', { cache: 'no-cache' })
         .then(response => response.json())
         .then(data => {
@@ -15,7 +18,8 @@ function fetchData(callback) {
         });
 }
 
-function fetchAndDisplayData(query, numDates = 3) {
+export function fetchAndDisplayData(query, numDates = 3) {
+    const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
     songTableBody.innerHTML = '';
 
     const filteredData = allData.filter(row =>
@@ -34,4 +38,65 @@ function fetchAndDisplayData(query, numDates = 3) {
     });
 
     displayData(filteredData, numDates);
+}
+
+function displayData(data, numDates) {
+    const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
+    
+    const groupedData = data.reduce((acc, row) => {
+        const key = `${normalizeString(row.song_name)}-${normalizeString(row.artist)}`;
+        if (!acc[key]) {
+            acc[key] = [];
+        }
+        acc[key].push(row);
+        return acc;
+    }, {});
+
+    Object.values(groupedData).forEach(group => {
+        group.sort((a, b) => new Date(b.date.substring(0, 4) + '-' + b.date.substring(4, 6) + '-' + b.date.substring(6))
+            - new Date(a.date.substring(0, 4) + '-' + a.date.substring(4, 6) + '-' + a.date.substring(6)));
+    });
+
+    Object.entries(groupedData).forEach(([key, rows]) => {
+        const newRow = songTableBody.insertRow();
+        newRow.insertCell().textContent = rows[0].song_name.charAt(0).toUpperCase();
+        newRow.insertCell().textContent = rows[0].song_name;
+        newRow.insertCell().textContent = rows[0].artist;
+        newRow.insertCell().textContent = rows[0].source;
+        newRow.insertCell().textContent = rows[0].note || '';
+
+        rows.slice(0, numDates).forEach((row) => {
+            const dateCell = newRow.insertCell();
+            dateCell.classList.add('date-cell');
+            const link = document.createElement('a');
+            const date = row.date;
+            const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
+            link.href = row.link;
+            link.textContent = formattedDate;
+            link.target = '_blank';
+            link.onclick = function(event) {
+                event.preventDefault();
+                openFloatingPlayer(link.href);
+            };
+            dateCell.appendChild(link);
+
+            if (row.is_member_exclusive) {
+                const lockIcon = document.createElement('span');
+                lockIcon.classList.add('lock-icon');
+                lockIcon.textContent = '🔒';
+                dateCell.appendChild(lockIcon);
+            }
+            if (row.is_acapella) {
+                dateCell.classList.add('acapella');
+            }
+        });
+
+        // 如果日期數量少於 numDates，補齊空白儲存格，不設置背景顏色
+        for (let i = rows.length; i < numDates; i++) {
+            const emptyCell = newRow.insertCell();
+            emptyCell.classList.add('date-cell');
+        }
+    });
+
+    sortTable();
 }
