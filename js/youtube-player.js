@@ -35,6 +35,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     const floatingPlayerContainer = document.getElementById('floatingPlayerContainer');
                     const floatingPlayer = document.getElementById('floatingPlayer');
                     floatingPlayer.src = createYoutubeEmbed(url);
+                    floatingPlayer.style.width = '100%';
+                    floatingPlayer.style.height = '100%';
                     floatingPlayerContainer.style.display = 'block';
                 }
             } else {
