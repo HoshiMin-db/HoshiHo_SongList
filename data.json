@@ -5276,7 +5276,7 @@
         "artist": "林原めぐみ",
         "source": "朝霧の巫女",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=2431s",
-        "is_member_exclusive": true,
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -5286,7 +5286,7 @@
         "artist": "志方あきこ",
         "source": "暁のヨナ",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=4457s",
-        "is_member_exclusive": true,
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -5296,7 +5296,7 @@
         "artist": "MAISON des",
         "source": "うる星やつら",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=5205s",
-        "is_member_exclusive": true,
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -5306,7 +5306,7 @@
         "artist": "MAISONdes",
         "source": "うる星やつら",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=5682s",
-        "is_member_exclusive": true,
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -5316,7 +5316,7 @@
         "artist": "MAISONdes",
         "source": "うる星やつら",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=5932s",
-        "is_member_exclusive": true,
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -5326,7 +5326,7 @@
         "artist": "松谷祐子",
         "source": "うる星やつら",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=6459s",
-        "is_member_exclusive": true,
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -5336,7 +5336,7 @@
         "artist": "歌組雪月花",
         "source": "機巧少女は傷つかない",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=7445s",
-        "is_member_exclusive": true,
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -5346,7 +5346,7 @@
         "artist": "敷島魅零(井口裕香)&処女まもり(井澤美香子)",
         "source": "VALKYRIE DRIVE - MERMAID -",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=8835s",
-        "is_member_exclusive": true,
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -5356,7 +5356,7 @@
         "artist": "ハムちゃんず",
         "source": "とっとこハム太郎",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=9677s",
-        "is_member_exclusive": true,
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -5366,7 +5366,7 @@
         "artist": "後ろから這いより隊G",
         "source": "這い寄れ!ニャル子さん",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=11343s",
-        "is_member_exclusive": true,
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -5376,7 +5376,7 @@
         "artist": "FIELD OF VIEW",
         "source": "ドラゴンボール",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=12063s",
-        "is_member_exclusive": true,
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -5386,7 +5386,7 @@
         "artist": "FIELD OF VIEW",
         "source": "遊戯王",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=12801s",
-        "is_member_exclusive": true,
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -5396,7 +5396,7 @@
         "artist": "WANDS",
         "source": "遊戯王",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=13094s",
-        "is_member_exclusive": true,
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -5406,7 +5406,7 @@
         "artist": "奥井雅美",
         "source": "遊戯王",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=13644s",
-        "is_member_exclusive": true,
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -5416,7 +5416,7 @@
         "artist": "Kimeru",
         "source": "遊戯王",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=14468s",
-        "is_member_exclusive": true,
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -5426,7 +5426,7 @@
         "artist": "水樹奈々",
         "source": "シャイニング・ウィンド",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=15156s",
-        "is_member_exclusive": true,
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -5436,7 +5436,7 @@
         "artist": "高橋洋子",
         "source": "この醜くも美しい世界",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=15740s",
-        "is_member_exclusive": true,
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -5446,7 +5446,7 @@
         "artist": "泉こなた(平野綾)、柊かがみ(加藤英美里)、柊つかさ(福原香織)、高良みゆき(遠藤綾)",
         "source": "らき☆すた",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=16303s",
-        "is_member_exclusive": true,
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -5456,7 +5456,7 @@
         "artist": "涼宮ハルヒ(平野綾)、長門有希(茅原実里)、朝比奈みくる(後藤邑子)",
         "source": "涼宮ハルヒの憂鬱",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=16754s",
-        "is_member_exclusive": true,
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -5466,7 +5466,7 @@
         "artist": "YURIA",
         "source": "SHUFFLE!",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=18011s",
-        "is_member_exclusive": true,
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -5476,7 +5476,7 @@
         "artist": "JAM Project",
         "source": "Muv-Luv Alternative",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=18714s",
-        "is_member_exclusive": true,
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -5486,7 +5486,7 @@
         "artist": "藍井エイル",
         "source": "Fate/Zero",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=19805s",
-        "is_member_exclusive": true,
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -5496,7 +5496,7 @@
         "artist": "fripSide",
         "source": "とある科学の超電磁砲",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=23738s",
-        "is_member_exclusive": true,
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -5506,7 +5506,7 @@
         "artist": "小林千絵",
         "source": "牧場の少女カトリ",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=24862s",
-        "is_member_exclusive": true,
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -5516,7 +5516,7 @@
         "artist": "坂本真綾",
         "source": "ロードス島 英雄騎士伝",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=26231s",
-        "is_member_exclusive": true,
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -5526,7 +5526,7 @@
         "artist": "ももいろクローバーZ",
         "source": "モーレツ宇宙海賊",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=26701s",
-        "is_member_exclusive": true,
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -5536,7 +5536,7 @@
         "artist": "桃黒亭一門",
         "source": "じょしらく",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=27235s",
-        "is_member_exclusive": true,
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -5546,7 +5546,7 @@
         "artist": "May'n/中島愛",
         "source": "マクロスF",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=27657s",
-        "is_member_exclusive": true,
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -5556,7 +5556,7 @@
         "artist": "水樹奈々",
         "source": "ロザリオとバンパイア",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=28570s",
-        "is_member_exclusive": true,
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -5566,7 +5566,7 @@
         "artist": "AKINO",
         "source": "創聖のアクエリオン",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=28960s",
-        "is_member_exclusive": true,
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
