@@ -1,4 +1,3 @@
-// js/events.js
 import { debounce, normalizeString } from './utils.js';
 import { fetchAndDisplayData } from './data.js';
 
