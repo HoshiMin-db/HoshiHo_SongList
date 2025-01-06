@@ -1,6 +1,6 @@
 ID = -veW1Hu-rTM
 
-00:11:46 | don't be discouraged | 林原めぐみ - スレイヤーズTRY
+00:11:46 | don't be discouraged | 林原めぐみ | スレイヤーズTRY
 
 00:23:56 | Yes, I Will... | 森川美穂 | ふしぎの海のナディア
 
@@ -16,7 +16,7 @@ ID = -veW1Hu-rTM
 
 01:42:27 | 夢であるように | DEEN | TALES OF DESTINY
 
-01:54:32 | 夢は終わらない | よ～み | TALES OF PHANTASIA
+01:54:32 | 夢は終わらない 〜こぼれ落ちる時の雫〜 | よ～み | TALES OF PHANTASIA
 
 02:14:44 | ETERNAL BLAZE | 水樹奈々 | 魔法少女リリカルなのはA's
 
@@ -26,7 +26,7 @@ ID = -veW1Hu-rTM
 
 03:05:28 | ANGELUS - アンジェラス - | 島谷ひとみ | 犬夜叉
 
-03:30:09 | 不安定な神様 - Suara | うたわれるもの 偽りの仮面
+03:30:09 | 不安定な神様 | Suara | うたわれるもの 偽りの仮面
 
 03:42:24 | JUST COMMUNICATION | TWO-MIX | ガンダムW
 
