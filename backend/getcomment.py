@@ -41,6 +41,9 @@ def get_video_date(video_id):
     video_date_utc = datetime.strptime(video_date_str, '%Y-%m-%dT%H:%M:%SZ')
     video_date_jst = video_date_utc + JST_OFFSET
     
+    # 確定日期
+    video_date_jst = video_date_jst.date()
+    
     return video_date_jst
 
 def get_video_ids_from_playlist(playlist_id):
