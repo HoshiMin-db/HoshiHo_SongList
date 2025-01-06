@@ -54,11 +54,9 @@ document.addEventListener("DOMContentLoaded", function() {
         showAllButton.classList.toggle('button-off', !showAllState);
         showAllButton.textContent = showAllState ? "隱藏" : "顯示全部";
 
-        songTableBody.innerHTML = '';
-
         fetchData(data => {
             if (showAllState) {
-                displayData(data, data.length); // 顯示所有日期
+                fetchAndDisplayData('', data, data.length); // 顯示所有日期
             } else {
                 fetchAndDisplayData('', data); // 顯示最近3個日期
             }
@@ -88,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
             newRow.insertCell().textContent = rows[0].source;
             newRow.insertCell().textContent = rows[0].note || '';
 
-            rows.slice(0, numDates).forEach((row, index) => {
+            rows.slice(0, numDates).forEach((row) => {
                 const dateCell = newRow.insertCell();
                 dateCell.classList.add('date-cell');
                 const link = document.createElement('a');
