@@ -24,7 +24,7 @@ except Exception as e:
 youtube = build('youtube', 'v3', developerKey=google_api_key)
 
 # 日本時區偏移
-JST_OFFSET = timedelta(hours=9)
+JST_OFFSET = timedelta(hours=8)
 
 def get_video_start_date(video_id):
     """獲取影片的直播開始日期（日本時間）"""
