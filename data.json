@@ -1442,9 +1442,9 @@
     {
         "date": "20240127",
         "time": "03:46:47",
-        "song_name": "カルマ /『Tales of the Abyss』BUMP OF CHICKEN",
-        "artist": "",
-        "source": "",
+        "song_name": "カルマ",
+        "artist": "BUMP OF CHICKEN",
+        "source": "Tales of the Abyss",
         "link": "https://www.youtube.com/watch?v=kw8Ia8qEJ74&t=13607s",
         "is_member_exclusive": false,
         "is_acapella": false
