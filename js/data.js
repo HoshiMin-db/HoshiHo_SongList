@@ -1,4 +1,3 @@
-// js/data.js
 import { normalizeString, sortTable } from './utils.js';
 
 let allData = [];
