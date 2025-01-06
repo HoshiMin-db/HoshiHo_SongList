@@ -1,9 +1,11 @@
 import os
 import json
+import re
 from googleapiclient.discovery import build
 from google.oauth2 import service_account
 from datetime import datetime, timedelta
 import subprocess
+from googleapiclient.errors import HttpError
 
 # 從環境變量中讀取 Google API 憑證
 google_sheets_credentials = os.getenv('GOOGLE_SHEETS_CREDENTIALS')
@@ -66,23 +68,34 @@ def get_video_ids_from_playlist(playlist_id):
 
 def get_timestamp_comment(video_id):
     """獲取包含時間戳標記的留言"""
-    request = youtube.commentThreads().list(
-        part='snippet',
-        videoId=video_id,
-        maxResults=100
-    )
+    try:
+        request = youtube.commentThreads().list(
+            part='snippet',
+            videoId=video_id,
+            maxResults=100
+        )
+
+        while request:
+            response = request.execute()
+            for item in response['items']:
+                comment = item['snippet']['topLevelComment']['snippet']['textDisplay']
+                # 檢查是否包含特定標記
+                if '💐🌟🎶タイムスタンプ💐🌟🎶' in comment:
+                    return comment
+
+            request = youtube.commentThreads().list_next(request, response)
     
-    while request:
-        response = request.execute()
-        for item in response['items']:
-            comment = item['snippet']['topLevelComment']['snippet']['textDisplay']
-            # 檢查是否包含特定標記
-            if '💐🌟🎶タイムスタンプ💐🌟🎶' in comment:
-                return comment
-                
-        request = youtube.commentThreads().list_next(request, response)
-    
+    except HttpError as e:
+        print(f"Error fetching comments for video {video_id}: {e}")
+        return None
+
     return None
+
+def clean_html(raw_html):
+    """移除HTML標籤並處理換行"""
+    clean_text = re.sub(r'<br\s*/?>', '\n', raw_html)  # 替換 <br> 為換行符
+    clean_text = re.sub(r'<.*?>', '', clean_text)  # 移除其他HTML標籤
+    return clean_text
 
 def save_to_file(video_id, comment, date):
     """保存留言到文件"""
@@ -96,9 +109,12 @@ def save_to_file(video_id, comment, date):
     file_name = date.strftime('%Y%m%d') + '.txt'
     file_path = os.path.join(output_dir, file_name)
     
+    # 移除HTML標籤並處理換行
+    clean_comment = clean_html(comment)
+    
     with open(file_path, 'w', encoding='utf-8') as f:
         f.write(f'ID = {video_id}\n')
-        f.write(comment)
+        f.write(clean_comment)
         
     print(f"Saved timestamp comment to {file_path}")
 
