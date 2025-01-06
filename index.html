@@ -1,42 +1,47 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Song List</title>
+    <title>🌟 HoshiHo歌單 💐</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
-        <h1>歌曲列表</h1>
-        <div>總歌曲數：<span id="songCount"></span></div>
-    </header>
+    <div class="header">
+        <h1>🌟 HoshiHo歌單 💐</h1>
+        <p>總曲數：<span id="songCount"></span></p>
+    </div>
+
     <div class="search-container">
-        <input type="text" id="searchInput" placeholder="搜索歌曲...">
+        <input type="text" id="searchInput" placeholder="搜尋歌曲名稱、歌手或出典...">
         <button id="showAllButton" class="button-off">顯示全部</button>
     </div>
+
     <table id="songTable">
         <thead>
             <tr>
-                <th>首字</th>
+                <th>A-Z</th>
                 <th>曲名</th>
                 <th>歌手</th>
-                <th>來源</th>
-                <th>備註</th>
-                <th>日期</th>
+                <th>出典</th>
+                <th>備注</th>
+                <th>日期1</th>
+                <th>日期2</th>
+                <th>日期3</th>
             </tr>
         </thead>
         <tbody>
-            <!-- 動態生成的行會插入到這裡 -->
         </tbody>
     </table>
 
     <div id="floatingPlayerContainer" class="floating-player-container">
-        <div class="floating-player-header">浮動播放器</div>
+        <div class="floating-player-header" id="floatingPlayerHeader">
+            <div class="close-btn" onclick="closeFloatingPlayer()">關閉</div>
+        </div>
         <iframe id="floatingPlayer" class="floating-player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div class="close-btn" onclick="closeFloatingPlayer()">關閉</div>
     </div>
 
+    <script src="js/youtube-player.js"></script>
     <script type="module" src="js/form-generation.js"></script>
 </body>
 </html>
