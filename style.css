@@ -92,12 +92,17 @@ tr:hover {
     z-index: 1000;
     border-radius: 8px;
     overflow: hidden;
+    cursor: move; /* 顯示為可拖動 */
 }
 
-.floating-player {
+.floating-player-header {
     width: 100%;
-    height: calc(100% - 30px);
-    border: none;
+    height: 30px;
+    background-color: #6a5acd;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    cursor: move; /* 顯示為可拖動 */
 }
 
 .close-btn {
