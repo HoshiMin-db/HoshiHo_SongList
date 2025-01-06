@@ -101,6 +101,16 @@
     },
     {
         "date": "20231202",
+        "time": "00:11:46",
+        "song_name": "don't be discouraged",
+        "artist": "林原めぐみ",
+        "source": "スレイヤーズTRY",
+        "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=706s",
+        "is_member_exclusive": true,
+        "is_acapella": false
+    },
+    {
+        "date": "20231202",
         "time": "00:23:56",
         "song_name": "Yes, I Will...",
         "artist": "森川美穂",
@@ -162,7 +172,7 @@
     {
         "date": "20231202",
         "time": "01:54:32",
-        "song_name": "夢は終わらない",
+        "song_name": "夢は終わらない 〜こぼれ落ちる時の雫〜",
         "artist": "よ～み",
         "source": "TALES OF PHANTASIA",
         "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=6872s",
@@ -206,6 +216,16 @@
         "artist": "島谷ひとみ",
         "source": "犬夜叉",
         "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=11128s",
+        "is_member_exclusive": true,
+        "is_acapella": false
+    },
+    {
+        "date": "20231202",
+        "time": "03:30:09",
+        "song_name": "不安定な神様",
+        "artist": "Suara",
+        "source": "うたわれるもの 偽りの仮面",
+        "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=12609s",
         "is_member_exclusive": true,
         "is_acapella": false
     },
