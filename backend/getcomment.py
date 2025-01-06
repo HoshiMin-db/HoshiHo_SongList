@@ -6,6 +6,7 @@ from google.oauth2 import service_account
 from datetime import datetime, timedelta
 import subprocess
 from googleapiclient.errors import HttpError
+import html
 
 # 從環境變量中讀取 Google API 憑證
 google_sheets_credentials = os.getenv('GOOGLE_SHEETS_CREDENTIALS')
@@ -96,9 +97,10 @@ def get_timestamp_comment(video_id):
     return None
 
 def clean_html(raw_html):
-    """移除HTML標籤並處理換行"""
+    """移除HTML標籤並處理換行和特殊字符"""
     clean_text = re.sub(r'<br\s*/?>', '\n', raw_html)  # 替換 <br> 為換行符
     clean_text = re.sub(r'<.*?>', '', clean_text)  # 移除其他HTML標籤
+    clean_text = html.unescape(clean_text)  # 轉換HTML實體為普通字符
     return clean_text
 
 def save_to_file(video_id, comment, date):
