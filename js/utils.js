@@ -1,4 +1,5 @@
-function debounce(func, wait) {
+// js/utils.js
+export function debounce(func, wait) {
     let timeout;
     return function() {
         const context = this, args = arguments;
@@ -7,11 +8,11 @@ function debounce(func, wait) {
     };
 }
 
-function normalizeString(str) {
+export function normalizeString(str) {
     return str.normalize('NFKC').replace(/[~〜～]/g, '~');
 }
 
-function sortTable() {
+export function sortTable() {
     const table = document.getElementById('songTable');
     const rows = Array.from(table.getElementsByTagName('tbody')[0].rows);
 
