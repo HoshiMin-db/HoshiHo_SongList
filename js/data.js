@@ -2,6 +2,8 @@ import { normalizeString, sortTable } from './utils.js';
 
 let allData = [];
 let totalSongCount = 0;
+const rowHeight = 48; // 設置每行的高度
+const visibleRowCount = 12; // 設置可視區域內的行數
 
 export function fetchData(callback) {
     fetch('data.json', { cache: 'no-cache' })
@@ -41,7 +43,7 @@ export function fetchAndDisplayData(query, numDates = 3) {
 
 function displayData(data, numDates) {
     const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
-    
+
     const groupedData = data.reduce((acc, row) => {
         const key = `${normalizeString(row.song_name)}-${normalizeString(row.artist)}`;
         if (!acc[key]) {
