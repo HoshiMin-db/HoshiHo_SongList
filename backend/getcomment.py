@@ -26,25 +26,26 @@ youtube = build('youtube', 'v3', developerKey=google_api_key)
 # 日本時區偏移
 JST_OFFSET = timedelta(hours=9)
 
-def get_video_date(video_id):
-    """獲取影片的發布日期（日本時間）"""
+def get_video_start_date(video_id):
+    """獲取影片的直播開始日期（日本時間）"""
     request = youtube.videos().list(
-        part='snippet',
+        part='liveStreamingDetails',
         id=video_id
     )
     response = request.execute()
     
     if not response['items']:
         return None
-        
-    video_date_str = response['items'][0]['snippet']['publishedAt']
-    video_date_utc = datetime.strptime(video_date_str, '%Y-%m-%dT%H:%M:%SZ')
-    video_date_jst = video_date_utc + JST_OFFSET
+    
+    # 獲取直播開始時間
+    live_start_time_str = response['items'][0]['liveStreamingDetails']['actualStartTime']
+    live_start_time_utc = datetime.strptime(live_start_time_str, '%Y-%m-%dT%H:%M:%SZ')
+    live_start_time_jst = live_start_time_utc + JST_OFFSET
     
     # 確定日期
-    video_date_jst = video_date_jst.date()
+    live_start_date_jst = live_start_time_jst.date()
     
-    return video_date_jst
+    return live_start_date_jst
 
 def get_video_ids_from_playlist(playlist_id):
     """從播放清單獲取影片ID和日期"""
@@ -59,7 +60,7 @@ def get_video_ids_from_playlist(playlist_id):
         response = request.execute()
         for item in response['items']:
             video_id = item['contentDetails']['videoId']
-            video_date = get_video_date(video_id)
+            video_date = get_video_start_date(video_id)
             
             if video_date:
                 video_info.append((video_id, video_date))
@@ -109,7 +110,8 @@ def save_to_file(video_id, comment, date):
     output_dir = 'timeline'
     os.makedirs(output_dir, exist_ok=True)
     
-    file_name = date.strftime('%Y%m%d') + '.txt'
+    # 使用日期和視頻 ID 作為文件名
+    file_name = f"{date.strftime('%Y%m%d')}_{video_id}.txt"
     file_path = os.path.join(output_dir, file_name)
     
     # 移除HTML標籤並處理換行
@@ -130,7 +132,8 @@ def main():
     for video_id, video_date in video_info:
         print(f"Processing video {video_id} from {video_date}")
         
-        file_name = video_date.strftime('%Y%m%d') + '.txt'
+        # 使用日期和視頻 ID 作為文件名
+        file_name = f"{video_date.strftime('%Y%m%d')}_{video_id}.txt"
         file_path = os.path.join('timeline', file_name)
         
         if not os.path.exists(file_path):
