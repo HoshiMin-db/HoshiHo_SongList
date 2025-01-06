@@ -3,6 +3,7 @@ import json
 from googleapiclient.discovery import build
 from google.oauth2 import service_account
 from datetime import datetime, timedelta
+import subprocess
 
 # 從環境變量中讀取 Google API 憑證
 google_sheets_credentials = os.getenv('GOOGLE_SHEETS_CREDENTIALS')
@@ -110,12 +111,23 @@ def main():
     for video_id, video_date in video_info:
         print(f"Processing video {video_id} from {video_date}")
         
-        # 獲取時間戳留言
-        timestamp_comment = get_timestamp_comment(video_id)
+        file_name = video_date.strftime('%Y%m%d') + '.txt'
+        file_path = os.path.join('timeline', file_name)
         
-        # 保存到檔案
-        if timestamp_comment:
-            save_to_file(video_id, timestamp_comment, video_date)
+        if not os.path.exists(file_path):
+            # 獲取時間戳留言
+            timestamp_comment = get_timestamp_comment(video_id)
+            
+            # 保存到檔案
+            if timestamp_comment:
+                save_to_file(video_id, timestamp_comment, video_date)
+                
+                # 推送到 GitHub
+                subprocess.run(['git', 'add', file_path])
+                subprocess.run(['git', 'commit', '-m', f'Add timestamp comment for video {video_id}'])
+                subprocess.run(['git', 'push'])
+        else:
+            print(f"File {file_name} already exists, skipping...")
 
 if __name__ == '__main__':
     main()
