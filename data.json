@@ -1,5 +1,105 @@
 [
     {
+        "date": "20240901",
+        "time": "00:12:24",
+        "song_name": "Rumbling hearts",
+        "artist": "栗林みな実",
+        "source": "君が望む永遠",
+        "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=744s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240901",
+        "time": "00:18:00",
+        "song_name": "Precious Memories",
+        "artist": "栗林みな実",
+        "source": "君が望む永遠",
+        "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=1080s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240901",
+        "time": "00:23:31",
+        "song_name": "星空のワルツ",
+        "artist": "栗林みな実",
+        "source": "君が望む永遠",
+        "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=1411s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240901",
+        "time": "00:34:11",
+        "song_name": "マブラヴ",
+        "artist": "栗林みな実",
+        "source": "Muv-Luv",
+        "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=2051s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240901",
+        "time": "00:55:43",
+        "song_name": "Go to the top",
+        "artist": "倖田來未",
+        "source": "Muv-Luv Alternative Total Eclipse",
+        "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=3343s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240901",
+        "time": "01:02:57",
+        "song_name": "signs 〜朔月一夜〜",
+        "artist": "栗林みな実",
+        "source": "Muv-Luv Alternative Total Eclipse",
+        "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=3777s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240901",
+        "time": "01:15:07",
+        "song_name": "white forces",
+        "artist": "fripSide",
+        "source": "シュヴァルツェスマーケン(アニメ)",
+        "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=4507s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240901",
+        "time": "01:23:37",
+        "song_name": "1983-Schwarzesmarken-",
+        "artist": "fripSide",
+        "source": "シュヴァルツェスマーケン 紅血の紋章(ゲーム)",
+        "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=5017s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240901",
+        "time": "01:34:32",
+        "song_name": "未来への咆哮",
+        "artist": "JAM Project",
+        "source": "Muv-Luv Alternative(ゲーム)",
+        "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=5672s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240901",
+        "time": "01:41:39",
+        "song_name": "暁を撃て",
+        "artist": "JAM Project・栗林みな実",
+        "source": "Muv-Luv Alternative(アニメ)",
+        "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=6099s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
         "date": "20231202",
         "time": "00:23:56",
         "song_name": "Yes, I Will...",
@@ -267,6 +367,486 @@
         "source": "サクラ大戦",
         "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=27278s",
         "is_member_exclusive": true,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "00:19:44",
+        "song_name": "すずめ feat.十明",
+        "artist": "RADWIMPS",
+        "source": "すずめの戸締まり",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=1184s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "00:26:57",
+        "song_name": "pastel pure",
+        "artist": "ALI PROJECT (アカペラ)",
+        "source": "マリア様がみてる",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=1617s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "00:39:45",
+        "song_name": "いつも夢見て",
+        "artist": "劇団四季",
+        "source": "夢から醒めた夢",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=2385s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "00:41:46",
+        "song_name": "お願いピコ",
+        "artist": "劇団四季",
+        "source": "夢から醒めた夢",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=2506s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "00:43:53",
+        "song_name": "二人の世界",
+        "artist": "劇団四季",
+        "source": "夢から醒めた夢",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=2633s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "01:07:58",
+        "song_name": "燈",
+        "artist": "崎山蒼志",
+        "source": "呪術廻戦",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=4078s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "01:27:59",
+        "song_name": "Cry Baby",
+        "artist": "Official髭男dism",
+        "source": "東京リベンジャーズ",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=5279s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "01:39:03",
+        "song_name": "ムーミンのテーマ",
+        "artist": "藤田淑子",
+        "source": "ムーミン",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=5943s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "01:44:51",
+        "song_name": "空",
+        "artist": "音無小鳥(CV.滝田樹里)",
+        "source": "アイドルマスター",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=6291s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "02:01:12",
+        "song_name": "咲いてJewel",
+        "artist": "鷺沢文香(CV.M・A・O)、速水奏(CV.飯田友子)、橘ありす(CV.佐藤亜美菜)、塩見周子(CV.ルゥティン)、二宮飛鳥(CV.青木志貴)",
+        "source": "アイドルマスター シンデレラガールズ",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=7272s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "02:14:34",
+        "song_name": "relations",
+        "artist": "星井美希(CV.長谷川明子)",
+        "source": "アイドルマスター",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=8074s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "02:26:03",
+        "song_name": "蒼い鳥",
+        "artist": "如月千早(CV.今井麻美)",
+        "source": "アイドルマスター",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=8763s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "02:33:02",
+        "song_name": "アマテラス",
+        "artist": "Armony（歌：ほしほ）",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=9182s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "02:44:47",
+        "song_name": "secret base 〜君がくれたもの〜",
+        "artist": "ZONE",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=9887s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "02:51:27",
+        "song_name": "約束はいらない",
+        "artist": "坂本真綾",
+        "source": "天空のエスカフローネ",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=10287s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "03:00:01",
+        "song_name": "誰ガ為ノ世界",
+        "artist": "志方あきこ",
+        "source": "テイルズ オブ シンフォニア THE ANIMATION",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=10801s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "03:07:33",
+        "song_name": "Vitalization",
+        "artist": "水樹奈々",
+        "source": "戦姫絶唱シンフォギアG",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=11253s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "03:12:54",
+        "song_name": "OK!",
+        "artist": "松本梨香",
+        "source": "ポケットモンスター (アニメ 1997-2002年)",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=11574s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "03:26:00",
+        "song_name": "鏖鋸・シュルシャガナ",
+        "artist": "月読調(CV.南條愛乃)",
+        "source": "戦姫絶唱シンフォギアG",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=12360s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "03:36:24",
+        "song_name": "オーバーキルサイズ・ヘル",
+        "artist": "暁切歌(CV.茅野愛衣)",
+        "source": "戦姫絶唱シンフォギアGX",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=12984s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "03:46:31",
+        "song_name": "正義を信じて、握り締めて",
+        "artist": "立花響(CV.悠木碧)",
+        "source": "戦姫絶唱シンフォギアG",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=13591s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "03:59:57",
+        "song_name": "Next Destination",
+        "artist": "高垣彩陽",
+        "source": "戦姫絶唱シンフォギアG",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=14397s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "04:08:34",
+        "song_name": "逆光のフリューゲル",
+        "artist": "風鳴翼(CV.水樹奈々)、天羽奏(CV.高山みなみ)",
+        "source": "戦姫絶唱シンフォギア",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=14914s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "04:18:15",
+        "song_name": "不死鳥のフランメ",
+        "artist": "マリア(CV.日笠陽子)、風鳴翼(CV.水樹奈々)",
+        "source": "戦姫絶唱シンフォギアG",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=15495s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "04:34:53",
+        "song_name": "TESTAMENT",
+        "artist": "水樹奈々",
+        "source": "戦姫絶唱シンフォギアAXZ",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=16493s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "04:41:37",
+        "song_name": "DISCOTHEQUE",
+        "artist": "水樹奈々",
+        "source": "ロザリオとバンパイア CAPU2",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=16897s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "04:48:01",
+        "song_name": "Dancing in the velvet moon",
+        "artist": "水樹奈々",
+        "source": "ロザリオとバンパイア",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=17281s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "04:58:43",
+        "song_name": "SCARLET KNIGHT",
+        "artist": "水樹奈々",
+        "source": "DOG DAYS",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=17923s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "05:12:56",
+        "song_name": "POP MASTER",
+        "artist": "水樹奈々",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=18776s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "05:21:48",
+        "song_name": "innocent starter",
+        "artist": "水樹奈々",
+        "source": "魔法少女リリカルなのは",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=19308s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "05:28:58",
+        "song_name": "SECRET AMBITION",
+        "artist": "水樹奈々",
+        "source": "魔法少女リリカルなのはStrikerS",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=19738s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "05:34:26",
+        "song_name": "深愛",
+        "artist": "水樹奈々",
+        "source": "WHITE ALBUM",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=20066s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "05:52:04",
+        "song_name": "HOT BLOOD",
+        "artist": "水樹奈々",
+        "source": "バジリスク 〜桜花忍法帖〜",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=21124s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "06:03:31",
+        "song_name": "わんだふるぷりきゅあ！evolution!!",
+        "artist": "吉武千颯",
+        "source": "わんだふるぷりきゅあ！",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=21811s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "06:26:08",
+        "song_name": "夢であるように",
+        "artist": "DEEN",
+        "source": "Tales of Destiny",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=23168s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "06:40:45",
+        "song_name": "UNION",
+        "artist": "OxT",
+        "source": "SSSS.GRIDMAN",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=24045s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "06:50:13",
+        "song_name": "インパーフェクト",
+        "artist": "大石昌良",
+        "source": "SSSS.DYNAZENON",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=24613s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "07:06:34",
+        "song_name": "徒花ネクロマンシー",
+        "artist": "フランシュシュ",
+        "source": "ゾンビランドサガ",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=25594s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240714",
+        "time": "07:14:09",
+        "song_name": "めざせポケモンマスター",
+        "artist": "松本梨香",
+        "source": "ポケットモンスター",
+        "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=26049s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241028",
+        "time": "00:30:35",
+        "song_name": "旅の途中",
+        "artist": "清浦夏実",
+        "source": "狼と香辛料",
+        "link": "https://www.youtube.com/watch?v=slgufiU0sI4&t=1835s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241028",
+        "time": "00:40:39",
+        "song_name": "暁",
+        "artist": "志方あきこ",
+        "source": "暁のヨナ",
+        "link": "https://www.youtube.com/watch?v=slgufiU0sI4&t=2439s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241028",
+        "time": "00:50:27",
+        "song_name": "君をのせて",
+        "artist": "井上あずみ",
+        "source": "天空の城ラピュタ",
+        "link": "https://www.youtube.com/watch?v=slgufiU0sI4&t=3027s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241028",
+        "time": "01:21:13",
+        "song_name": "終端の王と異世界の騎士 ～The Endia &amp; The Knights～",
+        "artist": "Sound Horizon",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=slgufiU0sI4&t=4873s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241028",
+        "time": "01:33:23",
+        "song_name": "澪音の世界",
+        "artist": "Sound Horizon",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=slgufiU0sI4&t=5603s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241028",
+        "time": "01:59:56",
+        "song_name": "Weiß 〜幻想への誘い〜",
+        "artist": "霜月はるか†Revo(Sound Horizon)",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=slgufiU0sI4&t=7196s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241028",
+        "time": "02:11:17",
+        "song_name": "EXEC_PHANTASMAGORIA/.",
+        "artist": "みとせのりこ・志方あきこ・霜月はるか",
+        "source": "アルトネリコ 世界の終わりで詩い続ける少女",
+        "link": "https://www.youtube.com/watch?v=slgufiU0sI4&t=7877s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241028",
+        "time": "02:26:42",
+        "song_name": "EXEC_COSMOFLIPS/.",
+        "artist": "KOKIA",
+        "source": "アルトネリコ3 世界終焉の引鉄は少女の詩が弾く",
+        "link": "https://www.youtube.com/watch?v=slgufiU0sI4&t=8802s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241028",
+        "time": "02:36:09",
+        "song_name": "フクロウ ～フクロウが知らせる客が来たと～",
+        "artist": "KOKIA",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=slgufiU0sI4&t=9369s",
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -730,6 +1310,626 @@
         "is_acapella": false
     },
     {
+        "date": "20240408",
+        "time": "02:27:44",
+        "song_name": "もののけ姫",
+        "artist": "米良美一",
+        "source": "もののけ姫",
+        "link": "https://www.youtube.com/watch?v=GKJdPg7oqgs&t=8864s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240408",
+        "time": "02:33:14",
+        "song_name": "唱",
+        "artist": "Ado",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=GKJdPg7oqgs&t=9194s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240408",
+        "time": "02:43:56",
+        "song_name": "水の星へ愛をこめて",
+        "artist": "森口博子",
+        "source": "機動戦士Zガンダム",
+        "link": "https://www.youtube.com/watch?v=GKJdPg7oqgs&t=9836s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240408",
+        "time": "02:55:03",
+        "song_name": "草原のマルコ",
+        "artist": "大杉久美子",
+        "source": "母をたずねて三千里",
+        "link": "https://www.youtube.com/watch?v=GKJdPg7oqgs&t=10503s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240408",
+        "time": "02:58:15",
+        "song_name": "かあさんおはよう",
+        "artist": "大杉久美子",
+        "source": "母をたずねて三千里",
+        "link": "https://www.youtube.com/watch?v=GKJdPg7oqgs&t=10695s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241117",
+        "time": "00:10:23",
+        "song_name": "沈んだ歌姫",
+        "artist": "Sound Horizon",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=623s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241117",
+        "time": "00:14:58",
+        "song_name": "海の魔女",
+        "artist": "Sound Horizon",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=898s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241117",
+        "time": "00:20:31",
+        "song_name": "ロマの娘",
+        "artist": "志方あきこ",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=1231s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241117",
+        "time": "00:34:24",
+        "song_name": "空へ...",
+        "artist": "笠原弘子",
+        "source": "ロミオの青い空",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=2064s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241117",
+        "time": "00:38:30",
+        "song_name": "Si Si Ciao 〜ロマナの丘で〜",
+        "artist": "笠原弘子",
+        "source": "ロミオの青い空",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=2310s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241117",
+        "time": "00:45:26",
+        "song_name": "草原のマルコ",
+        "artist": "大杉久美子",
+        "source": "母をたずねて三千里",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=2726s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241117",
+        "time": "00:48:50",
+        "song_name": "かあさんおはよう",
+        "artist": "大杉久美子",
+        "source": "母をたずねて三千里",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=2930s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241117",
+        "time": "00:54:57",
+        "song_name": "心に届く詩",
+        "artist": "Lia",
+        "source": "シャイニング・ハーツ(ゲーム)",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=3297s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241117",
+        "time": "01:05:37",
+        "song_name": "夢想歌",
+        "artist": "Suara",
+        "source": "うたわれるもの",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=3937s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241117",
+        "time": "01:33:21",
+        "song_name": "キミガタメ",
+        "artist": "Suara",
+        "source": "うたわれるもの",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=5601s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241117",
+        "time": "01:42:11",
+        "song_name": "天かける星",
+        "artist": "Suara",
+        "source": "うたわれるもの 偽りの仮面",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=6131s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241117",
+        "time": "02:40:22",
+        "song_name": "Here",
+        "artist": "JUNNA",
+        "source": "魔法使いの嫁",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=9622s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241117",
+        "time": "02:57:01",
+        "song_name": "エルの楽園 [→ side:E →]",
+        "artist": "Sound Horizon",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=10621s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241117",
+        "time": "03:04:54",
+        "song_name": "エルの絵本【笛吹き男とパレード】",
+        "artist": "Sound Horizon",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=11094s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241117",
+        "time": "03:11:32",
+        "song_name": "魂のルフラン",
+        "artist": "高橋洋子",
+        "source": "新世紀エヴァンゲリオン劇場版 シト新生",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=11492s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241117",
+        "time": "03:19:35",
+        "song_name": "Armonico",
+        "artist": "Armony（歌：ほしほ）",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=11975s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20250105",
+        "time": "01:40:02",
+        "song_name": "約束はいらない",
+        "artist": "坂本真綾",
+        "source": "天空のエスカフローネ",
+        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=6002s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20250105",
+        "time": "01:46:05",
+        "song_name": "あなたがいた森",
+        "artist": "樹海",
+        "source": "Fate/stay night",
+        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=6365s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20250105",
+        "time": "01:53:28",
+        "song_name": "渇いた叫び",
+        "artist": "FIELD OF VIEW",
+        "source": "遊☆戯☆王",
+        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=6808s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20250105",
+        "time": "01:59:21",
+        "song_name": "voice",
+        "artist": "CLOUD",
+        "source": "遊☆戯☆王デュエルモンスターズ",
+        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=7161s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20250105",
+        "time": "02:59:41",
+        "song_name": "A Whole New World",
+        "artist": "Lea Salonga, Brad Kane",
+        "source": "アラジン",
+        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=10781s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20250105",
+        "time": "03:12:05",
+        "song_name": "INVOKE",
+        "artist": "T.M.Revolution",
+        "source": "機動戦士ガンダムSEED",
+        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=11525s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20250105",
+        "time": "03:27:29",
+        "song_name": "ライオン",
+        "artist": "May&#39;n、中島愛",
+        "source": "マクロスF",
+        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=12449s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20250105",
+        "time": "03:36:13",
+        "song_name": "City Hunter〜愛よ消えないで〜",
+        "artist": "小比類巻かほる",
+        "source": "CITY HUNTER",
+        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=12973s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20250105",
+        "time": "03:40:48",
+        "song_name": "Get Wild",
+        "artist": "TM NETWORK",
+        "source": "CITY HUNTER",
+        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=13248s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20250105",
+        "time": "03:47:44",
+        "song_name": "風のとおり道",
+        "artist": "久石譲",
+        "source": "となりのトトロ",
+        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=13664s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20250105",
+        "time": "04:00:13",
+        "song_name": "めぐる季節",
+        "artist": "井上あずみ",
+        "source": "魔女の宅急便",
+        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=14413s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20250105",
+        "time": "04:08:58",
+        "song_name": "My will",
+        "artist": "dream",
+        "source": "犬夜叉",
+        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=14938s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20250105",
+        "time": "04:18:09",
+        "song_name": "深い森",
+        "artist": "Do As Infinity",
+        "source": "犬夜叉",
+        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=15489s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20250105",
+        "time": "04:23:12",
+        "song_name": "檄！帝国華撃団",
+        "artist": "真宮寺さくら(CV.横山智佐)、帝国歌劇団",
+        "source": "サクラ大戦",
+        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=15792s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240728",
+        "time": "00:23:08",
+        "song_name": "唱",
+        "artist": "Ado",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=1388s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240728",
+        "time": "00:29:13",
+        "song_name": "粛聖!! ロリ神レクイエム☆",
+        "artist": "しぐれうい（9さい）",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=1753s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240728",
+        "time": "00:40:22",
+        "song_name": "紅蓮の弓矢",
+        "artist": "Linked Horizon",
+        "source": "進撃の巨人",
+        "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=2422s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240728",
+        "time": "00:58:03",
+        "song_name": "終端の王と異世界の騎士 ～The Endia &amp; The Knights～",
+        "artist": "Sound Horizon",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=3483s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240728",
+        "time": "01:10:04",
+        "song_name": "アイドル",
+        "artist": "YOASOBI",
+        "source": "推しの子",
+        "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=4204s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240728",
+        "time": "01:25:32",
+        "song_name": "未来への咆哮",
+        "artist": "JAM Project",
+        "source": "Muv-Luv Alternative",
+        "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=5132s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240728",
+        "time": "01:44:31",
+        "song_name": "夢は終わらない 〜こぼれ落ちる時の雫〜",
+        "artist": "よーみ",
+        "source": "Tales of Phantasia",
+        "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=6271s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240728",
+        "time": "02:24:38",
+        "song_name": "I Could Have Danced All Night",
+        "artist": "Eliza Doolittle(Audrey Hepburn)",
+        "source": "My Fair Lady",
+        "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=8678s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240728",
+        "time": "02:39:02",
+        "song_name": "調和 oto ～with reflection～",
+        "artist": "KOKIA (アカペラ)",
+        "source": "銀色の髪のアギト",
+        "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=9542s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240728",
+        "time": "02:51:33",
+        "song_name": "ときめきの導火線",
+        "artist": "今野友加里",
+        "source": "ふしぎ遊戯",
+        "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=10293s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240728",
+        "time": "03:10:07",
+        "song_name": "空へ...",
+        "artist": "笠原弘子",
+        "source": "ロミオの青い空",
+        "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=11407s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240728",
+        "time": "03:16:03",
+        "song_name": "Si Si Ciao 〜ロマナの丘で〜",
+        "artist": "笠原弘子",
+        "source": "ロミオの青い空",
+        "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=11763s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240728",
+        "time": "03:25:24",
+        "song_name": "Agape",
+        "artist": "メロキュア",
+        "source": "円盤皇女ワるきゅーレ",
+        "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=12324s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240728",
+        "time": "03:32:19",
+        "song_name": "Give a reason",
+        "artist": "林原めぐみ",
+        "source": "スレイヤーズ NEXT",
+        "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=12739s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240728",
+        "time": "03:55:12",
+        "song_name": "暁の鎮魂歌",
+        "artist": "Linked Horizon",
+        "source": "進撃の巨人",
+        "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=14112s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240728",
+        "time": "04:03:28",
+        "song_name": "COLORS",
+        "artist": "FLOW",
+        "source": "コードギアス 反逆のルルーシュ",
+        "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=14608s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240728",
+        "time": "04:10:49",
+        "song_name": "Re-sublimity",
+        "artist": "KOTOKO",
+        "source": "神無月の巫女",
+        "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=15049s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240728",
+        "time": "04:32:00",
+        "song_name": "to the beginning",
+        "artist": "Kalafina",
+        "source": "Fate/Zero",
+        "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=16320s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240728",
+        "time": "04:41:46",
+        "song_name": "満天",
+        "artist": "Kalafina",
+        "source": "Fate/Zero",
+        "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=16906s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240728",
+        "time": "04:50:47",
+        "song_name": "ピースサイン",
+        "artist": "米津玄師",
+        "source": "僕のヒーローアカデミア",
+        "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=17447s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240728",
+        "time": "05:04:02",
+        "song_name": "Moon Revenge",
+        "artist": "三石琴乃・久川綾・富沢美智恵・篠原恵美・深見梨加",
+        "source": "劇場版美少女戦士セーラームーンR",
+        "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=18242s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240728",
+        "time": "05:10:27",
+        "song_name": "そばかす",
+        "artist": "JUDY AND MARY",
+        "source": "るろうに剣心  - 明治剣客浪漫譚 -",
+        "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=18627s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240728",
+        "time": "05:16:47",
+        "song_name": "運命のルーレット廻して",
+        "artist": "ZARD",
+        "source": "名探偵コナン",
+        "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=19007s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240728",
+        "time": "05:26:21",
+        "song_name": "鏡の中のアクトレス",
+        "artist": "中原めいこ",
+        "source": "きまぐれオレンジ☆ロード",
+        "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=19581s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240728",
+        "time": "05:34:21",
+        "song_name": "水の星へ愛をこめて",
+        "artist": "森口博子",
+        "source": "機動戦士Zガンダム",
+        "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=20061s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240728",
+        "time": "05:42:45",
+        "song_name": "タッチ",
+        "artist": "岩崎良美",
+        "source": "タッチ",
+        "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=20565s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240728",
+        "time": "05:48:58",
+        "song_name": "ムーンライト伝説",
+        "artist": "DALI",
+        "source": "美少女戦士セーラームーン",
+        "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=20938s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
         "date": "20231111",
         "time": "00:13:27",
         "song_name": "残酷な天使のテーゼ",
@@ -987,6 +2187,576 @@
         "source": "ガンダム 水星の魔女",
         "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=23122s",
         "is_member_exclusive": true,
+        "is_acapella": false
+    },
+    {
+        "date": "20240630",
+        "time": "00:18:10",
+        "song_name": "ダーリン",
+        "artist": "須田景凪",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=1090s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240630",
+        "time": "00:24:50",
+        "song_name": "Ring of Fortune",
+        "artist": "佐々木恵梨",
+        "source": "プラスティック・メモリーズ",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=1490s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240630",
+        "time": "00:36:15",
+        "song_name": "回レ!雪月花",
+        "artist": "歌組雪月花",
+        "source": "機巧少女は傷つかない",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=2175s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240630",
+        "time": "01:29:14",
+        "song_name": "アイデンティティ",
+        "artist": "酒井ミキオ",
+        "source": "落第騎士の英雄譚",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=5354s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240630",
+        "time": "01:37:32",
+        "song_name": "狂乱 Hey Kids!!",
+        "artist": "THE ORAL CIGARETTES",
+        "source": "ノラガミ ARAGOTO",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=5852s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240630",
+        "time": "01:45:41",
+        "song_name": "ハートリアライズ",
+        "artist": "Tia",
+        "source": "ノラガミ",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=6341s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240630",
+        "time": "02:03:38",
+        "song_name": "ないない",
+        "artist": "ReoNa",
+        "source": "シャドーハウス",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=7418s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240630",
+        "time": "02:23:50",
+        "song_name": "Clattanoia",
+        "artist": "OxT",
+        "source": "オーバーロード",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=8630s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240630",
+        "time": "02:37:16",
+        "song_name": "Separation",
+        "artist": "angela",
+        "source": "蒼穹のファフナー",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=9436s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240630",
+        "time": "02:57:56",
+        "song_name": "disillusion",
+        "artist": "タイナカサチ",
+        "source": "Fate/stay night (アニメ)",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=10676s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240630",
+        "time": "03:10:46",
+        "song_name": "少女迷路でつかまえて",
+        "artist": "美郷あき",
+        "source": "Strawberry Panic",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=11446s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240630",
+        "time": "03:44:16",
+        "song_name": "HANAJI",
+        "artist": "小林ゆう",
+        "source": "まりあ†ほりっく",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=13456s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240630",
+        "time": "04:05:23",
+        "song_name": "ヒャダインのカカカタ☆カタオモイ-C",
+        "artist": "ヒャダイン",
+        "source": "日常",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=14723s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240630",
+        "time": "04:14:32",
+        "song_name": "ヒャダインのじょーじょーゆーじょー",
+        "artist": "ヒャダイン",
+        "source": "日常",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=15272s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240630",
+        "time": "04:24:57",
+        "song_name": "Zzz",
+        "artist": "佐咲紗花",
+        "source": "日常",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=15897s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240630",
+        "time": "04:53:43",
+        "song_name": "メニメニマニマニ",
+        "artist": "高宮なすの (CV.鳴海杏子)",
+        "source": "てーきゅう",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=17623s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240630",
+        "time": "05:06:27",
+        "song_name": "たった１つの想い",
+        "artist": "KOKIA",
+        "source": "GUNSLINGER GIRL - IL TEATRINO -",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=18387s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240630",
+        "time": "05:40:10",
+        "song_name": "LOVE SHIELD",
+        "artist": "奥井雅美",
+        "source": "恋する乙女と守護の楯 The shield of AIGIS",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=20410s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240630",
+        "time": "05:55:41",
+        "song_name": "輪舞-revolution",
+        "artist": "奥井雅美",
+        "source": "少女革命ウテナ",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=21341s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240630",
+        "time": "06:18:59",
+        "song_name": "ファティマ",
+        "artist": "奥井雅美",
+        "source": "STEINS;GATE 0",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=22739s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240630",
+        "time": "06:21:10",
+        "song_name": "Hacking to the Gate",
+        "artist": "いとうかなこ",
+        "source": "STEINS;GATE",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=22870s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240630",
+        "time": "06:32:19",
+        "song_name": "真理の鏡、剣乃ように",
+        "artist": "鈴木このみ",
+        "source": "この世の果てで恋を唄う少女YU-NO (アニメ)",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=23539s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240630",
+        "time": "06:44:24",
+        "song_name": "〜infinity〜∞",
+        "artist": "林原めぐみ",
+        "source": "ロスト・ユニバース",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=24264s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240630",
+        "time": "07:01:50",
+        "song_name": "楽園の翼",
+        "artist": "黒崎真音",
+        "source": "グリザイアの果実 (アニメ)",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=25310s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240630",
+        "time": "07:08:06",
+        "song_name": "刹那の果実",
+        "artist": "黒崎真音",
+        "source": "グリザイアの楽園 (アニメ)",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=25686s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240630",
+        "time": "07:18:16",
+        "song_name": "あなたの愛した世界",
+        "artist": "南條愛乃",
+        "source": "グリザイアの果実 (アニメ)",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=26296s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240630",
+        "time": "07:24:35",
+        "song_name": "黄昏のスタアライト",
+        "artist": "南條愛乃",
+        "source": "グリザイアの楽園 (アニメ)",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=26675s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240630",
+        "time": "07:38:28",
+        "song_name": "雪、無音、窓辺にて。",
+        "artist": "長門有希 (CV.茅原実里)",
+        "source": "涼宮ハルヒの憂鬱 キャラクターソング",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=27508s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240630",
+        "time": "07:44:37",
+        "song_name": "metamorphose",
+        "artist": "高橋洋子",
+        "source": "この醜くも美しい世界",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=27877s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240630",
+        "time": "07:51:49",
+        "song_name": "→unfinished→",
+        "artist": "KOTOKO",
+        "source": "アクセル・ワールド",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=28309s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241201",
+        "time": "00:19:23",
+        "song_name": "Get Along",
+        "artist": "林原めぐみ",
+        "source": "スレイヤーズ",
+        "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=1163s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241201",
+        "time": "00:25:04",
+        "song_name": "KUJIKENAIKARA!",
+        "artist": "林原めぐみ、奥井雅美",
+        "source": "スレイヤーズ",
+        "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=1504s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241201",
+        "time": "00:32:40",
+        "song_name": "乙女の祈り",
+        "artist": "林原めぐみ、鈴木真仁",
+        "source": "スレイヤーズNEXT",
+        "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=1960s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241201",
+        "time": "00:40:20",
+        "song_name": "raging waves",
+        "artist": "林原めぐみ",
+        "source": "スレイヤーズごぅじゃす",
+        "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=2420s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241201",
+        "time": "01:09:02",
+        "song_name": "I &amp; Myself",
+        "artist": "林原めぐみ",
+        "source": "スレイヤーズろいやる2",
+        "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=4142s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241201",
+        "time": "01:26:00",
+        "song_name": "キャンディ キャンディ",
+        "artist": "堀江美都子、ザ・チャープス",
+        "source": "キャンディ♡キャンディ",
+        "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=5160s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241201",
+        "time": "01:36:31",
+        "song_name": "アタックNo.1",
+        "artist": "大杉久美子",
+        "source": "アタックNo.1",
+        "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=5791s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241201",
+        "time": "01:42:17",
+        "song_name": "薔薇は美しく散る",
+        "artist": "鈴木宏子",
+        "source": "ベルサイユのばら",
+        "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=6137s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241201",
+        "time": "02:00:17",
+        "song_name": "Hail Holy Queen",
+        "artist": "Deloris &amp; The Sisters",
+        "source": "天使にラブ･ソングを…",
+        "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=7217s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241201",
+        "time": "02:09:03",
+        "song_name": "I Will Follow Him (本人自覚無しアカペラ)",
+        "artist": "Deloris &amp; The Sisters",
+        "source": "天使にラブ･ソングを…",
+        "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=7743s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241201",
+        "time": "02:16:52",
+        "song_name": "I Will Follow Him",
+        "artist": "Deloris &amp; The Sisters",
+        "source": "天使にラブ･ソングを…",
+        "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=8212s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241201",
+        "time": "02:41:30",
+        "song_name": "Ave Maria (B♭ major)",
+        "artist": "F. Schubert",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=9690s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241201",
+        "time": "02:54:23",
+        "song_name": "RHYTHM EMOTION",
+        "artist": "TWO-MIX",
+        "source": "新機動戦記ガンダムW",
+        "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=10463s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241201",
+        "time": "03:07:36",
+        "song_name": "Road to Glory～for Dragon Nest (アカペラ)",
+        "artist": "KOKIA",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=11256s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241201",
+        "time": "03:17:33",
+        "song_name": "虹の旋律 (アカペラ)",
+        "artist": "キリカ(CV.早見沙織)・ソニア(CV.瀬戸麻沙美)",
+        "source": "シャイニング・レゾナンス",
+        "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=11853s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241201",
+        "time": "03:36:04",
+        "song_name": "檄！帝国華撃団",
+        "artist": "真宮寺さくら(CV.横山智佐)、帝国歌劇団",
+        "source": "サクラ大戦",
+        "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=12964s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241201",
+        "time": "03:40:47",
+        "song_name": "花咲く乙女 (アカペラ)",
+        "artist": "帝国歌劇団",
+        "source": "サクラ大戦",
+        "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=13247s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241201",
+        "time": "03:47:48",
+        "song_name": "さくら (アカペラ)",
+        "artist": "真宮寺さくら(CV.横山智佐)",
+        "source": "サクラ大戦 桜華絢爛",
+        "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=13668s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241201",
+        "time": "04:03:42",
+        "song_name": "檄！帝国華撃団(改)",
+        "artist": "帝国歌劇団",
+        "source": "サクラ大戦2～君、死にたもうことなかれ～",
+        "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=14622s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241201",
+        "time": "04:10:12",
+        "song_name": "夢のつづき",
+        "artist": "帝国歌劇団",
+        "source": "サクラ大戦2～君、死にたもうことなかれ～",
+        "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=15012s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241201",
+        "time": "04:18:49",
+        "song_name": "御旗のもとに",
+        "artist": "巴里華撃団",
+        "source": "サクラ大戦3～巴里は燃えているか～",
+        "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=15529s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241201",
+        "time": "04:24:07",
+        "song_name": "花の巴里",
+        "artist": "メル・レゾン(CV.小島幸子)、シー・カプリス(CV.かないみか)",
+        "source": "サクラ大戦3 〜巴里は燃えているか〜",
+        "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=15847s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241201",
+        "time": "04:28:58",
+        "song_name": "檄！帝 ～最終章～",
+        "artist": "帝都花組&amp;巴里花組+大神隊長",
+        "source": "サクラ大戦4 〜恋せよ乙女〜",
+        "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=16138s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241201",
+        "time": "04:35:05",
+        "song_name": "地上の戦士",
+        "artist": "紐育華撃団・星組",
+        "source": "サクラ大戦V 〜さらば愛しき人よ〜",
+        "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=16505s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241201",
+        "time": "04:47:10",
+        "song_name": "檄！帝国華撃団＜新章＞",
+        "artist": "天宮さくら(CV.佐倉綾音)、東雲初穂(CV.内田真礼)、望月あざみ(CV.山村響)、アナスタシア・パルマ(CV.福原綾香)、クラリス(CV.早見沙織)",
+        "source": "新サクラ大戦",
+        "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=17230s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241201",
+        "time": "04:57:32",
+        "song_name": "言葉にせずとも",
+        "artist": "SIX LOUNGE",
+        "source": "BLEACH 千年血戦篇-相剋譚-",
+        "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=17852s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241201",
+        "time": "05:06:09",
+        "song_name": "POP IN 2",
+        "artist": "B小町 ルビー(CV.伊駒ゆりえ)、有馬かな(CV.潘めぐみ)、MEMちょ(CV.大久保瑠美)",
+        "source": "【推しの子】 第2期",
+        "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=18369s",
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
@@ -1603,7 +3373,7 @@
         "date": "20240309",
         "time": "01:31:22",
         "song_name": "アマテラス",
-        "artist": "Armony（歌：ほしほ）",
+        "artist": "Armony",
         "source": "",
         "link": "https://www.youtube.com/watch?v=mfO62RxfZPU&t=5482s",
         "is_member_exclusive": false,
@@ -1703,7 +3473,7 @@
         "date": "20240309",
         "time": "03:42:50",
         "song_name": "謳う丘 ～Harmonics EOLIA～",
-        "artist": "丘志方あきこ",
+        "artist": "志方あきこ",
         "source": "アルトネリコ 世界の終わりで詩い続ける少女",
         "link": "https://www.youtube.com/watch?v=mfO62RxfZPU&t=13370s",
         "is_member_exclusive": false,
@@ -1712,12 +3482,12 @@
     {
         "date": "20240309",
         "time": "03:54:20",
-        "song_name": "Ievan polkka (アカペラ)",
+        "song_name": "Ievan polkka",
         "artist": "",
         "source": "",
         "link": "https://www.youtube.com/watch?v=mfO62RxfZPU&t=14060s",
         "is_member_exclusive": false,
-        "is_acapella": false
+        "is_acapella": true
     },
     {
         "date": "20240309",
@@ -1743,7 +3513,7 @@
         "date": "20240309",
         "time": "04:18:22",
         "song_name": "愛ゆえに",
-        "artist": "横山智佐 (真宮寺 さくら) ＆ 高乃麗 (マリア･タチバナ)",
+        "artist": "横山智佐 (真宮寺さくら) ＆ 高乃麗 (マリア･タチバナ)",
         "source": "サクラ大戦・歌謡ショウ",
         "link": "https://www.youtube.com/watch?v=mfO62RxfZPU&t=15502s",
         "is_member_exclusive": false,
@@ -1763,7 +3533,7 @@
         "date": "20240309",
         "time": "04:43:44",
         "song_name": "Hail Holy Queen",
-        "artist": "Deloris &amp; The Sisters",
+        "artist": "Deloris & The Sisters",
         "source": "Sister Act",
         "link": "https://www.youtube.com/watch?v=mfO62RxfZPU&t=17024s",
         "is_member_exclusive": false,
@@ -1800,52 +3570,612 @@
         "is_acapella": false
     },
     {
-        "date": "20240309",
-        "time": "00:45:48",
-        "song_name": "ハッピーハッピーハーッピー♪ (Happy cat)",
-        "artist": "",
-        "source": "",
-        "link": "https://www.youtube.com/watch?v=mfO62RxfZPU&t=2748s",
+        "date": "20240923",
+        "time": "00:12:36",
+        "song_name": "Starry Heavens",
+        "artist": "Day After Tomorrow",
+        "source": "Tales of Symphonia",
+        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=756s",
         "is_member_exclusive": false,
         "is_acapella": false
     },
     {
-        "date": "20240309",
-        "time": "00:46:21",
-        "song_name": "チピチャパ猫 (Chipi chipi chapa chapa cat)",
-        "artist": "",
-        "source": "",
-        "link": "https://www.youtube.com/watch?v=mfO62RxfZPU&t=2781s",
+        "date": "20240923",
+        "time": "00:21:43",
+        "song_name": "そして僕にできるコト",
+        "artist": "misono",
+        "source": "Tales of Symphonia",
+        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=1303s",
         "is_member_exclusive": false,
         "is_acapella": false
     },
     {
-        "date": "20240309",
-        "time": "00:48:22",
-        "song_name": "泣き叫ぶ子猫 (Screaming cat/kitten)",
-        "artist": "",
-        "source": "",
-        "link": "https://www.youtube.com/watch?v=mfO62RxfZPU&t=2902s",
+        "date": "20240923",
+        "time": "01:03:51",
+        "song_name": "勇者",
+        "artist": "YOASOBI",
+        "source": "葬送のフリーレン",
+        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=3831s",
         "is_member_exclusive": false,
         "is_acapella": false
     },
     {
-        "date": "20240309",
-        "time": "00:48:34",
-        "song_name": "ヤギと猫 (huhcat)",
-        "artist": "",
-        "source": "",
-        "link": "https://www.youtube.com/watch?v=mfO62RxfZPU&t=2914s",
+        "date": "20240923",
+        "time": "01:17:42",
+        "song_name": "Super Driver",
+        "artist": "平野綾",
+        "source": "涼宮ハルヒの憂鬱",
+        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=4662s",
         "is_member_exclusive": false,
         "is_acapella": false
     },
     {
-        "date": "20240309",
-        "time": "00:49:52",
-        "song_name": "説教猫 (Talking cat/Sad cat)",
-        "artist": "",
+        "date": "20240923",
+        "time": "01:25:47",
+        "song_name": "Lost my music",
+        "artist": "涼宮ハルヒ (CV.平野綾)",
+        "source": "涼宮ハルヒの憂鬱",
+        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=5147s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240923",
+        "time": "01:37:16",
+        "song_name": "冒険でしょでしょ？",
+        "artist": "平野綾",
+        "source": "涼宮ハルヒの憂鬱",
+        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=5836s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240923",
+        "time": "01:45:23",
+        "song_name": "雪、無音、窓辺にて。",
+        "artist": "長門有希 (CV.茅原実里)",
+        "source": "涼宮ハルヒの憂鬱 キャラクターソング",
+        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=6323s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240923",
+        "time": "01:57:15",
+        "song_name": "What&#39;s Up Guys?",
+        "artist": "古本新之輔、林原めぐみ",
+        "source": "爆れつハンター",
+        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=7035s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240923",
+        "time": "02:07:54",
+        "song_name": "KOIBUMI",
+        "artist": "林原めぐみ",
+        "source": "朝霧の巫女",
+        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=7674s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240923",
+        "time": "02:21:44",
+        "song_name": "Love Destiny",
+        "artist": "堀江由衣",
+        "source": "シスター・プリンセス",
+        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=8504s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240923",
+        "time": "02:30:18",
+        "song_name": "Get Along",
+        "artist": "林原めぐみ",
+        "source": "スレイヤーズ",
+        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=9018s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240923",
+        "time": "02:36:59",
+        "song_name": "Give a reason",
+        "artist": "林原めぐみ",
+        "source": "スレイヤーズ NEXT",
+        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=9419s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241020",
+        "time": "00:22:56",
+        "song_name": "Weiß 〜幻想への誘い〜",
+        "artist": "霜月はるか†Revo(Sound Horizon)",
         "source": "",
-        "link": "https://www.youtube.com/watch?v=mfO62RxfZPU&t=2992s",
+        "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=1376s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241020",
+        "time": "00:29:49",
+        "song_name": "Schwarzweiß 〜霧の向こうに繋がる世界〜",
+        "artist": "霜月はるか†Revo(Sound Horizon)",
+        "source": "イリスのアトリエ グランファンタズム",
+        "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=1789s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241020",
+        "time": "00:46:24",
+        "song_name": "しあわせえぼりゅ～しょん♡ 〜こむぎ&amp;いろはVer.〜 (TV Size)",
+        "artist": "⽯井あみ＆後本萌葉",
+        "source": "わんだふるぷりきゅあ！",
+        "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=2784s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241020",
+        "time": "00:59:34",
+        "song_name": "Wellerman (Sea Shanty)",
+        "artist": "Nathan Evans",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=3574s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241020",
+        "time": "01:17:02",
+        "song_name": "眠らされたリネージュ",
+        "artist": "JUNNA",
+        "source": "魔法使いの嫁 SEASON2",
+        "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=4622s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241020",
+        "time": "01:42:24",
+        "song_name": "スカイクラッドの観測者",
+        "artist": "いとうかなこ",
+        "source": "STEINS;GATE(ゲーム)",
+        "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=6144s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241020",
+        "time": "02:00:08",
+        "song_name": "迷夢",
+        "artist": "志方あきこ",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=7208s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241020",
+        "time": "02:09:23",
+        "song_name": "ジョバイロ",
+        "artist": "ポルノグラフィティ",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=7763s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241020",
+        "time": "02:29:51",
+        "song_name": "ピエトロの旅立ち",
+        "artist": "ジュリエッタ柴田",
+        "source": "ポポロクロイス物語(ゲーム)",
+        "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=8991s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241020",
+        "time": "02:42:33",
+        "song_name": "小さな花",
+        "artist": "鈴木朋",
+        "source": "ポポロクロイス物語II(ゲーム)",
+        "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=9753s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241020",
+        "time": "03:00:58",
+        "song_name": "夢は終わらない 〜こぼれ落ちる時の雫〜",
+        "artist": "よーみ",
+        "source": "Tales of Phantasia",
+        "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=10858s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241020",
+        "time": "04:14:09",
+        "song_name": "Rolling star",
+        "artist": "YUI",
+        "source": "BLEACH",
+        "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=15249s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241020",
+        "time": "04:23:06",
+        "song_name": "You got game?",
+        "artist": "Kimeru",
+        "source": "テニスの王子様",
+        "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=15786s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241020",
+        "time": "05:08:36",
+        "song_name": "COLORS",
+        "artist": "FLOW",
+        "source": "コードギアス 反逆のルルーシュ",
+        "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=18516s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241020",
+        "time": "05:13:41",
+        "song_name": "モザイクカケラ",
+        "artist": "SunSet Swish",
+        "source": "コードギアス 反逆のルルーシュ",
+        "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=18821s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241020",
+        "time": "05:19:57",
+        "song_name": "勇侠青春謳",
+        "artist": "ALI PROJECT",
+        "source": "コードギアス 反逆のルルーシュ",
+        "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=19197s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241020",
+        "time": "05:37:00",
+        "song_name": "創聖のアクエリオン",
+        "artist": "AKINO",
+        "source": "創聖のアクエリオン",
+        "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=20220s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241020",
+        "time": "05:45:17",
+        "song_name": "Go Tight!",
+        "artist": "AKINO",
+        "source": "創聖のアクエリオン",
+        "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=20717s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241020",
+        "time": "05:54:30",
+        "song_name": "空色デイズ",
+        "artist": "中川翔子",
+        "source": "天元突破グレンラガン",
+        "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=21270s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241020",
+        "time": "06:13:19",
+        "song_name": "Tequila",
+        "artist": "The Champs",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=22399s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241020",
+        "time": "06:25:08",
+        "song_name": "白夜幻想譚",
+        "artist": "霜月はるか",
+        "source": "イリスのアトリエ エターナルマナ",
+        "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=23108s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241020",
+        "time": "06:31:05",
+        "song_name": "天香国色",
+        "artist": "Armony（歌：ほしほ）",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=23465s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241020",
+        "time": "06:40:54",
+        "song_name": "Emporium",
+        "artist": "Armony（歌：ほしほ）",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=24054s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240916",
+        "time": "00:15:27",
+        "song_name": "IN MY DREAM",
+        "artist": "真行寺恵里",
+        "source": "ブレンパワード",
+        "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=927s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240916",
+        "time": "00:25:30",
+        "song_name": "愛の輪郭（フィールド）",
+        "artist": "KOKIA (アカペラ)",
+        "source": "ブレンパワード",
+        "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=1530s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240916",
+        "time": "00:33:57",
+        "song_name": "エルの楽園 [→ side:E →]",
+        "artist": "Sound Horizon",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=2037s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240916",
+        "time": "00:42:36",
+        "song_name": "StarDust",
+        "artist": "Sound Horizon",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=2556s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240916",
+        "time": "00:55:38",
+        "song_name": "カルマ",
+        "artist": "BUMP OF CHICKEN",
+        "source": "Tales of the Abyss",
+        "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=3338s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240916",
+        "time": "01:00:15",
+        "song_name": "忘れじの言の葉",
+        "artist": "未来古代楽団 feat.安次嶺希和子",
+        "source": "グリムノーツ",
+        "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=3615s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240916",
+        "time": "01:09:26",
+        "song_name": "澪音の世界",
+        "artist": "Sound Horizon",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=4166s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240916",
+        "time": "01:22:13",
+        "song_name": "ループ",
+        "artist": "坂本真綾",
+        "source": "ツバサ~RESERVoir CHRoNiCLE~",
+        "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=4933s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240916",
+        "time": "01:34:47",
+        "song_name": "フクロウ ～フクロウが知らせる客が来たと～",
+        "artist": "KOKIA",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=5687s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241124",
+        "time": "00:38:00",
+        "song_name": "壊れたマリオネット",
+        "artist": "Sound Horizon",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=2280s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241124",
+        "time": "01:04:12",
+        "song_name": "メロウ",
+        "artist": "須田景凪",
+        "source": "スキップとローファー",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=3852s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241124",
+        "time": "01:16:45",
+        "song_name": "Going History",
+        "artist": "林原めぐみ",
+        "source": "スレイヤーズEX.",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=4605s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241124",
+        "time": "01:24:57",
+        "song_name": "灼熱の恋 (Short Ver.)",
+        "artist": "林原めぐみ",
+        "source": "スレイヤーズEX.",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=5097s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241124",
+        "time": "01:38:35",
+        "song_name": "Crossing Field",
+        "artist": "LiSA",
+        "source": "ソードアート・オンライン アインクラッド編",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=5915s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241124",
+        "time": "02:34:45",
+        "song_name": "となりのトトロ",
+        "artist": "井上あずみ",
+        "source": "となりのトトロ",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=9285s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241124",
+        "time": "03:39:09",
+        "song_name": "銀の龍の背に乗って",
+        "artist": "中島みゆき",
+        "source": "Dr.コトー診療所",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=13149s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241124",
+        "time": "03:50:58",
+        "song_name": "空へ...",
+        "artist": "笠原弘子",
+        "source": "ロミオの青い空",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=13858s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241124",
+        "time": "05:33:32",
+        "song_name": "もう恋なんてしない",
+        "artist": "槇原敬之",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=20012s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241124",
+        "time": "06:09:18",
+        "song_name": "少女迷路でつかまえて",
+        "artist": "美郷あき",
+        "source": "Strawberry Panic",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=22158s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241124",
+        "time": "06:25:15",
+        "song_name": "不安定な神様",
+        "artist": "Suara",
+        "source": "うたわれるもの 偽りの仮面 (アニメ)",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=23115s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241124",
+        "time": "06:31:10",
+        "song_name": "ナージャ!!",
+        "artist": "本田美奈子",
+        "source": "明日のナージャ",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=23470s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241124",
+        "time": "06:35:22",
+        "song_name": "けせら・せら",
+        "artist": "小清水亜美",
+        "source": "明日のナージャ",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=23722s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241124",
+        "time": "06:48:05",
+        "song_name": "Dokkin♢魔法つかいプリキュア！",
+        "artist": "北川理恵",
+        "source": "魔法つかいプリキュア!",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=24485s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241124",
+        "time": "06:56:24",
+        "song_name": "DANZEN！ ふたりはプリキュア (Ver.Max Heart)",
+        "artist": "五條真由美",
+        "source": "ふたりはプリキュア Max Heart",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=24984s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241124",
+        "time": "07:00:43",
+        "song_name": "ゲッチュウ！らぶらぶぅ？！ (Short Ver.)",
+        "artist": "五條真由美",
+        "source": "ふたりはプリキュア",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=25243s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241124",
+        "time": "07:06:17",
+        "song_name": "おジャ魔女カーニバル!!",
+        "artist": "MAHO堂",
+        "source": "おジャ魔女どれみ",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=25577s",
         "is_member_exclusive": false,
         "is_acapella": false
     },
@@ -2146,6 +4476,466 @@
         "artist": "ポルノグラフィティ",
         "source": "鋼の錬金術師",
         "link": "https://www.youtube.com/watch?v=kw8Ia8qEJ74&t=22467s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "00:22:25",
+        "song_name": "ムーンライト伝説",
+        "artist": "DALI",
+        "source": "美少女戦士セーラームーン",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=1345s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "00:30:12",
+        "song_name": "め組のひと",
+        "artist": "Rats &amp; Star",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=1812s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "00:40:12",
+        "song_name": "明日もし君が壊れても",
+        "artist": "WANDS",
+        "source": "遊☆戯☆王",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=2412s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "00:47:13",
+        "song_name": "乾杯の歌(Libiamo ne&#39; lieti calici)",
+        "artist": "G.ヴェルディ",
+        "source": "オペラ椿姫(La traviata)",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=2833s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "00:56:56",
+        "song_name": "COLORS",
+        "artist": "FLOW",
+        "source": "コードギアス 反逆のルルーシュ",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=3416s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "01:05:18",
+        "song_name": "勇侠青春謳",
+        "artist": "ALI PROJECT",
+        "source": "コードギアス 反逆のルルーシュ",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=3918s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "01:25:48",
+        "song_name": "君だけの旅路",
+        "artist": "Suara",
+        "source": "うたわれるもの 散りゆく者への子守唄",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=5148s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "01:32:14",
+        "song_name": "深愛",
+        "artist": "水樹奈々",
+        "source": "WHITE ALBUM",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=5534s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "01:44:32",
+        "song_name": "夢幻",
+        "artist": "水樹奈々",
+        "source": "WHITE ALBUM",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=6272s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "01:57:39",
+        "song_name": "Give a reason",
+        "artist": "林原めぐみ",
+        "source": "スレイヤーズNEXT",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=7059s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "02:07:13",
+        "song_name": "檄！帝国華撃団",
+        "artist": "真宮寺さくら(横山智佐)・帝国歌劇団",
+        "source": "サクラ大戦",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=7633s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "02:14:42",
+        "song_name": "夢のつづき",
+        "artist": "真宮寺さくら(横山智佐)・帝国歌劇団",
+        "source": "サクラ大戦2～君、死にたもうことなかれ～",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=8082s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "02:28:10",
+        "song_name": "御旗のもとに",
+        "artist": "エリカ・フォンティーヌ(日高のり子)、グリシーヌ・ブルーメール(島津冴子)、コクリコ(小桜エツコ)、ロベリア・カルリーニ(井上喜久子)、北大路花火(鷹森淑乃)・巴里華撃団",
+        "source": "サクラ大戦3～巴里は燃えているか～",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=8890s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "02:35:42",
+        "song_name": "ブルーウォーター",
+        "artist": "森川美穂",
+        "source": "ふしぎの海のナディア",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=9342s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "02:45:05",
+        "song_name": "Yes,I Will...",
+        "artist": "森川美穂",
+        "source": "ふしぎの海のナディア",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=9905s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "02:54:17",
+        "song_name": "What&#39;s Up Guys?",
+        "artist": "古本新之輔・林原めぐみ",
+        "source": "爆れつハンター",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=10457s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "03:01:43",
+        "song_name": "MASK",
+        "artist": "奥井雅美",
+        "source": "爆れつハンター",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=10903s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "03:12:49",
+        "song_name": "悲しみの向こうへ",
+        "artist": "いとうかなこ",
+        "source": "School Days",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=11569s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "03:29:02",
+        "song_name": "バラライカ",
+        "artist": "月島きらり starring 久住小春(モーニング娘。)",
+        "source": "きらりん☆レボリューション",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=12542s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "03:36:44",
+        "song_name": "輪舞-revolution",
+        "artist": "奥井雅美",
+        "source": "少女革命ウテナ",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=13004s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "03:46:56",
+        "song_name": "檄！帝国華撃団＜新章＞",
+        "artist": "天宮さくら(佐倉綾音)、東雲初穂(内田真礼)、望月あざみ(山村響)、アナスタシア・パルマ(福原綾香)、クラリス(早見沙織)",
+        "source": "新サクラ大戦",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=13616s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "03:52:20",
+        "song_name": "愛ゆえに",
+        "artist": "真宮寺さくら(横山智佐)＆マリア・タチバナ(高乃麗)",
+        "source": "サクラ大戦",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=13940s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "04:11:19",
+        "song_name": "涙よ、Au revoir",
+        "artist": "エリカ・フォンティーヌ(日高のり子)",
+        "source": "サクラ大戦 エコール・ド・巴里",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=15079s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "04:39:55",
+        "song_name": "健全ロボ ダイミダラー",
+        "artist": "遠藤会",
+        "source": "健全ロボ ダイミダラー",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=16795s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "04:53:10",
+        "song_name": "ババーンと推参！バーンブレイバーン",
+        "artist": "ブレイバーン(鈴村健一)",
+        "source": "勇気爆発バーンブレイバーン",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=17590s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "05:05:51",
+        "song_name": "IN MY DREAM",
+        "artist": "真行寺恵里",
+        "source": "ブレンパワード",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=18351s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "05:16:28",
+        "song_name": "残響散歌",
+        "artist": "Aimer",
+        "source": "鬼滅の刃 遊郭編",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=18988s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "05:31:56",
+        "song_name": "ゆずれない願い",
+        "artist": "田村直美",
+        "source": "魔法騎士レイアース",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=19916s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "05:45:13",
+        "song_name": "猛烈宇宙交響曲・第七楽章「無限の愛」",
+        "artist": "ももいろクローバーZ",
+        "source": "モーレツ宇宙海賊",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=20713s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "05:54:17",
+        "song_name": "ピンキージョーンズ",
+        "artist": "ももいろクローバー",
+        "source": "ヨスガノソラ",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=21257s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "06:02:37",
+        "song_name": "ココ☆ナツ",
+        "artist": "ももいろクローバー",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=21757s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "06:17:44",
+        "song_name": "空耳ケーキ",
+        "artist": "Oranges &amp; Lemons",
+        "source": "あずまんが大王 THE ANIMATION",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=22664s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "06:27:35",
+        "song_name": "ロマンス",
+        "artist": "PENICILLIN",
+        "source": "セクシーコマンドー外伝 すごいよ!!マサルさん",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=23255s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "06:41:59",
+        "song_name": "progress",
+        "artist": "浜崎あゆみ",
+        "source": "テイルズ オブ エクシリア",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=24119s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "06:49:51",
+        "song_name": "恋をするたびに傷つきやすく…",
+        "artist": "翠玲",
+        "source": "ナースエンジェルりりかSOS",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=24591s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "06:56:30",
+        "song_name": "そばかす",
+        "artist": "JUDY AND MARY",
+        "source": "るろうに剣心-明治剣客浪漫譚-",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=24990s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "07:02:54",
+        "song_name": "1/3の純情な感情",
+        "artist": "SIAM SHADE",
+        "source": "るろうに剣心-明治剣客浪漫譚-",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=25374s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "07:10:02",
+        "song_name": "Tactics",
+        "artist": "THE YELLOW MONKEY",
+        "source": "るろうに剣心-明治剣客浪漫譚-",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=25802s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "07:16:11",
+        "song_name": "世界でいちばん熱い夏",
+        "artist": "PRINCESS PRINCESS",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=26171s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "07:27:37",
+        "song_name": "HOT LIMIT",
+        "artist": "T.M.Revolution",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=26857s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "07:36:31",
+        "song_name": "創聖のアクエリオン",
+        "artist": "AKINO",
+        "source": "創聖のアクエリオン",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=27391s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "07:44:24",
+        "song_name": "夏が来る",
+        "artist": "大黒摩季",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=27864s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "07:59:20",
+        "song_name": "夏空グラフィティ",
+        "artist": "いきものがかり",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=28760s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "08:13:36",
+        "song_name": "君たちキウイ・パパイア・マンゴーだね",
+        "artist": "中原めいこ",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=29616s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "08:19:41",
+        "song_name": "聖母たちのララバイ",
+        "artist": "岩崎宏美",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=29981s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240707",
+        "time": "08:29:36",
+        "song_name": "タッチ",
+        "artist": "岩崎良美",
+        "source": "タッチ",
+        "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=30576s",
         "is_member_exclusive": false,
         "is_acapella": false
     },
@@ -3450,6 +6240,386 @@
         "is_acapella": false
     },
     {
+        "date": "20240622",
+        "time": "00:10:08",
+        "song_name": "Get Along",
+        "artist": "林原めぐみ",
+        "source": "スレイヤーズ",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=608s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "00:23:19",
+        "song_name": "Glitter and be Gay",
+        "artist": "",
+        "source": "Candide",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=1399s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "00:39:32",
+        "song_name": "Get Wild",
+        "artist": "TM NETWORK",
+        "source": "CITY HUNTER",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=2372s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "00:49:38",
+        "song_name": "get the regret over",
+        "artist": "片霧烈火",
+        "source": "闘神都市III",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=2978s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "00:58:28",
+        "song_name": "Gracia",
+        "artist": "Armony（歌：ほしほ）",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=3508s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "01:31:04",
+        "song_name": "キキワケナイ!",
+        "artist": "ワルキューレ",
+        "source": "劇場版マクロスΔ 絶対LIVE!!!!!!",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=5464s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "01:45:15",
+        "song_name": "God knows...",
+        "artist": "涼宮ハルヒ (CV.平野 綾)",
+        "source": "涼宮ハルヒの憂鬱",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=6315s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "01:57:35",
+        "song_name": "MEMORIA",
+        "artist": "藍井エイル",
+        "source": "Fate/Zero",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=7055s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "02:28:00",
+        "song_name": "半永久的に愛してよ♡",
+        "artist": "堀江由衣",
+        "source": "ゴールデンタイム",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=8880s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "02:43:36",
+        "song_name": "グローイング・アップ",
+        "artist": "堀江美都子",
+        "source": "私のあしながおじさん",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=9816s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "02:57:18",
+        "song_name": "GATE OF STEINER",
+        "artist": "佐々木恵梨",
+        "source": "STEINS;GATE 0",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=10638s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "03:07:40",
+        "song_name": "いけないボーダーライン",
+        "artist": "ワルキューレ",
+        "source": "マクロスΔ",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=11260s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "03:17:56",
+        "song_name": "キングゲイナー・オーバー!",
+        "artist": "福山芳樹",
+        "source": "OVERMANキングゲイナー",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=11876s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "03:32:32",
+        "song_name": "猛烈宇宙交響曲・第七楽章「無限の愛」",
+        "artist": "ももいろクローバーZ",
+        "source": "モーレツ宇宙海賊",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=12752s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "04:02:27",
+        "song_name": "満天",
+        "artist": "Kalafina",
+        "source": "Fate/Zero",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=14547s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "04:11:11",
+        "song_name": "未来への咆哮",
+        "artist": "JAM Project",
+        "source": "Muv-Luv Alternative",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=15071s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "04:23:55",
+        "song_name": "ビビデバ",
+        "artist": "星街すいせい",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=15835s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "04:30:29",
+        "song_name": "ノーザンクロス",
+        "artist": "シェリル・ノーム starring May&#39;n",
+        "source": "マクロスF",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=16229s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "04:35:47",
+        "song_name": "ライオン",
+        "artist": "May&#39;n&amp;中島愛",
+        "source": "マクロスF",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=16547s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "04:59:48",
+        "song_name": "スピラーレ",
+        "artist": "牧野由依",
+        "source": "ARIA",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=17988s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "05:14:19",
+        "song_name": "IN MY DREAM",
+        "artist": "真行寺恵里",
+        "source": "ブレンパワード",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=18859s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "05:24:58",
+        "song_name": "愛・おぼえていますか",
+        "artist": "飯島真理",
+        "source": "超時空要塞マクロス 愛・おぼえていますか",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=19498s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "05:34:10",
+        "song_name": "色は匂へど散りぬるを",
+        "artist": "幽閉サテライト",
+        "source": "幻想万華鏡 春雪異変の章",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=20050s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "05:39:43",
+        "song_name": "月に叢雲華に風",
+        "artist": "幽閉サテライト",
+        "source": "幻想万華鏡 紅霧異変の章",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=20383s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "05:46:31",
+        "song_name": "泡沫、哀のまほろば",
+        "artist": "幽閉サテライト",
+        "source": "幻想万華鏡 永夜異変の章",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=20791s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "06:03:00",
+        "song_name": "謳う丘-Harmonics EOLIA-",
+        "artist": "志方あきこ",
+        "source": "アルトネリコ 世界の終わりで詩い続ける少女",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=21780s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "06:16:39",
+        "song_name": "白夜幻想譚",
+        "artist": "霜月はるか",
+        "source": "イリスのアトリエ エターナルマナ",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=22599s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "06:25:19",
+        "song_name": "旅の途中",
+        "artist": "清浦夏実",
+        "source": "狼と香辛料",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=23119s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "06:32:53",
+        "song_name": "EXEC_PHANTASMAGORIA/.",
+        "artist": "みとせのりこ・志方あきこ・霜月はるか",
+        "source": "アルトネリコ 世界の終わりで詩い続ける少女",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=23573s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "06:55:00",
+        "song_name": "エルの楽園 [→ side:E →]",
+        "artist": "Sound Horizon",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=24900s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "07:00:42",
+        "song_name": "エルの絵本【笛吹き男とパレード】",
+        "artist": "Sound Horizon",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=25242s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "07:13:57",
+        "song_name": "EXEC_COSMOFLIPS/.",
+        "artist": "KOKIA",
+        "source": "アルトネリコ3 世界終焉の引鉄は少女の詩が弾く",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=26037s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "07:23:27",
+        "song_name": "Here",
+        "artist": "JUNNA",
+        "source": "魔法使いの嫁",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=26607s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "07:31:55",
+        "song_name": "フライディ・チャイナタウン",
+        "artist": "泰葉",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=27115s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "07:36:27",
+        "song_name": "ペッパー警部",
+        "artist": "ピンク・レディー",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=27387s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "07:41:43",
+        "song_name": "Heart-shaped chant",
+        "artist": "水樹奈々",
+        "source": "シャイニング・ウィンド",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=27703s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "07:51:14",
+        "song_name": "PHANTOM MINDS",
+        "artist": "水樹奈々",
+        "source": "魔法少女リリカルなのは The MOVIE 1st",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=28274s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240622",
+        "time": "08:00:15",
+        "song_name": "ETERNAL BLAZE",
+        "artist": "水樹奈々",
+        "source": "魔法少女リリカルなのはA&#39;s",
+        "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=28815s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
         "date": "20231028",
         "time": "00:20:29",
         "song_name": "旅の途中",
@@ -3826,6 +6996,1006 @@
         "artist": "天宮さくら(佐倉綾音)、東雲初穂(内田真礼)、望月あざみ(山村響)、アナスタシア・パルマ(福原綾香)、クラリス(早見沙織)",
         "source": "新サクラ大戦",
         "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=25212s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "00:09:07",
+        "song_name": "かもめが翔んだ日",
+        "artist": "渡辺真知子",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=547s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "00:16:34",
+        "song_name": "FLYING IN THE SKY",
+        "artist": "鵜島仁文",
+        "source": "機動武闘伝Gガンダム",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=994s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "00:33:54",
+        "song_name": "硝子の少年",
+        "artist": "キンキキッズ",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=2034s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "00:41:23",
+        "song_name": "STAND UP TO THE VICTORY 〜トゥ・ザ・ヴィクトリー〜",
+        "artist": "川添智久",
+        "source": "機動戦士Vガンダム",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=2483s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "00:50:11",
+        "song_name": "オトナブルー",
+        "artist": "新しい学校のリーダーズ",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=3011s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "00:59:51",
+        "song_name": "月の繭",
+        "artist": "奥井亜紀",
+        "source": "∀ガンダム",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=3591s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "01:07:02",
+        "song_name": "アンインストール",
+        "artist": "石川智晶",
+        "source": "ぼくらの",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=4022s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "01:23:01",
+        "song_name": "泪のムコウ",
+        "artist": "ステレオポニー",
+        "source": "機動戦士ガンダム00",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=4981s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "01:32:25",
+        "song_name": "あんなに一緒だったのに",
+        "artist": "See-Saw",
+        "source": "機動戦士ガンダムSEED",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=5545s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "01:39:33",
+        "song_name": "サイレント・ヴォイス",
+        "artist": "ひろえ純",
+        "source": "機動戦士ガンダムΖΖ",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=5973s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "01:48:30",
+        "song_name": "叫べ",
+        "artist": "angela",
+        "source": "蒼穹のファフナー THE BEYOND",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=6510s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "01:57:08",
+        "song_name": "Mystic Girl",
+        "artist": "柏原真智子 (アカペラ)",
+        "source": "蒼穹のファフナー",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=7028s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "02:04:04",
+        "song_name": "Separation",
+        "artist": "angela",
+        "source": "蒼穹のファフナー",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=7444s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "02:09:34",
+        "song_name": "Shangri-La",
+        "artist": "angela",
+        "source": "蒼穹のファフナー",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=7774s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "02:54:19",
+        "song_name": "POP IN 2",
+        "artist": "Ｂ小町",
+        "source": "推しの子",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=10459s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "03:48:07",
+        "song_name": "City Hunter〜愛よ消えないで〜",
+        "artist": "小比類巻かほる",
+        "source": "CITY HUNTER",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=13687s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "04:30:36",
+        "song_name": "僕等のセンチュリー",
+        "artist": "ももいろクローバーZ",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=16236s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "04:39:18",
+        "song_name": "奇跡の鐘",
+        "artist": "帝国歌劇団",
+        "source": "サクラ大戦2 〜君、死にたもうことなかれ〜",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=16758s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "04:52:04",
+        "song_name": "Pure Snow",
+        "artist": "佐々木ゆう子",
+        "source": "火魅子伝",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=17524s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "05:05:13",
+        "song_name": "深愛",
+        "artist": "水樹奈々",
+        "source": "WHITE ALBUM",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=18313s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "05:17:03",
+        "song_name": "Heart-shaped chant",
+        "artist": "水樹奈々",
+        "source": "シャイニング・ウィンド",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=19023s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "05:28:58",
+        "song_name": "津軽海峡・冬景色",
+        "artist": "石川さゆり",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=19738s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "05:40:58",
+        "song_name": "天城越え",
+        "artist": "石川さゆり",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=20458s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "05:52:58",
+        "song_name": "キミガタメ",
+        "artist": "Suara",
+        "source": "うたわれるもの",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=21178s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "06:01:27",
+        "song_name": "不安定な神様",
+        "artist": "Suara",
+        "source": "うたわれるもの 偽りの仮面 (アニメ)",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=21687s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "06:09:34",
+        "song_name": "天かける星",
+        "artist": "Suara",
+        "source": "うたわれるもの 偽りの仮面",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=22174s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "06:21:12",
+        "song_name": "届かない恋 &#39;13",
+        "artist": "上原れな",
+        "source": "WHITE ALBUM2（アニメ）",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=22872s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "06:34:41",
+        "song_name": "Twinkle Snow",
+        "artist": "津田朱里 (アカペラ)",
+        "source": "WHITE ALBUM2（ゲーム）",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=23681s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "06:48:54",
+        "song_name": "POWDER SNOW",
+        "artist": "AKKO (アカペラ)",
+        "source": "WHITE ALBUM（ゲーム）",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=24534s",
+        "is_member_exclusive": false,
+        "is_acapella": true
+    },
+    {
+        "date": "20241229",
+        "time": "06:58:53",
+        "song_name": "Eternal Love 2003",
+        "artist": "飯島真理 (アカペラ)",
+        "source": "GALAXY ANGEL Moonlit Lovers",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=25133s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "07:07:56",
+        "song_name": "創聖のアクエリオン",
+        "artist": "AKINO",
+        "source": "創聖のアクエリオン",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=25676s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "07:28:04",
+        "song_name": "悲しみの向こうへ",
+        "artist": "いとうかなこ",
+        "source": "School Days",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=26884s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "07:35:59",
+        "song_name": "WHITE BREATH",
+        "artist": "T.M.Revolution",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=27359s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "07:48:20",
+        "song_name": "Secret Liqueur",
+        "artist": "霜月はるか",
+        "source": "働くオトナの恋愛事情",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=28100s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "07:54:37",
+        "song_name": "恋獄",
+        "artist": "霜月はるか (アカペラ)",
+        "source": "カルタグラ 〜ツキ狂イノ病〜",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=28477s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "08:09:51",
+        "song_name": "白夜幻想譚",
+        "artist": "霜月はるか",
+        "source": "イリスのアトリエ エターナルマナ",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=29391s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241229",
+        "time": "08:15:37",
+        "song_name": "終端の王と異世界の騎士 ～The Endia &amp; The Knights～",
+        "artist": "Sound Horizon",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=29737s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "00:24:16",
+        "song_name": "マリンブルーに沿って",
+        "artist": "佐咲紗花",
+        "source": "ちいさな彼女の小夜曲",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=1456s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "00:39:40",
+        "song_name": "SHINY DAYS",
+        "artist": "亜咲花",
+        "source": "ゆるキャン△",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=2380s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "00:52:20",
+        "song_name": "Seize The Day",
+        "artist": "亜咲花",
+        "source": "ゆるキャン△ SEASON2",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=3140s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "01:13:55",
+        "song_name": "Sway to My Beat in Cosmos (銀河を独り揺蕩う)",
+        "artist": "Chevy",
+        "source": "崩壊：スターレイル",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=4435s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "01:18:28",
+        "song_name": "If I Can Stop One Heart From Breaking (傷つく誰かの心を守ることができたなら)",
+        "artist": "Chevy",
+        "source": "崩壊：スターレイル",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=4708s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "01:25:09",
+        "song_name": "Hope Is the Thing With Feathers (翼の生えた希望)",
+        "artist": "Chevy",
+        "source": "崩壊：スターレイル",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=5109s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "01:53:01",
+        "song_name": "ジェリクルソング",
+        "artist": "劇団四季",
+        "source": "キャッツ",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=6781s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "02:13:55",
+        "song_name": "FIRE BIRD",
+        "artist": "Roselia",
+        "source": "BanG Dream! 3rd Season",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=8035s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "02:25:13",
+        "song_name": "ジョジョ 〜その血の運命〜",
+        "artist": "富永TOMMY弘明",
+        "source": "ジョジョの奇妙な冒険",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=8713s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "02:39:11",
+        "song_name": "STONE OCEAN",
+        "artist": "ichigo from 岸田教団&amp;THE明星ロケッツ",
+        "source": "ジョジョの奇妙な冒険 ストーンオーシャン",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=9551s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "03:08:03",
+        "song_name": "STAND PROUD",
+        "artist": "橋本仁",
+        "source": "ジョジョの奇妙な冒険 スターダストクルセイダース",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=11283s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "03:21:37",
+        "song_name": "ジョジョ その血の記憶〜end of THE WORLD〜",
+        "artist": "JO☆STARS〜TOMMY,Coda,JIN〜",
+        "source": "ジョジョの奇妙な冒険 スターダストクルセイダース",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=12097s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "03:45:36",
+        "song_name": "ペガサス幻想",
+        "artist": "MAKE-UP",
+        "source": "聖闘士星矢",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=13536s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "03:55:56",
+        "song_name": "勇侠青春謳",
+        "artist": "ALI PROJECT",
+        "source": "コードギアス 反逆のルルーシュ",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=14156s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "04:11:40",
+        "song_name": "聖少女領域",
+        "artist": "ALI PROJECT",
+        "source": "ローゼンメイデン・トロイメント",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=15100s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "04:22:04",
+        "song_name": "薔薇獄乙女",
+        "artist": "ALI PROJECT",
+        "source": "ローゼンメイデン・オーベルテューレ",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=15724s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "04:41:11",
+        "song_name": "INTERNET YAMERO",
+        "artist": "Aiobahn feat. KOTOKO",
+        "source": "NEEDY GIRL OVERDOSE",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=16871s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "04:52:54",
+        "song_name": "美少女無罪♡パイレーツ",
+        "artist": "宝鐘マリン",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=17574s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "05:04:00",
+        "song_name": "だから僕は音楽を辞めた",
+        "artist": "ヨルシカ",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=18240s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "05:14:16",
+        "song_name": "シル・ヴ・プレジデント",
+        "artist": "P丸様。",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=18856s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "05:24:28",
+        "song_name": "Cutie Panther",
+        "artist": "BiBi (絢瀬絵里(CV.南條愛乃)、西木野真姫(CV.Pile)、矢澤にこ(CV.徳井青空))",
+        "source": "ラブライブ！",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=19468s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "05:35:52",
+        "song_name": "ビビデバ",
+        "artist": "星街すいせい",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=20152s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "05:42:16",
+        "song_name": "シャルル",
+        "artist": "須田景凪",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=20536s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "05:51:48",
+        "song_name": "自由の翼",
+        "artist": "Linked Horizon",
+        "source": "進撃の巨人",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=21108s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "06:07:24",
+        "song_name": "深愛",
+        "artist": "水樹奈々",
+        "source": "WHITE ALBUM",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=22044s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "06:25:39",
+        "song_name": "→unfinished→",
+        "artist": "KOTOKO",
+        "source": "アクセル・ワールド",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=23139s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "06:41:47",
+        "song_name": "怪物",
+        "artist": "YOASOBI",
+        "source": "BEASTARS",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=24107s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "06:48:20",
+        "song_name": "花に亡霊",
+        "artist": "ヨルシカ",
+        "source": "泣きたい私は猫をかぶる",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=24500s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "07:00:54",
+        "song_name": "Burst The Gravity",
+        "artist": "ALTIMA",
+        "source": "アクセル・ワールド",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=25254s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "07:27:45",
+        "song_name": "ブルーバード",
+        "artist": "いきものがかり",
+        "source": "NARUTO ~ナルト~ 疾風伝",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=26865s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "07:40:31",
+        "song_name": "ラヴァーズ",
+        "artist": "7!!",
+        "source": "NARUTO ~ナルト~ 疾風伝",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=27631s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "07:46:27",
+        "song_name": "ホタルノヒカリ",
+        "artist": "いきものがかり",
+        "source": "NARUTO ~ナルト~ 疾風伝",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=27987s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "07:58:36",
+        "song_name": "夏のお嬢さん",
+        "artist": "榊原郁恵",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=28716s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "08:04:10",
+        "song_name": "渚のシンドバッド",
+        "artist": "ピンク・レディー",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=29050s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "08:09:29",
+        "song_name": "Falco ~ファルコ~",
+        "artist": "島谷ひとみ",
+        "source": "うえきの法則",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=29369s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "08:16:02",
+        "song_name": "赤い砂漠の伝説",
+        "artist": "島谷ひとみ",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=29762s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240721",
+        "time": "08:23:25",
+        "song_name": "恋のダンスサイト",
+        "artist": "モーニング娘。",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=30205s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240929",
+        "time": "00:15:35",
+        "song_name": "ユニバーページ",
+        "artist": "三森すずこ",
+        "source": "アウトブレイク・カンパニー",
+        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=935s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240929",
+        "time": "00:35:12",
+        "song_name": "輪舞-revolution",
+        "artist": "奥井雅美",
+        "source": "少女革命ウテナ",
+        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=2112s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240929",
+        "time": "00:47:32",
+        "song_name": "絶対運命黙示録",
+        "artist": "J.A.シーザー、杉並児童合唱団 (アカペラ)",
+        "source": "少女革命ウテナ",
+        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=2852s",
+        "is_member_exclusive": false,
+        "is_acapella": true
+    },
+    {
+        "date": "20240929",
+        "time": "00:54:10",
+        "song_name": "バーチャルスター発生学",
+        "artist": "上谷麻紀",
+        "source": "少女革命ウテナ",
+        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=3250s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240929",
+        "time": "01:02:59",
+        "song_name": "少年よ我に帰れ",
+        "artist": "やくしまるえつこメトロオーケストラ",
+        "source": "輪るピングドラム",
+        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=3779s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240929",
+        "time": "01:14:18",
+        "song_name": "心晴れて 夜も明けて",
+        "artist": "堀江由衣",
+        "source": "十兵衛ちゃん2 - シベリア柳生の逆襲 -",
+        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=4458s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240929",
+        "time": "01:20:18",
+        "song_name": "ゆずれない願い",
+        "artist": "田村直美",
+        "source": "魔法騎士レイアース",
+        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=4818s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240929",
+        "time": "01:30:24",
+        "song_name": "光と影を抱きしめたまま",
+        "artist": "田村直美",
+        "source": "魔法騎士レイアース",
+        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=5424s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240929",
+        "time": "01:50:13",
+        "song_name": "GONG",
+        "artist": "JAM Project",
+        "source": "第3次スーパーロボット大戦α 終焉の銀河へ",
+        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=6613s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240929",
+        "time": "02:00:28",
+        "song_name": "City Hunter〜愛よ消えないで〜",
+        "artist": "小比類巻かほる",
+        "source": "CITY HUNTER",
+        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=7228s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240929",
+        "time": "02:07:46",
+        "song_name": "Get Wild",
+        "artist": "TM NETWORK",
+        "source": "CITY HUNTER",
+        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=7666s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240929",
+        "time": "02:17:34",
+        "song_name": "raging waves",
+        "artist": "林原めぐみ",
+        "source": "スレイヤーズごぅじゃす",
+        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=8254s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240818",
+        "time": "00:16:00",
+        "song_name": "かもめが翔んだ日",
+        "artist": "渡辺真知子",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=960s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240818",
+        "time": "00:24:36",
+        "song_name": "Get Along",
+        "artist": "林原めぐみ",
+        "source": "スレイヤーズ",
+        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=1476s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240818",
+        "time": "00:33:40",
+        "song_name": "euphoric field",
+        "artist": "ELISA",
+        "source": "ef - a tale of memories.",
+        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=2020s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240818",
+        "time": "00:42:31",
+        "song_name": "The Sound of Music",
+        "artist": "Julie Andrews",
+        "source": "The Sound of Music",
+        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=2551s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240818",
+        "time": "00:49:42",
+        "song_name": "Do-Re-Mi",
+        "artist": "Julie Andrews",
+        "source": "The Sound of Music",
+        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=2982s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240818",
+        "time": "00:54:26",
+        "song_name": "裸足のフローネ",
+        "artist": "潘恵子",
+        "source": "家族ロビンソン漂流記 ふしぎな島のフローネ",
+        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=3266s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240818",
+        "time": "00:57:32",
+        "song_name": "フローネの夢",
+        "artist": "潘恵子",
+        "source": "家族ロビンソン漂流記 ふしぎな島のフローネ",
+        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=3452s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240818",
+        "time": "01:06:48",
+        "song_name": "去り際のロマンティクス",
+        "artist": "See-Saw",
+        "source": "機動戦士ガンダムSEED FREEDOM",
+        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=4008s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240818",
+        "time": "01:19:20",
+        "song_name": "タッチ",
+        "artist": "岩崎良美",
+        "source": "タッチ",
+        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=4760s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240818",
+        "time": "01:29:44",
+        "song_name": "Reason",
+        "artist": "玉置成実",
+        "source": "機動戦士ガンダムSEED DESTINY",
+        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=5384s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240818",
+        "time": "01:36:26",
+        "song_name": "君をのせて",
+        "artist": "井上あずみ",
+        "source": "天空の城ラピュタ",
+        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=5786s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240818",
+        "time": "01:43:37",
+        "song_name": "めぐる季節",
+        "artist": "井上あずみ",
+        "source": "魔女の宅急便",
+        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=6217s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240818",
+        "time": "01:58:35",
+        "song_name": "未来への咆哮",
+        "artist": "JAM Project",
+        "source": "Muv-Luv Alternative",
+        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=7115s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240818",
+        "time": "02:13:33",
+        "song_name": "アマテラス",
+        "artist": "Armony（歌：ほしほ）",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=8013s",
         "is_member_exclusive": false,
         "is_acapella": false
     },
@@ -4790,6 +8960,746 @@
         "is_acapella": false
     },
     {
+        "date": "20241110",
+        "time": "00:10:08",
+        "song_name": "誰ガ為ノ世界",
+        "artist": "志方あきこ",
+        "source": "テイルズ オブ シンフォニア THE ANIMATION",
+        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=608s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241110",
+        "time": "00:21:55",
+        "song_name": "ルンがピカッと光ったら",
+        "artist": "ワルキューレ",
+        "source": "マクロスΔ",
+        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=1315s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241110",
+        "time": "00:33:17",
+        "song_name": "フライディ・チャイナタウン",
+        "artist": "泰葉",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=1997s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241110",
+        "time": "00:40:36",
+        "song_name": "DESIRE - 情熱 -",
+        "artist": "中森明菜",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=2436s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241110",
+        "time": "00:47:41",
+        "song_name": "異邦人 - シルクロードのテーマ -",
+        "artist": "久保田早紀",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=2861s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241110",
+        "time": "00:57:25",
+        "song_name": "恋愛サーキュレーション",
+        "artist": "千石撫子（CV.花澤香菜）",
+        "source": "化物語",
+        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=3445s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241110",
+        "time": "01:10:44",
+        "song_name": "群青",
+        "artist": "YOASOBI",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=4244s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241110",
+        "time": "01:22:51",
+        "song_name": "agony",
+        "artist": "KOTOKO",
+        "source": "神無月の巫女",
+        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=4971s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241110",
+        "time": "01:32:09",
+        "song_name": "アムリタ",
+        "artist": "牧野由依",
+        "source": "劇場版ツバサ・クロニクル 鳥カゴの国の姫君",
+        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=5529s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241110",
+        "time": "01:46:09",
+        "song_name": "THE DAY",
+        "artist": "ポルノグラフィティ",
+        "source": "僕のヒーローアカデミア",
+        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=6369s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241110",
+        "time": "02:10:37",
+        "song_name": "ALL MY LOVE",
+        "artist": "堀江由衣",
+        "source": "陸上防衛隊まおちゃん",
+        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=7837s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241110",
+        "time": "02:12:45",
+        "song_name": "光の旋律",
+        "artist": "Kalafina",
+        "source": "ソ・ラ・ノ・ヲ・ト",
+        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=7965s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241110",
+        "time": "02:21:26",
+        "song_name": "刹那の果実",
+        "artist": "黒崎真音",
+        "source": "グリザイアの楽園 (アニメ)",
+        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=8486s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241110",
+        "time": "02:29:11",
+        "song_name": "Agape",
+        "artist": "メロキュア",
+        "source": "円盤皇女ワるきゅーレ",
+        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=8951s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241027",
+        "time": "00:16:51",
+        "song_name": "あんなに一緒だったのに",
+        "artist": "See-Saw",
+        "source": "機動戦士ガンダムSEED",
+        "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=1011s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241027",
+        "time": "00:50:21",
+        "song_name": "あなただけ見つめてる",
+        "artist": "大黒摩季",
+        "source": "SLAM DUNK",
+        "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=3021s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241027",
+        "time": "01:01:51",
+        "song_name": "まちぶせ",
+        "artist": "石川ひとみ",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=3711s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241027",
+        "time": "01:31:48",
+        "song_name": "赤いスイートピー",
+        "artist": "松田聖子",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=5508s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241027",
+        "time": "01:45:33",
+        "song_name": "ワルキューレがとまらない",
+        "artist": "ワルキューレ",
+        "source": "マクロスΔ",
+        "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=6333s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241027",
+        "time": "01:57:50",
+        "song_name": "ノーザンクロス",
+        "artist": "シェリル・ノーム starring May&#39;n",
+        "source": "マクロスF",
+        "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=7070s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241027",
+        "time": "02:06:57",
+        "song_name": "ダイアモンド クレバス",
+        "artist": "シェリル・ノーム starring May&#39;n",
+        "source": "マクロスF",
+        "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=7617s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241027",
+        "time": "02:16:09",
+        "song_name": "ライオン",
+        "artist": "May&#39;n、中島愛",
+        "source": "マクロスF",
+        "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=8169s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241027",
+        "time": "02:35:27",
+        "song_name": "Armonico",
+        "artist": "Armony（歌：ほしほ）",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=9327s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241222",
+        "time": "00:38:10",
+        "song_name": "クリスマスキャロルの頃には",
+        "artist": "稲垣潤一",
+        "source": "ホームワーク",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=2290s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241222",
+        "time": "00:53:20",
+        "song_name": "Jingle Bells",
+        "artist": "",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=3200s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241222",
+        "time": "01:13:10",
+        "song_name": "ハナミズキ",
+        "artist": "一青窈",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=4390s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241222",
+        "time": "01:24:02",
+        "song_name": "All I Want For Christmas Is You",
+        "artist": "Mariah Carey",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=5042s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241222",
+        "time": "01:34:30",
+        "song_name": "Pure Snow",
+        "artist": "佐々木ゆう子",
+        "source": "火魅子伝",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=5670s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241222",
+        "time": "01:41:10",
+        "song_name": "Silent Night",
+        "artist": "",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=6070s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241222",
+        "time": "01:54:26",
+        "song_name": "Merry Christmas without You",
+        "artist": "シェリル・ノーム starring May&#39;n、ランカ・リー＝中島愛",
+        "source": "マクロスF",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=6866s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241222",
+        "time": "02:10:44",
+        "song_name": "ダイアモンド クレバス",
+        "artist": "シェリル・ノーム starring May&#39;n",
+        "source": "マクロスF",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=7844s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241222",
+        "time": "02:22:32",
+        "song_name": "Snow halation",
+        "artist": "μ&#39;s",
+        "source": "ラブライブ！",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=8552s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241222",
+        "time": "03:00:45",
+        "song_name": "ゲッチュウ！らぶらぶぅ？！ (Short Ver.)",
+        "artist": "五條真由美",
+        "source": "ふたりはプリキュア",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=10845s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241222",
+        "time": "03:06:06",
+        "song_name": "キラキラkawaii！プリキュア大集合♪",
+        "artist": "五條真由美 with キュア・デラックス（うちやえゆか、工藤真由、宮本佳那子、茂家瑞季、林桃子）",
+        "source": "プリキュアオールスターズDX",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=11166s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241222",
+        "time": "03:20:14",
+        "song_name": "夢は未来への道〜キュアフローラVer.〜",
+        "artist": "北川理恵",
+        "source": "Go!プリンセスプリキュア",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=12014s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241222",
+        "time": "03:30:21",
+        "song_name": "ヒロガリズム",
+        "artist": "石井あみ・吉武千颯",
+        "source": "Go!プリンセスプリキュア",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=12621s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241222",
+        "time": "03:53:33",
+        "song_name": "WHITE ALBUM Live at Campus Fes",
+        "artist": "小木曽雪菜（米澤円）",
+        "source": "WHITE ALBUM2（ゲーム）",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=14013s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241222",
+        "time": "03:59:01",
+        "song_name": "POWDER SNOW",
+        "artist": "Suara (アカペラ)",
+        "source": "WHITE ALBUM（ゲーム）",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=14341s",
+        "is_member_exclusive": false,
+        "is_acapella": true
+    },
+    {
+        "date": "20241222",
+        "time": "04:17:51",
+        "song_name": "マジLOVE1000％",
+        "artist": "ST☆RISH",
+        "source": "うたの☆プリンスさまっ♪ マジLOVE1000%",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=15471s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241222",
+        "time": "04:27:31",
+        "song_name": "ツイてるねノッてるね",
+        "artist": "中山美穂",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=16051s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241222",
+        "time": "04:34:45",
+        "song_name": "粉雪",
+        "artist": "レミオロメン",
+        "source": "1リットルの涙",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=16485s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241222",
+        "time": "04:43:48",
+        "song_name": "雪の華",
+        "artist": "中島美嘉",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=17028s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241222",
+        "time": "04:54:57",
+        "song_name": "アンネットの青い空",
+        "artist": "潘恵子",
+        "source": "アルプス物語 わたしのアンネット",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=17697s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241222",
+        "time": "05:00:47",
+        "song_name": "エーデルワイスの白い花",
+        "artist": "潘恵子",
+        "source": "アルプス物語 わたしのアンネット",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=18047s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241222",
+        "time": "05:10:05",
+        "song_name": "Edelweiss",
+        "artist": "Richard Rodgers",
+        "source": "The Sound of Music",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=18605s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241222",
+        "time": "05:14:42",
+        "song_name": "Santa Lucia",
+        "artist": "Teodoro Cottrau",
+        "source": "ナポリ民謡",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=18882s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241222",
+        "time": "05:26:15",
+        "song_name": "Far away(彼方の光)",
+        "artist": "Libera",
+        "source": "氷壁",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=19575s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241222",
+        "time": "05:39:08",
+        "song_name": "You Raise Me Up",
+        "artist": "Celtic Woman",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=20348s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241222",
+        "time": "05:55:47",
+        "song_name": "いつか空に届いて",
+        "artist": "椎名恵",
+        "source": "機動戦士ガンダム0080 ポケットの中の戦争",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=21347s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241222",
+        "time": "06:00:16",
+        "song_name": "遠い記憶",
+        "artist": "椎名恵",
+        "source": "機動戦士ガンダム0080 ポケットの中の戦争",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=21616s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241222",
+        "time": "06:06:37",
+        "song_name": "IN MY DREAM",
+        "artist": "真行寺恵里",
+        "source": "ブレンパワード",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=21997s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241222",
+        "time": "06:16:20",
+        "song_name": "ダンバイン とぶ",
+        "artist": "MIO",
+        "source": "聖戦士ダンバイン",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=22580s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241222",
+        "time": "06:22:19",
+        "song_name": "深愛",
+        "artist": "水樹奈々",
+        "source": "WHITE ALBUM",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=22939s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241222",
+        "time": "06:30:04",
+        "song_name": "悠久の翼",
+        "artist": "原田ひとみ",
+        "source": "ef - the first tale.",
+        "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=23404s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241215",
+        "time": "00:32:43",
+        "song_name": "IN MY DREAM",
+        "artist": "真行寺恵里",
+        "source": "ブレンパワード",
+        "link": "https://www.youtube.com/watch?v=SX5pWgl_Sxk&t=1963s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241215",
+        "time": "00:41:26",
+        "song_name": "愛の輪郭（フィールド）",
+        "artist": "KOKIA (アカペラ)",
+        "source": "ブレンパワード",
+        "link": "https://www.youtube.com/watch?v=SX5pWgl_Sxk&t=2486s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241215",
+        "time": "00:49:19",
+        "song_name": "ルパン三世のテーマ",
+        "artist": "ピートマック・ジュニア",
+        "source": "ルパン三世",
+        "link": "https://www.youtube.com/watch?v=SX5pWgl_Sxk&t=2959s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241215",
+        "time": "01:04:21",
+        "song_name": "まちぶせ",
+        "artist": "石川ひとみ",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=SX5pWgl_Sxk&t=3861s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241215",
+        "time": "01:21:53",
+        "song_name": "Santa Lucia",
+        "artist": "Teodoro Cottrau",
+        "source": "ナポリ民謡",
+        "link": "https://www.youtube.com/watch?v=SX5pWgl_Sxk&t=4913s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241215",
+        "time": "01:34:39",
+        "song_name": "雪の華",
+        "artist": "中島美嘉",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=SX5pWgl_Sxk&t=5679s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241215",
+        "time": "01:41:30",
+        "song_name": "深愛",
+        "artist": "水樹奈々",
+        "source": "WHITE ALBUM",
+        "link": "https://www.youtube.com/watch?v=SX5pWgl_Sxk&t=6090s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241215",
+        "time": "01:51:35",
+        "song_name": "みずいろの雨",
+        "artist": "八神純子",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=SX5pWgl_Sxk&t=6695s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241215",
+        "time": "02:11:03",
+        "song_name": "アシタノツバサ",
+        "artist": "石田燿子",
+        "source": "ブレイブウィッチーズ",
+        "link": "https://www.youtube.com/watch?v=SX5pWgl_Sxk&t=7863s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241215",
+        "time": "02:31:44",
+        "song_name": "十六夜涙",
+        "artist": "吉岡亜衣加",
+        "source": "薄桜鬼",
+        "link": "https://www.youtube.com/watch?v=SX5pWgl_Sxk&t=9104s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241215",
+        "time": "02:44:48",
+        "song_name": "アメフラシの歌〜Beautiful Rain〜",
+        "artist": "ニケ・ルメルシエ（CV.前田玲奈）",
+        "source": "それでも世界は美しい",
+        "link": "https://www.youtube.com/watch?v=SX5pWgl_Sxk&t=9888s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241215",
+        "time": "03:34:28",
+        "song_name": "空想メソロギヰ",
+        "artist": "妖精帝國",
+        "source": "未来日記",
+        "link": "https://www.youtube.com/watch?v=SX5pWgl_Sxk&t=12868s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241215",
+        "time": "03:41:59",
+        "song_name": "Dead END",
+        "artist": "飛蘭",
+        "source": "未来日記",
+        "link": "https://www.youtube.com/watch?v=SX5pWgl_Sxk&t=13319s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241215",
+        "time": "03:50:32",
+        "song_name": "眠らされたリネージュ",
+        "artist": "JUNNA",
+        "source": "魔法使いの嫁 SEASON2",
+        "link": "https://www.youtube.com/watch?v=SX5pWgl_Sxk&t=13832s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241215",
+        "time": "03:59:13",
+        "song_name": "Cry Baby",
+        "artist": "Official髭男dism",
+        "source": "東京リベンジャーズ",
+        "link": "https://www.youtube.com/watch?v=SX5pWgl_Sxk&t=14353s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241215",
+        "time": "04:08:07",
+        "song_name": "ホワイトノイズ",
+        "artist": "Official髭男dism",
+        "source": "東京リベンジャーズ",
+        "link": "https://www.youtube.com/watch?v=SX5pWgl_Sxk&t=14887s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241215",
+        "time": "04:15:49",
+        "song_name": "傷つけど、愛してる。",
+        "artist": "ツユ",
+        "source": "東京リベンジャーズ",
+        "link": "https://www.youtube.com/watch?v=SX5pWgl_Sxk&t=15349s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241215",
+        "time": "04:22:32",
+        "song_name": "TAIDADA",
+        "artist": "ずっと真夜中でいいのに。",
+        "source": "ダンダダン",
+        "link": "https://www.youtube.com/watch?v=SX5pWgl_Sxk&t=15752s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241215",
+        "time": "04:32:17",
+        "song_name": "clover",
+        "artist": "meg rock",
+        "source": "SoltyRei",
+        "link": "https://www.youtube.com/watch?v=SX5pWgl_Sxk&t=16337s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241215",
+        "time": "04:38:35",
+        "song_name": "サインはB - アイ Solo Ver. -",
+        "artist": "アイ（CV.高橋李依）",
+        "source": "推しの子",
+        "link": "https://www.youtube.com/watch?v=SX5pWgl_Sxk&t=16715s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
         "date": "20240209",
         "time": "00:28:42",
         "song_name": "創聖のアクエリオン",
@@ -5036,6 +9946,276 @@
         "artist": "いきものがかり",
         "source": "NARUTO ナルト 疾風伝",
         "link": "https://www.youtube.com/watch?v=kMAS4-EXsps&t=21822s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241013",
+        "time": "00:36:36",
+        "song_name": "勇者",
+        "artist": "YOASOBI",
+        "source": "葬送のフリーレン",
+        "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=2196s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241013",
+        "time": "00:43:22",
+        "song_name": "勇者",
+        "artist": "YOASOBI",
+        "source": "葬送のフリーレン",
+        "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=2602s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241013",
+        "time": "00:57:52",
+        "song_name": "SWORD SUMMIT",
+        "artist": "T.M.Revolution",
+        "source": "戦国BASARA弐 (アニメ)",
+        "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=3472s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241013",
+        "time": "01:06:15",
+        "song_name": "晴れてハレルヤ",
+        "artist": "奥井亜紀",
+        "source": "魔法陣グルグル",
+        "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=3975s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241013",
+        "time": "01:23:02",
+        "song_name": "ブルーウォーター",
+        "artist": "森川美穂",
+        "source": "ふしぎの海のナディア",
+        "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=4982s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241013",
+        "time": "01:46:02",
+        "song_name": "夢見る愛天使",
+        "artist": "FURIL（氷上恭子、宮村優子、野上ゆかな）",
+        "source": "愛天使伝説ウェディングピーチ",
+        "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=6362s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241013",
+        "time": "01:59:03",
+        "song_name": "嵐の中で輝いて",
+        "artist": "米倉千尋",
+        "source": "機動戦士ガンダム 第08MS小隊",
+        "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=7143s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241013",
+        "time": "02:18:41",
+        "song_name": "WILL",
+        "artist": "米倉千尋",
+        "source": "仙界伝 封神演義",
+        "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=8321s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241013",
+        "time": "02:32:11",
+        "song_name": "星間飛行",
+        "artist": "ランカ・リー＝中島愛",
+        "source": "マクロスF",
+        "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=9131s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241013",
+        "time": "02:44:24",
+        "song_name": "恋をするたびに傷つきやすく…",
+        "artist": "翠玲",
+        "source": "ナースエンジェルりりかSOS",
+        "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=9864s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241013",
+        "time": "02:53:28",
+        "song_name": "りりかSOS",
+        "artist": "麻生かほ里",
+        "source": "ナースエンジェルりりかSOS",
+        "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=10408s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241013",
+        "time": "03:02:33",
+        "song_name": "少女レイ",
+        "artist": "みきとP",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=10953s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241013",
+        "time": "03:17:15",
+        "song_name": "ときめきの導火線",
+        "artist": "今野友加里",
+        "source": "ふしぎ遊戯",
+        "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=11835s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241013",
+        "time": "03:24:47",
+        "song_name": "空へ...",
+        "artist": "笠原弘子",
+        "source": "ロミオの青い空",
+        "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=12287s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241013",
+        "time": "03:29:06",
+        "song_name": "Si Si Ciao 〜ロマナの丘で〜",
+        "artist": "笠原弘子",
+        "source": "ロミオの青い空",
+        "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=12546s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241013",
+        "time": "04:01:19",
+        "song_name": "笑顔に会いたい",
+        "artist": "濱田理恵",
+        "source": "ママレード・ボーイ",
+        "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=14479s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241013",
+        "time": "04:22:21",
+        "song_name": "花のささやき",
+        "artist": "下成佐登子",
+        "source": "小公女セーラ",
+        "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=15741s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241013",
+        "time": "04:49:14",
+        "song_name": "ひまわり",
+        "artist": "下成佐登子",
+        "source": "小公女セーラ",
+        "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=17354s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241013",
+        "time": "05:04:17",
+        "song_name": "ブルーバード",
+        "artist": "いきものがかり",
+        "source": "NARUTO ~ナルト~ 疾風伝",
+        "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=18257s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241013",
+        "time": "05:13:35",
+        "song_name": "モエチャッカファイア",
+        "artist": "弌誠",
+        "source": "ゼンレスゾーンゼロ",
+        "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=18815s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241013",
+        "time": "05:20:48",
+        "song_name": "StarDust",
+        "artist": "Sound Horizon",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=19248s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241013",
+        "time": "05:28:01",
+        "song_name": "エルの楽園 [→ side:E →]",
+        "artist": "Sound Horizon",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=19681s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241013",
+        "time": "05:36:32",
+        "song_name": "朝と夜の物語",
+        "artist": "Sound Horizon",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=20192s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241013",
+        "time": "05:50:07",
+        "song_name": "Ark",
+        "artist": "Sound Horizon",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=21007s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241013",
+        "time": "05:58:38",
+        "song_name": "ナージャ!!",
+        "artist": "本田美奈子",
+        "source": "明日のナージャ",
+        "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=21518s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241013",
+        "time": "06:03:55",
+        "song_name": "けせら・せら",
+        "artist": "小清水亜美",
+        "source": "明日のナージャ",
+        "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=21835s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241013",
+        "time": "06:24:43",
+        "song_name": "アマテラス",
+        "artist": "Armony（歌：ほしほ）",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=23083s",
         "is_member_exclusive": false,
         "is_acapella": false
     },
