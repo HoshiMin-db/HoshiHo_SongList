@@ -3,6 +3,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
     let totalSongCount = 0; // 添加總歌曲數變量
 
+    function normalizeString(str) {
+        return str.normalize('NFKC').replace(/[~〜～]/g, '~');
+    }
+
     function fetchData(callback) {
         // 使用 no-cache 確保獲取最新資料
         fetch('data.json', { cache: 'no-cache' })
@@ -10,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
             .then(data => {
                 // 初始化時設置總歌曲數
                 if (totalSongCount === 0) {
-                    const uniqueSongs = new Set(data.map(item => `${item.song_name}-${item.artist}`));
+                    const uniqueSongs = new Set(data.map(item => `${normalizeString(item.song_name)}-${normalizeString(item.artist)}`));
                     totalSongCount = uniqueSongs.size;
                     document.getElementById('songCount').textContent = totalSongCount;
                 }
@@ -24,33 +28,33 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // 篩選數據
         const filteredData = allData.filter(row =>
-            row.song_name.toLowerCase().includes(query) ||
-            row.artist.toLowerCase().includes(query) ||
-            row.source.toLowerCase().includes(query)
+            normalizeString(row.song_name).toLowerCase().includes(query) ||
+            normalizeString(row.artist).toLowerCase().includes(query) ||
+            normalizeString(row.source).toLowerCase().includes(query)
         );
         // 插入替換簡化曲名的代碼
         const replaceSongs = {
             'rorikami': '粛聖‼ ロリ神レクイエム☆'
-    };
+        };
         filteredData.forEach(row => {
             if (replaceSongs[row.song_name]) {
                 row.song_name = replaceSongs[row.song_name];
-        }
-    });
+            }
+        });
 
         // 顯示篩選後的數據
         displayData(filteredData);
     }
 
     searchInput.addEventListener('input', function(e) {
-        const query = e.target.value.toLowerCase();
+        const query = normalizeString(e.target.value.toLowerCase());
         fetchData(data => fetchAndDisplayData(query, data));
     });
 
     function displayData(data) {
         // 按 song_name 和 artist 分組並排序
         const groupedData = data.reduce((acc, row) => {
-            const key = `${row.song_name}-${row.artist}`;
+            const key = `${normalizeString(row.song_name)}-${normalizeString(row.artist)}`;
             if (!acc[key]) {
                 acc[key] = [];
             }
