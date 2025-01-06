@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const searchInput = document.getElementById('searchInput');
     const showAllButton = document.getElementById('showAllButton');
     const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
+    let allData = [];
     let totalSongCount = 0;
     let showAllState = false;
 
@@ -13,16 +14,26 @@ document.addEventListener("DOMContentLoaded", function() {
         fetch('data.json', { cache: 'no-cache' })
             .then(response => response.json())
             .then(data => {
+                allData = data;
                 if (totalSongCount === 0) {
                     const uniqueSongs = new Set(data.map(item => `${normalizeString(item.song_name)}-${normalizeString(item.artist)}`));
                     totalSongCount = uniqueSongs.size;
                     document.getElementById('songCount').textContent = totalSongCount;
                 }
-                callback(data);
+                callback();
             });
     }
 
-    function fetchAndDisplayData(query, allData, numDates = 3) {
+    function debounce(func, wait) {
+        let timeout;
+        return function() {
+            const context = this, args = arguments;
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(context, args), wait);
+        };
+    }
+
+    function fetchAndDisplayData(query, numDates = 3) {
         songTableBody.innerHTML = '';
 
         const filteredData = allData.filter(row =>
@@ -32,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
         );
 
         const replaceSongs = {
-            'rorikami': '粛聖!! ロリ神レクイエム☆'
+            'rorikami': '粛聖‼ ロリ神レクイエム☆'
         };
         filteredData.forEach(row => {
             if (replaceSongs[row.song_name]) {
@@ -43,10 +54,10 @@ document.addEventListener("DOMContentLoaded", function() {
         displayData(filteredData, numDates);
     }
 
-    searchInput.addEventListener('input', function(e) {
+    searchInput.addEventListener('input', debounce(function(e) {
         const query = normalizeString(e.target.value.toLowerCase());
-        fetchData(data => fetchAndDisplayData(query, data));
-    });
+        fetchAndDisplayData(query);
+    }, 300));
 
     showAllButton.addEventListener('click', function() {
         showAllState = !showAllState;
@@ -54,13 +65,11 @@ document.addEventListener("DOMContentLoaded", function() {
         showAllButton.classList.toggle('button-off', !showAllState);
         showAllButton.textContent = showAllState ? "隱藏" : "顯示全部";
 
-        fetchData(data => {
-            if (showAllState) {
-                fetchAndDisplayData('', data, data.length); // 顯示所有日期
-            } else {
-                fetchAndDisplayData('', data); // 顯示最近3個日期
-            }
-        });
+        if (showAllState) {
+            displayData(allData, allData.length); // 顯示所有日期
+        } else {
+            fetchAndDisplayData(''); // 顯示最近3個日期
+        }
     });
 
     function displayData(data, numDates) {
@@ -135,5 +144,5 @@ document.addEventListener("DOMContentLoaded", function() {
         rows.forEach(row => table.getElementsByTagName('tbody')[0].appendChild(row));
     }
 
-    fetchData(data => fetchAndDisplayData('', data));
+    fetchData(() => fetchAndDisplayData(''));
 });
