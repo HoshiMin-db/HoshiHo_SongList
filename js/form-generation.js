@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const searchInput = document.getElementById('searchInput');
+    const showAllButton = document.getElementById('showAllButton'); // 新增
     const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
     let totalSongCount = 0; // 添加總歌曲數變量
 
@@ -32,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
             normalizeString(row.artist).toLowerCase().includes(query) ||
             normalizeString(row.source).toLowerCase().includes(query)
         );
+
         // 插入替換簡化曲名的代碼
         const replaceSongs = {
             'rorikami': '粛聖‼ ロリ神レクイエム☆'
@@ -49,6 +51,10 @@ document.addEventListener("DOMContentLoaded", function() {
     searchInput.addEventListener('input', function(e) {
         const query = normalizeString(e.target.value.toLowerCase());
         fetchData(data => fetchAndDisplayData(query, data));
+    });
+
+    showAllButton.addEventListener('click', function() { // 新增事件監聽器
+        fetchData(data => displayData(data)); // 顯示所有數據
     });
 
     function displayData(data) {
@@ -69,7 +75,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // 生成表格內容
         Object.entries(groupedData).forEach(([key, rows]) => {
-            const maxRows = Math.min(rows.length, 3);
             const newRow = songTableBody.insertRow();
             
             // 添加單元格
@@ -78,36 +83,33 @@ document.addEventListener("DOMContentLoaded", function() {
             newRow.insertCell().textContent = rows[0].artist;
             newRow.insertCell().textContent = rows[0].source;
             newRow.insertCell().textContent = rows[0].note || '';  // 備注
-            
-            // 添加日期
-            for (let i = 0; i < 3; i++) {
-                const dateCell = newRow.insertCell();
-                if (i < maxRows) {
-                    const row = rows[i];
-                    const link = document.createElement('a');
-                    const date = row.date;
-                    const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
-                    link.href = row.link;
-                    link.textContent = formattedDate;
-                    link.target = '_blank';
-                    link.onclick = function(event) {
-                        event.preventDefault();
-                        openFloatingPlayer(link.href);
-                    };
-                    dateCell.appendChild(link);
 
-                    // 添加鎖符號和清唱標籤
-                    if (row.is_member_exclusive) {
-                        const lockIcon = document.createElement('span');
-                        lockIcon.classList.add('lock-icon');
-                        lockIcon.textContent = '🔒';
-                        dateCell.appendChild(lockIcon);
-                    }
-                    if (row.is_acapella) {
-                        dateCell.classList.add('acapella');
-                    }
+            // 添加所有日期
+            rows.forEach((row, index) => {
+                const dateCell = newRow.insertCell();
+                const link = document.createElement('a');
+                const date = row.date;
+                const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
+                link.href = row.link;
+                link.textContent = formattedDate;
+                link.target = '_blank';
+                link.onclick = function(event) {
+                    event.preventDefault();
+                    openFloatingPlayer(link.href);
+                };
+                dateCell.appendChild(link);
+
+                // 添加鎖符號和清唱標籤
+                if (row.is_member_exclusive) {
+                    const lockIcon = document.createElement('span');
+                    lockIcon.classList.add('lock-icon');
+                    lockIcon.textContent = '🔒';
+                    dateCell.appendChild(lockIcon);
                 }
-            }
+                if (row.is_acapella) {
+                    dateCell.classList.add('acapella');
+                }
+            });
         });
 
         // 表格按曲名排序
