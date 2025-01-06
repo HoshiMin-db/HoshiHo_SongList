@@ -21,12 +21,20 @@ document.addEventListener("DOMContentLoaded", function() {
         return `https://www.youtube.com/embed/${videoId}?start=${startTime}`;
     }
 
+    function isMobileDevice() {
+        return /Mobi|Android/i.test(navigator.userAgent);
+    }
+
     function openFloatingPlayer(url) {
         if (validUrls.some(validUrl => url.startsWith(validUrl))) {
-            const floatingPlayerContainer = document.getElementById('floatingPlayerContainer');
-            const floatingPlayer = document.getElementById('floatingPlayer');
-            floatingPlayer.src = createYoutubeEmbed(url);
-            floatingPlayerContainer.style.display = 'block';
+            if (isMobileDevice()) {
+                window.open(url, '_blank');
+            } else {
+                const floatingPlayerContainer = document.getElementById('floatingPlayerContainer');
+                const floatingPlayer = document.getElementById('floatingPlayer');
+                floatingPlayer.src = createYoutubeEmbed(url);
+                floatingPlayerContainer.style.display = 'block';
+            }
         } else {
             alert('無效的URL');
         }
