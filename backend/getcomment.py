@@ -1,6 +1,5 @@
 import os
 import json
-import re
 from googleapiclient.discovery import build
 from google.oauth2 import service_account
 from datetime import datetime, timedelta
@@ -21,12 +20,29 @@ except Exception as e:
 # YouTube Data API 客戶端
 youtube = build('youtube', 'v3', developerKey=google_api_key)
 
-# 設定過濾日期 (日本標準時間)
-FILTER_DATE = datetime.strptime('2024-01-25', '%Y-%m-%d')
-JST_OFFSET = timedelta(hours=9)  # 日本標準時間與 UTC 的時差
+# 日本時區偏移
+JST_OFFSET = timedelta(hours=9)
+
+def get_video_date(video_id):
+    """獲取影片的發布日期（日本時間）"""
+    request = youtube.videos().list(
+        part='snippet',
+        id=video_id
+    )
+    response = request.execute()
+    
+    if not response['items']:
+        return None
+        
+    video_date_str = response['items'][0]['snippet']['publishedAt']
+    video_date_utc = datetime.strptime(video_date_str, '%Y-%m-%dT%H:%M:%SZ')
+    video_date_jst = video_date_utc + JST_OFFSET
+    
+    return video_date_jst
 
 def get_video_ids_from_playlist(playlist_id):
-    video_ids = []
+    """從播放清單獲取影片ID和日期"""
+    video_info = []
     request = youtube.playlistItems().list(
         part='contentDetails',
         playlistId=playlist_id,
@@ -35,90 +51,71 @@ def get_video_ids_from_playlist(playlist_id):
     
     while request:
         response = request.execute()
-        print(f"Fetched {len(response['items'])} items from playlist")
-        
         for item in response['items']:
             video_id = item['contentDetails']['videoId']
             video_date = get_video_date(video_id)
-            # 將 UTC 時間轉換為 JST 時間
-            video_date_jst = video_date + JST_OFFSET
-            print(f"Video ID: {video_id}, Video Date (JST): {video_date_jst}")
             
-            if video_date_jst > FILTER_DATE:
-                video_ids.append((video_id, video_date_jst))
+            if video_date:
+                video_info.append((video_id, video_date))
+                print(f"Found video: {video_id} from {video_date}")
                 
         request = youtube.playlistItems().list_next(request, response)
     
-    return video_ids
+    return video_info
 
-def get_video_date(video_id):
-    request = youtube.videos().list(part='snippet', id=video_id)
-    response = request.execute()
-    video_date_str = response['items'][0]['snippet']['publishedAt']
-    video_date = datetime.strptime(video_date_str, '%Y-%m-%dT%H:%M:%SZ')
-    return video_date
-
-def get_comments(video_id):
-    comments = []
-    request = youtube.commentThreads().list(part='snippet', videoId=video_id, maxResults=100)
+def get_timestamp_comment(video_id):
+    """獲取包含時間戳標記的留言"""
+    request = youtube.commentThreads().list(
+        part='snippet',
+        videoId=video_id,
+        maxResults=100
+    )
     
     while request:
         response = request.execute()
-        print(f"Fetched {len(response['items'])} comments for video ID: {video_id}")
-        
         for item in response['items']:
             comment = item['snippet']['topLevelComment']['snippet']['textDisplay']
-            comments.append(comment)
-            
+            # 檢查是否包含特定標記
+            if '💐🌟🎶タイムスタンプ💐🌟🎶' in comment:
+                return comment
+                
         request = youtube.commentThreads().list_next(request, response)
     
-    return comments
+    return None
 
-def extract_timestamps(comments):
-    timestamps = []
-    # 更新正則表達式來匹配新的時間軸留言格式
-    pattern = re.compile(r'\d+[.．]?\s+(\d{2}:\d{2}:\d{2})\s+(.+?)\s*/\s*(?:『(.+?)』)?(.+)?')
-    
-    for comment in comments:
-        matches = pattern.findall(comment)
-        for match in matches:
-            time, song, source, artist = match
-            # 移除可能的前後空白
-            song = song.strip()
-            source = source.strip() if source else ''
-            artist = artist.strip() if artist else ''
-            
-            timestamps.append((time, song, artist, source))
-            print(f"Match found: {(time, song, artist, source)}")
-    
-    print(f"Extracted {len(timestamps)} timestamps from comments")
-    return timestamps
-
-def write_timestamps_to_file(video_id, video_date, timestamps):
+def save_to_file(video_id, comment, date):
+    """保存留言到文件"""
+    if not comment:
+        print(f"No timestamp comment found for video {video_id}")
+        return
+        
     output_dir = 'timeline'
     os.makedirs(output_dir, exist_ok=True)
-    file_name = video_date.strftime('%Y%m%d') + '.txt'
+    
+    file_name = date.strftime('%Y%m%d') + '.txt'
     file_path = os.path.join(output_dir, file_name)
     
     with open(file_path, 'w', encoding='utf-8') as f:
         f.write(f'ID = {video_id}\n')
-        for time, song, artist, source in timestamps:
-            f.write(f'{time} | {song} | {artist} | {source}\n')
-    
-    print(f"File {file_name} has been created successfully at {file_path}.")
+        f.write(comment)
+        
+    print(f"Saved timestamp comment to {file_path}")
 
 def main():
-    playlist_id = 'PL7H5HbMMfm_lUoLIkPAZkhF_W0oDf5WEk'
-    video_ids_dates = get_video_ids_from_playlist(playlist_id)
-    print(f"Found {len(video_ids_dates)} videos after filtering by date")
+    playlist_id = 'PL7H5HbMMfm_lUoLIkPAZkhF_W0oDf5WEk'  # 你的播放清單ID
     
-    for video_id, video_date in video_ids_dates:
-        comments = get_comments(video_id)
-        timestamps = extract_timestamps(comments)
-        if timestamps:
-            write_timestamps_to_file(video_id, video_date, timestamps)
-        else:
-            print(f"No timestamps found for video ID: {video_id}")
+    # 獲取播放清單中的所有影片
+    video_info = get_video_ids_from_playlist(playlist_id)
+    
+    for video_id, video_date in video_info:
+        print(f"Processing video {video_id} from {video_date}")
+        
+        # 獲取時間戳留言
+        timestamp_comment = get_timestamp_comment(video_id)
+        
+        # 保存到檔案
+        if timestamp_comment:
+            save_to_file(video_id, timestamp_comment, video_date)
 
 if __name__ == '__main__':
     main()
