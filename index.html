@@ -4,219 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HoshiHo歌單</title>
-    <style>
-        body {
-            font-family: 'Microsoft JhengHei', '微軟正黑體', sans-serif;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #333;
-        }
-
-        .header h1 {
-            color: #6a5acd;
-        }
-
-        .search-container {
-            margin-bottom: 20px;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .button-off {
-            background-color: #d3d3d3; /* 淺灰色 */
-            color: #333;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .button-on {
-            background-color: #6a5acd; /* 較深藍色 */
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .button-off:hover {
-            background-color: #c0c0c0; /* 更深的灰色 */
-        }
-
-        .button-on:hover {
-            background-color: #5849b8; /* 更深的藍色 */
-        }
-
-        #searchInput {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            box-sizing: border-box;
-            border: 2px solid #ddd;
-            border-radius: 4px;
-            font-size: 16px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background: white;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-
-        th, td {
-            padding: 12px;
-            text-align: left;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            max-width: 200px;
-            position: relative;
-        }
-
-        td:hover {
-            overflow: visible;
-            white-space: normal;
-            background-color: #f8f8f8;
-            z-index: 1;
-        }
-
-        th {
-            background-color: #6a5acd;
-            color: white;
-            cursor: pointer;
-        }
-
-        th:hover {
-            background-color: #5849b8;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        tr:hover {
-            background-color: #f5f5f5;
-        }
-
-        .floating-player-container {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 640px; /* 調整寬度 */
-            height: 360px; /* 調整高度 */
-            box-shadow: 0 0 10px rgba(0,0,0,0.5);
-            display: none;
-            background-color: white;
-            z-index: 1000;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .floating-player {
-            width: 100%;
-            height: calc(100% - 30px);
-            border: none;
-        }
-
-        .close-btn {
-            width: 100%;
-            height: 30px;
-            background-color: #6a5acd;
-            color: white;
-            text-align: center;
-            line-height: 30px;
-            cursor: pointer;
-            user-select: none; /* 防止文字被選中 */
-        }
-
-        .close-btn:hover {
-            background-color: #5849b8;
-        }
-
-        a {
-            color: #6a5acd;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .lock-icon {
-            color: red;
-            margin-left: 5px;
-        }
-
-        .acapella {
-            background-color: #e0f7fa; /* 淺藍色背景 */
-        }
-
-        @media screen and (max-width: 600px) {
-            body {
-                padding: 10px;
-            }
-
-            .header h1 {
-                font-size: 24px;
-            }
-
-            .search-container {
-                padding: 10px;
-            }
-
-            #searchInput {
-                font-size: 14px;
-                padding: 10px;
-            }
-
-            th, td {
-                padding: 8px;
-                font-size: 14px;
-            }
-
-            .floating-player-container {
-                width: 100%;
-                height: auto;
-                bottom: 10px;
-                right: 10px;
-            }
-
-            .floating-player {
-                height: 200px;
-            }
-        }
-
-        /* 調整表格列寬度 */
-        th:nth-child(3), td:nth-child(3), th:nth-child(4), td:nth-child(4) {
-            width: 10%; /* 歌手和出典欄寬度設為 10% */
-        }
-
-        th:nth-child(2), td:nth-child(2) {
-            width: 30%; /* 曲名欄寬度設為 30% */
-        }
-
-        /* 調整日期欄字體大小 */
-        td:nth-child(6),
-        td:nth-child(7),
-        td:nth-child(8) {
-            font-size: 12px; /* 日期欄字體大小設為 12px */
-        }
-    </style>
+    <link rel="stylesheet" href="main/styles.css"> <!-- 引入位於main目錄中的CSS文件 -->
 </head>
 <body>
     <div class="header">
@@ -228,7 +16,7 @@
         <input type="text" id="searchInput" placeholder="搜尋歌曲名稱、歌手或出典...">
         <button id="showAllButton" class="button-off">顯示全部</button>
     </div>
-    
+
     <table id="songTable">
         <thead>
             <tr>
@@ -246,18 +34,12 @@
         </tbody>
     </table>
 
-    <!-- 修改浮動播放器容器 -->
     <div id="floatingPlayerContainer" class="floating-player-container">
         <div class="close-btn" onclick="closeFloatingPlayer()">關閉</div>
-        <iframe id="floatingPlayer" class="floating-player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-        </iframe>
+        <iframe id="floatingPlayer" class="floating-player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
-    <!-- 引用外部 JavaScript 文件 -->
-    <script src="js/youtube-player.js"></script>
-    <script src="js/form-generation.js"></script>
+    <script src="main/js/youtube-player.js"></script>
+    <script src="main/js/form-generation.js"></script>
 </body>
 </html>
