@@ -26,16 +26,21 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function openFloatingPlayer(url) {
-        if (validUrls.some(validUrl => url.startsWith(validUrl))) {
-            if (isMobileDevice()) {
+        try {
+            const urlObj = new URL(url);
+            if (validUrls.some(validUrl => urlObj.origin === validUrl)) {
+                if (isMobileDevice()) {
                 window.open(url, '_blank');
+                } else {
+                    const floatingPlayerContainer = document.getElementById('floatingPlayerContainer');
+                    const floatingPlayer = document.getElementById('floatingPlayer');
+                    floatingPlayer.src = createYoutubeEmbed(url);
+                    floatingPlayerContainer.style.display = 'block';
+                }
             } else {
-                const floatingPlayerContainer = document.getElementById('floatingPlayerContainer');
-                const floatingPlayer = document.getElementById('floatingPlayer');
-                floatingPlayer.src = createYoutubeEmbed(url);
-                floatingPlayerContainer.style.display = 'block';
+                alert('無效的URL');
             }
-        } else {
+        } catch (e) {
             alert('無效的URL');
         }
     }
