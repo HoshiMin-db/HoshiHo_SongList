@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const showAllButton = document.getElementById('showAllButton'); // 新增
     const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
     let totalSongCount = 0; // 添加總歌曲數變量
+    let showAllState = false; // 新增，追蹤按鈕狀態
 
     function normalizeString(str) {
         return str.normalize('NFKC').replace(/[~〜～]/g, '~');
@@ -54,7 +55,22 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     showAllButton.addEventListener('click', function() { // 新增事件監聽器
-        fetchData(data => displayData(data)); // 顯示所有數據
+        showAllState = !showAllState; // 切換狀態
+        showAllButton.classList.toggle('button-on', showAllState);
+        showAllButton.classList.toggle('button-off', !showAllState);
+        showAllButton.textContent = showAllState ? "隱藏" : "顯示全部"; // 更改按鈕文字
+
+        // 清空表格内容
+        songTableBody.innerHTML = '';
+
+        // 根據狀態顯示所有數據或篩選數據
+        fetchData(data => {
+            if (showAllState) {
+                displayData(data); // 顯示所有數據
+            } else {
+                fetchAndDisplayData('', data); // 恢復篩選數據
+            }
+        });
     });
 
     function displayData(data) {
@@ -87,6 +103,7 @@ document.addEventListener("DOMContentLoaded", function() {
             // 添加所有日期
             rows.forEach((row, index) => {
                 const dateCell = newRow.insertCell();
+                dateCell.classList.add('date-cell'); // 添加日期欄樣式
                 const link = document.createElement('a');
                 const date = row.date;
                 const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
