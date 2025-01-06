@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🌟 HoshiHo歌單 💐</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* 虛擬滾動容器樣式 */
+        .virtual-scroll-container {
+            height: 600px;
+            overflow-y: auto;
+            position: relative;
+        }
+        .virtual-scroll-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
 </head>
 <body>
     <div class="header">
@@ -17,22 +31,26 @@
         <button id="showAllButton" class="button-off">顯示全部</button>
     </div>
 
-    <table id="songTable">
-        <thead>
-            <tr>
-                <th>A-Z</th>
-                <th>曲名</th>
-                <th>歌手</th>
-                <th>出典</th>
-                <th>備注</th>
-                <th>日期1</th>
-                <th>日期2</th>
-                <th>日期3</th>
-            </tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
+    <div class="virtual-scroll-container" id="virtualScrollContainer">
+        <div class="virtual-scroll-content" id="virtualScrollContent">
+            <table id="songTable">
+                <thead>
+                    <tr>
+                        <th>A-Z</th>
+                        <th>曲名</th>
+                        <th>歌手</th>
+                        <th>出典</th>
+                        <th>備注</th>
+                        <th>日期1</th>
+                        <th>日期2</th>
+                        <th>日期3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
     <div id="floatingPlayerContainer" class="floating-player-container">
         <div class="floating-player-header" id="floatingPlayerHeader">
