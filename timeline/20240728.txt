@@ -3,14 +3,13 @@ ID = z7ve2IVHUHw
 01.　00:23:08　唱  /  Ado
 02.　00:29:13　粛聖!! ロリ神レクイエム☆  /  しぐれうい（9さい）
 03.　00:40:22　紅蓮の弓矢  / 『進撃の巨人』Linked Horizon
-04.　00:58:03　終端の王と異世界の騎士 ～The Endia &amp; The Knights～  /  Sound Horizon
+04.　00:58:03　終端の王と異世界の騎士 ～The Endia & The Knights～  /  Sound Horizon
 05.　01:10:04　アイドル  / 『推しの子』YOASOBI
 06.　01:25:32　未来への咆哮  / 『Muv-Luv Alternative』JAM Project
-07.　01:44:31　夢は終わらない 〜こぼれ落ちる時の雫〜  / 『Tales of Phantasia』よーみ
+07.　01:44:31　夢は終わらない 〜こぼれ落ちる時の雫〜  / 『Tales of Phantasia』よ～み
 08.　02:24:38　I Could Have Danced All Night  / 『My Fair Lady』Eliza Doolittle(Audrey Hepburn)
-09.　02:39:02　調和 oto ～with reflection～  / 『銀色の髪のアギト』KOKIA (アカペラ)
+09.　02:39:02　調和 oto ～with reflection～  / 『銀色の髪のアギト』KOKIA
 10.　02:51:33　ときめきの導火線  / 『ふしぎ遊戯』今野友加里
-
 11.　03:10:07　空へ...  / 『ロミオの青い空』笠原弘子
 12.　03:16:03　Si Si Ciao 〜ロマナの丘で〜  / 『ロミオの青い空』笠原弘子
 13.　03:25:24　Agape  / 『円盤皇女ワるきゅーレ』メロキュア
@@ -21,7 +20,6 @@ ID = z7ve2IVHUHw
 18.　04:32:00　to the beginning  / 『Fate/Zero』Kalafina
 19.　04:41:46　満天  / 『Fate/Zero』Kalafina
 20.　04:50:47　ピースサイン  / 『僕のヒーローアカデミア』米津玄師
-
 21.　05:04:02　Moon Revenge  / 『劇場版美少女戦士セーラームーンR』三石琴乃・久川綾・富沢美智恵・篠原恵美・深見梨加
 22.　05:10:27　そばかす  / 『るろうに剣心  - 明治剣客浪漫譚 -』JUDY AND MARY
 23.　05:16:47　運命のルーレット廻して  / 『名探偵コナン』ZARD
