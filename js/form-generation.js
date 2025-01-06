@@ -111,6 +111,13 @@ document.addEventListener("DOMContentLoaded", function() {
                     dateCell.classList.add('acapella');
                 }
             });
+
+            // 如果日期數量少於 numDates，補齊空白儲存格並設置背景顏色
+            for (let i = rows.length; i < numDates; i++) {
+                const emptyCell = newRow.insertCell();
+                emptyCell.classList.add('date-cell');
+                emptyCell.style.backgroundColor = "#f0f0f0";
+            }
         });
 
         sortTable();
