@@ -1,5 +1,6 @@
 import json
 import os
+import re
 from datetime import datetime
 
 def parse_time(time_str):
@@ -86,6 +87,8 @@ def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs
             # 新規則解析
             for line in lines[1:]:
                 try:
+                    # 忽略前導的編號和標籤
+                    line = re.sub(r'^\d+\.\s+', '', line)
                     parts = line.strip().split('\u3000', 1)
                     if len(parts) == 2:
                         time_str, song_info = parts
