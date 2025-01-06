@@ -1422,9 +1422,9 @@
     {
         "date": "20240127",
         "time": "03:16:00",
-        "song_name": "夢は終わらない 〜こぼれ落ちる時の雫〜 /『Tales of Phantasia』",
-        "artist": "",
-        "source": "",
+        "song_name": "夢は終わらない 〜こぼれ落ちる時の雫〜",
+        "artist": "よ～み",
+        "source": "Tales of Phantasia",
         "link": "https://www.youtube.com/watch?v=kw8Ia8qEJ74&t=11760s",
         "is_member_exclusive": false,
         "is_acapella": false
@@ -1432,9 +1432,9 @@
     {
         "date": "20240127",
         "time": "03:29:33",
-        "song_name": "Progress /『Tales of Xillia』浜崎あゆみ",
-        "artist": "",
-        "source": "",
+        "song_name": "Progress",
+        "artist": "浜崎あゆみ",
+        "source": "Tales of Xillia",
         "link": "https://www.youtube.com/watch?v=kw8Ia8qEJ74&t=12573s",
         "is_member_exclusive": false,
         "is_acapella": false
