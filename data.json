@@ -6052,7 +6052,7 @@
     {
         "date": "20240217",
         "time": "01:02:52",
-        "song_name": "アニメじゃない ～夢を忘れた古い地球人よ～",
+        "song_name": "アニメじゃない～夢を忘れた古い地球人よ～",
         "artist": "新井正人",
         "source": "機動戦士ガンダムΖΖ",
         "link": "https://www.youtube.com/watch?v=Z-1sxd5PK_M&t=3772s",
@@ -6102,7 +6102,7 @@
     {
         "date": "20240217",
         "time": "01:54:52",
-        "song_name": "エルガイム Time for L-GAIM",
+        "song_name": "エルガイム-Time for L.GAIM-",
         "artist": "MIO",
         "source": "重戦機エルガイム",
         "link": "https://www.youtube.com/watch?v=Z-1sxd5PK_M&t=6892s",
@@ -6122,7 +6122,7 @@
     {
         "date": "20240217",
         "time": "02:30:13",
-        "song_name": "BEYOND THE TIME (メビウスの宇宙を越えて)",
+        "song_name": "BEYOND THE TIME(メビウスの宇宙を越えて)",
         "artist": "TM NETWORK",
         "source": "機動戦士ガンダム 逆襲のシャア",
         "link": "https://www.youtube.com/watch?v=Z-1sxd5PK_M&t=9013s",
@@ -6316,16 +6316,6 @@
         "artist": "Uru",
         "source": "機動戦士ガンダム 鉄血のオルフェンズ",
         "link": "https://www.youtube.com/watch?v=Z-1sxd5PK_M&t=20849s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240217",
-        "time": "05:55:30",
-        "song_name": "マシュマロ",
-        "artist": "",
-        "source": "",
-        "link": "https://www.youtube.com/watch?v=Z-1sxd5PK_M&t=21330s",
         "is_member_exclusive": false,
         "is_acapella": false
     },
