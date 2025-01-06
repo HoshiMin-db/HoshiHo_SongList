@@ -7,23 +7,21 @@ ID = iGytuGdRFog
 05.　01:34:30　Pure Snow  / 『火魅子伝』佐々木ゆう子
 06.　01:41:10　Silent Night
 07.　01:54:26　Merry Christmas without You  / 『マクロスF』シェリル・ノーム starring May&#39;n、ランカ・リー＝中島愛
-08.　02:10:44　ダイアモンド クレバス  / 『マクロスF』シェリル・ノーム starring May&#39;n
-09.　02:22:32　Snow halation  / 『ラブライブ！』μ&#39;s
+08.　02:10:44　ダイアモンド クレバス  / 『マクロスF』シェリル・ノーム starring May'n
+09.　02:22:32　Snow halation  / 『ラブライブ！』μ's
 10.　03:00:45　ゲッチュウ！らぶらぶぅ？！ (Short Ver.)  / 『ふたりはプリキュア』五條真由美
-
 11.　03:06:06　キラキラkawaii！プリキュア大集合♪  / 『プリキュアオールスターズDX』五條真由美 with キュア・デラックス（うちやえゆか、工藤真由、宮本佳那子、茂家瑞季、林桃子）
 12.　03:20:14　夢は未来への道〜キュアフローラVer.〜  / 『Go!プリンセスプリキュア』北川理恵
 13.　03:30:21　ヒロガリズム  / 『Go!プリンセスプリキュア』石井あみ・吉武千颯
 14.　03:53:33　WHITE ALBUM Live at Campus Fes  / 『WHITE ALBUM2（ゲーム）』小木曽雪菜（米澤円）
-15.　03:59:01　POWDER SNOW  / 『WHITE ALBUM（ゲーム）』Suara (アカペラ)
+15.　03:59:01　POWDER SNOW  / 『WHITE ALBUM（ゲーム）』緒方理奈(水樹奈々)
 16.　04:17:51　マジLOVE1000％  / 『うたの☆プリンスさまっ♪ マジLOVE1000%』ST☆RISH
 17.　04:27:31　ツイてるねノッてるね  /  中山美穂
 18.　04:34:45　粉雪  / 『1リットルの涙』レミオロメン
 19.　04:43:48　雪の華  /  中島美嘉
 20.　04:54:57　アンネットの青い空  / 『アルプス物語 わたしのアンネット』潘恵子
-
 21.　05:00:47　エーデルワイスの白い花  / 『アルプス物語 わたしのアンネット』潘恵子
-22.　05:10:05　Edelweiss  / 『The Sound of Music』Richard Rodgers
+22.　05:10:05　Edelweiss  / 『The Sound of Music』Julie Andrews
 23.　05:14:42　Santa Lucia  / 『ナポリ民謡』Teodoro Cottrau
 24.　05:26:15　Far away(彼方の光)  / 『氷壁』Libera
 25.　05:39:08　You Raise Me Up  /  Celtic Woman
@@ -32,5 +30,4 @@ ID = iGytuGdRFog
 28.　06:06:37　IN MY DREAM  / 『ブレンパワード』真行寺恵里
 29.　06:16:20　ダンバイン とぶ  / 『聖戦士ダンバイン』MIO
 30.　06:22:19　深愛  / 『WHITE ALBUM』水樹奈々
-
 31.　06:30:04　悠久の翼  / 『ef - the first tale.』原田ひとみ
