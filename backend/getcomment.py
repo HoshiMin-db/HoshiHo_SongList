@@ -4,6 +4,7 @@ import time
 from googleapiclient.discovery import build
 from google.oauth2 import service_account
 from datetime import datetime, timedelta
+from googleapiclient.errors import HttpError
 
 # 從環境變量中讀取 Google API 憑證
 google_sheets_credentials = os.getenv('GOOGLE_SHEETS_CREDENTIALS')
@@ -85,7 +86,15 @@ def get_timestamp_comment(video_id):
     )
     
     while request:
-        response = request.execute()
+        try:
+            response = request.execute()
+        except HttpError as e:
+            if e.resp.status == 403:
+                print(f"Skipping video {video_id} due to insufficient permissions")
+                return None
+            else:
+                raise
+        
         for item in response['items']:
             comment = item['snippet']['topLevelComment']['snippet']['textDisplay']
             if '💐🌟🎶タイムスタンプ💐🌟🎶' in comment:
@@ -145,8 +154,8 @@ def main():
             if timestamp_comment:
                 save_to_file(video_id, timestamp_comment, video_date)
         
-        # 在每個批次之間加入延遲（例如5秒）
-        time.sleep(5)
+        # 在每個批次之間加入延遲（例如2秒）
+        time.sleep(2)
 
 if __name__ == '__main__':
     main()
