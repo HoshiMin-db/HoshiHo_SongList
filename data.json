@@ -8750,6 +8750,126 @@
         "is_acapella": false
     },
     {
+        "date": "20240908",
+        "time": "00:14:25",
+        "song_name": "サイレント・ヴォイス",
+        "artist": "ひろえ純",
+        "source": "機動戦士ガンダムΖΖ",
+        "link": "https://www.youtube.com/watch?v=q0G8Q_5OAVw&t=865s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240908",
+        "time": "00:21:38",
+        "song_name": "アニメじゃない ～夢を忘れた古い地球人よ～",
+        "artist": "新井正人",
+        "source": "機動戦士ガンダムΖΖ",
+        "link": "https://www.youtube.com/watch?v=q0G8Q_5OAVw&t=1298s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240908",
+        "time": "00:49:07",
+        "song_name": "エルの絵本【笛吹き男とパレード】",
+        "artist": "Sound Horizon",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=q0G8Q_5OAVw&t=2947s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240908",
+        "time": "01:03:52",
+        "song_name": "EXEC_PHANTASMAGORIA/.",
+        "artist": "みとせのりこ、志方あきこ、霜月はるか",
+        "source": "アルトネリコ　世界の終わりで詩い続ける少女",
+        "link": "https://www.youtube.com/watch?v=q0G8Q_5OAVw&t=3832s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240908",
+        "time": "01:17:39",
+        "song_name": "恋人を射ち堕とした日",
+        "artist": "Sound Horizon",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=q0G8Q_5OAVw&t=4659s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240908",
+        "time": "01:33:26",
+        "song_name": "勇者",
+        "artist": "YOASOBI",
+        "source": "葬送のフリーレン",
+        "link": "https://www.youtube.com/watch?v=q0G8Q_5OAVw&t=5606s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240908",
+        "time": "01:41:21",
+        "song_name": "ラムのラブソング",
+        "artist": "松谷祐子",
+        "source": "うる星やつら",
+        "link": "https://www.youtube.com/watch?v=q0G8Q_5OAVw&t=6081s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240908",
+        "time": "01:46:53",
+        "song_name": "エルガイム Time for L-GAIM",
+        "artist": "MIO",
+        "source": "重戦機エルガイム",
+        "link": "https://www.youtube.com/watch?v=q0G8Q_5OAVw&t=6413s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240908",
+        "time": "01:56:43",
+        "song_name": "心に届く詩",
+        "artist": "Lia",
+        "source": "シャイニング・ハーツ",
+        "link": "https://www.youtube.com/watch?v=q0G8Q_5OAVw&t=7003s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240908",
+        "time": "02:09:27",
+        "song_name": "恋歌宣誓",
+        "artist": "中恵光城 x ABSOLUTE CASTAWAY",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=q0G8Q_5OAVw&t=7767s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240908",
+        "time": "02:15:31",
+        "song_name": "禁じられた遊び",
+        "artist": "ALI PROJECT",
+        "source": "ローゼンメイデン",
+        "link": "https://www.youtube.com/watch?v=q0G8Q_5OAVw&t=8131s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240908",
+        "time": "02:24:42",
+        "song_name": "聖少女領域",
+        "artist": "ALI PROJECT",
+        "source": "ローゼンメイデン・トロイメント",
+        "link": "https://www.youtube.com/watch?v=q0G8Q_5OAVw&t=8682s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
         "date": "20240524",
         "time": "00:08:24",
         "song_name": "Give a reason",
