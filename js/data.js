@@ -53,7 +53,7 @@ function displayData(data, numDates = 3) {
 
     Object.values(groupedData).forEach(group => {
         group.sort((a, b) => new Date(b.date.substring(0, 4) + '-' + b.date.substring(4, 6) + '-' + b.date.substring(6))
-            - new Date(a.date.substring(0, 4) + '-' + a.date.substring(4, 6) + '-' + a.date.substring(6)));
+            - new Date(a.date.substring(0, 4) + '-' + a.date.substring(4, 6) + '-' a.date.substring(6)));
     });
 
     Object.entries(groupedData).forEach(([key, rows]) => {
@@ -86,7 +86,7 @@ function displayData(data, numDates = 3) {
                 const lockIcon = document.createElement('span');
                 lockIcon.classList.add('lock-icon');
                 lockIcon.textContent = '🔒';
-                dateCell.appendChild(lockIcon);
+                link.appendChild(lockIcon);
             }
             if (row.is_acapella) {
                 dateCell.classList.add('acapella');
@@ -127,7 +127,7 @@ function displayData(data, numDates = 3) {
                             const lockIcon = document.createElement('span');
                             lockIcon.classList.add('lock-icon');
                             lockIcon.textContent = '🔒';
-                            span.appendChild(lockIcon);
+                            link.appendChild(lockIcon);
                         }
                         if (row.is_acapella) {
                             span.classList.add('acapella');
