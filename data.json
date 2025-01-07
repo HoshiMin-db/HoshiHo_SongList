@@ -1,5 +1,145 @@
 [
     {
+        "date": "20240316",
+        "time": "00:07:23",
+        "song_name": "FEEL×ALIVE",
+        "artist": "佐咲紗花",
+        "source": "ばくおん!!",
+        "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=443s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240316",
+        "time": "00:14:44",
+        "song_name": "ノーザンクロス",
+        "artist": "シェリル・ノーム starring May'n",
+        "source": "マクロスF",
+        "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=884s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240316",
+        "time": "00:28:17",
+        "song_name": "インモラリスト",
+        "artist": "堀江由衣",
+        "source": "ドラゴンクライシス！",
+        "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=1697s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240316",
+        "time": "00:37:57",
+        "song_name": "ワルキューレがとまらない",
+        "artist": "ワルキューレ",
+        "source": "マクロスΔ",
+        "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=2277s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240316",
+        "time": "00:48:24",
+        "song_name": "ワルキューレは裏切らない",
+        "artist": "ワルキューレ",
+        "source": "劇場版マクロスΔ 激情のワルキューレ",
+        "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=2904s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240316",
+        "time": "00:56:39",
+        "song_name": "時の迷宮",
+        "artist": "ランカ・リー=中島愛、シェリル・ノーム starring May'n",
+        "source": "劇場短編マクロスF 〜時の迷宮〜",
+        "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=3399s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240316",
+        "time": "01:06:08",
+        "song_name": "綺麗な花には毒がある",
+        "artist": "Yami_Q_ray",
+        "source": "劇場版マクロスΔ 絶対LIVE!!!!!!",
+        "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=3968s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240316",
+        "time": "01:12:57",
+        "song_name": "ペッパー警部",
+        "artist": "ピンク・レディー",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=4377s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240316",
+        "time": "01:20:40",
+        "song_name": "Everlasting Luv",
+        "artist": "BREAKERZ",
+        "source": "名探偵コナン",
+        "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=4840s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240316",
+        "time": "01:25:33",
+        "song_name": "ルパン三世のテーマ",
+        "artist": "",
+        "source": "ルパン三世",
+        "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=5133s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240316",
+        "time": "01:31:13",
+        "song_name": "ちゃんと言わなきゃ愛さない",
+        "artist": "石川さゆり",
+        "source": "ルパン三世",
+        "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=5473s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240316",
+        "time": "01:43:01",
+        "song_name": "イミテイション・ゴールド",
+        "artist": "山口百恵",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=6181s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240316",
+        "time": "01:58:17",
+        "song_name": "Exterminate",
+        "artist": "水樹奈々",
+        "source": "戦姫絶唱シンフォギアGX",
+        "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=7097s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240316",
+        "time": "02:03:23",
+        "song_name": "逆光のフリューゲル",
+        "artist": "ツヴァイウィング［風鳴翼(水樹奈々)、天羽奏(高山みなみ)］",
+        "source": "戦姫絶唱シンフォギア",
+        "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=7403s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
         "date": "20240901",
         "time": "00:12:24",
         "song_name": "Rumbling hearts",
@@ -10096,146 +10236,6 @@
         "artist": "MAHO堂",
         "source": "おジャ魔女どれみ",
         "link": "https://www.youtube.com/watch?v=fdpGIoCs6AU&t=7150s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240317",
-        "time": "00:07:23",
-        "song_name": "FEEL×ALIVE",
-        "artist": "佐咲紗花",
-        "source": "ばくおん!!",
-        "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=443s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240317",
-        "time": "00:14:44",
-        "song_name": "ノーザンクロス",
-        "artist": "シェリル・ノーム starring May&#39;n",
-        "source": "マクロスF",
-        "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=884s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240317",
-        "time": "00:28:17",
-        "song_name": "インモラリスト",
-        "artist": "堀江由衣",
-        "source": "ドラゴンクライシス！",
-        "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=1697s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240317",
-        "time": "00:37:57",
-        "song_name": "ワルキューレがとまらない",
-        "artist": "ワルキューレ",
-        "source": "マクロスΔ",
-        "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=2277s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240317",
-        "time": "00:48:24",
-        "song_name": "ワルキューレは裏切らない",
-        "artist": "ワルキューレ",
-        "source": "劇場版マクロスΔ 激情のワルキューレ",
-        "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=2904s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240317",
-        "time": "00:56:39",
-        "song_name": "時の迷宮",
-        "artist": "ランカ・リー=中島愛、シェリル・ノーム starring May&#39;n",
-        "source": "劇場短編マクロスF 〜時の迷宮〜",
-        "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=3399s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240317",
-        "time": "01:06:08",
-        "song_name": "綺麗な花には毒がある",
-        "artist": "Yami_Q_ray",
-        "source": "劇場版マクロスΔ 絶対LIVE!!!!!!",
-        "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=3968s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240317",
-        "time": "01:12:57",
-        "song_name": "ペッパー警部",
-        "artist": "ピンク・レディー",
-        "source": "",
-        "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=4377s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240317",
-        "time": "01:20:40",
-        "song_name": "Everlasting Luv",
-        "artist": "BREAKERZ",
-        "source": "名探偵コナン",
-        "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=4840s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240317",
-        "time": "01:25:33",
-        "song_name": "ルパン三世のテーマ",
-        "artist": "",
-        "source": "ルパン三世",
-        "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=5133s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240317",
-        "time": "01:31:13",
-        "song_name": "ちゃんと言わなきゃ愛さない",
-        "artist": "石川さゆり",
-        "source": "ルパン三世",
-        "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=5473s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240317",
-        "time": "01:43:01",
-        "song_name": "イミテイション・ゴールド",
-        "artist": "山口百恵",
-        "source": "",
-        "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=6181s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240317",
-        "time": "01:58:17",
-        "song_name": "Exterminate",
-        "artist": "水樹奈々",
-        "source": "戦姫絶唱シンフォギアGX",
-        "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=7097s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240317",
-        "time": "02:03:23",
-        "song_name": "逆光のフリューゲル",
-        "artist": "ツヴァイウィング［風鳴翼（水樹奈々）、天羽奏（高山みなみ）］",
-        "source": "戦姫絶唱シンフォギア",
-        "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=7403s",
         "is_member_exclusive": false,
         "is_acapella": false
     },
