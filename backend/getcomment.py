@@ -12,7 +12,7 @@ import html
 google_sheets_credentials = os.getenv('GOOGLE_SHEETS_CREDENTIALS')
 google_api_key = os.getenv('GOOGLE_API_KEY')
 
-if not google_sheets_credentials或google_api_key:
+if not google_sheets_credentials or not google_api_key:
     raise ValueError("缺少Google API憑證或API密鑰")
 
 try:
