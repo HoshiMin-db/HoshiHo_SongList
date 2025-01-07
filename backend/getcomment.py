@@ -1,12 +1,8 @@
 import os
 import json
-import re
 from googleapiclient.discovery import build
 from google.oauth2 import service_account
 from datetime import datetime, timedelta
-import subprocess
-from googleapiclient.errors import HttpError
-import html
 
 # 從環境變量中讀取 Google API 憑證
 google_sheets_credentials = os.getenv('GOOGLE_SHEETS_CREDENTIALS')
@@ -24,13 +20,10 @@ except Exception as e:
 # YouTube Data API 客戶端
 youtube = build('youtube', 'v3', developerKey=google_api_key)
 
-# 日本時區偏移
-JST_OFFSET = timedelta(hours=8)
-
-def get_video_start_date(video_id):
-    """獲取影片的直播開始日期（日本時間）"""
+def get_video_date(video_id):
+    """獲取影片的實際直播日期"""
     request = youtube.videos().list(
-        part='liveStreamingDetails',
+        part='liveStreamingDetails,snippet',
         id=video_id
     )
     response = request.execute()
@@ -38,15 +31,21 @@ def get_video_start_date(video_id):
     if not response['items']:
         return None
     
-    # 獲取直播開始時間
-    live_start_time_str = response['items'][0]['liveStreamingDetails']['actualStartTime']
-    live_start_time_utc = datetime.strptime(live_start_time_str, '%Y-%m-%dT%H:%M:%SZ')
-    live_start_time_jst = live_start_time_utc + JST_OFFSET
+    video_details = response['items'][0]
     
-    # 確定日期
-    live_start_date_jst = live_start_time_jst.date()
+    # 檢查是否為直播影片
+    if 'liveStreamingDetails' in video_details:
+        # 使用直播開始時間
+        actual_start_time = video_details['liveStreamingDetails'].get('actualStartTime')
+        if actual_start_time:
+            # 直接解析時間，這已經是當地時間
+            stream_date = datetime.strptime(actual_start_time, '%Y-%m-%dT%H:%M:%SZ')
+            return stream_date.date()
     
-    return live_start_date_jst
+    # 如果不是直播或沒有直播時間，使用發布時間
+    publish_time = video_details['snippet']['publishedAt']
+    publish_date = datetime.strptime(publish_time, '%Y-%m-%dT%H:%M:%SZ')
+    return publish_date.date()
 
 def get_video_ids_from_playlist(playlist_id):
     """從播放清單獲取影片ID和日期"""
@@ -61,7 +60,7 @@ def get_video_ids_from_playlist(playlist_id):
         response = request.execute()
         for item in response['items']:
             video_id = item['contentDetails']['videoId']
-            video_date = get_video_start_date(video_id)
+            video_date = get_video_date(video_id)
             
             if video_date:
                 video_info.append((video_id, video_date))
@@ -73,35 +72,22 @@ def get_video_ids_from_playlist(playlist_id):
 
 def get_timestamp_comment(video_id):
     """獲取包含時間戳標記的留言"""
-    try:
-        request = youtube.commentThreads().list(
-            part='snippet',
-            videoId=video_id,
-            maxResults=100
-        )
-
-        while request:
-            response = request.execute()
-            for item in response['items']:
-                comment = item['snippet']['topLevelComment']['snippet']['textDisplay']
-                # 檢查是否包含特定標記
-                if '💐🌟🎶タイムスタンプ💐🌟🎶' in comment:
-                    return comment
-
-            request = youtube.commentThreads().list_next(request, response)
+    request = youtube.commentThreads().list(
+        part='snippet',
+        videoId=video_id,
+        maxResults=100
+    )
     
-    except HttpError as e:
-        print(f"Error fetching comments for video {video_id}: {e}")
-        return None
-
+    while request:
+        response = request.execute()
+        for item in response['items']:
+            comment = item['snippet']['topLevelComment']['snippet']['textDisplay']
+            if '💐🌟🎶タイムスタンプ💐🌟🎶' in comment:
+                return comment
+                
+        request = youtube.commentThreads().list_next(request, response)
+    
     return None
-
-def clean_html(raw_html):
-    """移除HTML標籤並處理換行和特殊字符"""
-    clean_text = re.sub(r'<br\s*/?>', '\n', raw_html)  # 替換 <br> 為換行符
-    clean_text = re.sub(r'<.*?>', '', clean_text)  # 移除其他HTML標籤
-    clean_text = html.unescape(clean_text)  # 轉換HTML實體為普通字符
-    return clean_text
 
 def save_to_file(video_id, comment, date):
     """保存留言到文件"""
@@ -112,21 +98,17 @@ def save_to_file(video_id, comment, date):
     output_dir = 'timeline'
     os.makedirs(output_dir, exist_ok=True)
     
-    # 使用日期和視頻 ID 作為文件名
-    file_name = f"{date.strftime('%Y%m%d')}_{video_id}.txt"
+    file_name = date.strftime('%Y%m%d') + '.txt'
     file_path = os.path.join(output_dir, file_name)
-    
-    # 移除HTML標籤並處理換行
-    clean_comment = clean_html(comment)
     
     with open(file_path, 'w', encoding='utf-8') as f:
         f.write(f'ID = {video_id}\n')
-        f.write(clean_comment)
+        f.write(comment)
         
     print(f"Saved timestamp comment to {file_path}")
 
 def main():
-    playlist_id = 'PL7H5HbMMfm_lUoLIkPAZkhF_W0oDf5WEk'  # 你的播放清單ID
+    playlist_id = 'PL7H5HbMMfm_lUoLIkPAZkhF_W0oDf5WEk'
     
     # 獲取播放清單中的所有影片
     video_info = get_video_ids_from_playlist(playlist_id)
@@ -134,24 +116,12 @@ def main():
     for video_id, video_date in video_info:
         print(f"Processing video {video_id} from {video_date}")
         
-        # 使用日期和視頻 ID 作為文件名
-        file_name = f"{video_date.strftime('%Y%m%d')}_{video_id}.txt"
-        file_path = os.path.join('timeline', file_name)
+        # 獲取時間戳留言
+        timestamp_comment = get_timestamp_comment(video_id)
         
-        if not os.path.exists(file_path):
-            # 獲取時間戳留言
-            timestamp_comment = get_timestamp_comment(video_id)
-            
-            # 保存到檔案
-            if timestamp_comment:
-                save_to_file(video_id, timestamp_comment, video_date)
-                
-                # 推送到 GitHub
-                subprocess.run(['git', 'add', file_path])
-                subprocess.run(['git', 'commit', '-m', f'Add timestamp comment for video {video_id}'])
-                subprocess.run(['git', 'push'])
-        else:
-            print(f"File {file_name} already exists, skipping...")
+        # 保存到檔案
+        if timestamp_comment:
+            save_to_file(video_id, timestamp_comment, video_date)
 
 if __name__ == '__main__':
     main()
