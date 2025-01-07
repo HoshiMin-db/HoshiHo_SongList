@@ -39,7 +39,7 @@ export function fetchAndDisplayData(query, numDates = 3) {
     displayData(filteredData, numDates);
 }
 
-function displayData(data, numDates) {
+function displayData(data, numDates = 3) {
     const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
 
     const groupedData = data.reduce((acc, row) => {
@@ -62,11 +62,11 @@ function displayData(data, numDates) {
         newRow.insertCell().textContent = rows[0].song_name;
         newRow.insertCell().textContent = rows[0].artist;
         newRow.insertCell().textContent = rows[0].source;
-        newRow.insertCell().textContent = rows[0].note || '';
 
-        rows.slice(0, numDates).forEach((row) => {
-            const dateCell = newRow.insertCell();
-            dateCell.classList.add('date-cell');
+        // Generate date cells
+        const dateCell = newRow.insertCell();
+        dateCell.classList.add('date-cell');
+        rows.slice(0, numDates).forEach((row, index) => {
             const link = document.createElement('a');
             const date = row.date;
             const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
@@ -77,6 +77,9 @@ function displayData(data, numDates) {
                 event.preventDefault();
                 openFloatingPlayer(link.href);
             };
+            if (index > 0) {
+                dateCell.appendChild(document.createTextNode(', '));
+            }
             dateCell.appendChild(link);
 
             if (row.is_member_exclusive) {
@@ -90,45 +93,50 @@ function displayData(data, numDates) {
             }
         });
 
-        // 如果日期數量少於 numDates，補齊空白儲存格，不設置背景顏色
-        for (let i = rows.length; i < numDates; i++) {
-            const emptyCell = newRow.insertCell();
-            emptyCell.classList.add('date-cell');
-        }
-
+        // Add "..." button if there are more dates
         if (rows.length > numDates) {
-            const moreCell = newRow.insertCell();
             const moreButton = document.createElement('button');
             moreButton.textContent = '...';
             moreButton.onclick = () => {
-                moreButton.style.display = 'none';
-                rows.slice(numDates).forEach((row) => {
-                    const dateCell = newRow.insertCell();
-                    dateCell.classList.add('date-cell');
-                    const link = document.createElement('a');
-                    const date = row.date;
-                    const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
-                    link.href = row.link;
-                    link.textContent = formattedDate;
-                    link.target = '_blank';
-                    link.onclick = function(event) {
-                        event.preventDefault();
-                        openFloatingPlayer(link.href);
-                    };
-                    dateCell.appendChild(link);
+                const isExpanded = moreButton.getAttribute('data-expanded') === 'true';
+                if (isExpanded) {
+                    // Collapse dates
+                    const toRemove = dateCell.querySelectorAll('.extra-date');
+                    toRemove.forEach(el => el.remove());
+                    moreButton.setAttribute('data-expanded', 'false');
+                } else {
+                    // Expand dates
+                    rows.slice(numDates).forEach((row, index) => {
+                        const link = document.createElement('a');
+                        const date = row.date;
+                        const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
+                        link.href = row.link;
+                        link.textContent = formattedDate;
+                        link.target = '_blank';
+                        link.onclick = function(event) {
+                            event.preventDefault();
+                            openFloatingPlayer(link.href);
+                        };
+                        const span = document.createElement('span');
+                        span.classList.add('extra-date');
+                        span.appendChild(document.createTextNode(', '));
+                        span.appendChild(link);
+                        dateCell.appendChild(span);
 
-                    if (row.is_member_exclusive) {
-                        const lockIcon = document.createElement('span');
-                        lockIcon.classList.add('lock-icon');
-                        lockIcon.textContent = '🔒';
-                        dateCell.appendChild(lockIcon);
-                    }
-                    if (row.is_acapella) {
-                        dateCell.classList.add('acapella');
-                    }
-                });
+                        if (row.is_member_exclusive) {
+                            const lockIcon = document.createElement('span');
+                            lockIcon.classList.add('lock-icon');
+                            lockIcon.textContent = '🔒';
+                            span.appendChild(lockIcon);
+                        }
+                        if (row.is_acapella) {
+                            span.classList.add('acapella');
+                        }
+                    });
+                    moreButton.setAttribute('data-expanded', 'true');
+                }
             };
-            moreCell.appendChild(moreButton);
+            dateCell.appendChild(moreButton);
         }
     });
 
