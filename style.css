@@ -232,3 +232,57 @@ table thead th {
 td:nth-child(5), th:nth-child(5) {
     display: none;
 }
+
+/* 新增日期和字母分組樣式 */
+.date-header {
+    background: #f0f0f0;
+    padding: 8px;
+    margin: 4px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.date-header .expand-btn {
+    background: none;
+    border: none;
+    padding: 2px 8px;
+    cursor: pointer;
+}
+
+.date-group {
+    margin-bottom: 16px;
+}
+
+.date-content {
+    padding-left: 16px;
+}
+
+.date-content.collapsed {
+    display: none;
+}
+
+.letter-group {
+    margin-bottom: 24px;
+}
+
+.letter-header {
+    background: #e0e0e0;
+    padding: 8px;
+    margin: 4px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.letter-content {
+    padding-left: 16px;
+}
+
+.letter-content.collapsed {
+    display: none;
+}
