@@ -65,13 +65,16 @@ def get_video_ids_from_playlist(playlist_id):
         maxResults=50
     )
     
+    # 計算最近30天的日期
+    thirty_days_ago = datetime.utcnow() - timedelta(days=30)
+    
     while request:
         response = request.execute()
         for item in response['items']:
             video_id = item['contentDetails']['videoId']
             video_date = get_video_date(video_id)
             
-            if video_date:
+            if video_date and video_date >= thirty_days_ago.date():
                 video_info.append((video_id, video_date))
                 print(f"找到影片：{video_id} 來自 {video_date}")
                 
