@@ -1,23 +1,25 @@
 import os
 import json
+import re
 import time
 from googleapiclient.discovery import build
 from google.oauth2 import service_account
 from datetime import datetime, timedelta
 from googleapiclient.errors import HttpError
+import html
 
 # 從環境變量中讀取 Google API 憑證
 google_sheets_credentials = os.getenv('GOOGLE_SHEETS_CREDENTIALS')
 google_api_key = os.getenv('GOOGLE_API_KEY')
 
-if not google_sheets_credentials or not google_api_key:
-    raise ValueError("Missing Google API credentials or API key")
+if not google_sheets_credentials或google_api_key:
+    raise ValueError("缺少Google API憑證或API密鑰")
 
 try:
     credentials_info = json.loads(google_sheets_credentials)
     credentials = service_account.Credentials.from_service_account_info(credentials_info)
 except Exception as e:
-    raise ValueError("Invalid Google Sheets credentials") from e
+    raise ValueError("無效的Google Sheets憑證") from e
 
 # YouTube Data API 客戶端
 youtube = build('youtube', 'v3', developerKey=google_api_key)
@@ -37,7 +39,7 @@ def get_video_date(video_id):
     
     # 檢查是否為會員限定直播
     if video_details['snippet'].get('liveBroadcastContent') == 'membersOnly':
-        print(f"Skipping members-only video: {video_id}")
+        print(f"跳過會員限定視頻：{video_id}")
         return None
     
     # 檢查是否為直播影片
@@ -71,7 +73,7 @@ def get_video_ids_from_playlist(playlist_id):
             
             if video_date:
                 video_info.append((video_id, video_date))
-                print(f"Found video: {video_id} from {video_date}")
+                print(f"找到影片：{video_id} 來自 {video_date}")
                 
         request = youtube.playlistItems().list_next(request, response)
     
@@ -90,7 +92,7 @@ def get_timestamp_comment(video_id):
             response = request.execute()
         except HttpError as e:
             if e.resp.status == 403:
-                print(f"Skipping video {video_id} due to insufficient permissions")
+                print(f"由於權限不足，跳過視頻 {video_id}")
                 return None
             else:
                 raise
@@ -104,10 +106,17 @@ def get_timestamp_comment(video_id):
     
     return None
 
+def clean_html(raw_html):
+    """移除HTML標籤並處理換行和特殊字符"""
+    clean_text = re.sub(r'<br\s*/?>', '\n', raw_html)  # 替換 <br> 為換行符
+    clean_text = re.sub(r'<.*?>', '', clean_text)  # 移除其他HTML標籤
+    clean_text = html.unescape(clean_text)  # 轉換HTML實體為普通字符
+    return clean_text
+
 def save_to_file(video_id, comment, date):
     """保存留言到文件"""
     if not comment:
-        print(f"No timestamp comment found for video {video_id}")
+        print(f"未找到時間戳留言，視頻ID：{video_id}")
         return
         
     output_dir = 'timeline'
@@ -118,14 +127,17 @@ def save_to_file(video_id, comment, date):
     
     # 檢查文件是否已存在
     if os.path.exists(file_path):
-        print(f"File for date {file_name} already exists, skipping.")
+        print(f"日期為 {file_name} 的文件已存在，跳過。")
         return
+    
+    # 清理HTML標籤
+    clean_comment = clean_html(comment)
     
     with open(file_path, 'w', encoding='utf-8') as f:
         f.write(f'ID = {video_id}\n')
-        f.write(comment)
+        f.write(clean_comment)
         
-    print(f"Saved timestamp comment to {file_path}")
+    print(f"已保存時間戳留言到 {file_path}")
 
 def main():
     playlist_id = 'PL7H5HbMMfm_lUoLIkPAZkhF_W0oDf5WEk'
@@ -142,10 +154,10 @@ def main():
             file_name = video_date.strftime('%Y%m%d') + '.txt'
             file_path = os.path.join('timeline', file_name)
             if os.path.exists(file_path):
-                print(f"File for date {file_name} already exists, skipping video ID {video_id}.")
+                print(f"日期為 {file_name} 的文件已存在，跳過視頻ID {video_id}。")
                 continue
 
-            print(f"Processing video {video_id} from {video_date}")
+            print(f"處理視頻 {video_id} 來自 {video_date}")
             
             # 獲取時間戳留言
             timestamp_comment = get_timestamp_comment(video_id)
