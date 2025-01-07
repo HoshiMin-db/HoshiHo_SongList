@@ -35,79 +35,50 @@ body {
     font-size: 16px;
 }
 
-/* 表單項目樣式 */
-.form-item {
-    display: flex;
-    justify-content: space-between;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
     padding: 12px;
-    border-bottom: 1px solid #ddd;
-}
-
-.title-cell {
-    flex: 2;
-}
-
-.artist-cell {
-    flex: 1;
-}
-
-.source-cell {
-    flex: 1;
-}
-
-.date-cell {
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.more-dates-btn {
-    background: none;
-    border: none;
-    padding: 2px 8px;
-    cursor: pointer;
-}
-
-/* 虛擬滾動容器樣式 */
-.virtual-scroll-container {
-    height: 600px;
-    overflow-y: auto;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
     position: relative;
 }
 
-.virtual-scroll-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+td:hover {
+    overflow: visible;
+    white-space: normal;
+    background-color: #f8f8f8;
+    z-index: 1;
 }
 
-/* 日期和字母分組樣式 */
-.date-header, .letter-header {
-    background: #f0f0f0;
-    padding: 8px;
-    margin: 4px 0;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 4px;
-}
-
-.date-header .expand-btn, .letter-header .expand-btn {
-    background: none;
-    border: none;
-    padding: 2px 8px;
+th {
+    background-color: #6a5acd;
+    color: white;
     cursor: pointer;
 }
 
-.date-content, .letter-content {
-    padding-left: 16px;
+th:hover {
+    background-color: #5849b8;
 }
 
-.date-content.collapsed, .letter-content.collapsed {
-    display: none;
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
 }
 
 .floating-player-container {
@@ -146,7 +117,7 @@ body {
     user-select: none;
 }
 
-.close-btn:hover {
+close-btn:hover {
     background-color: #5849b8;
 }
 
@@ -227,4 +198,40 @@ a:hover {
     .floating-player {
         height: 200px;
     }
+}
+
+/* 調整表格列寬度 */
+th:nth-child(1), td:nth-child(1) {
+    width: 5%;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 30%;
+}
+
+th:nth-child(3), td:nth-child(3), th:nth-child(4), td:nth-child(4) {
+    width: 10%;
+}
+
+/* 調整日期欄字體大小 */
+td:nth-child(6),
+td:nth-child(7),
+td:nth-child(8),
+td.date-cell {
+    font-size: 12px;
+}
+
+/* 固定表頭樣式 */
+table thead th {
+    position: sticky;
+    top: 0;
+    background-color: #6a5acd;
+    color: white;
+    z-index: 10;
+    cursor: default;
+}
+
+/* 隱藏備注欄 */
+td:nth-child(5), th:nth-child(5) {
+    display: none;
 }
