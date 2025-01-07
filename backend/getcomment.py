@@ -20,8 +20,14 @@ except Exception as e:
 # YouTube Data API 客戶端
 youtube = build('youtube', 'v3', developerKey=google_api_key)
 
+# 快取儲存影片日期
+video_date_cache = {}
+
 def get_video_date(video_id):
     """獲取影片的實際直播日期"""
+    if video_id in video_date_cache:
+        return video_date_cache[video_id]
+    
     request = youtube.videos().list(
         part='liveStreamingDetails,snippet',
         id=video_id
@@ -45,14 +51,16 @@ def get_video_date(video_id):
         if actual_start_time:
             # 直接解析時間，這已經是當地時間
             stream_date = datetime.strptime(actual_start_time, '%Y-%m-%dT%H:%M:%SZ')
+            video_date_cache[video_id] = stream_date.date()
             return stream_date.date()
     
     # 如果不是直播或沒有直播時間，使用發布時間
     publish_time = video_details['snippet']['publishedAt']
     publish_date = datetime.strptime(publish_time, '%Y-%m-%dT%H:%M:%SZ')
+    video_date_cache[video_id] = publish_date.date()
     return publish_date.date()
 
-def get_video_ids_from_playlist(playlist_id):
+def get_video_ids_from_playlist(playlist_id, last_request_time=None):
     """從播放清單獲取影片ID和日期"""
     video_info = []
     request = youtube.playlistItems().list(
@@ -67,7 +75,7 @@ def get_video_ids_from_playlist(playlist_id):
             video_id = item['contentDetails']['videoId']
             video_date = get_video_date(video_id)
             
-            if video_date:
+            if video_date and (not last_request_time or video_date > last_request_time):
                 video_info.append((video_id, video_date))
                 print(f"Found video: {video_id} from {video_date}")
                 
@@ -119,11 +127,19 @@ def save_to_file(video_id, comment, date):
 
 def main():
     playlist_id = 'PL7H5HbMMfm_lUoLIkPAZkhF_W0oDf5WEk'
+    last_request_time = datetime.now() - timedelta(days=1)  # 假設我們只請求過去一天新增的影片
     
     # 獲取播放清單中的所有影片
-    video_info = get_video_ids_from_playlist(playlist_id)
+    video_info = get_video_ids_from_playlist(playlist_id, last_request_time)
     
     for video_id, video_date in video_info:
+        # 檢查文件是否已存在
+        file_name = video_date.strftime('%Y%m%d') + '.txt'
+        file_path = os.path.join('timeline', file_name)
+        if os.path.exists(file_path):
+            print(f"File for date {file_name} already exists, skipping video ID {video_id}.")
+            continue
+
         print(f"Processing video {video_id} from {video_date}")
         
         # 獲取時間戳留言
