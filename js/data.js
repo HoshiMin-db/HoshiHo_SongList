@@ -2,8 +2,6 @@ import { normalizeString, sortTable } from './utils.js';
 
 let allData = [];
 let totalSongCount = 0;
-const rowHeight = 48; // 設置每行的高度
-const visibleRowCount = 12; // 設置可視區域內的行數
 
 export function fetchData(callback) {
     fetch('data.json', { cache: 'no-cache' })
@@ -96,6 +94,41 @@ function displayData(data, numDates) {
         for (let i = rows.length; i < numDates; i++) {
             const emptyCell = newRow.insertCell();
             emptyCell.classList.add('date-cell');
+        }
+
+        if (rows.length > numDates) {
+            const moreCell = newRow.insertCell();
+            const moreButton = document.createElement('button');
+            moreButton.textContent = '...';
+            moreButton.onclick = () => {
+                moreButton.style.display = 'none';
+                rows.slice(numDates).forEach((row) => {
+                    const dateCell = newRow.insertCell();
+                    dateCell.classList.add('date-cell');
+                    const link = document.createElement('a');
+                    const date = row.date;
+                    const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
+                    link.href = row.link;
+                    link.textContent = formattedDate;
+                    link.target = '_blank';
+                    link.onclick = function(event) {
+                        event.preventDefault();
+                        openFloatingPlayer(link.href);
+                    };
+                    dateCell.appendChild(link);
+
+                    if (row.is_member_exclusive) {
+                        const lockIcon = document.createElement('span');
+                        lockIcon.classList.add('lock-icon');
+                        lockIcon.textContent = '🔒';
+                        dateCell.appendChild(lockIcon);
+                    }
+                    if (row.is_acapella) {
+                        dateCell.classList.add('acapella');
+                    }
+                });
+            };
+            moreCell.appendChild(moreButton);
         }
     });
 
