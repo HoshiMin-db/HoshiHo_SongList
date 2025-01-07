@@ -1,8 +1,6 @@
 # 我的專案
-  這是一個測試更新。v6.1
-  
-# 就是一座米田共山
-  嗚哇啊啊啊啊啊破防惹
+  這是一個測試更新。v6.2
+  寫得太爛了嗚哇啊啊啊啊啊破防惹
 
 # 邏輯
   ## /backend
@@ -16,3 +14,8 @@
   `form-generation.js`  Html表單生成  
   `utils.js`  從`form-generation.js`分拆  
   `youtube-player.js`  Html播放器  
+
+# 鳴謝
+  時間軸：Avery、アスパラ
+  程式碼：Copilot、Claude-3.5、GPT-4o
+  Ctrl+C Ctrl+V debug猴子：我自己
