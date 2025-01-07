@@ -5,7 +5,7 @@
   嗚哇啊啊啊啊啊破防惹
 
 # 邏輯
-  ## /bacckend
+  ## /backend
   `app.py`  暫時廢棄  
   `getcomment.py`  抓取Youtube時間軸留言  
   `process_timeline.py`  抓取`timeline/yyyymmdd.txt`寫入`data.json`  
