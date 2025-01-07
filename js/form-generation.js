@@ -28,7 +28,6 @@ function onScroll() {
         newRow.insertCell().textContent = row.song_name;
         newRow.insertCell().textContent = row.artist;
         newRow.insertCell().textContent = row.source;
-        newRow.insertCell().textContent = row.note || '';
 
         row.dates.slice(0, 3).forEach(date => {
             const dateCell = newRow.insertCell();
@@ -42,6 +41,16 @@ function onScroll() {
                 openFloatingPlayer(link.href);
             };
             dateCell.appendChild(link);
+
+            if (date.is_member_exclusive) {
+                const lockIcon = document.createElement('span');
+                lockIcon.classList.add('lock-icon');
+                lockIcon.textContent = '🔒';
+                dateCell.appendChild(lockIcon);
+            }
+            if (date.is_acapella) {
+                dateCell.classList.add('acapella');
+            }
         });
     }
 }
