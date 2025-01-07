@@ -6610,6 +6610,126 @@
         "is_acapella": false
     },
     {
+        "date": "20240825",
+        "time": "00:17:10",
+        "song_name": "Mermaid festa vol.1",
+        "artist": "μ's",
+        "source": "ラブライブ！",
+        "link": "https://www.youtube.com/watch?v=d0jBqFCADCU&t=1030s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240825",
+        "time": "00:24:18",
+        "song_name": "Mermaid festa vol.2 ～Passionate～",
+        "artist": "高坂穂乃果(新田恵海)、星空凛(飯田里穂)",
+        "source": "ラブライブ！",
+        "link": "https://www.youtube.com/watch?v=d0jBqFCADCU&t=1458s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240825",
+        "time": "00:37:26",
+        "song_name": "Feeling Heart",
+        "artist": "中司雅美",
+        "source": "To Heart",
+        "link": "https://www.youtube.com/watch?v=d0jBqFCADCU&t=2246s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240825",
+        "time": "01:00:15",
+        "song_name": "カザハネ",
+        "artist": "霜月はるか",
+        "source": "H₂O ～FOOTPRINTS IN THE SAND～(アニメ)",
+        "link": "https://www.youtube.com/watch?v=d0jBqFCADCU&t=3615s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240825",
+        "time": "01:20:59",
+        "song_name": "愛がひとりぼっち",
+        "artist": "岩崎良美",
+        "source": "タッチ",
+        "link": "https://www.youtube.com/watch?v=d0jBqFCADCU&t=4859s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240825",
+        "time": "01:35:25",
+        "song_name": "セ・キララ",
+        "artist": "橋本みゆき",
+        "source": "se・きらら",
+        "link": "https://www.youtube.com/watch?v=d0jBqFCADCU&t=5725s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240825",
+        "time": "01:46:49",
+        "song_name": "プラスチックスマイル（虹色ギターVERSION）",
+        "artist": "Honey Bee",
+        "source": "Canvas2 〜虹色のスケッチ〜",
+        "link": "https://www.youtube.com/watch?v=d0jBqFCADCU&t=6409s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240825",
+        "time": "01:56:43",
+        "song_name": "YOU",
+        "artist": "YURIA",
+        "source": "SHUFFLE! (アニメ) WOWOW版",
+        "link": "https://www.youtube.com/watch?v=d0jBqFCADCU&t=7003s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240825",
+        "time": "02:10:07",
+        "song_name": "Ζ・刻をこえて",
+        "artist": "鮎川麻弥",
+        "source": "機動戦士Ζガンダム",
+        "link": "https://www.youtube.com/watch?v=d0jBqFCADCU&t=7807s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240825",
+        "time": "02:22:48",
+        "song_name": "祝福",
+        "artist": "YOASOBI",
+        "source": "機動戦士ガンダム 水星の魔女",
+        "link": "https://www.youtube.com/watch?v=d0jBqFCADCU&t=8568s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240825",
+        "time": "02:30:52",
+        "song_name": "ガーネット",
+        "artist": "奥華子",
+        "source": "時をかける少女",
+        "link": "https://www.youtube.com/watch?v=d0jBqFCADCU&t=9052s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240825",
+        "time": "02:39:26",
+        "song_name": "となりのトトロ",
+        "artist": "井上あずみ",
+        "source": "となりのトトロ",
+        "link": "https://www.youtube.com/watch?v=d0jBqFCADCU&t=9566s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
         "date": "20241130",
         "time": "00:19:23",
         "song_name": "Get Along",
