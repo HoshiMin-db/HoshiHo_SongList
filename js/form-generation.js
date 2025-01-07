@@ -87,40 +87,25 @@ function createLetterHeader(letter, isExpanded = true) {
 function generateForm(data) {
   const container = document.getElementById('form-container');
   container.innerHTML = '';
+
+  const letterGroups = groupByFirstLetter(data);
   
-  const dateGroups = groupByDate(data);
-  
-  Object.entries(dateGroups).forEach(([date, items]) => {
-    const dateGroup = document.createElement('div');
-    dateGroup.className = 'date-group';
+  Object.entries(letterGroups).forEach(([letter, items]) => {
+    const letterGroup = document.createElement('div');
+    letterGroup.className = 'letter-group';
     
-    dateGroup.appendChild(createDateHeader(date));
+    letterGroup.appendChild(createLetterHeader(letter));
     
-    const dateContent = document.createElement('div');
-    dateContent.className = 'date-content';
+    const letterContent = document.createElement('div');
+    letterContent.className = 'letter-content';
     
-    const letterGroups = groupByFirstLetter(items);
-    
-    Object.entries(letterGroups).forEach(([letter, letterItems]) => {
-      const letterGroup = document.createElement('div');
-      letterGroup.className = 'letter-group';
-      
-      letterGroup.appendChild(createLetterHeader(letter));
-      
-      const letterContent = document.createElement('div');
-      letterContent.className = 'letter-content';
-      
-      letterItems.forEach(item => {
-        const formItem = createFormItem(item);
-        letterContent.appendChild(formItem);
-      });
-      
-      letterGroup.appendChild(letterContent);
-      dateContent.appendChild(letterGroup);
+    items.forEach(item => {
+      const formItem = createFormItem(item);
+      letterContent.appendChild(formItem);
     });
     
-    dateGroup.appendChild(dateContent);
-    container.appendChild(dateGroup);
+    letterGroup.appendChild(letterContent);
+    container.appendChild(letterGroup);
   });
 }
 
@@ -131,8 +116,39 @@ function generateForm(data) {
  */
 function createFormItem(item) {
   const formItem = document.createElement('div');
-  // 在這裡添加你的表單元素
-  formItem.textContent = `${item.title} - ${item.artist} (${item.date})`;
+  formItem.className = 'form-item';
+
+  // 曲名欄
+  const titleCell = document.createElement('div');
+  titleCell.className = 'title-cell';
+  titleCell.textContent = item.title;
+  formItem.appendChild(titleCell);
+
+  // 歌手欄
+  const artistCell = document.createElement('div');
+  artistCell.className = 'artist-cell';
+  artistCell.textContent = item.artist;
+  formItem.appendChild(artistCell);
+
+  // 出典欄
+  const sourceCell = document.createElement('div');
+  sourceCell.className = 'source-cell';
+  sourceCell.textContent = item.source;
+  formItem.appendChild(sourceCell);
+
+  // 日期欄
+  const dateCell = document.createElement('div');
+  dateCell.className = 'date-cell';
+  const dates = item.dates.slice(0, 3).join(', ');
+  dateCell.innerHTML = `
+    ${dates} <button class="more-dates-btn">...</button>
+  `;
+  // 更多日期按鈕事件
+  dateCell.querySelector('.more-dates-btn').addEventListener('click', () => {
+    alert(`所有日期: ${item.dates.join(', ')}`);
+  });
+  formItem.appendChild(dateCell);
+
   return formItem;
 }
 
