@@ -1290,56 +1290,6 @@
         "is_acapella": false
     },
     {
-        "date": "20240408",
-        "time": "02:27:44",
-        "song_name": "もののけ姫",
-        "artist": "米良美一",
-        "source": "もののけ姫",
-        "link": "https://www.youtube.com/watch?v=GKJdPg7oqgs&t=8864s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240408",
-        "time": "02:33:14",
-        "song_name": "唱",
-        "artist": "Ado",
-        "source": "",
-        "link": "https://www.youtube.com/watch?v=GKJdPg7oqgs&t=9194s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240408",
-        "time": "02:43:56",
-        "song_name": "水の星へ愛をこめて",
-        "artist": "森口博子",
-        "source": "機動戦士Zガンダム",
-        "link": "https://www.youtube.com/watch?v=GKJdPg7oqgs&t=9836s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240408",
-        "time": "02:55:03",
-        "song_name": "草原のマルコ",
-        "artist": "大杉久美子",
-        "source": "母をたずねて三千里",
-        "link": "https://www.youtube.com/watch?v=GKJdPg7oqgs&t=10503s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240408",
-        "time": "02:58:15",
-        "song_name": "かあさんおはよう",
-        "artist": "大杉久美子",
-        "source": "母をたずねて三千里",
-        "link": "https://www.youtube.com/watch?v=GKJdPg7oqgs&t=10695s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
         "date": "20240727",
         "time": "00:23:08",
         "song_name": "唱",
