@@ -29,22 +29,8 @@
         <input type="text" id="searchInput" placeholder="搜尋歌曲名稱、歌手或出典...">
     </div>
 
-    <div class="virtual-scroll-container" id="virtualScrollContainer">
-        <div class="virtual-scroll-content" id="virtualScrollContent">
-            <table id="songTable">
-                <thead>
-                    <tr>
-                        <th>A-Z</th>
-                        <th>曲名</th>
-                        <th>歌手</th>
-                        <th>出典</th>
-                        <th class="date-header" colspan="3">日期</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
-        </div>
+    <div id="form-container" class="virtual-scroll-container">
+        <div class="virtual-scroll-content"></div>
     </div>
 
     <div id="floatingPlayerContainer" class="floating-player-container">
@@ -55,6 +41,18 @@
     </div>
 
     <script src="js/youtube-player.js"></script>
-    <script type="module" src="js/form-generation.js"></script>
+    <script type="module">
+        import { fetchData, fetchAndDisplayData } from './js/data.js';
+
+        document.getElementById('searchInput').addEventListener('input', function() {
+            const query = this.value.trim().toLowerCase();
+            fetchAndDisplayData(query);
+        });
+
+        // 初始化數據加載
+        fetchData(() => {
+            fetchAndDisplayData('');
+        });
+    </script>
 </body>
 </html>
