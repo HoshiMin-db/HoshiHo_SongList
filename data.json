@@ -7270,146 +7270,6 @@
         "is_acapella": false
     },
     {
-        "date": "20240818",
-        "time": "00:16:00",
-        "song_name": "かもめが翔んだ日",
-        "artist": "渡辺真知子",
-        "source": "",
-        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=960s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240818",
-        "time": "00:24:36",
-        "song_name": "Get Along",
-        "artist": "林原めぐみ",
-        "source": "スレイヤーズ",
-        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=1476s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240818",
-        "time": "00:33:40",
-        "song_name": "euphoric field",
-        "artist": "ELISA",
-        "source": "ef - a tale of memories.",
-        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=2020s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240818",
-        "time": "00:42:31",
-        "song_name": "The Sound of Music",
-        "artist": "Julie Andrews",
-        "source": "The Sound of Music",
-        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=2551s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240818",
-        "time": "00:49:42",
-        "song_name": "Do-Re-Mi",
-        "artist": "Julie Andrews",
-        "source": "The Sound of Music",
-        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=2982s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240818",
-        "time": "00:54:26",
-        "song_name": "裸足のフローネ",
-        "artist": "潘恵子",
-        "source": "家族ロビンソン漂流記 ふしぎな島のフローネ",
-        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=3266s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240818",
-        "time": "00:57:32",
-        "song_name": "フローネの夢",
-        "artist": "潘恵子",
-        "source": "家族ロビンソン漂流記 ふしぎな島のフローネ",
-        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=3452s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240818",
-        "time": "01:06:48",
-        "song_name": "去り際のロマンティクス",
-        "artist": "See-Saw",
-        "source": "機動戦士ガンダムSEED FREEDOM",
-        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=4008s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240818",
-        "time": "01:19:20",
-        "song_name": "タッチ",
-        "artist": "岩崎良美",
-        "source": "タッチ",
-        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=4760s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240818",
-        "time": "01:29:44",
-        "song_name": "Reason",
-        "artist": "玉置成実",
-        "source": "機動戦士ガンダムSEED DESTINY",
-        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=5384s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240818",
-        "time": "01:36:26",
-        "song_name": "君をのせて",
-        "artist": "井上あずみ",
-        "source": "天空の城ラピュタ",
-        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=5786s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240818",
-        "time": "01:43:37",
-        "song_name": "めぐる季節",
-        "artist": "井上あずみ",
-        "source": "魔女の宅急便",
-        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=6217s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240818",
-        "time": "01:58:35",
-        "song_name": "未来への咆哮",
-        "artist": "JAM Project",
-        "source": "Muv-Luv Alternative",
-        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=7115s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240818",
-        "time": "02:13:33",
-        "song_name": "アマテラス",
-        "artist": "Armony（歌：ほしほ）",
-        "source": "",
-        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=8013s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
         "date": "20240621",
         "time": "00:10:08",
         "song_name": "Get Along",
@@ -9966,6 +9826,146 @@
         "artist": "いきものがかり",
         "source": "NARUTO ナルト 疾風伝",
         "link": "https://www.youtube.com/watch?v=kMAS4-EXsps&t=21822s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240817",
+        "time": "00:16:00",
+        "song_name": "かもめが翔んだ日",
+        "artist": "渡辺真知子",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=960s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240817",
+        "time": "00:24:36",
+        "song_name": "Get Along",
+        "artist": "林原めぐみ",
+        "source": "スレイヤーズ",
+        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=1476s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240817",
+        "time": "00:33:40",
+        "song_name": "euphoric field",
+        "artist": "ELISA",
+        "source": "ef - a tale of memories.",
+        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=2020s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240817",
+        "time": "00:42:31",
+        "song_name": "The Sound of Music",
+        "artist": "Julie Andrews",
+        "source": "The Sound of Music",
+        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=2551s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240817",
+        "time": "00:49:42",
+        "song_name": "Do-Re-Mi",
+        "artist": "Julie Andrews",
+        "source": "The Sound of Music",
+        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=2982s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240817",
+        "time": "00:54:26",
+        "song_name": "裸足のフローネ",
+        "artist": "潘恵子",
+        "source": "家族ロビンソン漂流記 ふしぎな島のフローネ",
+        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=3266s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240817",
+        "time": "00:57:32",
+        "song_name": "フローネの夢",
+        "artist": "潘恵子",
+        "source": "家族ロビンソン漂流記 ふしぎな島のフローネ",
+        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=3452s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240817",
+        "time": "01:06:48",
+        "song_name": "去り際のロマンティクス",
+        "artist": "See-Saw",
+        "source": "機動戦士ガンダムSEED FREEDOM",
+        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=4008s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240817",
+        "time": "01:19:20",
+        "song_name": "タッチ",
+        "artist": "岩崎良美",
+        "source": "タッチ",
+        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=4760s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240817",
+        "time": "01:29:44",
+        "song_name": "Reason",
+        "artist": "玉置成実",
+        "source": "機動戦士ガンダムSEED DESTINY",
+        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=5384s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240817",
+        "time": "01:36:26",
+        "song_name": "君をのせて",
+        "artist": "井上あずみ",
+        "source": "天空の城ラピュタ",
+        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=5786s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240817",
+        "time": "01:43:37",
+        "song_name": "めぐる季節",
+        "artist": "井上あずみ",
+        "source": "魔女の宅急便",
+        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=6217s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240817",
+        "time": "01:58:35",
+        "song_name": "未来への咆哮",
+        "artist": "JAM Project",
+        "source": "Muv-Luv Alternative",
+        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=7115s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240817",
+        "time": "02:13:33",
+        "song_name": "アマテラス",
+        "artist": "Armony",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=8013s",
         "is_member_exclusive": false,
         "is_acapella": false
     },
