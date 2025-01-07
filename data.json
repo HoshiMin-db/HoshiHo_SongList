@@ -1350,146 +1350,6 @@
         "is_acapella": false
     },
     {
-        "date": "20250105",
-        "time": "01:40:02",
-        "song_name": "約束はいらない",
-        "artist": "坂本真綾",
-        "source": "天空のエスカフローネ",
-        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=6002s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20250105",
-        "time": "01:46:05",
-        "song_name": "あなたがいた森",
-        "artist": "樹海",
-        "source": "Fate/stay night",
-        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=6365s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20250105",
-        "time": "01:53:28",
-        "song_name": "渇いた叫び",
-        "artist": "FIELD OF VIEW",
-        "source": "遊☆戯☆王",
-        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=6808s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20250105",
-        "time": "01:59:21",
-        "song_name": "voice",
-        "artist": "CLOUD",
-        "source": "遊☆戯☆王デュエルモンスターズ",
-        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=7161s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20250105",
-        "time": "02:59:41",
-        "song_name": "A Whole New World",
-        "artist": "Lea Salonga, Brad Kane",
-        "source": "アラジン",
-        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=10781s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20250105",
-        "time": "03:12:05",
-        "song_name": "INVOKE",
-        "artist": "T.M.Revolution",
-        "source": "機動戦士ガンダムSEED",
-        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=11525s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20250105",
-        "time": "03:27:29",
-        "song_name": "ライオン",
-        "artist": "May'n、中島愛",
-        "source": "マクロスF",
-        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=12449s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20250105",
-        "time": "03:36:13",
-        "song_name": "City Hunter〜愛よ消えないで〜",
-        "artist": "小比類巻かほる",
-        "source": "CITY HUNTER",
-        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=12973s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20250105",
-        "time": "03:40:48",
-        "song_name": "Get Wild",
-        "artist": "TM NETWORK",
-        "source": "CITY HUNTER",
-        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=13248s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20250105",
-        "time": "03:47:44",
-        "song_name": "風のとおり道",
-        "artist": "久石譲",
-        "source": "となりのトトロ",
-        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=13664s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20250105",
-        "time": "04:00:13",
-        "song_name": "めぐる季節",
-        "artist": "井上あずみ",
-        "source": "魔女の宅急便",
-        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=14413s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20250105",
-        "time": "04:08:58",
-        "song_name": "My will",
-        "artist": "dream",
-        "source": "犬夜叉",
-        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=14938s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20250105",
-        "time": "04:18:09",
-        "song_name": "深い森",
-        "artist": "Do As Infinity",
-        "source": "犬夜叉",
-        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=15489s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20250105",
-        "time": "04:23:12",
-        "song_name": "檄！帝国華撃団",
-        "artist": "真宮寺さくら(横山智佐)・帝国歌劇団",
-        "source": "サクラ大戦",
-        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=15792s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
         "date": "20240727",
         "time": "00:23:08",
         "song_name": "唱",
@@ -2827,6 +2687,146 @@
         "source": "スレイヤーズ",
         "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=16291s",
         "is_member_exclusive": true,
+        "is_acapella": false
+    },
+    {
+        "date": "20250104",
+        "time": "01:40:02",
+        "song_name": "約束はいらない",
+        "artist": "坂本真綾",
+        "source": "天空のエスカフローネ",
+        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=6002s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20250104",
+        "time": "01:46:05",
+        "song_name": "あなたがいた森",
+        "artist": "樹海",
+        "source": "Fate/stay night",
+        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=6365s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20250104",
+        "time": "01:53:28",
+        "song_name": "渇いた叫び",
+        "artist": "FIELD OF VIEW",
+        "source": "遊☆戯☆王",
+        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=6808s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20250104",
+        "time": "01:59:21",
+        "song_name": "voice",
+        "artist": "CLOUD",
+        "source": "遊☆戯☆王デュエルモンスターズ",
+        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=7161s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20250104",
+        "time": "02:59:41",
+        "song_name": "A Whole New World",
+        "artist": "Lea Salonga, Brad Kane",
+        "source": "アラジン",
+        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=10781s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20250104",
+        "time": "03:12:05",
+        "song_name": "INVOKE",
+        "artist": "T.M.Revolution",
+        "source": "機動戦士ガンダムSEED",
+        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=11525s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20250104",
+        "time": "03:27:29",
+        "song_name": "ライオン",
+        "artist": "May'n、中島愛",
+        "source": "マクロスF",
+        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=12449s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20250104",
+        "time": "03:36:13",
+        "song_name": "City Hunter〜愛よ消えないで〜",
+        "artist": "小比類巻かほる",
+        "source": "CITY HUNTER",
+        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=12973s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20250104",
+        "time": "03:40:48",
+        "song_name": "Get Wild",
+        "artist": "TM NETWORK",
+        "source": "CITY HUNTER",
+        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=13248s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20250104",
+        "time": "03:47:44",
+        "song_name": "風のとおり道",
+        "artist": "久石譲",
+        "source": "となりのトトロ",
+        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=13664s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20250104",
+        "time": "04:00:13",
+        "song_name": "めぐる季節",
+        "artist": "井上あずみ",
+        "source": "魔女の宅急便",
+        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=14413s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20250104",
+        "time": "04:08:58",
+        "song_name": "My will",
+        "artist": "dream",
+        "source": "犬夜叉",
+        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=14938s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20250104",
+        "time": "04:18:09",
+        "song_name": "深い森",
+        "artist": "Do As Infinity",
+        "source": "犬夜叉",
+        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=15489s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20250104",
+        "time": "04:23:12",
+        "song_name": "檄！帝国華撃団",
+        "artist": "真宮寺さくら(横山智佐)・帝国歌劇団",
+        "source": "サクラ大戦",
+        "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=15792s",
+        "is_member_exclusive": false,
         "is_acapella": false
     },
     {
