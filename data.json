@@ -1190,166 +1190,6 @@
         "is_acapella": false
     },
     {
-        "date": "20241117",
-        "time": "00:10:23",
-        "song_name": "沈んだ歌姫",
-        "artist": "Sound Horizon",
-        "source": "",
-        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=623s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241117",
-        "time": "00:14:58",
-        "song_name": "海の魔女",
-        "artist": "Sound Horizon",
-        "source": "",
-        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=898s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241117",
-        "time": "00:20:31",
-        "song_name": "ロマの娘",
-        "artist": "志方あきこ",
-        "source": "",
-        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=1231s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241117",
-        "time": "00:34:24",
-        "song_name": "空へ...",
-        "artist": "笠原弘子",
-        "source": "ロミオの青い空",
-        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=2064s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241117",
-        "time": "00:38:30",
-        "song_name": "Si Si Ciao 〜ロマナの丘で〜",
-        "artist": "笠原弘子",
-        "source": "ロミオの青い空",
-        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=2310s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241117",
-        "time": "00:45:26",
-        "song_name": "草原のマルコ",
-        "artist": "大杉久美子",
-        "source": "母をたずねて三千里",
-        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=2726s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241117",
-        "time": "00:48:50",
-        "song_name": "かあさんおはよう",
-        "artist": "大杉久美子",
-        "source": "母をたずねて三千里",
-        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=2930s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241117",
-        "time": "00:54:57",
-        "song_name": "心に届く詩",
-        "artist": "Lia",
-        "source": "シャイニング・ハーツ(ゲーム)",
-        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=3297s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241117",
-        "time": "01:05:37",
-        "song_name": "夢想歌",
-        "artist": "Suara",
-        "source": "うたわれるもの",
-        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=3937s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241117",
-        "time": "01:33:21",
-        "song_name": "キミガタメ",
-        "artist": "Suara",
-        "source": "うたわれるもの",
-        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=5601s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241117",
-        "time": "01:42:11",
-        "song_name": "天かける星",
-        "artist": "Suara",
-        "source": "うたわれるもの 偽りの仮面",
-        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=6131s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241117",
-        "time": "02:40:22",
-        "song_name": "Here",
-        "artist": "JUNNA",
-        "source": "魔法使いの嫁",
-        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=9622s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241117",
-        "time": "02:57:01",
-        "song_name": "エルの楽園 [→ side:E →]",
-        "artist": "Sound Horizon",
-        "source": "",
-        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=10621s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241117",
-        "time": "03:04:54",
-        "song_name": "エルの絵本【笛吹き男とパレード】",
-        "artist": "Sound Horizon",
-        "source": "",
-        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=11094s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241117",
-        "time": "03:11:32",
-        "song_name": "魂のルフラン",
-        "artist": "高橋洋子",
-        "source": "新世紀エヴァンゲリオン劇場版 シト新生",
-        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=11492s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241117",
-        "time": "03:19:35",
-        "song_name": "Armonico",
-        "artist": "Armony（歌：ほしほ）",
-        "source": "",
-        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=11975s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
         "date": "20240727",
         "time": "00:23:08",
         "song_name": "唱",
@@ -4616,6 +4456,166 @@
         "artist": "AKINO",
         "source": "創聖のアクエリオン",
         "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=28960s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241116",
+        "time": "00:10:23",
+        "song_name": "沈んだ歌姫",
+        "artist": "Sound Horizon",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=623s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241116",
+        "time": "00:14:58",
+        "song_name": "海の魔女",
+        "artist": "Sound Horizon",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=898s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241116",
+        "time": "00:20:31",
+        "song_name": "ロマの娘",
+        "artist": "志方あきこ",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=1231s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241116",
+        "time": "00:34:24",
+        "song_name": "空へ...",
+        "artist": "笠原弘子",
+        "source": "ロミオの青い空",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=2064s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241116",
+        "time": "00:38:30",
+        "song_name": "Si Si Ciao 〜ロマナの丘で〜",
+        "artist": "笠原弘子",
+        "source": "ロミオの青い空",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=2310s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241116",
+        "time": "00:45:26",
+        "song_name": "草原のマルコ",
+        "artist": "大杉久美子",
+        "source": "母をたずねて三千里",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=2726s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241116",
+        "time": "00:48:50",
+        "song_name": "かあさんおはよう",
+        "artist": "大杉久美子",
+        "source": "母をたずねて三千里",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=2930s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241116",
+        "time": "00:54:57",
+        "song_name": "心に届く詩",
+        "artist": "Lia",
+        "source": "シャイニング・ハーツ(ゲーム)",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=3297s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241116",
+        "time": "01:05:37",
+        "song_name": "夢想歌",
+        "artist": "Suara",
+        "source": "うたわれるもの",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=3937s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241116",
+        "time": "01:33:21",
+        "song_name": "キミガタメ",
+        "artist": "Suara",
+        "source": "うたわれるもの",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=5601s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241116",
+        "time": "01:42:11",
+        "song_name": "天かける星",
+        "artist": "Suara",
+        "source": "うたわれるもの 偽りの仮面",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=6131s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241116",
+        "time": "02:40:22",
+        "song_name": "Here",
+        "artist": "JUNNA",
+        "source": "魔法使いの嫁",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=9622s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241116",
+        "time": "02:57:01",
+        "song_name": "エルの楽園 [→ side:E →]",
+        "artist": "Sound Horizon",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=10621s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241116",
+        "time": "03:04:54",
+        "song_name": "エルの絵本【笛吹き男とパレード】",
+        "artist": "Sound Horizon",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=11094s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241116",
+        "time": "03:11:32",
+        "song_name": "魂のルフラン",
+        "artist": "高橋洋子",
+        "source": "新世紀エヴァンゲリオン劇場版 シト新生",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=11492s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241116",
+        "time": "03:19:35",
+        "song_name": "Armonico",
+        "artist": "Armony（歌：ほしほ）",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=11975s",
         "is_member_exclusive": false,
         "is_acapella": false
     },
