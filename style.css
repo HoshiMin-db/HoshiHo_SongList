@@ -64,13 +64,13 @@ td:hover {
 }
 
 th {
-    background-color: #6a5acd;
+    background-color: #6a5acd; /* 固定紫色背景 */
     color: white;
     cursor: pointer;
 }
 
 th:hover {
-    background-color: #5849b8;
+    background-color: #6a5acd; /* 固定紫色背景 */
 }
 
 tr:nth-child(even) {
@@ -85,15 +85,15 @@ tr:hover {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 640px; /* 調整寬度 */
-    height: 360px; /* 調整高度 */
+    width: 640px;
+    height: 360px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     display: none;
     background-color: white;
     z-index: 1000;
     border-radius: 8px;
     overflow: hidden;
-    cursor: move; /* 顯示為可拖動 */
+    cursor: move;
 }
 
 .floating-player-header {
@@ -103,7 +103,7 @@ tr:hover {
     color: white;
     text-align: center;
     line-height: 30px;
-    cursor: move; /* 顯示為可拖動 */
+    cursor: move;
 }
 
 .close-btn {
@@ -114,7 +114,7 @@ tr:hover {
     text-align: center;
     line-height: 30px;
     cursor: pointer;
-    user-select: none; /* 防止文字被選中 */
+    user-select: none;
 }
 
 .close-btn:hover {
@@ -136,7 +136,7 @@ a:hover {
 }
 
 .button-off {
-    background-color: #d3d3d3; /* 淺灰色 */
+    background-color: #d3d3d3;
     color: #333;
     border: none;
     padding: 10px 20px;
@@ -145,7 +145,7 @@ a:hover {
 }
 
 .button-on {
-    background-color: #6a5acd; /* 深藍色 */
+    background-color: #6a5acd;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -154,15 +154,15 @@ a:hover {
 }
 
 .button-off:hover {
-    background-color: #c0c0c0; /* 更深的灰色 */
+    background-color: #c0c0c0;
 }
 
 .button-on:hover {
-    background-color: #5849b8; /* 更深的藍色 */
+    background-color: #5849b8;
 }
 
 .acapella {
-    background-color: #e0f7fa; /* 淺藍色背景 */
+    background-color: #e0f7fa;
 }
 
 @media screen and (max-width: 600px) {
@@ -202,25 +202,27 @@ a:hover {
 
 /* 調整表格列寬度 */
 th:nth-child(3), td:nth-child(3), th:nth-child(4), td:nth-child(4) {
-    width: 10%; /* 歌手和出典欄寬度設為 10% */
+    width: 10%;
 }
 
 th:nth-child(2), td:nth-child(2) {
-    width: 30%; /* 曲名欄寬度設為 30% */
+    width: 30%;
 }
 
 /* 調整日期欄字體大小 */
 td:nth-child(6),
 td:nth-child(7),
-td:nth.child(8),
+td:nth-child(8),
 td.date-cell {
-    font-size: 12px; /* 日期欄字體大小設為 12px */
+    font-size: 12px;
 }
 
 /* 固定表頭樣式 */
 table thead th {
     position: sticky;
     top: 0;
-    background-color: #fff;
+    background-color: #6a5acd; /* 固定紫色背景 */
+    color: white;
     z-index: 10;
+    cursor: default; /* 取消表頭的點擊效果 */
 }
