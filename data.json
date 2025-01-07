@@ -140,106 +140,6 @@
         "is_acapella": false
     },
     {
-        "date": "20240901",
-        "time": "00:12:24",
-        "song_name": "Rumbling hearts",
-        "artist": "栗林みな実",
-        "source": "君が望む永遠",
-        "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=744s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240901",
-        "time": "00:18:00",
-        "song_name": "Precious Memories",
-        "artist": "栗林みな実",
-        "source": "君が望む永遠",
-        "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=1080s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240901",
-        "time": "00:23:31",
-        "song_name": "星空のワルツ",
-        "artist": "栗林みな実",
-        "source": "君が望む永遠",
-        "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=1411s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240901",
-        "time": "00:34:11",
-        "song_name": "マブラヴ",
-        "artist": "栗林みな実",
-        "source": "Muv-Luv",
-        "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=2051s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240901",
-        "time": "00:55:43",
-        "song_name": "Go to the top",
-        "artist": "倖田來未",
-        "source": "Muv-Luv Alternative Total Eclipse",
-        "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=3343s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240901",
-        "time": "01:02:57",
-        "song_name": "signs 〜朔月一夜〜",
-        "artist": "栗林みな実",
-        "source": "Muv-Luv Alternative Total Eclipse",
-        "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=3777s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240901",
-        "time": "01:15:07",
-        "song_name": "white forces",
-        "artist": "fripSide",
-        "source": "シュヴァルツェスマーケン(アニメ)",
-        "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=4507s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240901",
-        "time": "01:23:37",
-        "song_name": "1983-Schwarzesmarken-",
-        "artist": "fripSide",
-        "source": "シュヴァルツェスマーケン 紅血の紋章(ゲーム)",
-        "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=5017s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240901",
-        "time": "01:34:32",
-        "song_name": "未来への咆哮",
-        "artist": "JAM Project",
-        "source": "Muv-Luv Alternative(ゲーム)",
-        "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=5672s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240901",
-        "time": "01:41:39",
-        "song_name": "暁を撃て",
-        "artist": "JAM Project・栗林みな実",
-        "source": "Muv-Luv Alternative(アニメ)",
-        "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=6099s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
         "date": "20231202",
         "time": "00:11:46",
         "song_name": "don't be discouraged",
@@ -6236,6 +6136,106 @@
         "artist": "天宮さくら(佐倉綾音)、東雲初穂(内田真礼)、望月あざみ(山村響)、アナスタシア・パルマ(福原綾香)、クラリス(早見沙織)",
         "source": "新サクラ大戦",
         "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=25212s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240831",
+        "time": "00:12:24",
+        "song_name": "Rumbling hearts",
+        "artist": "栗林みな実",
+        "source": "君が望む永遠",
+        "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=744s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240831",
+        "time": "00:18:00",
+        "song_name": "Precious Memories",
+        "artist": "栗林みな実",
+        "source": "君が望む永遠",
+        "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=1080s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240831",
+        "time": "00:23:31",
+        "song_name": "星空のワルツ",
+        "artist": "栗林みな実",
+        "source": "君が望む永遠",
+        "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=1411s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240831",
+        "time": "00:34:11",
+        "song_name": "マブラヴ",
+        "artist": "栗林みな実",
+        "source": "Muv-Luv",
+        "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=2051s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240831",
+        "time": "00:55:43",
+        "song_name": "Go to the top",
+        "artist": "倖田來未",
+        "source": "Muv-Luv Alternative Total Eclipse",
+        "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=3343s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240831",
+        "time": "01:02:57",
+        "song_name": "signs 〜朔月一夜〜",
+        "artist": "栗林みな実",
+        "source": "Muv-Luv Alternative Total Eclipse",
+        "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=3777s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240831",
+        "time": "01:15:07",
+        "song_name": "white forces",
+        "artist": "fripSide",
+        "source": "シュヴァルツェスマーケン",
+        "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=4507s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240831",
+        "time": "01:23:37",
+        "song_name": "1983-Schwarzesmarken-",
+        "artist": "fripSide",
+        "source": "シュヴァルツェスマーケン 紅血の紋章",
+        "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=5017s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240831",
+        "time": "01:34:32",
+        "song_name": "未来への咆哮",
+        "artist": "JAM Project",
+        "source": "Muv-Luv Alternative",
+        "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=5672s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240831",
+        "time": "01:41:39",
+        "song_name": "暁を撃て",
+        "artist": "JAM Project・栗林みな実",
+        "source": "Muv-Luv Alternative",
+        "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=6099s",
         "is_member_exclusive": false,
         "is_acapella": false
     },
