@@ -2510,306 +2510,6 @@
         "is_acapella": false
     },
     {
-        "date": "20240630",
-        "time": "00:18:10",
-        "song_name": "ダーリン",
-        "artist": "須田景凪",
-        "source": "",
-        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=1090s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240630",
-        "time": "00:24:50",
-        "song_name": "Ring of Fortune",
-        "artist": "佐々木恵梨",
-        "source": "プラスティック・メモリーズ",
-        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=1490s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240630",
-        "time": "00:36:15",
-        "song_name": "回レ!雪月花",
-        "artist": "歌組雪月花",
-        "source": "機巧少女は傷つかない",
-        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=2175s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240630",
-        "time": "01:29:14",
-        "song_name": "アイデンティティ",
-        "artist": "酒井ミキオ",
-        "source": "落第騎士の英雄譚",
-        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=5354s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240630",
-        "time": "01:37:32",
-        "song_name": "狂乱 Hey Kids!!",
-        "artist": "THE ORAL CIGARETTES",
-        "source": "ノラガミ ARAGOTO",
-        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=5852s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240630",
-        "time": "01:45:41",
-        "song_name": "ハートリアライズ",
-        "artist": "Tia",
-        "source": "ノラガミ",
-        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=6341s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240630",
-        "time": "02:03:38",
-        "song_name": "ないない",
-        "artist": "ReoNa",
-        "source": "シャドーハウス",
-        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=7418s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240630",
-        "time": "02:23:50",
-        "song_name": "Clattanoia",
-        "artist": "OxT",
-        "source": "オーバーロード",
-        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=8630s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240630",
-        "time": "02:37:16",
-        "song_name": "Separation",
-        "artist": "angela",
-        "source": "蒼穹のファフナー",
-        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=9436s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240630",
-        "time": "02:57:56",
-        "song_name": "disillusion",
-        "artist": "タイナカサチ",
-        "source": "Fate/stay night",
-        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=10676s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240630",
-        "time": "03:10:46",
-        "song_name": "少女迷路でつかまえて",
-        "artist": "美郷あき",
-        "source": "Strawberry Panic",
-        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=11446s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240630",
-        "time": "03:44:16",
-        "song_name": "HANAJI",
-        "artist": "小林ゆう",
-        "source": "まりあ†ほりっく",
-        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=13456s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240630",
-        "time": "04:05:23",
-        "song_name": "ヒャダインのカカカタ☆カタオモイ-C",
-        "artist": "ヒャダイン",
-        "source": "日常",
-        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=14723s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240630",
-        "time": "04:14:32",
-        "song_name": "ヒャダインのじょーじょーゆーじょー",
-        "artist": "ヒャダイン",
-        "source": "日常",
-        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=15272s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240630",
-        "time": "04:24:57",
-        "song_name": "Zzz",
-        "artist": "佐咲紗花",
-        "source": "日常",
-        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=15897s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240630",
-        "time": "04:53:43",
-        "song_name": "メニメニマニマニ",
-        "artist": "高宮なすの(鳴海杏子)",
-        "source": "てーきゅう",
-        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=17623s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240630",
-        "time": "05:06:27",
-        "song_name": "たった１つの想い",
-        "artist": "KOKIA",
-        "source": "GUNSLINGER GIRL - IL TEATRINO -",
-        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=18387s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240630",
-        "time": "05:40:10",
-        "song_name": "LOVE SHIELD",
-        "artist": "奥井雅美",
-        "source": "恋する乙女と守護の楯 The shield of AIGIS",
-        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=20410s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240630",
-        "time": "05:55:41",
-        "song_name": "輪舞-revolution",
-        "artist": "奥井雅美",
-        "source": "少女革命ウテナ",
-        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=21341s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240630",
-        "time": "06:18:59",
-        "song_name": "ファティマ",
-        "artist": "奥井雅美",
-        "source": "STEINS;GATE 0",
-        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=22739s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240630",
-        "time": "06:21:10",
-        "song_name": "Hacking to the Gate",
-        "artist": "いとうかなこ",
-        "source": "STEINS;GATE",
-        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=22870s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240630",
-        "time": "06:32:19",
-        "song_name": "真理の鏡、剣乃ように",
-        "artist": "鈴木このみ",
-        "source": "この世の果てで恋を唄う少女YU-NO",
-        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=23539s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240630",
-        "time": "06:44:24",
-        "song_name": "〜infinity〜∞",
-        "artist": "林原めぐみ",
-        "source": "ロスト・ユニバース",
-        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=24264s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240630",
-        "time": "07:01:50",
-        "song_name": "楽園の翼",
-        "artist": "黒崎真音",
-        "source": "グリザイアの果実",
-        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=25310s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240630",
-        "time": "07:08:06",
-        "song_name": "刹那の果実",
-        "artist": "黒崎真音",
-        "source": "グリザイアの楽園",
-        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=25686s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240630",
-        "time": "07:18:16",
-        "song_name": "あなたの愛した世界",
-        "artist": "南條愛乃",
-        "source": "グリザイアの果実",
-        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=26296s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240630",
-        "time": "07:24:35",
-        "song_name": "黄昏のスタアライト",
-        "artist": "南條愛乃",
-        "source": "グリザイアの楽園",
-        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=26675s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240630",
-        "time": "07:38:28",
-        "song_name": "雪、無音、窓辺にて。",
-        "artist": "長門有希(茅原実里)",
-        "source": "涼宮ハルヒの憂鬱",
-        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=27508s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240630",
-        "time": "07:44:37",
-        "song_name": "metamorphose",
-        "artist": "高橋洋子",
-        "source": "この醜くも美しい世界",
-        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=27877s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240630",
-        "time": "07:51:49",
-        "song_name": "→unfinished→",
-        "artist": "KOTOKO",
-        "source": "アクセル・ワールド",
-        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=28309s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
         "date": "20241201",
         "time": "00:19:23",
         "song_name": "Get Along",
@@ -5906,6 +5606,306 @@
         "artist": "Uru",
         "source": "機動戦士ガンダム 鉄血のオルフェンズ",
         "link": "https://www.youtube.com/watch?v=Z-1sxd5PK_M&t=20849s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240629",
+        "time": "00:18:10",
+        "song_name": "ダーリン",
+        "artist": "須田景凪",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=1090s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240629",
+        "time": "00:24:50",
+        "song_name": "Ring of Fortune",
+        "artist": "佐々木恵梨",
+        "source": "プラスティック・メモリーズ",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=1490s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240629",
+        "time": "00:36:15",
+        "song_name": "回レ!雪月花",
+        "artist": "歌組雪月花",
+        "source": "機巧少女は傷つかない",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=2175s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240629",
+        "time": "01:29:14",
+        "song_name": "アイデンティティ",
+        "artist": "酒井ミキオ",
+        "source": "落第騎士の英雄譚",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=5354s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240629",
+        "time": "01:37:32",
+        "song_name": "狂乱 Hey Kids!!",
+        "artist": "THE ORAL CIGARETTES",
+        "source": "ノラガミ ARAGOTO",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=5852s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240629",
+        "time": "01:45:41",
+        "song_name": "ハートリアライズ",
+        "artist": "Tia",
+        "source": "ノラガミ",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=6341s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240629",
+        "time": "02:03:38",
+        "song_name": "ないない",
+        "artist": "ReoNa",
+        "source": "シャドーハウス",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=7418s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240629",
+        "time": "02:23:50",
+        "song_name": "Clattanoia",
+        "artist": "OxT",
+        "source": "オーバーロード",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=8630s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240629",
+        "time": "02:37:16",
+        "song_name": "Separation",
+        "artist": "angela",
+        "source": "蒼穹のファフナー",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=9436s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240629",
+        "time": "02:57:56",
+        "song_name": "disillusion",
+        "artist": "タイナカサチ",
+        "source": "Fate/stay night",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=10676s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240629",
+        "time": "03:10:46",
+        "song_name": "少女迷路でつかまえて",
+        "artist": "美郷あき",
+        "source": "Strawberry Panic",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=11446s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240629",
+        "time": "03:44:16",
+        "song_name": "HANAJI",
+        "artist": "小林ゆう",
+        "source": "まりあ†ほりっく",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=13456s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240629",
+        "time": "04:05:23",
+        "song_name": "ヒャダインのカカカタ☆カタオモイ-C",
+        "artist": "ヒャダイン",
+        "source": "日常",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=14723s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240629",
+        "time": "04:14:32",
+        "song_name": "ヒャダインのじょーじょーゆーじょー",
+        "artist": "ヒャダイン",
+        "source": "日常",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=15272s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240629",
+        "time": "04:24:57",
+        "song_name": "Zzz",
+        "artist": "佐咲紗花",
+        "source": "日常",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=15897s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240629",
+        "time": "04:53:43",
+        "song_name": "メニメニマニマニ",
+        "artist": "高宮なすの(鳴海杏子)",
+        "source": "てーきゅう",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=17623s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240629",
+        "time": "05:06:27",
+        "song_name": "たった１つの想い",
+        "artist": "KOKIA",
+        "source": "GUNSLINGER GIRL - IL TEATRINO -",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=18387s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240629",
+        "time": "05:40:10",
+        "song_name": "LOVE SHIELD",
+        "artist": "奥井雅美",
+        "source": "恋する乙女と守護の楯 The shield of AIGIS",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=20410s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240629",
+        "time": "05:55:41",
+        "song_name": "輪舞-revolution",
+        "artist": "奥井雅美",
+        "source": "少女革命ウテナ",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=21341s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240629",
+        "time": "06:18:59",
+        "song_name": "ファティマ",
+        "artist": "奥井雅美",
+        "source": "STEINS;GATE 0",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=22739s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240629",
+        "time": "06:21:10",
+        "song_name": "Hacking to the Gate",
+        "artist": "いとうかなこ",
+        "source": "STEINS;GATE",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=22870s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240629",
+        "time": "06:32:19",
+        "song_name": "真理の鏡、剣乃ように",
+        "artist": "鈴木このみ",
+        "source": "この世の果てで恋を唄う少女YU-NO",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=23539s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240629",
+        "time": "06:44:24",
+        "song_name": "〜infinity〜∞",
+        "artist": "林原めぐみ",
+        "source": "ロスト・ユニバース",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=24264s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240629",
+        "time": "07:01:50",
+        "song_name": "楽園の翼",
+        "artist": "黒崎真音",
+        "source": "グリザイアの果実",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=25310s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240629",
+        "time": "07:08:06",
+        "song_name": "刹那の果実",
+        "artist": "黒崎真音",
+        "source": "グリザイアの楽園",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=25686s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240629",
+        "time": "07:18:16",
+        "song_name": "あなたの愛した世界",
+        "artist": "南條愛乃",
+        "source": "グリザイアの果実",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=26296s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240629",
+        "time": "07:24:35",
+        "song_name": "黄昏のスタアライト",
+        "artist": "南條愛乃",
+        "source": "グリザイアの楽園",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=26675s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240629",
+        "time": "07:38:28",
+        "song_name": "雪、無音、窓辺にて。",
+        "artist": "長門有希(茅原実里)",
+        "source": "涼宮ハルヒの憂鬱",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=27508s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240629",
+        "time": "07:44:37",
+        "song_name": "metamorphose",
+        "artist": "高橋洋子",
+        "source": "この醜くも美しい世界",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=27877s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240629",
+        "time": "07:51:49",
+        "song_name": "→unfinished→",
+        "artist": "KOTOKO",
+        "source": "アクセル・ワールド",
+        "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=28309s",
         "is_member_exclusive": false,
         "is_acapella": false
     },
