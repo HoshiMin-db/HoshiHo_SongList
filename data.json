@@ -3760,176 +3760,6 @@
         "is_acapella": false
     },
     {
-        "date": "20241124",
-        "time": "00:38:00",
-        "song_name": "壊れたマリオネット",
-        "artist": "Sound Horizon",
-        "source": "",
-        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=2280s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241124",
-        "time": "01:04:12",
-        "song_name": "メロウ",
-        "artist": "須田景凪",
-        "source": "スキップとローファー",
-        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=3852s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241124",
-        "time": "01:16:45",
-        "song_name": "Going History",
-        "artist": "林原めぐみ",
-        "source": "スレイヤーズEX.",
-        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=4605s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241124",
-        "time": "01:24:57",
-        "song_name": "灼熱の恋 (Short Ver.)",
-        "artist": "林原めぐみ",
-        "source": "スレイヤーズEX.",
-        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=5097s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241124",
-        "time": "01:38:35",
-        "song_name": "Crossing Field",
-        "artist": "LiSA",
-        "source": "ソードアート・オンライン アインクラッド編",
-        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=5915s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241124",
-        "time": "02:34:45",
-        "song_name": "となりのトトロ",
-        "artist": "井上あずみ",
-        "source": "となりのトトロ",
-        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=9285s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241124",
-        "time": "03:39:09",
-        "song_name": "銀の龍の背に乗って",
-        "artist": "中島みゆき",
-        "source": "Dr.コトー診療所",
-        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=13149s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241124",
-        "time": "03:50:58",
-        "song_name": "空へ...",
-        "artist": "笠原弘子",
-        "source": "ロミオの青い空",
-        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=13858s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241124",
-        "time": "05:33:32",
-        "song_name": "もう恋なんてしない",
-        "artist": "槇原敬之",
-        "source": "",
-        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=20012s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241124",
-        "time": "06:09:18",
-        "song_name": "少女迷路でつかまえて",
-        "artist": "美郷あき",
-        "source": "Strawberry Panic",
-        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=22158s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241124",
-        "time": "06:25:15",
-        "song_name": "不安定な神様",
-        "artist": "Suara",
-        "source": "うたわれるもの 偽りの仮面 (アニメ)",
-        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=23115s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241124",
-        "time": "06:31:10",
-        "song_name": "ナージャ!!",
-        "artist": "本田美奈子",
-        "source": "明日のナージャ",
-        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=23470s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241124",
-        "time": "06:35:22",
-        "song_name": "けせら・せら",
-        "artist": "小清水亜美",
-        "source": "明日のナージャ",
-        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=23722s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241124",
-        "time": "06:48:05",
-        "song_name": "Dokkin♢魔法つかいプリキュア！",
-        "artist": "北川理恵",
-        "source": "魔法つかいプリキュア!",
-        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=24485s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241124",
-        "time": "06:56:24",
-        "song_name": "DANZEN！ ふたりはプリキュア (Ver.Max Heart)",
-        "artist": "五條真由美",
-        "source": "ふたりはプリキュア Max Heart",
-        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=24984s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241124",
-        "time": "07:00:43",
-        "song_name": "ゲッチュウ！らぶらぶぅ？！ (Short Ver.)",
-        "artist": "五條真由美",
-        "source": "ふたりはプリキュア",
-        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=25243s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241124",
-        "time": "07:06:17",
-        "song_name": "おジャ魔女カーニバル!!",
-        "artist": "MAHO堂",
-        "source": "おジャ魔女どれみ",
-        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=25577s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
         "date": "20240127",
         "time": "00:09:41",
         "song_name": "Get Along",
@@ -7606,6 +7436,176 @@
         "artist": "林原めぐみ",
         "source": "スレイヤーズごぅじゃす",
         "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=8254s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241123",
+        "time": "00:38:00",
+        "song_name": "壊れたマリオネット",
+        "artist": "Sound Horizon",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=2280s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241123",
+        "time": "01:04:12",
+        "song_name": "メロウ",
+        "artist": "須田景凪",
+        "source": "スキップとローファー",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=3852s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241123",
+        "time": "01:16:45",
+        "song_name": "Going History",
+        "artist": "林原めぐみ",
+        "source": "スレイヤーズEX.",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=4605s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241123",
+        "time": "01:24:57",
+        "song_name": "灼熱の恋 (Short Ver.)",
+        "artist": "林原めぐみ",
+        "source": "スレイヤーズEX.",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=5097s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241123",
+        "time": "01:38:35",
+        "song_name": "Crossing Field",
+        "artist": "LiSA",
+        "source": "ソードアート・オンライン アインクラッド編",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=5915s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241123",
+        "time": "02:34:45",
+        "song_name": "となりのトトロ",
+        "artist": "井上あずみ",
+        "source": "となりのトトロ",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=9285s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241123",
+        "time": "03:39:09",
+        "song_name": "銀の龍の背に乗って",
+        "artist": "中島みゆき",
+        "source": "Dr.コトー診療所",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=13149s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241123",
+        "time": "03:50:58",
+        "song_name": "空へ...",
+        "artist": "笠原弘子",
+        "source": "ロミオの青い空",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=13858s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241123",
+        "time": "05:33:32",
+        "song_name": "もう恋なんてしない",
+        "artist": "槇原敬之",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=20012s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241123",
+        "time": "06:09:18",
+        "song_name": "少女迷路でつかまえて",
+        "artist": "美郷あき",
+        "source": "Strawberry Panic",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=22158s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241123",
+        "time": "06:25:15",
+        "song_name": "不安定な神様",
+        "artist": "Suara",
+        "source": "うたわれるもの 偽りの仮面 (アニメ)",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=23115s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241123",
+        "time": "06:31:10",
+        "song_name": "ナージャ!!",
+        "artist": "本田美奈子",
+        "source": "明日のナージャ",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=23470s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241123",
+        "time": "06:35:22",
+        "song_name": "けせら・せら",
+        "artist": "小清水亜美",
+        "source": "明日のナージャ",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=23722s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241123",
+        "time": "06:48:05",
+        "song_name": "Dokkin♢魔法つかいプリキュア！",
+        "artist": "北川理恵",
+        "source": "魔法つかいプリキュア!",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=24485s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241123",
+        "time": "06:56:24",
+        "song_name": "DANZEN！ ふたりはプリキュア (Ver.Max Heart)",
+        "artist": "五條真由美",
+        "source": "ふたりはプリキュア Max Heart",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=24984s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241123",
+        "time": "07:00:43",
+        "song_name": "ゲッチュウ！らぶらぶぅ？！ (Short Ver.)",
+        "artist": "五條真由美",
+        "source": "ふたりはプリキュア",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=25243s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241123",
+        "time": "07:06:17",
+        "song_name": "おジャ魔女カーニバル!!",
+        "artist": "MAHO堂",
+        "source": "おジャ魔女どれみ",
+        "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=25577s",
         "is_member_exclusive": false,
         "is_acapella": false
     },
