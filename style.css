@@ -216,11 +216,3 @@ td:nth.child(8),
 td.date-cell {
     font-size: 12px; /* 日期欄字體大小設為 12px */
 }
-
-/* 固定表頭樣式 */
-table thead th {
-    position: sticky;
-    top: 0;
-    background-color: #fff;
-    z-index: 10;
-}
