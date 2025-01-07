@@ -26,35 +26,39 @@ youtube = build('youtube', 'v3', developerKey=google_api_key)
 
 def get_video_date(video_id):
     """獲取影片的實際直播日期"""
-    request = youtube.videos().list(
-        part='liveStreamingDetails,snippet',
-        id=video_id
-    )
-    response = request.execute()
-    
-    if not response['items']:
+    try:
+        request = youtube.videos().list(
+            part='liveStreamingDetails,snippet',
+            id=video_id
+        )
+        response = request.execute()
+        
+        if not response['items']:
+            return None
+        
+        video_details = response['items'][0]
+        
+        # 檢查是否為會員限定直播
+        if video_details['snippet'].get('liveBroadcastContent') == 'membersOnly':
+            print(f"跳過會員限定視頻：{video_id}")
+            return None
+        
+        # 檢查是否為直播影片
+        if 'liveStreamingDetails' in video_details:
+            # 使用直播開始時間
+            actual_start_time = video_details['liveStreamingDetails'].get('actualStartTime')
+            if actual_start_time:
+                # 直接解析時間，這已經是當地時間
+                stream_date = datetime.strptime(actual_start_time, '%Y-%m-%dT%H:%M:%SZ')
+                return stream_date.date()
+        
+        # 如果不是直播或沒有直播時間，使用發布時間
+        publish_time = video_details['snippet']['publishedAt']
+        publish_date = datetime.strptime(publish_time, '%Y-%m-%dT%H:%M:%SZ')
+        return publish_date.date()
+    except HttpError as e:
+        print(f"Error fetching video date for {video_id}: {e}")
         return None
-    
-    video_details = response['items'][0]
-    
-    # 檢查是否為會員限定直播
-    if video_details['snippet'].get('liveBroadcastContent') == 'membersOnly':
-        print(f"跳過會員限定視頻：{video_id}")
-        return None
-    
-    # 檢查是否為直播影片
-    if 'liveStreamingDetails' in video_details:
-        # 使用直播開始時間
-        actual_start_time = video_details['liveStreamingDetails'].get('actualStartTime')
-        if actual_start_time:
-            # 直接解析時間，這已經是當地時間
-            stream_date = datetime.strptime(actual_start_time, '%Y-%m-%dT%H:%M:%SZ')
-            return stream_date.date()
-    
-    # 如果不是直播或沒有直播時間，使用發布時間
-    publish_time = video_details['snippet']['publishedAt']
-    publish_date = datetime.strptime(publish_time, '%Y-%m-%dT%H:%M:%SZ')
-    return publish_date.date()
 
 def get_video_ids_from_playlist(playlist_id):
     """從播放清單獲取影片ID和日期"""
@@ -69,45 +73,53 @@ def get_video_ids_from_playlist(playlist_id):
     thirty_days_ago = datetime.utcnow() - timedelta(days=30)
     
     while request:
-        response = request.execute()
-        for item in response['items']:
-            video_id = item['contentDetails']['videoId']
-            video_date = get_video_date(video_id)
-            
-            if video_date and video_date >= thirty_days_ago.date():
-                video_info.append((video_id, video_date))
-                print(f"找到影片：{video_id} 來自 {video_date}")
+        try:
+            response = request.execute()
+            for item in response['items']:
+                video_id = item['contentDetails']['videoId']
+                video_date = get_video_date(video_id)
                 
-        request = youtube.playlistItems().list_next(request, response)
+                if video_date and video_date >= thirty_days_ago.date():
+                    video_info.append((video_id, video_date))
+                    print(f"找到影片：{video_id} 來自 {video_date}")
+                    
+            request = youtube.playlistItems().list_next(request, response)
+        except HttpError as e:
+            print(f"Error fetching playlist items: {e}")
+            break
     
     return video_info
 
 def get_timestamp_comment(video_id):
     """獲取包含時間戳標記的留言"""
-    request = youtube.commentThreads().list(
-        part='snippet',
-        videoId=video_id,
-        maxResults=100
-    )
-    
-    while request:
-        try:
+    try:
+        request = youtube.commentThreads().list(
+            part='snippet,replies',
+            videoId=video_id,
+            maxResults=100
+        )
+
+        while request:
             response = request.execute()
-        except HttpError as e:
-            if e.resp.status == 403:
-                print(f"由於權限不足，跳過視頻 {video_id}")
-                return None
-            else:
-                raise
-        
-        for item in response['items']:
-            comment = item['snippet']['topLevelComment']['snippet']['textDisplay']
-            # 檢查兩種不同的時間戳標記
-            if '💐🌟🎶タイムスタンプ💐🌟🎶' in comment or '🌟💐🎶タイムスタンプ🌟💐🎶' in comment:
-                return comment
+            for item in response['items']:
+                # 檢查頂級評論
+                comment = item['snippet']['topLevelComment']['snippet']['textDisplay']
+                if '💐🌟🎶タイムスタンプ💐🌟🎶' in comment or '🌟💐🎶タイムスタンプ🌟💐🎶' in comment:
+                    return comment
                 
-        request = youtube.commentThreads().list_next(request, response)
+                # 檢查回覆評論
+                if 'replies' in item:
+                    for reply in item['replies']['comments']:
+                        reply_comment = reply['snippet']['textDisplay']
+                        if '💐🌟🎶タイムスタンプ💐🌟🎶' in reply_comment or '🌟💐🎶タイムスタンプ🌟💐🎶' in reply_comment:
+                            return reply_comment
+
+            request = youtube.commentThreads().list_next(request, response)
     
+    except HttpError as e:
+        print(f"Error fetching comments for video {video_id}: {e}")
+        return None
+
     return None
 
 def clean_html(raw_html):
