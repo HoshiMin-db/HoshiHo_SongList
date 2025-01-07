@@ -139,13 +139,16 @@ def main():
         if filename == 'exceptions.txt':
             continue
         file_path = os.path.join(timeline_dir, filename)
-        date_str = filename.split('.')[0]  # 假設文件名是日期格式
+        # 使用正則表達式提取日期部分，忽略後綴
+        match = re.match(r'(\d{8})(?:_\d+)?\.txt', filename)
+        if match:
+            date_str = match.group(1)  # 提取日期部分
 
-        try:
-            data = process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist)
-            all_data.extend(data)
-        except Exception as e:
-            print(f"Error processing file {file_path}: {e}")
+            try:
+                data = process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist)
+                all_data.extend(data)
+            except Exception as e:
+                print(f"Error processing file {file_path}: {e}")
 
     # 將數據保存到data.json文件中
     with open('data.json', 'w', encoding='utf-8') as f:
