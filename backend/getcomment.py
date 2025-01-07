@@ -33,6 +33,11 @@ def get_video_date(video_id):
     
     video_details = response['items'][0]
     
+    # 檢查是否為會員限定直播
+    if video_details['snippet'].get('liveBroadcastContent') == 'membersOnly':
+        print(f"Skipping members-only video: {video_id}")
+        return None
+    
     # 檢查是否為直播影片
     if 'liveStreamingDetails' in video_details:
         # 使用直播開始時間
@@ -100,6 +105,11 @@ def save_to_file(video_id, comment, date):
     
     file_name = date.strftime('%Y%m%d') + '.txt'
     file_path = os.path.join(output_dir, file_name)
+    
+    # 檢查文件是否已存在
+    if os.path.exists(file_path):
+        print(f"File for date {file_name} already exists, skipping.")
+        return
     
     with open(file_path, 'w', encoding='utf-8') as f:
         f.write(f'ID = {video_id}\n')
