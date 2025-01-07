@@ -99,7 +99,8 @@ def get_timestamp_comment(video_id):
         
         for item in response['items']:
             comment = item['snippet']['topLevelComment']['snippet']['textDisplay']
-            if '💐🌟🎶タイムスタンプ💐🌟🎶' in comment:
+            # 檢查兩種不同的時間戳標記
+            if '💐🌟🎶タイムスタンプ💐🌟🎶' in comment or '🌟💐🎶タイムスタンプ🌟💐🎶' in comment:
                 return comment
                 
         request = youtube.commentThreads().list_next(request, response)
