@@ -34,6 +34,6 @@ export function fetchAndDisplayData(query) {
         }
     });
 
-    // 将过滤后的数据传递给 generateForm 以生成表单
+    // 將過濾後的數據傳遞給 generateForm 以生成表單
     generateForm(filteredData);
 }
