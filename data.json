@@ -2830,126 +2830,6 @@
         "is_acapella": false
     },
     {
-        "date": "20240923",
-        "time": "00:12:36",
-        "song_name": "Starry Heavens",
-        "artist": "Day After Tomorrow",
-        "source": "Tales of Symphonia",
-        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=756s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240923",
-        "time": "00:21:43",
-        "song_name": "そして僕にできるコト",
-        "artist": "misono",
-        "source": "Tales of Symphonia",
-        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=1303s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240923",
-        "time": "01:03:51",
-        "song_name": "勇者",
-        "artist": "YOASOBI",
-        "source": "葬送のフリーレン",
-        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=3831s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240923",
-        "time": "01:17:42",
-        "song_name": "Super Driver",
-        "artist": "平野綾",
-        "source": "涼宮ハルヒの憂鬱",
-        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=4662s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240923",
-        "time": "01:25:47",
-        "song_name": "Lost my music",
-        "artist": "涼宮ハルヒ (CV.平野綾)",
-        "source": "涼宮ハルヒの憂鬱",
-        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=5147s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240923",
-        "time": "01:37:16",
-        "song_name": "冒険でしょでしょ？",
-        "artist": "平野綾",
-        "source": "涼宮ハルヒの憂鬱",
-        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=5836s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240923",
-        "time": "01:45:23",
-        "song_name": "雪、無音、窓辺にて。",
-        "artist": "長門有希 (CV.茅原実里)",
-        "source": "涼宮ハルヒの憂鬱 キャラクターソング",
-        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=6323s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240923",
-        "time": "01:57:15",
-        "song_name": "What&#39;s Up Guys?",
-        "artist": "古本新之輔、林原めぐみ",
-        "source": "爆れつハンター",
-        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=7035s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240923",
-        "time": "02:07:54",
-        "song_name": "KOIBUMI",
-        "artist": "林原めぐみ",
-        "source": "朝霧の巫女",
-        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=7674s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240923",
-        "time": "02:21:44",
-        "song_name": "Love Destiny",
-        "artist": "堀江由衣",
-        "source": "シスター・プリンセス",
-        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=8504s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240923",
-        "time": "02:30:18",
-        "song_name": "Get Along",
-        "artist": "林原めぐみ",
-        "source": "スレイヤーズ",
-        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=9018s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240923",
-        "time": "02:36:59",
-        "song_name": "Give a reason",
-        "artist": "林原めぐみ",
-        "source": "スレイヤーズ NEXT",
-        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=9419s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
         "date": "20241020",
         "time": "00:22:56",
         "song_name": "Weiß 〜幻想への誘い〜",
@@ -10476,6 +10356,126 @@
         "artist": "天宮さくら(佐倉綾音)、東雲初穂(内田真礼)、望月あざみ(山村響)、アナスタシア・パルマ(福原綾香)、クラリス(早見沙織)",
         "source": "新サクラ大戦",
         "link": "https://www.youtube.com/watch?v=mfO62RxfZPU&t=18167s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240922",
+        "time": "00:12:36",
+        "song_name": "Starry Heavens",
+        "artist": "Day After Tomorrow",
+        "source": "Tales of Symphonia",
+        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=756s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240922",
+        "time": "00:21:43",
+        "song_name": "そして僕にできるコト",
+        "artist": "misono",
+        "source": "Tales of Symphonia",
+        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=1303s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240922",
+        "time": "01:03:51",
+        "song_name": "勇者",
+        "artist": "YOASOBI",
+        "source": "葬送のフリーレン",
+        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=3831s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240922",
+        "time": "01:17:42",
+        "song_name": "Super Driver",
+        "artist": "平野綾",
+        "source": "涼宮ハルヒの憂鬱",
+        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=4662s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240922",
+        "time": "01:25:47",
+        "song_name": "Lost my music",
+        "artist": "涼宮ハルヒ(平野綾)",
+        "source": "涼宮ハルヒの憂鬱",
+        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=5147s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240922",
+        "time": "01:37:16",
+        "song_name": "冒険でしょでしょ？",
+        "artist": "平野綾",
+        "source": "涼宮ハルヒの憂鬱",
+        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=5836s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240922",
+        "time": "01:45:23",
+        "song_name": "雪、無音、窓辺にて。",
+        "artist": "長門有希(茅原実里)",
+        "source": "涼宮ハルヒの憂鬱 キャラクターソング",
+        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=6323s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240922",
+        "time": "01:57:15",
+        "song_name": "What's Up Guys?",
+        "artist": "古本新之輔、林原めぐみ",
+        "source": "爆れつハンター",
+        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=7035s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240922",
+        "time": "02:07:54",
+        "song_name": "KOIBUMI",
+        "artist": "林原めぐみ",
+        "source": "朝霧の巫女",
+        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=7674s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240922",
+        "time": "02:21:44",
+        "song_name": "Love Destiny",
+        "artist": "堀江由衣",
+        "source": "シスター・プリンセス",
+        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=8504s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240922",
+        "time": "02:30:18",
+        "song_name": "Get Along",
+        "artist": "林原めぐみ",
+        "source": "スレイヤーズ",
+        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=9018s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240922",
+        "time": "02:36:59",
+        "song_name": "Give a reason",
+        "artist": "林原めぐみ",
+        "source": "スレイヤーズ NEXT",
+        "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=9419s",
         "is_member_exclusive": false,
         "is_acapella": false
     }
