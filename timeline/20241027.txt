@@ -6,6 +6,6 @@ ID = slgufiU0sI4
 04.　01:21:13　終端の王と異世界の騎士 ～The Endia & The Knights～  /  Sound Horizon
 05.　01:33:23　澪音の世界  /  Sound Horizon
 06.　01:59:56　Weiß 〜幻想への誘い〜  /  霜月はるか†Revo(Sound Horizon)
-07.　02:11:17　EXEC_PHANTASMAGORIA/.  / 『アルトネリコ 世界の終わりで詩い続ける少女』みとせのりこ・志方あきこ・霜月はるか
+07.　02:11:17　EXEC_PHANTASMAGORIA/.  / 『アルトネリコ 世界の終わりで詩い続ける少女』みとせのりこ、志方あきこ、霜月はるか
 08.　02:26:42　EXEC_COSMOFLIPS/.  / 『アルトネリコ3 世界終焉の引鉄は少女の詩が弾く』KOKIA
 09.　02:36:09　フクロウ ～フクロウが知らせる客が来たと～  /  KOKIA
