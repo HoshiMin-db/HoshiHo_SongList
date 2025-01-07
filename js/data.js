@@ -1,4 +1,4 @@
-import { normalizeString, sortTable } from './utils.js';
+import { normalizeString } from './utils.js';
 import { generateForm } from './form-generation.js';
 
 let allData = [];
@@ -34,5 +34,6 @@ export function fetchAndDisplayData(query) {
         }
     });
 
+    // 将过滤后的数据传递给 generateForm 以生成表单
     generateForm(filteredData);
 }
