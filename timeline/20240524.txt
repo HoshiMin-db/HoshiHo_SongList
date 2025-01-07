@@ -1,7 +1,7 @@
 ID = 1VxGGjlEBUU
 🌟💐🎶タイムスタンプ🌟💐🎶
 01.　00:08:24　Give a reason  / 『スレイヤーズ NEXT』林原めぐみ
-02.　00:15:11　God knows...  / 『涼宮ハルヒの憂鬱』涼宮ハルヒ (CV.平野 綾)
+02.　00:15:11　God knows...  / 『涼宮ハルヒの憂鬱』涼宮ハルヒ(平野綾)
 03.　00:35:58　ブルーバード  /  『NARUTO ~ナルト~ 疾風伝』いきものがかり
 04.　00:52:44　Wellerman  /  Nathan Evans
 05.　01:08:33　シルエット  / 『NARUTO ~ナルト~ 疾風伝』KANA-BOON
@@ -15,10 +15,10 @@ ID = 1VxGGjlEBUU
 13.　04:01:20　翼  / 『アルスラーン戦記』藍井エイル
 14.　04:06:13　ロマンス  / 『セクシーコマンドー外伝 すごいよ!!マサルさん』PENICILLIN
 15.　04:14:14　二千年... 若しくは... 二万年後の君へ・・・ / 『進撃の巨人』Linked Horizon
-16.　04:35:08　調和 oto ～with reflection～  / 『銀色の髪のアギト』KOKIA (アカペラ)
-17.　04:38:56　Follow the Nightingale  / 『Tales of Innocence』KOKIA (アカペラ)
-18.　04:51:01　JUSTITIA  / 『ウィザード・バリスターズ』Lia (アカペラ)
-19.　04:54:43　虹の旋律  / 『シャイニング・レゾナンス』キリカ（CV.早見沙織）・ソニア（CV.瀬戸麻沙美） (アカペラ)
-20.　05:07:19　誰ガ為ノ世界  /  志方あきこ (アカペラ)
+16.　04:35:08　調和 oto ～with reflection～  / 『銀色の髪のアギト』KOKIA
+17.　04:38:56　Follow the Nightingale  / 『Tales of Innocence』KOKIA
+18.　04:51:01　JUSTITIA  / 『ウィザード・バリスターズ』Lia
+19.　04:54:43　虹の旋律  / 『シャイニング・レゾナンス』キリカ（早見沙織）・ソニア（瀬戸麻沙美）
+20.　05:07:19　誰ガ為ノ世界  /  志方あきこ
 21.　05:15:29　Heart-shaped chant  / 『シャイニング・ウィンド』水樹奈々
 22.　05:31:45　澪音の世界  /  Sound Horizon
