@@ -6090,6 +6090,96 @@
         "is_acapella": false
     },
     {
+        "date": "20241026",
+        "time": "00:16:51",
+        "song_name": "あんなに一緒だったのに",
+        "artist": "See-Saw",
+        "source": "機動戦士ガンダムSEED",
+        "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=1011s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241026",
+        "time": "00:50:21",
+        "song_name": "あなただけ見つめてる",
+        "artist": "大黒摩季",
+        "source": "SLAM DUNK",
+        "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=3021s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241026",
+        "time": "01:01:51",
+        "song_name": "まちぶせ",
+        "artist": "石川ひとみ",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=3711s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241026",
+        "time": "01:31:48",
+        "song_name": "赤いスイートピー",
+        "artist": "松田聖子",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=5508s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241026",
+        "time": "01:45:33",
+        "song_name": "ワルキューレがとまらない",
+        "artist": "ワルキューレ",
+        "source": "マクロスΔ",
+        "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=6333s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241026",
+        "time": "01:57:50",
+        "song_name": "ノーザンクロス",
+        "artist": "シェリル・ノーム starring May'n",
+        "source": "マクロスF",
+        "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=7070s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241026",
+        "time": "02:06:57",
+        "song_name": "ダイアモンド クレバス",
+        "artist": "シェリル・ノーム starring May'n",
+        "source": "マクロスF",
+        "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=7617s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241026",
+        "time": "02:16:09",
+        "song_name": "ライオン",
+        "artist": "May'n、中島愛",
+        "source": "マクロスF",
+        "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=8169s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241026",
+        "time": "02:35:27",
+        "song_name": "Armonico",
+        "artist": "Armony",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=9327s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
         "date": "20240831",
         "time": "00:12:24",
         "song_name": "Rumbling hearts",
@@ -9126,96 +9216,6 @@
         "artist": "松本梨香",
         "source": "ポケットモンスター",
         "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=26049s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241027",
-        "time": "00:16:51",
-        "song_name": "あんなに一緒だったのに",
-        "artist": "See-Saw",
-        "source": "機動戦士ガンダムSEED",
-        "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=1011s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241027",
-        "time": "00:50:21",
-        "song_name": "あなただけ見つめてる",
-        "artist": "大黒摩季",
-        "source": "SLAM DUNK",
-        "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=3021s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241027",
-        "time": "01:01:51",
-        "song_name": "まちぶせ",
-        "artist": "石川ひとみ",
-        "source": "",
-        "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=3711s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241027",
-        "time": "01:31:48",
-        "song_name": "赤いスイートピー",
-        "artist": "松田聖子",
-        "source": "",
-        "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=5508s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241027",
-        "time": "01:45:33",
-        "song_name": "ワルキューレがとまらない",
-        "artist": "ワルキューレ",
-        "source": "マクロスΔ",
-        "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=6333s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241027",
-        "time": "01:57:50",
-        "song_name": "ノーザンクロス",
-        "artist": "シェリル・ノーム starring May'n",
-        "source": "マクロスF",
-        "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=7070s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241027",
-        "time": "02:06:57",
-        "song_name": "ダイアモンド クレバス",
-        "artist": "シェリル・ノーム starring May'n",
-        "source": "マクロスF",
-        "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=7617s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241027",
-        "time": "02:16:09",
-        "song_name": "ライオン",
-        "artist": "May'n、中島愛",
-        "source": "マクロスF",
-        "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=8169s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241027",
-        "time": "02:35:27",
-        "song_name": "Armonico",
-        "artist": "Armony",
-        "source": "",
-        "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=9327s",
         "is_member_exclusive": false,
         "is_acapella": false
     },
