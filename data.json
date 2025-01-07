@@ -7510,6 +7510,146 @@
         "is_acapella": false
     },
     {
+        "date": "20241109",
+        "time": "00:10:08",
+        "song_name": "誰ガ為ノ世界",
+        "artist": "志方あきこ",
+        "source": "テイルズ オブ シンフォニア THE ANIMATION",
+        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=608s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241109",
+        "time": "00:21:55",
+        "song_name": "ルンがピカッと光ったら",
+        "artist": "ワルキューレ",
+        "source": "マクロスΔ",
+        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=1315s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241109",
+        "time": "00:33:17",
+        "song_name": "フライディ・チャイナタウン",
+        "artist": "泰葉",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=1997s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241109",
+        "time": "00:40:36",
+        "song_name": "DESIRE - 情熱 -",
+        "artist": "中森明菜",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=2436s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241109",
+        "time": "00:47:41",
+        "song_name": "異邦人 - シルクロードのテーマ -",
+        "artist": "久保田早紀",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=2861s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241109",
+        "time": "00:57:25",
+        "song_name": "恋愛サーキュレーション",
+        "artist": "千石撫子（花澤香菜）",
+        "source": "化物語",
+        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=3445s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241109",
+        "time": "01:10:44",
+        "song_name": "群青",
+        "artist": "YOASOBI",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=4244s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241109",
+        "time": "01:22:51",
+        "song_name": "agony",
+        "artist": "KOTOKO",
+        "source": "神無月の巫女",
+        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=4971s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241109",
+        "time": "01:32:09",
+        "song_name": "アムリタ",
+        "artist": "牧野由依",
+        "source": "劇場版ツバサ・クロニクル 鳥カゴの国の姫君",
+        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=5529s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241109",
+        "time": "01:46:09",
+        "song_name": "THE DAY",
+        "artist": "ポルノグラフィティ",
+        "source": "僕のヒーローアカデミア",
+        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=6369s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241109",
+        "time": "02:10:37",
+        "song_name": "ALL MY LOVE",
+        "artist": "堀江由衣",
+        "source": "陸上防衛隊まおちゃん",
+        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=7837s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241109",
+        "time": "02:12:45",
+        "song_name": "光の旋律",
+        "artist": "Kalafina",
+        "source": "ソ・ラ・ノ・ヲ・ト",
+        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=7965s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241109",
+        "time": "02:21:26",
+        "song_name": "刹那の果実",
+        "artist": "黒崎真音",
+        "source": "グリザイアの楽園",
+        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=8486s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20241109",
+        "time": "02:29:11",
+        "song_name": "Agape",
+        "artist": "メロキュア",
+        "source": "円盤皇女ワるきゅーレ",
+        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=8951s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
         "date": "20240621",
         "time": "00:10:08",
         "song_name": "Get Along",
@@ -8686,146 +8826,6 @@
         "artist": "ハムちゃんず",
         "source": "とっとこハム太郎",
         "link": "https://www.youtube.com/watch?v=70E6Ns3_THo&t=24417s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241110",
-        "time": "00:10:08",
-        "song_name": "誰ガ為ノ世界",
-        "artist": "志方あきこ",
-        "source": "テイルズ オブ シンフォニア THE ANIMATION",
-        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=608s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241110",
-        "time": "00:21:55",
-        "song_name": "ルンがピカッと光ったら",
-        "artist": "ワルキューレ",
-        "source": "マクロスΔ",
-        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=1315s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241110",
-        "time": "00:33:17",
-        "song_name": "フライディ・チャイナタウン",
-        "artist": "泰葉",
-        "source": "",
-        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=1997s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241110",
-        "time": "00:40:36",
-        "song_name": "DESIRE - 情熱 -",
-        "artist": "中森明菜",
-        "source": "",
-        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=2436s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241110",
-        "time": "00:47:41",
-        "song_name": "異邦人 - シルクロードのテーマ -",
-        "artist": "久保田早紀",
-        "source": "",
-        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=2861s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241110",
-        "time": "00:57:25",
-        "song_name": "恋愛サーキュレーション",
-        "artist": "千石撫子（CV.花澤香菜）",
-        "source": "化物語",
-        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=3445s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241110",
-        "time": "01:10:44",
-        "song_name": "群青",
-        "artist": "YOASOBI",
-        "source": "",
-        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=4244s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241110",
-        "time": "01:22:51",
-        "song_name": "agony",
-        "artist": "KOTOKO",
-        "source": "神無月の巫女",
-        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=4971s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241110",
-        "time": "01:32:09",
-        "song_name": "アムリタ",
-        "artist": "牧野由依",
-        "source": "劇場版ツバサ・クロニクル 鳥カゴの国の姫君",
-        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=5529s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241110",
-        "time": "01:46:09",
-        "song_name": "THE DAY",
-        "artist": "ポルノグラフィティ",
-        "source": "僕のヒーローアカデミア",
-        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=6369s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241110",
-        "time": "02:10:37",
-        "song_name": "ALL MY LOVE",
-        "artist": "堀江由衣",
-        "source": "陸上防衛隊まおちゃん",
-        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=7837s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241110",
-        "time": "02:12:45",
-        "song_name": "光の旋律",
-        "artist": "Kalafina",
-        "source": "ソ・ラ・ノ・ヲ・ト",
-        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=7965s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241110",
-        "time": "02:21:26",
-        "song_name": "刹那の果実",
-        "artist": "黒崎真音",
-        "source": "グリザイアの楽園 (アニメ)",
-        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=8486s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20241110",
-        "time": "02:29:11",
-        "song_name": "Agape",
-        "artist": "メロキュア",
-        "source": "円盤皇女ワるきゅーレ",
-        "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=8951s",
         "is_member_exclusive": false,
         "is_acapella": false
     },
