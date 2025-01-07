@@ -6,7 +6,6 @@
     <title>🌟 HoshiHo歌單 💐</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* 虛擬滾動容器樣式 */
         .virtual-scroll-container {
             height: 600px;
             overflow-y: auto;
@@ -18,13 +17,6 @@
             left: 0;
             right: 0;
         }
-        /* 固定表頭樣式 */
-        table thead th {
-            position: sticky;
-            top: 0;
-            background-color: #fff;
-            z-index: 10;
-        }
     </style>
 </head>
 <body>
@@ -35,7 +27,6 @@
 
     <div class="search-container">
         <input type="text" id="searchInput" placeholder="搜尋歌曲名稱、歌手或出典...">
-        <button id="showAllButton" class="button-off">顯示全部</button>
     </div>
 
     <div class="virtual-scroll-container" id="virtualScrollContainer">
@@ -51,6 +42,7 @@
                         <th>日期1</th>
                         <th>日期2</th>
                         <th>日期3</th>
+                        <th>操作</th>
                     </tr>
                 </thead>
                 <tbody>
