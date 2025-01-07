@@ -8213,7 +8213,7 @@
         "date": "20240524",
         "time": "00:15:11",
         "song_name": "God knows...",
-        "artist": "涼宮ハルヒ (CV.平野 綾)",
+        "artist": "涼宮ハルヒ(平野綾)",
         "source": "涼宮ハルヒの憂鬱",
         "link": "https://www.youtube.com/watch?v=1VxGGjlEBUU&t=911s",
         "is_member_exclusive": false,
@@ -8353,7 +8353,7 @@
         "date": "20240524",
         "time": "04:35:08",
         "song_name": "調和 oto ～with reflection～",
-        "artist": "KOKIA (アカペラ)",
+        "artist": "KOKIA",
         "source": "銀色の髪のアギト",
         "link": "https://www.youtube.com/watch?v=1VxGGjlEBUU&t=16508s",
         "is_member_exclusive": false,
@@ -8363,27 +8363,27 @@
         "date": "20240524",
         "time": "04:38:56",
         "song_name": "Follow the Nightingale",
-        "artist": "KOKIA (アカペラ)",
+        "artist": "KOKIA",
         "source": "Tales of Innocence",
         "link": "https://www.youtube.com/watch?v=1VxGGjlEBUU&t=16736s",
         "is_member_exclusive": false,
-        "is_acapella": false
+        "is_acapella": true
     },
     {
         "date": "20240524",
         "time": "04:51:01",
         "song_name": "JUSTITIA",
-        "artist": "Lia (アカペラ)",
+        "artist": "Lia",
         "source": "ウィザード・バリスターズ",
         "link": "https://www.youtube.com/watch?v=1VxGGjlEBUU&t=17461s",
         "is_member_exclusive": false,
-        "is_acapella": false
+        "is_acapella": true
     },
     {
         "date": "20240524",
         "time": "04:54:43",
         "song_name": "虹の旋律",
-        "artist": "キリカ（CV.早見沙織）・ソニア（CV.瀬戸麻沙美） (アカペラ)",
+        "artist": "キリカ（早見沙織）・ソニア（瀬戸麻沙美）",
         "source": "シャイニング・レゾナンス",
         "link": "https://www.youtube.com/watch?v=1VxGGjlEBUU&t=17683s",
         "is_member_exclusive": false,
@@ -8393,11 +8393,11 @@
         "date": "20240524",
         "time": "05:07:19",
         "song_name": "誰ガ為ノ世界",
-        "artist": "志方あきこ (アカペラ)",
+        "artist": "志方あきこ",
         "source": "",
         "link": "https://www.youtube.com/watch?v=1VxGGjlEBUU&t=18439s",
         "is_member_exclusive": false,
-        "is_acapella": false
+        "is_acapella": true
     },
     {
         "date": "20240524",
