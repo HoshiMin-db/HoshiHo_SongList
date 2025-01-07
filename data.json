@@ -4910,6 +4910,126 @@
         "is_acapella": false
     },
     {
+        "date": "20240928",
+        "time": "00:15:35",
+        "song_name": "ユニバーページ",
+        "artist": "三森すずこ",
+        "source": "アウトブレイク・カンパニー",
+        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=935s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240928",
+        "time": "00:35:12",
+        "song_name": "輪舞-revolution",
+        "artist": "奥井雅美",
+        "source": "少女革命ウテナ",
+        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=2112s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240928",
+        "time": "00:47:32",
+        "song_name": "絶対運命黙示録",
+        "artist": "J.A.シーザー、杉並児童合唱団",
+        "source": "少女革命ウテナ",
+        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=2852s",
+        "is_member_exclusive": false,
+        "is_acapella": true
+    },
+    {
+        "date": "20240928",
+        "time": "00:54:10",
+        "song_name": "バーチャルスター発生学",
+        "artist": "上谷麻紀",
+        "source": "少女革命ウテナ",
+        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=3250s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240928",
+        "time": "01:02:59",
+        "song_name": "少年よ我に帰れ",
+        "artist": "やくしまるえつこメトロオーケストラ",
+        "source": "輪るピングドラム",
+        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=3779s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240928",
+        "time": "01:14:18",
+        "song_name": "心晴れて 夜も明けて",
+        "artist": "堀江由衣",
+        "source": "十兵衛ちゃん2 - シベリア柳生の逆襲 -",
+        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=4458s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240928",
+        "time": "01:20:18",
+        "song_name": "ゆずれない願い",
+        "artist": "田村直美",
+        "source": "魔法騎士レイアース",
+        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=4818s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240928",
+        "time": "01:30:24",
+        "song_name": "光と影を抱きしめたまま",
+        "artist": "田村直美",
+        "source": "魔法騎士レイアース",
+        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=5424s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240928",
+        "time": "01:50:13",
+        "song_name": "GONG",
+        "artist": "JAM Project",
+        "source": "第3次スーパーロボット大戦α 終焉の銀河へ",
+        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=6613s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240928",
+        "time": "02:00:28",
+        "song_name": "City Hunter〜愛よ消えないで〜",
+        "artist": "小比類巻かほる",
+        "source": "CITY HUNTER",
+        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=7228s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240928",
+        "time": "02:07:46",
+        "song_name": "Get Wild",
+        "artist": "TM NETWORK",
+        "source": "CITY HUNTER",
+        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=7666s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240928",
+        "time": "02:17:34",
+        "song_name": "raging waves",
+        "artist": "林原めぐみ",
+        "source": "スレイヤーズごぅじゃす",
+        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=8254s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
         "date": "20240629",
         "time": "00:18:10",
         "song_name": "ダーリン",
@@ -6396,126 +6516,6 @@
         "artist": "Sound Horizon",
         "source": "",
         "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=29737s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240929",
-        "time": "00:15:35",
-        "song_name": "ユニバーページ",
-        "artist": "三森すずこ",
-        "source": "アウトブレイク・カンパニー",
-        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=935s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240929",
-        "time": "00:35:12",
-        "song_name": "輪舞-revolution",
-        "artist": "奥井雅美",
-        "source": "少女革命ウテナ",
-        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=2112s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240929",
-        "time": "00:47:32",
-        "song_name": "絶対運命黙示録",
-        "artist": "J.A.シーザー、杉並児童合唱団 (アカペラ)",
-        "source": "少女革命ウテナ",
-        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=2852s",
-        "is_member_exclusive": false,
-        "is_acapella": true
-    },
-    {
-        "date": "20240929",
-        "time": "00:54:10",
-        "song_name": "バーチャルスター発生学",
-        "artist": "上谷麻紀",
-        "source": "少女革命ウテナ",
-        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=3250s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240929",
-        "time": "01:02:59",
-        "song_name": "少年よ我に帰れ",
-        "artist": "やくしまるえつこメトロオーケストラ",
-        "source": "輪るピングドラム",
-        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=3779s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240929",
-        "time": "01:14:18",
-        "song_name": "心晴れて 夜も明けて",
-        "artist": "堀江由衣",
-        "source": "十兵衛ちゃん2 - シベリア柳生の逆襲 -",
-        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=4458s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240929",
-        "time": "01:20:18",
-        "song_name": "ゆずれない願い",
-        "artist": "田村直美",
-        "source": "魔法騎士レイアース",
-        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=4818s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240929",
-        "time": "01:30:24",
-        "song_name": "光と影を抱きしめたまま",
-        "artist": "田村直美",
-        "source": "魔法騎士レイアース",
-        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=5424s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240929",
-        "time": "01:50:13",
-        "song_name": "GONG",
-        "artist": "JAM Project",
-        "source": "第3次スーパーロボット大戦α 終焉の銀河へ",
-        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=6613s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240929",
-        "time": "02:00:28",
-        "song_name": "City Hunter〜愛よ消えないで〜",
-        "artist": "小比類巻かほる",
-        "source": "CITY HUNTER",
-        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=7228s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240929",
-        "time": "02:07:46",
-        "song_name": "Get Wild",
-        "artist": "TM NETWORK",
-        "source": "CITY HUNTER",
-        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=7666s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240929",
-        "time": "02:17:34",
-        "song_name": "raging waves",
-        "artist": "林原めぐみ",
-        "source": "スレイヤーズごぅじゃす",
-        "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=8254s",
         "is_member_exclusive": false,
         "is_acapella": false
     },
