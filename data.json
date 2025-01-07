@@ -3180,96 +3180,6 @@
         "is_acapella": false
     },
     {
-        "date": "20240916",
-        "time": "00:15:27",
-        "song_name": "IN MY DREAM",
-        "artist": "真行寺恵里",
-        "source": "ブレンパワード",
-        "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=927s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240916",
-        "time": "00:25:30",
-        "song_name": "愛の輪郭（フィールド）",
-        "artist": "KOKIA (アカペラ)",
-        "source": "ブレンパワード",
-        "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=1530s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240916",
-        "time": "00:33:57",
-        "song_name": "エルの楽園 [→ side:E →]",
-        "artist": "Sound Horizon",
-        "source": "",
-        "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=2037s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240916",
-        "time": "00:42:36",
-        "song_name": "StarDust",
-        "artist": "Sound Horizon",
-        "source": "",
-        "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=2556s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240916",
-        "time": "00:55:38",
-        "song_name": "カルマ",
-        "artist": "BUMP OF CHICKEN",
-        "source": "Tales of the Abyss",
-        "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=3338s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240916",
-        "time": "01:00:15",
-        "song_name": "忘れじの言の葉",
-        "artist": "未来古代楽団 feat.安次嶺希和子",
-        "source": "グリムノーツ",
-        "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=3615s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240916",
-        "time": "01:09:26",
-        "song_name": "澪音の世界",
-        "artist": "Sound Horizon",
-        "source": "",
-        "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=4166s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240916",
-        "time": "01:22:13",
-        "song_name": "ループ",
-        "artist": "坂本真綾",
-        "source": "ツバサ~RESERVoir CHRoNiCLE~",
-        "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=4933s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
-        "date": "20240916",
-        "time": "01:34:47",
-        "song_name": "フクロウ ～フクロウが知らせる客が来たと～",
-        "artist": "KOKIA",
-        "source": "",
-        "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=5687s",
-        "is_member_exclusive": false,
-        "is_acapella": false
-    },
-    {
         "date": "20240323",
         "time": "00:12:58",
         "song_name": "Get Along",
@@ -6726,6 +6636,96 @@
         "artist": "林原めぐみ",
         "source": "スレイヤーズごぅじゃす",
         "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=8254s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240915",
+        "time": "00:15:27",
+        "song_name": "IN MY DREAM",
+        "artist": "真行寺恵里",
+        "source": "ブレンパワード",
+        "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=927s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240915",
+        "time": "00:25:30",
+        "song_name": "愛の輪郭（フィールド）",
+        "artist": "KOKIA",
+        "source": "ブレンパワード",
+        "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=1530s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240915",
+        "time": "00:33:57",
+        "song_name": "エルの楽園 [→ side:E →]",
+        "artist": "Sound Horizon",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=2037s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240915",
+        "time": "00:42:36",
+        "song_name": "StarDust",
+        "artist": "Sound Horizon",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=2556s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240915",
+        "time": "00:55:38",
+        "song_name": "カルマ",
+        "artist": "BUMP OF CHICKEN",
+        "source": "Tales of the Abyss",
+        "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=3338s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240915",
+        "time": "01:00:15",
+        "song_name": "忘れじの言の葉",
+        "artist": "未来古代楽団 feat.安次嶺希和子",
+        "source": "グリムノーツ",
+        "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=3615s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240915",
+        "time": "01:09:26",
+        "song_name": "澪音の世界",
+        "artist": "Sound Horizon",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=4166s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240915",
+        "time": "01:22:13",
+        "song_name": "ループ",
+        "artist": "坂本真綾",
+        "source": "ツバサ~RESERVoir CHRoNiCLE~",
+        "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=4933s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240915",
+        "time": "01:34:47",
+        "song_name": "フクロウ ～フクロウが知らせる客が来たと～",
+        "artist": "KOKIA",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=5687s",
         "is_member_exclusive": false,
         "is_acapella": false
     },
