@@ -6,7 +6,7 @@ ID = NndUWLM1BjE
 04.　00:34:11　マブラヴ  / 『Muv-Luv』栗林みな実
 05.　00:55:43　Go to the top  / 『Muv-Luv Alternative Total Eclipse』倖田來未
 06.　01:02:57　signs 〜朔月一夜〜  / 『Muv-Luv Alternative Total Eclipse』栗林みな実
-07.　01:15:07　white forces  / 『シュヴァルツェスマーケン(アニメ)』fripSide
-08.　01:23:37　1983-Schwarzesmarken-  / 『シュヴァルツェスマーケン 紅血の紋章(ゲーム)』fripSide
-09.　01:34:32　未来への咆哮  / 『Muv-Luv Alternative(ゲーム)』JAM Project
-10.　01:41:39　暁を撃て  / 『Muv-Luv Alternative(アニメ)』JAM Project・栗林みな実
+07.　01:15:07　white forces  / 『シュヴァルツェスマーケン』fripSide
+08.　01:23:37　1983-Schwarzesmarken-  / 『シュヴァルツェスマーケン 紅血の紋章』fripSide
+09.　01:34:32　未来への咆哮  / 『Muv-Luv Alternative』JAM Project
+10.　01:41:39　暁を撃て  / 『Muv-Luv Alternative』JAM Project・栗林みな実
