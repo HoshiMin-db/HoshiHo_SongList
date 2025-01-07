@@ -201,19 +201,20 @@ a:hover {
 }
 
 /* 調整表格列寬度 */
-th:nth-child(3), td:nth-child(3), th:nth-child(4), td:nth-child(4) {
-    width: 10%;
+th:nth-child(1), td:nth-child(1) {
+    width: 5%;
 }
 
 th:nth-child(2), td:nth-child(2) {
     width: 30%;
 }
 
+th:nth-child(3), td:nth-child(3), th:nth-child(4), td:nth-child(4) {
+    width: 10%;
+}
+
 /* 調整日期欄字體大小 */
-td:nth-child(6),
-td:nth-child(7),
-td:nth-child(8),
-td.date-cell {
+td:nth-child(5), td:nth-child(6), td:nth-child(7), td.date-cell {
     font-size: 12px;
 }
 
