@@ -64,13 +64,13 @@ td:hover {
 }
 
 th {
-    background-color: #6a5acd; /* 固定紫色背景 */
+    background-color: #6a5acd;
     color: white;
     cursor: pointer;
 }
 
 th:hover {
-    background-color: #6a5acd; /* 固定紫色背景 */
+    background-color: #6a5acd;
 }
 
 tr:nth-child(even) {
@@ -221,8 +221,13 @@ td.date-cell {
 table thead th {
     position: sticky;
     top: 0;
-    background-color: #6a5acd; /* 固定紫色背景 */
+    background-color: #6a5acd;
     color: white;
     z-index: 10;
-    cursor: default; /* 取消表頭的點擊效果 */
+    cursor: default;
+}
+
+/* 隱藏備注欄 */
+td:nth-child(5), th:nth-child(5) {
+    display: none;
 }
