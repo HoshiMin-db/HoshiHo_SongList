@@ -63,8 +63,11 @@ def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs
             # 舊規則解析
             for line in lines[1:]:
                 parts = line.strip().split(' | ')
-                if len(parts) == 4:
-                    time_str, song_name, artist, source = parts
+                if len(parts) >= 3:  # 調整為至少3個部分
+                    time_str = parts[0]
+                    song_name = parts[1]
+                    artist = parts[2]
+                    source = parts[3] if len(parts) == 4 else ''  # 如果沒有來源，設置為空字符串
                     link = create_link(video_id, time_str)
                     is_member_exclusive = date_str in member_exclusive_dates
                     is_acapella = (
