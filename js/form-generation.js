@@ -79,7 +79,7 @@ function displayData(data, numDates = 3) {
 
     Object.values(groupedData).forEach(group => {
         group.sort((a, b) => new Date(b.date.substring(0, 4) + '-' + b.date.substring(4, 6) + '-' + b.date.substring(6))
-            - new Date(a.date.substring(0, 4) + '-' + a.date.substring(4, 6) + '-' a.date.substring(6)));
+            - new Date(a.date.substring(0, 4) + '-' + a.date.substring(4, 6) + '-' + a.date.substring(6)));
     });
 
     Object.entries(groupedData).forEach(([key, rows]) => {
