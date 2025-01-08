@@ -1,5 +1,5 @@
 // form-generation.js
-import './data.js';
+import { fetchData, fetchAndDisplayData } from './data.js';
 import './events.js';
 
 document.addEventListener("DOMContentLoaded", function() {
