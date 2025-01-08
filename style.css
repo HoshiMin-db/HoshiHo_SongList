@@ -1,6 +1,4 @@
 /* style.css */
-
-/* 基本樣式設置 */
 body {
     font-family: 'Microsoft JhengHei', '微軟正黑體', sans-serif;
     max-width: 1200px;
@@ -9,7 +7,6 @@ body {
     background-color: #f5f5f5;
 }
 
-/* 標題與搜尋容器 */
 .header {
     text-align: center;
     margin-bottom: 20px;
@@ -38,7 +35,6 @@ body {
     font-size: 16px;
 }
 
-/* 表格樣式 */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -77,13 +73,6 @@ th:hover {
     background-color: #5849b8;
 }
 
-/* 日期表頭樣式 */
-.date-header {
-    background-color: #6a5acd;
-    color: white;
-    text-align: center;
-}
-
 tr:nth-child(even) {
     background-color: #f9f9f9;
 }
@@ -92,7 +81,6 @@ tr:hover {
     background-color: #f5f5f5;
 }
 
-/* 浮動播放器 */
 .floating-player-container {
     position: fixed;
     bottom: 20px;
@@ -133,7 +121,6 @@ tr:hover {
     background-color: #5849b8;
 }
 
-/* 超連結樣式 */
 a {
     color: #6a5acd;
     text-decoration: none;
@@ -148,7 +135,6 @@ a:hover {
     margin-left: 5px;
 }
 
-/* 按鈕樣式 */
 .button-off {
     background-color: #d3d3d3;
     color: #333;
@@ -175,12 +161,10 @@ a:hover {
     background-color: #5849b8;
 }
 
-/* 特定單元格樣式 */
 .acapella {
     background-color: #e0f7fa;
 }
 
-/* 響應式設計 */
 @media screen and (max-width: 600px) {
     body {
         padding: 10px;
@@ -216,7 +200,7 @@ a:hover {
     }
 }
 
-/* 表格列寬度調整 */
+/* 調整表格列寬度 */
 th:nth-child(1), td:nth-child(1) {
     width: 5%;
 }
@@ -229,12 +213,15 @@ th:nth-child(3), td:nth-child(3), th:nth-child(4), td:nth-child(4) {
     width: 10%;
 }
 
-/* 日期欄字體大小調整 */
-td:nth-child(5), td:nth-child(6), td:nth-child(7), td:nth-child(8), td.date-cell {
+/* 調整日期欄字體大小 */
+td:nth-child(5), td:nth-child(6),
+td:nth-child(7),
+td:nth-child(8),
+td.date-cell {
     font-size: 12px;
 }
 
-/* 固定表頭 */
+/* 固定表頭樣式 */
 table thead th {
     position: sticky;
     top: 0;
@@ -244,7 +231,25 @@ table thead th {
     cursor: default;
 }
 
-/* 虛擬滾動樣式 */
+/* 隱藏備注欄 */
+td:nth-child(5), th:nth-child(5) {
+    display: none;
+}
+
+/* 新增虛擬滾動樣式 */
+.virtual-scroll-container {
+    height: 600px;
+    overflow-y: auto;
+    position: relative;
+}
+
+.virtual-scroll-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
 #virtualScrollContainer {
     height: 100vh;
     overflow-y: auto;
