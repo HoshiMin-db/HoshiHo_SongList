@@ -1,7 +1,7 @@
 // data.js
 import { normalizeString, sortTable } from './utils.js';
 
-let allData = [];
+export let allData = [];
 let totalSongCount = 0;
 
 export function fetchData(callback) {
@@ -45,7 +45,7 @@ export function fetchAndDisplayData(query, numDates = 3) {
     displayData(filteredData, numDates);
 }
 
-function displayData(data, numDates = 3) {
+export function displayData(data, numDates = 3) {
     const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
 
     const groupedData = data.reduce((acc, row) => {
@@ -72,10 +72,10 @@ function displayData(data, numDates = 3) {
         newRow.insertCell().textContent = row.source || '-';
 
         // Generate date cells
-        const dateCell = newRow.insertCell();
-        dateCell.classList.add('date-cell');
         if (row.dates && Array.isArray(row.dates)) {
-            row.dates.slice(0, numDates).forEach((date, index) => {
+            row.dates.slice(0, numDates).forEach(date => {
+                const dateCell = newRow.insertCell();
+                dateCell.classList.add('date-cell');
                 const link = document.createElement('a');
                 const formattedDate = `${date.date.substring(6, 8)}/${date.date.substring(4, 6)}/${date.date.substring(0, 4)}`;
                 link.href = date.link;
@@ -85,9 +85,6 @@ function displayData(data, numDates = 3) {
                     event.preventDefault();
                     openFloatingPlayer(link.href);
                 };
-                if (index > 0) {
-                    dateCell.appendChild(document.createTextNode(', '));
-                }
                 dateCell.appendChild(link);
 
                 if (date.is_member_exclusive) {
@@ -109,12 +106,14 @@ function displayData(data, numDates = 3) {
                     const isExpanded = moreButton.getAttribute('data-expanded') === 'true';
                     if (isExpanded) {
                         // Collapse dates
-                        const toRemove = dateCell.querySelectorAll('.extra-date');
+                        const toRemove = newRow.querySelectorAll('.extra-date');
                         toRemove.forEach(el => el.remove());
                         moreButton.setAttribute('data-expanded', 'false');
                     } else {
                         // Expand dates
-                        row.dates.slice(numDates).forEach((date, index) => {
+                        row.dates.slice(numDates).forEach(date => {
+                            const dateCell = newRow.insertCell();
+                            dateCell.classList.add('extra-date');
                             const link = document.createElement('a');
                             const formattedDate = `${date.date.substring(6, 8)}/${date.date.substring(4, 6)}/${date.date.substring(0, 4)}`;
                             link.href = date.link;
@@ -124,11 +123,7 @@ function displayData(data, numDates = 3) {
                                 event.preventDefault();
                                 openFloatingPlayer(link.href);
                             };
-                            const span = document.createElement('span');
-                            span.classList.add('extra-date');
-                            span.appendChild(document.createTextNode(', '));
-                            span.appendChild(link);
-                            dateCell.appendChild(span);
+                            dateCell.appendChild(link);
 
                             if (date.is_member_exclusive) {
                                 const lockIcon = document.createElement('span');
@@ -137,15 +132,17 @@ function displayData(data, numDates = 3) {
                                 link.appendChild(lockIcon);
                             }
                             if (date.is_acapella) {
-                                span.classList.add('acapella');
+                                dateCell.classList.add('acapella');
                             }
                         });
                         moreButton.setAttribute('data-expanded', 'true');
                     }
                 };
-                dateCell.appendChild(moreButton);
+                const moreButtonCell = newRow.insertCell();
+                moreButtonCell.appendChild(moreButton);
             }
         } else {
+            const dateCell = newRow.insertCell();
             dateCell.textContent = '-';
         }
     });
