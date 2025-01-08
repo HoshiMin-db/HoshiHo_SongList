@@ -9,10 +9,8 @@
   `process_timeline.py`  抓取`timeline/yyyymmdd.txt`寫入`data.json`  
   `process_timeline_new.py` `process_timeline_old.py`  分拆失敗的零件  
   ## /js
-  `data.js`  從`form-generation.js`分拆  
-  `events.js`  從`form-generation.js`分拆  
+  `data` `events` `utils`  分拆失敗的零件  
   `form-generation.js`  Html表單生成  
-  `utils.js`  從`form-generation.js`分拆  
   `youtube-player.js`  Html播放器  
 
 # 鳴謝
