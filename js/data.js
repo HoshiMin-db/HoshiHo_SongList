@@ -1,34 +1,7 @@
 // data.js
+import { normalizeString, sortTable } from './utils.js';
 
-// Utils functions
-export function debounce(func, wait) {
-    let timeout;
-    return function() {
-        const context = this, args = arguments;
-        clearTimeout(timeout);
-        timeout = setTimeout(() => func.apply(context, args), wait);
-    };
-}
-
-export function normalizeString(str) {
-    return str.normalize('NFKC').replace(/[~\u301c\uff5e]/g, '~').toLowerCase();
-}
-
-export function sortTable() {
-    const table = document.getElementById('songTable');
-    const rows = Array.from(table.getElementsByTagName('tbody')[0].rows);
-
-    rows.sort((a, b) => {
-        const aText = a.cells[1].textContent;
-        const bText = b.cells[1].textContent;
-        return aText.localeCompare(bText, 'ja-JP');
-    });
-
-    rows.forEach(row => table.getElementsByTagName('tbody')[0].appendChild(row));
-}
-
-// Data handling functions
-export let allData = [];
+let allData = [];
 let totalSongCount = 0;
 
 export function fetchData(callback) {
@@ -42,149 +15,138 @@ export function fetchData(callback) {
                 document.getElementById('songCount').textContent = totalSongCount;
             }
             callback();
-        })
-        .catch(error => console.error('Error fetching data:', error));
+        });
 }
 
-export function fetchAndDisplayData(query, rowsToDisplay = 50, numDates = 3) {
+export function fetchAndDisplayData(query, numDates = 3) {
     const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
     songTableBody.innerHTML = '';
 
     let filteredData;
     if (query === '') {
-        filteredData = allData.slice(0, rowsToDisplay); // 顯示部分表單
+        filteredData = allData; // 顯示全部表單
     } else {
         filteredData = allData.filter(row =>
-            normalizeString(row.song_name).includes(query.toLowerCase()) ||
-            normalizeString(row.artist).includes(query.toLowerCase()) ||
-            (row.source && normalizeString(row.source).includes(query.toLowerCase()))
-        ).slice(0, rowsToDisplay);
+            normalizeString(row.song_name).toLowerCase().includes(query) ||
+            normalizeString(row.artist).toLowerCase().includes(query) ||
+            normalizeString(row.source).toLowerCase().includes(query)
+        );
     }
 
-    displayData(filteredData, numDates); // 顯示前三個日期列
+    const replaceSongs = {
+        'rorikami': '粛聖‼ ロリ神レクイエム☆'
+    };
+    filteredData.forEach(row => {
+        if (replaceSongs[row.song_name]) {
+            row.song_name = replaceSongs[row.song_name];
+        }
+    });
+
+    displayData(filteredData, numDates);
 }
 
 function displayData(data, numDates = 3) {
     const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
-    const dateHeader = document.querySelector('.date-header');
-    const initialColspan = numDates;
 
-    // 設置初始 colspan
-    dateHeader.colSpan = initialColspan;
+    const groupedData = data.reduce((acc, row) => {
+        const key = `${normalizeString(row.song_name)}-${normalizeString(row.artist)}`;
+        if (!acc[key]) {
+            acc[key] = [];
+        }
+        acc[key].push(row);
+        return acc;
+    }, {});
 
-    // 按曲名（日文順序）排序
-    data.sort((a, b) => normalizeString(a.song_name).localeCompare(normalizeString(b.song_name), 'ja'));
+    Object.values(groupedData).forEach(group => {
+        group.sort((a, b) => new Date(b.date.substring(0, 4) + '-' + b.date.substring(4, 6) + '-' + b.date.substring(6))
+            - new Date(a.date.substring(0, 4) + '-' + a.date.substring(4, 6) + '-' + a.date.substring(6)));
+    });
 
-    data.forEach(row => {
+    Object.entries(groupedData).forEach(([key, rows]) => {
         const newRow = songTableBody.insertRow();
-        newRow.insertCell().textContent = row.song_name.charAt(0).toUpperCase();
-        newRow.insertCell().textContent = row.song_name;
-        newRow.insertCell().textContent = row.artist;
-        newRow.insertCell().textContent = row.source || '-';
+        newRow.insertCell().textContent = rows[0].song_name.charAt(0).toUpperCase();
+        newRow.insertCell().textContent = rows[0].song_name;
+        newRow.insertCell().textContent = rows[0].artist;
+        newRow.insertCell().textContent = rows[0].source;
 
-        // 生成日期儲存格
-        for (let i = 0; i < numDates; i++) {
-            const dateCell = newRow.insertCell();
-            dateCell.classList.add('date-cell');
-            if (row.dates && Array.isArray(row.dates) && i < row.dates.length) {
-                const dateRow = row.dates[i];
+        // Generate date cells
+        const dateCell = newRow.insertCell();
+        dateCell.classList.add('date-cell');
+        if (rows[0].dates && Array.isArray(rows[0].dates)) {
+            rows[0].dates.slice(0, numDates).forEach((date, index) => {
                 const link = document.createElement('a');
-                const date = dateRow.date;
-                const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
-                link.href = dateRow.link;
+                const formattedDate = `${date.date.substring(6, 8)}/${date.date.substring(4, 6)}/${date.date.substring(0, 4)}`;
+                link.href = date.link;
                 link.textContent = formattedDate;
                 link.target = '_blank';
                 link.onclick = function(event) {
                     event.preventDefault();
-                    // 驗證 URL
-                    if (isValidUrl(link.href)) {
-                        openFloatingPlayer(link.href);
-                    } else {
-                        alert('Invalid URL');
-                    }
+                    openFloatingPlayer(link.href);
                 };
+                if (index > 0) {
+                    dateCell.appendChild(document.createTextNode(', '));
+                }
                 dateCell.appendChild(link);
 
-                if (dateRow.is_member_exclusive) {
+                if (date.is_member_exclusive) {
                     const lockIcon = document.createElement('span');
                     lockIcon.classList.add('lock-icon');
                     lockIcon.textContent = '🔒';
                     link.appendChild(lockIcon);
                 }
-                if (dateRow.is_acapella) {
+                if (date.is_acapella) {
                     dateCell.classList.add('acapella');
                 }
-            } else {
-                dateCell.textContent = '-'; // 如果沒有更多日期，顯示占位符
-            }
-        }
+            });
 
-        // 添加 "..." 按鈕如果有更多日期
-        if (row.dates && Array.isArray(row.dates) && row.dates.length > numDates) {
-            const moreButton = document.createElement('button');
-            moreButton.textContent = '...';
-            moreButton.onclick = () => {
-                const isExpanded = moreButton.getAttribute('data-expanded') === 'true';
-                if (isExpanded) {
-                    // 折疊日期
-                    const toRemove = newRow.querySelectorAll('.extra-date');
-                    toRemove.forEach(el => el.remove());
-                    moreButton.setAttribute('data-expanded', 'false');
-                    // 調整 colspan
-                    dateHeader.colSpan = initialColspan;
-                } else {
-                    // 展開日期
-                    row.dates.slice(numDates).forEach((dateRow, index) => {
-                        const dateCell = newRow.insertCell();
-                        dateCell.classList.add('date-cell', 'extra-date');
-                        const link = document.createElement('a');
-                        const date = dateRow.date;
-                        const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
-                        link.href = dateRow.link;
-                        link.textContent = formattedDate;
-                        link.target = '_blank';
-                        link.onclick = function(event) {
-                            event.preventDefault();
-                            // 驗證 URL
-                            if (isValidUrl(link.href)) {
+            // Add "..." button if there are more dates
+            if (rows[0].dates.length > numDates) {
+                const moreButton = document.createElement('button');
+                moreButton.textContent = '...';
+                moreButton.onclick = () => {
+                    const isExpanded = moreButton.getAttribute('data-expanded') === 'true';
+                    if (isExpanded) {
+                        // Collapse dates
+                        const toRemove = dateCell.querySelectorAll('.extra-date');
+                        toRemove.forEach(el => el.remove());
+                        moreButton.setAttribute('data-expanded', 'false');
+                    } else {
+                        // Expand dates
+                        rows[0].dates.slice(numDates).forEach((date, index) => {
+                            const link = document.createElement('a');
+                            const formattedDate = `${date.date.substring(6, 8)}/${date.date.substring(4, 6)}/${date.date.substring(0, 4)}`;
+                            link.href = date.link;
+                            link.textContent = formattedDate;
+                            link.target = '_blank';
+                            link.onclick = function(event) {
+                                event.preventDefault();
                                 openFloatingPlayer(link.href);
-                            } else {
-                                alert('Invalid URL');
-                            }
-                        };
-                        dateCell.appendChild(link);
+                            };
+                            const span = document.createElement('span');
+                            span.classList.add('extra-date');
+                            span.appendChild(document.createTextNode(', '));
+                            span.appendChild(link);
+                            dateCell.appendChild(span);
 
-                        if (dateRow.is_member_exclusive) {
-                            const lockIcon = document.createElement('span');
-                            lockIcon.classList.add('lock-icon');
-                            lockIcon.textContent = '🔒';
-                            link.appendChild(lockIcon);
-                        }
-                        if (dateRow.is_acapella) {
-                            dateCell.classList.add('acapella');
-                        }
-                    });
-                    moreButton.setAttribute('data-expanded', 'true');
-                    // 調整 colspan
-                    dateHeader.colSpan = row.dates.length + 1; // +1 因為多了一个 "..." 按鈕
-                }
-            };
-            const moreCell = newRow.insertCell();
-            moreCell.classList.add('date-cell'); // 確保 "..." 按鈕也屬於日期欄
-            moreCell.appendChild(moreButton);
+                            if (date.is_member_exclusive) {
+                                const lockIcon = document.createElement('span');
+                                lockIcon.classList.add('lock-icon');
+                                lockIcon.textContent = '🔒';
+                                link.appendChild(lockIcon);
+                            }
+                            if (date.is_acapella) {
+                                span.classList.add('acapella');
+                            }
+                        });
+                        moreButton.setAttribute('data-expanded', 'true');
+                    }
+                };
+                dateCell.appendChild(moreButton);
+            }
+        } else {
+            dateCell.textContent = '-';
         }
     });
 
     sortTable();
-}
-
-// 驗證 URL 函數
-function isValidUrl(url) {
-    const trustedDomains = ['www.youtube.com', 'youtu.be']; // 受信任的 YouTube 域名
-    try {
-        const parsedUrl = new URL(url);
-        return trustedDomains.includes(parsedUrl.hostname);
-    } catch (e) {
-        return false;
-    }
 }
