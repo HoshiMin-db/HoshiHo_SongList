@@ -1,3 +1,4 @@
+// data.js
 import { normalizeString, sortTable } from './utils.js';
 
 let allData = [];
@@ -53,7 +54,7 @@ function displayData(data, numDates = 3) {
 
     Object.values(groupedData).forEach(group => {
         group.sort((a, b) => new Date(b.date.substring(0, 4) + '-' + b.date.substring(4, 6) + '-' + b.date.substring(6))
-            - new Date(a.date.substring(0, 4) + '-' + a.date.substring(4, 6) + '-' a.date.substring(6)));
+            - new Date(a.date.substring(0, 4) + '-' + a.date.substring(4, 6) + '-' + a.date.substring(6)));
     });
 
     Object.entries(groupedData).forEach(([key, rows]) => {
@@ -70,7 +71,7 @@ function displayData(data, numDates = 3) {
             const link = document.createElement('a');
             const date = row.date;
             const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
-            link.href = row.link;
+            link.href = date.link;
             link.textContent = formattedDate;
             link.target = '_blank';
             link.onclick = function(event) {
