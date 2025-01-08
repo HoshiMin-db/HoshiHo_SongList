@@ -1,6 +1,6 @@
 // events.js
 import { debounce, normalizeString } from './utils.js';
-import { allData, fetchAndDisplayData } from './data.js';
+import { fetchAndDisplayData, fetchData } from './data.js';
 
 document.addEventListener("DOMContentLoaded", function() {
     const searchInput = document.getElementById('searchInput');
@@ -21,6 +21,9 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
         console.error("virtualScrollContainer element not found");
     }
+
+    // 頁面加載時顯示全部表單
+    fetchData(() => fetchAndDisplayData(''));
 });
 
 function onScroll() {
@@ -38,36 +41,5 @@ function onScroll() {
     tbody.innerHTML = '';
     
     // 渲染可視區域內的數據
-    for (let i = startIdx; i < endIdx; i++) {
-        const row = allData[i];
-        const newRow = tbody.insertRow();
-        newRow.insertCell().textContent = row.song_name.charAt(0).toUpperCase();
-        newRow.insertCell().textContent = row.song_name;
-        newRow.insertCell().textContent = row.artist;
-        newRow.insertCell().textContent = row.source;
-
-        row.dates.slice(0, 3).forEach(date => {
-            const dateCell = newRow.insertCell();
-            dateCell.classList.add('date-cell');
-            const link = document.createElement('a');
-            link.href = date.link;
-            link.textContent = date.formattedDate;
-            link.target = '_blank';
-            link.onclick = function(event) {
-                event.preventDefault();
-                openFloatingPlayer(link.href);
-            };
-            dateCell.appendChild(link);
-
-            if (date.is_member_exclusive) {
-                const lockIcon = document.createElement('span');
-                lockIcon.classList.add('lock-icon');
-                lockIcon.textContent = '🔒';
-                link.appendChild(lockIcon);
-            }
-            if (date.is_acapella) {
-                dateCell.classList.add('acapella');
-            }
-        });
-    }
+    fetchAndDisplayData('', endIdx - startIdx, 3);
 }
