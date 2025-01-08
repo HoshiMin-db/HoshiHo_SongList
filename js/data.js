@@ -15,7 +15,8 @@ export function fetchData(callback) {
                 document.getElementById('songCount').textContent = totalSongCount;
             }
             callback();
-        });
+        })
+        .catch(error => console.error('Error fetching data:', error));
 }
 
 export function fetchAndDisplayData(query, numDates = 3) {
@@ -81,7 +82,12 @@ function displayData(data, numDates = 3) {
             link.target = '_blank';
             link.onclick = function(event) {
                 event.preventDefault();
-                openFloatingPlayer(link.href);
+                // 驗證 URL
+                if (isValidUrl(link.href)) {
+                    openFloatingPlayer(link.href);
+                } else {
+                    alert('Invalid URL');
+                }
             };
             if (index > 0) {
                 dateCell.appendChild(document.createTextNode(', '));
@@ -121,7 +127,12 @@ function displayData(data, numDates = 3) {
                         link.target = '_blank';
                         link.onclick = function(event) {
                             event.preventDefault();
-                            openFloatingPlayer(link.href);
+                            // 驗證 URL
+                            if (isValidUrl(link.href)) {
+                                openFloatingPlayer(link.href);
+                            } else {
+                                alert('Invalid URL');
+                            }
                         };
                         const span = document.createElement('span');
                         span.classList.add('extra-date');
@@ -147,4 +158,15 @@ function displayData(data, numDates = 3) {
     });
 
     sortTable();
+}
+
+// 驗證 URL 函數
+function isValidUrl(url) {
+    const trustedDomains = ['yourtrusteddomain.com', 'anothertrusted.com']; // 受信任的域名
+    try {
+        const parsedUrl = new URL(url);
+        return trustedDomains.includes(parsedUrl.hostname);
+    } catch (e) {
+        return false;
+    }
 }
