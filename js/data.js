@@ -70,36 +70,41 @@ function displayData(data, numDates = 3) {
         newRow.insertCell().textContent = rows[0].source;
 
         // 生成日期儲存格
-        rows.slice(0, numDates).forEach((row, index) => {
+        for (let i = 0; i < numDates; i++) {
             const dateCell = newRow.insertCell();
             dateCell.classList.add('date-cell');
-            const link = document.createElement('a');
-            const date = row.date;
-            const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
-            link.href = row.link;
-            link.textContent = formattedDate;
-            link.target = '_blank';
-            link.onclick = function(event) {
-                event.preventDefault();
-                // 驗證 URL
-                if (isValidUrl(link.href)) {
-                    openFloatingPlayer(link.href);
-                } else {
-                    alert('Invalid URL');
-                }
-            };
-            dateCell.appendChild(link);
+            if (i < rows.length) {
+                const row = rows[i];
+                const link = document.createElement('a');
+                const date = row.date;
+                const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
+                link.href = row.link;
+                link.textContent = formattedDate;
+                link.target = '_blank';
+                link.onclick = function(event) {
+                    event.preventDefault();
+                    // 驗證 URL
+                    if (isValidUrl(link.href)) {
+                        openFloatingPlayer(link.href);
+                    } else {
+                        alert('Invalid URL');
+                    }
+                };
+                dateCell.appendChild(link);
 
-            if (row.is_member_exclusive) {
-                const lockIcon = document.createElement('span');
-                lockIcon.classList.add('lock-icon');
-                lockIcon.textContent = '🔒';
-                link.appendChild(lockIcon);
+                if (row.is_member_exclusive) {
+                    const lockIcon = document.createElement('span');
+                    lockIcon.classList.add('lock-icon');
+                    lockIcon.textContent = '🔒';
+                    link.appendChild(lockIcon);
+                }
+                if (row.is_acapella) {
+                    dateCell.classList.add('acapella');
+                }
+            } else {
+                dateCell.textContent = '-'; // 如果沒有更多日期，顯示占位符
             }
-            if (row.is_acapella) {
-                dateCell.classList.add('acapella');
-            }
-        });
+        }
 
         // 添加 "..." 按鈕如果有更多日期
         if (rows.length > numDates) {
