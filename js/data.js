@@ -51,29 +51,31 @@ function displayData(data, numDates = 3) {
     const groupedData = data.reduce((acc, row) => {
         const key = `${normalizeString(row.song_name)}-${normalizeString(row.artist)}`;
         if (!acc[key]) {
-            acc[key] = [];
+            acc[key] = {
+                ...row,
+                dates: []
+            };
         }
-        acc[key].push(row);
+        acc[key].dates.push(...(row.dates || []));
         return acc;
     }, {});
 
     Object.values(groupedData).forEach(group => {
-        group.sort((a, b) => new Date(b.date.substring(0, 4) + '-' + b.date.substring(4, 6) + '-' + b.date.substring(6))
-            - new Date(a.date.substring(0, 4) + '-' + a.date.substring(4, 6) + '-' + a.date.substring(6)));
+        group.dates.sort((a, b) => new Date(b.date) - new Date(a.date));
     });
 
-    Object.entries(groupedData).forEach(([key, rows]) => {
+    Object.entries(groupedData).forEach(([key, row]) => {
         const newRow = songTableBody.insertRow();
-        newRow.insertCell().textContent = rows[0].song_name.charAt(0).toUpperCase();
-        newRow.insertCell().textContent = rows[0].song_name;
-        newRow.insertCell().textContent = rows[0].artist;
-        newRow.insertCell().textContent = rows[0].source;
+        newRow.insertCell().textContent = row.song_name.charAt(0).toUpperCase();
+        newRow.insertCell().textContent = row.song_name;
+        newRow.insertCell().textContent = row.artist;
+        newRow.insertCell().textContent = row.source || '-';
 
         // Generate date cells
         const dateCell = newRow.insertCell();
         dateCell.classList.add('date-cell');
-        if (rows[0].dates && Array.isArray(rows[0].dates)) {
-            rows[0].dates.slice(0, numDates).forEach((date, index) => {
+        if (row.dates && Array.isArray(row.dates)) {
+            row.dates.slice(0, numDates).forEach((date, index) => {
                 const link = document.createElement('a');
                 const formattedDate = `${date.date.substring(6, 8)}/${date.date.substring(4, 6)}/${date.date.substring(0, 4)}`;
                 link.href = date.link;
@@ -100,7 +102,7 @@ function displayData(data, numDates = 3) {
             });
 
             // Add "..." button if there are more dates
-            if (rows[0].dates.length > numDates) {
+            if (row.dates.length > numDates) {
                 const moreButton = document.createElement('button');
                 moreButton.textContent = '...';
                 moreButton.onclick = () => {
@@ -112,7 +114,7 @@ function displayData(data, numDates = 3) {
                         moreButton.setAttribute('data-expanded', 'false');
                     } else {
                         // Expand dates
-                        rows[0].dates.slice(numDates).forEach((date, index) => {
+                        row.dates.slice(numDates).forEach((date, index) => {
                             const link = document.createElement('a');
                             const formattedDate = `${date.date.substring(6, 8)}/${date.date.substring(4, 6)}/${date.date.substring(0, 4)}`;
                             link.href = date.link;
