@@ -1,4 +1,9 @@
 // form-generation.js
 import './utils.js';
-import './data.js';
 import './events.js';
+import { fetchData, fetchAndDisplayData } from './data.js';
+
+document.addEventListener("DOMContentLoaded", function() {
+    // 頁面加載時顯示全部表單
+    fetchData(() => fetchAndDisplayData(''));
+});
