@@ -48,6 +48,11 @@ export function fetchAndDisplayData(query, numDates = 3) {
 
 function displayData(data, numDates = 3) {
     const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
+    const dateHeader = document.querySelector('.date-header');
+    const initialColspan = numDates;
+
+    // 設置初始 colspan
+    dateHeader.colSpan = initialColspan;
 
     // 按曲名（日文順序）排序
     data.sort((a, b) => a.song_name.localeCompare(b.song_name, 'ja'));
@@ -116,6 +121,8 @@ function displayData(data, numDates = 3) {
                     const toRemove = newRow.querySelectorAll('.extra-date');
                     toRemove.forEach(el => el.remove());
                     moreButton.setAttribute('data-expanded', 'false');
+                    // 調整 colspan
+                    dateHeader.colSpan = initialColspan;
                 } else {
                     // 展開日期
                     rows.slice(numDates).forEach((row, index) => {
@@ -149,6 +156,8 @@ function displayData(data, numDates = 3) {
                         }
                     });
                     moreButton.setAttribute('data-expanded', 'true');
+                    // 調整 colspan
+                    dateHeader.colSpan = rows.length;
                 }
             };
             const moreCell = newRow.insertCell();
