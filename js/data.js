@@ -49,6 +49,9 @@ export function fetchAndDisplayData(query, numDates = 3) {
 function displayData(data, numDates = 3) {
     const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
 
+    // 按曲名（日文順序）排序
+    data.sort((a, b) => a.song_name.localeCompare(b.song_name, 'ja'));
+
     const groupedData = data.reduce((acc, row) => {
         const key = `${normalizeString(row.song_name)}-${normalizeString(row.artist)}`;
         if (!acc[key]) {
@@ -70,10 +73,10 @@ function displayData(data, numDates = 3) {
         newRow.insertCell().textContent = rows[0].artist;
         newRow.insertCell().textContent = rows[0].source;
 
-        // Generate date cells
-        const dateCell = newRow.insertCell();
-        dateCell.classList.add('date-cell');
+        // 生成日期儲存格
         rows.slice(0, numDates).forEach((row, index) => {
+            const dateCell = newRow.insertCell();
+            dateCell.classList.add('date-cell');
             const link = document.createElement('a');
             const date = row.date;
             const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
@@ -89,9 +92,6 @@ function displayData(data, numDates = 3) {
                     alert('Invalid URL');
                 }
             };
-            if (index > 0) {
-                dateCell.appendChild(document.createTextNode(', '));
-            }
             dateCell.appendChild(link);
 
             if (row.is_member_exclusive) {
@@ -105,20 +105,22 @@ function displayData(data, numDates = 3) {
             }
         });
 
-        // Add "..." button if there are more dates
+        // 添加 "..." 按鈕如果有更多日期
         if (rows.length > numDates) {
             const moreButton = document.createElement('button');
             moreButton.textContent = '...';
             moreButton.onclick = () => {
                 const isExpanded = moreButton.getAttribute('data-expanded') === 'true';
                 if (isExpanded) {
-                    // Collapse dates
-                    const toRemove = dateCell.querySelectorAll('.extra-date');
+                    // 折疊日期
+                    const toRemove = newRow.querySelectorAll('.extra-date');
                     toRemove.forEach(el => el.remove());
                     moreButton.setAttribute('data-expanded', 'false');
                 } else {
-                    // Expand dates
+                    // 展開日期
                     rows.slice(numDates).forEach((row, index) => {
+                        const dateCell = newRow.insertCell();
+                        dateCell.classList.add('date-cell', 'extra-date');
                         const link = document.createElement('a');
                         const date = row.date;
                         const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
@@ -134,11 +136,7 @@ function displayData(data, numDates = 3) {
                                 alert('Invalid URL');
                             }
                         };
-                        const span = document.createElement('span');
-                        span.classList.add('extra-date');
-                        span.appendChild(document.createTextNode(', '));
-                        span.appendChild(link);
-                        dateCell.appendChild(span);
+                        dateCell.appendChild(link);
 
                         if (row.is_member_exclusive) {
                             const lockIcon = document.createElement('span');
@@ -147,13 +145,14 @@ function displayData(data, numDates = 3) {
                             link.appendChild(lockIcon);
                         }
                         if (row.is_acapella) {
-                            span.classList.add('acapella');
+                            dateCell.classList.add('acapella');
                         }
                     });
                     moreButton.setAttribute('data-expanded', 'true');
                 }
             };
-            dateCell.appendChild(moreButton);
+            const moreCell = newRow.insertCell();
+            moreCell.appendChild(moreButton);
         }
     });
 
