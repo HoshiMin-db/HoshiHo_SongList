@@ -46,22 +46,22 @@ export function fetchData(callback) {
         .catch(error => console.error('Error fetching data:', error));
 }
 
-export function fetchAndDisplayData(query, numDates = 3) {
+export function fetchAndDisplayData(query, rowsToDisplay = 50, numDates = 3) {
     const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
     songTableBody.innerHTML = '';
 
     let filteredData;
     if (query === '') {
-        filteredData = allData; // 顯示全部表單
+        filteredData = allData.slice(0, rowsToDisplay); // 顯示部分表單
     } else {
         filteredData = allData.filter(row =>
-            normalizeString(row.song_name).toLowerCase().includes(query) ||
-            normalizeString(row.artist).toLowerCase().includes(query) ||
-            (row.source && normalizeString(row.source).toLowerCase().includes(query))
-        );
+            normalizeString(row.song_name).includes(query.toLowerCase()) ||
+            normalizeString(row.artist).includes(query.toLowerCase()) ||
+            (row.source && normalizeString(row.source).includes(query.toLowerCase()))
+        ).slice(0, rowsToDisplay);
     }
 
-    displayData(filteredData, numDates);
+    displayData(filteredData, numDates); // 顯示前三個日期列
 }
 
 function displayData(data, numDates = 3) {
@@ -86,7 +86,7 @@ function displayData(data, numDates = 3) {
         for (let i = 0; i < numDates; i++) {
             const dateCell = newRow.insertCell();
             dateCell.classList.add('date-cell');
-            if (i < row.dates.length) {
+            if (row.dates && i < row.dates.length) {
                 const dateRow = row.dates[i];
                 const link = document.createElement('a');
                 const date = dateRow.date;
@@ -120,7 +120,7 @@ function displayData(data, numDates = 3) {
         }
 
         // 添加 "..." 按鈕如果有更多日期
-        if (row.dates.length > numDates) {
+        if (row.dates && row.dates.length > numDates) {
             const moreButton = document.createElement('button');
             moreButton.textContent = '...';
             moreButton.onclick = () => {
