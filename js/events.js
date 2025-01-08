@@ -6,24 +6,39 @@ document.addEventListener("DOMContentLoaded", function() {
     const searchInput = document.getElementById('searchInput');
     const showAllButton = document.getElementById('showAllButton');
 
-    searchInput.addEventListener('input', debounce(function(e) {
-        const query = normalizeString(e.target.value.toLowerCase());
-        fetchAndDisplayData(query);
-    }, 300));
+    // 確認元素是否存在
+    if (searchInput) {
+        searchInput.addEventListener('input', debounce(function(e) {
+            const query = normalizeString(e.target.value.toLowerCase());
+            if (query === '') {
+                fetchAndDisplayData(''); // 顯示全部表單
+            } else {
+                fetchAndDisplayData(query);
+            }
+        }, 300));
+    } else {
+        console.error("searchInput element not found");
+    }
 
-    showAllButton.addEventListener('click', function() {
-        const showAllState = !showAllButton.classList.contains('button-on');
-        showAllButton.classList.toggle('button-on', showAllState);
-        showAllButton.classList.toggle('button-off', !showAllState);
-        showAllButton.textContent = showAllState ? "隱藏" : "顯示全部";
+    if (showAllButton) {
+        showAllButton.addEventListener('click', function() {
+            const showAllState = !showAllButton.classList.contains('button-on');
+            showAllButton.classList.toggle('button-on', showAllState);
+            showAllButton.classList.toggle('button-off', !showAllState);
+            showAllButton.textContent = showAllState ? "隱藏" : "顯示全部";
 
-        fetchAndDisplayData('', showAllState ? Infinity : 3);
-    });
-});
+            fetchAndDisplayData('', showAllState ? Infinity : 3);
+        });
+    } else {
+        console.error("showAllButton element not found");
+    }
 
-document.addEventListener("DOMContentLoaded", function() {
     const virtualScrollContainer = document.getElementById('virtualScrollContainer');
-    virtualScrollContainer.addEventListener('scroll', onScroll);
+    if (virtualScrollContainer) {
+        virtualScrollContainer.addEventListener('scroll', onScroll);
+    } else {
+        console.error("virtualScrollContainer element not found");
+    }
 });
 
 function onScroll() {
