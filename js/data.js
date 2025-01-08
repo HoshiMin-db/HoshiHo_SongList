@@ -4,6 +4,17 @@ import { normalizeString, sortTable } from './utils.js';
 let allData = [];
 let totalSongCount = 0;
 
+// 驗證 URL 函數
+function isValidUrl(url) {
+    const trustedDomains = ['www.youtube.com', 'youtu.be']; // 受信任的 YouTube 域名
+    try {
+        const parsedUrl = new URL(url);
+        return trustedDomains.includes(parsedUrl.hostname);
+    } catch (e) {
+        return false;
+    }
+}
+
 export function fetchData(callback) {
     fetch('data.json', { cache: 'no-cache' })
         .then(response => response.json())
@@ -157,24 +168,14 @@ function displayData(data, numDates = 3) {
                     });
                     moreButton.setAttribute('data-expanded', 'true');
                     // 調整 colspan
-                    dateHeader.colSpan = rows.length;
+                    dateHeader.colSpan = rows.length + 1; // +1 因為多了一个 "..." 按鈕
                 }
             };
             const moreCell = newRow.insertCell();
+            moreCell.classList.add('date-cell'); // 確保 "..." 按鈕也屬於日期欄
             moreCell.appendChild(moreButton);
         }
     });
 
     sortTable();
-}
-
-// 驗證 URL 函數
-function isValidUrl(url) {
-    const trustedDomains = ['www.youtube.com', 'youtu.be']; // 受信任的 YouTube 域名
-    try {
-        const parsedUrl = new URL(url);
-        return trustedDomains.includes(parsedUrl.hostname);
-    } catch (e) {
-        return false;
-    }
 }
