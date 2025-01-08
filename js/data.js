@@ -22,11 +22,16 @@ export function fetchAndDisplayData(query, numDates = 3) {
     const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
     songTableBody.innerHTML = '';
 
-    const filteredData = allData.filter(row =>
-        normalizeString(row.song_name).toLowerCase().includes(query) ||
-        normalizeString(row.artist).toLowerCase().includes(query) ||
-        normalizeString(row.source).toLowerCase().includes(query)
-    );
+    let filteredData;
+    if (query === '') {
+        filteredData = allData; // 顯示全部表單
+    } else {
+        filteredData = allData.filter(row =>
+            normalizeString(row.song_name).toLowerCase().includes(query) ||
+            normalizeString(row.artist).toLowerCase().includes(query) ||
+            normalizeString(row.source).toLowerCase().includes(query)
+        );
+    }
 
     const replaceSongs = {
         'rorikami': '粛聖‼ ロリ神レクイエム☆'
