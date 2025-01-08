@@ -4,33 +4,15 @@ import { fetchAndDisplayData } from './data.js';
 
 document.addEventListener("DOMContentLoaded", function() {
     const searchInput = document.getElementById('searchInput');
-    const showAllButton = document.getElementById('showAllButton');
 
     // 確認元素是否存在
     if (searchInput) {
         searchInput.addEventListener('input', debounce(function(e) {
             const query = normalizeString(e.target.value.toLowerCase());
-            if (query === '') {
-                fetchAndDisplayData(''); // 顯示全部表單
-            } else {
-                fetchAndDisplayData(query);
-            }
+            fetchAndDisplayData(query);
         }, 300));
     } else {
         console.error("searchInput element not found");
-    }
-
-    if (showAllButton) {
-        showAllButton.addEventListener('click', function() {
-            const showAllState = !showAllButton.classList.contains('button-on');
-            showAllButton.classList.toggle('button-on', showAllState);
-            showAllButton.classList.toggle('button-off', !showAllState);
-            showAllButton.textContent = showAllState ? "隱藏" : "顯示全部";
-
-            fetchAndDisplayData('', showAllState ? Infinity : 3);
-        });
-    } else {
-        console.error("showAllButton element not found");
     }
 
     const virtualScrollContainer = document.getElementById('virtualScrollContainer');
@@ -39,6 +21,9 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
         console.error("virtualScrollContainer element not found");
     }
+
+    // 頁面加載時顯示全部表單
+    fetchAndDisplayData('');
 });
 
 function onScroll() {
