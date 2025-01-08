@@ -1,7 +1,7 @@
 // data.js
 import { normalizeString, sortTable } from './utils.js';
 
-export let allData = [];
+let allData = [];
 let totalSongCount = 0;
 
 export function fetchData(callback) {
@@ -19,22 +19,22 @@ export function fetchData(callback) {
         .catch(error => console.error('Error fetching data:', error));
 }
 
-export function fetchAndDisplayData(query, numDates = 3) {
+export function fetchAndDisplayData(query, rowsToDisplay = 50, numDates = 3) {
     const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
     songTableBody.innerHTML = '';
 
     let filteredData;
     if (query === '') {
-        filteredData = allData; // 顯示全部表單
+        filteredData = allData.slice(0, rowsToDisplay); // 顯示部分表單
     } else {
         filteredData = allData.filter(row =>
             normalizeString(row.song_name).toLowerCase().includes(query) ||
             normalizeString(row.artist).toLowerCase().includes(query) ||
             normalizeString(row.source).toLowerCase().includes(query)
-        );
+        ).slice(0, rowsToDisplay);
     }
 
-    displayData(filteredData, numDates);
+    displayData(filteredData, numDates); // 顯示前三個日期列
 }
 
 function displayData(data, numDates = 3) {
