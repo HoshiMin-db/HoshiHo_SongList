@@ -162,7 +162,7 @@ function displayData(data, numDates = 3) {
 
 // 驗證 URL 函數
 function isValidUrl(url) {
-    const trustedDomains = ['yourtrusteddomain.com', 'anothertrusted.com']; // 受信任的域名
+    const trustedDomains = ['www.youtube.com', 'youtu.be']; // 受信任的 YouTube 域名
     try {
         const parsedUrl = new URL(url);
         return trustedDomains.includes(parsedUrl.hostname);
