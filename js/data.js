@@ -46,22 +46,22 @@ export function fetchData(callback) {
         .catch(error => console.error('Error fetching data:', error));
 }
 
-export function fetchAndDisplayData(query, rowsToDisplay = 50, numDates = 3) {
+export function fetchAndDisplayData(query, numDates = 3) {
     const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
     songTableBody.innerHTML = '';
 
     let filteredData;
     if (query === '') {
-        filteredData = allData.slice(0, rowsToDisplay); // 顯示部分表單
+        filteredData = allData; // 顯示全部表單
     } else {
         filteredData = allData.filter(row =>
-            normalizeString(row.song_name).includes(query.toLowerCase()) ||
-            normalizeString(row.artist).includes(query.toLowerCase()) ||
-            normalizeString(row.source).includes(query.toLowerCase())
-        ).slice(0, rowsToDisplay);
+            normalizeString(row.song_name).toLowerCase().includes(query) ||
+            normalizeString(row.artist).toLowerCase().includes(query) ||
+            (row.source && normalizeString(row.source).toLowerCase().includes(query))
+        );
     }
 
-    displayData(filteredData, numDates); // 顯示前三個日期列
+    displayData(filteredData, numDates);
 }
 
 function displayData(data, numDates = 3) {
@@ -80,7 +80,7 @@ function displayData(data, numDates = 3) {
         newRow.insertCell().textContent = row.song_name.charAt(0).toUpperCase();
         newRow.insertCell().textContent = row.song_name;
         newRow.insertCell().textContent = row.artist;
-        newRow.insertCell().textContent = row.source;
+        newRow.insertCell().textContent = row.source || '-';
 
         // 生成日期儲存格
         for (let i = 0; i < numDates; i++) {
