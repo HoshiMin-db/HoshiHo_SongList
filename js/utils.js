@@ -1,4 +1,4 @@
-// js/utils.js
+// utils.js
 export function debounce(func, wait) {
     let timeout;
     return function() {
@@ -9,7 +9,7 @@ export function debounce(func, wait) {
 }
 
 export function normalizeString(str) {
-    return str.normalize('NFKC').replace(/[~〜～]/g, '~');
+    return str.normalize('NFKC').replace(/[~\u301c\uff5e]/g, '~');
 }
 
 export function sortTable() {
@@ -18,7 +18,7 @@ export function sortTable() {
 
     rows.sort((a, b) => {
         const aText = a.cells[1].textContent;
-        const bText = b.cells[1].textContent;
+        const bText = a.cells[1].textContent;
         return aText.localeCompare(bText, 'ja-JP');
     });
 
