@@ -86,7 +86,7 @@ function displayData(data, numDates = 3) {
         for (let i = 0; i < numDates; i++) {
             const dateCell = newRow.insertCell();
             dateCell.classList.add('date-cell');
-            if (row.dates && i < row.dates.length) {
+            if (row.dates && Array.isArray(row.dates) && i < row.dates.length) {
                 const dateRow = row.dates[i];
                 const link = document.createElement('a');
                 const date = dateRow.date;
@@ -120,7 +120,7 @@ function displayData(data, numDates = 3) {
         }
 
         // 添加 "..." 按鈕如果有更多日期
-        if (row.dates && row.dates.length > numDates) {
+        if (row.dates && Array.isArray(row.dates) && row.dates.length > numDates) {
             const moreButton = document.createElement('button');
             moreButton.textContent = '...';
             moreButton.onclick = () => {
