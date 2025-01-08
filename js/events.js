@@ -21,9 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
         console.error("virtualScrollContainer element not found");
     }
-
-    // 頁面加載時顯示全部表單
-    fetchAndDisplayData('');
 });
 
 function onScroll() {
