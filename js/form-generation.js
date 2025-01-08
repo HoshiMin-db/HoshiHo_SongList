@@ -22,7 +22,7 @@ function sortTable() {
 
     rows.sort((a, b) => {
         const aText = a.cells[1].textContent;
-        const bText = a.cells[1].textContent;
+        const bText = b.cells[1].textContent;
         return aText.localeCompare(bText, 'ja-JP');
     });
 
@@ -97,93 +97,102 @@ function displayData(data, numDates = 3) {
     const groupedData = data.reduce((acc, row) => {
         const key = `${normalizeString(row.song_name)}-${normalizeString(row.artist)}`;
         if (!acc[key]) {
-            acc[key] = [];
+            acc[key] = {
+                ...row,
+                dates: []
+            };
         }
-        acc[key].push(row);
+        acc[key].dates.push(...(row.dates || []));
         return acc;
     }, {});
 
     Object.values(groupedData).forEach(group => {
-        group.sort((a, b) => new Date(b.date.substring(0, 4) + '-' + b.date.substring(4, 6) + '-' + b.date.substring(6))
-            - new Date(a.date.substring(0, 4) + '-' + a.date.substring(4, 6) + '-' + a.date.substring(6)));
+        group.dates.sort((a, b) => new Date(b.date) - new Date(a.date));
     });
 
-    Object.entries(groupedData).forEach(([key, rows]) => {
+    Object.entries(groupedData).forEach(([key, row]) => {
         const newRow = songTableBody.insertRow();
-        newRow.insertCell().textContent = rows[0].song_name.charAt(0).toUpperCase();
-        newRow.insertCell().textContent = rows[0].song_name;
-        newRow.insertCell().textContent = rows[0].artist;
-        newRow.insertCell().textContent = rows[0].source;
+        newRow.insertCell().textContent = row.song_name.charAt(0).toUpperCase();
+        newRow.insertCell().textContent = row.song_name;
+        newRow.insertCell().textContent = row.artist;
+        newRow.insertCell().textContent = row.source || '-';
 
         // 生成日期儲存格
-        rows.slice(0, numDates).forEach(row => {
-            const dateCell = newRow.insertCell();
-            dateCell.classList.add('date-cell');
-            const link = document.createElement('a');
-            const date = row.date;
-            const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
-            link.href = row.link;
-            link.textContent = formattedDate;
-            link.target = '_blank';
-            link.onclick = function(event) {
-                event.preventDefault();
-                safeRedirect(link.href);
-            };
-            dateCell.appendChild(link);
-
-            if (row.is_member_exclusive) {
-                const lockIcon = document.createElement('span');
-                lockIcon.classList.add('lock-icon');
-                lockIcon.textContent = '🔒';
-                link.appendChild(lockIcon);
-            }
-            if (row.is_acapella) {
-                dateCell.classList.add('acapella');
-            }
-        });
-
-        // 如果有更多日期，添加 "..." 按鈕
-        if (rows.length > numDates) {
-            const moreButton = document.createElement('button');
-            moreButton.textContent = '...';
-            moreButton.onclick = () => {
-                const isExpanded = moreButton.getAttribute('data-expanded') === 'true';
-                if (isExpanded) {
-                    // 折疊日期
-                    const toRemove = newRow.querySelectorAll('.extra-date');
-                    toRemove.forEach(el => el.remove());
-                    moreButton.setAttribute('data-expanded', 'false');
-                } else {
-                    // 展開日期
-                    rows.slice(numDates).forEach(date => {
-                        const dateCell = newRow.insertCell();
-                        dateCell.classList.add('extra-date');
-                        const link = document.createElement('a');
-                        const formattedDate = `${date.date.substring(6, 8)}/${date.date.substring(4, 6)}/${date.date.substring(0, 4)}`;
-                        link.href = date.link;
-                        link.textContent = formattedDate;
-                        link.target = '_blank';
-                        link.onclick = function(event) {
-                            event.preventDefault();
-                            safeRedirect(link.href);
-                        };
-                        dateCell.appendChild(link);
-
-                        if (date.is_member_exclusive) {
-                            const lockIcon = document.createElement('span');
-                            lockIcon.classList.add('lock-icon');
-                            lockIcon.textContent = '🔒';
-                            link.appendChild(lockIcon);
-                        }
-                        if (date.is_acapella) {
-                            dateCell.classList.add('acapella');
-                        }
-                    });
-                    moreButton.setAttribute('data-expanded', 'true');
+        const dateCell = newRow.insertCell();
+        dateCell.classList.add('date-cell');
+        if (row.dates && Array.isArray(row.dates)) {
+            row.dates.slice(0, numDates).forEach((date, index) => {
+                const link = document.createElement('a');
+                const formattedDate = `${date.date.substring(6, 8)}/${date.date.substring(4, 6)}/${date.date.substring(0, 4)}`;
+                link.href = date.link;
+                link.textContent = formattedDate;
+                link.target = '_blank';
+                link.onclick = function(event) {
+                    event.preventDefault();
+                    safeRedirect(link.href);
+                };
+                if (index > 0) {
+                    dateCell.appendChild(document.createTextNode(', '));
                 }
-            };
-            const moreButtonCell = newRow.insertCell();
-            moreButtonCell.appendChild(moreButton);
+                dateCell.appendChild(link);
+
+                if (date.is_member_exclusive) {
+                    const lockIcon = document.createElement('span');
+                    lockIcon.classList.add('lock-icon');
+                    lockIcon.textContent = '🔒';
+                    link.appendChild(lockIcon);
+                }
+                if (date.is_acapella) {
+                    dateCell.classList.add('acapella');
+                }
+            });
+
+            // 添加 "..." 按鈕，如果有更多日期
+            if (row.dates.length > numDates) {
+                const moreButton = document.createElement('button');
+                moreButton.textContent = '...';
+                moreButton.onclick = () => {
+                    const isExpanded = moreButton.getAttribute('data-expanded') === 'true';
+                    if (isExpanded) {
+                        // 折疊日期
+                        const toRemove = dateCell.querySelectorAll('.extra-date');
+                        toRemove.forEach(el => el.remove());
+                        moreButton.setAttribute('data-expanded', 'false');
+                    } else {
+                        // 展開日期
+                        row.dates.slice(numDates).forEach((date, index) => {
+                            const link = document.createElement('a');
+                            const formattedDate = `${date.date.substring(6, 8)}/${date.date.substring(4, 6)}/${date.date.substring(0, 4)}`;
+                            link.href = date.link;
+                            link.textContent = formattedDate;
+                            link.target = '_blank';
+                            link.onclick = function(event) {
+                                event.preventDefault();
+                                safeRedirect(link.href);
+                            };
+                            const span = document.createElement('span');
+                            span.classList.add('extra-date');
+                            span.appendChild(document.createTextNode(', '));
+                            span.appendChild(link);
+                            dateCell.appendChild(span);
+
+                            if (date.is_member_exclusive) {
+                                const lockIcon = document.createElement('span');
+                                lockIcon.classList.add('lock-icon');
+                                lockIcon.textContent = '🔒';
+                                link.appendChild(lockIcon);
+                            }
+                            if (date.is_acapella) {
+                                span.classList.add('acapella');
+                            }
+                        });
+                        moreButton.setAttribute('data-expanded', 'true');
+                    }
+                };
+                dateCell.appendChild(moreButton);
+            }
+        } else {
+            dateCell.textContent = '-';
         }
     });
 
