@@ -27,18 +27,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function onScroll() {
     const virtualScrollContainer = document.getElementById('virtualScrollContainer');
-    const virtualScrollContent = document.getElementById('virtualScrollContent');
-
+    
     // 計算可視區域的範圍
     const rowHeight = 20;  // 假設每行的高度為20像素
     const visibleRowCount = Math.floor(virtualScrollContainer.clientHeight / rowHeight);
     const startIdx = Math.floor(virtualScrollContainer.scrollTop / rowHeight);
     const endIdx = Math.min(startIdx + visibleRowCount, allData.length);
-
+    
     // 清空當前顯示的內容
     const tbody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
     tbody.innerHTML = '';
-
+    
     // 渲染可視區域內的數據
     for (let i = startIdx; i < endIdx; i++) {
         const row = allData[i];
@@ -46,7 +45,7 @@ function onScroll() {
         newRow.insertCell().textContent = row.song_name.charAt(0).toUpperCase();
         newRow.insertCell().textContent = row.song_name;
         newRow.insertCell().textContent = row.artist;
-        newRow.insertCell().textContent = row.source || '-';
+        newRow.insertCell().textContent = row.source;
 
         // 檢查 row.dates 是否存在且為陣列
         if (Array.isArray(row.dates)) {
@@ -62,6 +61,7 @@ function onScroll() {
                     openFloatingPlayer(link.href);
                 };
                 dateCell.appendChild(link);
+
                 if (date.is_member_exclusive) {
                     const lockIcon = document.createElement('span');
                     lockIcon.classList.add('lock-icon');
