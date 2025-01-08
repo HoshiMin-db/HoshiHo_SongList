@@ -19,22 +19,31 @@ export function fetchData(callback) {
         .catch(error => console.error('Error fetching data:', error));
 }
 
-export function fetchAndDisplayData(query, rowsToDisplay = 50, numDates = 3) {
+export function fetchAndDisplayData(query, numDates = 3) {
     const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
     songTableBody.innerHTML = '';
 
     let filteredData;
     if (query === '') {
-        filteredData = allData.slice(0, rowsToDisplay); // 顯示部分表單
+        filteredData = allData; // 顯示全部表單
     } else {
         filteredData = allData.filter(row =>
             normalizeString(row.song_name).toLowerCase().includes(query) ||
             normalizeString(row.artist).toLowerCase().includes(query) ||
             normalizeString(row.source).toLowerCase().includes(query)
-        ).slice(0, rowsToDisplay);
+        );
     }
 
-    displayData(filteredData, numDates); // 顯示前三個日期列
+    const replaceSongs = {
+        'rorikami': '粛聖‼ ロリ神レクイエム☆'
+    };
+    filteredData.forEach(row => {
+        if (replaceSongs[row.song_name]) {
+            row.song_name = replaceSongs[row.song_name];
+        }
+    });
+
+    displayData(filteredData, numDates);
 }
 
 function displayData(data, numDates = 3) {
@@ -148,11 +157,10 @@ function displayData(data, numDates = 3) {
                     });
                     moreButton.setAttribute('data-expanded', 'true');
                     // 調整 colspan
-                    dateHeader.colSpan = rows.length + 1; // +1 因為多了一个 "..." 按鈕
+                    dateHeader.colSpan = rows.length;
                 }
             };
             const moreCell = newRow.insertCell();
-            moreCell.classList.add('date-cell'); // 確保 "..." 按鈕也屬於日期欄
             moreCell.appendChild(moreButton);
         }
     });
