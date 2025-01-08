@@ -4,17 +4,6 @@ import { normalizeString, sortTable } from './utils.js';
 export let allData = [];
 let totalSongCount = 0;
 
-// 驗證 URL 函數
-function isValidUrl(url) {
-    const trustedDomains = ['www.youtube.com', 'youtu.be']; // 受信任的 YouTube 域名
-    try {
-        const parsedUrl = new URL(url);
-        return trustedDomains.includes(parsedUrl.hostname);
-    } catch (e) {
-        return false;
-    }
-}
-
 export function fetchData(callback) {
     fetch('data.json', { cache: 'no-cache' })
         .then(response => response.json())
@@ -44,15 +33,6 @@ export function fetchAndDisplayData(query, numDates = 3) {
             normalizeString(row.source).toLowerCase().includes(query)
         );
     }
-
-    const replaceSongs = {
-        'rorikami': '粛聖‼ ロリ神レクイエム☆'
-    };
-    filteredData.forEach(row => {
-        if (replaceSongs[row.song_name]) {
-            row.song_name = replaceSongs[row.song_name];
-        }
-    });
 
     displayData(filteredData, numDates);
 }
@@ -178,4 +158,15 @@ function displayData(data, numDates = 3) {
     });
 
     sortTable();
+}
+
+// 驗證 URL 函數
+function isValidUrl(url) {
+    const trustedDomains = ['www.youtube.com', 'youtu.be']; // 受信任的 YouTube 域名
+    try {
+        const parsedUrl = new URL(url);
+        return trustedDomains.includes(parsedUrl.hostname);
+    } catch (e) {
+        return false;
+    }
 }
