@@ -1,6 +1,6 @@
 // events.js
 import { debounce, normalizeString } from './utils.js';
-import { fetchAndDisplayData, fetchData, allData } from './data.js';
+import { fetchAndDisplayData, fetchData, allData, displayData } from './data.js';
 
 document.addEventListener("DOMContentLoaded", function() {
     const searchInput = document.getElementById('searchInput');
