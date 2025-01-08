@@ -1,6 +1,33 @@
 // data.js
-import { normalizeString, sortTable } from './utils.js';
 
+// Utils functions
+export function debounce(func, wait) {
+    let timeout;
+    return function() {
+        const context = this, args = arguments;
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(context, args), wait);
+    };
+}
+
+export function normalizeString(str) {
+    return str.normalize('NFKC').replace(/[~\u301c\uff5e]/g, '~').toLowerCase();
+}
+
+export function sortTable() {
+    const table = document.getElementById('songTable');
+    const rows = Array.from(table.getElementsByTagName('tbody')[0].rows);
+
+    rows.sort((a, b) => {
+        const aText = a.cells[1].textContent;
+        const bText = b.cells[1].textContent;
+        return aText.localeCompare(bText, 'ja-JP');
+    });
+
+    rows.forEach(row => table.getElementsByTagName('tbody')[0].appendChild(row));
+}
+
+// Data handling functions
 let allData = [];
 let totalSongCount = 0;
 
@@ -28,9 +55,9 @@ export function fetchAndDisplayData(query, rowsToDisplay = 50, numDates = 3) {
         filteredData = allData.slice(0, rowsToDisplay); // 顯示部分表單
     } else {
         filteredData = allData.filter(row =>
-            normalizeString(row.song_name).toLowerCase().includes(query.toLowerCase()) ||
-            normalizeString(row.artist).toLowerCase().includes(query.toLowerCase()) ||
-            normalizeString(row.source).toLowerCase().includes(query.toLowerCase())
+            normalizeString(row.song_name).includes(query.toLowerCase()) ||
+            normalizeString(row.artist).includes(query.toLowerCase()) ||
+            normalizeString(row.source).includes(query.toLowerCase())
         ).slice(0, rowsToDisplay);
     }
 
