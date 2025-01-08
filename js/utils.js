@@ -9,7 +9,7 @@ export function debounce(func, wait) {
 }
 
 export function normalizeString(str) {
-    return str.normalize('NFKC').replace(/[~\u301c\uff5e]/g, '~');
+    return str.normalize('NFKC').replace(/[~\u301c\uff5e]/g, '~').toLowerCase();
 }
 
 export function sortTable() {
