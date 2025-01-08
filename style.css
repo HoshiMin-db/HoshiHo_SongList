@@ -235,3 +235,24 @@ table thead th {
 td:nth-child(5), th:nth-child(5) {
     display: none;
 }
+
+/* 新增虛擬滾動樣式 */
+#virtualScrollContainer {
+    height: 100vh;
+    overflow-y: auto;
+}
+
+#virtualScrollContent {
+    padding: 16px;
+}
+
+.song-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+}
+
+.song-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
