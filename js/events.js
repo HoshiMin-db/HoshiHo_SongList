@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
     fetchData(() => fetchAndDisplayData(''));
 });
 
-function onScroll() {
+export function onScroll() {
     const virtualScrollContainer = document.getElementById('virtualScrollContainer');
     
     // 計算可視區域的範圍
