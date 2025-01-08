@@ -75,37 +75,23 @@ function displayData(data, numDates = 3) {
     // 按曲名（日文順序）排序
     data.sort((a, b) => normalizeString(a.song_name).localeCompare(normalizeString(b.song_name), 'ja'));
 
-    const groupedData = data.reduce((acc, row) => {
-        const key = `${normalizeString(row.song_name)}-${normalizeString(row.artist)}`;
-        if (!acc[key]) {
-            acc[key] = [];
-        }
-        acc[key].push(row);
-        return acc;
-    }, {});
-
-    Object.values(groupedData).forEach(group => {
-        group.sort((a, b) => new Date(b.date.substring(0, 4) + '-' + b.date.substring(4, 6) + '-' + b.date.substring(6))
-            - new Date(a.date.substring(0, 4) + '-' + a.date.substring(4, 6) + '-' + a.date.substring(6)));
-    });
-
-    Object.entries(groupedData).forEach(([key, rows]) => {
+    data.forEach(row => {
         const newRow = songTableBody.insertRow();
-        newRow.insertCell().textContent = rows[0].song_name.charAt(0).toUpperCase();
-        newRow.insertCell().textContent = rows[0].song_name;
-        newRow.insertCell().textContent = rows[0].artist;
-        newRow.insertCell().textContent = rows[0].source;
+        newRow.insertCell().textContent = row.song_name.charAt(0).toUpperCase();
+        newRow.insertCell().textContent = row.song_name;
+        newRow.insertCell().textContent = row.artist;
+        newRow.insertCell().textContent = row.source;
 
         // 生成日期儲存格
         for (let i = 0; i < numDates; i++) {
             const dateCell = newRow.insertCell();
             dateCell.classList.add('date-cell');
-            if (i < rows.length) {
-                const row = rows[i];
+            if (i < row.dates.length) {
+                const dateRow = row.dates[i];
                 const link = document.createElement('a');
-                const date = row.date;
+                const date = dateRow.date;
                 const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
-                link.href = row.link;
+                link.href = dateRow.link;
                 link.textContent = formattedDate;
                 link.target = '_blank';
                 link.onclick = function(event) {
@@ -119,13 +105,13 @@ function displayData(data, numDates = 3) {
                 };
                 dateCell.appendChild(link);
 
-                if (row.is_member_exclusive) {
+                if (dateRow.is_member_exclusive) {
                     const lockIcon = document.createElement('span');
                     lockIcon.classList.add('lock-icon');
                     lockIcon.textContent = '🔒';
                     link.appendChild(lockIcon);
                 }
-                if (row.is_acapella) {
+                if (dateRow.is_acapella) {
                     dateCell.classList.add('acapella');
                 }
             } else {
@@ -134,7 +120,7 @@ function displayData(data, numDates = 3) {
         }
 
         // 添加 "..." 按鈕如果有更多日期
-        if (rows.length > numDates) {
+        if (row.dates.length > numDates) {
             const moreButton = document.createElement('button');
             moreButton.textContent = '...';
             moreButton.onclick = () => {
@@ -148,13 +134,13 @@ function displayData(data, numDates = 3) {
                     dateHeader.colSpan = initialColspan;
                 } else {
                     // 展開日期
-                    rows.slice(numDates).forEach((row, index) => {
+                    row.dates.slice(numDates).forEach((dateRow, index) => {
                         const dateCell = newRow.insertCell();
                         dateCell.classList.add('date-cell', 'extra-date');
                         const link = document.createElement('a');
-                        const date = row.date;
+                        const date = dateRow.date;
                         const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
-                        link.href = row.link;
+                        link.href = dateRow.link;
                         link.textContent = formattedDate;
                         link.target = '_blank';
                         link.onclick = function(event) {
@@ -168,19 +154,19 @@ function displayData(data, numDates = 3) {
                         };
                         dateCell.appendChild(link);
 
-                        if (row.is_member_exclusive) {
+                        if (dateRow.is_member_exclusive) {
                             const lockIcon = document.createElement('span');
                             lockIcon.classList.add('lock-icon');
                             lockIcon.textContent = '🔒';
                             link.appendChild(lockIcon);
                         }
-                        if (row.is_acapella) {
+                        if (dateRow.is_acapella) {
                             dateCell.classList.add('acapella');
                         }
                     });
                     moreButton.setAttribute('data-expanded', 'true');
                     // 調整 colspan
-                    dateHeader.colSpan = rows.length + 1; // +1 因為多了一个 "..." 按鈕
+                    dateHeader.colSpan = row.dates.length + 1; // +1 因為多了一个 "..." 按鈕
                 }
             };
             const moreCell = newRow.insertCell();
