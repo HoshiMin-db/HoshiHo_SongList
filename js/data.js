@@ -1,7 +1,7 @@
 // data.js
 import { normalizeString, sortTable } from './utils.js';
 
-let allData = [];
+export let allData = [];
 let totalSongCount = 0;
 
 // 驗證 URL 函數
