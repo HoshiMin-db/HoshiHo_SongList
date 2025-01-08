@@ -28,7 +28,7 @@ export function sortTable() {
 }
 
 // Data handling functions
-let allData = [];
+export let allData = [];
 let totalSongCount = 0;
 
 export function fetchData(callback) {
