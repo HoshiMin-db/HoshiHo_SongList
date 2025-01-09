@@ -57,11 +57,12 @@ document.addEventListener("DOMContentLoaded", function() {
         );
         displayData(filteredData);
     }
-
-    searchInput.addEventListener('input', function(e) {
+    
+    // 使用防抖函數來處理搜尋輸入事件
+    searchInput.addEventListener('input', debounce(function(e) { 
         const query = normalizeString(e.target.value.toLowerCase());
         fetchData(data => fetchAndDisplayData(query, data));
-    });
+    }, 300)); // 設置防抖延遲時間為300毫秒
 
     function displayData(data, numDates = 3) {
         const groupedData = data.reduce((acc, row) => {
