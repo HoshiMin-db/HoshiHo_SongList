@@ -1,3 +1,34 @@
+// form-generation.js
+
+// 防抖函數，用於限制函數的觸發頻率
+function debounce(func, wait) {
+    let timeout;
+    return function() {
+        const context = this, args = arguments;
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(context, args), wait);
+    };
+}
+
+// 引用 youtube-player.js 中的功能
+document.addEventListener("DOMContentLoaded", function() {
+    window.closeFloatingPlayer = closeFloatingPlayer;
+    window.openFloatingPlayer = openFloatingPlayer;
+});
+
+// 字符串規範化函數，用於處理不同的字符串格式
+function normalizeString(str) {
+    if (!str) return ''; // 檢查空或未定義的字符串
+    return str.normalize('NFKC') // 將字符串規範化為 NFKC 形式
+              .replace(/[~\u301c\uff5e]/g, '~') // 將全形和半形波浪號替換為半形波浪號
+              .replace(/，/g, ',') // 將全形逗號替換為半形逗號
+              .replace(/。/g, '.') // 將全形句號替換為半形句號
+              .replace(/[‘’]/g, "'") // 將全形引號替換為半形引號
+              .replace(/…/g, '...') // 將全形省略號替換為半形省略號
+              .replace(/\s+/g, '') // 忽略所有空格
+              .toLowerCase(); // 將字符串轉換為小寫形式
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     const searchInput = document.getElementById('searchInput');
     const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
