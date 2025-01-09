@@ -45,8 +45,12 @@ def load_exceptions(exceptions_file):
                         acapella_songs[date][artist] = set()
                     acapella_songs[date][artist].add(song_name)
             elif parts[0] == 'copyright':
-                song_name, artist = parts[1], parts[2]
-                copyright_songs.add((song_name, artist))
+                if len(parts) == 3:
+                    song_name, artist = parts[1], parts[2]
+                    copyright_songs.add((song_name, artist))
+                elif len(parts) == 2:
+                    song_name = parts[1]
+                    copyright_songs.add((song_name, None))
 
     return member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist, copyright_songs
 
@@ -79,7 +83,7 @@ def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs
                         (song_name in global_acapella_songs) or
                         (artist in acapella_songs_with_artist and song_name in acapella_songs_with_artist[artist])
                     )
-                    is_copyright = (song_name, artist) in copyright_songs
+                    is_copyright = (song_name, artist) in copyright_songs or (song_name, None) in copyright_songs
                     data.append({
                         'date': date_str,
                         'time': time_str,
@@ -120,7 +124,7 @@ def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs
                             (song_name in global_acapella_songs) or
                             (artist in acapella_songs_with_artist and song_name in acapella_songs_with_artist[artist])
                         )
-                        is_copyright = (song_name, artist) in copyright_songs
+                        is_copyright = (song_name, artist) in copyright_songs or (song_name, None) in copyright_songs
                         data.append({
                             'date': date_str,
                             'time': time_str,
