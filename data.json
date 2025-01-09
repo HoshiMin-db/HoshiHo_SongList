@@ -4133,7 +4133,7 @@
         "link": "https://www.youtube.com/watch?v=pdTvRavUxVQ&t=9148s",
         "is_member_exclusive": false,
         "is_acapella": false,
-        "is_copyright": false
+        "is_copyright": true
     },
     {
         "date": "20240413",
@@ -6894,7 +6894,7 @@
         "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=10933s",
         "is_member_exclusive": false,
         "is_acapella": false,
-        "is_copyright": false
+        "is_copyright": true
     },
     {
         "date": "20240511",
@@ -12944,7 +12944,7 @@
         "link": "https://www.youtube.com/watch?v=70E6Ns3_THo&t=7092s",
         "is_member_exclusive": false,
         "is_acapella": false,
-        "is_copyright": false
+        "is_copyright": true
     },
     {
         "date": "20240202",
@@ -13318,7 +13318,7 @@
         "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=2034s",
         "is_member_exclusive": false,
         "is_acapella": false,
-        "is_copyright": false
+        "is_copyright": true
     },
     {
         "date": "20241228",
