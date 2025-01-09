@@ -224,51 +224,8 @@ function displayData(data, numDates = 3) {
     });
 }
 
-// 打開浮動播放器
-function openFloatingPlayer(link) {
-    if (isValidUrl(link)) {
-        const floatingPlayer = document.getElementById('floatingPlayer');
-        floatingPlayer.src = link;
-        document.getElementById('floatingPlayerContainer').style.display = 'block';
-    } else {
-        console.error('Invalid link for floating player');
-    }
-}
-
-// 關閉浮動播放器
-function closeFloatingPlayer() {
-    const floatingPlayer = document.getElementById('floatingPlayer');
-    floatingPlayer.src = '';
-    document.getElementById('floatingPlayerContainer').style.display = 'none';
-}
-
-// 客戶端 URL 重定向保護
-function safeRedirect(url) {
-    // 允許的 YouTube 網域列表
-    const allowedDomains = [
-        'www.youtube.com',
-        'youtu.be'
-    ];
-
-    try {
-        const parsedUrl = new URL(url);
-        // 檢查 URL 是否符合允許的網域
-        if (allowedDomains.includes(parsedUrl.hostname)) {
-            window.location.href = url;
-        } else {
-            console.error('Invalid redirect URL');
-        }
-    } catch (e) {
-        console.error('Invalid URL format', e);
-    }
-}
-
-// 檢查 URL 是否有效
-function isValidUrl(url) {
-    try {
-        new URL(url);
-        return true;
-    } catch (e) {
-        return false;
-    }
-}
+// 引用 youtube-player.js 中的功能
+document.addEventListener("DOMContentLoaded", function() {
+    window.closeFloatingPlayer = closeFloatingPlayer;
+    window.openFloatingPlayer = openFloatingPlayer;
+});
