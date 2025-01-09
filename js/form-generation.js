@@ -16,17 +16,10 @@ function normalizeString(str) {
 }
 
 // 根據歌曲名稱對表格進行排序
-function sortTable() {
-    const table = document.getElementById('songTable');
-    const rows = Array.from(table.getElementsByTagName('tbody')[0].rows);
-
-    rows.sort((a, b) => {
-        const aText = a.cells[1].textContent;
-        const bText = b.cells[1].textContent;
-        return aText.localeCompare(bText, 'ja-JP');
+function sortTable(data) {
+    return data.sort((a, b) => {
+        return normalizeString(a.song_name).localeCompare(normalizeString(b.song_name), 'ja-JP');
     });
-
-    rows.forEach(row => table.getElementsByTagName('tbody')[0].appendChild(row));
 }
 
 let allData = [];
@@ -47,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const virtualScrollContainer = document.getElementById('virtualScrollContainer');
     if (virtualScrollContainer) {
-        virtualScrollContainer.addEventListener('scroll', onScroll);
+        virtualScrollContainer.addEventListener('scroll', debounce(onScroll, 100));
     } else {
         console.error("virtualScrollContainer element not found");
     }
@@ -110,7 +103,9 @@ function displayData(data, numDates = 3) {
         group.dates.sort((a, b) => new Date(b.date) - new Date(a.date));
     });
 
-    Object.entries(groupedData).forEach(([key, row]) => {
+    const sortedData = sortTable(Object.values(groupedData));
+
+    sortedData.forEach(row => {
         const newRow = songTableBody.insertRow();
         newRow.insertCell().textContent = row.song_name.charAt(0).toUpperCase();
         newRow.insertCell().textContent = row.song_name;
@@ -118,10 +113,10 @@ function displayData(data, numDates = 3) {
         newRow.insertCell().textContent = row.source || '-';
 
         // 生成日期儲存格
-        const dateCell = newRow.insertCell();
-        dateCell.classList.add('date-cell');
         if (row.dates && Array.isArray(row.dates)) {
-            row.dates.slice(0, numDates).forEach((date, index) => {
+            row.dates.slice(0, numDates).forEach(date => {
+                const dateCell = newRow.insertCell();
+                dateCell.classList.add('date-cell');
                 const link = document.createElement('a');
                 const formattedDate = `${date.date.substring(6, 8)}/${date.date.substring(4, 6)}/${date.date.substring(0, 4)}`;
                 link.href = date.link;
@@ -131,9 +126,6 @@ function displayData(data, numDates = 3) {
                     event.preventDefault();
                     safeRedirect(link.href);
                 };
-                if (index > 0) {
-                    dateCell.appendChild(document.createTextNode(', '));
-                }
                 dateCell.appendChild(link);
 
                 if (date.is_member_exclusive) {
@@ -147,7 +139,7 @@ function displayData(data, numDates = 3) {
                 }
             });
 
-            // 添加 "..." 按鈕，如果有更多日期
+            // 如果有更多日期，添加 "..." 按鈕
             if (row.dates.length > numDates) {
                 const moreButton = document.createElement('button');
                 moreButton.textContent = '...';
@@ -155,12 +147,14 @@ function displayData(data, numDates = 3) {
                     const isExpanded = moreButton.getAttribute('data-expanded') === 'true';
                     if (isExpanded) {
                         // 折疊日期
-                        const toRemove = dateCell.querySelectorAll('.extra-date');
+                        const toRemove = newRow.querySelectorAll('.extra-date');
                         toRemove.forEach(el => el.remove());
                         moreButton.setAttribute('data-expanded', 'false');
                     } else {
                         // 展開日期
-                        row.dates.slice(numDates).forEach((date, index) => {
+                        row.dates.slice(numDates).forEach(date => {
+                            const dateCell = newRow.insertCell();
+                            dateCell.classList.add('extra-date');
                             const link = document.createElement('a');
                             const formattedDate = `${date.date.substring(6, 8)}/${date.date.substring(4, 6)}/${date.date.substring(0, 4)}`;
                             link.href = date.link;
@@ -170,11 +164,7 @@ function displayData(data, numDates = 3) {
                                 event.preventDefault();
                                 safeRedirect(link.href);
                             };
-                            const span = document.createElement('span');
-                            span.classList.add('extra-date');
-                            span.appendChild(document.createTextNode(', '));
-                            span.appendChild(link);
-                            dateCell.appendChild(span);
+                            dateCell.appendChild(link);
 
                             if (date.is_member_exclusive) {
                                 const lockIcon = document.createElement('span');
@@ -183,20 +173,20 @@ function displayData(data, numDates = 3) {
                                 link.appendChild(lockIcon);
                             }
                             if (date.is_acapella) {
-                                span.classList.add('acapella');
+                                dateCell.classList.add('acapella');
                             }
                         });
                         moreButton.setAttribute('data-expanded', 'true');
                     }
                 };
-                dateCell.appendChild(moreButton);
+                const moreButtonCell = newRow.insertCell();
+                moreButtonCell.appendChild(moreButton);
             }
         } else {
+            const dateCell = newRow.insertCell();
             dateCell.textContent = '-';
         }
     });
-
-    sortTable();
 }
 
 // 虛擬滾動處理函數
