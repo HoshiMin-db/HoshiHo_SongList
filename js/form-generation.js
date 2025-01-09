@@ -1,3 +1,5 @@
+// form-generation.js
+
 // 防抖函數，用於限制函數的觸發頻率
 function debounce(func, wait) {
     let timeout;
@@ -29,6 +31,7 @@ function normalizeString(str) {
 document.addEventListener("DOMContentLoaded", function() {
     const searchInput = document.getElementById('searchInput');
     const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
+    const songTableHead = document.getElementById('songTable').getElementsByTagName('thead')[0];
     let totalSongCount = 0; // 添加總歌曲數變量
 
     function fetchData(callback) {
@@ -136,6 +139,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         const toRemove = newRow.querySelectorAll('.extra-date');
                         toRemove.forEach(el => el.remove());
                         moreButton.setAttribute('data-expanded', 'false');
+                        dateHeaderCell.colSpan = numDates + 1; // 更新表頭欄
                     } else {
                         // 展開額外的日期
                         rows.slice(numDates).forEach(row => {
@@ -165,6 +169,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             }
                         });
                         moreButton.setAttribute('data-expanded', 'true');
+                        dateHeaderCell.colSpan = rows.length + 1; // 更新表頭欄
                     }
                 };
                 moreButtonCell.appendChild(moreButton);
