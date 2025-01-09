@@ -15,4 +15,4 @@ ID = m7yQ0f7qG-E
 13.　02:57:01　エルの楽園 [→ side:E →]  /  Sound Horizon
 14.　03:04:54　エルの絵本【笛吹き男とパレード】 /  Sound Horizon
 15.　03:11:32　魂のルフラン  / 『新世紀エヴァンゲリオン劇場版 シト新生』高橋洋子
-16.　03:19:35　Armonico  /  Armony（歌：ほしほ）
+16.　03:19:35　Armonico  /  Armony
