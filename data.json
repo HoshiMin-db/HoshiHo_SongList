@@ -972,12 +972,12 @@
     {
         "date": "20231216",
         "time": "03:53:32",
-        "song_name": "祈りの彼方| 志方あきこ",
-        "artist": "TALES OF SYMPHONIA THE ANIMATION",
-        "source": "",
+        "song_name": "祈りの彼方",
+        "artist": "志方あきこ",
+        "source": "TALES OF SYMPHONIA THE ANIMATION",
         "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=14012s",
         "is_member_exclusive": true,
-        "is_acapella": false
+        "is_acapella": true
     },
     {
         "date": "20231216",
