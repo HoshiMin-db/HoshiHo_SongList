@@ -103,7 +103,7 @@ function displayData(data, numDates = 3) {
     const groupedData = data.reduce((acc, row) => {
         const key = `${normalizeString(row.song_name)}-${normalizeString(row.artist)}`;
         if (!acc[key]) {
-            acc[key] = {...row, dates: []};
+            acc[key] = {...row, dates: row.dates ? [] : undefined};
         }
         if (row.dates) {
             acc[key].dates.push(...row.dates);
