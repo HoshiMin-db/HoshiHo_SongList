@@ -42,7 +42,7 @@ ID = amLonY7YKrs
 
 03:52:38 | Here | JUNNA | 魔法使いの嫁
 
-04:09:49 | エルの楽園［→ side:E →］ | Sound Horizon
+04:09:49 | エルの楽園 [→ side:E →] | Sound Horizon
 
 04:15:55 | エルの絵本 【笛吹き男とパレード】 | Sound Horizon
 
