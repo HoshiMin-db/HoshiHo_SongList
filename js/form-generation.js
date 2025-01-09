@@ -12,7 +12,13 @@ function debounce(func, wait) {
 
 // 字符串規範化函數，用於處理不同的字符串格式
 function normalizeString(str) {
-    return str.normalize('NFKC').replace(/[~\u301c\uff5e]/g, '~');
+    return str.normalize('NFKC') // 將字符串規範化為 NFKC 形式
+              .replace(/[~\u301c\uff5e]/g, '~') // 將全形和半形波浪號替換為半形波浪號
+              .replace(/，/g, ',') // 將全形逗號替換為半形逗號
+              .replace(/。/g, '.') // 將全形句號替換為半形句號
+              .replace(/[‘’]/g, "'") // 將全形引號替換為半形引號
+              .replace(/…/g, '...') // 將全形省略號替換為半形省略號
+              .toLowerCase(); // 將字符串轉換為小寫形式
 }
 
 // 根據歌曲名稱對表格進行排序
@@ -36,13 +42,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 300));
     } else {
         console.error("searchInput element not found");
-    }
-
-    const virtualScrollContainer = document.getElementById('virtualScrollContainer');
-    if (virtualScrollContainer) {
-        virtualScrollContainer.addEventListener('scroll', debounce(onScroll, 100));
-    } else {
-        console.error("virtualScrollContainer element not found");
     }
 
     // 頁面加載時顯示全部表單
@@ -74,9 +73,9 @@ function fetchAndDisplayData(query, numDates = 3) {
         filteredData = allData; // 顯示全部表單
     } else {
         filteredData = allData.filter(row =>
-            normalizeString(row.song_name).toLowerCase().includes(query) ||
-            normalizeString(row.artist).toLowerCase().includes(query) ||
-            normalizeString(row.source).toLowerCase().includes(query)
+            normalizeString(row.song_name).includes(query) ||
+            normalizeString(row.artist).includes(query) ||
+            normalizeString(row.source).includes(query)
         );
     }
 
@@ -86,6 +85,12 @@ function fetchAndDisplayData(query, numDates = 3) {
 // 顯示數據
 function displayData(data, numDates = 3) {
     const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
+    const songTableHeadRow = document.getElementById('songTable').getElementsByTagName('thead')[0].rows[0];
+
+    // 初始化表頭的 colspan
+    const dateHeaderCell = songTableHeadRow.insertCell(-1);
+    dateHeaderCell.colSpan = numDates + 1; // 預設為 3 個日期列 + 1 個 "..." 按鈕列
+    dateHeaderCell.textContent = "Dates";
 
     const groupedData = data.reduce((acc, row) => {
         const key = `${normalizeString(row.song_name)}-${normalizeString(row.artist)}`;
@@ -150,6 +155,7 @@ function displayData(data, numDates = 3) {
                         const toRemove = newRow.querySelectorAll('.extra-date');
                         toRemove.forEach(el => el.remove());
                         moreButton.setAttribute('data-expanded', 'false');
+                        dateHeaderCell.colSpan = numDates + 1; // 恢復原始 colspan
                     } else {
                         // 展開日期
                         row.dates.slice(numDates).forEach(date => {
@@ -177,6 +183,7 @@ function displayData(data, numDates = 3) {
                             }
                         });
                         moreButton.setAttribute('data-expanded', 'true');
+                        dateHeaderCell.colSpan = row.dates.length + 1; // 動態調整 colspan
                     }
                 };
                 const moreButtonCell = newRow.insertCell();
@@ -185,15 +192,20 @@ function displayData(data, numDates = 3) {
         } else {
             const dateCell = newRow.insertCell();
             dateCell.textContent = '-';
+            dateCell.colSpan = numDates; // 設置 colspan 屬性
         }
     });
 }
 
 // 打開浮動播放器
 function openFloatingPlayer(link) {
-    const floatingPlayer = document.getElementById('floatingPlayer');
-    floatingPlayer.src = link;
-    document.getElementById('floatingPlayerContainer').style.display = 'block';
+    if (isValidUrl(link)) {
+        const floatingPlayer = document.getElementById('floatingPlayer');
+        floatingPlayer.src = link;
+        document.getElementById('floatingPlayerContainer').style.display = 'block';
+    } else {
+        console.error('Invalid link for floating player');
+    }
 }
 
 // 關閉浮動播放器
@@ -207,14 +219,29 @@ function closeFloatingPlayer() {
 function safeRedirect(url) {
     // 允許的 YouTube 網域列表
     const allowedDomains = [
-        'https://www.youtube.com',
-        'https://youtu.be'
+        'www.youtube.com',
+        'youtu.be'
     ];
 
-    // 檢查 URL 是否符合允許的網域
-    if (allowedDomains.some(domain => url.startsWith(domain))) {
-        window.location.href = url;
-    } else {
-        console.error('Invalid redirect URL');
+    try {
+        const parsedUrl = new URL(url);
+        // 檢查 URL 是否符合允許的網域
+        if (allowedDomains.includes(parsedUrl.hostname)) {
+            window.location.href = url;
+        } else {
+            console.error('Invalid redirect URL');
+        }
+    } catch (e) {
+        console.error('Invalid URL format', e);
+    }
+}
+
+// 檢查 URL 是否有效
+function isValidUrl(url) {
+    try {
+        new URL(url);
+        return true;
+    } catch (e) {
+        return false;
     }
 }
