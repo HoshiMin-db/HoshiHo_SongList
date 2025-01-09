@@ -103,17 +103,21 @@ function displayData(data, numDates = 3) {
     const groupedData = data.reduce((acc, row) => {
         const key = `${normalizeString(row.song_name)}-${normalizeString(row.artist)}`;
         if (!acc[key]) {
-            acc[key] = {...row, dates: row.dates ? [] : undefined};
+            acc[key] = [];
         }
-        if (row.dates) {
-            acc[key].dates.push(...row.dates);
-        }
+        acc[key].push(row);
         return acc;
     }, {});
 
+    Object.values(groupedData).forEach(group => {
+        group.sort((a, b) => new Date(b.date.substring(0, 4) + '-' + b.date.substring(4, 6) + '-' + b.date.substring(6)) - 
+                             new Date(a.date.substring(0, 4) + '-' + a.date.substring(4, 6) + '-' + a.date.substring(6)));
+    });
+
     const sortedData = sortTable(Object.values(groupedData));
     
-    sortedData.forEach(row => {
+    sortedData.forEach(group => {
+        const row = group[0];
         const newRow = songTableBody.insertRow();
         
         // 基本欄位
