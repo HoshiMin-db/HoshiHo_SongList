@@ -20,6 +20,7 @@ def load_exceptions(exceptions_file):
     acapella_songs = {}  # 按日期存儲清唱標籤
     global_acapella_songs = set()  # 存儲沒有日期的清唱曲名
     acapella_songs_with_artist = {}  # 存儲有日期和歌手的清唱歌曲
+    copyright_songs = set()  # 存儲帶有版權標記的歌曲
 
     with open(exceptions_file, 'r', encoding='utf-8') as f:
         lines = f.readlines()
@@ -43,10 +44,13 @@ def load_exceptions(exceptions_file):
                     if artist not in acapella_songs[date]:
                         acapella_songs[date][artist] = set()
                     acapella_songs[date][artist].add(song_name)
+            elif parts[0] == 'copyright':
+                song_name, artist = parts[1], parts[2]
+                copyright_songs.add((song_name, artist))
 
-    return member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist
+    return member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist, copyright_songs
 
-def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist):
+def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist, copyright_songs):
     data = []
     with open(file_path, 'r', encoding='utf-8') as f:
         lines = f.readlines()
@@ -75,6 +79,7 @@ def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs
                         (song_name in global_acapella_songs) or
                         (artist in acapella_songs_with_artist and song_name in acapella_songs_with_artist[artist])
                     )
+                    is_copyright = (song_name, artist) in copyright_songs
                     data.append({
                         'date': date_str,
                         'time': time_str,
@@ -83,7 +88,8 @@ def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs
                         'source': source,
                         'link': link,
                         'is_member_exclusive': is_member_exclusive,
-                        'is_acapella': is_acapella
+                        'is_acapella': is_acapella,
+                        'is_copyright': is_copyright
                     })
 
         elif date >= new_rule_date:
@@ -114,6 +120,7 @@ def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs
                             (song_name in global_acapella_songs) or
                             (artist in acapella_songs_with_artist and song_name in acapella_songs_with_artist[artist])
                         )
+                        is_copyright = (song_name, artist) in copyright_songs
                         data.append({
                             'date': date_str,
                             'time': time_str,
@@ -122,7 +129,8 @@ def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs
                             'source': source,
                             'link': link,
                             'is_member_exclusive': is_member_exclusive,
-                            'is_acapella': is_acapella
+                            'is_acapella': is_acapella,
+                            'is_copyright': is_copyright
                         })
                 except Exception as e:
                     print(f"Error processing line '{line.strip()}': {e}")
@@ -135,7 +143,7 @@ def main():
     all_data = []
 
     # 讀取例外規則
-    member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist = load_exceptions(exceptions_file)
+    member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist, copyright_songs = load_exceptions(exceptions_file)
 
     # 遍歷timeline資料夾中的所有文件
     for filename in os.listdir(timeline_dir):
@@ -148,7 +156,7 @@ def main():
             date_str = match.group(1)  # 提取日期部分
 
             try:
-                data = process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist)
+                data = process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist, copyright_songs)
                 all_data.extend(data)
             except Exception as e:
                 print(f"Error processing file {file_path}: {e}")
