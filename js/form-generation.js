@@ -189,25 +189,6 @@ function displayData(data, numDates = 3) {
     });
 }
 
-// 虛擬滾動處理函數
-function onScroll() {
-    const virtualScrollContainer = document.getElementById('virtualScrollContainer');
-    
-    // 計算可視區域的範圍
-    const rowHeight = 20;  // 假設每行的高度為20像素
-    const visibleRowCount = Math.floor(virtualScrollContainer.clientHeight / rowHeight);
-    const startIdx = Math.floor(virtualScrollContainer.scrollTop / rowHeight);
-    const endIdx = Math.min(startIdx + visibleRowCount, allData.length);
-    
-    // 清空當前顯示的內容
-    const tbody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
-    tbody.innerHTML = '';
-    
-    // 渲染可視區域內的數據
-    const visibleData = allData.slice(startIdx, endIdx);
-    displayData(visibleData, 3);
-}
-
 // 打開浮動播放器
 function openFloatingPlayer(link) {
     const floatingPlayer = document.getElementById('floatingPlayer');
