@@ -25,6 +25,7 @@ function normalizeString(str) {
               .replace(/。/g, '.') // 將全形句號替換為半形句號
               .replace(/[‘’]/g, "'") // 將全形引號替換為半形引號
               .replace(/…/g, '...') // 將全形省略號替換為半形省略號
+              .replace(/\s+/g, '') // 忽略所有空格
               .toLowerCase(); // 將字符串轉換為小寫形式
 }
 
@@ -139,6 +140,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         const toRemove = newRow.querySelectorAll('.extra-date');
                         toRemove.forEach(el => el.remove());
                         moreButton.setAttribute('data-expanded', 'false');
+                        const dateHeaderCell = songTableHead.rows[0].cells[4]; // 獲取日期表頭的單元格
                         dateHeaderCell.colSpan = numDates + 1; // 更新表頭欄
                     } else {
                         // 展開額外的日期
@@ -169,6 +171,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             }
                         });
                         moreButton.setAttribute('data-expanded', 'true');
+                        const dateHeaderCell = songTableHead.rows[0].cells[4]; // 獲取日期表頭的單元格
                         dateHeaderCell.colSpan = rows.length + 1; // 更新表頭欄
                     }
                 };
