@@ -6312,10 +6312,20 @@
     {
         "date": "20240511",
         "time": "04:01:55",
-        "song_name": "沈んだ歌姫&海の魔女",
+        "song_name": "沈んだ歌姫",
         "artist": "Sound Horizon",
         "source": "",
         "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=14515s",
+        "is_member_exclusive": false,
+        "is_acapella": false
+    },
+    {
+        "date": "20240511",
+        "time": "04:06:21",
+        "song_name": "海の魔女",
+        "artist": "Sound Horizon",
+        "source": "",
+        "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=14781s",
         "is_member_exclusive": false,
         "is_acapella": false
     },
