@@ -135,6 +135,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 const moreButtonCell = newRow.insertCell();
                 const moreButton = document.createElement('button');
                 moreButton.textContent = '...';
+                moreButton.className = 'more-button';
                 moreButton.onclick = () => {
                     const isExpanded = moreButton.getAttribute('data-expanded') === 'true';
                     const dateHeaderCell = songTableHead.rows[0].cells[4];
