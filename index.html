@@ -8,7 +8,6 @@
     <style>
         .virtual-scroll-container {
             height: 600px;
-            min-height: 200px; /* 設置最小高度 */
             overflow-y: auto;
             position: relative;
         }
@@ -17,14 +16,21 @@
             top: 0;
             left: 0;
             right: 0;
-            min-height: 200px; /* 設置最小高度 */
         }
     </style>
 </head>
 <body>
+    <div>
+        <label for="languageSelect">言語：</label>
+        <select id="languageSelect">
+            <option value="ja">🇯🇵 日本語</option>
+            <option value="en">🇬🇧 English</option>
+            <option value="zh-TW">🇹🇼 中文</option>
+        </select>
+    </div>
     <div class="header">
-        <h1>🌟 HoshiHo歌單 💐</h1>
-        <p>總曲數：<span id="songCount"></span></p>
+        <h1 id="title">🌟 HoshiHo歌單 💐</h1>
+        <p id="totalSongs">總曲數：<span id="songCount"></span></p>
     </div>
 
     <div class="search-container">
@@ -36,10 +42,10 @@
             <table id="songTable">
                 <thead>
                     <tr>
-                        <th>A-Z</th>
-                        <th>曲名</th>
-                        <th>歌手</th>
-                        <th>出典</th>
+                        <th class="az">A-Z</th>
+                        <th class="song-title">曲名</th>
+                        <th class="artist">歌手</th>
+                        <th class="source">出典</th>
                         <th class="date-header" colspan="4">日期</th>
                     </tr>
                 </thead>
@@ -59,5 +65,19 @@
 
     <script src="js/youtube-player.js"></script>
     <script type="module" src="js/form-generation.js"></script>
+    <script type="module">
+        import { initLanguage, onLanguageChange } from './js/page-tl.js';
+
+        document.addEventListener("DOMContentLoaded", function() {
+            // 初始化語言
+            initLanguage();
+
+            // 添加語言切換事件
+            document.getElementById('languageSelect').addEventListener('change', function(event) {
+                const language = event.target.value;
+                onLanguageChange(language);
+            });
+        });
+    </script>
 </body>
 </html>
