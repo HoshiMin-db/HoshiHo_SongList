@@ -135,29 +135,16 @@ a:hover {
     margin-left: 5px;
 }
 
-.button-off {
-    background-color: #d3d3d3;
-    color: #333;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.button-on {
+.more-button {
     background-color: #6a5acd;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 5px 10px;
     cursor: pointer;
     border-radius: 5px;
 }
 
-.button-off:hover {
-    background-color: #c0c0c0;
-}
-
-.button-on:hover {
+.more-button:hover {
     background-color: #5849b8;
 }
 
