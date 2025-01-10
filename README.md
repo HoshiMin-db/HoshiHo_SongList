@@ -11,6 +11,7 @@
   ## /js
   `data` `events` `utils`  分拆失敗的零件  
   `form-generation.js`  Html表單生成  
+  `romaji.js`  日文轉換  
   `youtube-player.js`  Html播放器  
 
 # 鳴謝
