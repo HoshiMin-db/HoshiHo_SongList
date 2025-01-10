@@ -83,8 +83,17 @@ document.addEventListener("DOMContentLoaded", function() {
             const maxRows = Math.min(rows.length, 3);
             const newRow = songTableBody.insertRow();
             
-            newRow.insertCell().textContent = rows[0].song_name.charAt(0).toUpperCase(); 
-            newRow.insertCell().textContent = rows[0].song_name;
+            const initialCell = newRow.insertCell();
+            initialCell.textContent = rows[0].song_name.charAt(0).toUpperCase();
+            
+            const songNameCell = newRow.insertCell();
+            songNameCell.textContent = rows[0].song_name;
+
+            // 檢查是否為版權標記歌曲，並設置字體顏色為紅色
+            if (rows[0].is_copyright) {
+                songNameCell.style.color = 'red';
+            }
+            
             newRow.insertCell().textContent = rows[0].artist;
             newRow.insertCell().textContent = rows[0].source || '';
             
