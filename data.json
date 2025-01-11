@@ -678,7 +678,7 @@
         ]
     },
     {
-        "song_name": "さめないゆめ",
+        "song_name": "さめない夢",
         "artist": "大和田りつこ",
         "source": "赤毛のアン",
         "is_copyright": false,
@@ -687,6 +687,20 @@
                 "date": "20240420",
                 "time": "04:45:25",
                 "link": "https://www.youtube.com/watch?v=xjSFVGe8eAo&t=17125s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20231209",
+                "time": "03:22:28",
+                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=12148s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20231209",
+                "time": "03:22:28",
+                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=12148s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
@@ -14696,28 +14710,6 @@
                 "date": "20231209",
                 "time": "03:06:44",
                 "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=11204s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "さめない夢",
-        "artist": "大和田りつこ",
-        "source": "赤毛のアン",
-        "is_copyright": false,
-        "dates": [
-            {
-                "date": "20231209",
-                "time": "03:22:28",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=12148s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231209",
-                "time": "03:22:28",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=12148s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
