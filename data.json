@@ -69,13 +69,6 @@
                 "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=7113s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231104",
-                "time": "01:58:33",
-                "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=7113s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -253,13 +246,6 @@
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=9391s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "02:36:31",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=9391s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -321,13 +307,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231202",
-                "time": "06:47:05",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=24425s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20250104",
                 "time": "04:23:12",
                 "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=15792s",
@@ -352,13 +331,6 @@
                 "date": "20241130",
                 "time": "03:36:04",
                 "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=12964s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240106",
-                "time": "00:36:01",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=2161s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             },
@@ -457,13 +429,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231202",
-                "time": "07:18:32",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=26312s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240706",
                 "time": "02:28:10",
                 "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=8890s",
@@ -490,13 +455,6 @@
                 "time": "00:42:13",
                 "link": "https://www.youtube.com/watch?v=xjSFVGe8eAo&t=2533s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231202",
-                "time": "07:28:12",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=26892s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -667,13 +625,6 @@
                 "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=11776s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20231209",
-                "time": "03:16:16",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=11776s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -687,13 +638,6 @@
                 "date": "20240420",
                 "time": "04:45:25",
                 "link": "https://www.youtube.com/watch?v=xjSFVGe8eAo&t=17125s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231209",
-                "time": "03:22:28",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=12148s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             },
@@ -842,20 +786,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20240106",
-                "time": "06:41:13",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=24073s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240120",
-                "time": "06:38:15",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=23895s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
                 "date": "20240120",
                 "time": "06:38:15",
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=23895s",
@@ -874,13 +804,6 @@
                 "date": "20240420",
                 "time": "05:34:35",
                 "link": "https://www.youtube.com/watch?v=xjSFVGe8eAo&t=20075s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240106",
-                "time": "06:50:44",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=24644s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             },
@@ -943,13 +866,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231231",
-                "time": "00:40:31",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=2431s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
                 "date": "20240922",
                 "time": "02:07:54",
                 "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=7674s",
@@ -968,13 +884,6 @@
                 "date": "20240420",
                 "time": "06:05:54",
                 "link": "https://www.youtube.com/watch?v=xjSFVGe8eAo&t=21954s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231209",
-                "time": "03:06:43",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=11203s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             },
@@ -1031,20 +940,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231202",
-                "time": "00:11:46",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=706s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231125",
-                "time": "01:08:29",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=4109s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20231125",
                 "time": "01:08:29",
                 "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=4109s",
@@ -1074,13 +969,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231202",
-                "time": "00:23:56",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=1436s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240706",
                 "time": "02:45:05",
                 "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=9905s",
@@ -1101,13 +989,6 @@
                 "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=2037s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231202",
-                "time": "00:33:57",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=2037s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -1117,13 +998,6 @@
         "source": "名探偵コナン",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231202",
-                "time": "00:42:49",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=2569s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231202",
                 "time": "00:42:49",
@@ -1154,13 +1028,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231202",
-                "time": "00:56:51",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=3411s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240601",
                 "time": "00:21:07",
                 "link": "https://www.youtube.com/watch?v=NhN4ZUXZtd4&t=1267s",
@@ -1175,13 +1042,6 @@
         "source": "名探偵コナン",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231202",
-                "time": "01:11:41",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=4301s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231202",
                 "time": "01:11:41",
@@ -1210,13 +1070,6 @@
                 "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=5384s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231202",
-                "time": "01:29:44",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=5384s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -1226,13 +1079,6 @@
         "source": "TALES OF DESTINY",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231202",
-                "time": "01:42:27",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=6147s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231202",
                 "time": "01:42:27",
@@ -1269,13 +1115,6 @@
         "source": "TALES OF PHANTASIA",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231202",
-                "time": "01:54:32",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=6872s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231202",
                 "time": "01:54:32",
@@ -1327,23 +1166,9 @@
                 "is_acapella": false
             },
             {
-                "date": "20231202",
-                "time": "02:14:44",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=8084s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240621",
                 "time": "08:00:15",
                 "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=28815s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240120",
-                "time": "00:27:58",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=1678s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             },
@@ -1370,24 +1195,10 @@
                 "is_acapella": false
             },
             {
-                "date": "20231202",
-                "time": "02:31:57",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=9117s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240727",
                 "time": "05:26:21",
                 "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=19581s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "05:42:58",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=20578s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -1405,13 +1216,6 @@
         "source": "うえきの法則",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231202",
-                "time": "02:44:38",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=9878s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231202",
                 "time": "02:44:38",
@@ -1447,13 +1251,6 @@
                 "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=11128s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231202",
-                "time": "03:05:28",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=11128s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -1471,23 +1268,9 @@
                 "is_acapella": false
             },
             {
-                "date": "20231202",
-                "time": "03:30:09",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=12609s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20241123",
                 "time": "06:25:15",
                 "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=23115s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240120",
-                "time": "04:40:58",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=16858s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             },
@@ -1521,20 +1304,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231202",
-                "time": "03:42:24",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=13344s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231111",
-                "time": "03:55:30",
-                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=14130s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20231111",
                 "time": "03:55:30",
                 "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=14130s",
@@ -1563,13 +1332,6 @@
         "source": "エルガイム",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231202",
-                "time": "03:57:19",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=14239s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231202",
                 "time": "03:57:19",
@@ -1621,13 +1383,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231202",
-                "time": "04:03:20",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=14600s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240413",
                 "time": "06:55:18",
                 "link": "https://www.youtube.com/watch?v=pdTvRavUxVQ&t=24918s",
@@ -1642,13 +1397,6 @@
         "source": "カードキャプターさくら",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231202",
-                "time": "04:10:03",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=15003s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231202",
                 "time": "04:10:03",
@@ -1677,13 +1425,6 @@
                 "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=15524s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231202",
-                "time": "04:18:44",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=15524s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -1693,13 +1434,6 @@
         "source": "セーラームーン",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231202",
-                "time": "04:31:32",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=16292s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231202",
                 "time": "04:31:32",
@@ -1737,13 +1471,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231202",
-                "time": "04:43:56",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=17036s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240727",
                 "time": "05:04:02",
                 "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=18242s",
@@ -1758,13 +1485,6 @@
         "source": "",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231202",
-                "time": "05:26:38",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=19598s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231202",
                 "time": "05:26:38",
@@ -1795,24 +1515,10 @@
                 "is_acapella": false
             },
             {
-                "date": "20231202",
-                "time": "05:33:30",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=20010s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240224",
                 "time": "01:28:18",
                 "link": "https://www.youtube.com/watch?v=8i9TOCJF8ps&t=5298s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231111",
-                "time": "05:12:45",
-                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=18765s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -1857,13 +1563,6 @@
                 "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=22748s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231202",
-                "time": "06:19:08",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=22748s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -1873,13 +1572,6 @@
         "source": "ワンピース",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231202",
-                "time": "06:29:19",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=23359s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231202",
                 "time": "06:29:19",
@@ -1908,13 +1600,6 @@
                 "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=23839s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231202",
-                "time": "06:37:19",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=23839s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -1924,13 +1609,6 @@
         "source": "サクラ大戦",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231202",
-                "time": "06:56:27",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=24987s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231202",
                 "time": "06:56:27",
@@ -1950,20 +1628,6 @@
                 "date": "20231202",
                 "time": "07:05:50",
                 "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=25550s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231202",
-                "time": "07:05:50",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=25550s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231223",
-                "time": "06:23:40",
-                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=23020s",
                 "is_member_exclusive": true,
                 "is_acapella": false
             },
@@ -2104,13 +1768,6 @@
                 "time": "00:20:31",
                 "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=1231s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231028",
-                "time": "02:41:42",
-                "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=9702s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -2390,30 +2047,9 @@
                 "is_acapella": false
             },
             {
-                "date": "20231216",
-                "time": "00:40:21",
-                "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=2421s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20231125",
                 "time": "00:10:04",
                 "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=604s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231125",
-                "time": "00:10:04",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=604s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231104",
-                "time": "04:19:23",
-                "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=15563s",
                 "is_member_exclusive": true,
                 "is_acapella": false
             },
@@ -2487,13 +2123,6 @@
                 "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=3533s",
                 "is_member_exclusive": true,
                 "is_acapella": true
-            },
-            {
-                "date": "20231216",
-                "time": "00:58:53",
-                "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=3533s",
-                "is_member_exclusive": true,
-                "is_acapella": true
             }
         ]
     },
@@ -2508,20 +2137,6 @@
                 "time": "01:27:10",
                 "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=5230s",
                 "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231216",
-                "time": "01:27:10",
-                "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=5230s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20240106",
-                "time": "04:48:19",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=17299s",
-                "is_member_exclusive": false,
                 "is_acapella": false
             },
             {
@@ -2545,13 +2160,6 @@
                 "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=6200s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231216",
-                "time": "01:43:20",
-                "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=6200s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -2561,13 +2169,6 @@
         "source": "ジョジョの奇妙な冒険",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231216",
-                "time": "01:54:14",
-                "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=6854s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231216",
                 "time": "01:54:14",
@@ -2596,13 +2197,6 @@
                 "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=7500s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231216",
-                "time": "02:05:00",
-                "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=7500s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -2612,13 +2206,6 @@
         "source": "ジョジョの奇妙な冒険",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231216",
-                "time": "02:21:29",
-                "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=8489s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231216",
                 "time": "02:21:29",
@@ -2638,20 +2225,6 @@
                 "date": "20231216",
                 "time": "02:36:48",
                 "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=9408s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231216",
-                "time": "02:36:48",
-                "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=9408s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231125",
-                "time": "01:51:06",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=6666s",
                 "is_member_exclusive": true,
                 "is_acapella": false
             },
@@ -2685,13 +2258,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231216",
-                "time": "02:42:13",
-                "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=9733s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20241116",
                 "time": "01:33:21",
                 "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=5601s",
@@ -2703,20 +2269,6 @@
                 "time": "03:35:06",
                 "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=12906s",
                 "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231028",
-                "time": "03:35:06",
-                "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=12906s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20240120",
-                "time": "04:17:57",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=15477s",
-                "is_member_exclusive": false,
                 "is_acapella": false
             },
             {
@@ -2747,13 +2299,6 @@
                 "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=11808s",
                 "is_member_exclusive": true,
                 "is_acapella": true
-            },
-            {
-                "date": "20231216",
-                "time": "03:16:48",
-                "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=11808s",
-                "is_member_exclusive": true,
-                "is_acapella": true
             }
         ]
     },
@@ -2769,13 +2314,6 @@
                 "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=12987s",
                 "is_member_exclusive": true,
                 "is_acapella": true
-            },
-            {
-                "date": "20231216",
-                "time": "03:36:27",
-                "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=12987s",
-                "is_member_exclusive": true,
-                "is_acapella": true
             }
         ]
     },
@@ -2785,13 +2323,6 @@
         "source": "TALES OF SYMPHONIA THE ANIMATION",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231216",
-                "time": "03:53:32",
-                "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=14012s",
-                "is_member_exclusive": true,
-                "is_acapella": true
-            },
             {
                 "date": "20231216",
                 "time": "03:53:32",
@@ -2815,23 +2346,9 @@
                 "is_acapella": false
             },
             {
-                "date": "20231216",
-                "time": "04:00:29",
-                "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=14429s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240615",
                 "time": "04:23:10",
                 "link": "https://www.youtube.com/watch?v=DjJmVyIXfH8&t=15790s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240120",
-                "time": "05:58:50",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=21530s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             },
@@ -2858,20 +2375,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231216",
-                "time": "04:10:20",
-                "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=15020s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20240120",
-                "time": "06:03:39",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=21819s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
                 "date": "20240120",
                 "time": "06:03:39",
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=21819s",
@@ -2886,13 +2389,6 @@
         "source": "蒼穹のファフナー",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231216",
-                "time": "04:36:20",
-                "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=16580s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231216",
                 "time": "04:36:20",
@@ -2937,13 +2433,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231216",
-                "time": "05:16:13",
-                "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=18973s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240323",
                 "time": "01:11:48",
                 "link": "https://www.youtube.com/watch?v=fdpGIoCs6AU&t=4308s",
@@ -2972,20 +2461,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231028",
-                "time": "03:25:37",
-                "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=12337s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20240120",
-                "time": "04:03:31",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=14611s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
                 "date": "20240120",
                 "time": "04:03:31",
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=14611s",
@@ -3000,13 +2475,6 @@
         "source": "WHITE ALBUM",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231216",
-                "time": "05:38:00",
-                "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=20280s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231216",
                 "time": "05:38:00",
@@ -3036,24 +2504,10 @@
                 "is_acapella": false
             },
             {
-                "date": "20231125",
-                "time": "07:38:17",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=27497s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240706",
                 "time": "01:32:14",
                 "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=5534s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231223",
-                "time": "04:54:05",
-                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=17645s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -3107,13 +2561,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231216",
-                "time": "05:45:50",
-                "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=20750s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240511",
                 "time": "06:38:41",
                 "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=23921s",
@@ -3139,20 +2586,6 @@
                 "date": "20231216",
                 "time": "05:52:18",
                 "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=21138s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231216",
-                "time": "05:52:18",
-                "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=21138s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231223",
-                "time": "05:00:00",
-                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=18000s",
                 "is_member_exclusive": true,
                 "is_acapella": false
             },
@@ -3193,13 +2626,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231216",
-                "time": "06:15:00",
-                "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=22500s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240518",
                 "time": "05:47:38",
                 "link": "https://www.youtube.com/watch?v=0mO1WLnuFYM&t=20858s",
@@ -3227,13 +2653,6 @@
                 "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=23119s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231216",
-                "time": "06:25:19",
-                "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=23119s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -3243,13 +2662,6 @@
         "source": "STEINS;GATE",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231216",
-                "time": "06:50:00",
-                "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=24600s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231216",
                 "time": "06:50:00",
@@ -3273,20 +2685,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231216",
-                "time": "07:36:56",
-                "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=27416s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231104",
-                "time": "02:16:22",
-                "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=8182s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20231104",
                 "time": "02:16:22",
                 "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=8182s",
@@ -3297,13 +2695,6 @@
                 "date": "20250104",
                 "time": "04:00:13",
                 "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=14413s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240120",
-                "time": "07:37:00",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=27420s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             },
@@ -3337,13 +2728,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231216",
-                "time": "07:45:07",
-                "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=27907s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240727",
                 "time": "03:25:24",
                 "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=12324s",
@@ -3355,27 +2739,6 @@
                 "time": "04:41:18",
                 "link": "https://www.youtube.com/watch?v=0mO1WLnuFYM&t=16878s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231223",
-                "time": "05:46:36",
-                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=20796s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231223",
-                "time": "05:46:36",
-                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=20796s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231223",
-                "time": "05:46:36",
-                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=20796s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -3398,13 +2761,6 @@
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=9831s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20240120",
-                "time": "02:43:51",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=9831s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -3418,20 +2774,6 @@
                 "date": "20231216",
                 "time": "08:01:34",
                 "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=28894s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231216",
-                "time": "08:01:34",
-                "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=28894s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231028",
-                "time": "02:02:00",
-                "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=7320s",
                 "is_member_exclusive": true,
                 "is_acapella": false
             },
@@ -3471,13 +2813,6 @@
         "source": "アルトネリコ",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231216",
-                "time": "08:12:15",
-                "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=29535s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231216",
                 "time": "08:12:15",
@@ -3537,13 +2872,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231111",
-                "time": "04:54:00",
-                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=17640s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20250104",
                 "time": "03:12:05",
                 "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=11525s",
@@ -3563,13 +2891,6 @@
                 "time": "00:28:23",
                 "link": "https://www.youtube.com/watch?v=8i9TOCJF8ps&t=1703s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231111",
-                "time": "05:04:30",
-                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=18270s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -3673,13 +2994,6 @@
                 "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=19160s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231111",
-                "time": "05:19:20",
-                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=19160s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -3709,13 +3023,6 @@
                 "time": "02:22:57",
                 "link": "https://www.youtube.com/watch?v=8i9TOCJF8ps&t=8577s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231111",
-                "time": "05:45:39",
-                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=20739s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -3782,13 +3089,6 @@
                 "time": "02:58:51",
                 "link": "https://www.youtube.com/watch?v=8i9TOCJF8ps&t=10731s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231111",
-                "time": "05:55:18",
-                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=21318s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -3893,13 +3193,6 @@
                 "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=21755s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231111",
-                "time": "06:02:35",
-                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=21755s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -3914,13 +3207,6 @@
                 "time": "03:51:21",
                 "link": "https://www.youtube.com/watch?v=8i9TOCJF8ps&t=13881s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231111",
-                "time": "06:09:52",
-                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=22192s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -3958,13 +3244,6 @@
                 "time": "04:50:30",
                 "link": "https://www.youtube.com/watch?v=8i9TOCJF8ps&t=17430s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231111",
-                "time": "06:16:43",
-                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=22603s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -4104,13 +3383,6 @@
                 "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=14346s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231125",
-                "time": "03:59:06",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=14346s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -4132,20 +3404,6 @@
                 "time": "01:38:11",
                 "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=5891s",
                 "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231104",
-                "time": "01:38:11",
-                "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=5891s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231231",
-                "time": "00:49:45",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=2985s",
-                "is_member_exclusive": false,
                 "is_acapella": false
             },
             {
@@ -4192,20 +3450,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231231",
-                "time": "05:19:11",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=19151s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231209",
-                "time": "07:19:57",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=26397s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
                 "date": "20231209",
                 "time": "07:19:57",
                 "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=26397s",
@@ -4225,13 +3469,6 @@
                 "time": "00:58:03",
                 "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=3483s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231028",
-                "time": "01:21:00",
-                "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=4860s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -4296,13 +3533,6 @@
                 "date": "20240727",
                 "time": "01:25:32",
                 "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=5132s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231231",
-                "time": "05:11:54",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=18714s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             },
@@ -4413,13 +3643,6 @@
                 "time": "03:32:19",
                 "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=12739s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231125",
-                "time": "00:20:58",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=1258s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -4595,13 +3818,6 @@
                 "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=23268s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20240106",
-                "time": "06:27:48",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=23268s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -4655,20 +3871,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231111",
-                "time": "00:55:23",
-                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=3323s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231125",
-                "time": "05:33:55",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=20035s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20231125",
                 "time": "05:33:55",
                 "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=20035s",
@@ -4679,13 +3881,6 @@
                 "date": "20240216",
                 "time": "00:46:44",
                 "link": "https://www.youtube.com/watch?v=Z-1sxd5PK_M&t=2804s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240106",
-                "time": "04:21:10",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=15670s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             },
@@ -4723,13 +3918,6 @@
                 "time": "08:29:36",
                 "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=30576s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "01:13:50",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=4430s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -4917,13 +4105,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231125",
-                "time": "05:26:03",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=19563s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240407",
                 "time": "02:27:44",
                 "link": "https://www.youtube.com/watch?v=GKJdPg7oqgs&t=8864s",
@@ -5030,13 +4211,6 @@
                 "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=12801s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20231231",
-                "time": "03:33:21",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=12801s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -5051,13 +4225,6 @@
                 "time": "06:58:12",
                 "link": "https://www.youtube.com/watch?v=0mO1WLnuFYM&t=25092s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "00:07:29",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=449s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -5090,24 +4257,10 @@
                 "is_acapella": false
             },
             {
-                "date": "20231111",
-                "time": "03:41:48",
-                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=13308s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20241221",
                 "time": "06:06:37",
                 "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=21997s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231125",
-                "time": "06:54:13",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=24853s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -5128,13 +4281,6 @@
                 "date": "20240216",
                 "time": "04:50:54",
                 "link": "https://www.youtube.com/watch?v=Z-1sxd5PK_M&t=17454s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231209",
-                "time": "02:51:36",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=10296s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             },
@@ -5201,13 +4347,6 @@
                 "time": "01:04:21",
                 "link": "https://www.youtube.com/watch?v=SX5pWgl_Sxk&t=3861s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "00:20:09",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=1209s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -5288,20 +4427,6 @@
                 "time": "03:39:37",
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=13177s",
                 "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "03:39:37",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=13177s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20240106",
-                "time": "03:26:32",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=12392s",
-                "is_member_exclusive": false,
                 "is_acapella": false
             },
             {
@@ -5528,20 +4653,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231111",
-                "time": "00:13:27",
-                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=807s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231209",
-                "time": "08:10:06",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=29406s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
                 "date": "20231209",
                 "time": "08:10:06",
                 "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=29406s",
@@ -5556,13 +4667,6 @@
         "source": "Zガンダム",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231111",
-                "time": "00:31:05",
-                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=1865s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231111",
                 "time": "00:31:05",
@@ -5600,13 +4704,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231111",
-                "time": "00:46:37",
-                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=2797s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240216",
                 "time": "00:41:15",
                 "link": "https://www.youtube.com/watch?v=Z-1sxd5PK_M&t=2475s",
@@ -5621,13 +4718,6 @@
         "source": "ZZガンダム",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231111",
-                "time": "01:04:30",
-                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=3870s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231111",
                 "time": "01:04:30",
@@ -5657,13 +4747,6 @@
         "source": "ZZガンダム",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231111",
-                "time": "01:16:35",
-                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=4595s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231111",
                 "time": "01:16:35",
@@ -5708,13 +4791,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231111",
-                "time": "01:27:22",
-                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=5242s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240216",
                 "time": "03:02:10",
                 "link": "https://www.youtube.com/watch?v=Z-1sxd5PK_M&t=10930s",
@@ -5737,24 +4813,10 @@
                 "is_acapella": false
             },
             {
-                "date": "20231111",
-                "time": "01:47:56",
-                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=6476s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20241012",
                 "time": "01:59:03",
                 "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=7143s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231125",
-                "time": "07:54:06",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=28446s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -5787,13 +4849,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231111",
-                "time": "03:30:20",
-                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=12620s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240216",
                 "time": "01:24:42",
                 "link": "https://www.youtube.com/watch?v=Z-1sxd5PK_M&t=5082s",
@@ -5808,13 +4863,6 @@
         "source": "ガンダムW",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231111",
-                "time": "04:09:19",
-                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=14959s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231111",
                 "time": "04:09:19",
@@ -5845,13 +4893,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231111",
-                "time": "04:17:13",
-                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=15433s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240216",
                 "time": "04:35:18",
                 "link": "https://www.youtube.com/watch?v=Z-1sxd5PK_M&t=16518s",
@@ -5874,13 +4915,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231111",
-                "time": "04:31:22",
-                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=16282s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240216",
                 "time": "03:52:08",
                 "link": "https://www.youtube.com/watch?v=Z-1sxd5PK_M&t=13928s",
@@ -5895,13 +4929,6 @@
         "source": "∀ガンダム",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231111",
-                "time": "04:38:51",
-                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=16731s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231111",
                 "time": "04:38:51",
@@ -5946,13 +4973,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231111",
-                "time": "04:45:34",
-                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=17134s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240511",
                 "time": "02:12:30",
                 "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=7950s",
@@ -5974,13 +4994,6 @@
         "source": "ガンダムSEED",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231111",
-                "time": "05:35:22",
-                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=20122s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231111",
                 "time": "05:35:22",
@@ -6052,13 +5065,6 @@
                 "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=20512s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20240106",
-                "time": "05:41:52",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=20512s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -6073,13 +5079,6 @@
                 "time": "01:06:15",
                 "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=3975s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231125",
-                "time": "03:16:16",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=11776s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -6126,24 +5125,10 @@
                 "is_acapella": false
             },
             {
-                "date": "20231125",
-                "time": "08:00:07",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=28807s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240706",
                 "time": "02:35:42",
                 "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=9342s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231223",
-                "time": "03:57:10",
-                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=14230s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -6166,13 +5151,6 @@
                 "time": "01:46:02",
                 "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=6362s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231125",
-                "time": "02:35:32",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=9332s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -6205,23 +5183,9 @@
                 "is_acapella": false
             },
             {
-                "date": "20231125",
-                "time": "04:39:17",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=16757s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240615",
                 "time": "09:38:25",
                 "link": "https://www.youtube.com/watch?v=DjJmVyIXfH8&t=34705s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240106",
-                "time": "06:00:20",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=21620s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             },
@@ -6275,13 +5239,6 @@
                 "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=10688s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231125",
-                "time": "02:58:08",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=10688s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -6319,13 +5276,6 @@
                 "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=8112s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20231209",
-                "time": "02:15:12",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=8112s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -6340,13 +5290,6 @@
                 "time": "04:22:21",
                 "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=15741s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231104",
-                "time": "02:31:14",
-                "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=9074s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -6376,13 +5319,6 @@
                 "time": "04:49:14",
                 "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=17354s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231104",
-                "time": "02:35:53",
-                "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=9353s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -6480,13 +5416,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231104",
-                "time": "01:07:35",
-                "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=4055s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240915",
                 "time": "00:42:36",
                 "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=2556s",
@@ -6513,13 +5442,6 @@
                 "time": "02:57:01",
                 "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=10621s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231028",
-                "time": "04:09:49",
-                "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=14989s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -6564,13 +5486,6 @@
                 "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=4997s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231104",
-                "time": "01:23:17",
-                "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=4997s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -6585,13 +5500,6 @@
                 "time": "05:50:07",
                 "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=21007s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231104",
-                "time": "00:46:24",
-                "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=2784s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -6751,13 +5659,6 @@
                 "date": "20241221",
                 "time": "01:13:10",
                 "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=4390s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240106",
-                "time": "01:31:35",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=5495s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             },
@@ -6982,13 +5883,6 @@
                 "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=18500s",
                 "is_member_exclusive": true,
                 "is_acapella": true
-            },
-            {
-                "date": "20231223",
-                "time": "05:08:20",
-                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=18500s",
-                "is_member_exclusive": true,
-                "is_acapella": true
             }
         ]
     },
@@ -7041,13 +5935,6 @@
                 "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=6010s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20240106",
-                "time": "01:40:10",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=6010s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -7069,20 +5956,6 @@
                 "time": "06:37:32",
                 "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=23852s",
                 "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231223",
-                "time": "06:37:32",
-                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=23852s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231209",
-                "time": "04:37:06",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=16626s",
-                "is_member_exclusive": false,
                 "is_acapella": false
             },
             {
@@ -7112,20 +5985,6 @@
                 "time": "06:40:52",
                 "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=24052s",
                 "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231223",
-                "time": "06:40:52",
-                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=24052s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231209",
-                "time": "04:41:36",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=16896s",
-                "is_member_exclusive": false,
                 "is_acapella": false
             },
             {
@@ -7193,13 +6052,6 @@
                 "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=27590s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20231209",
-                "time": "07:39:50",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=27590s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -7220,13 +6072,6 @@
                 "date": "20240216",
                 "time": "02:02:01",
                 "link": "https://www.youtube.com/watch?v=Z-1sxd5PK_M&t=7321s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231209",
-                "time": "07:09:32",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=25772s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             },
@@ -7302,13 +6147,6 @@
                 "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=5933s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231223",
-                "time": "01:38:53",
-                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=5933s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -7318,13 +6156,6 @@
         "source": "スレイヤーズ",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231125",
-                "time": "00:35:32",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=2132s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231125",
                 "time": "00:35:32",
@@ -7355,13 +6186,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231125",
-                "time": "00:50:40",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=3040s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240202",
                 "time": "00:34:18",
                 "link": "https://www.youtube.com/watch?v=70E6Ns3_THo&t=2058s",
@@ -7376,13 +6200,6 @@
         "source": "スレイヤーズ",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231125",
-                "time": "01:16:55",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=4615s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231125",
                 "time": "01:16:55",
@@ -7404,13 +6221,6 @@
                 "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=5165s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231125",
-                "time": "01:26:05",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=5165s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -7420,13 +6230,6 @@
         "source": "スレイヤーズ",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231125",
-                "time": "01:36:09",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=5769s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231125",
                 "time": "01:36:09",
@@ -7448,13 +6251,6 @@
                 "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=7285s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231125",
-                "time": "02:01:25",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=7285s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -7464,13 +6260,6 @@
         "source": "幽遊白書",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231125",
-                "time": "02:10:41",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=7841s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231125",
                 "time": "02:10:41",
@@ -7492,13 +6281,6 @@
                 "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=8236s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231125",
-                "time": "02:17:16",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=8236s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -7514,13 +6296,6 @@
                 "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=8594s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231125",
-                "time": "02:23:14",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=8594s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -7530,13 +6305,6 @@
         "source": "魔法陣グルグル",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231125",
-                "time": "03:22:54",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=12174s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231125",
                 "time": "03:22:54",
@@ -7574,13 +6342,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231125",
-                "time": "03:40:14",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=13214s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240706",
                 "time": "06:27:35",
                 "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=23255s",
@@ -7610,13 +6371,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231125",
-                "time": "04:14:41",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=15281s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240615",
                 "time": "02:35:17",
                 "link": "https://www.youtube.com/watch?v=DjJmVyIXfH8&t=9317s",
@@ -7631,13 +6385,6 @@
         "source": "セイバーマリオネットJ",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231125",
-                "time": "04:17:33",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=15453s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231125",
                 "time": "04:17:33",
@@ -7659,13 +6406,6 @@
                 "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=15676s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231125",
-                "time": "04:21:16",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=15676s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -7681,13 +6421,6 @@
                 "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=17816s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231125",
-                "time": "04:56:56",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=17816s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -7697,13 +6430,6 @@
         "source": "ロードス島戦記",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231125",
-                "time": "05:04:01",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=18241s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231125",
                 "time": "05:04:01",
@@ -7727,23 +6453,9 @@
                 "is_acapella": false
             },
             {
-                "date": "20231125",
-                "time": "05:11:24",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=18684s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240615",
                 "time": "03:06:10",
                 "link": "https://www.youtube.com/watch?v=DjJmVyIXfH8&t=11170s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231231",
-                "time": "07:17:11",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=26231s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             },
@@ -7770,24 +6482,10 @@
                 "is_acapella": false
             },
             {
-                "date": "20231125",
-                "time": "05:18:08",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=19088s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240615",
                 "time": "08:10:15",
                 "link": "https://www.youtube.com/watch?v=DjJmVyIXfH8&t=29415s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "03:01:17",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=10877s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -7812,13 +6510,6 @@
         "source": "シティーハンター",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231125",
-                "time": "05:43:15",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=20595s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231125",
                 "time": "05:43:15",
@@ -7870,13 +6561,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231125",
-                "time": "05:51:28",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=21088s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20250104",
                 "time": "03:40:48",
                 "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=13248s",
@@ -7920,13 +6604,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231125",
-                "time": "06:05:18",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=21918s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20250104",
                 "time": "01:40:02",
                 "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=6002s",
@@ -7956,13 +6633,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231125",
-                "time": "06:16:50",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=22610s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240323",
                 "time": "00:39:17",
                 "link": "https://www.youtube.com/watch?v=fdpGIoCs6AU&t=2357s",
@@ -7984,13 +6654,6 @@
         "source": "爆れつハンター",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231125",
-                "time": "06:22:24",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=22944s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231125",
                 "time": "06:22:24",
@@ -8035,13 +6698,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231125",
-                "time": "06:30:18",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=23418s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240706",
                 "time": "05:31:56",
                 "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=19916s",
@@ -8076,13 +6732,6 @@
                 "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=24207s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231125",
-                "time": "06:43:27",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=24207s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -8100,20 +6749,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231125",
-                "time": "07:21:30",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=26490s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231209",
-                "time": "01:06:32",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=3992s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
                 "date": "20231209",
                 "time": "01:06:32",
                 "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=3992s",
@@ -8128,13 +6763,6 @@
         "source": "エルフェンリート",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231125",
-                "time": "07:48:07",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=28087s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231125",
                 "time": "07:48:07",
@@ -8179,13 +6807,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231028",
-                "time": "04:33:14",
-                "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=16394s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20241026",
                 "time": "02:35:27",
                 "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=9327s",
@@ -8200,13 +6821,6 @@
         "source": "ローゼンメイデン",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231104",
-                "time": "00:15:47",
-                "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=947s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231104",
                 "time": "00:15:47",
@@ -8258,13 +6872,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231104",
-                "time": "00:27:23",
-                "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=1643s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240720",
                 "time": "04:22:04",
                 "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=15724s",
@@ -8292,13 +6899,6 @@
                 "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=2286s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231104",
-                "time": "00:38:06",
-                "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=2286s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -8314,13 +6914,6 @@
                 "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=3382s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231104",
-                "time": "00:56:22",
-                "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=3382s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -8330,13 +6923,6 @@
         "source": "",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231104",
-                "time": "01:15:51",
-                "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=4551s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231104",
                 "time": "01:15:51",
@@ -8367,13 +6953,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231104",
-                "time": "01:46:06",
-                "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=6366s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240323",
                 "time": "01:39:38",
                 "link": "https://www.youtube.com/watch?v=fdpGIoCs6AU&t=5978s",
@@ -8388,13 +6967,6 @@
         "source": "オリジナル曲",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231104",
-                "time": "02:50:14",
-                "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=10214s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231104",
                 "time": "02:50:14",
@@ -8430,13 +7002,6 @@
                 "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=10894s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231104",
-                "time": "03:01:34",
-                "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=10894s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -8446,13 +7011,6 @@
         "source": "コードギアス 反逆のルルーシュ",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231104",
-                "time": "03:11:36",
-                "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=11496s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231104",
                 "time": "03:11:36",
@@ -8497,13 +7055,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231104",
-                "time": "03:29:41",
-                "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=12581s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240720",
                 "time": "02:13:55",
                 "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=8035s",
@@ -8518,13 +7069,6 @@
         "source": "",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231104",
-                "time": "03:45:09",
-                "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=13509s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231104",
                 "time": "03:45:09",
@@ -8554,13 +7098,6 @@
         "source": "少女革命ウテナ",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231104",
-                "time": "04:02:33",
-                "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=14553s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231104",
                 "time": "04:02:33",
@@ -8617,13 +7154,6 @@
                 "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=7409s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20231209",
-                "time": "02:03:29",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=7409s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -8667,13 +7197,6 @@
                 "date": "20250104",
                 "time": "03:27:29",
                 "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=12449s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231231",
-                "time": "07:40:57",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=27657s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             },
@@ -8920,13 +7443,6 @@
                 "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=14647s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20240106",
-                "time": "04:04:07",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=14647s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -8956,13 +7472,6 @@
                 "time": "04:42:45",
                 "link": "https://www.youtube.com/watch?v=pdTvRavUxVQ&t=16965s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231028",
-                "time": "00:59:42",
-                "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=3582s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -9147,13 +7656,6 @@
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=3884s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "01:04:44",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=3884s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -9318,20 +7820,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231028",
-                "time": "03:44:20",
-                "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=13460s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20240120",
-                "time": "04:48:35",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=17315s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
                 "date": "20240120",
                 "time": "04:48:35",
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=17315s",
@@ -9386,13 +7874,6 @@
                 "date": "20240511",
                 "time": "05:57:09",
                 "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=21429s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231209",
-                "time": "07:00:10",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=25210s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             },
@@ -9460,13 +7941,6 @@
                 "time": "00:55:58",
                 "link": "https://www.youtube.com/watch?v=kw8Ia8qEJ74&t=3358s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "04:39:08",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=16748s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -9688,13 +8162,6 @@
                 "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=4383s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20231209",
-                "time": "01:13:03",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=4383s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -9754,13 +8221,6 @@
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=2050s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "00:34:10",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=2050s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -9774,13 +8234,6 @@
                 "date": "20240706",
                 "time": "00:40:12",
                 "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=2412s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231231",
-                "time": "03:38:14",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=13094s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             },
@@ -9818,13 +8271,6 @@
                 "date": "20240706",
                 "time": "01:25:48",
                 "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=5148s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240120",
-                "time": "04:12:08",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=15128s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             },
@@ -10028,13 +8474,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231231",
-                "time": "07:25:01",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=26701s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
                 "date": "20240621",
                 "time": "03:32:32",
                 "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=12752s",
@@ -10197,13 +8636,6 @@
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=3131s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "00:52:11",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=3131s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -10287,13 +8719,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231223",
-                "time": "03:37:37",
-                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=13057s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240202",
                 "time": "05:42:51",
                 "link": "https://www.youtube.com/watch?v=70E6Ns3_THo&t=20571s",
@@ -10336,13 +8761,6 @@
                 "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=8943s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20231209",
-                "time": "02:29:03",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=8943s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -10357,13 +8775,6 @@
                 "time": "03:35:44",
                 "link": "https://www.youtube.com/watch?v=DjJmVyIXfH8&t=12944s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231223",
-                "time": "06:05:39",
-                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=21939s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -10448,13 +8859,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231118",
-                "time": "03:14:50",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=11690s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240216",
                 "time": "02:30:13",
                 "link": "https://www.youtube.com/watch?v=Z-1sxd5PK_M&t=9013s",
@@ -10484,23 +8888,9 @@
                 "is_acapella": false
             },
             {
-                "date": "20231231",
-                "time": "05:00:11",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=18011s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
                 "date": "20240825",
                 "time": "01:56:43",
                 "link": "https://www.youtube.com/watch?v=d0jBqFCADCU&t=7003s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240120",
-                "time": "02:37:49",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=9469s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             },
@@ -10615,13 +9005,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231209",
-                "time": "04:07:49",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=14869s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
                 "date": "20240817",
                 "time": "00:42:31",
                 "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=2551s",
@@ -10648,13 +9031,6 @@
                 "time": "07:19:27",
                 "link": "https://www.youtube.com/watch?v=DjJmVyIXfH8&t=26367s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231028",
-                "time": "02:16:30",
-                "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=8190s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -10795,13 +9171,6 @@
                 "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=10824s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20231209",
-                "time": "03:00:24",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=10824s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -10834,13 +9203,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231223",
-                "time": "01:56:35",
-                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=6995s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240817",
                 "time": "00:33:40",
                 "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=2020s",
@@ -10861,13 +9223,6 @@
                 "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=7875s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231223",
-                "time": "02:11:15",
-                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=7875s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -10882,20 +9237,6 @@
                 "time": "02:21:46",
                 "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=8506s",
                 "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231223",
-                "time": "02:21:46",
-                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=8506s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20240120",
-                "time": "07:04:30",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=25470s",
-                "is_member_exclusive": false,
                 "is_acapella": false
             },
             {
@@ -10921,20 +9262,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231223",
-                "time": "03:21:38",
-                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=12098s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20240120",
-                "time": "08:11:44",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=29504s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
                 "date": "20240120",
                 "time": "08:11:44",
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=29504s",
@@ -10949,13 +9276,6 @@
         "source": ".hack//G.U.",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231223",
-                "time": "03:50:19",
-                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=13819s",
-                "is_member_exclusive": true,
-                "is_acapella": true
-            },
             {
                 "date": "20231223",
                 "time": "03:50:19",
@@ -10977,13 +9297,6 @@
                 "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=14930s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231223",
-                "time": "04:08:50",
-                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=14930s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -10999,13 +9312,6 @@
                 "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=15943s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231223",
-                "time": "04:25:43",
-                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=15943s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -11015,13 +9321,6 @@
         "source": "日常",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231223",
-                "time": "05:15:52",
-                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=18952s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231223",
                 "time": "05:15:52",
@@ -11050,13 +9349,6 @@
                 "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=19466s",
                 "is_member_exclusive": true,
                 "is_acapella": true
-            },
-            {
-                "date": "20231223",
-                "time": "05:24:26",
-                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=19466s",
-                "is_member_exclusive": true,
-                "is_acapella": true
             }
         ]
     },
@@ -11066,13 +9358,6 @@
         "source": ".hack//G.U.",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231223",
-                "time": "05:31:06",
-                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=19866s",
-                "is_member_exclusive": true,
-                "is_acapella": true
-            },
             {
                 "date": "20231223",
                 "time": "05:31:06",
@@ -11096,17 +9381,25 @@
                 "is_acapella": false
             },
             {
-                "date": "20231223",
-                "time": "05:40:22",
-                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=20422s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20241228",
                 "time": "07:35:59",
                 "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=27359s",
                 "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "Let it Snow! Let it Snow! Let it Snow!",
+        "artist": "",
+        "source": "",
+        "is_copyright": false,
+        "dates": [
+            {
+                "date": "20231223",
+                "time": "05:59:56",
+                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=21596s",
+                "is_member_exclusive": true,
                 "is_acapella": false
             }
         ]
@@ -11117,13 +9410,6 @@
         "source": "Go! プリンセスプリキュア",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231223",
-                "time": "06:14:40",
-                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=22480s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231223",
                 "time": "06:14:40",
@@ -11145,13 +9431,6 @@
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=829s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "00:13:49",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=829s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -11161,13 +9440,6 @@
         "source": "",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231118",
-                "time": "00:26:27",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=1587s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231118",
                 "time": "00:26:27",
@@ -11189,13 +9461,6 @@
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=2535s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "00:42:15",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=2535s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -11205,13 +9470,6 @@
         "source": "",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231118",
-                "time": "01:24:30",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=5070s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231118",
                 "time": "01:24:30",
@@ -11233,13 +9491,6 @@
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=5520s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "01:32:00",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=5520s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -11249,13 +9500,6 @@
         "source": "",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231118",
-                "time": "01:45:04",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=6304s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231118",
                 "time": "01:45:04",
@@ -11277,13 +9521,6 @@
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=6684s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "01:51:24",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=6684s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -11293,13 +9530,6 @@
         "source": "",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231118",
-                "time": "01:56:57",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=7017s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231118",
                 "time": "01:56:57",
@@ -11323,31 +9553,25 @@
                 "is_acapella": false
             },
             {
-                "date": "20231118",
-                "time": "02:01:31",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=7291s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "02:01:31",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=7291s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "02:01:31",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=7291s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20241026",
                 "time": "01:31:48",
                 "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=5508s",
                 "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "かもめが翔んだ日 |渡辺真知子",
+        "artist": "",
+        "source": "",
+        "is_copyright": false,
+        "dates": [
+            {
+                "date": "20231118",
+                "time": "02:08:44",
+                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=7724s",
+                "is_member_exclusive": true,
                 "is_acapella": false
             }
         ]
@@ -11358,13 +9582,6 @@
         "source": "",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231118",
-                "time": "02:21:54",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=8514s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231118",
                 "time": "02:21:54",
@@ -11386,13 +9603,6 @@
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=8893s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "02:28:13",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=8893s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -11408,13 +9618,6 @@
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=9672s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "02:41:12",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=9672s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -11424,13 +9627,6 @@
         "source": "キャンディキャンディ",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231118",
-                "time": "02:46:15",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=9975s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231118",
                 "time": "02:46:15",
@@ -11468,13 +9664,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231118",
-                "time": "02:52:33",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=10353s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240825",
                 "time": "01:20:59",
                 "link": "https://www.youtube.com/watch?v=d0jBqFCADCU&t=4859s",
@@ -11489,13 +9678,6 @@
         "source": "",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231118",
-                "time": "03:22:35",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=12155s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231118",
                 "time": "03:22:35",
@@ -11517,13 +9699,6 @@
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=12852s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "03:34:12",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=12852s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -11533,13 +9708,6 @@
         "source": "",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231118",
-                "time": "03:47:10",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=13630s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231118",
                 "time": "03:47:10",
@@ -11561,13 +9729,6 @@
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=14434s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "04:00:34",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=14434s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -11582,20 +9743,6 @@
                 "time": "04:05:59",
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=14759s",
                 "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "04:05:59",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=14759s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231231",
-                "time": "01:47:39",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=6459s",
-                "is_member_exclusive": false,
                 "is_acapella": false
             },
             {
@@ -11626,13 +9773,6 @@
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=15109s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "04:11:49",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=15109s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -11642,13 +9782,6 @@
         "source": "",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231118",
-                "time": "04:18:05",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=15485s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231118",
                 "time": "04:18:05",
@@ -11670,13 +9803,6 @@
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=15756s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "04:22:36",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=15756s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -11686,13 +9812,6 @@
         "source": "ダーティペア",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231118",
-                "time": "04:27:52",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=16072s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231118",
                 "time": "04:27:52",
@@ -11714,13 +9833,6 @@
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=16408s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "04:33:28",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=16408s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -11730,13 +9842,6 @@
         "source": "タッチ",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231118",
-                "time": "04:46:45",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=17205s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231118",
                 "time": "04:46:45",
@@ -11758,13 +9863,6 @@
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=17539s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "04:52:19",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=17539s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -11780,13 +9878,6 @@
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=17871s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "04:57:51",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=17871s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -11796,13 +9887,6 @@
         "source": "",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231118",
-                "time": "05:02:54",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=18174s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231118",
                 "time": "05:02:54",
@@ -11838,13 +9922,6 @@
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=18566s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "05:09:26",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=18566s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -11854,13 +9931,6 @@
         "source": "タッチ",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231118",
-                "time": "05:16:13",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=18973s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231118",
                 "time": "05:16:13",
@@ -11882,13 +9952,6 @@
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=19379s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "05:22:59",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=19379s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -11898,13 +9961,6 @@
         "source": "",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231118",
-                "time": "05:27:52",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=19672s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231118",
                 "time": "05:27:52",
@@ -11926,13 +9982,6 @@
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=19941s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "05:32:21",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=19941s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -11942,13 +9991,6 @@
         "source": "",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231118",
-                "time": "05:36:47",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=20207s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231118",
                 "time": "05:36:47",
@@ -11977,13 +10019,6 @@
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=20926s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "05:48:46",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=20926s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -11999,13 +10034,6 @@
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=21276s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "05:54:36",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=21276s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -12015,13 +10043,6 @@
         "source": "",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231118",
-                "time": "05:59:07",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=21547s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231118",
                 "time": "05:59:07",
@@ -12050,13 +10071,6 @@
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=22019s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "06:06:59",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=22019s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -12066,13 +10080,6 @@
         "source": "",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231118",
-                "time": "06:11:13",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=22273s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231118",
                 "time": "06:11:13",
@@ -12094,25 +10101,19 @@
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=22602s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
+            }
+        ]
+    },
+    {
+        "song_name": "横須賀ストーリー |山口百恵",
+        "artist": "",
+        "source": "",
+        "is_copyright": false,
+        "dates": [
             {
                 "date": "20231118",
-                "time": "06:16:42",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=22602s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "06:16:42",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=22602s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231118",
-                "time": "06:16:42",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=22602s",
+                "time": "06:21:21",
+                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=22881s",
                 "is_member_exclusive": true,
                 "is_acapella": false
             }
@@ -12124,13 +10125,6 @@
         "source": "",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231118",
-                "time": "06:26:18",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=23178s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231118",
                 "time": "06:26:18",
@@ -12307,13 +10301,6 @@
                 "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=4975s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20231209",
-                "time": "01:22:55",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=4975s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -12358,13 +10345,6 @@
                 "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=18010s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20240106",
-                "time": "05:00:10",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=18010s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -12378,13 +10358,6 @@
                 "date": "20240511",
                 "time": "03:46:55",
                 "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=13615s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240106",
-                "time": "05:06:50",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=18410s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             },
@@ -12430,13 +10403,6 @@
                 "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=8790s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231028",
-                "time": "02:26:30",
-                "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=8790s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -12458,13 +10424,6 @@
                 "time": "00:14:58",
                 "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=898s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231028",
-                "time": "02:31:41",
-                "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=9101s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -12519,23 +10478,9 @@
                 "is_acapella": false
             },
             {
-                "date": "20231028",
-                "time": "00:20:29",
-                "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=1229s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240621",
                 "time": "06:25:19",
                 "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=23119s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240120",
-                "time": "07:12:15",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=25935s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             },
@@ -12583,13 +10528,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231231",
-                "time": "02:41:17",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=9677s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
                 "date": "20240202",
                 "time": "06:46:57",
                 "link": "https://www.youtube.com/watch?v=70E6Ns3_THo&t=24417s",
@@ -12617,13 +10555,6 @@
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=10335s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20240120",
-                "time": "02:52:15",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=10335s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -12638,20 +10569,6 @@
                 "time": "01:14:17",
                 "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=4457s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231231",
-                "time": "01:14:17",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=4457s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231028",
-                "time": "00:36:55",
-                "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=2215s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -12682,13 +10599,6 @@
                 "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=5205s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20231231",
-                "time": "01:26:45",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=5205s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -12698,13 +10608,6 @@
         "source": "うる星やつら",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231231",
-                "time": "01:34:42",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=5682s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20231231",
                 "time": "01:34:42",
@@ -12726,13 +10629,6 @@
                 "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=5932s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20231231",
-                "time": "01:38:52",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=5932s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -12742,13 +10638,6 @@
         "source": "機巧少女は傷つかない",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231231",
-                "time": "02:04:05",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=7445s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20231231",
                 "time": "02:04:05",
@@ -12770,13 +10659,6 @@
                 "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=8835s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20231231",
-                "time": "02:27:15",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=8835s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -12792,13 +10674,6 @@
                 "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=11343s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20231231",
-                "time": "03:09:03",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=11343s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -12808,13 +10683,6 @@
         "source": "ドラゴンボール",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231231",
-                "time": "03:21:03",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=12063s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20231231",
                 "time": "03:21:03",
@@ -12843,13 +10711,6 @@
                 "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=13644s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20231231",
-                "time": "03:47:24",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=13644s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -12865,13 +10726,6 @@
                 "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=14468s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20231231",
-                "time": "04:01:08",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=14468s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -12881,13 +10735,6 @@
         "source": "シャイニング・ウィンド",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231231",
-                "time": "04:12:36",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=15156s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20231231",
                 "time": "04:12:36",
@@ -12932,13 +10779,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231231",
-                "time": "04:22:20",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=15740s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
                 "date": "20240629",
                 "time": "07:44:37",
                 "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=27877s",
@@ -12953,13 +10793,6 @@
         "source": "らき☆すた",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231231",
-                "time": "04:31:43",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=16303s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20231231",
                 "time": "04:31:43",
@@ -12981,13 +10814,6 @@
                 "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=16754s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20231231",
-                "time": "04:39:14",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=16754s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -12997,13 +10823,6 @@
         "source": "Fate/Zero",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231231",
-                "time": "05:30:05",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=19805s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20231231",
                 "time": "05:30:05",
@@ -13032,13 +10851,6 @@
                 "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=23738s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20231231",
-                "time": "06:35:38",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=23738s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -13052,20 +10864,6 @@
                 "date": "20231231",
                 "time": "06:54:22",
                 "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=24862s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231231",
-                "time": "06:54:22",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=24862s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231209",
-                "time": "04:18:37",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=15517s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             },
@@ -13090,13 +10888,6 @@
                 "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=27235s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20231231",
-                "time": "07:33:55",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=27235s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -13106,13 +10897,6 @@
         "source": "ロザリオとバンパイア",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231231",
-                "time": "07:56:10",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=28570s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20231231",
                 "time": "07:56:10",
@@ -13140,13 +10924,6 @@
                 "time": "00:45:26",
                 "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=2726s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231028",
-                "time": "03:04:32",
-                "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=11072s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -13193,13 +10970,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231028",
-                "time": "03:07:47",
-                "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=11267s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240407",
                 "time": "02:58:15",
                 "link": "https://www.youtube.com/watch?v=GKJdPg7oqgs&t=10695s",
@@ -13226,13 +10996,6 @@
                 "time": "00:54:57",
                 "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=3297s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231028",
-                "time": "03:15:30",
-                "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=11730s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -13272,13 +11035,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231028",
-                "time": "03:52:38",
-                "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=13958s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
                 "date": "20240621",
                 "time": "07:23:27",
                 "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=26607s",
@@ -13298,13 +11054,6 @@
                 "time": "03:04:54",
                 "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=11094s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231028",
-                "time": "04:15:55",
-                "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=15355s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             },
             {
@@ -13351,31 +11100,10 @@
                 "is_acapella": false
             },
             {
-                "date": "20231209",
-                "time": "08:24:09",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=30249s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
                 "date": "20231028",
                 "time": "04:23:45",
                 "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=15825s",
                 "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231028",
-                "time": "04:23:45",
-                "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=15825s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20240106",
-                "time": "04:30:59",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=16259s",
-                "is_member_exclusive": false,
                 "is_acapella": false
             },
             {
@@ -14106,13 +11834,6 @@
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=8753s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20240120",
-                "time": "02:25:53",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=8753s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -14469,13 +12190,6 @@
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=24960s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20240120",
-                "time": "06:56:00",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=24960s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -14485,13 +12199,6 @@
         "source": "",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231209",
-                "time": "00:22:19",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=1339s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20231209",
                 "time": "00:22:19",
@@ -14513,13 +12220,6 @@
                 "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=1839s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20231209",
-                "time": "00:30:39",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=1839s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -14529,13 +12229,6 @@
         "source": "スラムダンク",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231209",
-                "time": "00:43:00",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=2580s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20231209",
                 "time": "00:43:00",
@@ -14564,13 +12257,6 @@
                 "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=3365s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20231209",
-                "time": "00:56:05",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=3365s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -14580,13 +12266,6 @@
         "source": "ぼくらの",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231209",
-                "time": "01:31:35",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=5495s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20231209",
                 "time": "01:31:35",
@@ -14629,13 +12308,6 @@
                 "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=6222s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20231209",
-                "time": "01:43:42",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=6222s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -14645,13 +12317,6 @@
         "source": "",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231209",
-                "time": "01:56:17",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=6977s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20231209",
                 "time": "01:56:17",
@@ -14673,13 +12338,6 @@
                 "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=9560s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20231209",
-                "time": "02:39:20",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=9560s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -14695,13 +12353,6 @@
                 "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=11204s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20231209",
-                "time": "03:06:44",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=11204s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -14711,13 +12362,6 @@
         "source": "ふしぎな島のフローネ",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231209",
-                "time": "03:30:53",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=12653s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20231209",
                 "time": "03:30:53",
@@ -14748,13 +12392,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231209",
-                "time": "03:34:25",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=12865s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
                 "date": "20240817",
                 "time": "00:57:32",
                 "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=3452s",
@@ -14775,13 +12412,6 @@
                 "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=13569s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20231209",
-                "time": "03:46:09",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=13569s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -14791,13 +12421,6 @@
         "source": "The Sound Of Music",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231209",
-                "time": "03:53:53",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=14033s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20231209",
                 "time": "03:53:53",
@@ -14826,13 +12449,6 @@
                 "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=14307s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20231209",
-                "time": "03:58:27",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=14307s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -14848,13 +12464,6 @@
                 "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=15757s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20231209",
-                "time": "04:22:37",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=15757s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -14864,13 +12473,6 @@
         "source": "DOG DAYS",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231209",
-                "time": "07:30:02",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=27002s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20231209",
                 "time": "07:30:02",
@@ -14901,13 +12503,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20231209",
-                "time": "07:47:56",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=28076s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
                 "date": "20240209",
                 "time": "03:08:26",
                 "link": "https://www.youtube.com/watch?v=kMAS4-EXsps&t=11306s",
@@ -14922,13 +12517,6 @@
         "source": "エヴァンゲリオン",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231209",
-                "time": "08:16:57",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=29817s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20231209",
                 "time": "08:16:57",
@@ -14980,13 +12568,6 @@
                 "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=715s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231028",
-                "time": "00:11:55",
-                "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=715s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -14996,13 +12577,6 @@
         "source": "",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231028",
-                "time": "01:32:41",
-                "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=5561s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231028",
                 "time": "01:32:41",
@@ -15045,13 +12619,6 @@
                 "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=6423s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231028",
-                "time": "01:47:03",
-                "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=6423s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -15061,13 +12628,6 @@
         "source": "ロミオの青い空",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20231028",
-                "time": "02:50:38",
-                "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=10238s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
             {
                 "date": "20231028",
                 "time": "02:50:38",
@@ -15089,13 +12649,6 @@
                 "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=10487s",
                 "is_member_exclusive": true,
                 "is_acapella": false
-            },
-            {
-                "date": "20231028",
-                "time": "02:54:47",
-                "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=10487s",
-                "is_member_exclusive": true,
-                "is_acapella": false
             }
         ]
     },
@@ -15111,53 +12664,41 @@
                 "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=2923s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
+            }
+        ]
+    },
+    {
+        "song_name": "夕焼け小焼け",
+        "artist": "",
+        "source": "",
+        "is_copyright": false,
+        "dates": [
             {
                 "date": "20240106",
-                "time": "00:48:43",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=2923s",
+                "time": "00:54:59",
+                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=3299s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             },
             {
                 "date": "20240106",
-                "time": "00:48:43",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=2923s",
+                "time": "00:58:09",
+                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=3489s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
+            }
+        ]
+    },
+    {
+        "song_name": "Amazing Grace",
+        "artist": "",
+        "source": "",
+        "is_copyright": false,
+        "dates": [
             {
                 "date": "20240106",
-                "time": "00:48:43",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=2923s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240106",
-                "time": "00:48:43",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=2923s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240106",
-                "time": "00:48:43",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=2923s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240106",
-                "time": "00:48:43",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=2923s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240106",
-                "time": "00:48:43",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=2923s",
+                "time": "01:11:30",
+                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=4290s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
@@ -15175,25 +12716,19 @@
                 "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=6612s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
+            }
+        ]
+    },
+    {
+        "song_name": "桃太郎",
+        "artist": "",
+        "source": "",
+        "is_copyright": false,
+        "dates": [
             {
                 "date": "20240106",
-                "time": "01:50:12",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=6612s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240106",
-                "time": "01:50:12",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=6612s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240106",
-                "time": "01:50:12",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=6612s",
+                "time": "01:58:58",
+                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=7138s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
@@ -15205,13 +12740,6 @@
         "source": "名探偵コナン",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20240106",
-                "time": "02:19:38",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=8378s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20240106",
                 "time": "02:19:38",
@@ -15242,13 +12770,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20240106",
-                "time": "02:27:20",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=8840s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
                 "date": "20240601",
                 "time": "00:20:28",
                 "link": "https://www.youtube.com/watch?v=SzWbDrjyE6A&t=1228s",
@@ -15263,13 +12784,6 @@
         "source": "",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20240106",
-                "time": "02:39:52",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=9592s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20240106",
                 "time": "02:39:52",
@@ -15293,13 +12807,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20240106",
-                "time": "02:59:51",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=10791s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
                 "date": "20241228",
                 "time": "05:40:58",
                 "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=20458s",
@@ -15314,13 +12821,6 @@
         "source": "",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20240106",
-                "time": "03:10:43",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=11443s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20240106",
                 "time": "03:10:43",
@@ -15356,13 +12856,6 @@
                 "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=11895s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20240106",
-                "time": "03:18:15",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=11895s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -15378,13 +12871,6 @@
                 "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=12907s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20240106",
-                "time": "03:35:07",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=12907s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -15394,13 +12880,6 @@
         "source": "",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20240106",
-                "time": "03:46:19",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=13579s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20240106",
                 "time": "03:46:19",
@@ -15429,13 +12908,6 @@
                 "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=15152s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20240106",
-                "time": "04:12:32",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=15152s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -15445,13 +12917,6 @@
         "source": "千と千尋の神隠し",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20240106",
-                "time": "04:39:17",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=16757s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20240106",
                 "time": "04:39:17",
@@ -15473,13 +12938,6 @@
                 "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=19037s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20240106",
-                "time": "05:17:17",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=19037s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -15489,13 +12947,6 @@
         "source": "IZUMO - 猛き剣の閃記 -",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20240106",
-                "time": "05:25:56",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=19556s",
-                "is_member_exclusive": false,
-                "is_acapella": true
-            },
             {
                 "date": "20240106",
                 "time": "05:25:56",
@@ -15517,13 +12968,6 @@
                 "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=22140s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20240106",
-                "time": "06:09:00",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=22140s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -15533,13 +12977,6 @@
         "source": "るろうに剣心",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20240106",
-                "time": "06:20:50",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=22850s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20240106",
                 "time": "06:20:50",
@@ -15851,13 +13288,6 @@
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=10883s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20240120",
-                "time": "03:01:23",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=10883s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -16043,7 +13473,7 @@
     {
         "song_name": "スカイクラッドの観測者",
         "artist": "いとうかなこ",
-        "source": "STEINS;GATE(ゲーム)",
+        "source": "STEINS;GATE",
         "is_copyright": false,
         "dates": [
             {
@@ -16915,13 +14345,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20240120",
-                "time": "00:16:58",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=1018s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
                 "date": "20240202",
                 "time": "05:00:16",
                 "link": "https://www.youtube.com/watch?v=70E6Ns3_THo&t=18016s",
@@ -16949,13 +14372,6 @@
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=2469s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20240120",
-                "time": "00:41:09",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=2469s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -16971,13 +14387,6 @@
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=3088s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20240120",
-                "time": "00:51:28",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=3088s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -16987,13 +14396,6 @@
         "source": "魔法少女リリカルなのは",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20240120",
-                "time": "01:09:22",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=4162s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20240120",
                 "time": "01:09:22",
@@ -17022,13 +14424,6 @@
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=4692s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20240120",
-                "time": "01:18:12",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=4692s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -17038,13 +14433,6 @@
         "source": "魔法少女リリカルなのは",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20240120",
-                "time": "01:29:13",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=5353s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20240120",
                 "time": "01:29:13",
@@ -17066,13 +14454,6 @@
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=6053s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20240120",
-                "time": "01:40:53",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=6053s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -17082,13 +14463,6 @@
         "source": "Clover Heart's",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20240120",
-                "time": "01:53:28",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=6808s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20240120",
                 "time": "01:53:28",
@@ -17110,13 +14484,6 @@
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=7335s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20240120",
-                "time": "02:02:15",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=7335s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -17126,13 +14493,6 @@
         "source": "しゅごキャラ！",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20240120",
-                "time": "03:09:02",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=11342s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20240120",
                 "time": "03:09:02",
@@ -17154,13 +14514,6 @@
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=12326s",
                 "is_member_exclusive": false,
                 "is_acapella": true
-            },
-            {
-                "date": "20240120",
-                "time": "03:25:26",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=12326s",
-                "is_member_exclusive": false,
-                "is_acapella": true
             }
         ]
     },
@@ -17170,13 +14523,6 @@
         "source": "",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20240120",
-                "time": "03:36:22",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=12982s",
-                "is_member_exclusive": false,
-                "is_acapella": true
-            },
             {
                 "date": "20240120",
                 "time": "03:36:22",
@@ -17198,13 +14544,6 @@
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=13637s",
                 "is_member_exclusive": false,
                 "is_acapella": true
-            },
-            {
-                "date": "20240120",
-                "time": "03:47:17",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=13637s",
-                "is_member_exclusive": false,
-                "is_acapella": true
             }
         ]
     },
@@ -17214,13 +14553,6 @@
         "source": "CLANNAD",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20240120",
-                "time": "03:55:36",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=14136s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20240120",
                 "time": "03:55:36",
@@ -17242,13 +14574,6 @@
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=20814s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20240120",
-                "time": "05:46:54",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=20814s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -17258,13 +14583,6 @@
         "source": "灼眼のシャナ",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20240120",
-                "time": "06:11:10",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=22270s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20240120",
                 "time": "06:11:10",
@@ -17286,13 +14604,6 @@
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=22582s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20240120",
-                "time": "06:16:22",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=22582s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -17302,13 +14613,6 @@
         "source": "灼眼のシャナ",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20240120",
-                "time": "06:27:45",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=23265s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20240120",
                 "time": "06:27:45",
@@ -17330,13 +14634,6 @@
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=24362s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20240120",
-                "time": "06:46:02",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=24362s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -17346,13 +14643,6 @@
         "source": "ゼロの使い魔",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20240120",
-                "time": "07:21:05",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=26465s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20240120",
                 "time": "07:21:05",
@@ -17381,13 +14671,6 @@
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=26815s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20240120",
-                "time": "07:26:55",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=26815s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -17397,13 +14680,6 @@
         "source": "魔女の宅急便",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20240120",
-                "time": "07:46:07",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=27967s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20240120",
                 "time": "07:46:07",
@@ -17425,13 +14701,6 @@
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=28400s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            },
-            {
-                "date": "20240120",
-                "time": "07:53:20",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=28400s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -17441,13 +14710,6 @@
         "source": "プリキュア",
         "is_copyright": false,
         "dates": [
-            {
-                "date": "20240120",
-                "time": "08:19:15",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=29955s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
             {
                 "date": "20240120",
                 "time": "08:19:15",
