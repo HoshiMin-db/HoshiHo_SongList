@@ -2170,6 +2170,13 @@
                 "link": "https://www.youtube.com/watch?v=QIuZP_DTjv8&t=7074s",
                 "is_member_exclusive": false,
                 "is_acapella": false
+            },
+            {
+                "date": "20240127",
+                "time": "02:50:15",
+                "link": "https://www.youtube.com/watch?v=kw8Ia8qEJ74&t=10215s",
+                "is_member_exclusive": false,
+                "is_acapella": false
             }
         ]
     },
@@ -9561,35 +9568,6 @@
         ]
     },
     {
-        "song_name": "そして僕にできるコト",
-        "artist": "misono",
-        "source": "Tales of Symphonia",
-        "is_copyright": false,
-        "dates": [
-            {
-                "date": "20240127",
-                "time": "02:50:15",
-                "link": "https://www.youtube.com/watch?v=kw8Ia8qEJ74&t=10215s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240511",
-                "time": "07:09:42",
-                "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=25782s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240922",
-                "time": "00:21:43",
-                "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=1303s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
         "song_name": "まもりたい ～White Wishes～ /『Tales of Graces』BoA",
         "artist": "",
         "source": "",
@@ -12646,6 +12624,28 @@
                 "date": "20240120",
                 "time": "02:52:15",
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=10335s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "そして僕にできるコト",
+        "artist": "misono",
+        "source": "Tales of Symphonia",
+        "is_copyright": false,
+        "dates": [
+            {
+                "date": "20240511",
+                "time": "07:09:42",
+                "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=25782s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240922",
+                "time": "00:21:43",
+                "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=1303s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
