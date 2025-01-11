@@ -2184,6 +2184,13 @@
                 "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=25782s",
                 "is_member_exclusive": false,
                 "is_acapella": false
+            },
+            {
+                "date": "20240922",
+                "time": "00:21:43",
+                "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=1303s",
+                "is_member_exclusive": false,
+                "is_acapella": false
             }
         ]
     },
@@ -19041,21 +19048,6 @@
                 "date": "20240308",
                 "time": "04:12:36",
                 "link": "https://www.youtube.com/watch?v=mfO62RxfZPU&t=15156s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "そして僕にできるコト",
-        "artist": "misono",
-        "source": "Tales of Symphonia",
-        "is_copyright": false,
-        "dates": [
-            {
-                "date": "20240922",
-                "time": "00:21:43",
-                "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=1303s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
