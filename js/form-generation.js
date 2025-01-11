@@ -74,39 +74,37 @@ document.addEventListener("DOMContentLoaded", function() {
         const groupedData = data.reduce((acc, row) => {
             const key = `${normalizeString(row.song_name)}-${normalizeString(row.artist)}`;
             if (!acc[key]) {
-                acc[key] = [];
+                acc[key] = row;
             }
-            acc[key].push(row);
             return acc;
         }, {});
 
-        Object.values(groupedData).forEach(group => {
-            group.sort((a, b) => new Date(b.date.substring(0, 4) + '-' + b.date.substring(4, 6) + '-' + b.date.substring(6)) - 
-                                 new Date(a.date.substring(0, 4) + '-' + a.date.substring(4, 6) + '-' + a.date.substring(6)));
+        Object.values(groupedData).forEach(item => {
+            item.dates.sort((a, b) => new Date(b.date + ' ' + b.time) - new Date(a.date + ' ' + a.time));
         });
 
-        Object.entries(groupedData).forEach(([key, rows]) => {
-            const maxRows = Math.min(rows.length, 3);
+        Object.entries(groupedData).forEach(([key, item]) => {
+            const maxDates = Math.min(item.dates.length, numDates);
             const newRow = songTableBody.insertRow();
             
             const initialCell = newRow.insertCell();
-            initialCell.textContent = rows[0].song_name.charAt(0).toUpperCase();
+            initialCell.textContent = item.song_name.charAt(0).toUpperCase();
             
             const songNameCell = newRow.insertCell();
-            songNameCell.textContent = rows[0].song_name;
+            songNameCell.textContent = item.song_name;
 
             // 檢查是否為版權標記歌曲，並設置字體顏色為紅色
-            if (rows[0].is_copyright) {
+            if (item.is_copyright) {
                 songNameCell.style.color = 'red';
             }
             
-            newRow.insertCell().textContent = rows[0].artist;
-            newRow.insertCell().textContent = rows[0].source || '';
+            newRow.insertCell().textContent = item.artist;
+            newRow.insertCell().textContent = item.source || '';
             
             for (let i = 0; i < numDates; i++) {
                 const dateCell = newRow.insertCell();
-                if (i < maxRows) {
-                    const row = rows[i];
+                if (i < maxDates) {
+                    const row = item.dates[i];
                     const link = document.createElement('a');
                     const date = row.date;
                     const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
@@ -131,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             }
 
-            if (rows.length > numDates) {
+            if (item.dates.length > numDates) {
                 const moreButtonCell = newRow.insertCell();
                 const moreButton = document.createElement('button');
                 moreButton.textContent = '...';
@@ -146,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         moreButton.setAttribute('data-expanded', 'false');
                         dateHeaderCell.colSpan = numDates + 1; 
                     } else {
-                        rows.slice(numDates).forEach(row => {
+                        item.dates.slice(numDates).forEach(row => {
                             const dateCell = newRow.insertCell();
                             dateCell.classList.add('date-cell', 'extra-date');
                             
@@ -173,7 +171,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             }
                         });
                         moreButton.setAttribute('data-expanded', 'true');
-                        dateHeaderCell.colSpan = rows.length + 1;
+                        dateHeaderCell.colSpan = item.dates.length + 1;
                     }
                 };
                 moreButtonCell.appendChild(moreButton);
