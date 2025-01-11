@@ -4790,6 +4790,13 @@
                 "link": "https://www.youtube.com/watch?v=0mO1WLnuFYM&t=5260s",
                 "is_member_exclusive": false,
                 "is_acapella": false
+            },
+            {
+                "date": "20240127",
+                "time": "03:56:37",
+                "link": "https://www.youtube.com/watch?v=kw8Ia8qEJ74&t=14197s",
+                "is_member_exclusive": false,
+                "is_acapella": false
             }
         ]
     },
@@ -9576,21 +9583,6 @@
                 "date": "20240127",
                 "time": "02:32:41",
                 "link": "https://www.youtube.com/watch?v=kw8Ia8qEJ74&t=9161s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "まもりたい ～White Wishes～ /『Tales of Graces』BoA",
-        "artist": "",
-        "source": "",
-        "is_copyright": false,
-        "dates": [
-            {
-                "date": "20240127",
-                "time": "03:56:37",
-                "link": "https://www.youtube.com/watch?v=kw8Ia8qEJ74&t=14197s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
