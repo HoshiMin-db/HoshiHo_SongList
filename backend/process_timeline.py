@@ -54,6 +54,13 @@ def load_exceptions(exceptions_file):
 
     return member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist, copyright_songs
 
+def normalize_string(str):
+    if not str:
+        return ''
+    str = str.lower()
+    str = re.sub(r'\s+', '', str)
+    return str
+
 def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist, copyright_songs):
     data = {}  # 改用字典來儲存資料
     
@@ -97,7 +104,7 @@ def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs
                             artist = source_artist[0].strip()
                 
                 # 建立唯一鍵（忽略大小寫和全半形）
-                normalized_key = (normalizeString(song_name), normalizeString(artist))
+                normalized_key = (normalize_string(song_name), normalize_string(artist))
                 
                 link = create_link(video_id, time_str)
                 is_member_exclusive = date_str in member_exclusive_dates
@@ -154,7 +161,7 @@ def main():
                 
                 # 合併資料
                 for song_data in data:
-                    key = (normalizeString(song_data['song_name']), normalizeString(song_data['artist']))
+                    key = (normalize_string(song_data['song_name']), normalize_string(song_data['artist']))
                     if key not in all_data:
                         all_data[key] = song_data
                     else:
