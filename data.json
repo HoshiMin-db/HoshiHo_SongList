@@ -10348,7 +10348,7 @@
     },
     {
         "song_name": "メグメル",
-        "artist": "riya",
+        "artist": "eufonius",
         "source": "CLANNAD",
         "is_copyright": false,
         "dates": [
@@ -10357,6 +10357,20 @@
                 "time": "03:35:44",
                 "link": "https://www.youtube.com/watch?v=DjJmVyIXfH8&t=12944s",
                 "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20231223",
+                "time": "06:05:39",
+                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=21939s",
+                "is_member_exclusive": true,
+                "is_acapella": false
+            },
+            {
+                "date": "20231223",
+                "time": "06:05:39",
+                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=21939s",
+                "is_member_exclusive": true,
                 "is_acapella": false
             }
         ]
@@ -11093,28 +11107,6 @@
                 "time": "07:35:59",
                 "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=27359s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "メグメル",
-        "artist": "eufonius",
-        "source": "CLANNAD",
-        "is_copyright": false,
-        "dates": [
-            {
-                "date": "20231223",
-                "time": "06:05:39",
-                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=21939s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231223",
-                "time": "06:05:39",
-                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=21939s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             }
         ]
