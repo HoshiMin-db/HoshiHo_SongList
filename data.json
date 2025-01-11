@@ -13229,6 +13229,20 @@
                 "is_acapella": false
             },
             {
+                "date": "20231028",
+                "time": "03:15:30",
+                "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=11730s",
+                "is_member_exclusive": true,
+                "is_acapella": false
+            },
+            {
+                "date": "20231028",
+                "time": "03:15:30",
+                "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=11730s",
+                "is_member_exclusive": true,
+                "is_acapella": false
+            },
+            {
                 "date": "20240908",
                 "time": "01:56:43",
                 "link": "https://www.youtube.com/watch?v=q0G8Q_5OAVw&t=7003s",
@@ -15080,28 +15094,6 @@
                 "date": "20231028",
                 "time": "02:54:47",
                 "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=10487s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "心に届く詩",
-        "artist": "Lia(Veil)",
-        "source": "シャイニング・ハーツ",
-        "is_copyright": false,
-        "dates": [
-            {
-                "date": "20231028",
-                "time": "03:15:30",
-                "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=11730s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20231028",
-                "time": "03:15:30",
-                "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=11730s",
                 "is_member_exclusive": true,
                 "is_acapella": false
             }
