@@ -1,3 +1,5 @@
+// form-generation.js
+
 // 防抖函數，用於限制函數的觸發頻率
 function debounce(func, wait) {
     let timeout;
@@ -79,13 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     dates: []
                 };
             }
-            acc[key].dates.push({
-                date: row.date,
-                time: row.time,
-                link: row.link,
-                is_member_exclusive: row.is_member_exclusive,
-                is_acapella: row.is_acapella
-            });
+            acc[key].dates = acc[key].dates.concat(row.dates);
             return acc;
         }, {});
 
