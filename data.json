@@ -15847,6 +15847,13 @@
                 "link": "https://www.youtube.com/watch?v=1VxGGjlEBUU&t=3164s",
                 "is_member_exclusive": false,
                 "is_acapella": false
+            },
+            {
+                "date": "20241019",
+                "time": "00:59:34",
+                "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=3574s",
+                "is_member_exclusive": false,
+                "is_acapella": false
             }
         ]
     },
@@ -16068,21 +16075,6 @@
                 "date": "20241019",
                 "time": "00:46:24",
                 "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=2784s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "Wellerman (Sea Shanty)",
-        "artist": "Nathan Evans",
-        "source": "",
-        "is_copyright": false,
-        "dates": [
-            {
-                "date": "20241019",
-                "time": "00:59:34",
-                "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=3574s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
