@@ -112,35 +112,33 @@ document.addEventListener("DOMContentLoaded", function() {
             newRow.insertCell().textContent = item.artist;
             newRow.insertCell().textContent = item.source || '';
             
-            for (let i = 0; i < numDates; i++) {
+            // 正確地插入日期
+            item.dates.slice(0, numDates).forEach(row => {
                 const dateCell = newRow.insertCell();
-                if (i < maxDates) {
-                    const row = item.dates[i];
-                    if (row && row.date && row.time) {
-                        const link = document.createElement('a');
-                        const date = row.date;
-                        const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
-                        link.href = row.link;
-                        link.textContent = formattedDate;
-                        link.target = '_blank';
-                        link.onclick = function(event) {
-                            event.preventDefault();
-                            openFloatingPlayer(link.href);
-                        };
-                        dateCell.appendChild(link);
+                if (row && row.date && row.time) {
+                    const link = document.createElement('a');
+                    const date = row.date;
+                    const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
+                    link.href = row.link;
+                    link.textContent = formattedDate;
+                    link.target = '_blank';
+                    link.onclick = function(event) {
+                        event.preventDefault();
+                        openFloatingPlayer(link.href);
+                    };
+                    dateCell.appendChild(link);
 
-                        if (row.is_member_exclusive) {
-                            const lockIcon = document.createElement('span');
-                            lockIcon.classList.add('lock-icon');
-                            lockIcon.textContent = '🔒';
-                            dateCell.appendChild(lockIcon);
-                        }
-                        if (row.is_acapella) {
-                            dateCell.classList.add('acapella');
-                        }
+                    if (row.is_member_exclusive) {
+                        const lockIcon = document.createElement('span');
+                        lockIcon.classList.add('lock-icon');
+                        lockIcon.textContent = '🔒';
+                        dateCell.appendChild(lockIcon);
+                    }
+                    if (row.is_acapella) {
+                        dateCell.classList.add('acapella');
                     }
                 }
-            }
+            });
 
             if (item.dates.length > numDates) {
                 const moreButtonCell = newRow.insertCell();
