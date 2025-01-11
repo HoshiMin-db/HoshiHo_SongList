@@ -66,7 +66,15 @@ def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs
     
     with open(file_path, 'r', encoding='utf-8') as f:
         lines = f.readlines()
-        video_id = lines[0].strip().split('=')[1].strip()
+        if not lines:
+            print(f"Error: {file_path} is empty.")
+            return []
+        
+        try:
+            video_id = lines[0].strip().split('=')[1].strip()
+        except IndexError:
+            print(f"Error: Invalid video ID format in file {file_path}.")
+            return []
         
         date = datetime.strptime(date_str, "%Y%m%d")
         old_rule_date = datetime.strptime("20240120", "%Y%m%d")
@@ -77,6 +85,9 @@ def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs
                 if date <= old_rule_date:
                     # 舊規則解析
                     parts = line.strip().split(' | ', 3)
+                    if len(parts) < 2:
+                        print(f"Warning: Skipping line due to insufficient parts: '{line.strip()}'")
+                        continue
                     time_str = parts[0]
                     song_name = parts[1]
                     artist = parts[2] if len(parts) > 2 else ''
@@ -86,6 +97,7 @@ def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs
                     line = re.sub(r'^\d+\.\s+', '', line)
                     parts = line.strip().split('\u3000', 1)
                     if len(parts) != 2:
+                        print(f"Warning: Skipping line due to incorrect format: '{line.strip()}'")
                         continue
                         
                     time_str, song_info = parts
