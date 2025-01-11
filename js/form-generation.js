@@ -1,5 +1,3 @@
-// form-generation.js
-
 // 防抖函數，用於限制函數的觸發頻率
 function debounce(func, wait) {
     let timeout;
@@ -51,7 +49,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     document.getElementById('songCount').textContent = totalSongCount;
                 }
                 callback(data);
-            });
+            })
+            .catch(error => console.error('Error fetching data:', error));
     }
 
     function fetchAndDisplayData(query, allData) {
@@ -71,137 +70,137 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 800)); // 設置防抖延遲時間為800毫秒
 
     function displayData(data, numDates = 3) {
-    // 使用reduce來分組數據
-    const groupedData = data.reduce((acc, row) => {
-        const key = `${normalizeString(row.song_name)}-${normalizeString(row.artist)}`;
-        if (!acc[key]) {
-            acc[key] = {
-                ...row,
-                dates: []
-            };
-        }
-        acc[key].dates.push({
-            date: row.date,
-            time: row.time,
-            link: row.link,
-            is_member_exclusive: row.is_member_exclusive,
-            is_acapella: row.is_acapella
+        // 使用reduce來分組數據
+        const groupedData = data.reduce((acc, row) => {
+            const key = `${normalizeString(row.song_name)}-${normalizeString(row.artist)}`;
+            if (!acc[key]) {
+                acc[key] = {
+                    ...row,
+                    dates: []
+                };
+            }
+            acc[key].dates.push({
+                date: row.date,
+                time: row.time,
+                link: row.link,
+                is_member_exclusive: row.is_member_exclusive,
+                is_acapella: row.is_acapella
+            });
+            return acc;
+        }, {});
+
+        // 遍歷分組後的數據，並對日期進行排序
+        Object.values(groupedData).forEach(item => {
+            item.dates.sort((a, b) => new Date(b.date + ' ' + b.time) - new Date(a.date + ' ' + a.time));
         });
-        return acc;
-    }, {});
 
-    // 遍歷分組後的數據，並對日期進行排序
-    Object.values(groupedData).forEach(item => {
-        item.dates.sort((a, b) => new Date(b.date + ' ' + b.time) - new Date(a.date + ' ' + a.time));
-    });
+        // 清空表格
+        songTableBody.innerHTML = '';
 
-    // 清空表格
-    songTableBody.innerHTML = '';
+        // 遍歷分組後的數據，生成表格行
+        Object.entries(groupedData).forEach(([key, item]) => {
+            const maxDates = Math.min(item.dates.length, numDates);
+            const newRow = songTableBody.insertRow();
+            
+            const initialCell = newRow.insertCell();
+            initialCell.textContent = item.song_name.charAt(0).toUpperCase();
+            
+            const songNameCell = newRow.insertCell();
+            songNameCell.textContent = item.song_name;
 
-    // 遍歷分組後的數據，生成表格行
-    Object.entries(groupedData).forEach(([key, item]) => {
-        const maxDates = Math.min(item.dates.length, numDates);
-        const newRow = songTableBody.insertRow();
-        
-        const initialCell = newRow.insertCell();
-        initialCell.textContent = item.song_name.charAt(0).toUpperCase();
-        
-        const songNameCell = newRow.insertCell();
-        songNameCell.textContent = item.song_name;
+            // 檢查是否為版權標記歌曲，並設置字體顏色為紅色
+            if (item.is_copyright) {
+                songNameCell.style.color = 'red';
+            }
+            
+            newRow.insertCell().textContent = item.artist;
+            newRow.insertCell().textContent = item.source || '';
+            
+            for (let i = 0; i < numDates; i++) {
+                const dateCell = newRow.insertCell();
+                if (i < maxDates) {
+                    const row = item.dates[i];
+                    if (row && row.date && row.time) {
+                        const link = document.createElement('a');
+                        const date = row.date;
+                        const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
+                        link.href = row.link;
+                        link.textContent = formattedDate;
+                        link.target = '_blank';
+                        link.onclick = function(event) {
+                            event.preventDefault();
+                            openFloatingPlayer(link.href);
+                        };
+                        dateCell.appendChild(link);
 
-        // 檢查是否為版權標記歌曲，並設置字體顏色為紅色
-        if (item.is_copyright) {
-            songNameCell.style.color = 'red';
-        }
-        
-        newRow.insertCell().textContent = item.artist;
-        newRow.insertCell().textContent = item.source || '';
-        
-        for (let i = 0; i < numDates; i++) {
-            const dateCell = newRow.insertCell();
-            if (i < maxDates) {
-                const row = item.dates[i];
-                if (row && row.date && row.time) {
-                    const link = document.createElement('a');
-                    const date = row.date;
-                    const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
-                    link.href = row.link;
-                    link.textContent = formattedDate;
-                    link.target = '_blank';
-                    link.onclick = function(event) {
-                        event.preventDefault();
-                        openFloatingPlayer(link.href);
-                    };
-                    dateCell.appendChild(link);
-
-                    if (row.is_member_exclusive) {
-                        const lockIcon = document.createElement('span');
-                        lockIcon.classList.add('lock-icon');
-                        lockIcon.textContent = '🔒';
-                        dateCell.appendChild(lockIcon);
-                    }
-                    if (row.is_acapella) {
-                        dateCell.classList.add('acapella');
+                        if (row.is_member_exclusive) {
+                            const lockIcon = document.createElement('span');
+                            lockIcon.classList.add('lock-icon');
+                            lockIcon.textContent = '🔒';
+                            dateCell.appendChild(lockIcon);
+                        }
+                        if (row.is_acapella) {
+                            dateCell.classList.add('acapella');
+                        }
                     }
                 }
             }
-        }
 
-        if (item.dates.length > numDates) {
-            const moreButtonCell = newRow.insertCell();
-            const moreButton = document.createElement('button');
-            moreButton.textContent = '...';
-            moreButton.className = 'more-button';
-            moreButton.onclick = () => {
-                const isExpanded = moreButton.getAttribute('data-expanded') === 'true';
-                const dateHeaderCell = songTableHead.rows[0].cells[4];
-                
-                if (isExpanded) {
-                    const toRemove = newRow.querySelectorAll('.extra-date');
-                    toRemove.forEach(el => el.remove());
-                    moreButton.setAttribute('data-expanded', 'false');
-                    dateHeaderCell.colSpan = numDates + 1; 
-                } else {
-                    item.dates.slice(numDates).forEach(row => {
-                        if (row && row.date && row.time) {
-                            const dateCell = newRow.insertCell();
-                            dateCell.classList.add('date-cell', 'extra-date');
-                            
-                            const link = document.createElement('a');
-                            const date = row.date;
-                            const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
-                            link.href = row.link;
-                            link.textContent = formattedDate;
-                            link.target = '_blank';
-                            link.onclick = function(event) {
-                                event.preventDefault();
-                                openFloatingPlayer(link.href);
-                            };
-                            dateCell.appendChild(link);
-                            
-                            if (row.is_member_exclusive) {
-                                const lockIcon = document.createElement('span');
-                                lockIcon.classList.add('lock-icon');
-                                lockIcon.textContent = '🔒';
-                                dateCell.appendChild(lockIcon);
+            if (item.dates.length > numDates) {
+                const moreButtonCell = newRow.insertCell();
+                const moreButton = document.createElement('button');
+                moreButton.textContent = '...';
+                moreButton.className = 'more-button';
+                moreButton.onclick = () => {
+                    const isExpanded = moreButton.getAttribute('data-expanded') === 'true';
+                    const dateHeaderCell = songTableHead.rows[0].cells[4];
+                    
+                    if (isExpanded) {
+                        const toRemove = newRow.querySelectorAll('.extra-date');
+                        toRemove.forEach(el => el.remove());
+                        moreButton.setAttribute('data-expanded', 'false');
+                        dateHeaderCell.colSpan = numDates + 1; 
+                    } else {
+                        item.dates.slice(numDates).forEach(row => {
+                            if (row && row.date && row.time) {
+                                const dateCell = newRow.insertCell();
+                                dateCell.classList.add('date-cell', 'extra-date');
+                                
+                                const link = document.createElement('a');
+                                const date = row.date;
+                                const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
+                                link.href = row.link;
+                                link.textContent = formattedDate;
+                                link.target = '_blank';
+                                link.onclick = function(event) {
+                                    event.preventDefault();
+                                    openFloatingPlayer(link.href);
+                                };
+                                dateCell.appendChild(link);
+                                
+                                if (row.is_member_exclusive) {
+                                    const lockIcon = document.createElement('span');
+                                    lockIcon.classList.add('lock-icon');
+                                    lockIcon.textContent = '🔒';
+                                    dateCell.appendChild(lockIcon);
+                                }
+                                if (row.is_acapella) {
+                                    dateCell.classList.add('acapella');
+                                }
                             }
-                            if (row.is_acapella) {
-                                dateCell.classList.add('acapella');
-                            }
-                        }
-                    });
-                    moreButton.setAttribute('data-expanded', 'true');
-                    dateHeaderCell.colSpan = item.dates.length + 1;
-                }
-            };
-            moreButtonCell.appendChild(moreButton);
-        } else {
-            newRow.insertCell();
-        }
-    });
+                        });
+                        moreButton.setAttribute('data-expanded', 'true');
+                        dateHeaderCell.colSpan = item.dates.length + 1;
+                    }
+                };
+                moreButtonCell.appendChild(moreButton);
+            } else {
+                newRow.insertCell();
+            }
+        });
 
-    sortTable();
-}
+        sortTable();
+    }
 
     function sortTable() {
         const table = document.getElementById('songTable');
