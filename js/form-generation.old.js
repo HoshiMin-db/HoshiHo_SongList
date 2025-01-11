@@ -17,8 +17,14 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // 字符串規範化函數，用於處理不同的字符串格式
+import { convert_jp } from './romaji.js';
+
 function normalizeString(str) {
     if (!str) return ''; // 檢查空或未定義的字符串
+    
+    // 進行轉換
+    str = convert_jp(str);
+    
     return str.normalize('NFKC') // 將字符串規範化為 NFKC 形式
               .replace(/[~\u301c\uff5e]/g, '~') // 將全形和半形波浪號替換為半形波浪號
               .replace(/，/g, ',') // 將全形逗號替換為半形逗號
@@ -129,6 +135,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 const moreButtonCell = newRow.insertCell();
                 const moreButton = document.createElement('button');
                 moreButton.textContent = '...';
+                moreButton.className = 'more-button';
                 moreButton.onclick = () => {
                     const isExpanded = moreButton.getAttribute('data-expanded') === 'true';
                     const dateHeaderCell = songTableHead.rows[0].cells[4];
