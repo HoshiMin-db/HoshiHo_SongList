@@ -34,7 +34,7 @@ ID = 4UkUe2DaDGQ
 31.　06:46:28　ハム太郎とっとこうた  / 『とっとこハム太郎』ハムちゃんず
 32.　06:52:11　月光花  / 『ブラック・ジャック』Janne Da Arc
 33.　07:02:35　Starry Heavens  / 『Tales of Symphonia』Day After Tomorrow
-34.　07:09:42　そして僕にできるコト  / 『Tales of Symphonia』misono
+34.　07:09:42　そして僕にできるコト  / 『Tales of Symphonia』day after tomorrow
 35.　07:21:31　二人三脚  / 『Tales of Symphonia ~Knight of Ratatosk~』misono
 36.　07:35:23　カルマ  / 『Tales of the Abyss』BUMP OF CHICKEN
 37.　07:40:42　夢であるように  / 『Tales of Destiny』DEEN
