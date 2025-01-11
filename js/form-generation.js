@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
     searchInput.addEventListener('input', debounce(function(e) { 
         const query = normalizeString(e.target.value.toLowerCase());
         fetchData(data => fetchAndDisplayData(query, data));
-    }, 300)); // 設置防抖延遲時間為300毫秒
+    }, 800)); // 設置防抖延遲時間為800毫秒
 
     function displayData(data, numDates = 3) {
     // 使用reduce來分組數據
@@ -121,26 +121,28 @@ document.addEventListener("DOMContentLoaded", function() {
             const dateCell = newRow.insertCell();
             if (i < maxDates) {
                 const row = item.dates[i];
-                const link = document.createElement('a');
-                const date = row.date;
-                const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
-                link.href = row.link;
-                link.textContent = formattedDate;
-                link.target = '_blank';
-                link.onclick = function(event) {
-                    event.preventDefault();
-                    openFloatingPlayer(link.href);
-                };
-                dateCell.appendChild(link);
+                if (row && row.date && row.time) {
+                    const link = document.createElement('a');
+                    const date = row.date;
+                    const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
+                    link.href = row.link;
+                    link.textContent = formattedDate;
+                    link.target = '_blank';
+                    link.onclick = function(event) {
+                        event.preventDefault();
+                        openFloatingPlayer(link.href);
+                    };
+                    dateCell.appendChild(link);
 
-                if (row.is_member_exclusive) {
-                    const lockIcon = document.createElement('span');
-                    lockIcon.classList.add('lock-icon');
-                    lockIcon.textContent = '🔒';
-                    dateCell.appendChild(lockIcon);
-                }
-                if (row.is_acapella) {
-                    dateCell.classList.add('acapella');
+                    if (row.is_member_exclusive) {
+                        const lockIcon = document.createElement('span');
+                        lockIcon.classList.add('lock-icon');
+                        lockIcon.textContent = '🔒';
+                        dateCell.appendChild(lockIcon);
+                    }
+                    if (row.is_acapella) {
+                        dateCell.classList.add('acapella');
+                    }
                 }
             }
         }
@@ -161,29 +163,31 @@ document.addEventListener("DOMContentLoaded", function() {
                     dateHeaderCell.colSpan = numDates + 1; 
                 } else {
                     item.dates.slice(numDates).forEach(row => {
-                        const dateCell = newRow.insertCell();
-                        dateCell.classList.add('date-cell', 'extra-date');
-                        
-                        const link = document.createElement('a');
-                        const date = row.date;
-                        const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
-                        link.href = row.link;
-                        link.textContent = formattedDate;
-                        link.target = '_blank';
-                        link.onclick = function(event) {
-                            event.preventDefault();
-                            openFloatingPlayer(link.href);
-                        };
-                        dateCell.appendChild(link);
-                        
-                        if (row.is_member_exclusive) {
-                            const lockIcon = document.createElement('span');
-                            lockIcon.classList.add('lock-icon');
-                            lockIcon.textContent = '🔒';
-                            dateCell.appendChild(lockIcon);
-                        }
-                        if (row.is_acapella) {
-                            dateCell.classList.add('acapella');
+                        if (row && row.date && row.time) {
+                            const dateCell = newRow.insertCell();
+                            dateCell.classList.add('date-cell', 'extra-date');
+                            
+                            const link = document.createElement('a');
+                            const date = row.date;
+                            const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
+                            link.href = row.link;
+                            link.textContent = formattedDate;
+                            link.target = '_blank';
+                            link.onclick = function(event) {
+                                event.preventDefault();
+                                openFloatingPlayer(link.href);
+                            };
+                            dateCell.appendChild(link);
+                            
+                            if (row.is_member_exclusive) {
+                                const lockIcon = document.createElement('span');
+                                lockIcon.classList.add('lock-icon');
+                                lockIcon.textContent = '🔒';
+                                dateCell.appendChild(lockIcon);
+                            }
+                            if (row.is_acapella) {
+                                dateCell.classList.add('acapella');
+                            }
                         }
                     });
                     moreButton.setAttribute('data-expanded', 'true');
