@@ -95,7 +95,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // 遍歷分組後的數據，生成表格行
         Object.entries(groupedData).forEach(([key, item]) => {
-            const maxDates = Math.min(item.dates.length, numDates);
             const newRow = songTableBody.insertRow();
             
             const initialCell = newRow.insertCell();
@@ -113,32 +112,40 @@ document.addEventListener("DOMContentLoaded", function() {
             newRow.insertCell().textContent = item.source || '';
             
             // 正確地插入日期
-            item.dates.slice(0, numDates).forEach(row => {
+            for (let i = 0; i < numDates; i++) {
                 const dateCell = newRow.insertCell();
-                if (row && row.date && row.time) {
-                    const link = document.createElement('a');
-                    const date = row.date;
-                    const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
-                    link.href = row.link;
-                    link.textContent = formattedDate;
-                    link.target = '_blank';
-                    link.onclick = function(event) {
-                        event.preventDefault();
-                        openFloatingPlayer(link.href);
-                    };
-                    dateCell.appendChild(link);
+                if (i < item.dates.length) {
+                    const row = item.dates[i];
+                    if (row && row.date && row.time) {
+                        const link = document.createElement('a');
+                        const date = row.date;
+                        const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
+                        link.href = row.link;
+                        link.textContent = formattedDate;
+                        link.target = '_blank';
+                        link.onclick = function(event) {
+                            event.preventDefault();
+                            openFloatingPlayer(link.href);
+                        };
+                        dateCell.appendChild(link);
 
-                    if (row.is_member_exclusive) {
-                        const lockIcon = document.createElement('span');
-                        lockIcon.classList.add('lock-icon');
-                        lockIcon.textContent = '🔒';
-                        dateCell.appendChild(lockIcon);
-                    }
-                    if (row.is_acapella) {
-                        dateCell.classList.add('acapella');
+                        if (row.is_member_exclusive) {
+                            const lockIcon = document.createElement('span');
+                            lockIcon.classList.add('lock-icon');
+                            lockIcon.textContent = '🔒';
+                            dateCell.appendChild(lockIcon);
+                        }
+                        if (row.is_acapella) {
+                            dateCell.classList.add('acapella');
+                        }
                     }
                 }
-            });
+            }
+
+            // 如果日期數量不足，生成空白儲存格
+            for (let i = item.dates.length; i < numDates; i++) {
+                newRow.insertCell();
+            }
 
             if (item.dates.length > numDates) {
                 const moreButtonCell = newRow.insertCell();
