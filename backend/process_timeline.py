@@ -76,12 +76,11 @@ def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs
             try:
                 if date <= old_rule_date:
                     # 舊規則解析
-                    parts = line.strip().split(' | ')
-                    if len(parts) >= 3:
-                        time_str = parts[0]
-                        song_name = parts[1]
-                        artist = parts[2]
-                        source = parts[3] if len(parts) == 4 else ''
+                    parts = line.strip().split(' | ', 3)
+                    time_str = parts[0]
+                    song_name = parts[1]
+                    artist = parts[2] if len(parts) > 2 else ''
+                    source = parts[3] if len(parts) > 3 else ''
                 elif date >= new_rule_date:
                     # 新規則解析
                     line = re.sub(r'^\d+\.\s+', '', line)
@@ -125,14 +124,16 @@ def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs
                         'dates': []
                     }
                 
-                # 添加日期資訊
-                data[normalized_key]['dates'].append({
+                # 確保不重複添加日期資訊
+                date_info = {
                     'date': date_str,
                     'time': time_str,
                     'link': link,
                     'is_member_exclusive': is_member_exclusive,
                     'is_acapella': is_acapella
-                })
+                }
+                if date_info not in data[normalized_key]['dates']:
+                    data[normalized_key]['dates'].append(date_info)
                 
             except Exception as e:
                 print(f"Error processing line '{line.strip()}': {e}")
@@ -165,7 +166,9 @@ def main():
                     if key not in all_data:
                         all_data[key] = song_data
                     else:
-                        all_data[key]['dates'].extend(song_data['dates'])
+                        existing_dates = all_data[key]['dates']
+                        new_dates = [d for d in song_data['dates'] if d not in existing_dates]
+                        all_data[key]['dates'].extend(new_dates)
             
             except Exception as e:
                 print(f"Error processing file {file_path}: {e}")
