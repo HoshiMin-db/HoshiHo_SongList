@@ -145,6 +145,7 @@ function createTableRow(item, numDates, songTableHead) {
 document.addEventListener("DOMContentLoaded", function() {
     const searchInput = document.getElementById('searchInput');
     const virtualScrollContainer = document.getElementById('virtualScrollContainer');
+    const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
     const songTableHead = document.getElementById('songTable').getElementsByTagName('thead')[0];
     let allData = [];
     const rowHeight = 40;  // 假設每行的高度為40像素
@@ -193,12 +194,11 @@ document.addEventListener("DOMContentLoaded", function() {
             return acc;
         }, {});
 
-        const tbody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
-        tbody.innerHTML = '';
+        songTableBody.innerHTML = '';
 
         Object.entries(groupedData).forEach(([key, item]) => {
             const newRow = createTableRow(item, numDates, songTableHead);
-            tbody.appendChild(newRow);
+            songTableBody.appendChild(newRow);
         });
 
         sortTable();
@@ -218,26 +218,41 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function onScroll() {
-        const virtualScrollContainer = document.getElementById('virtualScrollContainer');
-        
         // 計算可視區域的範圍
         const visibleRowCount = Math.floor(virtualScrollContainer.clientHeight / rowHeight);
         const startIdx = Math.floor(virtualScrollContainer.scrollTop / rowHeight);
         const endIdx = Math.min(startIdx + visibleRowCount, allData.length);
         
         // 清空當前顯示的內容
-        const tbody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
-        tbody.innerHTML = '';
+        songTableBody.innerHTML = '';
         
         // 渲染可視區域內的數據
         const visibleData = allData.slice(startIdx, endIdx);
-        displayData(visibleData, 3);
+        visibleData.forEach(item => {
+            const newRow = createTableRow(item, 3, songTableHead);
+            songTableBody.appendChild(newRow);
+        });
+    }
+
+    // 確認元素是否存在
+    if (searchInput) {
+        searchInput.addEventListener('input', debounce(function(e) {
+            const query = normalizeString(e.target.value.toLowerCase());
+            fetchAndDisplayData(query);
+        }, 300));
+    } else {
+        console.error("searchInput element not found");
+    }
+
+    if (virtualScrollContainer) {
+        virtualScrollContainer.addEventListener('scroll', onScroll);
+    } else {
+        console.error("virtualScrollContainer element not found");
     }
 
     // 頁面加載時顯示全部表單
     fetchData(() => {
         fetchAndDisplayData('');
-        const virtualScrollContainer = document.getElementById('virtualScrollContainer');
         if (virtualScrollContainer) {
             onScroll(); // 初始化顯示可視區域數據
         }
