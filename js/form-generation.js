@@ -19,20 +19,36 @@ document.addEventListener("DOMContentLoaded", function() {
 // 字符串規範化函數，用於處理不同的字符串格式
 import { convert_jp } from './romaji.js';
 
-function normalizeString(str) {
-    if (!str) return ''; // 檢查空或未定義的字符串
+// 增加輸入驗證和清理函數
+function sanitizeInput(input) {
+    if (typeof input !== 'string') return '';
     
-    // 進行轉換
+    // 移除可能的XSS攻擊字符
+    return input.replace(/[<>&'"]/g, '')
+               // 移除 HTML 標籤
+               .replace(/<[^>]*>/g, '')
+               // 移除特殊字符
+               .replace(/[^\w\s\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]/g, '');
+}
+
+// 改善 normalizeString 函數
+function normalizeString(str) {
+    if (!str) return '';
+    
+    // 先進行安全性清理
+    str = sanitizeInput(str);
+    
+    // 再進行原有的轉換
     str = convert_jp(str);
     
-    return str.normalize('NFKC') // 將字符串規範化為 NFKC 形式
-              .replace(/[~\u301c\uff5e]/g, '~') // 將全形和半形波浪號替換為半形波浪號
-              .replace(/，/g, ',') // 將全形逗號替換為半形逗號
-              .replace(/。/g, '.') // 將全形句號替換為半形句號
-              .replace(/[‘’]/g, "'") // 將全形引號替換為半形引號
-              .replace(/…/g, '...') // 將全形省略號替換為半形省略號
-              .replace(/\s+/g, '') // 忽略所有空格
-              .toLowerCase(); // 將字符串轉換為小寫形式
+    return str.normalize('NFKC')
+             .replace(/[~\u301c\uff5e]/g, '~')
+             .replace(/，/g, ',')
+             .replace(/。/g, '.')
+             .replace(/['']/g, "'")
+             .replace(/…/g, '...')
+             .replace(/\s+/g, '')
+             .toLowerCase();
 }
 
 // 創建表格行
