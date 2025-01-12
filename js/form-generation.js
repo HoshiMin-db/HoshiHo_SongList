@@ -87,7 +87,7 @@ function createTableRow(item, numDates) {
         link.target = '_blank';
         link.onclick = function(event) {
             event.preventDefault();
-            if (isValidURL(link.href)) {
+            if (isValidYouTubeURL(link.href)) {
                 openFloatingPlayer(link.href);
             } else {
                 console.error('Invalid URL:', link.href);
@@ -137,7 +137,7 @@ function createTableRow(item, numDates) {
                     link.target = '_blank';
                     link.onclick = function(event) {
                         event.preventDefault();
-                        if (isValidURL(link.href)) {
+                        if (isValidYouTubeURL(link.href)) {
                             openFloatingPlayer(link.href);
                         } else {
                             console.error('Invalid URL:', link.href);
@@ -166,12 +166,12 @@ function createTableRow(item, numDates) {
     return newRow;
 }
 
-// 檢查 URL 是否有效
-function isValidURL(url) {
+// 檢查 URL 是否為有效的 YouTube 網域
+function isValidYouTubeURL(url) {
     try {
         const parsedURL = new URL(url);
-        // 在這裡檢查 URL 的網域是否在允許的清單中
-        const allowedDomains = ['example.com', 'anotherdomain.com'];
+        // 允許的 YouTube 網域清單
+        const allowedDomains = ['www.youtube.com', 'youtu.be'];
         return allowedDomains.includes(parsedURL.hostname);
     } catch (e) {
         return false;
