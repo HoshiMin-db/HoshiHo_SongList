@@ -1,66 +1,3 @@
-import json
-import os
-import re
-from datetime import datetime
-
-def parse_time(time_str):
-    """將時間字符串轉換為秒數"""
-    time_str = time_str.replace('：', ':')
-    parts = list(map(int, time_str.split(':')))
-    return parts[0] * 3600 + parts[1] * 60 + parts[2]
-
-def create_link(video_id, time_str):
-    """根據影片ID和時間創建超連結"""
-    time_in_seconds = parse_time(time_str)
-    return f"https://www.youtube.com/watch?v={video_id}&t={time_in_seconds}s"
-
-def load_exceptions(exceptions_file):
-    """從指定文件讀取例外規則"""
-    member_exclusive_dates = set()
-    acapella_songs = {}  # 按日期存儲清唱標籤
-    global_acapella_songs = set()  # 存儲沒有日期的清唱曲名
-    acapella_songs_with_artist = {}  # 存儲有日期和歌手的清唱歌曲
-    copyright_songs = set()  # 存儲帶有版權標記的歌曲
-
-    with open(exceptions_file, 'r', encoding='utf-8') as f:
-        lines = f.readlines()
-        for line in lines:
-            parts = line.strip().split('|')
-            if parts[0] == 'member_exclusive_dates':
-                dates = parts[1].split(',')
-                member_exclusive_dates.update(dates)
-            elif parts[0] == 'acapella_songs':
-                if len(parts) == 2:
-                    global_acapella_songs.add(parts[1])  # 沒有日期和歌手的曲名
-                elif len(parts) == 3:
-                    song_name, artist = parts[1], parts[2]
-                    if artist not in acapella_songs_with_artist:
-                        acapella_songs_with_artist[artist] = set()
-                    acapella_songs_with_artist[artist].add(song_name)
-                elif len(parts) == 4:
-                    song_name, artist, date = parts[1], parts[2], parts[3]
-                    if date not in acapella_songs:
-                        acapella_songs[date] = {}
-                    if artist not in acapella_songs[date]:
-                        acapella_songs[date][artist] = set()
-                    acapella_songs[date][artist].add(song_name)
-            elif parts[0] == 'copyright':
-                if len(parts) == 3:
-                    song_name, artist = parts[1], parts[2]
-                    copyright_songs.add((song_name, artist))
-                elif len(parts) == 2:
-                    song_name = parts[1]
-                    copyright_songs.add((song_name, None))
-
-    return member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist, copyright_songs
-
-def normalize_string(str):
-    if not str:
-        return ''
-    str = str.lower()
-    str = re.sub(r'\s+', '', str)
-    return str
-
 def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist, copyright_songs):
     data = {}  # 改用字典來儲存資料
     
@@ -94,25 +31,27 @@ def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs
                     source = parts[3] if len(parts) > 3 else ''
                 elif date >= new_rule_date:
                     # 新規則解析
-                    line = re.sub(r'^\d+\.\s+', '', line)
-                    parts = line.strip().split('\u3000', 1)
-                    if len(parts) != 2:
+                    parts = line.strip().split(' / ', 1)
+                    if len(parts) < 2:
                         print(f"Warning: Skipping line due to incorrect format: '{line.strip()}'")
                         continue
                         
-                    time_str, song_info = parts
-                    song_parts = song_info.split(' / ')
-                    song_name = song_parts[0].strip()
+                    time_str, second_part = parts
+                    song_name = ""
                     artist = ""
                     source = ""
                     
-                    if len(song_parts) > 1:
-                        source_artist = song_parts[1].split('』')
-                        if len(source_artist) == 2:
-                            source = source_artist[0].replace('『', '').strip()
-                            artist = source_artist[1].strip()
-                        else:
-                            artist = source_artist[0].strip()
+                    # 檢查是否有『』，如果有則視為source
+                    match = re.match(r'^(.*?)『(.*?)』(.*)$', second_part)
+                    if match:
+                        song_name = match.group(1).strip()
+                        source = match.group(2).strip()
+                        artist = match.group(3).strip()
+                    else:
+                        # 沒有『』，視為曲名 / 歌手
+                        parts = second_part.split(' / ')
+                        song_name = parts[0].strip()
+                        artist = parts[1].strip() if len(parts) > 1 else ''
                 
                 # 建立唯一鍵（忽略大小寫和全半形）
                 normalized_key = (normalize_string(song_name), normalize_string(artist))
@@ -152,42 +91,3 @@ def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs
     
     # 轉換為列表格式
     return list(data.values())
-
-def main():
-    timeline_dir = 'timeline'
-    exceptions_file = os.path.join(timeline_dir, 'exceptions.txt')
-    all_data = {}  # 改用字典來合併所有資料
-    
-    # 讀取例外規則
-    member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist, copyright_songs = load_exceptions(exceptions_file)
-    
-    for filename in os.listdir(timeline_dir):
-        if filename == 'exceptions.txt':
-            continue
-            
-        file_path = os.path.join(timeline_dir, filename)
-        match = re.match(r'(\d{8})(?:_\d+)?\.txt', filename)
-        if match:
-            date_str = match.group(1)
-            try:
-                data = process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist, copyright_songs)
-                
-                # 合併資料
-                for song_data in data:
-                    key = (normalize_string(song_data['song_name']), normalize_string(song_data['artist']))
-                    if key not in all_data:
-                        all_data[key] = song_data
-                    else:
-                        existing_dates = all_data[key]['dates']
-                        new_dates = [d for d in song_data['dates'] if d not in existing_dates]
-                        all_data[key]['dates'].extend(new_dates)
-            
-            except Exception as e:
-                print(f"Error processing file {file_path}: {e}")
-    
-    # 輸出最終資料
-    with open('data.json', 'w', encoding='utf-8') as f:
-        json.dump(list(all_data.values()), f, ensure_ascii=False, indent=4)
-
-if __name__ == '__main__':
-    main()
