@@ -364,6 +364,13 @@
                 "is_acapella": false
             },
             {
+                "date": "20231202",
+                "time": "06:56:27",
+                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=24987s",
+                "is_member_exclusive": true,
+                "is_acapella": false
+            },
+            {
                 "date": "20240706",
                 "time": "02:14:42",
                 "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=8082s",
@@ -1612,21 +1619,6 @@
                 "date": "20231202",
                 "time": "06:37:19",
                 "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=23839s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "夢のつづき",
-        "artist": "真宮寺さくら(横山智佐)･帝国歌劇団",
-        "source": "サクラ大戦",
-        "is_copyright": false,
-        "dates": [
-            {
-                "date": "20231202",
-                "time": "06:56:27",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=24987s",
                 "is_member_exclusive": true,
                 "is_acapella": false
             }
