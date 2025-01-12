@@ -27,11 +27,6 @@ jobs:
       - name: Run process_timeline.py
         run: python backend/process_timeline.py
 
-      - name: Add timestamp to data.json
-        run: |
-          timestamp=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
-          jq ".timestamp = \"$timestamp\"" data.json > tmp.$$.json && mv tmp.$$.json data.json
-
       - name: Configure Git
         run: |
           git config --global user.name 'github-actions[bot]'
