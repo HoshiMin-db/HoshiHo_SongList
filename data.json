@@ -7611,7 +7611,7 @@
         ]
     },
     {
-        "song_name": "Dokkin◇魔法つかいプリキュア!",
+        "song_name": "Dokkin♢魔法つかいプリキュア！",
         "artist": "北川理恵",
         "source": "魔法つかいプリキュア！",
         "is_copyright": false,
@@ -7620,6 +7620,13 @@
                 "date": "20240608",
                 "time": "06:37:43",
                 "link": "https://www.youtube.com/watch?v=UoMwNx3aklM&t=23863s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20241123",
+                "time": "06:48:05",
+                "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=24485s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
@@ -14456,21 +14463,6 @@
                 "date": "20241123",
                 "time": "05:33:32",
                 "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=20012s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "Dokkin♢魔法つかいプリキュア！",
-        "artist": "北川理恵",
-        "source": "魔法つかいプリキュア!",
-        "is_copyright": false,
-        "dates": [
-            {
-                "date": "20241123",
-                "time": "06:48:05",
-                "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=24485s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
