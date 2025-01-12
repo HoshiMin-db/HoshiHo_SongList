@@ -234,22 +234,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // 確認元素是否存在
-    if (searchInput) {
-        searchInput.addEventListener('input', debounce(function(e) {
-            const query = normalizeString(e.target.value.toLowerCase());
-            fetchAndDisplayData(query);
-        }, 300));
-    } else {
-        console.error("searchInput element not found");
-    }
-
-    if (virtualScrollContainer) {
-        virtualScrollContainer.addEventListener('scroll', onScroll);
-    } else {
-        console.error("virtualScrollContainer element not found");
-    }
-
     // 頁面加載時顯示全部表單
     fetchData(() => {
         fetchAndDisplayData('');
