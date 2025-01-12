@@ -2008,6 +2008,13 @@
                 "is_acapella": false
             },
             {
+                "date": "20240330",
+                "time": "01:09:43",
+                "link": "https://www.youtube.com/watch?v=W2ysMOjn-WY&t=4183s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
                 "date": "20240120",
                 "time": "05:58:50",
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=21530s",
@@ -2958,6 +2965,13 @@
                 "time": "01:21:00",
                 "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=4860s",
                 "is_member_exclusive": true,
+                "is_acapella": false
+            },
+            {
+                "date": "20240330",
+                "time": "04:09:15",
+                "link": "https://www.youtube.com/watch?v=W2ysMOjn-WY&t=14955s",
+                "is_member_exclusive": false,
                 "is_acapella": false
             },
             {
@@ -5670,6 +5684,13 @@
                 "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=16291s",
                 "is_member_exclusive": true,
                 "is_acapella": false
+            },
+            {
+                "date": "20240330",
+                "time": "00:33:40",
+                "link": "https://www.youtube.com/watch?v=W2ysMOjn-WY&t=2020s",
+                "is_member_exclusive": false,
+                "is_acapella": false
             }
         ]
     },
@@ -5924,6 +5945,13 @@
                 "time": "04:17:33",
                 "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=15453s",
                 "is_member_exclusive": true,
+                "is_acapella": false
+            },
+            {
+                "date": "20240330",
+                "time": "03:01:34",
+                "link": "https://www.youtube.com/watch?v=W2ysMOjn-WY&t=10894s",
+                "is_member_exclusive": false,
                 "is_acapella": false
             }
         ]
@@ -8192,6 +8220,13 @@
                 "date": "20240706",
                 "time": "04:53:10",
                 "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=17590s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240330",
+                "time": "01:49:47",
+                "link": "https://www.youtube.com/watch?v=W2ysMOjn-WY&t=6587s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
@@ -12701,6 +12736,13 @@
                 "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=8943s",
                 "is_member_exclusive": false,
                 "is_acapella": false
+            },
+            {
+                "date": "20240330",
+                "time": "02:51:41",
+                "link": "https://www.youtube.com/watch?v=W2ysMOjn-WY&t=10301s",
+                "is_member_exclusive": false,
+                "is_acapella": false
             }
         ]
     },
@@ -12714,6 +12756,13 @@
                 "date": "20231209",
                 "time": "02:39:20",
                 "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=9560s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240330",
+                "time": "03:03:49",
+                "link": "https://www.youtube.com/watch?v=W2ysMOjn-WY&t=11029s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
@@ -12969,6 +13018,13 @@
                 "date": "20231209",
                 "time": "08:16:57",
                 "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=29817s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240330",
+                "time": "01:29:18",
+                "link": "https://www.youtube.com/watch?v=W2ysMOjn-WY&t=5358s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
@@ -13959,6 +14015,111 @@
                 "date": "20240720",
                 "time": "06:41:47",
                 "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=24107s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "〜infinity〜∞",
+        "artist": "林原めぐみ",
+        "source": "",
+        "is_copyright": false,
+        "dates": [
+            {
+                "date": "20240330",
+                "time": "02:37:23",
+                "link": "https://www.youtube.com/watch?v=W2ysMOjn-WY&t=9443s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "Succesful Mission",
+        "artist": "林原めぐみ",
+        "source": "",
+        "is_copyright": false,
+        "dates": [
+            {
+                "date": "20240330",
+                "time": "02:50:00",
+                "link": "https://www.youtube.com/watch?v=W2ysMOjn-WY&t=10200s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "Happy day in hell /",
+        "artist": "",
+        "source": "HAZBIN HOTEL",
+        "is_copyright": false,
+        "dates": [
+            {
+                "date": "20240330",
+                "time": "03:20:40",
+                "link": "https://www.youtube.com/watch?v=W2ysMOjn-WY&t=12040s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "Heaven 2 Hell /",
+        "artist": "",
+        "source": "HAZBIN HOTEL",
+        "is_copyright": false,
+        "dates": [
+            {
+                "date": "20240330",
+                "time": "03:28:13",
+                "link": "https://www.youtube.com/watch?v=W2ysMOjn-WY&t=12493s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "Just Look My Way /",
+        "artist": "",
+        "source": "HELLUVA BOSS",
+        "is_copyright": false,
+        "dates": [
+            {
+                "date": "20240330",
+                "time": "03:37:19",
+                "link": "https://www.youtube.com/watch?v=W2ysMOjn-WY&t=13039s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "INSANE /",
+        "artist": "",
+        "source": "HAZBIN HOTEL",
+        "is_copyright": false,
+        "dates": [
+            {
+                "date": "20240330",
+                "time": "03:51:52",
+                "link": "https://www.youtube.com/watch?v=W2ysMOjn-WY&t=13912s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "Falling,The Star Light /",
+        "artist": "山本美禰子",
+        "source": "ロロナのアトリエ～アーランドの錬金術士～",
+        "is_copyright": false,
+        "dates": [
+            {
+                "date": "20240330",
+                "time": "04:00:25",
+                "link": "https://www.youtube.com/watch?v=W2ysMOjn-WY&t=14425s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
