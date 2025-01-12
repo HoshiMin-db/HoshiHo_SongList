@@ -36,7 +36,7 @@ function normalizeString(str) {
 }
 
 // 創建表格行
-function createTableRow(item, numDates, songTableHead) {
+function createTableRow(item, numDates) {
     const newRow = document.createElement('tr');
     
     const initialCell = newRow.insertCell();
@@ -96,13 +96,11 @@ function createTableRow(item, numDates, songTableHead) {
         moreButton.className = 'more-button';
         moreButton.onclick = () => {
             const isExpanded = moreButton.getAttribute('data-expanded') === 'true';
-            const dateHeaderCell = songTableHead.rows[0].cells[4];
             
             if (isExpanded) {
                 const toRemove = newRow.querySelectorAll('.extra-date');
                 toRemove.forEach(el => el.remove());
                 moreButton.setAttribute('data-expanded', 'false');
-                dateHeaderCell.colSpan = numDates + 1;
             } else {
                 item.dates.slice(numDates).forEach(row => {
                     const dateCell = newRow.insertCell();
@@ -131,7 +129,6 @@ function createTableRow(item, numDates, songTableHead) {
                     }
                 });
                 moreButton.setAttribute('data-expanded', 'true');
-                dateHeaderCell.colSpan = item.dates.length + 1;
             }
         };
         moreButtonCell.appendChild(moreButton);
@@ -144,14 +141,11 @@ function createTableRow(item, numDates, songTableHead) {
 
 document.addEventListener("DOMContentLoaded", function() {
     const searchInput = document.getElementById('searchInput');
-    const virtualScrollContainer = document.getElementById('virtualScrollContainer');
     const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
-    const songTableHead = document.getElementById('songTable').getElementsByTagName('thead')[0];
     let allData = [];
-    const rowHeight = 40;  // 假設每行的高度為40像素
 
     // 優化的 fetchData 函數
-    async function fetchData(callback) {
+    async function fetchData() {
         try {
             const response = await fetch('data.json', { cache: 'no-cache' });
             const data = await response.json();
@@ -161,19 +155,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 const bText = normalizeString(b.song_name);
                 return aText.localeCompare(bText, 'ja-JP');
             });
-            callback(allData);
+            displayData(allData);
         } catch (error) {
             console.error('Error fetching data:', error);
         }
-    }
-
-    function fetchAndDisplayData(query) {
-        const filteredData = allData.filter(row =>
-            normalizeString(row.song_name).includes(query) ||
-            normalizeString(row.artist).includes(query) ||
-            normalizeString(row.source).includes(query)
-        );
-        displayData(filteredData);
     }
 
     function displayData(data, numDates = 3) {
@@ -197,7 +182,7 @@ document.addEventListener("DOMContentLoaded", function() {
         songTableBody.innerHTML = '';
 
         Object.entries(groupedData).forEach(([key, item]) => {
-            const newRow = createTableRow(item, numDates, songTableHead);
+            const newRow = createTableRow(item, numDates);
             songTableBody.appendChild(newRow);
         });
 
@@ -217,28 +202,21 @@ document.addEventListener("DOMContentLoaded", function() {
         rows.forEach(row => table.getElementsByTagName('tbody')[0].appendChild(row));
     }
 
-    function onScroll() {
-        // 計算可視區域的範圍
-        const visibleRowCount = Math.floor(virtualScrollContainer.clientHeight / rowHeight);
-        const startIdx = Math.floor(virtualScrollContainer.scrollTop / rowHeight);
-        const endIdx = Math.min(startIdx + visibleRowCount, allData.length);
-        
-        // 清空當前顯示的內容
-        songTableBody.innerHTML = '';
-        
-        // 渲染可視區域內的數據
-        const visibleData = allData.slice(startIdx, endIdx);
-        visibleData.forEach(item => {
-            const newRow = createTableRow(item, 3, songTableHead);
-            songTableBody.appendChild(newRow);
-        });
+    // 確認元素是否存在
+    if (searchInput) {
+        searchInput.addEventListener('input', debounce(function(e) {
+            const query = normalizeString(e.target.value.toLowerCase());
+            const filteredData = allData.filter(row =>
+                normalizeString(row.song_name).includes(query) ||
+                normalizeString(row.artist).includes(query) ||
+                normalizeString(row.source).includes(query)
+            );
+            displayData(filteredData);
+        }, 800));
+    } else {
+        console.error("searchInput element not found");
     }
 
     // 頁面加載時顯示全部表單
-    fetchData(() => {
-        fetchAndDisplayData('');
-        if (virtualScrollContainer) {
-            onScroll(); // 初始化顯示可視區域數據
-        }
-    });
+    fetchData();
 });
