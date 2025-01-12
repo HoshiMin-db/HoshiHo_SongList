@@ -9091,6 +9091,13 @@
                 "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=29981s",
                 "is_member_exclusive": false,
                 "is_acapella": false
+            },
+            {
+                "date": "20231118",
+                "time": "01:32:00",
+                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=5520s",
+                "is_member_exclusive": true,
+                "is_acapella": false
             }
         ]
     },
@@ -9921,21 +9928,6 @@
                 "date": "20231118",
                 "time": "01:24:30",
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=5070s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "聖母(マドンナ)たちのララバイ",
-        "artist": "岩崎宏美",
-        "source": "",
-        "is_copyright": false,
-        "dates": [
-            {
-                "date": "20231118",
-                "time": "01:32:00",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=5520s",
                 "is_member_exclusive": true,
                 "is_acapella": false
             }
