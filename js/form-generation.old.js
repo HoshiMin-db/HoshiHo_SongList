@@ -35,6 +35,112 @@ function normalizeString(str) {
               .toLowerCase(); // 將字符串轉換為小寫形式
 }
 
+function createTableRow(item, numDates, songTableHead) {
+    const newRow = document.createElement('tr');
+    
+    const initialCell = newRow.insertCell();
+    initialCell.textContent = item.song_name.charAt(0).toUpperCase();
+    
+    const songNameCell = newRow.insertCell();
+    songNameCell.textContent = item.song_name;
+
+    // 檢查是否為版權標記歌曲
+    if (item.is_copyright) {
+        songNameCell.style.color = 'red';
+    }
+    
+    newRow.insertCell().textContent = item.artist;
+    newRow.insertCell().textContent = item.source || '';
+    
+    // 生成日期欄位
+    const dateCount = Math.min(numDates, item.dates.length);
+    
+    // 先生成所有需要的日期欄位
+    for (let i = 0; i < dateCount; i++) {
+        const dateCell = newRow.insertCell();
+        const row = item.dates[i];
+        const link = document.createElement('a');
+        const date = row.date;
+        const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
+        link.href = row.link;
+        link.textContent = formattedDate;
+        link.target = '_blank';
+        link.onclick = function(event) {
+            event.preventDefault();
+            openFloatingPlayer(link.href);
+        };
+        dateCell.appendChild(link);
+
+        if (row.is_member_exclusive) {
+            const lockIcon = document.createElement('span');
+            lockIcon.classList.add('lock-icon');
+            lockIcon.textContent = '🔒';
+            dateCell.appendChild(lockIcon);
+        }
+        if (row.is_acapella) {
+            dateCell.classList.add('acapella');
+        }
+    }
+
+    // 補充空白儲存格
+    for (let i = dateCount; i < numDates; i++) {
+        newRow.insertCell();
+    }
+
+    // 添加更多按鈕或空白儲存格
+    if (item.dates.length > numDates) {
+        const moreButtonCell = newRow.insertCell();
+        const moreButton = document.createElement('button');
+        moreButton.textContent = '...';
+        moreButton.className = 'more-button';
+        moreButton.onclick = () => {
+            const isExpanded = moreButton.getAttribute('data-expanded') === 'true';
+            const dateHeaderCell = songTableHead.rows[0].cells[4];
+            
+            if (isExpanded) {
+                const toRemove = newRow.querySelectorAll('.extra-date');
+                toRemove.forEach(el => el.remove());
+                moreButton.setAttribute('data-expanded', 'false');
+                dateHeaderCell.colSpan = numDates + 1;
+            } else {
+                item.dates.slice(numDates).forEach(row => {
+                    const dateCell = newRow.insertCell();
+                    dateCell.classList.add('date-cell', 'extra-date');
+                    
+                    const link = document.createElement('a');
+                    const date = row.date;
+                    const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
+                    link.href = row.link;
+                    link.textContent = formattedDate;
+                    link.target = '_blank';
+                    link.onclick = function(event) {
+                        event.preventDefault();
+                        openFloatingPlayer(link.href);
+                    };
+                    dateCell.appendChild(link);
+                    
+                    if (row.is_member_exclusive) {
+                        const lockIcon = document.createElement('span');
+                        lockIcon.classList.add('lock-icon');
+                        lockIcon.textContent = '🔒';
+                        dateCell.appendChild(lockIcon);
+                    }
+                    if (row.is_acapella) {
+                        dateCell.classList.add('acapella');
+                    }
+                });
+                moreButton.setAttribute('data-expanded', 'true');
+                dateHeaderCell.colSpan = item.dates.length + 1;
+            }
+        };
+        moreButtonCell.appendChild(moreButton);
+    } else {
+        newRow.insertCell();
+    }
+
+    return newRow;
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     const searchInput = document.getElementById('searchInput');
     const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
@@ -72,137 +178,37 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 800)); // 設置防抖延遲時間為800毫秒
 
     function displayData(data, numDates = 3) {
-    // 使用reduce來分組數據
-    const groupedData = data.reduce((acc, row) => {
-        const key = `${normalizeString(row.song_name)}-${normalizeString(row.artist)}`;
-        if (!acc[key]) {
-            acc[key] = {
-                ...row,
-                dates: []
-            };
-        }
-        // 合併日期並立即排序
-        const allDates = [...acc[key].dates, ...row.dates];
-        acc[key].dates = allDates.sort((a, b) => {
-            // 將日期和時間轉換為可比較的格式
-            const dateA = new Date(a.date.replace(/(\d{4})(\d{2})(\d{2})/, '$1-$2-$3') + 'T' + a.time);
-            const dateB = new Date(b.date.replace(/(\d{4})(\d{2})(\d{2})/, '$1-$2-$3') + 'T' + b.time);
-            return dateB - dateA;
+        // 使用reduce來分組數據
+        const groupedData = data.reduce((acc, row) => {
+            const key = `${normalizeString(row.song_name)}-${normalizeString(row.artist)}`;
+            if (!acc[key]) {
+                acc[key] = {
+                    ...row,
+                    dates: []
+                };
+            }
+            // 合併日期並立即排序
+            const allDates = [...acc[key].dates, ...row.dates];
+            acc[key].dates = allDates.sort((a, b) => {
+                // 將日期和時間轉換為可比較的格式
+                const dateA = new Date(a.date.replace(/(\d{4})(\d{2})(\d{2})/, '$1-$2-$3') + 'T' + a.time);
+                const dateB = new Date(b.date.replace(/(\d{4})(\d{2})(\d{2})/, '$1-$2-$3') + 'T' + b.time);
+                return dateB - dateA;
+            });
+            return acc;
+        }, {});
+
+        // 清空表格
+        songTableBody.innerHTML = '';
+
+        // 遍歷分組後的數據，生成表格行
+        Object.entries(groupedData).forEach(([key, item]) => {
+            const newRow = createTableRow(item, numDates, songTableHead);
+            songTableBody.appendChild(newRow);
         });
-        return acc;
-    }, {});
 
-    // 清空表格
-    songTableBody.innerHTML = '';
-
-    // 遍歷分組後的數據，生成表格行
-    Object.entries(groupedData).forEach(([key, item]) => {
-        const newRow = songTableBody.insertRow();
-        
-        // 添加初始欄位
-        const initialCell = newRow.insertCell();
-        initialCell.textContent = item.song_name.charAt(0).toUpperCase();
-        
-        const songNameCell = newRow.insertCell();
-        songNameCell.textContent = item.song_name;
-
-        // 檢查是否為版權標記歌曲
-        if (item.is_copyright) {
-            songNameCell.style.color = 'red';
-        }
-        
-        newRow.insertCell().textContent = item.artist;
-        newRow.insertCell().textContent = item.source || '';
-        
-        // 生成日期欄位
-        const dateCount = Math.min(numDates, item.dates.length);
-        
-        // 先生成所有需要的日期欄位
-        for (let i = 0; i < dateCount; i++) {
-            const dateCell = newRow.insertCell();
-            const row = item.dates[i];
-            const link = document.createElement('a');
-            const date = row.date;
-            const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
-            link.href = row.link;
-            link.textContent = formattedDate;
-            link.target = '_blank';
-            link.onclick = function(event) {
-                event.preventDefault();
-                openFloatingPlayer(link.href);
-            };
-            dateCell.appendChild(link);
-
-            if (row.is_member_exclusive) {
-                const lockIcon = document.createElement('span');
-                lockIcon.classList.add('lock-icon');
-                lockIcon.textContent = '🔒';
-                dateCell.appendChild(lockIcon);
-            }
-            if (row.is_acapella) {
-                dateCell.classList.add('acapella');
-            }
-        }
-
-        // 補充空白儲存格
-        for (let i = dateCount; i < numDates; i++) {
-            newRow.insertCell();
-        }
-
-        // 添加更多按鈕或空白儲存格
-        if (item.dates.length > numDates) {
-            const moreButtonCell = newRow.insertCell();
-            const moreButton = document.createElement('button');
-            moreButton.textContent = '...';
-            moreButton.className = 'more-button';
-            moreButton.onclick = () => {
-                const isExpanded = moreButton.getAttribute('data-expanded') === 'true';
-                const dateHeaderCell = songTableHead.rows[0].cells[4];
-                
-                if (isExpanded) {
-                    const toRemove = newRow.querySelectorAll('.extra-date');
-                    toRemove.forEach(el => el.remove());
-                    moreButton.setAttribute('data-expanded', 'false');
-                    dateHeaderCell.colSpan = numDates + 1;
-                } else {
-                    item.dates.slice(numDates).forEach(row => {
-                        const dateCell = newRow.insertCell();
-                        dateCell.classList.add('date-cell', 'extra-date');
-                        
-                        const link = document.createElement('a');
-                        const date = row.date;
-                        const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
-                        link.href = row.link;
-                        link.textContent = formattedDate;
-                        link.target = '_blank';
-                        link.onclick = function(event) {
-                            event.preventDefault();
-                            openFloatingPlayer(link.href);
-                        };
-                        dateCell.appendChild(link);
-                        
-                        if (row.is_member_exclusive) {
-                            const lockIcon = document.createElement('span');
-                            lockIcon.classList.add('lock-icon');
-                            lockIcon.textContent = '🔒';
-                            dateCell.appendChild(lockIcon);
-                        }
-                        if (row.is_acapella) {
-                            dateCell.classList.add('acapella');
-                        }
-                    });
-                    moreButton.setAttribute('data-expanded', 'true');
-                    dateHeaderCell.colSpan = item.dates.length + 1;
-                }
-            };
-            moreButtonCell.appendChild(moreButton);
-        } else {
-            newRow.insertCell();
-        }
-    });
-
-    sortTable();
-}
+        sortTable();
+    }
 
     function sortTable() {
         const table = document.getElementById('songTable');
