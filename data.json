@@ -7574,7 +7574,7 @@
     },
     {
         "song_name": "only my railgun",
-        "artist": "flipSide",
+        "artist": "fripSide",
         "source": "とある科学の超電磁砲",
         "is_copyright": false,
         "dates": [
@@ -7582,6 +7582,13 @@
                 "date": "20240608",
                 "time": "05:30:47",
                 "link": "https://www.youtube.com/watch?v=UoMwNx3aklM&t=19847s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240202",
+                "time": "03:35:28",
+                "link": "https://www.youtube.com/watch?v=70E6Ns3_THo&t=12928s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
@@ -15270,21 +15277,6 @@
                 "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=7028s",
                 "is_member_exclusive": false,
                 "is_acapella": true
-            }
-        ]
-    },
-    {
-        "song_name": "only my railgun",
-        "artist": "fripSide",
-        "source": "とある科学の超電磁砲",
-        "is_copyright": false,
-        "dates": [
-            {
-                "date": "20240202",
-                "time": "03:35:28",
-                "link": "https://www.youtube.com/watch?v=70E6Ns3_THo&t=12928s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
