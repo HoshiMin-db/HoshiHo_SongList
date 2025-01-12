@@ -94,25 +94,28 @@ def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs
                     source = parts[3] if len(parts) > 3 else ''
                 elif date >= new_rule_date:
                     # 新規則解析
-                    line = re.sub(r'^\d+\.\s+', '', line)
-                    parts = line.strip().split('\u3000', 1)
-                    if len(parts) != 2:
+                    line = re.sub(r'^\d+.\s+', '', line)  # 移除行首的數字和點號
+                    parts = line.strip().split('　', 1)
+                    if len(parts) < 2:
                         print(f"Warning: Skipping line due to incorrect format: '{line.strip()}'")
                         continue
                         
-                    time_str, song_info = parts
-                    song_parts = song_info.split(' / ')
-                    song_name = song_parts[0].strip()
+                    time_str, second_part = parts
+                    song_name = ""
                     artist = ""
                     source = ""
                     
-                    if len(song_parts) > 1:
-                        source_artist = song_parts[1].split('』')
-                        if len(source_artist) == 2:
-                            source = source_artist[0].replace('『', '').strip()
-                            artist = source_artist[1].strip()
-                        else:
-                            artist = source_artist[0].strip()
+                    # 檢查是否有『』，如果有則視為source
+                    match = re.match(r'^(.*?)『(.*?)』(.*)$', second_part)
+                    if match:
+                        song_name = match.group(1).strip()
+                        source = match.group(2).strip()
+                        artist = match.group(3).strip()
+                    else:
+                        # 沒有『』，視為曲名 / 歌手
+                        parts = second_part.split(' / ')
+                        song_name = parts[0].strip()
+                        artist = parts[1].strip() if len(parts) > 1 else ''
                 
                 # 建立唯一鍵（忽略大小寫和全半形）
                 normalized_key = (normalize_string(song_name), normalize_string(artist))
