@@ -107,7 +107,7 @@ def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs
                     
                     # 檢查是否有『』，如果有則視為source
                     if '『' in song_info and '』' in song_info:
-                        song_name = song_info.split('『')[0].strip()
+                        song_name = song_info.split('『')[0].split(' / ')[0].strip()
                         source_artist = song_info.split('『')[1].split('』')
                         source = source_artist[0].strip()
                         artist = source_artist[1].strip() if len(source_artist) > 1 else ''
