@@ -6432,6 +6432,13 @@
                 "link": "https://www.youtube.com/watch?v=DjJmVyIXfH8&t=9317s",
                 "is_member_exclusive": false,
                 "is_acapella": false
+            },
+            {
+                "date": "20240330",
+                "time": "02:50:00",
+                "link": "https://www.youtube.com/watch?v=W2ysMOjn-WY&t=10200s",
+                "is_member_exclusive": false,
+                "is_acapella": false
             }
         ]
     },
@@ -13551,21 +13558,6 @@
                 "date": "20240720",
                 "time": "06:41:47",
                 "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=24107s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "Succesful Mission",
-        "artist": "林原めぐみ",
-        "source": "",
-        "is_copyright": false,
-        "dates": [
-            {
-                "date": "20240330",
-                "time": "02:50:00",
-                "link": "https://www.youtube.com/watch?v=W2ysMOjn-WY&t=10200s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
