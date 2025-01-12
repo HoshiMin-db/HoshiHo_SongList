@@ -1795,7 +1795,7 @@
     },
     {
         "song_name": "Starry Heavens",
-        "artist": "day after tomorrow / misono",
+        "artist": "day after tomorrow",
         "source": "テイルズ オブ シンフォニア",
         "is_copyright": false,
         "dates": [
@@ -1805,12 +1805,33 @@
                 "link": "https://www.youtube.com/watch?v=QIuZP_DTjv8&t=6619s",
                 "is_member_exclusive": false,
                 "is_acapella": false
+            },
+            {
+                "date": "20240127",
+                "time": "02:42:29",
+                "link": "https://www.youtube.com/watch?v=kw8Ia8qEJ74&t=9749s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240511",
+                "time": "07:02:35",
+                "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=25355s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240922",
+                "time": "00:12:36",
+                "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=756s",
+                "is_member_exclusive": false,
+                "is_acapella": false
             }
         ]
     },
     {
         "song_name": "そして僕にできるコト",
-        "artist": "day after tomorrow / misono",
+        "artist": "day after tomorrow",
         "source": "テイルズ オブ シンフォニア",
         "is_copyright": false,
         "dates": [
@@ -1818,6 +1839,27 @@
                 "date": "20240406",
                 "time": "01:57:54",
                 "link": "https://www.youtube.com/watch?v=QIuZP_DTjv8&t=7074s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240127",
+                "time": "02:50:15",
+                "link": "https://www.youtube.com/watch?v=kw8Ia8qEJ74&t=10215s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240511",
+                "time": "07:09:42",
+                "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=25782s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240922",
+                "time": "00:21:43",
+                "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=1303s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
@@ -8479,64 +8521,6 @@
                 "date": "20240127",
                 "time": "02:32:41",
                 "link": "https://www.youtube.com/watch?v=kw8Ia8qEJ74&t=9161s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "Starry Heavens",
-        "artist": "Day After Tomorrow",
-        "source": "Tales of Symphonia",
-        "is_copyright": false,
-        "dates": [
-            {
-                "date": "20240127",
-                "time": "02:42:29",
-                "link": "https://www.youtube.com/watch?v=kw8Ia8qEJ74&t=9749s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240511",
-                "time": "07:02:35",
-                "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=25355s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240922",
-                "time": "00:12:36",
-                "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=756s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "そして僕にできるコト",
-        "artist": "day after tomorrow",
-        "source": "Tales of Symphonia",
-        "is_copyright": false,
-        "dates": [
-            {
-                "date": "20240127",
-                "time": "02:50:15",
-                "link": "https://www.youtube.com/watch?v=kw8Ia8qEJ74&t=10215s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240511",
-                "time": "07:09:42",
-                "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=25782s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240922",
-                "time": "00:21:43",
-                "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=1303s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
