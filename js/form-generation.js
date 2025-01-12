@@ -203,11 +203,14 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    songTableBody.addEventListener('scroll', onScroll);
+    songTableBody.parentElement.addEventListener('scroll', onScroll);
 
     searchInput.addEventListener('input', debounce(function(e) { 
         const query = normalizeString(e.target.value.toLowerCase());
         fetchAndDisplayData(query, allData);
+        start = 0; // 重置起始索引
+        renderRows(start, batchSize); // 重新渲染初始行
+        start += batchSize;
     }, 800)); // 設置防抖延遲時間為800毫秒
 
     function displayData(data, numDates = 3) {
