@@ -35,7 +35,7 @@ function normalizeString(str) {
               .toLowerCase(); // 將字符串轉換為小寫形式
 }
 
-function createTableRow(item, numDates) {
+function createTableRow(item, numDates, songTableHead) {
     const newRow = document.createElement('tr');
     
     const initialCell = newRow.insertCell();
@@ -203,7 +203,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // 遍歷分組後的數據，生成表格行
         Object.entries(groupedData).forEach(([key, item]) => {
-            const newRow = createTableRow(item, numDates);
+            const newRow = createTableRow(item, numDates, songTableHead);
             songTableBody.appendChild(newRow);
         });
 
