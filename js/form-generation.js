@@ -144,10 +144,10 @@ function createTableRow(item, numDates, songTableHead) {
 
 document.addEventListener("DOMContentLoaded", function() {
     const searchInput = document.getElementById('searchInput');
-    const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
+    const virtualScrollContainer = document.getElementById('virtualScrollContainer');
     const songTableHead = document.getElementById('songTable').getElementsByTagName('thead')[0];
-    let totalSongCount = 0; 
     let allData = [];
+    const rowHeight = 40;  // 假設每行的高度為40像素
 
     // 優化的 fetchData 函數
     async function fetchData(callback) {
@@ -160,58 +160,20 @@ document.addEventListener("DOMContentLoaded", function() {
                 const bText = normalizeString(b.song_name);
                 return aText.localeCompare(bText, 'ja-JP');
             });
-            if (totalSongCount === 0) {
-                const uniqueSongs = new Set(data.map(item => `${normalizeString(item.song_name)}-${normalizeString(item.artist)}`));
-                totalSongCount = uniqueSongs.size;
-                document.getElementById('songCount').textContent = totalSongCount;
-            }
             callback(allData);
         } catch (error) {
             console.error('Error fetching data:', error);
         }
     }
 
-    function fetchAndDisplayData(query, data) {
-        songTableBody.innerHTML = '';
-        const filteredData = data.filter(row =>
+    function fetchAndDisplayData(query) {
+        const filteredData = allData.filter(row =>
             normalizeString(row.song_name).includes(query) ||
             normalizeString(row.artist).includes(query) ||
             normalizeString(row.source).includes(query)
         );
         displayData(filteredData);
     }
-
-    // 虛擬滾動
-    let start = 0;
-    const batchSize = 50;
-
-    function renderRows(start, end) {
-        const fragment = document.createDocumentFragment();
-        const dataToRender = allData.slice(start, end);
-        dataToRender.forEach(item => {
-            const newRow = createTableRow(item, 3, songTableHead);
-            fragment.appendChild(newRow);
-        });
-        songTableBody.appendChild(fragment);
-    }
-
-    function onScroll() {
-        const { scrollTop, scrollHeight, clientHeight } = songTableBody;
-        if (scrollTop + clientHeight >= scrollHeight - 50) {
-            renderRows(start, start + batchSize);
-            start += batchSize;
-        }
-    }
-
-    songTableBody.parentElement.addEventListener('scroll', onScroll);
-
-    searchInput.addEventListener('input', debounce(function(e) { 
-        const query = normalizeString(e.target.value.toLowerCase());
-        fetchAndDisplayData(query, allData);
-        start = 0; // 重置起始索引
-        renderRows(start, batchSize); // 重新渲染初始行
-        start += batchSize;
-    }, 800)); // 設置防抖延遲時間為800毫秒
 
     function displayData(data, numDates = 3) {
         const groupedData = data.reduce((acc, row) => {
@@ -231,11 +193,12 @@ document.addEventListener("DOMContentLoaded", function() {
             return acc;
         }, {});
 
-        songTableBody.innerHTML = '';
+        const tbody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
+        tbody.innerHTML = '';
 
         Object.entries(groupedData).forEach(([key, item]) => {
             const newRow = createTableRow(item, numDates, songTableHead);
-            songTableBody.appendChild(newRow);
+            tbody.appendChild(newRow);
         });
 
         sortTable();
@@ -254,8 +217,29 @@ document.addEventListener("DOMContentLoaded", function() {
         rows.forEach(row => table.getElementsByTagName('tbody')[0].appendChild(row));
     }
 
+    function onScroll() {
+        const virtualScrollContainer = document.getElementById('virtualScrollContainer');
+        
+        // 計算可視區域的範圍
+        const visibleRowCount = Math.floor(virtualScrollContainer.clientHeight / rowHeight);
+        const startIdx = Math.floor(virtualScrollContainer.scrollTop / rowHeight);
+        const endIdx = Math.min(startIdx + visibleRowCount, allData.length);
+        
+        // 清空當前顯示的內容
+        const tbody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
+        tbody.innerHTML = '';
+        
+        // 渲染可視區域內的數據
+        const visibleData = allData.slice(startIdx, endIdx);
+        displayData(visibleData, 3);
+    }
+
+    // 頁面加載時顯示全部表單
     fetchData(() => {
-        renderRows(start, start + batchSize);
-        start += batchSize;
+        fetchAndDisplayData('');
+        const virtualScrollContainer = document.getElementById('virtualScrollContainer');
+        if (virtualScrollContainer) {
+            onScroll(); // 初始化顯示可視區域數據
+        }
     });
 });
