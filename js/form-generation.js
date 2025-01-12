@@ -51,6 +51,11 @@ function normalizeString(str) {
              .toLowerCase();
 }
 
+// 添加虛擬滾動相關的常數
+const ROW_HEIGHT = 40; // 每行的高度（像素）
+const VISIBLE_ROWS = 20; // 可見行數
+const BUFFER_SIZE = 5; // 緩衝區大小（上下各多少行）
+
 // 虛擬滾動管理器
 class VirtualScroller {
     constructor(container, data, renderRow) {
