@@ -158,6 +158,7 @@ function createTableRow(item, numDates) {
 document.addEventListener("DOMContentLoaded", function() {
     const searchInput = document.getElementById('searchInput');
     const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
+    const songCountElement = document.getElementById('songCount');
     let allData = [];
 
     // 優化的 fetchData 函數
@@ -172,6 +173,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 return aText.localeCompare(bText, 'ja-JP');
             });
             displayData(allData);
+
+            // 更新總曲數
+            if (songCountElement) {
+                songCountElement.textContent = allData.length;
+            }
         } catch (error) {
             console.error('Error fetching data:', error);
         }
@@ -228,7 +234,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 normalizeString(row.source).includes(query)
             );
             displayData(filteredData);
-        }, 800));
+        }, 500));
     } else {
         console.error("searchInput element not found");
     }
