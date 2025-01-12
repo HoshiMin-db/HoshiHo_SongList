@@ -154,13 +154,18 @@ document.addEventListener("DOMContentLoaded", function() {
         try {
             const response = await fetch('data.json', { cache: 'no-cache' });
             const data = await response.json();
-            allData = data;
+            // 在這裡排序所有數據
+            allData = data.sort((a, b) => {
+                const aText = normalizeString(a.song_name);
+                const bText = normalizeString(b.song_name);
+                return aText.localeCompare(bText, 'ja-JP');
+            });
             if (totalSongCount === 0) {
                 const uniqueSongs = new Set(data.map(item => `${normalizeString(item.song_name)}-${normalizeString(item.artist)}`));
                 totalSongCount = uniqueSongs.size;
                 document.getElementById('songCount').textContent = totalSongCount;
             }
-            callback(data);
+            callback(allData);
         } catch (error) {
             console.error('Error fetching data:', error);
         }
@@ -203,7 +208,7 @@ document.addEventListener("DOMContentLoaded", function() {
     searchInput.addEventListener('input', debounce(function(e) { 
         const query = normalizeString(e.target.value.toLowerCase());
         fetchAndDisplayData(query, allData);
-    }, 500)); // 設置防抖延遲時間為500毫秒
+    }, 800)); // 設置防抖延遲時間為800毫秒
 
     function displayData(data, numDates = 3) {
         const groupedData = data.reduce((acc, row) => {
