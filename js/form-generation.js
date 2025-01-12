@@ -35,6 +35,7 @@ function normalizeString(str) {
               .toLowerCase(); // 將字符串轉換為小寫形式
 }
 
+// 創建表格行
 function createTableRow(item, numDates, songTableHead) {
     const newRow = document.createElement('tr');
     
@@ -146,39 +147,65 @@ document.addEventListener("DOMContentLoaded", function() {
     const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
     const songTableHead = document.getElementById('songTable').getElementsByTagName('thead')[0];
     let totalSongCount = 0; 
+    let allData = [];
 
-    function fetchData(callback) {
-        fetch('data.json', { cache: 'no-cache' })
-            .then(response => response.json())
-            .then(data => {
-                if (totalSongCount === 0) {
-                    const uniqueSongs = new Set(data.map(item => `${normalizeString(item.song_name)}-${normalizeString(item.artist)}`));
-                    totalSongCount = uniqueSongs.size;
-                    document.getElementById('songCount').textContent = totalSongCount;
-                }
-                callback(data);
-            })
-            .catch(error => console.error('Error fetching data:', error));
+    // 優化的 fetchData 函數
+    async function fetchData(callback) {
+        try {
+            const response = await fetch('data.json', { cache: 'no-cache' });
+            const data = await response.json();
+            allData = data;
+            if (totalSongCount === 0) {
+                const uniqueSongs = new Set(data.map(item => `${normalizeString(item.song_name)}-${normalizeString(item.artist)}`));
+                totalSongCount = uniqueSongs.size;
+                document.getElementById('songCount').textContent = totalSongCount;
+            }
+            callback(data);
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        }
     }
 
-    function fetchAndDisplayData(query, allData) {
+    function fetchAndDisplayData(query, data) {
         songTableBody.innerHTML = '';
-        const filteredData = allData.filter(row =>
+        const filteredData = data.filter(row =>
             normalizeString(row.song_name).includes(query) ||
             normalizeString(row.artist).includes(query) ||
             normalizeString(row.source).includes(query)
         );
         displayData(filteredData);
     }
-    
-    // 使用防抖函數來處理搜尋輸入事件
+
+    // 虛擬滾動
+    let start = 0;
+    const batchSize = 50;
+
+    function renderRows(start, end) {
+        const fragment = document.createDocumentFragment();
+        const dataToRender = allData.slice(start, end);
+        dataToRender.forEach(item => {
+            const newRow = createTableRow(item, 3, songTableHead);
+            fragment.appendChild(newRow);
+        });
+        songTableBody.appendChild(fragment);
+    }
+
+    function onScroll() {
+        const { scrollTop, scrollHeight, clientHeight } = songTableBody;
+        if (scrollTop + clientHeight >= scrollHeight - 50) {
+            renderRows(start, start + batchSize);
+            start += batchSize;
+        }
+    }
+
+    songTableBody.addEventListener('scroll', onScroll);
+
     searchInput.addEventListener('input', debounce(function(e) { 
         const query = normalizeString(e.target.value.toLowerCase());
-        fetchData(data => fetchAndDisplayData(query, data));
-    }, 800)); // 設置防抖延遲時間為800毫秒
+        fetchAndDisplayData(query, allData);
+    }, 500)); // 設置防抖延遲時間為500毫秒
 
     function displayData(data, numDates = 3) {
-        // 使用reduce來分組數據
         const groupedData = data.reduce((acc, row) => {
             const key = `${normalizeString(row.song_name)}-${normalizeString(row.artist)}`;
             if (!acc[key]) {
@@ -187,10 +214,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     dates: []
                 };
             }
-            // 合併日期並立即排序
             const allDates = [...acc[key].dates, ...row.dates];
             acc[key].dates = allDates.sort((a, b) => {
-                // 將日期和時間轉換為可比較的格式
                 const dateA = new Date(a.date.replace(/(\d{4})(\d{2})(\d{2})/, '$1-$2-$3') + 'T' + a.time);
                 const dateB = new Date(b.date.replace(/(\d{4})(\d{2})(\d{2})/, '$1-$2-$3') + 'T' + b.time);
                 return dateB - dateA;
@@ -198,10 +223,8 @@ document.addEventListener("DOMContentLoaded", function() {
             return acc;
         }, {});
 
-        // 清空表格
         songTableBody.innerHTML = '';
 
-        // 遍歷分組後的數據，生成表格行
         Object.entries(groupedData).forEach(([key, item]) => {
             const newRow = createTableRow(item, numDates, songTableHead);
             songTableBody.appendChild(newRow);
@@ -223,5 +246,8 @@ document.addEventListener("DOMContentLoaded", function() {
         rows.forEach(row => table.getElementsByTagName('tbody')[0].appendChild(row));
     }
 
-    fetchData(data => fetchAndDisplayData('', data));
+    fetchData(() => {
+        renderRows(start, start + batchSize);
+        start += batchSize;
+    });
 });
