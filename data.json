@@ -10025,8 +10025,8 @@
         ]
     },
     {
-        "song_name": "かもめが翔んだ日 |渡辺真知子",
-        "artist": "",
+        "song_name": "かもめが翔んだ日",
+        "artist": "渡辺真知子",
         "source": "",
         "is_copyright": false,
         "dates": [
@@ -10035,6 +10035,20 @@
                 "time": "02:08:44",
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=7724s",
                 "is_member_exclusive": true,
+                "is_acapella": false
+            },
+            {
+                "date": "20241228",
+                "time": "00:09:07",
+                "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=547s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240817",
+                "time": "00:16:00",
+                "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=960s",
+                "is_member_exclusive": false,
                 "is_acapella": false
             }
         ]
@@ -15416,28 +15430,6 @@
                 "date": "20240202",
                 "time": "06:15:02",
                 "link": "https://www.youtube.com/watch?v=70E6Ns3_THo&t=22502s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "かもめが翔んだ日",
-        "artist": "渡辺真知子",
-        "source": "",
-        "is_copyright": false,
-        "dates": [
-            {
-                "date": "20241228",
-                "time": "00:09:07",
-                "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=547s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240817",
-                "time": "00:16:00",
-                "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=960s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
