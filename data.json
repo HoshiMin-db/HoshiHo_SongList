@@ -494,6 +494,13 @@
                 "is_acapella": false
             },
             {
+                "date": "20231202",
+                "time": "07:34:38",
+                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=27278s",
+                "is_member_exclusive": true,
+                "is_acapella": false
+            },
+            {
                 "date": "20241130",
                 "time": "04:35:05",
                 "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=16505s",
@@ -1649,21 +1656,6 @@
                 "time": "04:39:18",
                 "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=16758s",
                 "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "地上の戦士",
-        "artist": "紐育華撃団･星組",
-        "source": "サクラ大戦",
-        "is_copyright": false,
-        "dates": [
-            {
-                "date": "20231202",
-                "time": "07:34:38",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=27278s",
-                "is_member_exclusive": true,
                 "is_acapella": false
             }
         ]
