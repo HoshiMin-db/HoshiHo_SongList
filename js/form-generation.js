@@ -51,11 +51,6 @@ function normalizeString(str) {
              .toLowerCase();
 }
 
-// 添加虛擬滾動相關的常數
-const ROW_HEIGHT = 40; // 每行的高度（像素）
-const VISIBLE_ROWS = 20; // 可見行數
-const BUFFER_SIZE = 5; // 緩衝區大小（上下各多少行）
-
 // 虛擬滾動管理器
 class VirtualScroller {
     constructor(container, data, renderRow) {
@@ -118,9 +113,9 @@ class VirtualScroller {
     }
 }
 
-// 修改 displayData 函數，接收 songTableBody 作為參數
-function displayData(data, songTableBody, numDates = 3) {
-    // 資料分組邏輯保持不變
+// 修改主要的顯示函數
+function displayData(data, numDates = 3) {
+    // 先進行資料分組
     const groupedData = data.reduce((acc, row) => {
         const key = `${normalizeString(row.song_name)}-${normalizeString(row.artist)}`;
         if (!acc[key]) {
@@ -144,10 +139,134 @@ function displayData(data, songTableBody, numDates = 3) {
 
     // 建立虛擬滾動器
     new VirtualScroller(
-        songTableBody.parentElement,
+        songTableBody.parentElement, // 表格容器
         processedData,
         (item, index) => createTableRow(item, index, numDates)
     );
+}
+
+// 創建表格行的函數
+function createTableRow(item, index, numDates) {
+    const row = document.createElement('tr');
+    
+    // 添加初始欄位
+    const initialCell = document.createElement('td');
+    initialCell.textContent = item.song_name.charAt(0).toUpperCase();
+    row.appendChild(initialCell);
+
+    // 歌名欄位
+    const songNameCell = document.createElement('td');
+    songNameCell.textContent = item.song_name;
+    if (item.is_copyright) {
+        songNameCell.style.color = 'red';
+    }
+    row.appendChild(songNameCell);
+
+    // 藝術家欄位
+    const artistCell = document.createElement('td');
+    artistCell.textContent = item.artist;
+    row.appendChild(artistCell);
+
+    // 來源欄位
+    const sourceCell = document.createElement('td');
+    sourceCell.textContent = item.source || '';
+    row.appendChild(sourceCell);
+
+    // 添加日期欄位
+    const dateCount = Math.min(numDates, item.dates.length);
+    for (let i = 0; i < dateCount; i++) {
+        const dateCell = document.createElement('td');
+        const dateData = item.dates[i];
+        const link = document.createElement('a');
+        const date = dateData.date;
+        const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
+        
+        link.href = dateData.link;
+        link.textContent = formattedDate;
+        link.onclick = (e) => {
+            e.preventDefault();
+            openFloatingPlayer(link.href);
+        };
+        
+        dateCell.appendChild(link);
+
+        if (dateData.is_member_exclusive) {
+            const lockIcon = document.createElement('span');
+            lockIcon.classList.add('lock-icon');
+            lockIcon.textContent = '🔒';
+            dateCell.appendChild(lockIcon);
+        }
+
+        if (dateData.is_acapella) {
+            dateCell.classList.add('acapella');
+        }
+
+        row.appendChild(dateCell);
+    }
+
+    // 補充空白欄位
+    for (let i = dateCount; i < numDates; i++) {
+        row.appendChild(document.createElement('td'));
+    }
+
+    // 添加更多按鈕
+    const moreCell = document.createElement('td');
+    if (item.dates.length > numDates) {
+        const moreButton = document.createElement('button');
+        moreButton.textContent = '...';
+        moreButton.className = 'more-button';
+        moreButton.onclick = () => handleMoreDates(row, item, numDates);
+        moreCell.appendChild(moreButton);
+    }
+    row.appendChild(moreCell);
+
+    return row;
+}
+
+// 處理更多日期的函數
+function handleMoreDates(row, item, numDates) {
+    const moreButton = row.querySelector('.more-button');
+    const isExpanded = moreButton.getAttribute('data-expanded') === 'true';
+    
+    if (isExpanded) {
+        // 收起額外的日期
+        const extraDates = row.querySelectorAll('.extra-date');
+        extraDates.forEach(cell => cell.remove());
+        moreButton.setAttribute('data-expanded', 'false');
+    } else {
+        // 展開額外的日期
+        item.dates.slice(numDates).forEach(dateData => {
+            const dateCell = document.createElement('td');
+            dateCell.classList.add('date-cell', 'extra-date');
+            
+            const link = document.createElement('a');
+            const date = dateData.date;
+            const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
+            
+            link.href = dateData.link;
+            link.textContent = formattedDate;
+            link.onclick = (e) => {
+                e.preventDefault();
+                openFloatingPlayer(link.href);
+            };
+            
+                        dateCell.appendChild(link);
+
+            if (dateData.is_member_exclusive) {
+                const lockIcon = document.createElement('span');
+                lockIcon.classList.add('lock-icon');
+                lockIcon.textContent = '🔒';
+                dateCell.appendChild(lockIcon);
+            }
+
+            if (dateData.is_acapella) {
+                dateCell.classList.add('acapella');
+            }
+
+            row.insertBefore(dateCell, row.lastElementChild);
+        });
+        moreButton.setAttribute('data-expanded', 'true');
+    }
 }
 
 // 初始化數據
@@ -155,7 +274,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const searchInput = document.getElementById('searchInput');
     const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
     const songTableHead = document.getElementById('songTable').getElementsByTagName('thead')[0];
-    let totalSongCount = 0;
+    let totalSongCount = 0; 
 
     function fetchData(callback) {
         fetch('data.json', { cache: 'no-cache' })
@@ -178,16 +297,14 @@ document.addEventListener("DOMContentLoaded", function() {
             normalizeString(row.artist).includes(query) ||
             normalizeString(row.source).includes(query)
         );
-        // 將 songTableBody 作為參數傳遞給 displayData
-        displayData(filteredData, songTableBody);
+        displayData(filteredData);
     }
 
     // 使用防抖函數來處理搜尋輸入事件
-    searchInput.addEventListener('input', debounce(function(e) {
+    searchInput.addEventListener('input', debounce(function(e) { 
         const query = normalizeString(e.target.value.toLowerCase());
         fetchData(data => fetchAndDisplayData(query, data));
-    }, 500));
+    }, 500)); // 設置防抖延遲時間為500毫秒
 
-    // 初始載入數據
     fetchData(data => fetchAndDisplayData('', data));
 });
