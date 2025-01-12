@@ -217,3 +217,9 @@ table thead th {
     z-index: 10;
     cursor: default;
 }
+
+/* 新增滾動容器樣式 */
+#songTableContainer {
+    max-height: 500px;
+    overflow-y: auto;
+}
