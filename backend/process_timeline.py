@@ -94,28 +94,28 @@ def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs
                     source = parts[3] if len(parts) > 3 else ''
                 elif date >= new_rule_date:
                     # 新規則解析
-                    line = re.sub(r'^\d+.\s+', '', line)  # 移除行首的數字和點號
-                    parts = line.strip().split('　', 1)
-                    if len(parts) < 2:
+                    line = re.sub(r'^\d+\.\s+', '', line)
+                    parts = line.strip().split('\u3000', 1)
+                    if len(parts) != 2:
                         print(f"Warning: Skipping line due to incorrect format: '{line.strip()}'")
                         continue
                         
-                    time_str, second_part = parts
+                    time_str, song_info = parts
                     song_name = ""
                     artist = ""
                     source = ""
                     
                     # 檢查是否有『』，如果有則視為source
-                    match = re.match(r'^(.*?)『(.*?)』(.*)$', second_part)
-                    if match:
-                        song_name = match.group(1).strip()
-                        source = match.group(2).strip()
-                        artist = match.group(3).strip()
+                    if '『' in song_info and '』' in song_info:
+                        song_name = song_info.split('『')[0].strip()
+                        source_artist = song_info.split('『')[1].split('』')
+                        source = source_artist[0].strip()
+                        artist = source_artist[1].strip() if len(source_artist) > 1 else ''
                     else:
                         # 沒有『』，視為曲名 / 歌手
-                        parts = second_part.split(' / ')
-                        song_name = parts[0].strip()
-                        artist = parts[1].strip() if len(parts) > 1 else ''
+                        song_parts = song_info.split(' / ')
+                        song_name = song_parts[0].strip()
+                        artist = song_parts[1].strip() if len(song_parts) > 1 else ''
                 
                 # 建立唯一鍵（忽略大小寫和全半形）
                 normalized_key = (normalize_string(song_name), normalize_string(artist))
@@ -174,7 +174,6 @@ def main():
             date_str = match.group(1)
             try:
                 data = process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist, copyright_songs)
-                print(f"Data processed for {date_str}: {data}")  # 調試輸出
                 
                 # 合併資料
                 for song_data in data:
@@ -189,13 +188,9 @@ def main():
             except Exception as e:
                 print(f"Error processing file {file_path}: {e}")
     
-    # 確認 all_data 是否有數據
-    print(f"All data collected: {all_data}")  # 調試輸出
-
     # 輸出最終資料
     with open('data.json', 'w', encoding='utf-8') as f:
         json.dump(list(all_data.values()), f, ensure_ascii=False, indent=4)
-        print(f"Data written to data.json")  # 調試輸出
 
 if __name__ == '__main__':
     main()
