@@ -2841,6 +2841,13 @@
                 "is_acapella": false
             },
             {
+                "date": "20250111",
+                "time": "04:55:36",
+                "link": "https://www.youtube.com/watch?v=d8-4g0Tf9IE&t=17736s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
                 "date": "20240915",
                 "time": "01:34:47",
                 "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=5687s",
@@ -6628,6 +6635,13 @@
                 "is_acapella": false
             },
             {
+                "date": "20250111",
+                "time": "02:02:49",
+                "link": "https://www.youtube.com/watch?v=d8-4g0Tf9IE&t=7369s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
                 "date": "20240928",
                 "time": "02:00:28",
                 "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=7228s",
@@ -6748,6 +6762,13 @@
                 "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=10903s",
                 "is_member_exclusive": false,
                 "is_acapella": false
+            },
+            {
+                "date": "20250111",
+                "time": "02:30:00",
+                "link": "https://www.youtube.com/watch?v=d8-4g0Tf9IE&t=9000s",
+                "is_member_exclusive": false,
+                "is_acapella": false
             }
         ]
     },
@@ -6775,6 +6796,13 @@
                 "date": "20240706",
                 "time": "02:54:17",
                 "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=10457s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20250111",
+                "time": "02:23:28",
+                "link": "https://www.youtube.com/watch?v=d8-4g0Tf9IE&t=8608s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             },
@@ -9874,6 +9902,168 @@
         ]
     },
     {
+        "song_name": "マツケンサンバⅡ",
+        "artist": "松平健",
+        "source": "",
+        "is_copyright": false,
+        "dates": [
+            {
+                "date": "20250111",
+                "time": "00:19:19",
+                "link": "https://www.youtube.com/watch?v=d8-4g0Tf9IE&t=1159s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "CAT'S EYE",
+        "artist": "杏里",
+        "source": "キャッツ♥アイ",
+        "is_copyright": false,
+        "dates": [
+            {
+                "date": "20250111",
+                "time": "01:51:59",
+                "link": "https://www.youtube.com/watch?v=d8-4g0Tf9IE&t=6719s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20231118",
+                "time": "00:42:15",
+                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=2535s",
+                "is_member_exclusive": true,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "Shuffle",
+        "artist": "奥井雅美",
+        "source": "遊☆戯☆王デュエルモンスターズ",
+        "is_copyright": false,
+        "dates": [
+            {
+                "date": "20250111",
+                "time": "03:08:27",
+                "link": "https://www.youtube.com/watch?v=d8-4g0Tf9IE&t=11307s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20231231",
+                "time": "03:47:24",
+                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=13644s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "集結の園へ",
+        "artist": "林原めぐみ",
+        "source": "CR新世紀エヴァンゲリオン 〜最後のシ者〜",
+        "is_copyright": false,
+        "dates": [
+            {
+                "date": "20250111",
+                "time": "03:34:55",
+                "link": "https://www.youtube.com/watch?v=d8-4g0Tf9IE&t=12895s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20231209",
+                "time": "08:16:57",
+                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=29817s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240330",
+                "time": "01:29:18",
+                "link": "https://www.youtube.com/watch?v=W2ysMOjn-WY&t=5358s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "わんだふるぷりきゅあ！evolution!!",
+        "artist": "吉武千颯",
+        "source": "わんだふるぷりきゅあ！",
+        "is_copyright": false,
+        "dates": [
+            {
+                "date": "20250111",
+                "time": "03:46:20",
+                "link": "https://www.youtube.com/watch?v=d8-4g0Tf9IE&t=13580s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240713",
+                "time": "06:03:31",
+                "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=21811s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "DELICIOUS HAPPY DAYS♪",
+        "artist": "吉武千颯",
+        "source": "デリシャスパーティ♡プリキュア",
+        "is_copyright": false,
+        "dates": [
+            {
+                "date": "20250111",
+                "time": "04:08:04",
+                "link": "https://www.youtube.com/watch?v=d8-4g0Tf9IE&t=14884s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "夢のつづき",
+        "artist": "帝国歌劇団",
+        "source": "サクラ大戦2 〜君、死にたもうことなかれ〜",
+        "is_copyright": false,
+        "dates": [
+            {
+                "date": "20250111",
+                "time": "04:29:30",
+                "link": "https://www.youtube.com/watch?v=d8-4g0Tf9IE&t=16170s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "たった１つの想い",
+        "artist": "KOKIA",
+        "source": "GUNSLINGER GIRL - IL TEATRINO -",
+        "is_copyright": false,
+        "dates": [
+            {
+                "date": "20250111",
+                "time": "04:42:24",
+                "link": "https://www.youtube.com/watch?v=d8-4g0Tf9IE&t=16944s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240629",
+                "time": "05:06:27",
+                "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=18387s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
         "song_name": "少女A",
         "artist": "中森明菜",
         "source": "",
@@ -9898,21 +10088,6 @@
                 "date": "20231118",
                 "time": "00:26:27",
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=1587s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "CAT'S EYE",
-        "artist": "杏里",
-        "source": "キャッツ・アイ",
-        "is_copyright": false,
-        "dates": [
-            {
-                "date": "20231118",
-                "time": "00:42:15",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=2535s",
                 "is_member_exclusive": true,
                 "is_acapella": false
             }
@@ -11103,21 +11278,6 @@
                 "date": "20240308",
                 "time": "00:53:11",
                 "link": "https://www.youtube.com/watch?v=mfO62RxfZPU&t=3191s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "Shuffle",
-        "artist": "奥井雅美",
-        "source": "遊戯王",
-        "is_copyright": false,
-        "dates": [
-            {
-                "date": "20231231",
-                "time": "03:47:24",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=13644s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
@@ -12417,21 +12577,6 @@
         ]
     },
     {
-        "song_name": "たった１つの想い",
-        "artist": "KOKIA",
-        "source": "GUNSLINGER GIRL - IL TEATRINO -",
-        "is_copyright": false,
-        "dates": [
-            {
-                "date": "20240629",
-                "time": "05:06:27",
-                "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=18387s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
         "song_name": "LOVE SHIELD",
         "artist": "奥井雅美",
         "source": "恋する乙女と守護の楯 The shield of AIGIS",
@@ -12921,28 +13066,6 @@
                 "date": "20240209",
                 "time": "03:08:26",
                 "link": "https://www.youtube.com/watch?v=kMAS4-EXsps&t=11306s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "集結の園へ",
-        "artist": "林原めぐみ",
-        "source": "エヴァンゲリオン",
-        "is_copyright": false,
-        "dates": [
-            {
-                "date": "20231209",
-                "time": "08:16:57",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=29817s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240330",
-                "time": "01:29:18",
-                "link": "https://www.youtube.com/watch?v=W2ysMOjn-WY&t=5358s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
@@ -14920,7 +15043,7 @@
     },
     {
         "song_name": "バルカローレ",
-        "artist": "アテナ(歌唱:河井英里)",
+        "artist": "河井英里",
         "source": "",
         "is_copyright": false,
         "dates": [
@@ -14930,12 +15053,19 @@
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=12326s",
                 "is_member_exclusive": false,
                 "is_acapella": true
+            },
+            {
+                "date": "20240202",
+                "time": "04:05:33",
+                "link": "https://www.youtube.com/watch?v=70E6Ns3_THo&t=14733s",
+                "is_member_exclusive": false,
+                "is_acapella": true
             }
         ]
     },
     {
         "song_name": "コッコロ",
-        "artist": "アテナ(歌唱:河井英里)",
+        "artist": "河井英里",
         "source": "",
         "is_copyright": false,
         "dates": [
@@ -15266,21 +15396,6 @@
                 "link": "https://www.youtube.com/watch?v=70E6Ns3_THo&t=14400s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "バルカローレ",
-        "artist": "河井英里",
-        "source": "ARIA The ANIMATION",
-        "is_copyright": false,
-        "dates": [
-            {
-                "date": "20240202",
-                "time": "04:05:33",
-                "link": "https://www.youtube.com/watch?v=70E6Ns3_THo&t=14733s",
-                "is_member_exclusive": false,
-                "is_acapella": true
             }
         ]
     },
@@ -15878,21 +15993,6 @@
                 "date": "20240713",
                 "time": "05:12:56",
                 "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=18776s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "わんだふるぷりきゅあ！evolution!!",
-        "artist": "吉武千颯",
-        "source": "わんだふるぷりきゅあ！",
-        "is_copyright": false,
-        "dates": [
-            {
-                "date": "20240713",
-                "time": "06:03:31",
-                "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=21811s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
