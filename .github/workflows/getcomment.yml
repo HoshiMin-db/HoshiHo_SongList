@@ -44,3 +44,23 @@ jobs:
           git push https://${{ secrets.PAT_TOKEN }}@github.com/HoshiMin-db/HoshiHo_SongList.git HEAD:main
         env:
           PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+
+  # Add this section to trigger parse_timeline.yml
+  trigger-parse-timeline:
+    needs: check-and-fetch
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger parse_timeline workflow
+        uses: actions/github-script@v4
+        with:
+          script: |
+            const owner = 'HoshiMin-db';
+            const repo = 'HoshiHo_SongList';
+            const workflow_id = 'parse_timeline.yml';
+            const ref = 'main';
+            await github.actions.createWorkflowDispatch({
+              owner,
+              repo,
+              workflow_id,
+              ref
+            });
