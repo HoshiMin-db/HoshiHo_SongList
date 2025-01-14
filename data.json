@@ -12224,6 +12224,13 @@
                 "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=18369s",
                 "is_member_exclusive": false,
                 "is_acapella": false
+            },
+            {
+                "date": "20241228",
+                "time": "02:54:19",
+                "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=10459s",
+                "is_member_exclusive": false,
+                "is_acapella": false
             }
         ]
     },
@@ -15566,21 +15573,6 @@
                 "date": "20241228",
                 "time": "01:48:30",
                 "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=6510s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "POP IN 2",
-        "artist": "Ｂ小町",
-        "source": "推しの子",
-        "is_copyright": false,
-        "dates": [
-            {
-                "date": "20241228",
-                "time": "02:54:19",
-                "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=10459s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
