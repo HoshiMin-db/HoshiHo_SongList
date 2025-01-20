@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", function() {
             // 在這裡排序所有數據
             allData = data.sort((a, b) => {
                 // 先比較az分類
-                const azCompare = (a.az || '').localeCompare(b.az || '', 'ja-JP');
+                const azCompare = (a.az || '').localeCompare(b.az || '');
                 if (azCompare !== 0) {
                     return azCompare;
                 }
@@ -235,7 +235,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // 將分組後的數據轉換為數組並排序
         const sortedData = Object.values(groupedData).sort((a, b) => {
             // 先比較az分類
-            const azCompare = (a.az || '').localeCompare(b.az || '', 'ja-JP');
+            const azCompare = (a.az || '').localeCompare(b.az || '');
             if (azCompare !== 0) {
                 return azCompare;
             }
