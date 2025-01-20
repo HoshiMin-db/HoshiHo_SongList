@@ -196,10 +196,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (azCompare !== 0) {
                     return azCompare;
                 }
+                // 如果az相同，則比較曲名
                 const aText = normalizeString(a.song_name);
                 const bText = normalizeString(b.song_name);
-                // 再比較曲名
-                return complexSort(aText, bText);
+                return aText.localeCompare(bText, 'ja-JP');
             });
             displayData(allData);
 
@@ -210,20 +210,6 @@ document.addEventListener("DOMContentLoaded", function() {
         } catch (error) {
             console.error('Error fetching data:', error);
         }
-    }
-
-    function complexSort(a, b) {
-        // 定義日文字母排序順序
-        const jpOrder = 'あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをん';
-        const enOrder = 'abcdefghijklmnopqrstuvwxyz';
-
-        const aIsJP = jpOrder.includes(a[0]);
-        const bIsJP = jpOrder.includes(b[0]);
-
-        if (aIsJP && !bIsJP) return 1;
-        if (!aIsJP && bIsJP) return -1;
-        if (aIsJP && bIsJP) return jpOrder.indexOf(a[0]) - jpOrder.indexOf(b[0]);
-        return enOrder.indexOf(a[0]) - enOrder.indexOf(b[0]);
     }
 
     function displayData(data, numDates = 3) {
@@ -253,10 +239,8 @@ document.addEventListener("DOMContentLoaded", function() {
             if (azCompare !== 0) {
                 return azCompare;
             }
-            const aText = normalizeString(a.song_name);
-            const bText = normalizeString(b.song_name);
             // 再比較曲名
-            return complexSort(aText, bText);
+            return normalizeString(a.song_name).localeCompare(normalizeString(b.song_name), 'ja-JP');
         });
     
         sortedData.forEach(item => {
@@ -282,7 +266,7 @@ document.addEventListener("DOMContentLoaded", function() {
             // 如果首字相同，再比較曲名
             const aText = a.cells[1].textContent;
             const bText = b.cells[1].textContent;
-            return complexSort(aText, bText);
+            return aText.localeCompare(bText, 'ja-JP');
         });
         
         rows.forEach(row => table.getElementsByTagName('tbody')[0].appendChild(row));
