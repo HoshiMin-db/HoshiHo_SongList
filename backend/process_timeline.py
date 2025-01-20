@@ -54,6 +54,49 @@ def load_exceptions(exceptions_file):
 
     return member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist, copyright_songs
 
+def load_headers(headers_file):
+    """從headers.txt讀取首字對應表"""
+    headers_dict = {}
+    try:
+        with open(headers_file, 'r', encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                if line:
+                    parts = line.split('|')
+                    if len(parts) == 2:
+                        kana = parts[0]
+                        words = parts[1].split(',')
+                        # 處理引號包圍的例外情況
+                        processed_words = []
+                        for word in words:
+                            if word.startswith("'") and word.endswith("'"):
+                                processed_words.append(word[1:-1])
+                            else:
+                                processed_words.append(word)
+                        headers_dict[kana] = processed_words
+    except FileNotFoundError:
+        print(f"Warning: {headers_file} not found.")
+    return headers_dict
+
+def get_song_header(song_name, headers_dict):
+    """判斷歌曲名稱的首字屬於哪個假名分類"""
+    if not song_name:
+        return None
+        
+    first_char = song_name[0]
+    
+    # 先檢查完整歌名是否在例外清單中
+    for kana, words in headers_dict.items():
+        if song_name in words:
+            return kana
+            
+    # 再檢查首字是否在分類清單中
+    for kana, words in headers_dict.items():
+        if first_char in words:
+            return kana
+            
+    return None
+
 def normalize_string(str):
     if not str:
         return ''
@@ -61,7 +104,7 @@ def normalize_string(str):
     str = re.sub(r'\s+', '', str)
     return str
 
-def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist, copyright_songs):
+def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist, copyright_songs, headers_dict):
     data = {}  # 改用字典來儲存資料
     
     with open(file_path, 'r', encoding='utf-8') as f:
@@ -130,15 +173,17 @@ def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs
                 is_copyright = (song_name, artist) in copyright_songs or (song_name, None) in copyright_songs
                 
                 # 將資料存入字典
+                # 在建立資料時加入az分類
                 if normalized_key not in data:
                     data[normalized_key] = {
                         'song_name': song_name,
                         'artist': artist,
                         'source': source,
                         'is_copyright': is_copyright,
+                        'az': get_song_header(song_name, headers_dict),  # 加入這行
                         'dates': []
                     }
-                
+
                 # 確保不重複添加日期資訊
                 date_info = {
                     'date': date_str,
