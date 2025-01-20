@@ -36,3 +36,4 @@ acapella_songs|花咲く乙女
 acapella_songs|やさしい両手|三谷朋世
 acapella_songs|優しくキミは微笑んでいた|三谷朋世
 acapella_songs|恋獄|霜月はるか
+acapella_songs|OPEN YOUR MIND ～小さな羽根ひろげて～
