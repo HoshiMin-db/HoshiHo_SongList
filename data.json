@@ -5993,6 +5993,13 @@
                 "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=18500s",
                 "is_member_exclusive": true,
                 "is_acapella": true
+            },
+            {
+                "date": "20241228",
+                "time": "06:48:54",
+                "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=24534s",
+                "is_member_exclusive": false,
+                "is_acapella": true
             }
         ]
     },
@@ -15799,21 +15806,6 @@
                 "date": "20241228",
                 "time": "06:34:41",
                 "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=23681s",
-                "is_member_exclusive": false,
-                "is_acapella": true
-            }
-        ]
-    },
-    {
-        "song_name": "POWDER SNOW",
-        "artist": "AKKO",
-        "source": "WHITE ALBUM",
-        "is_copyright": false,
-        "dates": [
-            {
-                "date": "20241228",
-                "time": "06:48:54",
-                "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=24534s",
                 "is_member_exclusive": false,
                 "is_acapella": true
             }
