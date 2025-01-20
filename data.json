@@ -2530,6 +2530,13 @@
                 "is_acapella": false
             },
             {
+                "date": "20250118",
+                "time": "04:05:19",
+                "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=14719s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
                 "date": "20240720",
                 "time": "06:07:24",
                 "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=22044s",
@@ -3853,6 +3860,13 @@
                 "is_acapella": false
             },
             {
+                "date": "20250118",
+                "time": "01:24:12",
+                "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=5052s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
                 "date": "20240106",
                 "time": "06:27:48",
                 "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=23268s",
@@ -5037,6 +5051,13 @@
                 "date": "20240511",
                 "time": "02:12:30",
                 "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=7950s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20250118",
+                "time": "01:37:42",
+                "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=5862s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             },
@@ -7353,6 +7374,13 @@
                 "is_acapella": false
             },
             {
+                "date": "20250118",
+                "time": "02:35:48",
+                "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=9348s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
                 "date": "20241026",
                 "time": "02:16:09",
                 "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=8169s",
@@ -7467,6 +7495,13 @@
                 "date": "20240706",
                 "time": "05:16:28",
                 "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=18988s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20250118",
+                "time": "02:44:42",
+                "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=9882s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
@@ -7643,6 +7678,13 @@
                 "date": "20240608",
                 "time": "05:30:47",
                 "link": "https://www.youtube.com/watch?v=UoMwNx3aklM&t=19847s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20250118",
+                "time": "03:55:53",
+                "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=14153s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             },
@@ -9014,6 +9056,13 @@
                 "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=25374s",
                 "is_member_exclusive": false,
                 "is_acapella": false
+            },
+            {
+                "date": "20250118",
+                "time": "02:29:07",
+                "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=8947s",
+                "is_member_exclusive": false,
+                "is_acapella": false
             }
         ]
     },
@@ -9027,6 +9076,13 @@
                 "date": "20240706",
                 "time": "07:10:02",
                 "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=25802s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20250118",
+                "time": "01:44:20",
+                "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=6260s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
@@ -11755,6 +11811,13 @@
                 "link": "https://www.youtube.com/watch?v=Z-1sxd5PK_M&t=9933s",
                 "is_member_exclusive": false,
                 "is_acapella": false
+            },
+            {
+                "date": "20250118",
+                "time": "01:29:55",
+                "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=5395s",
+                "is_member_exclusive": false,
+                "is_acapella": false
             }
         ]
     },
@@ -13161,6 +13224,177 @@
         ]
     },
     {
+        "song_name": "Reweave",
+        "artist": "鈴木このみ",
+        "source": "Re:ゼロから始める異世界生活",
+        "is_copyright": false,
+        "dates": [
+            {
+                "date": "20250118",
+                "time": "00:08:24",
+                "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=504s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "NOX LUX",
+        "artist": "MYTH & ROID",
+        "source": "Re:ゼロから始める異世界生活",
+        "is_copyright": false,
+        "dates": [
+            {
+                "date": "20250118",
+                "time": "00:16:13",
+                "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=973s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "OPEN YOUR MIND ～小さな羽根ひろげて～",
+        "artist": "石田燿子",
+        "source": "ああっ女神さまっ",
+        "is_copyright": false,
+        "dates": [
+            {
+                "date": "20250118",
+                "time": "00:24:52",
+                "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=1492s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "群青",
+        "artist": "YOASOBI",
+        "source": "",
+        "is_copyright": false,
+        "dates": [
+            {
+                "date": "20250118",
+                "time": "00:44:17",
+                "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=2657s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20241109",
+                "time": "01:10:44",
+                "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=4244s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "ココナッツの片想い",
+        "artist": "中原めいこ",
+        "source": "",
+        "is_copyright": false,
+        "dates": [
+            {
+                "date": "20250118",
+                "time": "01:17:06",
+                "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=4626s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "HEART OF SWORD 〜夜明け前〜",
+        "artist": "T.M.Revolution",
+        "source": "るろうに剣心  - 明治剣客浪漫譚 -",
+        "is_copyright": false,
+        "dates": [
+            {
+                "date": "20250118",
+                "time": "01:54:45",
+                "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=6885s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "1/2",
+        "artist": "川本真琴",
+        "source": "るろうに剣心  - 明治剣客浪漫譚 -",
+        "is_copyright": false,
+        "dates": [
+            {
+                "date": "20250118",
+                "time": "02:00:57",
+                "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=7257s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240106",
+                "time": "06:09:00",
+                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=22140s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "the Fourth Avenue Café",
+        "artist": "L'Arc〜en〜Ciel",
+        "source": "るろうに剣心  - 明治剣客浪漫譚 -",
+        "is_copyright": false,
+        "dates": [
+            {
+                "date": "20250118",
+                "time": "02:12:14",
+                "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=7934s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "It's gonna rain!",
+        "artist": "BONNIE PINK",
+        "source": "るろうに剣心  - 明治剣客浪漫譚 -",
+        "is_copyright": false,
+        "dates": [
+            {
+                "date": "20250118",
+                "time": "02:22:35",
+                "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=8555s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "甲賀忍法帖",
+        "artist": "陰陽座",
+        "source": "バジリスク 〜甲賀忍法帖〜",
+        "is_copyright": false,
+        "dates": [
+            {
+                "date": "20250118",
+                "time": "04:13:47",
+                "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=15227s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240106",
+                "time": "03:18:15",
+                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=11895s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
         "song_name": "にんげんっていいな",
         "artist": "中嶋義実・ヤングフレッシュ",
         "source": "日本昔ばなし",
@@ -13353,21 +13587,6 @@
         ]
     },
     {
-        "song_name": "甲賀忍法帖",
-        "artist": "陰陽座",
-        "source": "バジリスク 〜甲賀忍法帖〜",
-        "is_copyright": false,
-        "dates": [
-            {
-                "date": "20240106",
-                "time": "03:18:15",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=11895s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
         "song_name": "朱隠し",
         "artist": "志方あきこ",
         "source": "",
@@ -13461,21 +13680,6 @@
                 "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=19556s",
                 "is_member_exclusive": false,
                 "is_acapella": true
-            }
-        ]
-    },
-    {
-        "song_name": "1/2",
-        "artist": "川本真琴",
-        "source": "るろうに剣心",
-        "is_copyright": false,
-        "dates": [
-            {
-                "date": "20240106",
-                "time": "06:09:00",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=22140s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
@@ -14588,21 +14792,6 @@
                 "date": "20241109",
                 "time": "00:57:25",
                 "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=3445s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "群青",
-        "artist": "YOASOBI",
-        "source": "",
-        "is_copyright": false,
-        "dates": [
-            {
-                "date": "20241109",
-                "time": "01:10:44",
-                "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=4244s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
