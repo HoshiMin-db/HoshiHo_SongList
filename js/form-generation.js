@@ -189,18 +189,27 @@ document.addEventListener("DOMContentLoaded", function() {
         try {
             const response = await fetch('data.json', { cache: 'no-cache' });
             const data = await response.json();
-            // 在這裡排序所有數據
-            allData = data.sort((a, b) => {
-                // 先比較az分類
-                const azCompare = (a.az || '').localeCompare(b.az || '');
-                if (azCompare !== 0) {
-                    return azCompare;
+            
+            // 將數據分為英文字母和日文字母兩部分
+            const enData = [];
+            const jpData = [];
+    
+            data.forEach(item => {
+                const firstChar = normalizeString(item.song_name).charAt(0);
+                if (/[a-zA-Z]/.test(firstChar)) {
+                    enData.push(item);
+                } else {
+                    jpData.push(item);
                 }
-                // 如果az相同，則比較曲名
-                const aText = normalizeString(a.song_name);
-                const bText = normalizeString(b.song_name);
-                return aText.localeCompare(bText, 'ja-JP');
             });
+    
+            // 分別排序
+            enData.sort((a, b) => normalizeString(a.song_name).localeCompare(normalizeString(b.song_name)));
+            jpData.sort((a, b) => normalizeString(a.song_name).localeCompare(normalizeString(b.song_name), 'ja-JP'));
+            
+            // 合併數據
+            allData = [...enData, ...jpData];
+
             displayData(allData);
 
             // 更新總曲數
@@ -235,7 +244,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // 將分組後的數據轉換為數組並排序
         const sortedData = Object.values(groupedData).sort((a, b) => {
             // 先比較az分類
-            const azCompare = (a.az || '').localeCompare(b.az || '');
+            const azCompare = (a.az || '').localeCompare(b.az || '', 'ja-JP');
             if (azCompare !== 0) {
                 return azCompare;
             }
