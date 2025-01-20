@@ -101,18 +101,21 @@ def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs
                         continue
                         
                     time_str, song_info = parts
-                    song_parts = song_info.split(' / ')
-                    song_name = song_parts[0].strip()
+                    song_name = ""
                     artist = ""
                     source = ""
                     
-                    if len(song_parts) > 1:
-                        source_artist = song_parts[1].split('』')
-                        if len(source_artist) == 2:
-                            source = source_artist[0].replace('『', '').strip()
-                            artist = source_artist[1].strip()
-                        else:
-                            artist = source_artist[0].strip()
+                    # 檢查是否有『』，如果有則視為source
+                    if '『' in song_info and '』' in song_info:
+                        song_name = song_info.split('『')[0].split(' / ')[0].strip()
+                        source_artist = song_info.split('『')[1].split('』')
+                        source = source_artist[0].strip()
+                        artist = source_artist[1].strip() if len(source_artist) > 1 else ''
+                    else:
+                        # 沒有『』，視為曲名 / 歌手
+                        song_parts = song_info.split(' / ')
+                        song_name = song_parts[0].strip()
+                        artist = song_parts[1].strip() if len(song_parts) > 1 else ''
                 
                 # 建立唯一鍵（忽略大小寫和全半形）
                 normalized_key = (normalize_string(song_name), normalize_string(artist))
