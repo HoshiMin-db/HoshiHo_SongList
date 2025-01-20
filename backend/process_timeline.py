@@ -204,13 +204,17 @@ def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs
 def main():
     timeline_dir = 'timeline'
     exceptions_file = os.path.join(timeline_dir, 'exceptions.txt')
+    headers_file = os.path.join(timeline_dir, 'headers.txt')
     all_data = {}  # 改用字典來合併所有資料
+
+    # 讀取headers檔案
+    headers_dict = load_headers(headers_file)
     
     # 讀取例外規則
     member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist, copyright_songs = load_exceptions(exceptions_file)
     
     for filename in os.listdir(timeline_dir):
-        if filename == 'exceptions.txt':
+        if filename in ['exceptions.txt', 'headers.txt']:
             continue
             
         file_path = os.path.join(timeline_dir, filename)
@@ -218,7 +222,8 @@ def main():
         if match:
             date_str = match.group(1)
             try:
-                data = process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist, copyright_songs)
+                data = process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist, copyright_songs, headers_dict)
+                # 加入headers_dict參數
                 
                 # 合併資料
                 for song_data in data:
