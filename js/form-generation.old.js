@@ -19,28 +19,48 @@ document.addEventListener("DOMContentLoaded", function() {
 // 字符串規範化函數，用於處理不同的字符串格式
 import { convert_jp } from './romaji.js';
 
-function normalizeString(str) {
-    if (!str) return ''; // 檢查空或未定義的字符串
-    
-    // 進行轉換
-    str = convert_jp(str);
-    
-    return str.normalize('NFKC') // 將字符串規範化為 NFKC 形式
-              .replace(/[~\u301c\uff5e]/g, '~') // 將全形和半形波浪號替換為半形波浪號
-              .replace(/，/g, ',') // 將全形逗號替換為半形逗號
-              .replace(/。/g, '.') // 將全形句號替換為半形句號
-              .replace(/[‘’]/g, "'") // 將全形引號替換為半形引號
-              .replace(/…/g, '...') // 將全形省略號替換為半形省略號
-              .replace(/\s+/g, '') // 忽略所有空格
-              .toLowerCase(); // 將字符串轉換為小寫形式
+// 增加輸入驗證和清理函數
+function sanitizeInput(input) {
+    if (typeof input !== 'string') return '';
+
+    // 使用正則表達式反覆替換直到所有不安全字符被移除
+    let sanitizedInput = input;
+    const unsafePatterns = /[<>&'"]|<[^>]*>|[^\w\s\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]/g;
+
+    while (unsafePatterns.test(sanitizedInput)) {
+        sanitizedInput = sanitizedInput.replace(unsafePatterns, '');
+    }
+
+    return sanitizedInput;
 }
 
-function createTableRow(item, numDates, songTableHead) {
+// 改善 normalizeString 函數
+function normalizeString(str) {
+    if (!str) return '';
+
+    // 先進行安全性清理
+    str = sanitizeInput(str);
+
+    // 再進行原有的轉換
+    str = convert_jp(str);
+
+    return str.normalize('NFKC')
+             .replace(/[~\u301c\uff5e]/g, '~')
+             .replace(/，/g, ',')
+             .replace(/。/g, '.')
+             .replace(/['']/g, "'")
+             .replace(/…/g, '...')
+             .replace(/\s+/g, '')
+             .toLowerCase();
+}
+
+// 創建表格行
+function createTableRow(item, numDates) {
     const newRow = document.createElement('tr');
-    
+
     const initialCell = newRow.insertCell();
     initialCell.textContent = item.song_name.charAt(0).toUpperCase();
-    
+
     const songNameCell = newRow.insertCell();
     songNameCell.textContent = item.song_name;
 
@@ -48,13 +68,13 @@ function createTableRow(item, numDates, songTableHead) {
     if (item.is_copyright) {
         songNameCell.style.color = 'red';
     }
-    
+
     newRow.insertCell().textContent = item.artist;
     newRow.insertCell().textContent = item.source || '';
-    
+
     // 生成日期欄位
     const dateCount = Math.min(numDates, item.dates.length);
-    
+
     // 先生成所有需要的日期欄位
     for (let i = 0; i < dateCount; i++) {
         const dateCell = newRow.insertCell();
@@ -67,7 +87,11 @@ function createTableRow(item, numDates, songTableHead) {
         link.target = '_blank';
         link.onclick = function(event) {
             event.preventDefault();
-            openFloatingPlayer(link.href);
+            if (isValidYouTubeURL(link.href)) {
+                openFloatingPlayer(link.href);
+            } else {
+                console.error('Invalid URL:', link.href);
+            }
         };
         dateCell.appendChild(link);
 
@@ -95,18 +119,16 @@ function createTableRow(item, numDates, songTableHead) {
         moreButton.className = 'more-button';
         moreButton.onclick = () => {
             const isExpanded = moreButton.getAttribute('data-expanded') === 'true';
-            const dateHeaderCell = songTableHead.rows[0].cells[4];
-            
+
             if (isExpanded) {
                 const toRemove = newRow.querySelectorAll('.extra-date');
                 toRemove.forEach(el => el.remove());
                 moreButton.setAttribute('data-expanded', 'false');
-                dateHeaderCell.colSpan = numDates + 1;
             } else {
                 item.dates.slice(numDates).forEach(row => {
                     const dateCell = newRow.insertCell();
                     dateCell.classList.add('date-cell', 'extra-date');
-                    
+
                     const link = document.createElement('a');
                     const date = row.date;
                     const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
@@ -115,10 +137,14 @@ function createTableRow(item, numDates, songTableHead) {
                     link.target = '_blank';
                     link.onclick = function(event) {
                         event.preventDefault();
-                        openFloatingPlayer(link.href);
+                        if (isValidYouTubeURL(link.href)) {
+                            openFloatingPlayer(link.href);
+                        } else {
+                            console.error('Invalid URL:', link.href);
+                        }
                     };
                     dateCell.appendChild(link);
-                    
+
                     if (row.is_member_exclusive) {
                         const lockIcon = document.createElement('span');
                         lockIcon.classList.add('lock-icon');
@@ -130,7 +156,6 @@ function createTableRow(item, numDates, songTableHead) {
                     }
                 });
                 moreButton.setAttribute('data-expanded', 'true');
-                dateHeaderCell.colSpan = item.dates.length + 1;
             }
         };
         moreButtonCell.appendChild(moreButton);
@@ -141,44 +166,47 @@ function createTableRow(item, numDates, songTableHead) {
     return newRow;
 }
 
+// 檢查 URL 是否為有效的 YouTube 網域
+function isValidYouTubeURL(url) {
+    try {
+        const parsedURL = new URL(url);
+        // 允許的 YouTube 網域清單
+        const allowedDomains = ['www.youtube.com', 'youtu.be'];
+        return allowedDomains.includes(parsedURL.hostname);
+    } catch (e) {
+        return false;
+    }
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     const searchInput = document.getElementById('searchInput');
     const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
-    const songTableHead = document.getElementById('songTable').getElementsByTagName('thead')[0];
-    let totalSongCount = 0; 
+    const songCountElement = document.getElementById('songCount');
+    let allData = [];
 
-    function fetchData(callback) {
-        fetch('data.json', { cache: 'no-cache' })
-            .then(response => response.json())
-            .then(data => {
-                if (totalSongCount === 0) {
-                    const uniqueSongs = new Set(data.map(item => `${normalizeString(item.song_name)}-${normalizeString(item.artist)}`));
-                    totalSongCount = uniqueSongs.size;
-                    document.getElementById('songCount').textContent = totalSongCount;
-                }
-                callback(data);
-            })
-            .catch(error => console.error('Error fetching data:', error));
-    }
+    // 優化的 fetchData 函數
+    async function fetchData() {
+        try {
+            const response = await fetch('data.json', { cache: 'no-cache' });
+            const data = await response.json();
+            // 在這裡排序所有數據
+            allData = data.sort((a, b) => {
+                const aText = normalizeString(a.song_name);
+                const bText = normalizeString(b.song_name);
+                return aText.localeCompare(bText, 'ja-JP');
+            });
+            displayData(allData);
 
-    function fetchAndDisplayData(query, allData) {
-        songTableBody.innerHTML = '';
-        const filteredData = allData.filter(row =>
-            normalizeString(row.song_name).includes(query) ||
-            normalizeString(row.artist).includes(query) ||
-            normalizeString(row.source).includes(query)
-        );
-        displayData(filteredData);
+            // 更新總曲數
+            if (songCountElement) {
+                songCountElement.textContent = allData.length;
+            }
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        }
     }
-    
-    // 使用防抖函數來處理搜尋輸入事件
-    searchInput.addEventListener('input', debounce(function(e) { 
-        const query = normalizeString(e.target.value.toLowerCase());
-        fetchData(data => fetchAndDisplayData(query, data));
-    }, 800)); // 設置防抖延遲時間為800毫秒
 
     function displayData(data, numDates = 3) {
-        // 使用reduce來分組數據
         const groupedData = data.reduce((acc, row) => {
             const key = `${normalizeString(row.song_name)}-${normalizeString(row.artist)}`;
             if (!acc[key]) {
@@ -187,10 +215,8 @@ document.addEventListener("DOMContentLoaded", function() {
                     dates: []
                 };
             }
-            // 合併日期並立即排序
             const allDates = [...acc[key].dates, ...row.dates];
             acc[key].dates = allDates.sort((a, b) => {
-                // 將日期和時間轉換為可比較的格式
                 const dateA = new Date(a.date.replace(/(\d{4})(\d{2})(\d{2})/, '$1-$2-$3') + 'T' + a.time);
                 const dateB = new Date(b.date.replace(/(\d{4})(\d{2})(\d{2})/, '$1-$2-$3') + 'T' + b.time);
                 return dateB - dateA;
@@ -198,12 +224,10 @@ document.addEventListener("DOMContentLoaded", function() {
             return acc;
         }, {});
 
-        // 清空表格
         songTableBody.innerHTML = '';
 
-        // 遍歷分組後的數據，生成表格行
         Object.entries(groupedData).forEach(([key, item]) => {
-            const newRow = createTableRow(item, numDates, songTableHead);
+            const newRow = createTableRow(item, numDates);
             songTableBody.appendChild(newRow);
         });
 
@@ -213,7 +237,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function sortTable() {
         const table = document.getElementById('songTable');
         const rows = Array.from(table.getElementsByTagName('tbody')[0].rows);
-        
+
         rows.sort((a, b) => {
             const aText = a.cells[1].textContent;
             const bText = b.cells[1].textContent;
@@ -223,5 +247,21 @@ document.addEventListener("DOMContentLoaded", function() {
         rows.forEach(row => table.getElementsByTagName('tbody')[0].appendChild(row));
     }
 
-    fetchData(data => fetchAndDisplayData('', data));
+    // 確認元素是否存在
+    if (searchInput) {
+        searchInput.addEventListener('input', debounce(function(e) {
+            const query = normalizeString(e.target.value.toLowerCase());
+            const filteredData = allData.filter(row =>
+                normalizeString(row.song_name).includes(query) ||
+                normalizeString(row.artist).includes(query) ||
+                normalizeString(row.source).includes(query)
+            );
+            displayData(filteredData);
+        }, 800));
+    } else {
+        console.error("searchInput element not found");
+    }
+
+    // 頁面加載時顯示全部表單
+    fetchData();
 });
