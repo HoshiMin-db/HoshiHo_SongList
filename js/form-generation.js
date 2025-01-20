@@ -59,7 +59,7 @@ function createTableRow(item, numDates) {
     const newRow = document.createElement('tr');
 
     const initialCell = newRow.insertCell();
-    initialCell.textContent = item.song_name.charAt(0).toUpperCase();
+    initialCell.textContent = item.az || item.song_name.charAt(0).toUpperCase();
 
     const songNameCell = newRow.insertCell();
     songNameCell.textContent = item.song_name;
@@ -191,6 +191,12 @@ document.addEventListener("DOMContentLoaded", function() {
             const data = await response.json();
             // 在這裡排序所有數據
             allData = data.sort((a, b) => {
+                // 先比較az分類
+                const azCompare = (a.az || '').localeCompare(b.az || '', 'ja-JP');
+                if (azCompare !== 0) {
+                    return azCompare;
+                }
+                // 如果az相同，則比較曲名
                 const aText = normalizeString(a.song_name);
                 const bText = normalizeString(b.song_name);
                 return aText.localeCompare(bText, 'ja-JP');
@@ -223,15 +229,24 @@ document.addEventListener("DOMContentLoaded", function() {
             });
             return acc;
         }, {});
-
+    
         songTableBody.innerHTML = '';
-
-        Object.entries(groupedData).forEach(([key, item]) => {
+        
+        // 將分組後的數據轉換為數組並排序
+        const sortedData = Object.values(groupedData).sort((a, b) => {
+            // 先比較az分類
+            const azCompare = (a.az || '').localeCompare(b.az || '', 'ja-JP');
+            if (azCompare !== 0) {
+                return azCompare;
+            }
+            // 再比較曲名
+            return normalizeString(a.song_name).localeCompare(normalizeString(b.song_name), 'ja-JP');
+        });
+    
+        sortedData.forEach(item => {
             const newRow = createTableRow(item, numDates);
             songTableBody.appendChild(newRow);
         });
-
-        sortTable();
     }
 
     function sortTable() {
@@ -239,11 +254,21 @@ document.addEventListener("DOMContentLoaded", function() {
         const rows = Array.from(table.getElementsByTagName('tbody')[0].rows);
 
         rows.sort((a, b) => {
+            // 先比較首字（az分類）
+            const aFirstChar = a.cells[0].textContent;
+            const bFirstChar = b.cells[0].textContent;
+            const firstCharCompare = aFirstChar.localeCompare(bFirstChar, 'ja-JP');
+            
+            if (firstCharCompare !== 0) {
+                return firstCharCompare;
+            }
+            
+            // 如果首字相同，再比較曲名
             const aText = a.cells[1].textContent;
             const bText = b.cells[1].textContent;
             return aText.localeCompare(bText, 'ja-JP');
         });
-
+        
         rows.forEach(row => table.getElementsByTagName('tbody')[0].appendChild(row));
     }
 
