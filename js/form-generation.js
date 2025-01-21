@@ -184,102 +184,173 @@ document.addEventListener("DOMContentLoaded", function() {
     const songCountElement = document.getElementById('songCount');
     let allData = [];
 
-    // 優化的 fetchData 函數
-    async function fetchData() {
-        try {
-            const response = await fetch('data.json', { cache: 'no-cache' });
-            const data = await response.json();
-            
-            // 將數據分為英文字母和日文字母兩部分
-            const enData = [];
-            const jpData = [];
+// 新增一個函數來判斷字符類型
+function getCharacterType(char) {
+    if (!char) return 'other';
     
-            data.forEach(item => {
-                const firstChar = normalizeString(item.song_name).charAt(0);
-                if (/[a-zA-Z]/.test(firstChar)) {
-                    enData.push(item);
-                } else {
-                    jpData.push(item);
-                }
-            });
+    // 移除所有空白
+    char = char.trim();
+    if (!char) return 'other';
     
-            // 分別排序
-            enData.sort((a, b) => normalizeString(a.song_name).localeCompare(normalizeString(b.song_name)));
-            jpData.sort((a, b) => normalizeString(a.song_name).localeCompare(normalizeString(b.song_name), 'ja-JP'));
-            
-            // 合併數據
-            allData = [...enData, ...jpData];
-
-            displayData(allData);
-
-            // 更新總曲數
-            if (songCountElement) {
-                songCountElement.textContent = allData.length;
-            }
-        } catch (error) {
-            console.error('Error fetching data:', error);
-        }
+    // 取第一個字符
+    char = char.charAt(0);
+    
+    // 判斷符號
+    if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>/?～！＠＃＄％＾＆＊（）＿＋－＝［］｛｝；＇："＼｜，．＜＞／？]/.test(char)) {
+        return 'symbol';
     }
-
-    function displayData(data, numDates = 3) {
-        const groupedData = data.reduce((acc, row) => {
-            const key = `${normalizeString(row.song_name)}-${normalizeString(row.artist)}`;
-            if (!acc[key]) {
-                acc[key] = {
-                    ...row,
-                    dates: []
-                };
-            }
-            const allDates = [...acc[key].dates, ...row.dates];
-            acc[key].dates = allDates.sort((a, b) => {
-                const dateA = new Date(a.date.replace(/(\d{4})(\d{2})(\d{2})/, '$1-$2-$3') + 'T' + a.time);
-                const dateB = new Date(b.date.replace(/(\d{4})(\d{2})(\d{2})/, '$1-$2-$3') + 'T' + b.time);
-                return dateB - dateA;
-            });
-            return acc;
-        }, {});
     
-        songTableBody.innerHTML = '';
+    // 判斷英文
+    if (/[a-zA-Z]/.test(char)) {
+        return 'english';
+    }
+    
+    // 判斷數字
+    if (/[0-9０-９]/.test(char)) {
+        return 'number';
+    }
+    
+    // 假設其他都是日文（包含假名和漢字）
+    return 'japanese';
+}
+
+// 獲取排序權重
+function getSortWeight(type) {
+    const weights = {
+        'symbol': 0,
+        'number': 1,
+        'english': 2,
+        'japanese': 3,
+        'other': 4
+    };
+    return weights[type] ?? weights.other;
+}
+
+// 修改 fetchData 函數中的排序邏輯
+async function fetchData() {
+    try {
+        const response = await fetch('data.json', { cache: 'no-cache' });
+        const data = await response.json();
         
-        // 將分組後的數據轉換為數組並排序
-        const sortedData = Object.values(groupedData).sort((a, b) => {
-            // 先比較az分類
-            const azCompare = (a.az || '').localeCompare(b.az || '', 'ja-JP');
-            if (azCompare !== 0) {
-                return azCompare;
+        // 修改排序邏輯
+        allData = data.sort((a, b) => {
+            const aName = a.song_name;
+            const bName = b.song_name;
+            
+            // 先取得字符類型
+            const aType = getCharacterType(aName);
+            const bType = getCharacterType(bName);
+            
+            // 比較類型權重
+            const weightDiff = getSortWeight(aType) - getSortWeight(bType);
+            if (weightDiff !== 0) {
+                return weightDiff;
             }
-            // 再比較曲名
-            return normalizeString(a.song_name).localeCompare(normalizeString(b.song_name), 'ja-JP');
+            
+            // 如果類型相同，再按具體規則排序
+            if (aType === 'japanese' && bType === 'japanese') {
+                // 如果有 az 分類，優先使用
+                if (a.az && b.az) {
+                    const azCompare = a.az.localeCompare(b.az, 'ja-JP');
+                    if (azCompare !== 0) {
+                        return azCompare;
+                    }
+                }
+            }
+            
+            // 最後按原始名稱排序
+            return aName.localeCompare(bName, 'ja-JP');
         });
-    
-        sortedData.forEach(item => {
-            const newRow = createTableRow(item, numDates);
-            songTableBody.appendChild(newRow);
-        });
+        
+        displayData(allData);
+        if (songCountElement) {
+            songCountElement.textContent = allData.length;
+        }
+    } catch (error) {
+        console.error('Error fetching data:', error);
     }
+}
 
-    function sortTable() {
-        const table = document.getElementById('songTable');
-        const rows = Array.from(table.getElementsByTagName('tbody')[0].rows);
+// 修改 displayData 函數中的排序邏輯
+function displayData(data, numDates = 3) {
+    const groupedData = data.reduce((acc, row) => {
+        const key = `${normalizeString(row.song_name)}-${normalizeString(row.artist)}`;
+        if (!acc[key]) {
+            acc[key] = { ...row, dates: [] };
+        }
+        const allDates = [...acc[key].dates, ...row.dates];
+        acc[key].dates = allDates.sort((a, b) => {
+            const dateA = new Date(a.date.replace(/(\d{4})(\d{2})(\d{2})/, '$1-$2-$3') + 'T' + a.time);
+            const dateB = new Date(b.date.replace(/(\d{4})(\d{2})(\d{2})/, '$1-$2-$3') + 'T' + b.time);
+            return dateB - dateA;
+        });
+        return acc;
+    }, {});
 
-        rows.sort((a, b) => {
-            // 先比較首字（az分類）
+    songTableBody.innerHTML = '';
+    
+    // 將分組後的數據轉換為數組並排序
+    const sortedData = Object.values(groupedData).sort((a, b) => {
+        const aName = a.song_name;
+        const bName = b.song_name;
+        
+        const aType = getCharacterType(aName);
+        const bType = getCharacterType(bName);
+        
+        const weightDiff = getSortWeight(aType) - getSortWeight(bType);
+        if (weightDiff !== 0) {
+            return weightDiff;
+        }
+        
+        if (aType === 'japanese' && bType === 'japanese') {
+            if (a.az && b.az) {
+                const azCompare = a.az.localeCompare(b.az, 'ja-JP');
+                if (azCompare !== 0) {
+                    return azCompare;
+                }
+            }
+        }
+        
+        return aName.localeCompare(bName, 'ja-JP');
+    });
+
+    sortedData.forEach(item => {
+        const newRow = createTableRow(item, numDates);
+        songTableBody.appendChild(newRow);
+    });
+}
+
+// 修改 sortTable 函數
+function sortTable() {
+    const table = document.getElementById('songTable');
+    const rows = Array.from(table.getElementsByTagName('tbody')[0].rows);
+    
+    rows.sort((a, b) => {
+        const aText = a.cells[1].textContent;
+        const bText = b.cells[1].textContent;
+        
+        const aType = getCharacterType(aText);
+        const bType = getCharacterType(bText);
+        
+        const weightDiff = getSortWeight(aType) - getSortWeight(bType);
+        if (weightDiff !== 0) {
+            return weightDiff;
+        }
+        
+        if (aType === 'japanese' && bType === 'japanese') {
             const aFirstChar = a.cells[0].textContent;
             const bFirstChar = b.cells[0].textContent;
             const firstCharCompare = aFirstChar.localeCompare(bFirstChar, 'ja-JP');
-            
             if (firstCharCompare !== 0) {
                 return firstCharCompare;
             }
-            
-            // 如果首字相同，再比較曲名
-            const aText = a.cells[1].textContent;
-            const bText = b.cells[1].textContent;
-            return aText.localeCompare(bText, 'ja-JP');
-        });
+        }
         
-        rows.forEach(row => table.getElementsByTagName('tbody')[0].appendChild(row));
-    }
+        return aText.localeCompare(bText, 'ja-JP');
+    });
+    
+    rows.forEach(row => table.getElementsByTagName('tbody')[0].appendChild(row));
+}
 
     // 確認元素是否存在
     if (searchInput) {
