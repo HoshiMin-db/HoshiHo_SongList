@@ -185,28 +185,25 @@ document.addEventListener("DOMContentLoaded", function() {
     let allData = [];
 
 // 新增一個函數來判斷字符類型
-function getCharacterType(char) {
-    if (!char) return 'other';
+function getCharacterType(text) {
+    if (!text) return 'other';
     
-    // 移除所有空白
-    char = char.trim();
-    if (!char) return 'other';
+    // 移除開頭空白並取第一個字符
+    const firstChar = text.trim().charAt(0);
+    if (!firstChar) return 'other';
     
-    // 取第一個字符
-    char = char.charAt(0);
-    
-    // 判斷符號
-    if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>/?～！＠＃＄％＾＆＊（）＿＋－＝［］｛｝；＇："＼｜，．＜＞／？]/.test(char)) {
+    // 判斷符號 (包含特殊符號如〜、→、∞等)
+    if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>/?～！＠＃＄％＾＆＊（）＿＋－＝［］｛｝；＇："＼｜，．＜＞／？〜∞→←↑↓]/.test(firstChar)) {
         return 'symbol';
     }
     
     // 判斷英文
-    if (/[a-zA-Z]/.test(char)) {
+    if (/[a-zA-Z]/.test(firstChar)) {
         return 'english';
     }
     
     // 判斷數字
-    if (/[0-9０-９]/.test(char)) {
+    if (/[0-9０-９]/.test(firstChar)) {
         return 'number';
     }
     
