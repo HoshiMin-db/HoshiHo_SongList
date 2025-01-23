@@ -244,18 +244,16 @@ async function fetchData() {
                 return weightDiff;
             }
             
-            // 如果類型相同，再按具體規則排序
+            // 如果都是日文，先按 az 分類排序
             if (aType === 'japanese' && bType === 'japanese') {
-                // 如果有 az 分類，優先使用
-                if (a.az && b.az) {
-                    const azCompare = a.az.localeCompare(b.az, 'ja-JP');
-                    if (azCompare !== 0) {
-                        return azCompare;
-                    }
+                const aAz = a.az || '';
+                const bAz = b.az || '';
+                if (aAz !== bAz) {
+                    return aAz.localeCompare(bAz, 'ja-JP');
                 }
             }
             
-            // 最後按原始名稱排序
+            // 同類型且（非日文或相同az分類）按原始名稱排序
             return aName.localeCompare(bName, 'ja-JP');
         });
         
@@ -294,20 +292,22 @@ function displayData(data, numDates = 3) {
         const aType = getCharacterType(aName);
         const bType = getCharacterType(bName);
         
+        // 比較類型權重
         const weightDiff = getSortWeight(aType) - getSortWeight(bType);
         if (weightDiff !== 0) {
             return weightDiff;
         }
         
+        // 如果都是日文，先按 az 分類排序
         if (aType === 'japanese' && bType === 'japanese') {
-            if (a.az && b.az) {
-                const azCompare = a.az.localeCompare(b.az, 'ja-JP');
-                if (azCompare !== 0) {
-                    return azCompare;
-                }
+            const aAz = a.az || '';
+            const bAz = b.az || '';
+            if (aAz !== bAz) {
+                return aAz.localeCompare(bAz, 'ja-JP');
             }
         }
         
+        // 同類型且（非日文或相同az分類）按原始名稱排序
         return aName.localeCompare(bName, 'ja-JP');
     });
 
@@ -317,7 +317,7 @@ function displayData(data, numDates = 3) {
     });
 }
 
-// 修改 sortTable 函數
+// 修改 sortTable 函數保持一致的排序邏輯
 function sortTable() {
     const table = document.getElementById('songTable');
     const rows = Array.from(table.getElementsByTagName('tbody')[0].rows);
@@ -329,20 +329,22 @@ function sortTable() {
         const aType = getCharacterType(aText);
         const bType = getCharacterType(bText);
         
+        // 比較類型權重
         const weightDiff = getSortWeight(aType) - getSortWeight(bType);
         if (weightDiff !== 0) {
             return weightDiff;
         }
         
+        // 如果都是日文，先按首字（az）排序
         if (aType === 'japanese' && bType === 'japanese') {
             const aFirstChar = a.cells[0].textContent;
             const bFirstChar = b.cells[0].textContent;
-            const firstCharCompare = aFirstChar.localeCompare(bFirstChar, 'ja-JP');
-            if (firstCharCompare !== 0) {
-                return firstCharCompare;
+            if (aFirstChar !== bFirstChar) {
+                return aFirstChar.localeCompare(bFirstChar, 'ja-JP');
             }
         }
         
+        // 同類型且（非日文或相同首字）按原始名稱排序
         return aText.localeCompare(bText, 'ja-JP');
     });
     
