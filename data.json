@@ -2983,6 +2983,13 @@
                 "is_acapella": true
             },
             {
+                "date": "20250201",
+                "time": "05:21:31",
+                "link": "https://www.youtube.com/watch?v=xqq8-ChkFFk&t=19291s",
+                "is_member_exclusive": false,
+                "is_acapella": true
+            },
+            {
                 "date": "20241228",
                 "time": "06:48:54",
                 "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=24534s",
@@ -16487,7 +16494,7 @@
     },
     {
         "song_name": "ガラスの森",
-        "artist": "ZABADAK (アカペラ)",
+        "artist": "ZABADAK",
         "source": "",
         "is_copyright": false,
         "az": null,
@@ -16535,7 +16542,7 @@
     },
     {
         "song_name": "市場に行こう",
-        "artist": "島谷ひとみ (アカペラ)",
+        "artist": "島谷ひとみ",
         "source": "",
         "is_copyright": false,
         "az": null,
@@ -16663,7 +16670,7 @@
     },
     {
         "song_name": "風のフォルトーネ",
-        "artist": "高橋美紀 (アカペラ)",
+        "artist": "高橋美紀",
         "source": "ユーディーのアトリエ ～グラムナートの錬金術士～",
         "is_copyright": false,
         "az": "か",
@@ -16713,22 +16720,6 @@
                 "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=20717s",
                 "is_member_exclusive": false,
                 "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "POWDER SNOW",
-        "artist": "AKKO (アカペラ)",
-        "source": "WHITE ALBUM（ゲーム）",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250201",
-                "time": "05:21:31",
-                "link": "https://www.youtube.com/watch?v=xqq8-ChkFFk&t=19291s",
-                "is_member_exclusive": false,
-                "is_acapella": true
             }
         ]
     },
