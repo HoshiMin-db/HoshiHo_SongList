@@ -13801,6 +13801,13 @@
                 "is_acapella": false
             },
             {
+                "date": "20250201",
+                "time": "03:17:46",
+                "link": "https://www.youtube.com/watch?v=xqq8-ChkFFk&t=11866s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
                 "date": "20231202",
                 "time": "01:54:32",
                 "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=6872s",
@@ -16645,22 +16652,6 @@
                 "date": "20250201",
                 "time": "02:57:22",
                 "link": "https://www.youtube.com/watch?v=xqq8-ChkFFk&t=10642s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "夢は終わらない 〜こぼれ落ちる時の雫〜",
-        "artist": "よーみ",
-        "source": "Tales of Phantasia",
-        "is_copyright": false,
-        "az": "ゆ",
-        "dates": [
-            {
-                "date": "20250201",
-                "time": "03:17:46",
-                "link": "https://www.youtube.com/watch?v=xqq8-ChkFFk&t=11866s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
