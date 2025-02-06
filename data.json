@@ -4272,7 +4272,7 @@
         ]
     },
     {
-        "song_name": "Adesso e Fortuna ～炎と永遠～",
+        "song_name": "Adèsso e Fortuna 〜炎と永遠〜",
         "artist": "Sherry",
         "source": "ロードス島戦記",
         "is_copyright": false,
@@ -4283,6 +4283,13 @@
                 "time": "04:56:56",
                 "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=17816s",
                 "is_member_exclusive": true,
+                "is_acapella": false
+            },
+            {
+                "date": "20250201",
+                "time": "03:37:30",
+                "link": "https://www.youtube.com/watch?v=xqq8-ChkFFk&t=13050s",
+                "is_member_exclusive": false,
                 "is_acapella": false
             }
         ]
@@ -16672,22 +16679,6 @@
                 "link": "https://www.youtube.com/watch?v=xqq8-ChkFFk&t=12332s",
                 "is_member_exclusive": false,
                 "is_acapella": true
-            }
-        ]
-    },
-    {
-        "song_name": "Adèsso e Fortuna 〜炎と永遠〜",
-        "artist": "Sherry",
-        "source": "ロードス島戦記OVA",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250201",
-                "time": "03:37:30",
-                "link": "https://www.youtube.com/watch?v=xqq8-ChkFFk&t=13050s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
