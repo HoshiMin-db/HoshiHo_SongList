@@ -211,6 +211,17 @@ function getCharacterType(text) {
     return 'japanese';
 }
 
+// 新增一個函數來獲取日文歌曲的排序用假名
+function getJapaneseSortKey(item) {
+    // 如果有az分類就用az，否則用第一個字符的假名讀音
+    if (item.az) {
+        return item.az;
+    }
+    // 如果沒有az，則返回原始名稱的第一個字符
+    // 這裡假設假名歌名不需要額外轉換
+    return item.song_name.charAt(0);
+}
+
 // 獲取排序權重
 function getSortWeight(type) {
     const weights = {
@@ -244,16 +255,20 @@ async function fetchData() {
                 return weightDiff;
             }
             
-            // 如果都是日文，先按 az 分類排序
+            // 如果都是日文
             if (aType === 'japanese' && bType === 'japanese') {
-                const aAz = a.az || '';
-                const bAz = b.az || '';
-                if (aAz !== bAz) {
-                    return aAz.localeCompare(bAz, 'ja-JP');
+                // 先按假名分組排序
+                const aKey = getJapaneseSortKey(a);
+                const bKey = getJapaneseSortKey(b);
+                const groupCompare = aKey.localeCompare(bKey, 'ja-JP');
+                if (groupCompare !== 0) {
+                    return groupCompare;
                 }
+                // 相同分組內按原始名稱排序
+                return aName.localeCompare(bName, 'ja-JP');
             }
             
-            // 同類型且（非日文或相同az分類）按原始名稱排序
+            // 非日文按原始名稱排序
             return aName.localeCompare(bName, 'ja-JP');
         });
         
@@ -298,16 +313,20 @@ function displayData(data, numDates = 3) {
             return weightDiff;
         }
         
-        // 如果都是日文，先按 az 分類排序
+        // 如果都是日文
         if (aType === 'japanese' && bType === 'japanese') {
-            const aAz = a.az || '';
-            const bAz = b.az || '';
-            if (aAz !== bAz) {
-                return aAz.localeCompare(bAz, 'ja-JP');
+            // 先按假名分組排序
+            const aKey = getJapaneseSortKey(a);
+            const bKey = getJapaneseSortKey(b);
+            const groupCompare = aKey.localeCompare(bKey, 'ja-JP');
+            if (groupCompare !== 0) {
+                return groupCompare;
             }
+            // 相同分組內按原始名稱排序
+            return aName.localeCompare(bName, 'ja-JP');
         }
         
-        // 同類型且（非日文或相同az分類）按原始名稱排序
+        // 非日文按原始名稱排序
         return aName.localeCompare(bName, 'ja-JP');
     });
 
