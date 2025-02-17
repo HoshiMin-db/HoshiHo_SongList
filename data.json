@@ -9937,6 +9937,13 @@
                 "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=1492s",
                 "is_member_exclusive": false,
                 "is_acapella": true
+            },
+            {
+                "date": "20250215",
+                "time": "00:17:19",
+                "link": "https://www.youtube.com/watch?v=e1Zc6s5Uq3k&t=1039s",
+                "is_member_exclusive": false,
+                "is_acapella": true
             }
         ]
     },
@@ -16675,22 +16682,6 @@
         ]
     },
     {
-        "song_name": "OPEN YOUR MIND ～小さな羽根ひろげて～",
-        "artist": "石田燿子 (アカペラ)",
-        "source": "ああっ女神さまっ",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250215",
-                "time": "00:17:19",
-                "link": "https://www.youtube.com/watch?v=e1Zc6s5Uq3k&t=1039s",
-                "is_member_exclusive": false,
-                "is_acapella": true
-            }
-        ]
-    },
-    {
         "song_name": "そして僕にできるコト",
         "artist": "misono",
         "source": "Tales of Symphonia",
@@ -16708,7 +16699,7 @@
     },
     {
         "song_name": "ALMATERIA",
-        "artist": "河井英里 (アカペラ)",
+        "artist": "河井英里",
         "source": "Tales of Symphonia THE ANIMATION シルヴァラント編",
         "is_copyright": false,
         "az": null,
@@ -16724,7 +16715,7 @@
     },
     {
         "song_name": "願い",
-        "artist": "引田香織 (アカペラ)",
+        "artist": "引田香織",
         "source": "Tales of Symphonia THE ANIMATION シルヴァラント編",
         "is_copyright": false,
         "az": null,
@@ -16734,7 +16725,7 @@
                 "time": "03:03:33",
                 "link": "https://www.youtube.com/watch?v=e1Zc6s5Uq3k&t=11013s",
                 "is_member_exclusive": false,
-                "is_acapella": false
+                "is_acapella": true
             }
         ]
     },
@@ -16756,7 +16747,7 @@
     },
     {
         "song_name": "TRIQUETRA",
-        "artist": "Armony（歌：ほしほ）",
+        "artist": "Armony",
         "source": "",
         "is_copyright": false,
         "az": null,
@@ -16772,7 +16763,7 @@
     },
     {
         "song_name": "MAJO",
-        "artist": "Armony（歌：ほしほ）",
+        "artist": "Armony",
         "source": "",
         "is_copyright": false,
         "az": null,
@@ -16804,7 +16795,7 @@
     },
     {
         "song_name": "二月の丘",
-        "artist": "ZABADAK (アカペラ)",
+        "artist": "ZABADAK",
         "source": "",
         "is_copyright": false,
         "az": "に",
@@ -16820,7 +16811,7 @@
     },
     {
         "song_name": "五つの橋",
-        "artist": "ZABADAK (アカペラ)",
+        "artist": "ZABADAK",
         "source": "",
         "is_copyright": false,
         "az": null,
@@ -16836,7 +16827,7 @@
     },
     {
         "song_name": "満ち潮の夜",
-        "artist": "ZABADAK (アカペラ)",
+        "artist": "ZABADAK",
         "source": "",
         "is_copyright": false,
         "az": "ま",
@@ -16852,7 +16843,7 @@
     },
     {
         "song_name": "WANNA BE AN ANGEL",
-        "artist": "新居昭乃 (アカペラ)",
+        "artist": "新居昭乃",
         "source": "マクロスプラス",
         "is_copyright": false,
         "az": null,
