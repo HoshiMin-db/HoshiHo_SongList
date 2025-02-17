@@ -40,3 +40,9 @@ acapella_songs|OPEN YOUR MIND ～小さな羽根ひろげて～
 acapella_songs|ガラスの森
 acapella_songs|市場に行こう
 acapella_songs|風のフォルトーネ
+acapella_songs|ALMATERIA
+acapella_songs|願い|引田香織
+acapella_songs|二月の丘
+acapella_songs|五つの橋
+acapella_songs|満ち潮の夜
+acapella_songs|WANNA BE AN ANGEL
