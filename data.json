@@ -544,14 +544,14 @@
                 "time": "00:25:30",
                 "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=1530s",
                 "is_member_exclusive": false,
-                "is_acapella": false
+                "is_acapella": true
             },
             {
                 "date": "20241214",
                 "time": "00:41:26",
                 "link": "https://www.youtube.com/watch?v=SX5pWgl_Sxk&t=2486s",
                 "is_member_exclusive": false,
-                "is_acapella": false
+                "is_acapella": true
             }
         ]
     },
@@ -8227,7 +8227,7 @@
                 "time": "05:01:23",
                 "link": "https://www.youtube.com/watch?v=Z-1sxd5PK_M&t=18083s",
                 "is_member_exclusive": false,
-                "is_acapella": true
+                "is_acapella": false
             }
         ]
     },
