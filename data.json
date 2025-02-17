@@ -2670,6 +2670,13 @@
                 "is_acapella": false
             },
             {
+                "date": "20250215",
+                "time": "06:25:37",
+                "link": "https://www.youtube.com/watch?v=e1Zc6s5Uq3k&t=23137s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
                 "date": "20231125",
                 "time": "07:38:17",
                 "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=27497s",
@@ -5587,6 +5594,13 @@
                 "is_acapella": false
             },
             {
+                "date": "20250215",
+                "time": "08:06:10",
+                "link": "https://www.youtube.com/watch?v=e1Zc6s5Uq3k&t=29170s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
                 "date": "20231125",
                 "time": "05:18:08",
                 "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=19088s",
@@ -7771,6 +7785,13 @@
                 "link": "https://www.youtube.com/watch?v=HuTpPbGbxhQ&t=5365s",
                 "is_member_exclusive": false,
                 "is_acapella": false
+            },
+            {
+                "date": "20250215",
+                "time": "07:56:42",
+                "link": "https://www.youtube.com/watch?v=e1Zc6s5Uq3k&t=28602s",
+                "is_member_exclusive": false,
+                "is_acapella": false
             }
         ]
     },
@@ -9782,6 +9803,13 @@
                 "is_acapella": false
             },
             {
+                "date": "20250215",
+                "time": "06:44:14",
+                "link": "https://www.youtube.com/watch?v=e1Zc6s5Uq3k&t=24254s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
                 "date": "20231125",
                 "time": "05:11:24",
                 "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=18684s",
@@ -10175,6 +10203,13 @@
                 "is_acapella": false
             },
             {
+                "date": "20250215",
+                "time": "00:45:02",
+                "link": "https://www.youtube.com/watch?v=e1Zc6s5Uq3k&t=2702s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
                 "date": "20240127",
                 "time": "02:42:29",
                 "link": "https://www.youtube.com/watch?v=kw8Ia8qEJ74&t=9749s",
@@ -10412,6 +10447,13 @@
                 "is_acapella": false
             },
             {
+                "date": "20250215",
+                "time": "02:45:25",
+                "link": "https://www.youtube.com/watch?v=e1Zc6s5Uq3k&t=9925s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
                 "date": "20240127",
                 "time": "03:00:22",
                 "link": "https://www.youtube.com/watch?v=kw8Ia8qEJ74&t=10822s",
@@ -10578,6 +10620,13 @@
                 "date": "20240713",
                 "time": "03:00:01",
                 "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=10801s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20250215",
+                "time": "03:45:12",
+                "link": "https://www.youtube.com/watch?v=e1Zc6s5Uq3k&t=13512s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             },
@@ -16635,6 +16684,228 @@
         ]
     },
     {
+        "song_name": "OPEN YOUR MIND ～小さな羽根ひろげて～",
+        "artist": "石田燿子 (アカペラ)",
+        "source": "ああっ女神さまっ",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250215",
+                "time": "00:17:19",
+                "link": "https://www.youtube.com/watch?v=e1Zc6s5Uq3k&t=1039s",
+                "is_member_exclusive": false,
+                "is_acapella": true
+            }
+        ]
+    },
+    {
+        "song_name": "そして僕にできるコト",
+        "artist": "misono",
+        "source": "Tales of Symphonia",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250215",
+                "time": "02:19:33",
+                "link": "https://www.youtube.com/watch?v=e1Zc6s5Uq3k&t=8373s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "ALMATERIA",
+        "artist": "河井英里 (アカペラ)",
+        "source": "Tales of Symphonia THE ANIMATION シルヴァラント編",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250215",
+                "time": "02:54:13",
+                "link": "https://www.youtube.com/watch?v=e1Zc6s5Uq3k&t=10453s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "願い",
+        "artist": "引田香織 (アカペラ)",
+        "source": "Tales of Symphonia THE ANIMATION シルヴァラント編",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250215",
+                "time": "03:03:33",
+                "link": "https://www.youtube.com/watch?v=e1Zc6s5Uq3k&t=11013s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "負けないで",
+        "artist": "ZARD",
+        "source": "",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250215",
+                "time": "04:36:51",
+                "link": "https://www.youtube.com/watch?v=e1Zc6s5Uq3k&t=16611s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "TRIQUETRA",
+        "artist": "Armony（歌：ほしほ）",
+        "source": "",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250215",
+                "time": "05:03:05",
+                "link": "https://www.youtube.com/watch?v=e1Zc6s5Uq3k&t=18185s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "MAJO",
+        "artist": "Armony（歌：ほしほ）",
+        "source": "",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250215",
+                "time": "05:14:26",
+                "link": "https://www.youtube.com/watch?v=e1Zc6s5Uq3k&t=18866s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "遠い音楽",
+        "artist": "ZABADAK",
+        "source": "",
+        "is_copyright": false,
+        "az": "と",
+        "dates": [
+            {
+                "date": "20250215",
+                "time": "05:22:19",
+                "link": "https://www.youtube.com/watch?v=e1Zc6s5Uq3k&t=19339s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "二月の丘",
+        "artist": "ZABADAK (アカペラ)",
+        "source": "",
+        "is_copyright": false,
+        "az": "に",
+        "dates": [
+            {
+                "date": "20250215",
+                "time": "05:38:40",
+                "link": "https://www.youtube.com/watch?v=e1Zc6s5Uq3k&t=20320s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "五つの橋",
+        "artist": "ZABADAK (アカペラ)",
+        "source": "",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250215",
+                "time": "05:46:09",
+                "link": "https://www.youtube.com/watch?v=e1Zc6s5Uq3k&t=20769s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "満ち潮の夜",
+        "artist": "ZABADAK (アカペラ)",
+        "source": "",
+        "is_copyright": false,
+        "az": "ま",
+        "dates": [
+            {
+                "date": "20250215",
+                "time": "06:05:49",
+                "link": "https://www.youtube.com/watch?v=e1Zc6s5Uq3k&t=21949s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "WANNA BE AN ANGEL",
+        "artist": "新居昭乃 (アカペラ)",
+        "source": "マクロスプラス",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250215",
+                "time": "06:12:02",
+                "link": "https://www.youtube.com/watch?v=e1Zc6s5Uq3k&t=22322s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "風のファンタジア",
+        "artist": "Sherry",
+        "source": "ロードス島戦記OVA",
+        "is_copyright": false,
+        "az": "か",
+        "dates": [
+            {
+                "date": "20250215",
+                "time": "06:53:04",
+                "link": "https://www.youtube.com/watch?v=e1Zc6s5Uq3k&t=24784s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20231125",
+                "time": "05:04:01",
+                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=18241s",
+                "is_member_exclusive": true,
+                "is_acapella": false
+            },
+            {
+                "date": "20250201",
+                "time": "03:49:04",
+                "link": "https://www.youtube.com/watch?v=xqq8-ChkFFk&t=13744s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
         "song_name": "跪いて足をお嘗め",
         "artist": "ALI PROJECT",
         "source": "怪物王女",
@@ -17144,29 +17415,6 @@
                 "date": "20250201",
                 "time": "03:37:30",
                 "link": "https://www.youtube.com/watch?v=xqq8-ChkFFk&t=13050s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "風のファンタジア",
-        "artist": "Sherry",
-        "source": "ロードス島戦記",
-        "is_copyright": false,
-        "az": "か",
-        "dates": [
-            {
-                "date": "20231125",
-                "time": "05:04:01",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=18241s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20250201",
-                "time": "03:49:04",
-                "link": "https://www.youtube.com/watch?v=xqq8-ChkFFk&t=13744s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
