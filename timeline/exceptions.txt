@@ -19,7 +19,7 @@ acapella_songs|Romantic Chaser|小枝
 acapella_songs|Snow Rain|植田佳奈
 acapella_songs|Twinkle Snow|津田朱里
 acapella_songs|York of love.|石橋優子
-acapella_songs|愛の輪郭(フィールド)|KOKIA
+acapella_songs|愛の輪郭（フィールド）|KOKIA
 acapella_songs|祈りの彼方|志方あきこ
 acapella_songs|片翼の天使
 acapella_songs|コッコロ
