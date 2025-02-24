@@ -7,28 +7,44 @@
 <link rel="stylesheet" href="style.css">
 <style>
 .sidebar {
-    width: 200px;
+    width: 50px;
     height: 100vh;
     position: fixed;
     left: 0;
     top: 0;
     background-color: #f8f9fa;
-    padding: 20px;
     border-right: 1px solid #e9ecef;
+    transition: width 0.3s ease;
+    z-index: 1000;
+}
+.sidebar.expanded {
+    width: 180px;
+}
+.hamburger {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.5em;
 }
 .sidebar-nav {
     list-style: none;
     padding: 0;
-    margin-top: 60px;
+    margin-top: 20px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .sidebar-nav li {
-    margin: 15px 0;
+    margin: 5px 0;
 }
 .sidebar-nav a {
     text-decoration: none;
     color: #495057;
     font-size: 1.1em;
-    display: block;
+    display: flex;
+    align-items: center;
     padding: 8px 15px;
     border-radius: 5px;
     transition: all 0.3s ease;
@@ -41,9 +57,18 @@
     background-color: #228be6;
     color: white;
 }
+.nav-icon {
+    width: 20px;
+    text-align: center;
+    margin-right: 10px;
+}
 .main-content {
-    margin-left: 200px;
+    margin-left: 50px;
     padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+.main-content.shifted {
+    margin-left: 180px;
 }
 .disc-container {
     display: grid;
@@ -73,14 +98,25 @@
 </style>
 </head>
 <body>
-<div class="sidebar">
+<div class="sidebar" id="sidebar">
+    <div class="hamburger" onclick="toggleSidebar()">☰</div>
     <div class="sidebar-nav">
-        <li><a href="index.html">歌單列表</a></li>
-        <li><a href="disc.html" class="active">Discography</a></li>
+        <li>
+            <a href="index.html">
+                <span class="nav-icon">🎵</span>
+                <span class="nav-text">歌單列表</span>
+            </a>
+        </li>
+        <li>
+            <a href="disc.html" class="active">
+                <span class="nav-icon">💿</span>
+                <span class="nav-text">Discography</span>
+            </a>
+        </li>
     </div>
 </div>
 
-<div class="main-content">
+<div class="main-content" id="mainContent">
     <div class="header">
         <h1>🌟 HoshiHo Discography 💐</h1>
     </div>
@@ -88,5 +124,14 @@
         <!-- 這裡可以動態添加專輯卡片 -->
     </div>
 </div>
+
+<script>
+function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    const mainContent = document.getElementById('mainContent');
+    sidebar.classList.toggle('expanded');
+    mainContent.classList.toggle('shifted');
+}
+</script>
 </body>
 </html>
