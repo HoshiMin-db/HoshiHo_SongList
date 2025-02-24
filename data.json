@@ -732,6 +732,13 @@
                 "is_acapella": false
             },
             {
+                "date": "20250222",
+                "time": "06:11:58",
+                "link": "https://www.youtube.com/watch?v=zv9Wousjbho&t=22318s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
                 "date": "20240608",
                 "time": "05:05:24",
                 "link": "https://www.youtube.com/watch?v=UoMwNx3aklM&t=18324s",
@@ -1823,6 +1830,13 @@
                 "link": "https://www.youtube.com/watch?v=q0G8Q_5OAVw&t=1298s",
                 "is_member_exclusive": false,
                 "is_acapella": false
+            },
+            {
+                "date": "20250222",
+                "time": "04:06:19",
+                "link": "https://www.youtube.com/watch?v=zv9Wousjbho&t=14779s",
+                "is_member_exclusive": false,
+                "is_acapella": false
             }
         ]
     },
@@ -2632,6 +2646,13 @@
                 "time": "04:54:05",
                 "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=17645s",
                 "is_member_exclusive": true,
+                "is_acapella": false
+            },
+            {
+                "date": "20250222",
+                "time": "05:44:11",
+                "link": "https://www.youtube.com/watch?v=zv9Wousjbho&t=20651s",
+                "is_member_exclusive": false,
                 "is_acapella": false
             },
             {
@@ -6927,6 +6948,13 @@
                 "is_acapella": false
             },
             {
+                "date": "20250222",
+                "time": "02:35:27",
+                "link": "https://www.youtube.com/watch?v=zv9Wousjbho&t=9327s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
                 "date": "20240413",
                 "time": "06:43:05",
                 "link": "https://www.youtube.com/watch?v=pdTvRavUxVQ&t=24185s",
@@ -8042,6 +8070,13 @@
                 "link": "https://www.youtube.com/watch?v=Z-1sxd5PK_M&t=1578s",
                 "is_member_exclusive": false,
                 "is_acapella": false
+            },
+            {
+                "date": "20250222",
+                "time": "03:46:28",
+                "link": "https://www.youtube.com/watch?v=zv9Wousjbho&t=13588s",
+                "is_member_exclusive": false,
+                "is_acapella": false
             }
         ]
     },
@@ -8201,6 +8236,13 @@
                 "date": "20240216",
                 "time": "03:25:10",
                 "link": "https://www.youtube.com/watch?v=Z-1sxd5PK_M&t=12310s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20250222",
+                "time": "04:23:10",
+                "link": "https://www.youtube.com/watch?v=zv9Wousjbho&t=15790s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
@@ -8452,6 +8494,13 @@
                 "date": "20240908",
                 "time": "01:17:39",
                 "link": "https://www.youtube.com/watch?v=q0G8Q_5OAVw&t=4659s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20250222",
+                "time": "06:02:17",
+                "link": "https://www.youtube.com/watch?v=zv9Wousjbho&t=21737s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
@@ -11466,6 +11515,281 @@
         ]
     },
     {
+        "song_name": "花帰葬",
+        "artist": "志方あきこ",
+        "source": "花帰葬",
+        "is_copyright": false,
+        "az": "は",
+        "dates": [
+            {
+                "date": "20250222",
+                "time": "00:38:24",
+                "link": "https://www.youtube.com/watch?v=zv9Wousjbho&t=2304s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240420",
+                "time": "01:33:19",
+                "link": "https://www.youtube.com/watch?v=xjSFVGe8eAo&t=5599s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "朱隠し",
+        "artist": "志方あきこ",
+        "source": "あかやあかしやあやかしの",
+        "is_copyright": false,
+        "az": "あ",
+        "dates": [
+            {
+                "date": "20250222",
+                "time": "00:47:45",
+                "link": "https://www.youtube.com/watch?v=zv9Wousjbho&t=2865s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240106",
+                "time": "03:35:07",
+                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=12907s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "パールカラーにゆれて",
+        "artist": "山口百恵",
+        "source": "",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250222",
+                "time": "01:01:53",
+                "link": "https://www.youtube.com/watch?v=zv9Wousjbho&t=3713s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20231118",
+                "time": "06:16:42",
+                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=22602s",
+                "is_member_exclusive": true,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "エルフ",
+        "artist": "Ado",
+        "source": "クジャクのダンス、誰が見た？",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250222",
+                "time": "01:08:35",
+                "link": "https://www.youtube.com/watch?v=zv9Wousjbho&t=4115s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "PPAP(ペンパイナッポーアッポーペン)「ロング」バージョン",
+        "artist": "ピコ太郎",
+        "source": "",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250222",
+                "time": "01:20:10",
+                "link": "https://www.youtube.com/watch?v=zv9Wousjbho&t=4810s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "テトリス",
+        "artist": "柊マグネタイト",
+        "source": "",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250222",
+                "time": "01:28:44",
+                "link": "https://www.youtube.com/watch?v=zv9Wousjbho&t=5324s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "モニタリング",
+        "artist": "DECO*27",
+        "source": "",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250222",
+                "time": "01:35:39",
+                "link": "https://www.youtube.com/watch?v=zv9Wousjbho&t=5739s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "風のノー・リプライ",
+        "artist": "鮎川麻弥",
+        "source": "重戦機エルガイム",
+        "is_copyright": false,
+        "az": "か",
+        "dates": [
+            {
+                "date": "20250222",
+                "time": "01:58:42",
+                "link": "https://www.youtube.com/watch?v=zv9Wousjbho&t=7122s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "エルガイム Time for L-GAIM",
+        "artist": "MIO",
+        "source": "重戦機エルガイム",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250222",
+                "time": "02:07:02",
+                "link": "https://www.youtube.com/watch?v=zv9Wousjbho&t=7622s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "にゃん酷なにゃんこのテーゼ",
+        "artist": "高橋洋子",
+        "source": "エヴァンゲリオン×にゃんこ大戦争",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250222",
+                "time": "03:02:48",
+                "link": "https://www.youtube.com/watch?v=zv9Wousjbho&t=10968s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "シャアが来る",
+        "artist": "堀光一路",
+        "source": "機動戦士ガンダム",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250222",
+                "time": "03:22:30",
+                "link": "https://www.youtube.com/watch?v=zv9Wousjbho&t=12150s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "ダイアの花",
+        "artist": "より子",
+        "source": "BLACK CAT",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250222",
+                "time": "04:37:48",
+                "link": "https://www.youtube.com/watch?v=zv9Wousjbho&t=16668s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240202",
+                "time": "01:36:19",
+                "link": "https://www.youtube.com/watch?v=70E6Ns3_THo&t=5779s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "ドラえもんのうた",
+        "artist": "大杉久美子",
+        "source": "ドラえもん(1979)",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250222",
+                "time": "04:47:12",
+                "link": "https://www.youtube.com/watch?v=zv9Wousjbho&t=17232s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "謳う丘 ～Harmonics EOLIA～",
+        "artist": "志方あきこ",
+        "source": "アルトネリコ 世界の終わりで詩い続ける少女",
+        "is_copyright": false,
+        "az": "う",
+        "dates": [
+            {
+                "date": "20250222",
+                "time": "05:05:30",
+                "link": "https://www.youtube.com/watch?v=zv9Wousjbho&t=18330s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20250201",
+                "time": "00:47:49",
+                "link": "https://www.youtube.com/watch?v=xqq8-ChkFFk&t=2869s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "bonny ebony black swan",
+        "artist": "love solfege",
+        "source": "",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250222",
+                "time": "05:15:59",
+                "link": "https://www.youtube.com/watch?v=zv9Wousjbho&t=18959s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
         "song_name": "光るなら",
         "artist": "Goose house",
         "source": "四月は君の嘘",
@@ -12299,22 +12623,6 @@
         ]
     },
     {
-        "song_name": "パールカラーにゆれて",
-        "artist": "山口百恵",
-        "source": "",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20231118",
-                "time": "06:16:42",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=22602s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
         "song_name": "横須賀ストーリー",
         "artist": "山口百恵",
         "source": "",
@@ -12411,22 +12719,6 @@
                 "time": "03:22:54",
                 "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=12174s",
                 "is_member_exclusive": true,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "ダイアの花",
-        "artist": "より子",
-        "source": "BLACK CAT",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20240202",
-                "time": "01:36:19",
-                "link": "https://www.youtube.com/watch?v=70E6Ns3_THo&t=5779s",
-                "is_member_exclusive": false,
                 "is_acapella": false
             }
         ]
@@ -16334,22 +16626,6 @@
         ]
     },
     {
-        "song_name": "花帰葬",
-        "artist": "志方あきこ",
-        "source": "",
-        "is_copyright": false,
-        "az": "は",
-        "dates": [
-            {
-                "date": "20240420",
-                "time": "01:33:19",
-                "link": "https://www.youtube.com/watch?v=xjSFVGe8eAo&t=5599s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
         "song_name": "愛包ダンスホール",
         "artist": "HIMEHINA",
         "source": "",
@@ -16580,22 +16856,6 @@
                 "date": "20240106",
                 "time": "02:39:52",
                 "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=9592s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "朱隠し",
-        "artist": "志方あきこ",
-        "source": "",
-        "is_copyright": false,
-        "az": "あ",
-        "dates": [
-            {
-                "date": "20240106",
-                "time": "03:35:07",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=12907s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
@@ -18037,22 +18297,6 @@
                 "link": "https://www.youtube.com/watch?v=xqq8-ChkFFk&t=1758s",
                 "is_member_exclusive": false,
                 "is_acapella": true
-            }
-        ]
-    },
-    {
-        "song_name": "謳う丘 ～Harmonics EOLIA～",
-        "artist": "志方あきこ",
-        "source": "アルトネリコ 世界の終わりで詩い続ける少女",
-        "is_copyright": false,
-        "az": "う",
-        "dates": [
-            {
-                "date": "20250201",
-                "time": "00:47:49",
-                "link": "https://www.youtube.com/watch?v=xqq8-ChkFFk&t=2869s",
-                "is_member_exclusive": false,
-                "is_acapella": false
             }
         ]
     },
