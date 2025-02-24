@@ -19,91 +19,10 @@
     right: 0;
     min-height: 200px;
 }
-.sidebar {
-    width: 50px;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    background-color: #f8f9fa;
-    border-right: 1px solid #e9ecef;
-    transition: width 0.3s ease;
-    z-index: 1000;
-}
-.sidebar.expanded {
-    width: 180px;
-}
-.hamburger {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 1.5em;
-}
-.sidebar-nav {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
-    overflow: hidden;
-    white-space: nowrap;
-}
-.sidebar-nav li {
-    margin: 5px 0;
-}
-.sidebar-nav a {
-    text-decoration: none;
-    color: #495057;
-    font-size: 1.1em;
-    display: flex;
-    align-items: center;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-.sidebar-nav a:hover {
-    background-color: #e9ecef;
-    color: #228be6;
-}
-.sidebar-nav a.active {
-    background-color: #228be6;
-    color: white;
-}
-.nav-icon {
-    width: 20px;
-    text-align: center;
-    margin-right: 10px;
-}
-.main-content {
-    margin-left: 50px;
-    padding: 20px;
-    transition: margin-left 0.3s ease;
-}
-.main-content.shifted {
-    margin-left: 180px;
-}
 </style>
 </head>
-<body>
-<div class="sidebar" id="sidebar">
-    <div class="hamburger" onclick="toggleSidebar()">☰</div>
-    <div class="sidebar-nav">
-        <li>
-            <a href="index.html" class="active">
-                <span class="nav-icon">🎵</span>
-                <span class="nav-text">歌單列表</span>
-            </a>
-        </li>
-        <li>
-            <a href="disc.html">
-                <span class="nav-icon">💿</span>
-                <span class="nav-text">Discography</span>
-            </a>
-        </li>
-    </div>
-</div>
 
+<body>
 <div class="main-content" id="mainContent">
     <div class="header">
         <h1>🌟 HoshiHo歌單 💐</h1>
@@ -138,14 +57,7 @@
     </div>
 </div>
 
-<script>
-function toggleSidebar() {
-    const sidebar = document.getElementById('sidebar');
-    const mainContent = document.getElementById('mainContent');
-    sidebar.classList.toggle('expanded');
-    mainContent.classList.toggle('shifted');
-}
-</script>
+<script src="js/sidebar.js"></script>
 <script src="js/youtube-player.js"></script>
 <script type="module" src="js/form-generation.js"></script>
 </body>
