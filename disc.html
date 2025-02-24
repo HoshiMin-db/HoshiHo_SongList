@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🌟 HoshiHo Discography 💐</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-right: 1px solid #e9ecef;
+}
+.sidebar-nav {
+    list-style: none;
+    padding: 0;
+    margin-top: 60px;
+}
+.sidebar-nav li {
+    margin: 15px 0;
+}
+.sidebar-nav a {
+    text-decoration: none;
+    color: #495057;
+    font-size: 1.1em;
+    display: block;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.sidebar-nav a:hover {
+    background-color: #e9ecef;
+    color: #228be6;
+}
+.sidebar-nav a.active {
+    background-color: #228be6;
+    color: white;
+}
+.main-content {
+    margin-left: 200px;
+    padding: 20px;
+}
+.disc-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.disc-card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.disc-card:hover {
+    transform: translateY(-5px);
+}
+.disc-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.disc-date {
+    color: #666;
+    font-size: 0.9em;
+}
+</style>
+</head>
+<body>
+<div class="sidebar">
+    <div class="sidebar-nav">
+        <li><a href="index.html">歌單列表</a></li>
+        <li><a href="disc.html" class="active">Discography</a></li>
+    </div>
+</div>
+
+<div class="main-content">
+    <div class="header">
+        <h1>🌟 HoshiHo Discography 💐</h1>
+    </div>
+    <div class="disc-container">
+        <!-- 這裡可以動態添加專輯卡片 -->
+    </div>
+</div>
+</body>
+</html>
