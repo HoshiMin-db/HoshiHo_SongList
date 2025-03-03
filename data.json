@@ -12374,6 +12374,13 @@
                 "link": "https://www.youtube.com/watch?v=0mO1WLnuFYM&t=22063s",
                 "is_member_exclusive": false,
                 "is_acapella": false
+            },
+            {
+                "date": "20250301",
+                "time": "06:37:06",
+                "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=23826s",
+                "is_member_exclusive": false,
+                "is_acapella": false
             }
         ]
     },
@@ -14528,22 +14535,6 @@
                 "date": "20240615",
                 "time": "02:19:59",
                 "link": "https://www.youtube.com/watch?v=DjJmVyIXfH8&t=8399s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "Monsoon",
-        "artist": "Armony（歌：ほしほ）",
-        "source": "",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250301",
-                "time": "06:37:06",
-                "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=23826s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
