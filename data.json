@@ -9486,7 +9486,7 @@
     },
     {
         "song_name": "夢は終わらない 〜こぼれ落ちる時の雫〜",
-        "artist": "よ～み",
+        "artist": "よーみ",
         "source": "Tales of Phantasia",
         "is_copyright": false,
         "az": "ゆ",
@@ -9506,30 +9506,9 @@
                 "is_acapella": false
             },
             {
-                "date": "20231202",
-                "time": "01:54:32",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=6872s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20240406",
-                "time": "02:52:12",
-                "link": "https://www.youtube.com/watch?v=QIuZP_DTjv8&t=10332s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240727",
-                "time": "01:44:31",
-                "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=6271s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240127",
-                "time": "03:16:00",
-                "link": "https://www.youtube.com/watch?v=kw8Ia8qEJ74&t=11760s",
+                "date": "20250301",
+                "time": "07:46:26",
+                "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=27986s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
@@ -14642,22 +14621,6 @@
         ]
     },
     {
-        "song_name": "夢は終わらない 〜こぼれ落ちる時の雫〜",
-        "artist": "よーみ",
-        "source": "Tales of Phantasia",
-        "is_copyright": false,
-        "az": "ゆ",
-        "dates": [
-            {
-                "date": "20250301",
-                "time": "07:46:26",
-                "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=27986s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
         "song_name": "pastel pure",
         "artist": "ALI PROJECT",
         "source": "マリア様がみてる",
@@ -16644,6 +16607,43 @@
                 "time": "01:29:44",
                 "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=5384s",
                 "is_member_exclusive": true,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "夢は終わらない 〜こぼれ落ちる時の雫〜",
+        "artist": "よ～み",
+        "source": "TALES OF PHANTASIA",
+        "is_copyright": false,
+        "az": "ゆ",
+        "dates": [
+            {
+                "date": "20231202",
+                "time": "01:54:32",
+                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=6872s",
+                "is_member_exclusive": true,
+                "is_acapella": false
+            },
+            {
+                "date": "20240406",
+                "time": "02:52:12",
+                "link": "https://www.youtube.com/watch?v=QIuZP_DTjv8&t=10332s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240727",
+                "time": "01:44:31",
+                "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=6271s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240127",
+                "time": "03:16:00",
+                "link": "https://www.youtube.com/watch?v=kw8Ia8qEJ74&t=11760s",
+                "is_member_exclusive": false,
                 "is_acapella": false
             }
         ]
