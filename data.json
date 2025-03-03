@@ -9532,6 +9532,13 @@
                 "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=6271s",
                 "is_member_exclusive": false,
                 "is_acapella": false
+            },
+            {
+                "date": "20240127",
+                "time": "03:16:00",
+                "link": "https://www.youtube.com/watch?v=kw8Ia8qEJ74&t=11760s",
+                "is_member_exclusive": false,
+                "is_acapella": false
             }
         ]
     },
@@ -16628,13 +16635,6 @@
                 "time": "01:54:32",
                 "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=6872s",
                 "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20240127",
-                "time": "03:16:00",
-                "link": "https://www.youtube.com/watch?v=kw8Ia8qEJ74&t=11760s",
-                "is_member_exclusive": false,
                 "is_acapella": false
             }
         ]
