@@ -9506,9 +9506,30 @@
                 "is_acapella": false
             },
             {
+                "date": "20240518",
+                "time": "00:49:32",
+                "link": "https://www.youtube.com/watch?v=0mO1WLnuFYM&t=2972s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
                 "date": "20250301",
                 "time": "07:46:26",
                 "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=27986s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240406",
+                "time": "02:52:12",
+                "link": "https://www.youtube.com/watch?v=QIuZP_DTjv8&t=10332s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240727",
+                "time": "01:44:31",
+                "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=6271s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
@@ -12174,22 +12195,6 @@
                 "date": "20250301",
                 "time": "07:39:50",
                 "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=27590s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "夢は終わらない 〜こぼれ落ちる時の雫〜",
-        "artist": "よ〜み",
-        "source": "Tales of Phantasia",
-        "is_copyright": false,
-        "az": "ゆ",
-        "dates": [
-            {
-                "date": "20240518",
-                "time": "00:49:32",
-                "link": "https://www.youtube.com/watch?v=0mO1WLnuFYM&t=2972s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
@@ -16623,20 +16628,6 @@
                 "time": "01:54:32",
                 "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=6872s",
                 "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20240406",
-                "time": "02:52:12",
-                "link": "https://www.youtube.com/watch?v=QIuZP_DTjv8&t=10332s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240727",
-                "time": "01:44:31",
-                "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=6271s",
-                "is_member_exclusive": false,
                 "is_acapella": false
             },
             {
