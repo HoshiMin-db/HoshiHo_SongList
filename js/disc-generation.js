@@ -78,6 +78,7 @@ function createAlbumCard(album) {
                 <div class="track-title">${track.title}</div>
                 <div class="track-credit">${track.credits || ''}</div>
             </div>
+            <button class="play-button" onclick="openFloatingPlayer('https://youtu.be/${track.videoId}')">播放</button>
         </li>
     `).join('');
 
