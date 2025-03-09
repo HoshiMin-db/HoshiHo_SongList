@@ -1,1 +1,42 @@
-
+{
+  "armony": {
+    "name": "Armony",
+    "description": "音樂企劃Armony的作品",
+    "albums": [
+      {
+        "title": "Armonico",
+        "type": "1st EP",
+        "releaseDate": "2023.11.27",
+        "ytUrl": "OLAK5uy_kOh2CM5W2S4GFO1zxmY2HIHtHcLT3Yi4k",
+        "linkcore": "61a6UMRe",
+        "tracks": []
+      },
+      {
+        "title": "Gracia",
+        "type": "2nd EP",
+        "releaseDate": "2024.05.04",
+        "ytUrl": "OLAK5uy_nhCNha90hSCm8TC5AEWGfgezjItSPwUFw",
+        "linkcore": "zUpguMMu",
+        "tracks": []
+      },
+      {
+        "title": "Triquetra",
+        "type": "3rd EP",
+        "releaseDate": "2024.11.04",
+        "ytUrl": "OLAK5uy_l0Qmu7NiDBcGWxcInCxR25x3c8Gkoi7_c",
+        "linkcore": "5B09uFbP",
+        "tracks": []
+      }
+    ]
+  },
+  "other_circles": {
+    "name": "Other Circles",
+    "description": "參與其他社團的作品",
+    "albums": []
+  },
+  "solo": {
+    "name": "Solo Works",
+    "description": "個人作品",
+    "albums": []
+  }
+}
