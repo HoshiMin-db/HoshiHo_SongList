@@ -23,6 +23,24 @@ youtube = build('youtube', 'v3', developerKey=google_api_key)
 DISC_FILE_PATH = './disc/disc.txt'
 CACHE_FILE_PATH = './disc/disc.json'
 
+def fetch_youtube_playlist_tracks(playlist_id):
+    request = youtube.playlistItems().list(
+        part="snippet",
+        playlistId=playlist_id,
+        maxResults=50
+    )
+    response = request.execute()
+    
+    tracks = []
+    for item in response.get("items", []):
+        track = {
+            "title": item["snippet"]["title"],
+            "videoId": item["snippet"]["resourceId"]["videoId"]
+        }
+        tracks.append(track)
+    
+    return tracks
+
 def parse_disc_file():
     discography = {
         "armony": {"name": "Armony", "description": "音樂企劃Armony的作品", "albums": []},
@@ -55,12 +73,12 @@ def parse_disc_file():
                     "releaseDate": release_date.strip(),
                     "ytUrl": yt_url.strip(),
                     "linkcore": linkcore.strip() if linkcore else None,
-                    "tracks": []  # 可以在這裡添加 YouTube API 數據
+                    "tracks": fetch_youtube_playlist_tracks(yt_url.strip()) if yt_url else []  # Fetch YouTube playlist tracks
                 }
                 discography[current_category]["albums"].append(album)
 
     return discography
-
+    
 def save_to_json(data, file_path):
     with open(file_path, 'w', encoding='utf-8') as json_file:
         json.dump(data, json_file, ensure_ascii=False, indent=2)
