@@ -1,0 +1,10 @@
+[Armony]
+Armonico|1st EP|2023.11.27|OLAK5uy_kOh2CM5W2S4GFO1zxmY2HIHtHcLT3Yi4k|61a6UMRe
+Gracia|2nd EP|2024.05.04|OLAK5uy_nhCNha90hSCm8TC5AEWGfgezjItSPwUFw|zUpguMMu
+Triquetra|3rd EP|2024.11.04|OLAK5uy_l0Qmu7NiDBcGWxcInCxR25x3c8Gkoi7_c|5B09uFbP
+
+[Other Circles]
+//某專輯名稱|Single|2024.01.01|https://youtu.be/xxxxxxxxxxx|
+
+[Solo Works]
+//某影片名稱|Cover|2024.02.01|https://music.youtube.com/watch?v=xxxxxxxxxxx|
