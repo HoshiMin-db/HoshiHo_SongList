@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const validUrls = ['https://www.youtube.com'];
+    const validUrls = ['https://www.youtube.com', 'https://music.youtube.com'];
 
     function createYoutubeEmbed(url) {
         let videoId = '';
