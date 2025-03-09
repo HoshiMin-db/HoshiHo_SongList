@@ -82,8 +82,9 @@ function createAlbumCard(album) {
     `).join('');
 
     let ytLink = '';
+    let ytInfo = {};
     if (album.ytUrl) {
-        const ytInfo = parseYouTubeId(album.ytUrl);
+        ytInfo = parseYouTubeId(album.ytUrl);
         ytLink = ytInfo.type === 'playlist' 
             ? `https://music.youtube.com/playlist?list=${ytInfo.id}`
             : `https://youtu.be/${ytInfo.id}`;
