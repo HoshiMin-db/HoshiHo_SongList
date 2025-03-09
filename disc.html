@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <style>
         .disc-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            display: flex;
+            flex-wrap: wrap;
             gap: 30px;
             padding: 20px;
         }
@@ -18,6 +18,8 @@
             padding: 20px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             transition: all 0.3s ease;
+            width: 300px; /* 固定寬度，所有卡片寬度一致 */
+            flex: 1 0 300px; /* 讓卡片在容器中橫向排列 */
         }
         .disc-card:hover {
             transform: translateY(-5px);
