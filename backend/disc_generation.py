@@ -20,8 +20,8 @@ except Exception as e:
 # YouTube Data API 客戶端
 youtube = build('youtube', 'v3', developerKey=google_api_key)
 
-DISC_FILE_PATH = './timeline/disc.txt'
-CACHE_FILE_PATH = 'disc.json'
+DISC_FILE_PATH = './disc/disc.txt'
+CACHE_FILE_PATH = './disc/disc.json'
 
 def parse_disc_file():
     discography = {
