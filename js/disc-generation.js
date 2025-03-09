@@ -1,6 +1,6 @@
 // disc-generation.js
 
-const DISC_FILE_PATH = 'disc.json';
+const DISC_FILE_PATH = 'disc/disc.json';
 
 // 讀取 JSON 內容
 async function loadDiscData() {
