@@ -71,16 +71,19 @@ async function loadDiscData() {
 
 // 創建專輯卡片的HTML
 function createAlbumCard(album) {
-    const tracksList = album.tracks.map((track, index) => `
-        <li class="track-item">
-            <span class="track-number">${index + 1}</span>
-            <div class="track-info">
-                <div class="track-title">${track.title}</div>
-                <div class="track-credit">${track.credits || ''}</div>
-            </div>
-            <button class="play-button" onclick="openFloatingPlayer('https://youtu.be/${track.videoId}')">播放</button>
-        </li>
-    `).join('');
+    const tracksList = album.tracks.map((track, index) => {
+        console.log(`Track ${index + 1} videoId: ${track.videoId}`); // 調試用
+        return `
+            <li class="track-item">
+                <span class="track-number">${index + 1}</span>
+                <div class="track-info">
+                    <div class="track-title">${track.title}</div>
+                    <div class="track-credit">${track.credits || ''}</div>
+                </div>
+                <button class="play-button" onclick="openFloatingPlayer('https://www.youtube.com/watch?v=${track.videoId}')">播放</button>
+            </li>
+        `;
+    }).join('');
 
     let ytLink = '';
     let ytInfo = {};
