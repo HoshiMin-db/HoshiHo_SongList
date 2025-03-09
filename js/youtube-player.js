@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
 
+        console.log(`Embedding videoId: ${videoId}, startTime: ${startTime}`); // 調試用
         return `https://www.youtube.com/embed/${videoId}?start=${startTime}`;
     }
 
@@ -30,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const urlObj = new URL(url);
             if (validUrls.some(validUrl => urlObj.origin === validUrl)) {
                 if (isMobileDevice()) {
-                window.open(url, '_blank');
+                    window.open(url, '_blank');
                 } else {
                     const floatingPlayerContainer = document.getElementById('floatingPlayerContainer');
                     const floatingPlayer = document.getElementById('floatingPlayer');
