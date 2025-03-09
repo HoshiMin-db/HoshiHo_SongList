@@ -9,7 +9,28 @@
         "releaseDate": "2023.11.27",
         "ytUrl": "OLAK5uy_kOh2CM5W2S4GFO1zxmY2HIHtHcLT3Yi4k",
         "linkcore": "61a6UMRe",
-        "tracks": []
+        "tracks": [
+          {
+            "title": "門出",
+            "videoId": "30WF6jWfmOU"
+          },
+          {
+            "title": "Ship burial",
+            "videoId": "8IYVBEpYuAM"
+          },
+          {
+            "title": "Emporium",
+            "videoId": "syh2WE9K91s"
+          },
+          {
+            "title": "アマテラス",
+            "videoId": "vIKPzEhL7ck"
+          },
+          {
+            "title": "Armonico",
+            "videoId": "HJOusGflRUY"
+          }
+        ]
       },
       {
         "title": "Gracia",
@@ -17,7 +38,32 @@
         "releaseDate": "2024.05.04",
         "ytUrl": "OLAK5uy_nhCNha90hSCm8TC5AEWGfgezjItSPwUFw",
         "linkcore": "zUpguMMu",
-        "tracks": []
+        "tracks": [
+          {
+            "title": "Gracia",
+            "videoId": "qECnyFIeX3M"
+          },
+          {
+            "title": "Monsoon",
+            "videoId": "uKZEMSZsolc"
+          },
+          {
+            "title": "Wayang Kulit",
+            "videoId": "zCyZVCdYDsM"
+          },
+          {
+            "title": "天香国色",
+            "videoId": "HuSV4HXkLpE"
+          },
+          {
+            "title": "Wellerman (Sea Shanty)",
+            "videoId": "BcVxDficGUc"
+          },
+          {
+            "title": "Pray for the flower",
+            "videoId": "5_g_S6kdUi0"
+          }
+        ]
       },
       {
         "title": "Triquetra",
@@ -25,7 +71,28 @@
         "releaseDate": "2024.11.04",
         "ytUrl": "OLAK5uy_l0Qmu7NiDBcGWxcInCxR25x3c8Gkoi7_c",
         "linkcore": "5B09uFbP",
-        "tracks": []
+        "tracks": [
+          {
+            "title": "TRIQUETRA",
+            "videoId": "hDg2qZpAcbM"
+          },
+          {
+            "title": "Solduri",
+            "videoId": "eH2JHAz3FCY"
+          },
+          {
+            "title": "MAJO",
+            "videoId": "JlniZcZ45Ik"
+          },
+          {
+            "title": "Loudun",
+            "videoId": "ZFCUquX9ZVk"
+          },
+          {
+            "title": "Yule",
+            "videoId": "bReL0hAKW14"
+          }
+        ]
       }
     ]
   },
