@@ -43,7 +43,7 @@ jobs:
 
       - name: Force add and commit disc.json
         run: |
-          git add -f disc.json
+          git add -f disc/disc.json
           git commit -m 'Update disc.json with timestamp'
           git push
         continue-on-error: true
