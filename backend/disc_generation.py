@@ -2,7 +2,7 @@ import json
 import hashlib
 
 DISC_FILE_PATH = './timeline/disc.txt'
-CACHE_FILE_PATH = '.disc.json'
+CACHE_FILE_PATH = 'disc.json'
 
 def parse_disc_file():
     discography = {
