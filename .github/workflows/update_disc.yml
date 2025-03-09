@@ -3,7 +3,7 @@ name: Update Discography
 on:
   push:
     paths:
-      - 'timeline/disc.txt'
+      - 'disc/disc.txt'
   workflow_dispatch:
 
 jobs:
