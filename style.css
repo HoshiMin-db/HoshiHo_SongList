@@ -215,3 +215,114 @@ table thead th {
     max-height: 500px;
     overflow-y: auto;
 }
+
+/* Discography styles */
+.disc-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+
+.disc-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    width: 300px; /* 固定寬度，所有卡片寬度一致 */
+    flex: 1 0 300px; /* 讓卡片在容器中橫向排列 */
+}
+
+.disc-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+
+.disc-header {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 10px;
+}
+
+.disc-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #228be6;
+    margin-bottom: 5px;
+}
+
+.disc-type {
+    color: #868e96;
+    font-size: 0.9em;
+}
+
+.track-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.track-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #f1f3f5;
+    display: flex;
+    align-items: center;
+}
+
+.track-number {
+    width: 24px;
+    height: 24px;
+    background: #e7f5ff;
+    color: #228be6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+    margin-right: 10px;
+}
+
+.track-info {
+    flex-grow: 1;
+}
+
+.track-title {
+    font-weight: 500;
+    color: #495057;
+}
+
+.track-credit {
+    font-size: 0.8em;
+    color: #868e96;
+    margin-top: 2px;
+}
+
+.play-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background: #228be6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.play-button:hover {
+    background: #1c7ed6;
+}
+
+.external-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background: #228be6;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.external-link:hover {
+    background: #1c7ed6;
+}
