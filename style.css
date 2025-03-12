@@ -210,10 +210,24 @@ table thead th {
     cursor: default;
 }
 
-/* 新增滾動容器樣式 */
 #songTableContainer {
-    max-height: 500px;
+    /* 移除 max-height 或調整為合適的高度 */
     overflow-y: auto;
+}
+
+.virtual-scroll-container {
+    /* 移除固定高度 */
+    min-height: 200px;
+    overflow-y: auto;
+    position: relative;
+}
+
+.virtual-scroll-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 200px;
 }
 
 /* Discography styles */
