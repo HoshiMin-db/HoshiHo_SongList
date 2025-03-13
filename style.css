@@ -223,7 +223,7 @@ table thead th {
     overflow-x: hidden; /* 禁止X軸滾動 */
     position: relative;
     width: 100%; /* 確保容器寬度為100% */
-    height: auto; /* 確保高度自適應內容 */
+    height: 600px; /* 確保高度自適應內容 */
 }
 
 .virtual-scroll-content {
