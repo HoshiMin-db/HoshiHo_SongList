@@ -210,16 +210,20 @@ table thead th {
     cursor: default;
 }
 
+/* 避免X軸滾動並確保容器自適應內容高度 */
 #songTableContainer {
-    /* 移除 max-height 或調整為合適的高度 */
     overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%; /* 確保容器寬度為100% */
 }
 
 .virtual-scroll-container {
-    /* 移除固定高度 */
     min-height: 200px;
     overflow-y: auto;
+    overflow-x: hidden; /* 禁止X軸滾動 */
     position: relative;
+    width: 100%; /* 確保容器寬度為100% */
+    height: auto; /* 確保高度自適應內容 */
 }
 
 .virtual-scroll-content {
@@ -228,6 +232,8 @@ table thead th {
     left: 0;
     right: 0;
     min-height: 200px;
+    width: 100%; /* 確保內容寬度為100% */
+    height: auto; /* 確保內容高度自適應 */
 }
 
 /* Discography styles */
