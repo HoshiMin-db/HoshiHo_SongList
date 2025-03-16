@@ -6600,6 +6600,13 @@
                 "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=4626s",
                 "is_member_exclusive": false,
                 "is_acapella": false
+            },
+            {
+                "date": "20231118",
+                "time": "06:06:59",
+                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=22019s",
+                "is_member_exclusive": true,
+                "is_acapella": false
             }
         ]
     },
@@ -18498,22 +18505,6 @@
                 "date": "20231118",
                 "time": "05:54:36",
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=21276s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "ココナッツの片思い",
-        "artist": "中原めいこ",
-        "source": "",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20231118",
-                "time": "06:06:59",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=22019s",
                 "is_member_exclusive": true,
                 "is_acapella": false
             }
