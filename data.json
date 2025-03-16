@@ -14761,6 +14761,13 @@
                 "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=21253s",
                 "is_member_exclusive": false,
                 "is_acapella": false
+            },
+            {
+                "date": "20241130",
+                "time": "00:25:04",
+                "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=1504s",
+                "is_member_exclusive": false,
+                "is_acapella": false
             }
         ]
     },
@@ -16967,22 +16974,6 @@
                 "time": "06:37:19",
                 "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=23839s",
                 "is_member_exclusive": true,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "KUJIKENAIKARA!",
-        "artist": "林原めぐみ、奥井雅美",
-        "source": "スレイヤーズ",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20241130",
-                "time": "00:25:04",
-                "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=1504s",
-                "is_member_exclusive": false,
                 "is_acapella": false
             }
         ]
