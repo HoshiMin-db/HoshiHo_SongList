@@ -8527,6 +8527,13 @@
                 "is_acapella": false
             },
             {
+                "date": "20250301",
+                "time": "06:53:57",
+                "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=24837s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
                 "date": "20240615",
                 "time": "06:43:20",
                 "link": "https://www.youtube.com/watch?v=DjJmVyIXfH8&t=24200s",
@@ -14842,22 +14849,6 @@
                 "date": "20240209",
                 "time": "05:05:23",
                 "link": "https://www.youtube.com/watch?v=kMAS4-EXsps&t=18323s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "Schwarzweiß 〜霧の向こうに繋がる世界〜",
-        "artist": "霜月はるか",
-        "source": "イリスのアトリエ グランファンタズム",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250301",
-                "time": "06:53:57",
-                "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=24837s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
