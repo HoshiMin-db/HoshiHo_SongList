@@ -1164,6 +1164,13 @@
                 "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=11776s",
                 "is_member_exclusive": true,
                 "is_acapella": false
+            },
+            {
+                "date": "20250315",
+                "time": "00:19:22",
+                "link": "https://www.youtube.com/watch?v=se6YFgRE_po&t=1162s",
+                "is_member_exclusive": false,
+                "is_acapella": false
             }
         ]
     },
@@ -6773,6 +6780,13 @@
                 "date": "20250308",
                 "time": "02:14:00",
                 "link": "https://www.youtube.com/watch?v=OQO0FzogBp4&t=8040s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20250315",
+                "time": "00:08:12",
+                "link": "https://www.youtube.com/watch?v=se6YFgRE_po&t=492s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
@@ -16485,6 +16499,13 @@
                 "link": "https://www.youtube.com/watch?v=HuTpPbGbxhQ&t=1080s",
                 "is_member_exclusive": false,
                 "is_acapella": false
+            },
+            {
+                "date": "20250315",
+                "time": "00:01:06",
+                "link": "https://www.youtube.com/watch?v=se6YFgRE_po&t=66s",
+                "is_member_exclusive": false,
+                "is_acapella": false
             }
         ]
     },
@@ -16545,6 +16566,13 @@
                 "date": "20240413",
                 "time": "00:28:33",
                 "link": "https://www.youtube.com/watch?v=pdTvRavUxVQ&t=1713s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20250315",
+                "time": "00:13:33",
+                "link": "https://www.youtube.com/watch?v=se6YFgRE_po&t=813s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
@@ -16800,6 +16828,13 @@
                 "time": "04:03:20",
                 "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=14600s",
                 "is_member_exclusive": true,
+                "is_acapella": false
+            },
+            {
+                "date": "20250315",
+                "time": "00:24:44",
+                "link": "https://www.youtube.com/watch?v=se6YFgRE_po&t=1484s",
+                "is_member_exclusive": false,
                 "is_acapella": false
             }
         ]
