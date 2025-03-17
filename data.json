@@ -230,6 +230,13 @@
                 "is_acapella": false
             },
             {
+                "date": "20250315",
+                "time": "00:57:10",
+                "link": "https://www.youtube.com/watch?v=tRCurzx2Abk&t=3430s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
                 "date": "20240629",
                 "time": "01:29:14",
                 "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=5354s",
@@ -1431,6 +1438,232 @@
                 "time": "04:38:51",
                 "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=16731s",
                 "is_member_exclusive": true,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "BOW AND ARROW",
+        "artist": "米津玄師",
+        "source": "メダリスト",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250315",
+                "time": "00:21:36",
+                "link": "https://www.youtube.com/watch?v=tRCurzx2Abk&t=1296s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20250201",
+                "time": "02:41:08",
+                "link": "https://www.youtube.com/watch?v=xqq8-ChkFFk&t=9668s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "Butter-Fly",
+        "artist": "和田光司",
+        "source": "デジモンアドベンチャー",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250315",
+                "time": "00:30:40",
+                "link": "https://www.youtube.com/watch?v=tRCurzx2Abk&t=1840s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20250308",
+                "time": "05:07:39",
+                "link": "https://www.youtube.com/watch?v=OQO0FzogBp4&t=18459s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240202",
+                "time": "01:42:34",
+                "link": "https://www.youtube.com/watch?v=70E6Ns3_THo&t=6154s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240511",
+                "time": "06:06:28",
+                "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=21988s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "七色シンフォニー",
+        "artist": "コアラモード.",
+        "source": "四月は君の嘘",
+        "is_copyright": false,
+        "az": "な",
+        "dates": [
+            {
+                "date": "20250315",
+                "time": "00:45:04",
+                "link": "https://www.youtube.com/watch?v=tRCurzx2Abk&t=2704s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240413",
+                "time": "00:42:02",
+                "link": "https://www.youtube.com/watch?v=pdTvRavUxVQ&t=2522s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "夢であるように",
+        "artist": "DEEN",
+        "source": "Tales of Destiny",
+        "is_copyright": false,
+        "az": "ゆ",
+        "dates": [
+            {
+                "date": "20250315",
+                "time": "01:04:14",
+                "link": "https://www.youtube.com/watch?v=tRCurzx2Abk&t=3854s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20250301",
+                "time": "07:16:09",
+                "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=26169s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240713",
+                "time": "06:26:08",
+                "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=23168s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240511",
+                "time": "07:40:42",
+                "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=27642s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20231202",
+                "time": "01:42:27",
+                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=6147s",
+                "is_member_exclusive": true,
+                "is_acapella": false
+            },
+            {
+                "date": "20240406",
+                "time": "01:39:04",
+                "link": "https://www.youtube.com/watch?v=QIuZP_DTjv8&t=5944s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "春よ、来い",
+        "artist": "松任谷由実",
+        "source": "",
+        "is_copyright": false,
+        "az": "は",
+        "dates": [
+            {
+                "date": "20250315",
+                "time": "01:10:54",
+                "link": "https://www.youtube.com/watch?v=tRCurzx2Abk&t=4254s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240427",
+                "time": "00:18:00",
+                "link": "https://www.youtube.com/watch?v=HuTpPbGbxhQ&t=1080s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20250315",
+                "time": "00:01:06",
+                "link": "https://www.youtube.com/watch?v=se6YFgRE_po&t=66s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "僕は、鳥になる。",
+        "artist": "Hitomi",
+        "source": "コードギアス 反逆のルルーシュR2",
+        "is_copyright": false,
+        "az": "ぼ",
+        "dates": [
+            {
+                "date": "20250315",
+                "time": "04:26:35",
+                "link": "https://www.youtube.com/watch?v=tRCurzx2Abk&t=15995s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "コッペリアの柩",
+        "artist": "ALI PROJECT",
+        "source": "ノワール",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250315",
+                "time": "04:50:05",
+                "link": "https://www.youtube.com/watch?v=tRCurzx2Abk&t=17405s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "ダ・カーポ 〜第2ボタンの誓い〜",
+        "artist": "yozuca*",
+        "source": "D.C.～ダ・カーポ～(ゲーム)",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250315",
+                "time": "05:02:29",
+                "link": "https://www.youtube.com/watch?v=tRCurzx2Abk&t=18149s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240209",
+                "time": "02:33:26",
+                "link": "https://www.youtube.com/watch?v=kMAS4-EXsps&t=9206s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240413",
+                "time": "04:49:44",
+                "link": "https://www.youtube.com/watch?v=pdTvRavUxVQ&t=17384s",
+                "is_member_exclusive": false,
                 "is_acapella": false
             }
         ]
@@ -9579,22 +9812,6 @@
         ]
     },
     {
-        "song_name": "BOW AND ARROW",
-        "artist": "米津玄師",
-        "source": "メダリスト",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250201",
-                "time": "02:41:08",
-                "link": "https://www.youtube.com/watch?v=xqq8-ChkFFk&t=9668s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
         "song_name": "Same Blue",
         "artist": "Official髭男dism",
         "source": "アオのハコ",
@@ -12101,36 +12318,6 @@
                 "date": "20250308",
                 "time": "02:03:23",
                 "link": "https://www.youtube.com/watch?v=OQO0FzogBp4&t=7403s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "Butter-Fly",
-        "artist": "和田光司",
-        "source": "デジモンアドベンチャー",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250308",
-                "time": "05:07:39",
-                "link": "https://www.youtube.com/watch?v=OQO0FzogBp4&t=18459s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240202",
-                "time": "01:42:34",
-                "link": "https://www.youtube.com/watch?v=70E6Ns3_THo&t=6154s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240511",
-                "time": "06:06:28",
-                "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=21988s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
@@ -14876,50 +15063,6 @@
         ]
     },
     {
-        "song_name": "夢であるように",
-        "artist": "DEEN",
-        "source": "Tales of Destiny",
-        "is_copyright": false,
-        "az": "ゆ",
-        "dates": [
-            {
-                "date": "20250301",
-                "time": "07:16:09",
-                "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=26169s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240713",
-                "time": "06:26:08",
-                "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=23168s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240511",
-                "time": "07:40:42",
-                "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=27642s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231202",
-                "time": "01:42:27",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=6147s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20240406",
-                "time": "01:39:04",
-                "link": "https://www.youtube.com/watch?v=QIuZP_DTjv8&t=5944s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
         "song_name": "pastel pure",
         "artist": "ALI PROJECT",
         "source": "マリア様がみてる",
@@ -16292,29 +16435,6 @@
         ]
     },
     {
-        "song_name": "ダ・カーポ 〜第2ボタンの誓い〜",
-        "artist": "yozuca*",
-        "source": "D.C.～ダ・カーポ～(ゲーム)",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20240209",
-                "time": "02:33:26",
-                "link": "https://www.youtube.com/watch?v=kMAS4-EXsps&t=9206s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240413",
-                "time": "04:49:44",
-                "link": "https://www.youtube.com/watch?v=pdTvRavUxVQ&t=17384s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
         "song_name": "ダ・カーポII 〜あさきゆめみし君と〜",
         "artist": "yozuca*",
         "source": "D.C.II 〜ダ・カーポII〜(ゲーム)",
@@ -16487,29 +16607,6 @@
         ]
     },
     {
-        "song_name": "春よ、来い",
-        "artist": "松任谷由実",
-        "source": "",
-        "is_copyright": false,
-        "az": "は",
-        "dates": [
-            {
-                "date": "20240427",
-                "time": "00:18:00",
-                "link": "https://www.youtube.com/watch?v=HuTpPbGbxhQ&t=1080s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20250315",
-                "time": "00:01:06",
-                "link": "https://www.youtube.com/watch?v=se6YFgRE_po&t=66s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
         "song_name": "キャンディ キャンディ",
         "artist": "堀江美都子、ザ・チャープス",
         "source": "キャンディ♡キャンディ",
@@ -16573,22 +16670,6 @@
                 "date": "20250315",
                 "time": "00:13:33",
                 "link": "https://www.youtube.com/watch?v=se6YFgRE_po&t=813s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "七色シンフォニー",
-        "artist": "コアラモード.",
-        "source": "四月は君の嘘",
-        "is_copyright": false,
-        "az": "な",
-        "dates": [
-            {
-                "date": "20240413",
-                "time": "00:42:02",
-                "link": "https://www.youtube.com/watch?v=pdTvRavUxVQ&t=2522s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
