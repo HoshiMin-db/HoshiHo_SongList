@@ -46,3 +46,4 @@ acapella_songs|二月の丘
 acapella_songs|五つの橋
 acapella_songs|満ち潮の夜
 acapella_songs|WANNA BE AN ANGEL
+acapella_songs|僕は、鳥になる。
