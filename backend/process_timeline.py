@@ -17,9 +17,6 @@ def create_link(video_id, time_str):
 def load_exceptions(exceptions_file):
     """從指定文件讀取例外規則"""
     member_exclusive_dates = set()
-    acapella_songs = {}  # 按日期存儲清唱標籤
-    global_acapella_songs = set()  # 存儲沒有日期的清唱曲名
-    acapella_songs_with_artist = {}  # 存儲有日期和歌手的清唱歌曲
     copyright_songs = set()  # 存儲帶有版權標記的歌曲
 
     with open(exceptions_file, 'r', encoding='utf-8') as f:
@@ -29,21 +26,6 @@ def load_exceptions(exceptions_file):
             if parts[0] == 'member_exclusive_dates':
                 dates = parts[1].split(',')
                 member_exclusive_dates.update(dates)
-            elif parts[0] == 'acapella_songs':
-                if len(parts) == 2:
-                    global_acapella_songs.add(parts[1])  # 沒有日期和歌手的曲名
-                elif len(parts) == 3:
-                    song_name, artist = parts[1], parts[2]
-                    if artist not in acapella_songs_with_artist:
-                        acapella_songs_with_artist[artist] = set()
-                    acapella_songs_with_artist[artist].add(song_name)
-                elif len(parts) == 4:
-                    song_name, artist, date = parts[1], parts[2], parts[3]
-                    if date not in acapella_songs:
-                        acapella_songs[date] = {}
-                    if artist not in acapella_songs[date]:
-                        acapella_songs[date][artist] = set()
-                    acapella_songs[date][artist].add(song_name)
             elif parts[0] == 'copyright':
                 if len(parts) == 3:
                     song_name, artist = parts[1], parts[2]
@@ -52,7 +34,34 @@ def load_exceptions(exceptions_file):
                     song_name = parts[1]
                     copyright_songs.add((song_name, None))
 
-    return member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist, copyright_songs
+    return member_exclusive_dates, copyright_songs
+
+def load_acapella(acapella_file):
+    """從acapella.txt文件讀取清唱標籤"""
+    acapella_songs = {}  # 按日期存儲清唱標籤
+    global_acapella_songs = set()  # 存儲沒有日期的清唱曲名
+    acapella_songs_with_artist = {}  # 存儲有日期和歌手的清唱歌曲
+
+    with open(acapella_file, 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+        for line in lines:
+            parts = line.strip().split('|')
+            if len(parts) == 1:
+                global_acapella_songs.add(parts[0])  # 只有歌名的曲名
+            elif len(parts) == 2:
+                song_name, artist = parts[0], parts[1]
+                if artist not in acapella_songs_with_artist:
+                    acapella_songs_with_artist[artist] = set()
+                acapella_songs_with_artist[artist].add(song_name)
+            elif len(parts) == 3:
+                song_name, artist, date = parts[0], parts[1], parts[2]
+                if date not in acapella_songs:
+                    acapella_songs[date] = {}
+                if artist not in acapella_songs[date]:
+                    acapella_songs[date][artist] = set()
+                acapella_songs[date][artist].add(song_name)
+
+    return acapella_songs, global_acapella_songs, acapella_songs_with_artist
 
 def load_headers(headers_file):
     """從headers.txt讀取首字對應表"""
@@ -204,6 +213,7 @@ def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs
 def main():
     timeline_dir = 'timeline'
     exceptions_file = os.path.join(timeline_dir, 'exceptions.txt')
+    acapella_file = os.path.join(timeline_dir, 'acapella.txt')
     headers_file = os.path.join(timeline_dir, 'headers.txt')
     all_data = {}  # 改用字典來合併所有資料
 
@@ -211,10 +221,13 @@ def main():
     headers_dict = load_headers(headers_file)
     
     # 讀取例外規則
-    member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist, copyright_songs = load_exceptions(exceptions_file)
+    member_exclusive_dates, copyright_songs = load_exceptions(exceptions_file)
+
+    # 讀取acapella文件
+    acapella_songs, global_acapella_songs, acapella_songs_with_artist = load_acapella(acapella_file)
     
     for filename in os.listdir(timeline_dir):
-        if filename in ['exceptions.txt', 'headers.txt']:
+        if filename in ['exceptions.txt', 'headers.txt', 'acapella.txt']:
             continue
             
         file_path = os.path.join(timeline_dir, filename)
