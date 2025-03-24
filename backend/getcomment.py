@@ -70,7 +70,7 @@ def get_video_ids_from_playlist(playlist_id):
     )
     
     # 計算最近30天的日期
-    thirty_days_ago = datetime.utcnow() - timedelta(days=30)
+    thirty_days_ago = datetime.datetime.now(datetime.UTC) - timedelta(days=30)
     
     while request:
         try:
