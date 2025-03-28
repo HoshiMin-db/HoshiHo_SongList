@@ -6262,6 +6262,13 @@
                 "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=11204s",
                 "is_member_exclusive": false,
                 "is_acapella": false
+            },
+            {
+                "date": "20240420",
+                "time": "06:08:54",
+                "link": "https://www.youtube.com/watch?v=xjSFVGe8eAo&t=22134s",
+                "is_member_exclusive": false,
+                "is_acapella": false
             }
         ]
     },
@@ -7963,22 +7970,6 @@
                 "date": "20231231",
                 "time": "00:40:31",
                 "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=2431s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "きまぐれバロン",
-        "artist": "大杉久美子",
-        "source": "ペリーヌ物語",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20240420",
-                "time": "06:08:54",
-                "link": "https://www.youtube.com/watch?v=xjSFVGe8eAo&t=22134s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
