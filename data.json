@@ -4164,6 +4164,13 @@
                 "is_acapella": false
             },
             {
+                "date": "20250301",
+                "time": "01:48:27",
+                "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=6507s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
                 "date": "20231118",
                 "time": "00:34:10",
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=2050s",
@@ -14779,22 +14786,6 @@
                 "date": "20250301",
                 "time": "01:09:31",
                 "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=4171s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "め組のひと",
-        "artist": "RATS&STAR",
-        "source": "",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250301",
-                "time": "01:48:27",
-                "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=6507s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
