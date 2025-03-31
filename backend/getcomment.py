@@ -4,7 +4,7 @@ import re
 import time
 from googleapiclient.discovery import build
 from google.oauth2 import service_account
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from googleapiclient.errors import HttpError
 import html
 
@@ -70,7 +70,7 @@ def get_video_ids_from_playlist(playlist_id):
     )
     
     # 計算最近30天的日期
-    thirty_days_ago = datetime.datetime.now(datetime.UTC) - timedelta(days=30)
+    thirty_days_ago = datetime.now(timezone.utc) - timedelta(days=30)
     
     while request:
         try:
