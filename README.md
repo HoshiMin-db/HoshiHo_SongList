@@ -4,12 +4,12 @@
 
 # 邏輯
   ## /backend  
-  `disc_generation.py`  生成專輯資料
+  `disc_generation.py`  生成專輯資料  
   `getcomment.py`  抓取Youtube時間軸留言  
   `process_timeline.py`  抓取`timeline/yyyymmdd.txt`寫入`data.json`  
   `process_timeline.old.py`  正常運行備份  
   ## /disc
-  `disc.json`  專輯資料
+  `disc.json`  專輯資料  
   `disc.txt`  專輯連結供抓取資料
   ## /js
   `data` `events` `utils`  分拆失敗的零件  
