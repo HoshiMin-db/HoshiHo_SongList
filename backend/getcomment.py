@@ -90,6 +90,38 @@ def get_video_ids_from_playlist(playlist_id):
     
     return video_info
 
+def get_video_ids_from_channel(channel_id, query):
+    """從頻道獲取影片ID和日期，根據標題篩選"""
+    video_info = []
+    request = youtube.search().list(
+        part='snippet',
+        channelId=channel_id,
+        q=query,
+        maxResults=50,
+        order='date'
+    )
+    
+    # 計算最近30天的日期
+    thirty_days_ago = datetime.now(timezone.utc) - timedelta(days=30)
+    
+    while request:
+        try:
+            response = request.execute()
+            for item in response['items']:
+                video_id = item['id']['videoId']
+                video_date = get_video_date(video_id)
+                
+                if video_date and video_date >= thirty_days_ago.date():
+                    video_info.append((video_id, video_date))
+                    print(f"找到影片：{video_id} 來自 {video_date}")
+                    
+            request = youtube.search().list_next(request, response)
+        except HttpError as e:
+            print(f"Error fetching channel videos: {e}")
+            break
+    
+    return video_info
+
 def get_timestamp_comment(video_id):
     """獲取包含時間戳標記的留言"""
     try:
@@ -157,9 +189,14 @@ def save_to_file(video_id, comment, date):
 
 def main():
     playlist_id = 'PL7H5HbMMfm_lUoLIkPAZkhF_W0oDf5WEk'
-    
+    channel_id = 'UCwBJ-8LQYd7lZ7uW-4Adt4Q'  # HoshiHo's YouTube channel ID
+    query = '#歌枠/KARAOKE'
+
     # 獲取播放清單中的所有影片
     video_info = get_video_ids_from_playlist(playlist_id)
+    
+    # 獲取頻道中的符合標題的影片
+    video_info += get_video_ids_from_channel(channel_id, query)
     
     # 分批處理影片
     batch_size = 10  # 每次處理10個影片
