@@ -304,13 +304,6 @@
                 "is_acapella": false
             },
             {
-                "date": "20250322",
-                "time": "02:19:29",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=8369s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
                 "date": "20231216",
                 "time": "07:45:07",
                 "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=27907s",
@@ -321,6 +314,13 @@
                 "date": "20241109",
                 "time": "02:29:11",
                 "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=8951s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20250323",
+                "time": "02:19:29",
+                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=8369s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             },
@@ -5290,317 +5290,6 @@
         ]
     },
     {
-        "song_name": "花になって",
-        "artist": "緑黄色社会",
-        "source": "薬屋のひとりごと",
-        "is_copyright": false,
-        "az": "は",
-        "dates": [
-            {
-                "date": "20250322",
-                "time": "00:17:02",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=1022s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240608",
-                "time": "01:04:21",
-                "link": "https://www.youtube.com/watch?v=UoMwNx3aklM&t=3861s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "夢の果てまで",
-        "artist": "早見沙織",
-        "source": "劇場版 はいからさんが通る 前編 〜紅緒、花の17歳〜",
-        "is_copyright": false,
-        "az": "ゆ",
-        "dates": [
-            {
-                "date": "20250322",
-                "time": "00:27:02",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=1622s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "ピエトロの旅立ち",
-        "artist": "ジュリエッタ柴田",
-        "source": "ポポロクロイス物語(ゲーム)",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250322",
-                "time": "00:40:51",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=2451s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20241019",
-                "time": "02:29:51",
-                "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=8991s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "小さな花",
-        "artist": "鈴木朋",
-        "source": "ポポロクロイス物語II(ゲーム)",
-        "is_copyright": false,
-        "az": "ち",
-        "dates": [
-            {
-                "date": "20250322",
-                "time": "00:49:45",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=2985s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20241019",
-                "time": "02:42:33",
-                "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=9753s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "去り際のロマンティクス",
-        "artist": "See-Saw",
-        "source": "機動戦士ガンダムSEED FREEDOM",
-        "is_copyright": false,
-        "az": "さ",
-        "dates": [
-            {
-                "date": "20250322",
-                "time": "03:58:57",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=14337s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240216",
-                "time": "05:33:55",
-                "link": "https://www.youtube.com/watch?v=Z-1sxd5PK_M&t=20035s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240224",
-                "time": "05:20:52",
-                "link": "https://www.youtube.com/watch?v=8i9TOCJF8ps&t=19252s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240817",
-                "time": "01:06:48",
-                "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=4008s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "Meteor - ミーティア -",
-        "artist": "T.M.Revolution",
-        "source": "機動戦士ガンダムSEED",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250322",
-                "time": "04:15:21",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=15321s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240615",
-                "time": "04:40:55",
-                "link": "https://www.youtube.com/watch?v=DjJmVyIXfH8&t=16855s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240224",
-                "time": "01:06:14",
-                "link": "https://www.youtube.com/watch?v=8i9TOCJF8ps&t=3974s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "INVOKE",
-        "artist": "T.M.Revolution",
-        "source": "機動戦士ガンダムSEED",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250322",
-                "time": "04:25:53",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=15953s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240224",
-                "time": "00:17:30",
-                "link": "https://www.youtube.com/watch?v=8i9TOCJF8ps&t=1050s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20231111",
-                "time": "04:54:00",
-                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=17640s",
-                "is_member_exclusive": true,
-                "is_acapella": false
-            },
-            {
-                "date": "20250104",
-                "time": "03:12:05",
-                "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=11525s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "Life Goes On",
-        "artist": "有坂美香",
-        "source": "機動戦士ガンダムSEED DESTINY",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250322",
-                "time": "04:35:40",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=16540s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240224",
-                "time": "02:51:22",
-                "link": "https://www.youtube.com/watch?v=8i9TOCJF8ps&t=10282s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "clover",
-        "artist": "meg rock",
-        "source": "SoltyRei",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250322",
-                "time": "04:48:13",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=17293s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240202",
-                "time": "06:32:05",
-                "link": "https://www.youtube.com/watch?v=70E6Ns3_THo&t=23525s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20241214",
-                "time": "04:32:17",
-                "link": "https://www.youtube.com/watch?v=SX5pWgl_Sxk&t=16337s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "For フルーツバスケット",
-        "artist": "岡崎律子",
-        "source": "フルーツバスケット",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250322",
-                "time": "05:09:20",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=18560s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240518",
-                "time": "04:30:50",
-                "link": "https://www.youtube.com/watch?v=0mO1WLnuFYM&t=16250s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "サクラサク",
-        "artist": "林原めぐみ",
-        "source": "ラブひな",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250322",
-                "time": "05:23:32",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=19412s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "サクラサクミライコイユメ",
-        "artist": "yozuca*",
-        "source": "D.C.～ダ・カーポ～(アニメ)",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250322",
-                "time": "05:32:42",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=19962s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240209",
-                "time": "02:08:36",
-                "link": "https://www.youtube.com/watch?v=kMAS4-EXsps&t=7716s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            },
-            {
-                "date": "20240413",
-                "time": "05:30:14",
-                "link": "https://www.youtube.com/watch?v=pdTvRavUxVQ&t=19814s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
         "song_name": "グッド・ニュース (No One Mourns the Wicked 日本語版)",
         "artist": "劇団四季",
         "source": "ウィキッド (Wicked)",
@@ -5893,6 +5582,29 @@
                 "date": "20240524",
                 "time": "01:23:12",
                 "link": "https://www.youtube.com/watch?v=1VxGGjlEBUU&t=4992s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "花になって",
+        "artist": "緑黄色社会",
+        "source": "薬屋のひとりごと",
+        "is_copyright": false,
+        "az": "は",
+        "dates": [
+            {
+                "date": "20240608",
+                "time": "01:04:21",
+                "link": "https://www.youtube.com/watch?v=UoMwNx3aklM&t=3861s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20250323",
+                "time": "00:17:02",
+                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=1022s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
@@ -11466,6 +11178,52 @@
         ]
     },
     {
+        "song_name": "ピエトロの旅立ち",
+        "artist": "ジュリエッタ柴田",
+        "source": "ポポロクロイス物語(ゲーム)",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20241019",
+                "time": "02:29:51",
+                "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=8991s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20250323",
+                "time": "00:40:51",
+                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=2451s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "小さな花",
+        "artist": "鈴木朋",
+        "source": "ポポロクロイス物語II(ゲーム)",
+        "is_copyright": false,
+        "az": "ち",
+        "dates": [
+            {
+                "date": "20241019",
+                "time": "02:42:33",
+                "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=9753s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20250323",
+                "time": "00:49:45",
+                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=2985s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
         "song_name": "Rolling star",
         "artist": "YUI",
         "source": "BLEACH",
@@ -13154,6 +12912,248 @@
                 "date": "20241130",
                 "time": "02:00:17",
                 "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=7217s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "夢の果てまで",
+        "artist": "早見沙織",
+        "source": "劇場版 はいからさんが通る 前編 〜紅緒、花の17歳〜",
+        "is_copyright": false,
+        "az": "ゆ",
+        "dates": [
+            {
+                "date": "20250323",
+                "time": "00:27:02",
+                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=1622s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "去り際のロマンティクス",
+        "artist": "See-Saw",
+        "source": "機動戦士ガンダムSEED FREEDOM",
+        "is_copyright": false,
+        "az": "さ",
+        "dates": [
+            {
+                "date": "20250323",
+                "time": "03:58:57",
+                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=14337s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240216",
+                "time": "05:33:55",
+                "link": "https://www.youtube.com/watch?v=Z-1sxd5PK_M&t=20035s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240224",
+                "time": "05:20:52",
+                "link": "https://www.youtube.com/watch?v=8i9TOCJF8ps&t=19252s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240817",
+                "time": "01:06:48",
+                "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=4008s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "Meteor - ミーティア -",
+        "artist": "T.M.Revolution",
+        "source": "機動戦士ガンダムSEED",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250323",
+                "time": "04:15:21",
+                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=15321s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240615",
+                "time": "04:40:55",
+                "link": "https://www.youtube.com/watch?v=DjJmVyIXfH8&t=16855s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240224",
+                "time": "01:06:14",
+                "link": "https://www.youtube.com/watch?v=8i9TOCJF8ps&t=3974s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "INVOKE",
+        "artist": "T.M.Revolution",
+        "source": "機動戦士ガンダムSEED",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250323",
+                "time": "04:25:53",
+                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=15953s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240224",
+                "time": "00:17:30",
+                "link": "https://www.youtube.com/watch?v=8i9TOCJF8ps&t=1050s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20231111",
+                "time": "04:54:00",
+                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=17640s",
+                "is_member_exclusive": true,
+                "is_acapella": false
+            },
+            {
+                "date": "20250104",
+                "time": "03:12:05",
+                "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=11525s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "Life Goes On",
+        "artist": "有坂美香",
+        "source": "機動戦士ガンダムSEED DESTINY",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250323",
+                "time": "04:35:40",
+                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=16540s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240224",
+                "time": "02:51:22",
+                "link": "https://www.youtube.com/watch?v=8i9TOCJF8ps&t=10282s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "clover",
+        "artist": "meg rock",
+        "source": "SoltyRei",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250323",
+                "time": "04:48:13",
+                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=17293s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240202",
+                "time": "06:32:05",
+                "link": "https://www.youtube.com/watch?v=70E6Ns3_THo&t=23525s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20241214",
+                "time": "04:32:17",
+                "link": "https://www.youtube.com/watch?v=SX5pWgl_Sxk&t=16337s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "For フルーツバスケット",
+        "artist": "岡崎律子",
+        "source": "フルーツバスケット",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250323",
+                "time": "05:09:20",
+                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=18560s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240518",
+                "time": "04:30:50",
+                "link": "https://www.youtube.com/watch?v=0mO1WLnuFYM&t=16250s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "サクラサク",
+        "artist": "林原めぐみ",
+        "source": "ラブひな",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250323",
+                "time": "05:23:32",
+                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=19412s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            }
+        ]
+    },
+    {
+        "song_name": "サクラサクミライコイユメ",
+        "artist": "yozuca*",
+        "source": "D.C.～ダ・カーポ～(アニメ)",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250323",
+                "time": "05:32:42",
+                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=19962s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240209",
+                "time": "02:08:36",
+                "link": "https://www.youtube.com/watch?v=kMAS4-EXsps&t=7716s",
+                "is_member_exclusive": false,
+                "is_acapella": false
+            },
+            {
+                "date": "20240413",
+                "time": "05:30:14",
+                "link": "https://www.youtube.com/watch?v=pdTvRavUxVQ&t=19814s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
