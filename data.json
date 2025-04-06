@@ -10449,6 +10449,13 @@
                 "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=6099s",
                 "is_member_exclusive": false,
                 "is_acapella": false
+            },
+            {
+                "date": "20250301",
+                "time": "05:10:09",
+                "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=18609s",
+                "is_member_exclusive": false,
+                "is_acapella": false
             }
         ]
     },
@@ -15317,22 +15324,6 @@
                 "date": "20241123",
                 "time": "02:34:45",
                 "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=9285s",
-                "is_member_exclusive": false,
-                "is_acapella": false
-            }
-        ]
-    },
-    {
-        "song_name": "暁を撃て",
-        "artist": "栗林みな実",
-        "source": "Muv-Luv Alternative（アニメ）",
-        "is_copyright": false,
-        "az": "あ",
-        "dates": [
-            {
-                "date": "20250301",
-                "time": "05:10:09",
-                "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=18609s",
                 "is_member_exclusive": false,
                 "is_acapella": false
             }
