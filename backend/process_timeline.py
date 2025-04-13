@@ -117,7 +117,7 @@ def normalize_string(str):
     str = re.sub(r'\s+', '', str)
     return str
 
-def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist, copyright_songs, headers_dict):
+def process_timeline(file_path, date_str, member_exclusive_dates, private_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist, copyright_songs, headers_dict):
     data = {}  # 改用字典來儲存資料
     
     with open(file_path, 'r', encoding='utf-8') as f:
