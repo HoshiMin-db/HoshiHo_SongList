@@ -17,6 +17,7 @@ def create_link(video_id, time_str):
 def load_exceptions(exceptions_file):
     """從指定文件讀取例外規則"""
     member_exclusive_dates = set()
+    private_dates = set()  # 新增：存儲私人影片日期
     copyright_songs = set()  # 存儲帶有版權標記的歌曲
 
     with open(exceptions_file, 'r', encoding='utf-8') as f:
@@ -26,6 +27,9 @@ def load_exceptions(exceptions_file):
             if parts[0] == 'member_exclusive_dates':
                 dates = parts[1].split(',')
                 member_exclusive_dates.update(dates)
+            elif parts[0] == 'private':  # 新增：處理私人影片標籤
+                dates = parts[1].split(',')
+                private_dates.update(dates)
             elif parts[0] == 'copyright':
                 if len(parts) == 3:
                     song_name, artist = parts[1], parts[2]
@@ -34,8 +38,8 @@ def load_exceptions(exceptions_file):
                     song_name = parts[1]
                     copyright_songs.add((song_name, None))
 
-    return member_exclusive_dates, copyright_songs
-
+    return member_exclusive_dates, private_dates, copyright_songs  # 返回新增的 private_dates
+    
 def load_acapella(acapella_file):
     """從acapella.txt文件讀取清唱標籤"""
     acapella_songs = {}  # 按日期存儲清唱標籤
@@ -180,6 +184,7 @@ def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs
                     (artist in acapella_songs_with_artist and song_name in acapella_songs_with_artist[artist])
                 )
                 is_copyright = (song_name, artist) in copyright_songs or (song_name, None) in copyright_songs
+                is_private = date_str in private_dates
                 
                 # 將資料存入字典
                 # 在建立資料時加入az分類
@@ -199,7 +204,8 @@ def process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs
                     'time': time_str,
                     'link': link,
                     'is_member_exclusive': is_member_exclusive,
-                    'is_acapella': is_acapella
+                    'is_acapella': is_acapella,
+                    'is_private': is_private,  # 新增：存儲私人影片標記
                 }
                 if date_info not in data[normalized_key]['dates']:
                     data[normalized_key]['dates'].append(date_info)
@@ -221,7 +227,7 @@ def main():
     headers_dict = load_headers(headers_file)
     
     # 讀取例外規則
-    member_exclusive_dates, copyright_songs = load_exceptions(exceptions_file)
+    member_exclusive_dates, private_dates, copyright_songs = load_exceptions(exceptions_file)
 
     # 讀取acapella文件
     acapella_songs, global_acapella_songs, acapella_songs_with_artist = load_acapella(acapella_file)
@@ -235,7 +241,7 @@ def main():
         if match:
             date_str = match.group(1)
             try:
-                data = process_timeline(file_path, date_str, member_exclusive_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist, copyright_songs, headers_dict)
+                data = process_timeline(file_path, date_str, member_exclusive_dates, private_dates, acapella_songs, global_acapella_songs, acapella_songs_with_artist, copyright_songs, headers_dict)
                 # 加入headers_dict參數
                 
                 # 合併資料
