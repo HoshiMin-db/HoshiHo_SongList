@@ -122,11 +122,6 @@ a:hover {
     text-decoration: underline;
 }
 
-.lock-icon {
-    color: red;
-    margin-left: 5px;
-}
-
 .more-button {
     background-color: #8a80cd;
     color: white;
