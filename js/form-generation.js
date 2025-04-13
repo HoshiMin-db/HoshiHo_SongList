@@ -104,6 +104,12 @@ function createTableRow(item, numDates) {
         if (row.is_acapella) {
             dateCell.classList.add('acapella');
         }
+        if (row.is_private) {
+            const privateIcon = document.createElement('span');
+            privateIcon.classList.add('private-icon'); // 加入專屬於私人影片的樣式類別
+            privateIcon.textContent = '🚫';
+            dateCell.appendChild(privateIcon);
+        }
     }
 
     // 補充空白儲存格
@@ -153,6 +159,12 @@ function createTableRow(item, numDates) {
                     }
                     if (row.is_acapella) {
                         dateCell.classList.add('acapella');
+                    }
+                    if (row.is_private) {
+                        const privateIcon = document.createElement('span');
+                        privateIcon.classList.add('private-icon'); // 加入專屬於私人影片的樣式類別
+                        privateIcon.textContent = '🚫';
+                        dateCell.appendChild(privateIcon);
                     }
                 });
                 moreButton.setAttribute('data-expanded', 'true');
