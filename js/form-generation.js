@@ -102,6 +102,18 @@ function getCharacterType(text) {
     return 'japanese';
 }
 
+// 獲取排序權重
+function getSortWeight(type) {
+    const weights = {
+        'symbol': 0,
+        'number': 1,
+        'english': 2,
+        'japanese': 3,
+        'other': 4
+    };
+    return weights[type] ?? weights.other;
+}
+
 // 提取生成日期儲存格的公共邏輯
 function createDateCell(row, newRow) {
     const dateCell = newRow.insertCell();
