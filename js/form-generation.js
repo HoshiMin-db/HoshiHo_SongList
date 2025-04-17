@@ -194,35 +194,6 @@ function isValidYouTubeURL(url) {
     }
 }
 
-// 排序權重函數：符號 > 英文 > 日文 > 其他
-function getSortWeight(type) {
-    const weights = {
-        symbol: 0,
-        english: 1,
-        japanese: 2,
-        other: 3,
-    };
-    return weights[type] ?? weights.other;
-}
-
-// 獲取字符類型
-function getCharacterType(text) {
-    if (!text) return "other";
-    const firstChar = text.trim().charAt(0);
-    if (!firstChar) return "other";
-
-    if (/[^a-zA-Z0-9\u3040-\u30FF\u4E00-\u9FAF]/.test(firstChar)) {
-        return "symbol";
-    }
-    if (/[a-zA-Z]/.test(firstChar)) {
-        return "english";
-    }
-    if (/[\u3040-\u30FF\u4E00-\u9FAF]/.test(firstChar)) {
-        return "japanese";
-    }
-    return "other";
-}
-
 // 顯示數據並排序
 function displayData(data, numDates = 3) {
     const songTableBody = document
@@ -231,7 +202,20 @@ function displayData(data, numDates = 3) {
 
     songTableBody.innerHTML = "";
 
-    const sortedData = data.sort((a, b) => {
+    // 分組數據：根據歌曲名稱和歌手進行分組（無視大小寫和符號）
+    const groupedData = data.reduce((acc, row) => {
+        const key = `${normalizeString(row.song_name)}-${normalizeString(
+            row.artist
+        )}`;
+        if (!acc[key]) {
+            acc[key] = { ...row, dates: [] };
+        }
+        acc[key].dates.push(...row.dates);
+        return acc;
+    }, {});
+
+    // 將分組後的數據轉換為數組並排序
+    const sortedData = Object.values(groupedData).sort((a, b) => {
         const aType = getCharacterType(a.song_name);
         const bType = getCharacterType(b.song_name);
         const weightDiff = getSortWeight(aType) - getSortWeight(bType);
@@ -254,6 +238,7 @@ function displayData(data, numDates = 3) {
         return a.song_name.localeCompare(b.song_name);
     });
 
+    // 渲染表格
     sortedData.forEach((item) => {
         const row = createTableRow(item, numDates);
         songTableBody.appendChild(row);
