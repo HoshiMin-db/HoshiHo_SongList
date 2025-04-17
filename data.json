@@ -12034,6 +12034,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20240511",
+                "time": "02:20:18",
+                "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=8418s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -18236,23 +18244,6 @@
                 "date": "20240511",
                 "time": "01:56:43",
                 "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=7003s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "恋愛サーキュレーション",
-        "artist": "千石撫子（花澤香菜）",
-        "source": "化物語",
-        "is_copyright": false,
-        "az": "れ",
-        "dates": [
-            {
-                "date": "20240511",
-                "time": "02:20:18",
-                "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=8418s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
