@@ -4916,6 +4916,14 @@
                 "is_private": false
             },
             {
+                "date": "20250412",
+                "time": "03:27:49",
+                "link": "https://www.youtube.com/watch?v=SU06Cmm5xCs&t=12469s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20231202",
                 "time": "07:18:32",
                 "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=26312s",
@@ -14337,23 +14345,6 @@
                 "date": "20240413",
                 "time": "06:34:06",
                 "link": "https://www.youtube.com/watch?v=pdTvRavUxVQ&t=23646s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "御旗のもとに",
-        "artist": "日髙のり子+巴里華撃団",
-        "source": "サクラ大戦3 〜巴里は燃えているか〜",
-        "is_copyright": false,
-        "az": "み",
-        "dates": [
-            {
-                "date": "20250412",
-                "time": "03:27:49",
-                "link": "https://www.youtube.com/watch?v=SU06Cmm5xCs&t=12469s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
