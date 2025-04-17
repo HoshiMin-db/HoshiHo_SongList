@@ -12205,7 +12205,7 @@
         ]
     },
     {
-        "song_name": "回レ!雪月花",
+        "song_name": "回レ！雪月花",
         "artist": "歌組雪月花",
         "source": "機巧少女は傷つかない",
         "is_copyright": false,
@@ -12215,6 +12215,14 @@
                 "date": "20240629",
                 "time": "00:36:15",
                 "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=2175s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20231231",
+                "time": "02:04:05",
+                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=7445s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -21300,23 +21308,6 @@
                 "date": "20231231",
                 "time": "01:38:52",
                 "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=5932s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "回レ！雪月花",
-        "artist": "歌組雪月花",
-        "source": "機巧少女は傷つかない",
-        "is_copyright": false,
-        "az": "ま",
-        "dates": [
-            {
-                "date": "20231231",
-                "time": "02:04:05",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=7445s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
