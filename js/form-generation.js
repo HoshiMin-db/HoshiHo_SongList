@@ -194,13 +194,75 @@ function isValidYouTubeURL(url) {
     }
 }
 
-// 載入表格數據
-document.addEventListener("DOMContentLoaded", function () {
-    const searchInput = document.getElementById("searchInput");
+// 排序權重函數：符號 > 英文 > 日文 > 其他
+function getSortWeight(type) {
+    const weights = {
+        symbol: 0,
+        english: 1,
+        japanese: 2,
+        other: 3,
+    };
+    return weights[type] ?? weights.other;
+}
+
+// 獲取字符類型
+function getCharacterType(text) {
+    if (!text) return "other";
+    const firstChar = text.trim().charAt(0);
+    if (!firstChar) return "other";
+
+    if (/[^a-zA-Z0-9\u3040-\u30FF\u4E00-\u9FAF]/.test(firstChar)) {
+        return "symbol";
+    }
+    if (/[a-zA-Z]/.test(firstChar)) {
+        return "english";
+    }
+    if (/[\u3040-\u30FF\u4E00-\u9FAF]/.test(firstChar)) {
+        return "japanese";
+    }
+    return "other";
+}
+
+// 顯示數據並排序
+function displayData(data, numDates = 3) {
     const songTableBody = document
         .getElementById("songTable")
         .getElementsByTagName("tbody")[0];
-    const songCountElement = document.getElementById("songCount");
+
+    songTableBody.innerHTML = "";
+
+    const sortedData = data.sort((a, b) => {
+        const aType = getCharacterType(a.song_name);
+        const bType = getCharacterType(b.song_name);
+        const weightDiff = getSortWeight(aType) - getSortWeight(bType);
+
+        if (weightDiff !== 0) return weightDiff;
+
+        // 英文字首按英文順序排序
+        if (aType === "english" && bType === "english") {
+            return a.song_name.localeCompare(b.song_name, "en");
+        }
+
+        // 日文字首先按 A-Z，再按日文順序
+        if (aType === "japanese" && bType === "japanese") {
+            const aKey = a.az || a.song_name.charAt(0).toUpperCase();
+            const bKey = b.az || b.song_name.charAt(0).toUpperCase();
+            return aKey.localeCompare(bKey, "ja-JP") || a.song_name.localeCompare(b.song_name, "ja-JP");
+        }
+
+        // 其他類型按原始名稱排序
+        return a.song_name.localeCompare(b.song_name);
+    });
+
+    sortedData.forEach((item) => {
+        const row = createTableRow(item, numDates);
+        songTableBody.appendChild(row);
+    });
+}
+
+// 初始化數據加載和搜索功能
+document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.getElementById("searchInput");
     let allData = [];
 
     async function fetchData() {
@@ -209,60 +271,9 @@ document.addEventListener("DOMContentLoaded", function () {
             const data = await response.json();
             allData = data;
             displayData(allData);
-            if (songCountElement) {
-                songCountElement.textContent = allData.length;
-            }
         } catch (error) {
             console.error("Error fetching data:", error);
         }
-    }
-
-    function displayData(data, numDates = 3) {
-        const groupedData = data.reduce((acc, row) => {
-            const key = `${normalizeString(row.song_name)}-${normalizeString(
-                row.artist
-            )}`;
-            if (!acc[key]) {
-                acc[key] = { ...row, dates: [] };
-            }
-            const allDates = [...acc[key].dates, ...row.dates];
-            acc[key].dates = allDates.sort((a, b) => {
-                const dateA = new Date(
-                    a.date.replace(/(\d{4})(\d{2})(\d{2})/, "$1-$2-$3") +
-                        "T" +
-                        a.time
-                );
-                const dateB = new Date(
-                    b.date.replace(/(\d{4})(\d{2})(\d{2})/, "$1-$2-$3") +
-                        "T" +
-                        b.time
-                );
-                return dateB - dateA;
-            });
-            return acc;
-        }, {});
-
-        songTableBody.innerHTML = "";
-
-        // 將分組後的數據轉換為數組並排序
-        const sortedData = Object.values(groupedData).sort((a, b) => {
-            // 按 A-Z 排序
-            const aName = normalizeString(a.song_name.charAt(0));
-            const bName = normalizeString(b.song_name.charAt(0));
-            const aFullName = normalizeString(a.song_name);
-            const bFullName = normalizeString(b.song_name);
-
-            // 先按首字母排序，再按完整歌名排序
-            return (
-                aName.localeCompare(bName, "ja-JP") ||
-                aFullName.localeCompare(bFullName, "ja-JP")
-            );
-        });
-
-        sortedData.forEach((item) => {
-            const newRow = createTableRow(item, numDates);
-            songTableBody.appendChild(newRow);
-        });
     }
 
     if (searchInput) {
@@ -271,7 +282,6 @@ document.addEventListener("DOMContentLoaded", function () {
             debounce(function (e) {
                 const query = normalizeString(e.target.value.toLowerCase());
 
-                // 如果輸入是 DDMMYYYY 格式，過濾包含該日期的資料
                 if (isValidDateFormat(query)) {
                     const filteredData = allData.filter((row) =>
                         row.dates.some(
@@ -285,7 +295,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     );
                     displayData(filteredData);
                 } else {
-                    // 正常的關鍵字搜尋
                     const filteredData = allData.filter(
                         (row) =>
                             normalizeString(row.song_name).includes(query) ||
@@ -296,8 +305,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }, 800)
         );
-    } else {
-        console.error("searchInput element not found");
     }
 
     fetchData();
