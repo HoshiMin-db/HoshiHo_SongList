@@ -75,6 +75,33 @@ function isValidDateFormat(dateStr) {
     );
 }
 
+// 新增一個函數來判斷字符類型
+function getCharacterType(text) {
+    if (!text) return 'other';
+    
+    // 移除開頭空白並取第一個字符
+    const firstChar = text.trim().charAt(0);
+    if (!firstChar) return 'other';
+    
+    // 判斷符號 (包含特殊符號如〜、→、∞等)
+    if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>/?～！＠＃＄％＾＆＊（）＿＋－＝［］｛｝；＇："＼｜，．＜＞／？〜∞→←↑↓]/.test(firstChar)) {
+        return 'symbol';
+    }
+    
+    // 判斷英文
+    if (/[a-zA-Z]/.test(firstChar)) {
+        return 'english';
+    }
+    
+    // 判斷數字
+    if (/[0-9０-９]/.test(firstChar)) {
+        return 'number';
+    }
+    
+    // 假設其他都是日文（包含假名和漢字）
+    return 'japanese';
+}
+
 // 提取生成日期儲存格的公共邏輯
 function createDateCell(row, newRow) {
     const dateCell = newRow.insertCell();
