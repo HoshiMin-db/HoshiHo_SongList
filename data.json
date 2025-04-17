@@ -14192,7 +14192,7 @@
         ]
     },
     {
-        "song_name": "未来派Lovers /",
+        "song_name": "未来派Lovers",
         "artist": "笠原弘子",
         "source": "機動警察パトレイバー 初期OVAシリーズ",
         "is_copyright": false,
@@ -14202,6 +14202,14 @@
                 "date": "20250308",
                 "time": "07:08:37",
                 "link": "https://www.youtube.com/watch?v=OQO0FzogBp4&t=25717s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240308",
+                "time": "04:12:36",
+                "link": "https://www.youtube.com/watch?v=mfO62RxfZPU&t=15156s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -14588,23 +14596,6 @@
                 "date": "20240308",
                 "time": "04:03:01",
                 "link": "https://www.youtube.com/watch?v=mfO62RxfZPU&t=14581s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "未来派Lovers",
-        "artist": "笠原弘子",
-        "source": "機動警察パトレイバー 初期OVAシリーズ",
-        "is_copyright": false,
-        "az": "み",
-        "dates": [
-            {
-                "date": "20240308",
-                "time": "04:12:36",
-                "link": "https://www.youtube.com/watch?v=mfO62RxfZPU&t=15156s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
