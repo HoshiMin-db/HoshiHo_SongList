@@ -4851,6 +4851,14 @@
                 "is_private": false
             },
             {
+                "date": "20250412",
+                "time": "03:55:33",
+                "link": "https://www.youtube.com/watch?v=SU06Cmm5xCs&t=14133s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20240308",
                 "time": "04:54:30",
                 "link": "https://www.youtube.com/watch?v=mfO62RxfZPU&t=17670s",
@@ -14346,23 +14354,6 @@
                 "date": "20250412",
                 "time": "03:27:49",
                 "link": "https://www.youtube.com/watch?v=SU06Cmm5xCs&t=12469s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "夢のつづき",
-        "artist": "帝国歌劇団",
-        "source": "サクラ大戦2 〜君、死にたもうことなかれ〜",
-        "is_copyright": false,
-        "az": "ゆ",
-        "dates": [
-            {
-                "date": "20250412",
-                "time": "03:55:33",
-                "link": "https://www.youtube.com/watch?v=SU06Cmm5xCs&t=14133s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
