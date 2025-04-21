@@ -1711,6 +1711,14 @@
                 "is_private": false
             },
             {
+                "date": "20250419",
+                "time": "05:36:43",
+                "link": "https://www.youtube.com/watch?v=r9gjTxemMes&t=20203s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20250301",
                 "time": "07:16:09",
                 "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=26169s",
@@ -1879,6 +1887,451 @@
                 "date": "20240413",
                 "time": "04:49:44",
                 "link": "https://www.youtube.com/watch?v=pdTvRavUxVQ&t=17384s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "おジャ魔女カーニバル!!",
+        "artist": "MAHO堂",
+        "source": "おジャ魔女どれみ",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250419",
+                "time": "01:11:28",
+                "link": "https://www.youtube.com/watch?v=r9gjTxemMes&t=4288s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20231209",
+                "time": "07:00:10",
+                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=25210s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240202",
+                "time": "06:39:25",
+                "link": "https://www.youtube.com/watch?v=70E6Ns3_THo&t=23965s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240511",
+                "time": "05:57:09",
+                "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=21429s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240323",
+                "time": "01:59:10",
+                "link": "https://www.youtube.com/watch?v=fdpGIoCs6AU&t=7150s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20241123",
+                "time": "07:06:17",
+                "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=25577s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "恋愛サーキュレーション",
+        "artist": "千石撫子（花澤香菜）",
+        "source": "化物語",
+        "is_copyright": false,
+        "az": "れ",
+        "dates": [
+            {
+                "date": "20250419",
+                "time": "02:10:15",
+                "link": "https://www.youtube.com/watch?v=r9gjTxemMes&t=7815s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "残響散歌",
+        "artist": "Aimer",
+        "source": "鬼滅の刃 遊郭編",
+        "is_copyright": false,
+        "az": "ざ",
+        "dates": [
+            {
+                "date": "20250419",
+                "time": "03:50:02",
+                "link": "https://www.youtube.com/watch?v=r9gjTxemMes&t=13802s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240706",
+                "time": "05:16:28",
+                "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=18988s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240608",
+                "time": "01:30:19",
+                "link": "https://www.youtube.com/watch?v=UoMwNx3aklM&t=5419s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250118",
+                "time": "02:44:42",
+                "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=9882s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Plazma",
+        "artist": "米津玄師",
+        "source": "機動戦士Gundam GQuuuuuuX",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250419",
+                "time": "03:55:07",
+                "link": "https://www.youtube.com/watch?v=r9gjTxemMes&t=14107s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250201",
+                "time": "02:28:25",
+                "link": "https://www.youtube.com/watch?v=xqq8-ChkFFk&t=8905s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "York of love.",
+        "artist": "石橋優子",
+        "source": "アルトネリコ 世界の終わりで詩い続ける少女",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250419",
+                "time": "05:01:58",
+                "link": "https://www.youtube.com/watch?v=r9gjTxemMes&t=18118s",
+                "is_member_exclusive": false,
+                "is_acapella": true,
+                "is_private": false
+            },
+            {
+                "date": "20231216",
+                "time": "03:16:48",
+                "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=11808s",
+                "is_member_exclusive": true,
+                "is_acapella": true,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "夢は終わらない 〜こぼれ落ちる時の雫〜",
+        "artist": "よーみ",
+        "source": "Tales of Phantasia",
+        "is_copyright": false,
+        "az": "ゆ",
+        "dates": [
+            {
+                "date": "20250419",
+                "time": "05:16:25",
+                "link": "https://www.youtube.com/watch?v=r9gjTxemMes&t=18985s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250201",
+                "time": "03:17:46",
+                "link": "https://www.youtube.com/watch?v=xqq8-ChkFFk&t=11866s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20241019",
+                "time": "03:00:58",
+                "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=10858s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240518",
+                "time": "00:49:32",
+                "link": "https://www.youtube.com/watch?v=0mO1WLnuFYM&t=2972s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250301",
+                "time": "07:46:26",
+                "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=27986s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20231202",
+                "time": "01:54:32",
+                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=6872s",
+                "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240406",
+                "time": "02:52:12",
+                "link": "https://www.youtube.com/watch?v=QIuZP_DTjv8&t=10332s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240727",
+                "time": "01:44:31",
+                "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=6271s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240127",
+                "time": "03:16:00",
+                "link": "https://www.youtube.com/watch?v=kw8Ia8qEJ74&t=11760s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "渡月橋 ～君 想ふ～",
+        "artist": "倉木麻衣",
+        "source": "名探偵コナン から紅の恋歌(ラブレター)",
+        "is_copyright": false,
+        "az": "と",
+        "dates": [
+            {
+                "date": "20250419",
+                "time": "06:18:22",
+                "link": "https://www.youtube.com/watch?v=r9gjTxemMes&t=22702s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240106",
+                "time": "02:19:38",
+                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=8378s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240601",
+                "time": "04:33:36",
+                "link": "https://www.youtube.com/watch?v=SzWbDrjyE6A&t=16416s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "ハルウタ",
+        "artist": "いきものがかり",
+        "source": "名探偵コナン 11人目のストライカー",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250419",
+                "time": "06:26:22",
+                "link": "https://www.youtube.com/watch?v=r9gjTxemMes&t=23182s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240601",
+                "time": "04:05:23",
+                "link": "https://www.youtube.com/watch?v=SzWbDrjyE6A&t=14723s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240413",
+                "time": "03:31:49",
+                "link": "https://www.youtube.com/watch?v=pdTvRavUxVQ&t=12709s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Time after time ～花舞う街で～",
+        "artist": "倉木麻衣",
+        "source": "名探偵コナン 迷宮の十字路(クロスロード)",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250419",
+                "time": "06:38:14",
+                "link": "https://www.youtube.com/watch?v=r9gjTxemMes&t=23894s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240106",
+                "time": "02:27:20",
+                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=8840s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240601",
+                "time": "00:20:28",
+                "link": "https://www.youtube.com/watch?v=SzWbDrjyE6A&t=1228s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "キミがいれば",
+        "artist": "伊織",
+        "source": "名探偵コナン 時計じかけの摩天楼",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250419",
+                "time": "06:46:52",
+                "link": "https://www.youtube.com/watch?v=r9gjTxemMes&t=24412s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240608",
+                "time": "05:58:35",
+                "link": "https://www.youtube.com/watch?v=UoMwNx3aklM&t=21515s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240601",
+                "time": "00:13:17",
+                "link": "https://www.youtube.com/watch?v=NhN4ZUXZtd4&t=797s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20231202",
+                "time": "00:42:49",
+                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=2569s",
+                "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "怪獣",
+        "artist": "サカナクション",
+        "source": "チ。 ―地球の運動について―",
+        "is_copyright": false,
+        "az": "か",
+        "dates": [
+            {
+                "date": "20250419",
+                "time": "06:57:07",
+                "link": "https://www.youtube.com/watch?v=r9gjTxemMes&t=25027s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "不死鳥のフランメ",
+        "artist": "マリア(CV.日笠陽子)、風鳴翼(CV.水樹奈々)",
+        "source": "戦姫絶唱シンフォギアG",
+        "is_copyright": false,
+        "az": "ふ",
+        "dates": [
+            {
+                "date": "20250419",
+                "time": "07:21:32",
+                "link": "https://www.youtube.com/watch?v=r9gjTxemMes&t=26492s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Exterminate",
+        "artist": "水樹奈々",
+        "source": "戦姫絶唱シンフォギアGX",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250419",
+                "time": "07:27:58",
+                "link": "https://www.youtube.com/watch?v=r9gjTxemMes&t=26878s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240316",
+                "time": "01:58:17",
+                "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=7097s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -3746,23 +4199,6 @@
         ]
     },
     {
-        "song_name": "Exterminate",
-        "artist": "水樹奈々",
-        "source": "戦姫絶唱シンフォギアGX",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20240316",
-                "time": "01:58:17",
-                "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=7097s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
         "song_name": "逆光のフリューゲル",
         "artist": "風鳴翼(水樹奈々)、天羽奏(高山みなみ)",
         "source": "戦姫絶唱シンフォギア",
@@ -5347,39 +5783,6 @@
                 "time": "03:41:48",
                 "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=13308s",
                 "is_member_exclusive": true,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "残響散歌",
-        "artist": "Aimer",
-        "source": "鬼滅の刃 遊郭編",
-        "is_copyright": false,
-        "az": "ざ",
-        "dates": [
-            {
-                "date": "20240706",
-                "time": "05:16:28",
-                "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=18988s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240608",
-                "time": "01:30:19",
-                "link": "https://www.youtube.com/watch?v=UoMwNx3aklM&t=5419s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20250118",
-                "time": "02:44:42",
-                "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=9882s",
-                "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
             }
@@ -7111,39 +7514,6 @@
         ]
     },
     {
-        "song_name": "キミがいれば",
-        "artist": "伊織",
-        "source": "",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20240608",
-                "time": "05:58:35",
-                "link": "https://www.youtube.com/watch?v=UoMwNx3aklM&t=21515s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240601",
-                "time": "00:13:17",
-                "link": "https://www.youtube.com/watch?v=NhN4ZUXZtd4&t=797s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20231202",
-                "time": "00:42:49",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=2569s",
-                "is_member_exclusive": true,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
         "song_name": "Synchrogazer",
         "artist": "水樹奈々",
         "source": "戦姫絶唱シンフォギア",
@@ -7854,55 +8224,6 @@
                 "date": "20231209",
                 "time": "04:22:37",
                 "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=15757s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "おジャ魔女カーニバル!!",
-        "artist": "MAHO堂",
-        "source": "おジャ魔女どれみ",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20231209",
-                "time": "07:00:10",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=25210s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240202",
-                "time": "06:39:25",
-                "link": "https://www.youtube.com/watch?v=70E6Ns3_THo&t=23965s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240511",
-                "time": "05:57:09",
-                "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=21429s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240323",
-                "time": "01:59:10",
-                "link": "https://www.youtube.com/watch?v=fdpGIoCs6AU&t=7150s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20241123",
-                "time": "07:06:17",
-                "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=25577s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -8894,23 +9215,6 @@
         ]
     },
     {
-        "song_name": "York of love.",
-        "artist": "石橋優子",
-        "source": "アルトネリコ",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20231216",
-                "time": "03:16:48",
-                "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=11808s",
-                "is_member_exclusive": true,
-                "is_acapella": true,
-                "is_private": false
-            }
-        ]
-    },
-    {
         "song_name": "片翼の天使",
         "artist": "FF VII",
         "source": "",
@@ -9644,56 +9948,6 @@
                 "date": "20240106",
                 "time": "01:58:58",
                 "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=7138s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "渡月橋 ～君 想ふ～",
-        "artist": "倉木麻衣",
-        "source": "名探偵コナン",
-        "is_copyright": false,
-        "az": "と",
-        "dates": [
-            {
-                "date": "20240106",
-                "time": "02:19:38",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=8378s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240601",
-                "time": "04:33:36",
-                "link": "https://www.youtube.com/watch?v=SzWbDrjyE6A&t=16416s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "Time after time ～花舞う街で～",
-        "artist": "倉木麻衣",
-        "source": "名探偵コナン",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20240106",
-                "time": "02:27:20",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=8840s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240601",
-                "time": "00:20:28",
-                "link": "https://www.youtube.com/watch?v=SzWbDrjyE6A&t=1228s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -11479,23 +11733,6 @@
         ]
     },
     {
-        "song_name": "Plazma",
-        "artist": "米津玄師",
-        "source": "機動戦士Gundam GQuuuuuuX",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250201",
-                "time": "02:28:25",
-                "link": "https://www.youtube.com/watch?v=xqq8-ChkFFk&t=8905s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
         "song_name": "Same Blue",
         "artist": "Official髭男dism",
         "source": "アオのハコ",
@@ -11506,79 +11743,6 @@
                 "date": "20250201",
                 "time": "02:57:22",
                 "link": "https://www.youtube.com/watch?v=xqq8-ChkFFk&t=10642s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "夢は終わらない 〜こぼれ落ちる時の雫〜",
-        "artist": "よーみ",
-        "source": "Tales of Phantasia",
-        "is_copyright": false,
-        "az": "ゆ",
-        "dates": [
-            {
-                "date": "20250201",
-                "time": "03:17:46",
-                "link": "https://www.youtube.com/watch?v=xqq8-ChkFFk&t=11866s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20241019",
-                "time": "03:00:58",
-                "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=10858s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240518",
-                "time": "00:49:32",
-                "link": "https://www.youtube.com/watch?v=0mO1WLnuFYM&t=2972s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20250301",
-                "time": "07:46:26",
-                "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=27986s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20231202",
-                "time": "01:54:32",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=6872s",
-                "is_member_exclusive": true,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240406",
-                "time": "02:52:12",
-                "link": "https://www.youtube.com/watch?v=QIuZP_DTjv8&t=10332s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240727",
-                "time": "01:44:31",
-                "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=6271s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240127",
-                "time": "03:16:00",
-                "link": "https://www.youtube.com/watch?v=kw8Ia8qEJ74&t=11760s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -13318,31 +13482,6 @@
                 "date": "20240601",
                 "time": "03:58:24",
                 "link": "https://www.youtube.com/watch?v=SzWbDrjyE6A&t=14304s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "ハルウタ",
-        "artist": "いきものがかり",
-        "source": "名探偵コナン 11人目のストライカー",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20240601",
-                "time": "04:05:23",
-                "link": "https://www.youtube.com/watch?v=SzWbDrjyE6A&t=14723s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240413",
-                "time": "03:31:49",
-                "link": "https://www.youtube.com/watch?v=pdTvRavUxVQ&t=12709s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
