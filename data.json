@@ -7040,6 +7040,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20250426",
+                "time": "00:27:25",
+                "link": "https://www.youtube.com/watch?v=Vcp-F0ELja0&t=1645s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -7054,6 +7062,14 @@
                 "date": "20240413",
                 "time": "03:26:38",
                 "link": "https://www.youtube.com/watch?v=pdTvRavUxVQ&t=12398s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250426",
+                "time": "00:37:32",
+                "link": "https://www.youtube.com/watch?v=Vcp-F0ELja0&t=2252s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -7207,6 +7223,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20250426",
+                "time": "03:38:47",
+                "link": "https://www.youtube.com/watch?v=Vcp-F0ELja0&t=13127s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -7229,6 +7253,14 @@
                 "date": "20240209",
                 "time": "02:48:42",
                 "link": "https://www.youtube.com/watch?v=kMAS4-EXsps&t=10122s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250426",
+                "time": "03:33:09",
+                "link": "https://www.youtube.com/watch?v=Vcp-F0ELja0&t=12789s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -8392,6 +8424,14 @@
                 "date": "20250201",
                 "time": "04:12:13",
                 "link": "https://www.youtube.com/watch?v=xqq8-ChkFFk&t=15133s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250426",
+                "time": "03:02:43",
+                "link": "https://www.youtube.com/watch?v=Vcp-F0ELja0&t=10963s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -15063,6 +15103,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20250426",
+                "time": "01:47:41",
+                "link": "https://www.youtube.com/watch?v=Vcp-F0ELja0&t=6461s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -19551,6 +19599,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20250426",
+                "time": "03:07:53",
+                "link": "https://www.youtube.com/watch?v=Vcp-F0ELja0&t=11273s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -20512,6 +20568,48 @@
         ]
     },
     {
+        "song_name": "凛として咲く花の如く",
+        "artist": "紅色リトマス",
+        "source": "pop'n music 15 ADVENTURE",
+        "is_copyright": false,
+        "az": "り",
+        "dates": [
+            {
+                "date": "20250426",
+                "time": "01:17:25",
+                "link": "https://www.youtube.com/watch?v=Vcp-F0ELja0&t=4645s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240106",
+                "time": "02:39:52",
+                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=9592s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "ゼッタイ歌姫宣言ッ！",
+        "artist": "オルケリア",
+        "source": "プリンセッション・オーケストラ",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250426",
+                "time": "03:18:14",
+                "link": "https://www.youtube.com/watch?v=Vcp-F0ELja0&t=11894s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
         "song_name": "メロウ",
         "artist": "須田景凪",
         "source": "スキップとローファー",
@@ -21252,23 +21350,6 @@
                 "date": "20240106",
                 "time": "01:58:58",
                 "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=7138s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "凛として咲く花の如く",
-        "artist": "紅色リトマス",
-        "source": "",
-        "is_copyright": false,
-        "az": "り",
-        "dates": [
-            {
-                "date": "20240106",
-                "time": "02:39:52",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=9592s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
