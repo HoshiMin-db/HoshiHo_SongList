@@ -75,45 +75,6 @@ function isValidDateFormat(dateStr) {
     );
 }
 
-// 新增一個函數來判斷字符類型
-function getCharacterType(text) {
-    if (!text) return 'other';
-    
-    // 移除開頭空白並取第一個字符
-    const firstChar = text.trim().charAt(0);
-    if (!firstChar) return 'other';
-    
-    // 判斷符號 (包含特殊符號如〜、→、∞等)
-    if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>/?～！＠＃＄％＾＆＊（）＿＋－＝［］｛｝；＇："＼｜，．＜＞／？〜∞→←↑↓]/.test(firstChar)) {
-        return 'symbol';
-    }
-    
-    // 判斷英文
-    if (/[a-zA-Z]/.test(firstChar)) {
-        return 'english';
-    }
-    
-    // 判斷數字
-    if (/[0-9０-９]/.test(firstChar)) {
-        return 'number';
-    }
-    
-    // 假設其他都是日文（包含假名和漢字）
-    return 'japanese';
-}
-
-// 獲取排序權重
-function getSortWeight(type) {
-    const weights = {
-        'symbol': 0,
-        'number': 1,
-        'english': 2,
-        'japanese': 3,
-        'other': 4
-    };
-    return weights[type] ?? weights.other;
-}
-
 // 提取生成日期儲存格的公共邏輯
 function createDateCell(row, newRow) {
     const dateCell = newRow.insertCell();
@@ -180,10 +141,21 @@ function createTableRow(item, numDates) {
     newRow.insertCell().textContent = item.artist;
     newRow.insertCell().textContent = item.source || "";
 
+    // 按日期排序：從新到舊
+    const sortedDates = item.dates.sort((a, b) => {
+        const dateA = new Date(
+            `${a.date.substring(0, 4)}-${a.date.substring(4, 6)}-${a.date.substring(6, 8)}T${a.time}`
+        );
+        const dateB = new Date(
+            `${b.date.substring(0, 4)}-${b.date.substring(4, 6)}-${b.date.substring(6, 8)}T${b.time}`
+        );
+        return dateB - dateA; // 從新到舊排序
+    });
+
     // 生成日期欄位
-    const dateCount = Math.min(numDates, item.dates.length);
+    const dateCount = Math.min(numDates, sortedDates.length);
     for (let i = 0; i < dateCount; i++) {
-        createDateCell(item.dates[i], newRow);
+        createDateCell(sortedDates[i], newRow);
     }
 
     // 補充空白儲存格
@@ -192,7 +164,7 @@ function createTableRow(item, numDates) {
     }
 
     // 添加更多按鈕
-    if (item.dates.length > numDates) {
+    if (sortedDates.length > numDates) {
         const moreButtonCell = newRow.insertCell();
         const moreButton = document.createElement("button");
         moreButton.textContent = "...";
@@ -206,7 +178,7 @@ function createTableRow(item, numDates) {
                 toRemove.forEach((el) => el.remove());
                 moreButton.setAttribute("data-expanded", "false");
             } else {
-                item.dates.slice(numDates).forEach((row) => {
+                sortedDates.slice(numDates).forEach((row) => {
                     const dateCell = createDateCell(row, newRow); // 使用公共邏輯
                     dateCell.classList.add("date-cell", "extra-date");
                 });
@@ -219,69 +191,6 @@ function createTableRow(item, numDates) {
     }
 
     return newRow;
-}
-
-// 檢查 URL 是否為有效的 YouTube 網域
-function isValidYouTubeURL(url) {
-    try {
-        const parsedURL = new URL(url);
-        // 允許的 YouTube 網域清單
-        const allowedDomains = ["www.youtube.com", "youtu.be"];
-        return allowedDomains.includes(parsedURL.hostname);
-    } catch (e) {
-        return false;
-    }
-}
-
-// 顯示數據並排序
-function displayData(data, numDates = 3) {
-    const songTableBody = document
-        .getElementById("songTable")
-        .getElementsByTagName("tbody")[0];
-
-    songTableBody.innerHTML = "";
-
-    // 分組數據：根據歌曲名稱和歌手進行分組（無視大小寫和符號）
-    const groupedData = data.reduce((acc, row) => {
-        const key = `${normalizeString(row.song_name)}-${normalizeString(
-            row.artist
-        )}`;
-        if (!acc[key]) {
-            acc[key] = { ...row, dates: [] };
-        }
-        acc[key].dates.push(...row.dates);
-        return acc;
-    }, {});
-
-    // 將分組後的數據轉換為數組並排序
-    const sortedData = Object.values(groupedData).sort((a, b) => {
-        const aType = getCharacterType(a.song_name);
-        const bType = getCharacterType(b.song_name);
-        const weightDiff = getSortWeight(aType) - getSortWeight(bType);
-
-        if (weightDiff !== 0) return weightDiff;
-
-        // 英文字首按英文順序排序
-        if (aType === "english" && bType === "english") {
-            return a.song_name.localeCompare(b.song_name, "en");
-        }
-
-        // 日文字首先按 A-Z，再按日文順序
-        if (aType === "japanese" && bType === "japanese") {
-            const aKey = a.az || a.song_name.charAt(0).toUpperCase();
-            const bKey = b.az || b.song_name.charAt(0).toUpperCase();
-            return aKey.localeCompare(bKey, "ja-JP") || a.song_name.localeCompare(b.song_name, "ja-JP");
-        }
-
-        // 其他類型按原始名稱排序
-        return a.song_name.localeCompare(b.song_name);
-    });
-
-    // 渲染表格
-    sortedData.forEach((item) => {
-        const row = createTableRow(item, numDates);
-        songTableBody.appendChild(row);
-    });
 }
 
 // 初始化數據加載和搜索功能
@@ -298,6 +207,32 @@ document.addEventListener("DOMContentLoaded", function () {
         } catch (error) {
             console.error("Error fetching data:", error);
         }
+    }
+
+    function displayData(data, numDates = 3) {
+        const songTableBody = document
+            .getElementById("songTable")
+            .getElementsByTagName("tbody")[0];
+
+        songTableBody.innerHTML = "";
+
+        // 分組數據：根據歌曲名稱和歌手進行分組（無視大小寫和符號）
+        const groupedData = data.reduce((acc, row) => {
+            const key = `${normalizeString(row.song_name)}-${normalizeString(
+                row.artist
+            )}`;
+            if (!acc[key]) {
+                acc[key] = { ...row, dates: [] };
+            }
+            acc[key].dates.push(...row.dates);
+            return acc;
+        }, {});
+
+        // 渲染表格
+        Object.values(groupedData).forEach((item) => {
+            const row = createTableRow(item, numDates);
+            songTableBody.appendChild(row);
+        });
     }
 
     if (searchInput) {
