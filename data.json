@@ -14380,7 +14380,7 @@
     },
     {
         "song_name": "不死鳥のフランメ",
-        "artist": "マリア(CV.日笠陽子)、風鳴翼(CV.水樹奈々)",
+        "artist": "マリア(日笠陽子)、風鳴翼(水樹奈々)",
         "source": "戦姫絶唱シンフォギアG",
         "is_copyright": false,
         "az": "ふ",
@@ -14389,6 +14389,14 @@
                 "date": "20250419",
                 "time": "07:21:32",
                 "link": "https://www.youtube.com/watch?v=r9gjTxemMes&t=26492s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240713",
+                "time": "04:18:15",
+                "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=15495s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -21113,23 +21121,6 @@
                 "date": "20240713",
                 "time": "03:59:57",
                 "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=14397s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "不死鳥のフランメ",
-        "artist": "マリア(日笠陽子)、風鳴翼(水樹奈々)",
-        "source": "戦姫絶唱シンフォギアG",
-        "is_copyright": false,
-        "az": "ふ",
-        "dates": [
-            {
-                "date": "20240713",
-                "time": "04:18:15",
-                "link": "https://www.youtube.com/watch?v=d-gNtzWudk0&t=15495s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
