@@ -6289,7 +6289,7 @@
         ]
     },
     {
-        "song_name": "Breeze  /",
+        "song_name": "Breeze",
         "artist": "林原めぐみ",
         "source": "スレイヤーズTRY",
         "is_copyright": false,
@@ -6299,6 +6299,22 @@
                 "date": "20250301",
                 "time": "06:06:36",
                 "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=21996s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20231125",
+                "time": "00:50:40",
+                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=3040s",
+                "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240202",
+                "time": "00:34:18",
+                "link": "https://www.youtube.com/watch?v=70E6Ns3_THo&t=2058s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -7909,31 +7925,6 @@
                 "date": "20241123",
                 "time": "01:16:45",
                 "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=4605s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "Breeze",
-        "artist": "林原めぐみ",
-        "source": "スレイヤーズ",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20231125",
-                "time": "00:50:40",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=3040s",
-                "is_member_exclusive": true,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240202",
-                "time": "00:34:18",
-                "link": "https://www.youtube.com/watch?v=70E6Ns3_THo&t=2058s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
