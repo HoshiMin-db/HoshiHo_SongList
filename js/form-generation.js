@@ -70,6 +70,12 @@ function isValidDateFormat(dateStr) {
     );
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    const searchInput = document.getElementById('searchInput');
+    const songTableBody = document.getElementById('songTable').getElementsByTagName('tbody')[0];
+    const songCountElement = document.getElementById('songCount');
+    let allData = [];
+
 // 新增一個函數來判斷字符類型
 function getCharacterType(text) {
     if (!text) return "other";
@@ -267,6 +273,9 @@ document.addEventListener("DOMContentLoaded", function () {
             const data = await response.json();
             allData = data;
             displayData(allData);
+            if (songCountElement) {
+                songCountElement.textContent = allData.length;
+            }
         } catch (error) {
             console.error("Error fetching data:", error);
         }
