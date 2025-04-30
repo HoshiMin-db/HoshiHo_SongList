@@ -60,11 +60,7 @@ function onLanguageChange(lang) {
     setLanguage(lang);
 }
 
+// 初始化語言 (延後到 Sidebar 加載後)
 document.addEventListener('DOMContentLoaded', function() {
     initLanguage();
-
-    document.getElementById('languageSelect').addEventListener('change', function(event) {
-        const language = event.target.value;
-        onLanguageChange(language);
-    });
 });
