@@ -14,7 +14,7 @@ const translations = {
     },
     'en': {
         'title': '🌟 HoshiHo Song List 💐',
-        'totalSongs': 'Total Songs:',
+        'totalSongs': 'Total Songs：',
         'searchPlaceholder': 'Search song name, artist, source, or date (DDMMYYYY)...',
         'closeButton': 'Close',
         'az': 'A-Z',
