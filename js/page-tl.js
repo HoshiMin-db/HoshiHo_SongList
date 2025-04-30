@@ -38,11 +38,17 @@ const translations = {
 
 function setLanguage(lang) {
     // 更新 tab 標題
-    document.getElementById('title').innerText = translations[lang]['title']; // 更新 <title>
+    document.getElementById('title').innerText = translations[lang]['title']; 
     
-    // 更新頁面內的標題
-    document.getElementById('pageTitle').innerText = translations[lang]['title']; // 更新 <h1>
+    // 更新網頁內的標題
+    document.getElementById('pageTitle').innerText = translations[lang]['title'];
 
+    const totalSongsElement = document.getElementById('totalSongs');
+    if (totalSongsElement) {
+        // 只更新文字部分，保留內部的 <span id="songCount">
+        totalSongsElement.firstChild.nodeValue = translations[lang]['totalSongs'];
+    }
+    
     // 更新其他翻譯內容
     document.getElementById('totalSongs').innerText = translations[lang]['totalSongs'];
     document.getElementById('searchInput').placeholder = translations[lang]['searchPlaceholder'];
