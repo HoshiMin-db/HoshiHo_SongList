@@ -37,14 +37,17 @@ const translations = {
 };
 
 function setLanguage(lang) {
-    document.getElementById('title').innerText = translations[lang]['title'];
-    
-    const totalSongsElement = document.getElementById('totalSongs');
-    if (totalSongsElement) {
-        // 只更新文字部分，保留內部的 <span id="songCount">
-        totalSongsElement.firstChild.nodeValue = translations[lang]['totalSongs'];
+    // 更新 tab 標題
+    document.title = translations[lang]['title'];
+
+    // 更新網頁內的標題
+    const h1TitleElement = document.getElementById('title'); // 確保選中的是 <h1 id="title">
+    if (h1TitleElement) {
+        h1TitleElement.innerText = translations[lang]['title'];
     }
 
+    // 更新其他翻譯內容
+    document.getElementById('totalSongs').innerText = translations[lang]['totalSongs'];
     document.getElementById('searchInput').placeholder = translations[lang]['searchPlaceholder'];
     document.querySelector('.close-btn').innerText = translations[lang]['closeButton'];
     document.querySelector('th.az').innerText = translations[lang]['az'];
