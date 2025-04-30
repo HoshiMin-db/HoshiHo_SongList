@@ -50,7 +50,6 @@ function setLanguage(lang) {
     }
     
     // 更新其他翻譯內容
-    document.getElementById('totalSongs').innerText = translations[lang]['totalSongs'];
     document.getElementById('searchInput').placeholder = translations[lang]['searchPlaceholder'];
     document.querySelector('.close-btn').innerText = translations[lang]['closeButton'];
     document.querySelector('th.az').innerText = translations[lang]['az'];
