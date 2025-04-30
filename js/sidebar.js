@@ -12,6 +12,13 @@ async function loadSidebar() {
             link.classList.add('active');
         }
     });
+
+    // 動態添加語言切換功能
+    const languageSelect = document.getElementById('languageSelect');
+    languageSelect.addEventListener('change', function(event) {
+        const language = event.target.value;
+        onLanguageChange(language); // 調用 page-tl.js 中的函數
+    });
 }
 
 // 切換sidebar
