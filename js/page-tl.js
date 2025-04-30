@@ -42,7 +42,6 @@ function setLanguage(lang) {
     
     // 更新頁面內的標題
     document.getElementById('pageTitle').innerText = translations[lang]['title']; // 更新 <h1>
-}
 
     // 更新其他翻譯內容
     document.getElementById('totalSongs').innerText = translations[lang]['totalSongs'];
