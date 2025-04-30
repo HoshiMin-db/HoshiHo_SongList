@@ -38,13 +38,11 @@ const translations = {
 
 function setLanguage(lang) {
     // 更新 tab 標題
-    document.title = translations[lang]['title'];
-
-    // 更新網頁內的標題
-    const h1TitleElement = document.getElementById('title'); // 確保選中的是 <h1 id="title">
-    if (h1TitleElement) {
-        h1TitleElement.innerText = translations[lang]['title'];
-    }
+    document.getElementById('title').innerText = translations[lang]['title']; // 更新 <title>
+    
+    // 更新頁面內的標題
+    document.getElementById('pageTitle').innerText = translations[lang]['title']; // 更新 <h1>
+}
 
     // 更新其他翻譯內容
     document.getElementById('totalSongs').innerText = translations[lang]['totalSongs'];
