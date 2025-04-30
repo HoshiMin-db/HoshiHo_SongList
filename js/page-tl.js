@@ -36,10 +36,15 @@ const translations = {
     }
 };
 
-// 設置語言
 function setLanguage(lang) {
     document.getElementById('title').innerText = translations[lang]['title'];
-    document.getElementById('totalSongs').innerText = translations[lang]['totalSongs'];
+    
+    const totalSongsElement = document.getElementById('totalSongs');
+    if (totalSongsElement) {
+        // 只更新文字部分，保留內部的 <span id="songCount">
+        totalSongsElement.firstChild.nodeValue = translations[lang]['totalSongs'];
+    }
+
     document.getElementById('searchInput').placeholder = translations[lang]['searchPlaceholder'];
     document.querySelector('.close-btn').innerText = translations[lang]['closeButton'];
     document.querySelector('th.az').innerText = translations[lang]['az'];
