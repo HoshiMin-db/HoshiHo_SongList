@@ -70,6 +70,40 @@ function isValidDateFormat(dateStr) {
     );
 }
 
+// 新增一個函數來判斷字符類型
+function getCharacterType(text) {
+    if (!text) return "other";
+
+    const firstChar = text.trim().charAt(0);
+    if (!firstChar) return "other";
+
+    if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>/?～！＠＃＄％＾＆＊（）＿＋－＝［］｛｝；＇："＼｜，．＜＞／？〜∞→←↑↓]/.test(firstChar)) {
+        return "symbol";
+    }
+
+    if (/[a-zA-Z]/.test(firstChar)) {
+        return "english";
+    }
+
+    if (/[0-9０-９]/.test(firstChar)) {
+        return "number";
+    }
+
+    return "japanese";
+}
+
+// 獲取排序權重
+function getSortWeight(type) {
+    const weights = {
+        symbol: 0,
+        number: 1,
+        english: 2,
+        japanese: 3,
+        other: 4,
+    };
+    return weights[type] ?? weights.other;
+}
+
 // 創建日期儲存格
 function createDateCell(row, newRow) {
     const dateCell = newRow.insertCell();
