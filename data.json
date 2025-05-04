@@ -7556,14 +7556,6 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
-            },
-            {
-                "date": "20240420",
-                "time": "04:45:25",
-                "link": "https://www.youtube.com/watch?v=xjSFVGe8eAo&t=17125s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
             }
         ]
     },
@@ -17202,6 +17194,31 @@
         ]
     },
     {
+        "song_name": "さめないゆめ",
+        "artist": "大和田りつこ",
+        "source": "赤毛のアン",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20240420",
+                "time": "04:45:25",
+                "link": "https://www.youtube.com/watch?v=xjSFVGe8eAo&t=17125s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20231209",
+                "time": "03:22:28",
+                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=12148s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
         "song_name": "Re:TrymenT",
         "artist": "紫咲ほたる",
         "source": "Re:LieF〜親愛なるあなたへ〜",
@@ -17471,23 +17488,6 @@
                 "date": "20240615",
                 "time": "09:19:50",
                 "link": "https://www.youtube.com/watch?v=DjJmVyIXfH8&t=33590s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "さめないゆめ",
-        "artist": "大和田りつこ",
-        "source": "赤毛のアン",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20231209",
-                "time": "03:22:28",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=12148s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
