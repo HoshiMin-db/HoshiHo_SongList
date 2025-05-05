@@ -151,7 +151,9 @@ def process_timeline(file_path, date_str, member_exclusive_dates, private_dates,
                 elif date >= new_rule_date:
                     # 新規則解析
                     line = re.sub(r'^\d+\.\s+', '', line)
-                    parts = line.strip().split('\u3000', 1)
+                    
+                    # 修改這部分，支持 4 個全形空格作為分隔符
+                    parts = re.split(r'\u3000{4}|\u3000', line.strip(), maxsplit=1)
                     if len(parts) != 2:
                         print(f"Warning: Skipping line due to incorrect format: '{line.strip()}'")
                         continue
@@ -161,7 +163,7 @@ def process_timeline(file_path, date_str, member_exclusive_dates, private_dates,
                     artist = ""
                     source = ""
                     
-                    # 檢查是否有『』，如果有則視為source
+                    # 檢查是否有『』，如果有則視為 source
                     if '『' in song_info and '』' in song_info:
                         song_name = song_info.split('『')[0].split(' / ')[0].strip()
                         source_artist = song_info.split('『')[1].split('』')
