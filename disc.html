@@ -7,16 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main-content" id="mainContent">
-        <div class="header">
-            <h1>🌟 HoshiHo Discography 💐</h1>
-        </div>
-        <div id="discography-container" class="disc-container">
-            <!-- Album cards will be dynamically generated here by disc-generation.js -->
-        </div>
-        <div id="floatingPlayerContainer" class="floating-player-container">
-            <iframe id="floatingPlayer" allowfullscreen></iframe>
-            <button id="closeFloatingPlayerButton" class="close-btn" onclick="closeFloatingPlayer()">✕</button>
+    <div id="app-container">
+        <div id="sidebar-container"></div>  <!-- 添加這行 -->
+        <div class="main-content" id="mainContent">
+            <div class="header">
+                <h1>🌟 HoshiHo Discography 💐</h1>
+            </div>
+            <div id="discography-container" class="disc-container">
+                <!-- Album cards will be dynamically generated here by disc-generation.js -->
+            </div>
+            <div id="floatingPlayerContainer" class="floating-player-container">
+                <iframe id="floatingPlayer" allowfullscreen></iframe>
+                <button id="closeFloatingPlayerButton" class="close-btn" onclick="closeFloatingPlayer()">✕</button>
+            </div>
         </div>
     </div>
 
