@@ -3,9 +3,6 @@ body {
     font-family: 'Microsoft JhengHei', '微軟正黑體', sans-serif;
     max-width: 1200px;
     height: 100vh;
-    overflow: hidden; /* 防止整體頁面滾動 */
-    display: flex;
-    flex-direction: column;
     margin: 0 auto;
     padding: 20px;
     background-color: #f5f5f5;
@@ -39,12 +36,25 @@ body {
     font-size: 16px;
 }
 
+#app-container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+#sidebar-container {
+    flex-shrink: 0; /* 防止側邊欄被壓縮 */
+}
+
 .main-content {
     flex: 1;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    height: 100%; /* 添加這行確保main-content佔據全部可用高度 */
+    height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 table {
@@ -230,8 +240,8 @@ table thead th {
     overflow-x: auto;
     position: relative;
     width: 100%;
-    height: calc(100vh - 150px); /* 減少減去的高度，從200px改為150px */
-    flex: 1; /* 添加這行，讓容器自動填充剩餘空間 */
+    height: calc(100vh - 150px);
+    flex: 1;
 }
 
 .virtual-scroll-content {
