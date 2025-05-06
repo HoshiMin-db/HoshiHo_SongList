@@ -346,6 +346,14 @@
                 "is_private": false
             },
             {
+                "date": "20250503",
+                "time": "02:51:00",
+                "link": "https://www.youtube.com/watch?v=bTX9N8eKSRA&t=10260s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20231216",
                 "time": "04:36:20",
                 "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=16580s",
@@ -387,6 +395,14 @@
                 "is_private": false
             },
             {
+                "date": "20250503",
+                "time": "02:43:12",
+                "link": "https://www.youtube.com/watch?v=bTX9N8eKSRA&t=9792s",
+                "is_member_exclusive": false,
+                "is_acapella": true,
+                "is_private": false
+            },
+            {
                 "date": "20241228",
                 "time": "01:57:08",
                 "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=7028s",
@@ -407,6 +423,14 @@
                 "date": "20240202",
                 "time": "03:24:02",
                 "link": "https://www.youtube.com/watch?v=70E6Ns3_THo&t=12242s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250503",
+                "time": "02:10:55",
+                "link": "https://www.youtube.com/watch?v=bTX9N8eKSRA&t=7855s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -9926,6 +9950,14 @@
                 "is_private": false
             },
             {
+                "date": "20250503",
+                "time": "00:34:19",
+                "link": "https://www.youtube.com/watch?v=bTX9N8eKSRA&t=2059s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20240420",
                 "time": "04:41:27",
                 "link": "https://www.youtube.com/watch?v=xjSFVGe8eAo&t=16887s",
@@ -9954,6 +9986,14 @@
                 "date": "20250308",
                 "time": "02:45:28",
                 "link": "https://www.youtube.com/watch?v=OQO0FzogBp4&t=9928s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250503",
+                "time": "00:36:57",
+                "link": "https://www.youtube.com/watch?v=bTX9N8eKSRA&t=2217s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -11702,6 +11742,31 @@
                 "date": "20240518",
                 "time": "03:52:43",
                 "link": "https://www.youtube.com/watch?v=0mO1WLnuFYM&t=13963s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "叫べ",
+        "artist": "angela",
+        "source": "蒼穹のファフナー THE BEYOND",
+        "is_copyright": false,
+        "az": "さ",
+        "dates": [
+            {
+                "date": "20250503",
+                "time": "02:28:53",
+                "link": "https://www.youtube.com/watch?v=bTX9N8eKSRA&t=8933s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20241228",
+                "time": "01:48:30",
+                "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=6510s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -15039,23 +15104,6 @@
                 "date": "20240908",
                 "time": "00:14:25",
                 "link": "https://www.youtube.com/watch?v=q0G8Q_5OAVw&t=865s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "叫べ",
-        "artist": "angela",
-        "source": "蒼穹のファフナー THE BEYOND",
-        "is_copyright": false,
-        "az": "さ",
-        "dates": [
-            {
-                "date": "20241228",
-                "time": "01:48:30",
-                "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=6510s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
