@@ -72,7 +72,6 @@ async function loadDiscData() {
 // 創建專輯卡片的HTML
 function createAlbumCard(album) {
     const tracksList = album.tracks.map((track, index) => {
-        console.log(`Track ${index + 1} videoId: ${track.videoId}`); // 調試用
         return `
             <li class="track-item">
                 <span class="track-number">${index + 1}</span>
