@@ -2,7 +2,8 @@
 async function loadSidebar() {
     const response = await fetch('sidebar.html');
     const text = await response.text();
-    document.body.insertAdjacentHTML('afterbegin', text);
+    // 改變插入位置
+    document.getElementById('sidebar-container').innerHTML = text;
     
     // 根據當前頁面設置活動項目
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
@@ -17,7 +18,7 @@ async function loadSidebar() {
     const languageSelect = document.getElementById('languageSelect');
     languageSelect.addEventListener('change', function(event) {
         const language = event.target.value;
-        onLanguageChange(language); // 調用 page-tl.js 中的函數
+        onLanguageChange(language);
     });
 }
 
