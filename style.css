@@ -44,6 +44,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    height: 100%; /* 添加這行確保main-content佔據全部可用高度 */
 }
 
 table {
@@ -229,7 +230,8 @@ table thead th {
     overflow-x: auto;
     position: relative;
     width: 100%;
-    height: calc(100vh - 200px); /* 使用視窗高度減去頂部區域高度 */
+    height: calc(100vh - 150px); /* 減少減去的高度，從200px改為150px */
+    flex: 1; /* 添加這行，讓容器自動填充剩餘空間 */
 }
 
 .virtual-scroll-content {
