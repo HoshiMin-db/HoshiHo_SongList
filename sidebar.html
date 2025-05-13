@@ -1,3 +1,45 @@
+<style>
+/* 語言選擇器樣式 */
+.language-switcher {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #dee2e6;
+}
+
+.language-switcher select {
+    padding: 8px;
+    width: 90%;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease;
+}
+
+.language-switcher select:hover {
+    border-color: #228be6;
+}
+
+.language-switcher select:focus {
+    outline: none;
+    border-color: #1c7ed6;
+    box-shadow: 0 0 5px rgba(28, 126, 214, 0.5);
+}
+
+.main-content {
+    margin-left: 60px;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+
+.main-content.shifted {
+    margin-left: 200px;
+}
+</style>
+
 <div class="sidebar" id="sidebar">
     <div class="hamburger" onclick="toggleSidebar()">☰</div>
     <ul class="sidebar-nav">
