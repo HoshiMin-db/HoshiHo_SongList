@@ -3216,6 +3216,14 @@
                 "is_private": false
             },
             {
+                "date": "20250506",
+                "time": "01:06:53",
+                "link": "https://www.youtube.com/watch?v=CpX--Rfi6Mo&t=4013s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20240727",
                 "time": "02:51:33",
                 "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=10293s",
@@ -8052,6 +8060,14 @@
                 "date": "20250322",
                 "time": "03:58:57",
                 "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=14337s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250506",
+                "time": "00:13:07",
+                "link": "https://www.youtube.com/watch?v=CpX--Rfi6Mo&t=787s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -13017,6 +13033,14 @@
                 "is_private": false
             },
             {
+                "date": "20250506",
+                "time": "00:36:42",
+                "link": "https://www.youtube.com/watch?v=CpX--Rfi6Mo&t=2202s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20240825",
                 "time": "00:37:26",
                 "link": "https://www.youtube.com/watch?v=d0jBqFCADCU&t=2246s",
@@ -14890,6 +14914,91 @@
                 "time": "02:54:47",
                 "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=10487s",
                 "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "鏡合わせの翡翠",
+        "artist": "love solfege feat. HoshiHo",
+        "source": "スト・ナ・クヱタ",
+        "is_copyright": false,
+        "az": "か",
+        "dates": [
+            {
+                "date": "20250506",
+                "time": "00:46:07",
+                "link": "https://www.youtube.com/watch?v=CpX--Rfi6Mo&t=2767s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "ラ♪ラ♪ラ♪スイートプリキュア♪",
+        "artist": "工藤真由",
+        "source": "スイートプリキュア♪",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250506",
+                "time": "01:19:05",
+                "link": "https://www.youtube.com/watch?v=CpX--Rfi6Mo&t=4745s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "ワンダフル↑パワフル↑ミュージック!!",
+        "artist": "池田彩",
+        "source": "スイートプリキュア♪",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250506",
+                "time": "01:26:01",
+                "link": "https://www.youtube.com/watch?v=CpX--Rfi6Mo&t=5161s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Alright! ハートキャッチプリキュア!",
+        "artist": "工藤真由",
+        "source": "ハートキャッチプリキュア!",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250506",
+                "time": "01:38:53",
+                "link": "https://www.youtube.com/watch?v=CpX--Rfi6Mo&t=5933s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Tomorrow Song 〜あしたのうた〜",
+        "artist": "工藤真由",
+        "source": "ハートキャッチプリキュア!",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250506",
+                "time": "01:45:59",
+                "link": "https://www.youtube.com/watch?v=CpX--Rfi6Mo&t=6359s",
+                "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
             }
