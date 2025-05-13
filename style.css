@@ -256,6 +256,8 @@ table thead th {
     flex-wrap: wrap;
     gap: 30px;
     padding: 20px;
+    justify-content: center; /* 讓卡片居中對齊 */
+    overflow-x: auto; /* 如果內容超出，啟用水平滾動條 */
 }
 
 .disc-card {
@@ -264,8 +266,9 @@ table thead th {
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
-    width: 300px; /* 固定寬度，所有卡片寬度一致 */
-    flex: 1 0 300px; /* 讓卡片在容器中橫向排列 */
+    width: 300px; /* 固定寬度 */
+    flex: 0 1 300px; /* 更加靈活的寬度設置 */
+    margin: 10px; /* 添加外邊距，避免卡片緊貼 */
 }
 
 .disc-card:hover {
@@ -425,44 +428,4 @@ table thead th {
     width: 20px;
     text-align: center;
     margin-right: 10px;
-}
-
-/* 語言選擇器樣式 */
-.language-switcher {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-    border-top: 1px solid #dee2e6;
-}
-
-.language-switcher select {
-    padding: 8px;
-    width: 90%;
-    border: 1px solid #ced4da;
-    border-radius: 5px;
-    font-size: 1em;
-    background-color: #ffffff;
-    transition: border-color 0.3s ease;
-}
-
-.language-switcher select:hover {
-    border-color: #228be6;
-}
-
-.language-switcher select:focus {
-    outline: none;
-    border-color: #1c7ed6;
-    box-shadow: 0 0 5px rgba(28, 126, 214, 0.5);
-}
-
-.main-content {
-    margin-left: 60px;
-    padding: 20px;
-    transition: margin-left 0.3s ease;
-}
-
-.main-content.shifted {
-    margin-left: 200px;
 }
