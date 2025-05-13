@@ -2151,6 +2151,14 @@
                 "is_private": false
             },
             {
+                "date": "20250507",
+                "time": "00:44:18",
+                "link": "https://www.youtube.com/watch?v=yNcKrESU2hU&t=2658s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20231028",
                 "time": "03:25:37",
                 "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=12337s",
@@ -6729,6 +6737,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20250507",
+                "time": "00:29:53",
+                "link": "https://www.youtube.com/watch?v=yNcKrESU2hU&t=1793s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -7748,6 +7764,14 @@
                 "time": "03:30:09",
                 "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=12609s",
                 "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250507",
+                "time": "00:50:11",
+                "link": "https://www.youtube.com/watch?v=yNcKrESU2hU&t=3011s",
+                "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
             },
@@ -12557,6 +12581,14 @@
                 "is_private": false
             },
             {
+                "date": "20250507",
+                "time": "00:57:13",
+                "link": "https://www.youtube.com/watch?v=yNcKrESU2hU&t=3433s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20231028",
                 "time": "03:44:20",
                 "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=13460s",
@@ -14317,6 +14349,14 @@
                 "is_private": false
             },
             {
+                "date": "20250507",
+                "time": "01:09:49",
+                "link": "https://www.youtube.com/watch?v=yNcKrESU2hU&t=4189s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20231028",
                 "time": "03:35:06",
                 "link": "https://www.youtube.com/watch?v=amLonY7YKrs&t=12906s",
@@ -14669,6 +14709,89 @@
                 "date": "20240316",
                 "time": "00:28:17",
                 "link": "https://www.youtube.com/watch?v=QYXlOQd-6Zw&t=1697s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "NOX LUX",
+        "artist": "MYTH & ROID",
+        "source": "Re:ゼロから始める異世界生活",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250507",
+                "time": "00:14:49",
+                "link": "https://www.youtube.com/watch?v=yNcKrESU2hU&t=889s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250118",
+                "time": "00:16:13",
+                "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=973s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Reweave",
+        "artist": "鈴木このみ",
+        "source": "Re:ゼロから始める異世界生活",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250507",
+                "time": "00:22:36",
+                "link": "https://www.youtube.com/watch?v=yNcKrESU2hU&t=1356s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250118",
+                "time": "00:08:24",
+                "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=504s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "君だけの旅路",
+        "artist": "Suara",
+        "source": "うたわれるもの 散りゆく者への子守唄",
+        "is_copyright": false,
+        "az": "き",
+        "dates": [
+            {
+                "date": "20250507",
+                "time": "01:04:42",
+                "link": "https://www.youtube.com/watch?v=yNcKrESU2hU&t=3882s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240706",
+                "time": "01:25:48",
+                "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=5148s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240120",
+                "time": "04:12:08",
+                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=15128s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -18018,31 +18141,6 @@
         ]
     },
     {
-        "song_name": "君だけの旅路",
-        "artist": "Suara",
-        "source": "うたわれるもの 散りゆく者への子守唄",
-        "is_copyright": false,
-        "az": "き",
-        "dates": [
-            {
-                "date": "20240706",
-                "time": "01:25:48",
-                "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=5148s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240120",
-                "time": "04:12:08",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=15128s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
         "song_name": "夢幻",
         "artist": "水樹奈々",
         "source": "WHITE ALBUM",
@@ -20947,40 +21045,6 @@
                 "link": "https://www.youtube.com/watch?v=e1Zc6s5Uq3k&t=22322s",
                 "is_member_exclusive": false,
                 "is_acapella": true,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "Reweave",
-        "artist": "鈴木このみ",
-        "source": "Re:ゼロから始める異世界生活",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250118",
-                "time": "00:08:24",
-                "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=504s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "NOX LUX",
-        "artist": "MYTH & ROID",
-        "source": "Re:ゼロから始める異世界生活",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250118",
-                "time": "00:16:13",
-                "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=973s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
                 "is_private": false
             }
         ]
