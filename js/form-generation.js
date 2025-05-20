@@ -70,6 +70,55 @@ function isValidDateFormat(dateStr) {
     );
 }
 
+function getCharacterType(text) {
+    if (!text) return 'other';
+    
+    // 移除開頭空白並取第一個字符
+    const firstChar = text.trim().charAt(0);
+    if (!firstChar) return 'other';
+    
+    // 判斷符號 (包含特殊符號如〜、→、∞等)
+    if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>/?～！＠＃＄％＾＆＊（）＿＋－＝［］｛｝；＇："＼｜，．＜＞／？〜∞→←↑↓]/.test(firstChar)) {
+        return 'symbol';
+    }
+    
+    // 判斷英文
+    if (/[a-zA-Z]/.test(firstChar)) {
+        return 'english';
+    }
+    
+    // 判斷數字
+    if (/[0-9０-９]/.test(firstChar)) {
+        return 'number';
+    }
+    
+    // 假設其他都是日文（包含假名和漢字）
+    return 'japanese';
+}
+
+// 新增一個函數來獲取日文歌曲的排序用假名
+function getJapaneseSortKey(item) {
+    // 如果有az分類就用az，否則用第一個字符的假名讀音
+    if (item.az) {
+        return item.az;
+    }
+    // 如果沒有az，則返回原始名稱的第一個字符
+    // 這裡假設假名歌名不需要額外轉換
+    return item.song_name.charAt(0);
+}
+
+// 獲取排序權重
+function getSortWeight(type) {
+    const weights = {
+        'symbol': 0,
+        'number': 1,
+        'english': 2,
+        'japanese': 3,
+        'other': 4
+    };
+    return weights[type] ?? weights.other;
+}
+
 // 創建日期儲存格
 function createDateCell(row, newRow) {
     const dateCell = newRow.insertCell();
