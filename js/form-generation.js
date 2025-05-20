@@ -70,40 +70,6 @@ function isValidDateFormat(dateStr) {
     );
 }
 
-// 新增一個函數來判斷字符類型
-function getCharacterType(text) {
-    if (!text) return "other";
-
-    const firstChar = text.trim().charAt(0);
-    if (!firstChar) return "other";
-
-    if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>/?～！＠＃＄％＾＆＊（）＿＋－＝［］｛｝；＇："＼｜，．＜＞／？〜∞→←↑↓]/.test(firstChar)) {
-        return "symbol";
-    }
-
-    if (/[a-zA-Z]/.test(firstChar)) {
-        return "english";
-    }
-
-    if (/[0-9０-９]/.test(firstChar)) {
-        return "number";
-    }
-
-    return "japanese";
-}
-
-// 獲取排序權重
-function getSortWeight(type) {
-    const weights = {
-        symbol: 0,
-        number: 1,
-        english: 2,
-        japanese: 3,
-        other: 4,
-    };
-    return weights[type] ?? weights.other;
-}
-
 // 創建日期儲存格
 function createDateCell(row, newRow) {
     const dateCell = newRow.insertCell();
@@ -255,7 +221,7 @@ function displayData(data, numDates = 3) {
             songTableBody.appendChild(row);
         });
 
-    // 更新總曲數
+    // 更新總曲數（完整表格行數）
     const songCountElement = document.getElementById("songCount");
     if (songCountElement) {
         songCountElement.textContent = Object.keys(groupedData).length;
@@ -272,7 +238,23 @@ document.addEventListener("DOMContentLoaded", function () {
             const response = await fetch("data.json", { cache: "no-cache" });
             const data = await response.json();
             allData = data;
+
+            // 顯示完整數據
             displayData(allData);
+
+            // 更新總曲數
+            const songCountElement = document.getElementById("songCount");
+            if (songCountElement) {
+                songCountElement.textContent = Object.keys(
+                    data.reduce((acc, row) => {
+                        const key = `${normalizeString(
+                            row.song_name
+                        )}-${normalizeString(row.artist)}`;
+                        acc[key] = true;
+                        return acc;
+                    }, {})
+                ).length;
+            }
         } catch (error) {
             console.error("Error fetching data:", error);
         }
@@ -283,12 +265,28 @@ document.addEventListener("DOMContentLoaded", function () {
             "input",
             debounce(function (e) {
                 const query = normalizeString(e.target.value.toLowerCase());
-                const filteredData = allData.filter(
-                    (row) =>
-                        normalizeString(row.song_name).includes(query) ||
-                        normalizeString(row.artist).includes(query)
-                );
-                displayData(filteredData);
+
+                if (isValidDateFormat(query)) {
+                    const filteredData = allData.filter((row) =>
+                        row.dates.some(
+                            (date) =>
+                                date.date ===
+                                `${query.substring(4, 8)}${query.substring(
+                                    2,
+                                    4
+                                )}${query.substring(0, 2)}`
+                        )
+                    );
+                    displayData(filteredData);
+                } else {
+                    const filteredData = allData.filter(
+                        (row) =>
+                            normalizeString(row.song_name).includes(query) ||
+                            normalizeString(row.artist).includes(query) ||
+                            normalizeString(row.source).includes(query)
+                    );
+                    displayData(filteredData);
+                }
             }, 800)
         );
     }
