@@ -58,12 +58,14 @@ def load_acapella(acapella_file):
                     acapella_songs_with_artist[artist] = set()
                 acapella_songs_with_artist[artist].add(song_name)
             elif len(parts) == 3:
-                song_name, artist, date = parts[0], parts[1], parts[2]
-                if date not in acapella_songs:
-                    acapella_songs[date] = {}
-                if artist not in acapella_songs[date]:
-                    acapella_songs[date][artist] = set()
-                acapella_songs[date][artist].add(song_name)
+                song_name, artist, date_str = parts[0], parts[1], parts[2]
+                for date in date_str.split(','):
+                    date = date.strip()
+                    if date not in acapella_songs:
+                        acapella_songs[date] = {}
+                    if artist not in acapella_songs[date]:
+                        acapella_songs[date][artist] = set()
+                    acapella_songs[date][artist].add(song_name)
 
     return acapella_songs, global_acapella_songs, acapella_songs_with_artist
 
