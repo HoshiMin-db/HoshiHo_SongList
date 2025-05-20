@@ -6717,7 +6717,7 @@
                 "time": "03:25:26",
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=12326s",
                 "is_member_exclusive": false,
-                "is_acapella": true,
+                "is_acapella": false,
                 "is_private": false
             },
             {
@@ -6725,7 +6725,7 @@
                 "time": "04:05:33",
                 "link": "https://www.youtube.com/watch?v=70E6Ns3_THo&t=14733s",
                 "is_member_exclusive": false,
-                "is_acapella": true,
+                "is_acapella": false,
                 "is_private": false
             },
             {
@@ -6733,7 +6733,7 @@
                 "time": "04:55:34",
                 "link": "https://www.youtube.com/watch?v=1RmXANp4b0I&t=17734s",
                 "is_member_exclusive": false,
-                "is_acapella": true,
+                "is_acapella": false,
                 "is_private": false
             }
         ]
