@@ -108,18 +108,19 @@ def get_video_ids_from_channel(channel_id, query):
         try:
             response = request.execute()
             for item in response['items']:
+                # 只處理影片型態
+                if item['id']['kind'] != 'youtube#video':
+                    continue
                 video_id = item['id']['videoId']
                 video_date = get_video_date(video_id)
-                
+                print(f"DEBUG: {video_id}, {video_date}")  # 加這行觀察
                 if video_date and video_date >= thirty_days_ago.date():
                     video_info.append((video_id, video_date))
                     print(f"找到影片：{video_id} 來自 {video_date}")
-                    
             request = youtube.search().list_next(request, response)
         except HttpError as e:
             print(f"Error fetching channel videos: {e}")
             break
-    
     return video_info
 
 def get_timestamp_comment(video_id):
