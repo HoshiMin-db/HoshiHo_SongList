@@ -38,7 +38,7 @@ body {
 
 #app-container {
     display: flex;
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
 }
 
@@ -50,11 +50,9 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     height: 100vh;
-    max-width: 1200px;
-    margin: 0 auto;
     padding: 20px;
+    box-sizing: border-box; /* 確保 padding 不會增加元素實際大小 */
 }
 
 table {
@@ -227,27 +225,24 @@ table thead th {
     cursor: default;
 }
 
-/* 避免X軸滾動並確保容器自適應內容高度 */
-#songTableContainer {
-    overflow-y: auto;
-    overflow-x: auto;
-    width: 100%; /* 確保容器寬度為100% */
+#songTable {
+    width: 100%;
+    margin-bottom: 20px; /* 添加表格底部間距 */
 }
 
 .virtual-scroll-container {
-    min-height: 200px;
+    flex: 1;
     overflow-y: auto;
     overflow-x: auto;
     position: relative;
-    width: 100%;
-    height: calc(100vh - 150px);
-    flex: 1;
+    /* 移除固定高度設定，改用 flex 自動計算 */
+    margin-bottom: 20px; /* 添加底部間距 */
 }
 
 .virtual-scroll-content {
     width: 100%;
     height: 100%;
-    position: relative; /* 改為相對定位 */
+    position: relative;
 }
 
 /* Discography styles */
