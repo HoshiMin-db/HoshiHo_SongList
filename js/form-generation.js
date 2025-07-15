@@ -273,6 +273,7 @@ function displayData(data, numDates = 3) {
 document.addEventListener("DOMContentLoaded", function () {
     const searchInput = document.getElementById("searchInput");
     let allData = [];
+    let totalSongCount = 0; // 新增：儲存總曲目數的變數
 
     async function fetchData() {
         try {
@@ -280,21 +281,22 @@ document.addEventListener("DOMContentLoaded", function () {
             const data = await response.json();
             allData = data;
 
+            // 計算總曲目數（只在初次載入時計算一次）
+            totalSongCount = Object.keys(
+                data.reduce((acc, row) => {
+                    const key = `${normalizeString(row.song_name)}-${normalizeString(row.artist)}`;
+                    acc[key] = true;
+                    return acc;
+                }, {})
+            ).length;
+
             // 顯示完整數據
             displayData(allData);
 
-            // 更新總曲數
+            // 更新總曲目數（只更新一次）
             const songCountElement = document.getElementById("songCount");
             if (songCountElement) {
-                songCountElement.textContent = Object.keys(
-                    data.reduce((acc, row) => {
-                        const key = `${normalizeString(
-                            row.song_name
-                        )}-${normalizeString(row.artist)}`;
-                        acc[key] = true;
-                        return acc;
-                    }, {})
-                ).length;
+                songCountElement.textContent = totalSongCount;
             }
         } catch (error) {
             console.error("Error fetching data:", error);
@@ -328,6 +330,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     );
                     displayData(filteredData);
                 }
+                
+                // 搜尋時不再更新 songCount，因此這裡不需要任何操作
             }, 800)
         );
     }
