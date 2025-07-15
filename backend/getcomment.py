@@ -190,21 +190,19 @@ def save_to_file(video_id, comment, date):
 
 def main():
     playlist_id = 'PL7H5HbMMfm_lUoLIkPAZkhF_W0oDf5WEk'
-    channel_id = 'UCwBJ-8LQYd7lZ7uW-4Adt4Q'  # HoshiHo's YouTube channel ID
-    query = '#歌枠/KARAOKE'
+    channel_id = 'UCwBJ-8LQYd7lZ7uW-4Adt4Q'
 
-    # 獲取播放清單中的所有影片
+    # 將 query 設為空字串，抓全部近 30 天影片
     video_info = get_video_ids_from_playlist(playlist_id)
-    
-    # 獲取頻道中的符合標題的影片
-    video_info += get_video_ids_from_channel(channel_id, query)
-    
-    # 分批處理影片
-    batch_size = 10  # 每次處理10個影片
+    video_info += get_video_ids_from_channel(channel_id, "歌枠")
+
+    # 移除重複
+    video_info = list(set(video_info))
+
+    batch_size = 10
     for i in range(0, len(video_info), batch_size):
         batch_videos = video_info[i:i + batch_size]
         for video_id, video_date in batch_videos:
-            # 檢查文件是否已存在
             file_name = video_date.strftime('%Y%m%d') + '.txt'
             file_path = os.path.join('timeline', file_name)
             if os.path.exists(file_path):
@@ -212,15 +210,9 @@ def main():
                 continue
 
             print(f"處理視頻 {video_id} 來自 {video_date}")
-            
-            # 獲取時間戳留言
             timestamp_comment = get_timestamp_comment(video_id)
-            
-            # 保存到檔案
             if timestamp_comment:
                 save_to_file(video_id, timestamp_comment, video_date)
-        
-        # 在每個批次之間加入延遲（例如2秒）
         time.sleep(2)
 
 if __name__ == '__main__':
