@@ -103,10 +103,15 @@ def get_video_ids_from_channel(channel_id, query):
     """從頻道獲取影片ID和日期，根據標題篩選"""
     video_info = []
     
-    # 計算最近30天的日期
-    thirty_days_ago = datetime.now(timezone.utc) - timedelta(days=30)
-    # 格式化成 RFC 3339 格式
+    # 計算時間範圍
+    current_time = datetime.now(timezone.utc)
+    thirty_days_ago = current_time - timedelta(days=30)
+    
+    # 格式化時間為 ISO 8601 格式
     published_after = thirty_days_ago.strftime('%Y-%m-%dT%H:%M:%SZ')
+    published_before = current_time.strftime('%Y-%m-%dT%H:%M:%SZ')
+    
+    print(f"DEBUG: 搜尋時間範圍: {published_after} 到 {published_before}")
     
     request = youtube.search().list(
         part='snippet',
@@ -114,26 +119,35 @@ def get_video_ids_from_channel(channel_id, query):
         q=query,
         maxResults=50,
         order='date',
-        publishedAfter=published_after  # 添加這行
+        type='video',                # 只搜尋影片
+        publishedAfter=published_after,    # 添加開始時間
+        publishedBefore=published_before,   # 添加結束時間
+        videoType='any'              # 包含所有影片類型
     )
     
     while request:
         try:
             response = request.execute()
+            print(f"DEBUG: 獲取到 {len(response.get('items', []))} 個結果")
+            
             for item in response['items']:
-                # 只處理影片型態
-                if item['id']['kind'] != 'youtube#video':
-                    continue
                 video_id = item['id']['videoId']
-                video_date = get_video_date(video_id)
-                print(f"DEBUG: {video_id}, {video_date}")  # 加這行觀察
-                if video_date and video_date >= thirty_days_ago.date():
-                    video_info.append((video_id, video_date))
-                    print(f"找到影片：{video_id} 來自 {video_date}")
+                snippet = item['snippet']
+                print(f"DEBUG: 檢查影片: {snippet['title']}")
+                
+                # 檢查標題是否包含關鍵字（不區分大小寫）
+                if '歌枠' in snippet['title'].lower() or 'karaoke' in snippet['title'].lower():
+                    video_date = get_video_date(video_id)
+                    if video_date:
+                        video_info.append((video_id, video_date))
+                        print(f"DEBUG: 找到符合的影片：{video_id} 來自 {video_date}")
+                
             request = youtube.search().list_next(request, response)
         except HttpError as e:
-            print(f"Error fetching channel videos: {e}")
+            print(f"DEBUG: API 錯誤: {str(e)}")
             break
+            
+    print(f"DEBUG: 總共找到 {len(video_info)} 個符合的影片")
     return video_info
 
 def get_timestamp_comment(video_id):
@@ -205,17 +219,22 @@ def main():
     playlist_id = 'PL7H5HbMMfm_lUoLIkPAZkhF_W0oDf5WEk'
     channel_id = 'UCwBJ-8LQYd7lZ7uW-4Adt4Q'
 
-    print(f"DEBUG: 開始時間: {datetime.now(timezone.utc)}")
-    print(f"DEBUG: 搜索最近30天的影片")
+    print(f"DEBUG: 開始搜尋時間: {datetime.now(timezone.utc)}")
     
-    # 將 query 設為空字串，抓全部近 30 天影片
-    video_info = get_video_ids_from_playlist(playlist_id)
-    print(f"DEBUG: 從播放清單找到 {len(video_info)} 個影片")
+    # 使用多個關鍵字搜尋
+    keywords = ["歌枠", "karaoke", "カラオケ"]
+    video_info = []
     
-    channel_videos = get_video_ids_from_channel(channel_id, "歌枠")
-    print(f"DEBUG: 從頻道找到 {len(channel_videos)} 個歌枠影片")
+    for keyword in keywords:
+        print(f"DEBUG: 使用關鍵字 '{keyword}' 搜尋")
+        video_info.extend(get_video_ids_from_channel(channel_id, keyword))
     
-    video_info += channel_videos
+    # 從播放清單獲取
+    playlist_videos = get_video_ids_from_playlist(playlist_id)
+    video_info.extend(playlist_videos)
+    
+    # 移除重複
+    video_info = list(set(video_info))
 
     batch_size = 10
     for i in range(0, len(video_info), batch_size):
