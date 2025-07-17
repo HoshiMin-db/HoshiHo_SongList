@@ -69,14 +69,17 @@ def get_video_date(video_id):
 def get_video_ids_from_playlist(playlist_id):
     """從播放清單獲取影片ID和日期"""
     video_info = []
-    request = youtube.playlistItems().list(
-        part='contentDetails',
-        playlistId=playlist_id,
-        maxResults=50
-    )
     
     # 計算最近30天的日期
     thirty_days_ago = datetime.now(timezone.utc) - timedelta(days=30)
+    # 格式化成 RFC 3339 格式
+    published_after = thirty_days_ago.strftime('%Y-%m-%dT%H:%M:%SZ')
+    
+    request = youtube.playlistItems().list(
+        part='contentDetails,snippet',  # 添加 snippet
+        playlistId=playlist_id,
+        maxResults=50
+    )
     
     while request:
         try:
@@ -99,16 +102,20 @@ def get_video_ids_from_playlist(playlist_id):
 def get_video_ids_from_channel(channel_id, query):
     """從頻道獲取影片ID和日期，根據標題篩選"""
     video_info = []
+    
+    # 計算最近30天的日期
+    thirty_days_ago = datetime.now(timezone.utc) - timedelta(days=30)
+    # 格式化成 RFC 3339 格式
+    published_after = thirty_days_ago.strftime('%Y-%m-%dT%H:%M:%SZ')
+    
     request = youtube.search().list(
         part='snippet',
         channelId=channel_id,
         q=query,
         maxResults=50,
-        order='date'
+        order='date',
+        publishedAfter=published_after  # 添加這行
     )
-    
-    # 計算最近30天的日期
-    thirty_days_ago = datetime.now(timezone.utc) - timedelta(days=30)
     
     while request:
         try:
