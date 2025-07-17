@@ -34,13 +34,19 @@ def get_video_date(video_id):
         response = request.execute()
         
         if not response['items']:
+            print(f"DEBUG: 無法找到影片 {video_id} 的資訊")
             return None
         
         video_details = response['items'][0]
         
+        # 添加調試訊息
+        print(f"DEBUG: 影片 {video_id} 的資訊：")
+        print(f"DEBUG: 影片類型: {video_details['snippet'].get('liveBroadcastContent')}")
+        print(f"DEBUG: 標題: {video_details['snippet'].get('title')}")
+        
         # 檢查是否為會員限定直播
         if video_details['snippet'].get('liveBroadcastContent') == 'membersOnly':
-            print(f"跳過會員限定視頻：{video_id}")
+            print(f"DEBUG: 跳過會員限定視頻：{video_id}")
             return None
         
         # 檢查是否為直播影片
@@ -192,12 +198,17 @@ def main():
     playlist_id = 'PL7H5HbMMfm_lUoLIkPAZkhF_W0oDf5WEk'
     channel_id = 'UCwBJ-8LQYd7lZ7uW-4Adt4Q'
 
+    print(f"DEBUG: 開始時間: {datetime.now(timezone.utc)}")
+    print(f"DEBUG: 搜索最近30天的影片")
+    
     # 將 query 設為空字串，抓全部近 30 天影片
     video_info = get_video_ids_from_playlist(playlist_id)
-    video_info += get_video_ids_from_channel(channel_id, "")
-
-    # 移除重複
-    video_info = list(set(video_info))
+    print(f"DEBUG: 從播放清單找到 {len(video_info)} 個影片")
+    
+    channel_videos = get_video_ids_from_channel(channel_id, "歌枠")
+    print(f"DEBUG: 從頻道找到 {len(channel_videos)} 個歌枠影片")
+    
+    video_info += channel_videos
 
     batch_size = 10
     for i in range(0, len(video_info), batch_size):
