@@ -194,7 +194,7 @@ def main():
 
     # 將 query 設為空字串，抓全部近 30 天影片
     video_info = get_video_ids_from_playlist(playlist_id)
-    video_info += get_video_ids_from_channel(channel_id, "歌枠")
+    video_info += get_video_ids_from_channel(channel_id, "")
 
     # 移除重複
     video_info = list(set(video_info))
