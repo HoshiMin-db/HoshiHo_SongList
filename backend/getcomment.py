@@ -99,8 +99,8 @@ def get_video_ids_from_playlist(playlist_id):
     
     return video_info
 
-def get_video_ids_from_channel(channel_id, query):
-    """從頻道獲取影片ID和日期，根據標題篩選"""
+def get_video_ids_from_channel(channel_id):
+    """從頻道獲取影片ID和日期"""
     video_info = []
     
     # 計算時間範圍
@@ -116,40 +116,48 @@ def get_video_ids_from_channel(channel_id, query):
     request = youtube.search().list(
         part='snippet',
         channelId=channel_id,
-        q=query,
         maxResults=50,
         order='date',
-        type='video',                # 只搜尋影片
-        publishedAfter=published_after,    # 添加開始時間
-        publishedBefore=published_before,   # 添加結束時間
-        videoType='any'              # 包含所有影片類型
+        type='video',
+        publishedAfter=published_after,
+        publishedBefore=published_before
     )
     
     while request:
         try:
             response = request.execute()
-            print(f"DEBUG: 獲取到 {len(response.get('items', []))} 個結果")
+            items = response.get('items', [])
+            print(f"DEBUG: 獲取到 {len(items)} 個影片")
             
             for item in response['items']:
                 video_id = item['id']['videoId']
                 snippet = item['snippet']
+                title = snippet['title'].lower()
                 print(f"DEBUG: 檢查影片: {snippet['title']}")
                 
-                # 檢查標題是否包含關鍵字（不區分大小寫）
-                if '歌枠' in snippet['title'].lower() or 'karaoke' in snippet['title'].lower():
+                # 檢查標題是否包含任何相關關鍵字
+                keywords = ['歌枠', 'karaoke', 'カラオケ', 'singing']
+                if any(keyword.lower() in title for keyword in keywords):
                     video_date = get_video_date(video_id)
                     if video_date:
                         video_info.append((video_id, video_date))
-                        print(f"DEBUG: 找到符合的影片：{video_id} 來自 {video_date}")
+                        print(f"DEBUG: 找到符合的影片：{video_id} - {snippet['title']} - {video_date}")
+                else:
+                    print(f"DEBUG: 不符合關鍵字的影片：{snippet['title']}")
                 
-            request = youtube.search().list_next(request, response)
+            # 檢查是否有下一頁
+            if 'nextPageToken' in response:
+                request = youtube.search().list_next(request, response)
+            else:
+                request = None
+                
         except HttpError as e:
             print(f"DEBUG: API 錯誤: {str(e)}")
             break
             
     print(f"DEBUG: 總共找到 {len(video_info)} 個符合的影片")
     return video_info
-
+    
 def get_timestamp_comment(video_id):
     """獲取包含時間戳標記的留言"""
     try:
@@ -221,21 +229,23 @@ def main():
 
     print(f"DEBUG: 開始搜尋時間: {datetime.now(timezone.utc)}")
     
-    # 使用多個關鍵字搜尋
-    keywords = ["歌枠", "karaoke", "カラオケ"]
-    video_info = []
-    
-    for keyword in keywords:
-        print(f"DEBUG: 使用關鍵字 '{keyword}' 搜尋")
-        video_info.extend(get_video_ids_from_channel(channel_id, keyword))
+    # 從頻道獲取所有影片
+    video_info = get_video_ids_from_channel(channel_id)
+    print(f"DEBUG: 從頻道獲取到 {len(video_info)} 個影片")
     
     # 從播放清單獲取
     playlist_videos = get_video_ids_from_playlist(playlist_id)
+    print(f"DEBUG: 從播放清單獲取到 {len(playlist_videos)} 個影片")
+    
     video_info.extend(playlist_videos)
+    
+    # 移除重複前的數量
+    print(f"DEBUG: 去重前總數: {len(video_info)}")
     
     # 移除重複
     video_info = list(set(video_info))
-
+    print(f"DEBUG: 去重後總數: {len(video_info)}")
+    
     batch_size = 10
     for i in range(0, len(video_info), batch_size):
         batch_videos = video_info[i:i + batch_size]
