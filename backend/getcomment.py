@@ -5,6 +5,7 @@ import time
 from googleapiclient.discovery import build
 from google.oauth2 import service_account
 from datetime import datetime, timedelta, timezone
+import pytz
 from googleapiclient.errors import HttpError
 import html
 
@@ -24,8 +25,18 @@ except Exception as e:
 # YouTube Data API 客戶端
 youtube = build('youtube', 'v3', developerKey=google_api_key)
 
+# 創建日本時區對象
+JST = pytz.timezone('Asia/Tokyo')
+
+def get_jst_date(utc_time_str):
+    """將 UTC 時間字符串轉換為日本時間的日期"""
+    utc_time = datetime.strptime(utc_time_str, '%Y-%m-%dT%H:%M:%SZ')
+    utc_time = utc_time.replace(tzinfo=timezone.utc)
+    jst_time = utc_time.astimezone(JST)
+    return jst_time.date()
+
 def get_video_date(video_id):
-    """獲取影片的直播或發布日期"""
+    """獲取影片的實際直播日期（日本時間）"""
     try:
         response = youtube.videos().list(
             part='liveStreamingDetails,snippet',
@@ -33,28 +44,36 @@ def get_video_date(video_id):
         ).execute()
         
         if not response.get('items'):
+            print(f"DEBUG: 無法找到影片 {video_id} 的資訊")
             return None
         
         video_details = response['items'][0]
         
         # 檢查是否為會員限定
         if video_details['snippet'].get('liveBroadcastContent') == 'membersOnly':
+            print(f"DEBUG: 跳過會員限定視頻：{video_id}")
             return None
         
         # 檢查直播相關時間
         if 'liveStreamingDetails' in video_details:
-            for time_field in ['actualStartTime', 'scheduledStartTime']:
-                if time_field in video_details['liveStreamingDetails']:
-                    return datetime.strptime(
-                        video_details['liveStreamingDetails'][time_field], 
-                        '%Y-%m-%dT%H:%M:%SZ'
-                    ).date()
+            # 優先使用實際開始時間，如果沒有則使用預定開始時間
+            actual_start = video_details['liveStreamingDetails'].get('actualStartTime')
+            scheduled_start = video_details['liveStreamingDetails'].get('scheduledStartTime')
+            
+            if actual_start:
+                jst_date = get_jst_date(actual_start)
+                print(f"DEBUG: 使用實際開始時間 (JST): {jst_date}")
+                return jst_date
+            elif scheduled_start:
+                jst_date = get_jst_date(scheduled_start)
+                print(f"DEBUG: 使用預定開始時間 (JST): {jst_date}")
+                return jst_date
         
         # 如果都沒有，使用發布時間
-        return datetime.strptime(
-            video_details['snippet']['publishedAt'], 
-            '%Y-%m-%dT%H:%M:%SZ'
-        ).date()
+        publish_time = video_details['snippet']['publishedAt']
+        jst_date = get_jst_date(publish_time)
+        print(f"DEBUG: 使用發布時間 (JST): {jst_date}")
+        return jst_date
         
     except HttpError as e:
         print(f"Error fetching video date for {video_id}: {e}")
@@ -64,11 +83,12 @@ def get_video_ids_from_playlist(playlist_id):
     """從播放清單獲取最近30天的影片ID和日期"""
     video_info = []
     
-    # 計算最近30天的日期
-    thirty_days_ago = datetime.now(timezone.utc) - timedelta(days=30)
+    # 計算最近30天的日期（使用日本時間）
+    current_time = datetime.now(JST)
+    thirty_days_ago = current_time - timedelta(days=30)
     
     request = youtube.playlistItems().list(
-        part='snippet',  # 只需要 snippet 就足夠了
+        part='snippet',
         playlistId=playlist_id,
         maxResults=50
     )
@@ -82,7 +102,7 @@ def get_video_ids_from_playlist(playlist_id):
                 published_time = datetime.strptime(
                     item['snippet']['publishedAt'], 
                     '%Y-%m-%dT%H:%M:%SZ'
-                ).replace(tzinfo=timezone.utc)
+                ).replace(tzinfo=timezone.utc).astimezone(JST)
                 
                 # 如果超過30天就停止檢查
                 if published_time < thirty_days_ago:
@@ -92,7 +112,7 @@ def get_video_ids_from_playlist(playlist_id):
                 video_date = get_video_date(video_id)
                 if video_date:
                     video_info.append((video_id, video_date))
-                    print(f"找到播放清單影片：{video_id} 來自 {video_date}")
+                    print(f"找到播放清單影片：{video_id} 來自 {video_date} (JST)")
             
             request = youtube.playlistItems().list_next(request, response)
         except HttpError as e:
@@ -106,11 +126,11 @@ def get_video_ids_from_channel(channel_id):
     video_info = []
     
     try:
-        # 計算時間範圍
-        current_time = datetime.now(timezone.utc)
+        # 計算時間範圍（使用日本時間）
+        current_time = datetime.now(JST)
         thirty_days_ago = current_time - timedelta(days=30)
         
-        print(f"DEBUG: 開始搜尋 {thirty_days_ago.strftime('%Y-%m-%d')} 到 {current_time.strftime('%Y-%m-%d')} 的歌枠直播")
+        print(f"DEBUG: 開始搜尋 {thirty_days_ago.strftime('%Y-%m-%d')} 到 {current_time.strftime('%Y-%m-%d')} 的歌枠直播 (JST)")
         
         # 獲取頻道的上傳播放清單
         channel_response = youtube.channels().list(
@@ -150,12 +170,12 @@ def get_video_ids_from_channel(channel_id):
                 published_time = datetime.strptime(
                     snippet['publishedAt'], 
                     '%Y-%m-%dT%H:%M:%SZ'
-                ).replace(tzinfo=timezone.utc)
+                ).replace(tzinfo=timezone.utc).astimezone(JST)
                 
                 # 如果影片發布時間早於30天前，就停止搜尋
                 if published_time < thirty_days_ago:
                     print(f"DEBUG: 已到達30天前的影片，停止搜尋")
-                    break  # 使用 break 而不是設置 request = None
+                    break
                 
                 # 檢查標題是否包含關鍵字（不區分大小寫）
                 if ('歌枠' in title or 'karaoke' in title.lower()):
