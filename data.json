@@ -13158,6 +13158,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20240120",
+                "time": "03:09:02",
+                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=11342s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -20264,23 +20272,6 @@
                 "date": "20240120",
                 "time": "02:02:15",
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=7335s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "BLACK DIAMOND",
-        "artist": "ブラックダイアモンズ",
-        "source": "しゅごキャラ！",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20240120",
-                "time": "03:09:02",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=11342s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
