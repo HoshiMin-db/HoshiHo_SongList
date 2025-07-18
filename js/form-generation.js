@@ -41,6 +41,8 @@ function normalizeString(str) {
 
     str = sanitizeInput(str);
     str = convert_jp(str);
+    // 將 (CV.xxx) 改為 (xxx)
+    str = str.replace(/\(cv\.(.*?)\)/gi, "($1)");
 
     return str
         .normalize("NFKC")
