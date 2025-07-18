@@ -13047,6 +13047,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20250506",
+                "time": "00:46:07",
+                "link": "https://www.youtube.com/watch?v=CpX--Rfi6Mo&t=2767s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -18453,23 +18461,6 @@
                 "date": "20240518",
                 "time": "03:52:43",
                 "link": "https://www.youtube.com/watch?v=0mO1WLnuFYM&t=13963s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "鏡合わせの翡翠",
-        "artist": "love solfege feat. HoshiHo",
-        "source": "スト・ナ・クヱタ",
-        "is_copyright": false,
-        "az": "か",
-        "dates": [
-            {
-                "date": "20250506",
-                "time": "00:46:07",
-                "link": "https://www.youtube.com/watch?v=CpX--Rfi6Mo&t=2767s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
