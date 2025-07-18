@@ -155,8 +155,7 @@ def get_video_ids_from_channel(channel_id):
                 # 如果影片發布時間早於30天前，就停止搜尋
                 if published_time < thirty_days_ago:
                     print(f"DEBUG: 已到達30天前的影片，停止搜尋")
-                    request = None
-                    break
+                    break  # 使用 break 而不是設置 request = None
                 
                 # 檢查標題是否包含關鍵字（不區分大小寫）
                 if ('歌枠' in title or 'karaoke' in title.lower()):
@@ -195,9 +194,15 @@ def get_video_ids_from_channel(channel_id):
                         
                         video_info.append((video_id, stream_date.date()))
                         print(f"DEBUG: 已加入清單: {video_id} - {title} - {stream_date.date()}")
+            
+            if published_time < thirty_days_ago:
+                break
                 
             # 獲取下一頁
-            request = youtube.playlistItems().list_next(request, response)
+            if 'nextPageToken' in response:
+                request = youtube.playlistItems().list_next(request, response)
+            else:
+                break  # 使用 break 而不是設置 request = None
             
         print(f"DEBUG: 總共找到 {len(video_info)} 個歌枠直播")
         
