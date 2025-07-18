@@ -272,7 +272,7 @@ def save_to_file(video_id, comment, date):
     print(f"已保存時間戳留言到 {file_path}")
 
 def main():
-    channel_id = 'UCwBJ-8LQYd7lZ7uW-4Adt4Q'
+    channel_id = 'UCDqn3HdMA5zwlYvsQ1YSG4Q'
     playlist_id = 'PL7H5HbMMfm_lUoLIkPAZkhF_W0oDf5WEk'
 
     print(f"DEBUG: 開始時間: {datetime.now(timezone.utc)}")
