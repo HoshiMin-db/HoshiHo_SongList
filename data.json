@@ -419,6 +419,14 @@
                 "is_private": false
             },
             {
+                "date": "20250712",
+                "time": "03:34:16",
+                "link": "https://www.youtube.com/watch?v=81cDt2O_CmE&t=12856s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20240922",
                 "time": "00:12:36",
                 "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=756s",
@@ -512,6 +520,14 @@
                 "date": "20240511",
                 "time": "07:21:31",
                 "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=26491s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250712",
+                "time": "03:54:46",
+                "link": "https://www.youtube.com/watch?v=81cDt2O_CmE&t=14086s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -691,6 +707,14 @@
                 "date": "20240511",
                 "time": "07:35:23",
                 "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=27323s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250712",
+                "time": "03:15:04",
+                "link": "https://www.youtube.com/watch?v=81cDt2O_CmE&t=11704s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -1221,6 +1245,14 @@
                 "date": "20241019",
                 "time": "01:42:24",
                 "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=6144s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250712",
+                "time": "04:55:19",
+                "link": "https://www.youtube.com/watch?v=81cDt2O_CmE&t=17719s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -5301,6 +5333,14 @@
                 "is_private": false
             },
             {
+                "date": "20250712",
+                "time": "01:33:26",
+                "link": "https://www.youtube.com/watch?v=81cDt2O_CmE&t=5606s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20250506",
                 "time": "00:36:42",
                 "link": "https://www.youtube.com/watch?v=CpX--Rfi6Mo&t=2202s",
@@ -8425,6 +8465,14 @@
                 "is_private": false
             },
             {
+                "date": "20250712",
+                "time": "06:04:41",
+                "link": "https://www.youtube.com/watch?v=81cDt2O_CmE&t=21881s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20240727",
                 "time": "04:41:46",
                 "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=16906s",
@@ -8666,6 +8714,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20250712",
+                "time": "05:38:34",
+                "link": "https://www.youtube.com/watch?v=81cDt2O_CmE&t=20314s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -8881,6 +8937,14 @@
                 "date": "20240629",
                 "time": "06:21:10",
                 "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=22870s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250712",
+                "time": "05:00:39",
+                "link": "https://www.youtube.com/watch?v=81cDt2O_CmE&t=18039s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -12946,6 +13010,275 @@
         ]
     },
     {
+        "song_name": "Emporium",
+        "artist": "Armony（歌：ほしほ）",
+        "source": "",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250712",
+                "time": "00:25:46",
+                "link": "https://www.youtube.com/watch?v=81cDt2O_CmE&t=1546s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "bonny ebony black swan",
+        "artist": "love solfege（歌：Rose Panna）",
+        "source": "",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250712",
+                "time": "00:37:44",
+                "link": "https://www.youtube.com/watch?v=81cDt2O_CmE&t=2264s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "鏡合わせの翡翠",
+        "artist": "love solfege（歌：ほしほ）",
+        "source": "",
+        "is_copyright": false,
+        "az": "か",
+        "dates": [
+            {
+                "date": "20250712",
+                "time": "00:49:26",
+                "link": "https://www.youtube.com/watch?v=81cDt2O_CmE&t=2966s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "謳う丘 - Harmonics EOLIA -",
+        "artist": "志方あきこ",
+        "source": "アルトネリコ 世界の終わりで詩い続ける少女",
+        "is_copyright": false,
+        "az": "う",
+        "dates": [
+            {
+                "date": "20250712",
+                "time": "01:14:01",
+                "link": "https://www.youtube.com/watch?v=81cDt2O_CmE&t=4441s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240621",
+                "time": "06:03:00",
+                "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=21780s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240308",
+                "time": "03:42:50",
+                "link": "https://www.youtube.com/watch?v=mfO62RxfZPU&t=13370s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "EXEC_PHANTASMAGORIA/.",
+        "artist": "みとせのりこ・志方あきこ・霜月はるか",
+        "source": "アルトネリコ 世界の終わりで詩い続ける少女",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250712",
+                "time": "01:42:07",
+                "link": "https://www.youtube.com/watch?v=81cDt2O_CmE&t=6127s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "キミとアイドルプリキュア♪ Light Up!",
+        "artist": "石井あみ・熊田茜音・吉武千颯",
+        "source": "キミとアイドルプリキュア♪",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250712",
+                "time": "02:28:12",
+                "link": "https://www.youtube.com/watch?v=81cDt2O_CmE&t=8892s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "君とつなぐオーケストラ",
+        "artist": "オルケリア",
+        "source": "プリンセッション・オーケストラ",
+        "is_copyright": false,
+        "az": "き",
+        "dates": [
+            {
+                "date": "20250712",
+                "time": "02:37:43",
+                "link": "https://www.youtube.com/watch?v=81cDt2O_CmE&t=9463s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "BLACK DIAMOND",
+        "artist": "ほしな歌唄(CV.水樹奈々)",
+        "source": "しゅごキャラ！",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250712",
+                "time": "02:50:26",
+                "link": "https://www.youtube.com/watch?v=81cDt2O_CmE&t=10226s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "大譜歌",
+        "artist": "ティア・グランツ(CV.ゆかな)",
+        "source": "Tales of the Abyss",
+        "is_copyright": false,
+        "az": "だ",
+        "dates": [
+            {
+                "date": "20250712",
+                "time": "03:22:03",
+                "link": "https://www.youtube.com/watch?v=81cDt2O_CmE&t=12123s",
+                "is_member_exclusive": false,
+                "is_acapella": true,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "そして僕にできるコト",
+        "artist": "misono",
+        "source": "Tales of Symphonia",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250712",
+                "time": "03:39:59",
+                "link": "https://www.youtube.com/watch?v=81cDt2O_CmE&t=13199s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "ファティマ(Short Ver.)",
+        "artist": "奥井雅美",
+        "source": "STEINS;GATE 0",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250712",
+                "time": "05:32:00",
+                "link": "https://www.youtube.com/watch?v=81cDt2O_CmE&t=19920s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "to the beginning",
+        "artist": "Kalafina",
+        "source": "Fate/Zero",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250712",
+                "time": "05:50:13",
+                "link": "https://www.youtube.com/watch?v=81cDt2O_CmE&t=21013s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240608",
+                "time": "00:43:48",
+                "link": "https://www.youtube.com/watch?v=UoMwNx3aklM&t=2628s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240727",
+                "time": "04:32:00",
+                "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=16320s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "MEMORIA",
+        "artist": "藍井エイル",
+        "source": "Fate/Zero",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250712",
+                "time": "06:13:20",
+                "link": "https://www.youtube.com/watch?v=81cDt2O_CmE&t=22400s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20231231",
+                "time": "05:30:05",
+                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=19805s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240621",
+                "time": "01:57:35",
+                "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=7055s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
         "song_name": "マリンブルーに沿って",
         "artist": "佐咲紗花",
         "source": "ちいさな彼女の小夜曲",
@@ -14202,31 +14535,6 @@
         ]
     },
     {
-        "song_name": "MEMORIA",
-        "artist": "藍井エイル",
-        "source": "Fate/Zero",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20231231",
-                "time": "05:30:05",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=19805s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240621",
-                "time": "01:57:35",
-                "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=7055s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
         "song_name": "Love with you ~愛のプレゼント~",
         "artist": "小林千絵",
         "source": "牧場の少女カトリ",
@@ -14639,31 +14947,6 @@
                 "date": "20240615",
                 "time": "05:02:01",
                 "link": "https://www.youtube.com/watch?v=DjJmVyIXfH8&t=18121s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "to the beginning",
-        "artist": "Kalafina",
-        "source": "Fate/Zero 2ndシーズン",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20240608",
-                "time": "00:43:48",
-                "link": "https://www.youtube.com/watch?v=UoMwNx3aklM&t=2628s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240727",
-                "time": "04:32:00",
-                "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=16320s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -21879,31 +22162,6 @@
                 "date": "20240621",
                 "time": "05:46:31",
                 "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=20791s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "謳う丘-Harmonics EOLIA-",
-        "artist": "志方あきこ",
-        "source": "アルトネリコ 世界の終わりで詩い続ける少女",
-        "is_copyright": false,
-        "az": "う",
-        "dates": [
-            {
-                "date": "20240621",
-                "time": "06:03:00",
-                "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=21780s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240308",
-                "time": "03:42:50",
-                "link": "https://www.youtube.com/watch?v=mfO62RxfZPU&t=13370s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
