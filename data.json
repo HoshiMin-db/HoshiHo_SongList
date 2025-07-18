@@ -4341,7 +4341,7 @@
     },
     {
         "song_name": "bonny ebony black swan",
-        "artist": "love solfege",
+        "artist": "love solfege（歌：Rose Panna）",
         "source": "",
         "is_copyright": false,
         "az": null,
@@ -4350,6 +4350,14 @@
                 "date": "20250222",
                 "time": "05:15:59",
                 "link": "https://www.youtube.com/watch?v=zv9Wousjbho&t=18959s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250712",
+                "time": "00:37:44",
+                "link": "https://www.youtube.com/watch?v=81cDt2O_CmE&t=2264s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -13020,23 +13028,6 @@
                 "date": "20250712",
                 "time": "00:25:46",
                 "link": "https://www.youtube.com/watch?v=81cDt2O_CmE&t=1546s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "bonny ebony black swan",
-        "artist": "love solfege（歌：Rose Panna）",
-        "source": "",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250712",
-                "time": "00:37:44",
-                "link": "https://www.youtube.com/watch?v=81cDt2O_CmE&t=2264s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
