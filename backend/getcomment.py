@@ -25,58 +25,50 @@ except Exception as e:
 youtube = build('youtube', 'v3', developerKey=google_api_key)
 
 def get_video_date(video_id):
-    """獲取影片的實際直播日期"""
+    """獲取影片的直播或發布日期"""
     try:
-        request = youtube.videos().list(
+        response = youtube.videos().list(
             part='liveStreamingDetails,snippet',
             id=video_id
-        )
-        response = request.execute()
+        ).execute()
         
-        if not response['items']:
-            print(f"DEBUG: 無法找到影片 {video_id} 的資訊")
+        if not response.get('items'):
             return None
         
         video_details = response['items'][0]
         
-        # 添加調試訊息
-        print(f"DEBUG: 影片 {video_id} 的資訊：")
-        print(f"DEBUG: 影片類型: {video_details['snippet'].get('liveBroadcastContent')}")
-        print(f"DEBUG: 標題: {video_details['snippet'].get('title')}")
-        
-        # 檢查是否為會員限定直播
+        # 檢查是否為會員限定
         if video_details['snippet'].get('liveBroadcastContent') == 'membersOnly':
-            print(f"DEBUG: 跳過會員限定視頻：{video_id}")
             return None
         
-        # 檢查是否為直播影片
+        # 檢查直播相關時間
         if 'liveStreamingDetails' in video_details:
-            # 使用直播開始時間
-            actual_start_time = video_details['liveStreamingDetails'].get('actualStartTime')
-            if actual_start_time:
-                # 直接解析時間，這已經是當地時間
-                stream_date = datetime.strptime(actual_start_time, '%Y-%m-%dT%H:%M:%SZ')
-                return stream_date.date()
+            for time_field in ['actualStartTime', 'scheduledStartTime']:
+                if time_field in video_details['liveStreamingDetails']:
+                    return datetime.strptime(
+                        video_details['liveStreamingDetails'][time_field], 
+                        '%Y-%m-%dT%H:%M:%SZ'
+                    ).date()
         
-        # 如果不是直播或沒有直播時間，使用發布時間
-        publish_time = video_details['snippet']['publishedAt']
-        publish_date = datetime.strptime(publish_time, '%Y-%m-%dT%H:%M:%SZ')
-        return publish_date.date()
+        # 如果都沒有，使用發布時間
+        return datetime.strptime(
+            video_details['snippet']['publishedAt'], 
+            '%Y-%m-%dT%H:%M:%SZ'
+        ).date()
+        
     except HttpError as e:
         print(f"Error fetching video date for {video_id}: {e}")
         return None
 
 def get_video_ids_from_playlist(playlist_id):
-    """從播放清單獲取影片ID和日期"""
+    """從播放清單獲取最近30天的影片ID和日期"""
     video_info = []
     
     # 計算最近30天的日期
     thirty_days_ago = datetime.now(timezone.utc) - timedelta(days=30)
-    # 格式化成 RFC 3339 格式
-    published_after = thirty_days_ago.strftime('%Y-%m-%dT%H:%M:%SZ')
     
     request = youtube.playlistItems().list(
-        part='contentDetails,snippet',  # 添加 snippet
+        part='snippet',  # 只需要 snippet 就足夠了
         playlistId=playlist_id,
         maxResults=50
     )
@@ -84,14 +76,24 @@ def get_video_ids_from_playlist(playlist_id):
     while request:
         try:
             response = request.execute()
-            for item in response['items']:
-                video_id = item['contentDetails']['videoId']
-                video_date = get_video_date(video_id)
+            items = response.get('items', [])
+            
+            for item in items:
+                published_time = datetime.strptime(
+                    item['snippet']['publishedAt'], 
+                    '%Y-%m-%dT%H:%M:%SZ'
+                ).replace(tzinfo=timezone.utc)
                 
-                if video_date and video_date >= thirty_days_ago.date():
+                # 如果超過30天就停止檢查
+                if published_time < thirty_days_ago:
+                    return video_info
+                
+                video_id = item['snippet']['resourceId']['videoId']
+                video_date = get_video_date(video_id)
+                if video_date:
                     video_info.append((video_id, video_date))
-                    print(f"找到影片：{video_id} 來自 {video_date}")
-                    
+                    print(f"找到播放清單影片：{video_id} 來自 {video_date}")
+            
             request = youtube.playlistItems().list_next(request, response)
         except HttpError as e:
             print(f"Error fetching playlist items: {e}")
@@ -215,27 +217,28 @@ def get_timestamp_comment(video_id):
             maxResults=100
         )
 
+        timestamp_markers = ['💐🌟🎶タイムスタンプ💐🌟🎶', '🌟💐🎶タイムスタンプ🌟💐🎶']
+        
         while request:
             response = request.execute()
             for item in response['items']:
                 # 檢查頂級評論
                 comment = item['snippet']['topLevelComment']['snippet']['textDisplay']
-                if '💐🌟🎶タイムスタンプ💐🌟🎶' in comment or '🌟💐🎶タイムスタンプ🌟💐🎶' in comment:
+                if any(marker in comment for marker in timestamp_markers):
                     return comment
                 
                 # 檢查回覆評論
                 if 'replies' in item:
                     for reply in item['replies']['comments']:
-                        reply_comment = reply['snippet']['textDisplay']
-                        if '💐🌟🎶タイムスタンプ💐🌟🎶' in reply_comment or '🌟💐🎶タイムスタンプ🌟💐🎶' in reply_comment:
-                            return reply_comment
+                        reply_text = reply['snippet']['textDisplay']
+                        if any(marker in reply_text for marker in timestamp_markers):
+                            return reply_text
 
             request = youtube.commentThreads().list_next(request, response)
-    
+            
     except HttpError as e:
         print(f"Error fetching comments for video {video_id}: {e}")
-        return None
-
+    
     return None
 
 def clean_html(raw_html):
@@ -274,34 +277,28 @@ def save_to_file(video_id, comment, date):
 def main():
     channel_id = 'UCDqn3HdMA5zwlYvsQ1YSG4Q'
     playlist_id = 'PL7H5HbMMfm_lUoLIkPAZkhF_W0oDf5WEk'
-
-    print(f"DEBUG: 開始時間: {datetime.now(timezone.utc)}")
+    start_time = datetime.now(timezone.utc)
     
-    # 從頻道獲取歌枠直播
+    print(f"DEBUG: 開始時間: {start_time}")
+    
+    # 收集所有影片資訊
     video_info = get_video_ids_from_channel(channel_id)
-    print(f"DEBUG: 從頻道獲取到 {len(video_info)} 個歌枠直播")
+    video_info.extend(get_video_ids_from_playlist(playlist_id))
     
-    # 從播放清單獲取影片
-    playlist_videos = get_video_ids_from_playlist(playlist_id)
-    video_info.extend(playlist_videos)
-    
-    # 顯示處理狀態
-    print(f"DEBUG: 去重前總數: {len(video_info)}")
-    video_info = list(set(video_info))
-    print(f"DEBUG: 去重後總數: {len(video_info)}")
+    # 去重並排序
+    video_info = sorted(set(video_info), key=lambda x: x[1], reverse=True)
+    print(f"DEBUG: 找到 {len(video_info)} 個唯一影片")
     
     # 處理每個影片
-    for video_id, video_date in sorted(video_info, key=lambda x: x[1], reverse=True):
-        file_name = video_date.strftime('%Y%m%d') + '.txt'
+    for video_id, video_date in video_info:
+        file_name = f"{video_date:%Y%m%d}.txt"
         file_path = os.path.join('timeline', file_name)
         
         if os.path.exists(file_path):
             print(f"DEBUG: 檔案已存在，跳過 {video_id} ({video_date})")
             continue
-            
-        print(f"DEBUG: 處理影片 {video_id} ({video_date})")
-        timestamp_comment = get_timestamp_comment(video_id)
-        if timestamp_comment:
+        
+        if timestamp_comment := get_timestamp_comment(video_id):
             save_to_file(video_id, timestamp_comment, video_date)
 
 if __name__ == '__main__':
