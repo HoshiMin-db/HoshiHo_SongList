@@ -129,10 +129,10 @@ function createDateCell(row, newRow) {
 
     link.onclick = function (event) {
         event.preventDefault();
-        if (isValidYouTubeURL(link.href)) {
-            openFloatingPlayer(link.href);
+        if (window.isValidYouTubeURL && window.isValidYouTubeURL(link.href)) {
+            window.openFloatingPlayer(link.href);
         } else {
-            console.error("Invalid URL:", link.href);
+            console.error("Invalid URL or YouTube player not initialized:", link.href);
         }
     };
 
