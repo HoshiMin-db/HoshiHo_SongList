@@ -5,7 +5,6 @@ const translations = {
         'title': '🌟 HoshiHo 歌曲リスト 💐',
         'totalSongs': '総曲数：',
         'searchPlaceholder': '曲名、歌手、出典、または日付(DDMMYYYY)を検索...',
-        'closeButton': '閉じる',
         'az': 'A-Z',
         'songTitle': '曲名',
         'artist': '歌手',
@@ -16,7 +15,6 @@ const translations = {
         'title': '🌟 HoshiHo Song List 💐',
         'totalSongs': 'Total Songs：',
         'searchPlaceholder': 'Search song name, artist, source, or date (DDMMYYYY)...',
-        'closeButton': 'Close',
         'az': 'A-Z',
         'songTitle': 'Song Title',
         'artist': 'Artist',
@@ -27,7 +25,6 @@ const translations = {
         'title': '🌟 HoshiHo 歌單 💐',
         'totalSongs': '總曲數：',
         'searchPlaceholder': '搜尋歌名、歌手、來源或日期(DDMMYYYY)...',
-        'closeButton': '關閉',
         'az': 'A-Z',
         'songTitle': '曲名',
         'artist': '歌手',
@@ -51,7 +48,6 @@ function setLanguage(lang) {
     
     // 更新其他翻譯內容
     document.getElementById('searchInput').placeholder = translations[lang]['searchPlaceholder'];
-    document.querySelector('.close-btn').innerText = translations[lang]['closeButton'];
     document.querySelector('th.az').innerText = translations[lang]['az'];
     document.querySelector('th.song-title').innerText = translations[lang]['songTitle'];
     document.querySelector('th.artist').innerText = translations[lang]['artist'];
