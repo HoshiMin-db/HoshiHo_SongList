@@ -1,5 +1,18 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const validUrls = ['https://www.youtube.com', 'https://music.youtube.com'];
+    const validUrls = ['https://www.youtube.com', 'https://music.youtube.com', 'https://youtu.be'];
+
+    // 統一的 URL 驗證函數
+    function isValidYouTubeURL(url) {
+        try {
+            const urlObj = new URL(url);
+            return validUrls.some(validUrl => 
+                urlObj.origin === validUrl || 
+                (validUrl === 'https://youtu.be' && urlObj.hostname === 'youtu.be')
+            );
+        } catch (e) {
+            return false;
+        }
+    }
 
     function createYoutubeEmbed(url) {
         let videoId = '';
@@ -18,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
 
-        console.log(`Embedding videoId: ${videoId}, startTime: ${startTime}`); // 調試用
         return `https://www.youtube.com/embed/${videoId}?start=${startTime}`;
     }
 
@@ -27,24 +39,20 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function openFloatingPlayer(url) {
-        try {
-            const urlObj = new URL(url);
-            if (validUrls.some(validUrl => urlObj.origin === validUrl)) {
-                if (isMobileDevice()) {
-                    window.open(url, '_blank');
-                } else {
-                    const floatingPlayerContainer = document.getElementById('floatingPlayerContainer');
-                    const floatingPlayer = document.getElementById('floatingPlayer');
-                    floatingPlayer.src = createYoutubeEmbed(url);
-                    floatingPlayer.style.width = '100%';
-                    floatingPlayer.style.height = '100%';
-                    floatingPlayerContainer.style.display = 'block';
-                }
-            } else {
-                alert('無效的URL');
-            }
-        } catch (e) {
-            alert('無效的URL');
+        if (!isValidYouTubeURL(url)) {
+            console.error("Invalid YouTube URL:", url);
+            return;
+        }
+
+        if (isMobileDevice()) {
+            window.open(url, '_blank');
+        } else {
+            const floatingPlayerContainer = document.getElementById('floatingPlayerContainer');
+            const floatingPlayer = document.getElementById('floatingPlayer');
+            floatingPlayer.src = createYoutubeEmbed(url);
+            floatingPlayer.style.width = '100%';
+            floatingPlayer.style.height = '100%';
+            floatingPlayerContainer.style.display = 'block';
         }
     }
 
@@ -55,7 +63,8 @@ document.addEventListener("DOMContentLoaded", function() {
         floatingPlayerContainer.style.display = 'none';
     }
 
-    // 將 closeFloatingPlayer 和 openFloatingPlayer 添加到全局作用域
-    window.closeFloatingPlayer = closeFloatingPlayer;
+    // 將函數導出到全局作用域
+    window.isValidYouTubeURL = isValidYouTubeURL;
     window.openFloatingPlayer = openFloatingPlayer;
+    window.closeFloatingPlayer = closeFloatingPlayer;
 });
