@@ -252,13 +252,16 @@ function displayData(data, numDates = 3) {
             if (weightDiff !== 0) return weightDiff;
 
             if (aType === "japanese" && bType === "japanese") {
-                const aKey = getJapaneseSortKey(a);
-                const bKey = getJapaneseSortKey(b);
-                return aKey.localeCompare(bKey, "ja-JP");
+            const aKey = getJapaneseSortKey(a);
+            const bKey = getJapaneseSortKey(b);
+            // 先比較 az 分組
+            const groupCompare = aKey.localeCompare(bKey, 'ja-JP');
+            if (groupCompare !== 0) {
+                return groupCompare;
             }
-
-            return a.song_name.localeCompare(b.song_name, "ja-JP");
-        })
+            // 相同分組內按原始名稱排序
+            return a.song_name.localeCompare(b.song_name, 'ja-JP');
+        }
         .forEach((item) => {
             const row = createTableRow(item, numDates);
             songTableBody.appendChild(row);
