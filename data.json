@@ -590,6 +590,14 @@
                 "is_private": false
             },
             {
+                "date": "20250719",
+                "time": "03:27:00",
+                "link": "https://www.youtube.com/watch?v=zfOYWj9prDo&t=12420s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20240727",
                 "time": "01:44:31",
                 "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=6271s",
@@ -1876,6 +1884,14 @@
                 "is_private": false
             },
             {
+                "date": "20250719",
+                "time": "02:29:05",
+                "link": "https://www.youtube.com/watch?v=zfOYWj9prDo&t=8945s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20250301",
                 "time": "03:31:56",
                 "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=12716s",
@@ -1928,6 +1944,14 @@
                 "date": "20241027",
                 "time": "01:33:23",
                 "link": "https://www.youtube.com/watch?v=slgufiU0sI4&t=5603s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250719",
+                "time": "00:33:09",
+                "link": "https://www.youtube.com/watch?v=zfOYWj9prDo&t=1989s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -2138,6 +2162,14 @@
                 "is_private": false
             },
             {
+                "date": "20250719",
+                "time": "00:51:23",
+                "link": "https://www.youtube.com/watch?v=zfOYWj9prDo&t=3083s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20240410",
                 "time": "00:18:59",
                 "link": "https://www.youtube.com/watch?v=EUyxxgR0Kh4&t=1139s",
@@ -2305,6 +2337,14 @@
                 "date": "20240106",
                 "time": "06:00:20",
                 "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=21620s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250719",
+                "time": "01:58:33",
+                "link": "https://www.youtube.com/watch?v=zfOYWj9prDo&t=7113s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -2500,6 +2540,14 @@
                 "is_private": false
             },
             {
+                "date": "20250719",
+                "time": "00:41:03",
+                "link": "https://www.youtube.com/watch?v=zfOYWj9prDo&t=2463s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20240727",
                 "time": "03:10:07",
                 "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=11407s",
@@ -2560,6 +2608,14 @@
                 "date": "20240420",
                 "time": "05:03:38",
                 "link": "https://www.youtube.com/watch?v=xjSFVGe8eAo&t=18218s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250719",
+                "time": "00:45:47",
+                "link": "https://www.youtube.com/watch?v=zfOYWj9prDo&t=2747s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -2645,6 +2701,14 @@
                 "is_member_exclusive": true,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20250719",
+                "time": "01:25:40",
+                "link": "https://www.youtube.com/watch?v=zfOYWj9prDo&t=5140s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -2676,6 +2740,14 @@
                 "time": "02:35:53",
                 "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=9353s",
                 "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250719",
+                "time": "01:29:44",
+                "link": "https://www.youtube.com/watch?v=zfOYWj9prDo&t=5384s",
+                "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
             }
@@ -4780,6 +4852,14 @@
                 "time": "04:31:31",
                 "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=16291s",
                 "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250719",
+                "time": "00:12:31",
+                "link": "https://www.youtube.com/watch?v=zfOYWj9prDo&t=751s",
+                "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
             },
@@ -8175,6 +8255,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20250719",
+                "time": "01:17:09",
+                "link": "https://www.youtube.com/watch?v=zfOYWj9prDo&t=4629s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -8197,6 +8285,14 @@
                 "date": "20231209",
                 "time": "03:34:25",
                 "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=12865s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250719",
+                "time": "01:20:43",
+                "link": "https://www.youtube.com/watch?v=zfOYWj9prDo&t=4843s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -9751,6 +9847,14 @@
                 "is_private": false
             },
             {
+                "date": "20250719",
+                "time": "00:57:56",
+                "link": "https://www.youtube.com/watch?v=zfOYWj9prDo&t=3476s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20250301",
                 "time": "03:25:11",
                 "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=12311s",
@@ -10576,6 +10680,14 @@
                 "date": "20241130",
                 "time": "01:42:17",
                 "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=6137s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250719",
+                "time": "01:52:41",
+                "link": "https://www.youtube.com/watch?v=zfOYWj9prDo&t=6761s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -12148,6 +12260,14 @@
                 "is_private": false
             },
             {
+                "date": "20250719",
+                "time": "01:06:07",
+                "link": "https://www.youtube.com/watch?v=zfOYWj9prDo&t=3967s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20250503",
                 "time": "00:34:19",
                 "link": "https://www.youtube.com/watch?v=bTX9N8eKSRA&t=2059s",
@@ -12184,6 +12304,14 @@
                 "date": "20231209",
                 "time": "03:22:28",
                 "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=12148s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250719",
+                "time": "01:08:51",
+                "link": "https://www.youtube.com/watch?v=zfOYWj9prDo&t=4131s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -18183,6 +18311,14 @@
                 "is_private": false
             },
             {
+                "date": "20250719",
+                "time": "01:38:03",
+                "link": "https://www.youtube.com/watch?v=zfOYWj9prDo&t=5883s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20241221",
                 "time": "04:54:57",
                 "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=17697s",
@@ -18211,6 +18347,14 @@
                 "date": "20231209",
                 "time": "04:41:36",
                 "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=16896s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250719",
+                "time": "01:41:40",
+                "link": "https://www.youtube.com/watch?v=zfOYWj9prDo&t=6100s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -18392,6 +18536,140 @@
         ]
     },
     {
+        "song_name": "Monsoon",
+        "artist": "Armony",
+        "source": "",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250719",
+                "time": "00:24:02",
+                "link": "https://www.youtube.com/watch?v=zfOYWj9prDo&t=1442s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250301",
+                "time": "06:37:06",
+                "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=23826s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240518",
+                "time": "06:07:43",
+                "link": "https://www.youtube.com/watch?v=0mO1WLnuFYM&t=22063s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Love Destiny",
+        "artist": "堀江由衣",
+        "source": "シスター・プリンセス",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250719",
+                "time": "02:21:04",
+                "link": "https://www.youtube.com/watch?v=zfOYWj9prDo&t=8464s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240922",
+                "time": "02:21:44",
+                "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=8504s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240518",
+                "time": "03:52:43",
+                "link": "https://www.youtube.com/watch?v=0mO1WLnuFYM&t=13963s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "skirt",
+        "artist": "aiko",
+        "source": "アポカリプスホテル",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250719",
+                "time": "02:35:10",
+                "link": "https://www.youtube.com/watch?v=zfOYWj9prDo&t=9310s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "UNDEAD",
+        "artist": "YOASOBI",
+        "source": "〈物語〉シリーズ オフ＆モンスターシーズン",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250719",
+                "time": "02:46:25",
+                "link": "https://www.youtube.com/watch?v=zfOYWj9prDo&t=9985s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "お願いジュンブライト",
+        "artist": "牧野由依",
+        "source": "",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250719",
+                "time": "03:15:05",
+                "link": "https://www.youtube.com/watch?v=zfOYWj9prDo&t=11705s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "夢は終わらない 〜こぼれ落ちる時の雫〜",
+        "artist": "吉田由香里",
+        "source": "テイルズ オブ ファンタジア (SFC版)",
+        "is_copyright": false,
+        "az": "ゆ",
+        "dates": [
+            {
+                "date": "20250719",
+                "time": "03:21:23",
+                "link": "https://www.youtube.com/watch?v=zfOYWj9prDo&t=12083s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
         "song_name": "Super Driver",
         "artist": "平野綾",
         "source": "涼宮ハルヒの憂鬱",
@@ -18436,31 +18714,6 @@
                 "date": "20240922",
                 "time": "01:37:16",
                 "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=5836s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "Love Destiny",
-        "artist": "堀江由衣",
-        "source": "シスター・プリンセス",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20240922",
-                "time": "02:21:44",
-                "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=8504s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240518",
-                "time": "03:52:43",
-                "link": "https://www.youtube.com/watch?v=0mO1WLnuFYM&t=13963s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -20761,31 +21014,6 @@
                 "date": "20250301",
                 "time": "03:56:05",
                 "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=14165s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "Monsoon",
-        "artist": "Armony",
-        "source": "",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250301",
-                "time": "06:37:06",
-                "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=23826s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240518",
-                "time": "06:07:43",
-                "link": "https://www.youtube.com/watch?v=0mO1WLnuFYM&t=22063s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
