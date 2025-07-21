@@ -47,6 +47,14 @@
                 "is_private": false
             },
             {
+                "date": "20250705",
+                "time": "08:11:57",
+                "link": "https://www.youtube.com/watch?v=UNhFtu7NrHw&t=29517s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20231104",
                 "time": "04:19:23",
                 "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=15563s",
@@ -11907,23 +11915,6 @@
                 "time": "06:22:24",
                 "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=22944s",
                 "is_member_exclusive": true,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "Get Along",
-        "artist": "林原めぐみ",
-        "source": "スレイヤーズ",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250705",
-                "time": "08:11:57",
-                "link": "https://www.youtube.com/watch?v=UNhFtu7NrHw&t=29517s",
-                "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
             }
