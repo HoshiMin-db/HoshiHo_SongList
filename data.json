@@ -1138,14 +1138,6 @@
                 "is_private": false
             },
             {
-                "date": "20250323",
-                "time": "04:48:13",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=17293s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
                 "date": "20241214",
                 "time": "04:32:17",
                 "link": "https://www.youtube.com/watch?v=SX5pWgl_Sxk&t=16337s",
@@ -3073,14 +3065,6 @@
                 "date": "20240615",
                 "time": "04:40:55",
                 "link": "https://www.youtube.com/watch?v=DjJmVyIXfH8&t=16855s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20250323",
-                "time": "04:15:21",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=15321s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -5286,14 +5270,6 @@
                 "is_private": false
             },
             {
-                "date": "20250323",
-                "time": "02:19:29",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=8369s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
                 "date": "20231216",
                 "time": "07:45:07",
                 "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=27907s",
@@ -6606,14 +6582,6 @@
                 "date": "20240413",
                 "time": "05:30:14",
                 "link": "https://www.youtube.com/watch?v=pdTvRavUxVQ&t=19814s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20250323",
-                "time": "05:32:42",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=19962s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -8070,14 +8038,6 @@
                 "is_private": false
             },
             {
-                "date": "20250323",
-                "time": "00:17:02",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=1022s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
                 "date": "20250322",
                 "time": "00:17:02",
                 "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=1022s",
@@ -8611,14 +8571,6 @@
                 "is_private": false
             },
             {
-                "date": "20250323",
-                "time": "00:40:51",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=2451s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
                 "date": "20250322",
                 "time": "00:40:51",
                 "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=2451s",
@@ -8639,14 +8591,6 @@
                 "date": "20241019",
                 "time": "02:42:33",
                 "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=9753s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20250323",
-                "time": "00:49:45",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=2985s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -11494,14 +11438,6 @@
                 "is_private": false
             },
             {
-                "date": "20250323",
-                "time": "03:58:57",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=14337s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
                 "date": "20250506",
                 "time": "00:13:07",
                 "link": "https://www.youtube.com/watch?v=CpX--Rfi6Mo&t=787s",
@@ -12406,179 +12342,6 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "夢の果てまで",
-        "artist": "早見沙織",
-        "source": "劇場版 はいからさんが通る 前編 〜紅緒、花の17歳〜",
-        "is_copyright": false,
-        "az": "ゆ",
-        "dates": [
-            {
-                "date": "20250323",
-                "time": "00:27:02",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=1622s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20250322",
-                "time": "00:27:02",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=1622s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "INVOKE",
-        "artist": "T.M.Revolution",
-        "source": "機動戦士ガンダムSEED",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250323",
-                "time": "04:25:53",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=15953s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20250104",
-                "time": "03:12:05",
-                "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=11525s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240224",
-                "time": "00:17:30",
-                "link": "https://www.youtube.com/watch?v=8i9TOCJF8ps&t=1050s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20250322",
-                "time": "04:25:53",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=15953s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20231111",
-                "time": "04:54:00",
-                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=17640s",
-                "is_member_exclusive": true,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "Life Goes On",
-        "artist": "有坂美香",
-        "source": "機動戦士ガンダムSEED DESTINY",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250323",
-                "time": "04:35:40",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=16540s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240224",
-                "time": "02:51:22",
-                "link": "https://www.youtube.com/watch?v=8i9TOCJF8ps&t=10282s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20250322",
-                "time": "04:35:40",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=16540s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "For フルーツバスケット",
-        "artist": "岡崎律子",
-        "source": "フルーツバスケット",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250323",
-                "time": "05:09:20",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=18560s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240518",
-                "time": "04:30:50",
-                "link": "https://www.youtube.com/watch?v=0mO1WLnuFYM&t=16250s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20250322",
-                "time": "05:09:20",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=18560s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20250517",
-                "time": "05:13:32",
-                "link": "https://www.youtube.com/watch?v=1RmXANp4b0I&t=18812s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "サクラサク",
-        "artist": "林原めぐみ",
-        "source": "ラブひな",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250323",
-                "time": "05:23:32",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=19412s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20250322",
-                "time": "05:23:32",
-                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=19412s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
             }
         ]
     },
@@ -16080,6 +15843,47 @@
         ]
     },
     {
+        "song_name": "INVOKE",
+        "artist": "T.M.Revolution",
+        "source": "機動戦士ガンダムSEED",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250104",
+                "time": "03:12:05",
+                "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=11525s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240224",
+                "time": "00:17:30",
+                "link": "https://www.youtube.com/watch?v=8i9TOCJF8ps&t=1050s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250322",
+                "time": "04:25:53",
+                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=15953s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20231111",
+                "time": "04:54:00",
+                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=17640s",
+                "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
         "song_name": "風のとおり道",
         "artist": "久石譲",
         "source": "となりのトトロ",
@@ -16284,6 +16088,39 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "For フルーツバスケット",
+        "artist": "岡崎律子",
+        "source": "フルーツバスケット",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20240518",
+                "time": "04:30:50",
+                "link": "https://www.youtube.com/watch?v=0mO1WLnuFYM&t=16250s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250322",
+                "time": "05:09:20",
+                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=18560s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20250517",
+                "time": "05:13:32",
+                "link": "https://www.youtube.com/watch?v=1RmXANp4b0I&t=18812s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
             }
         ]
     },
@@ -18329,6 +18166,31 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Life Goes On",
+        "artist": "有坂美香",
+        "source": "機動戦士ガンダムSEED DESTINY",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20240224",
+                "time": "02:51:22",
+                "link": "https://www.youtube.com/watch?v=8i9TOCJF8ps&t=10282s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250322",
+                "time": "04:35:40",
+                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=16540s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
             }
         ]
     },
@@ -22185,6 +22047,40 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "夢の果てまで",
+        "artist": "早見沙織",
+        "source": "劇場版 はいからさんが通る 前編 〜紅緒、花の17歳〜",
+        "is_copyright": false,
+        "az": "ゆ",
+        "dates": [
+            {
+                "date": "20250322",
+                "time": "00:27:02",
+                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=1622s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            }
+        ]
+    },
+    {
+        "song_name": "サクラサク",
+        "artist": "林原めぐみ",
+        "source": "ラブひな",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250322",
+                "time": "05:23:32",
+                "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=19412s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
             }
         ]
     },
