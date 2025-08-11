@@ -115,19 +115,18 @@ function getSortWeight(type) {
 }
 
 // 創建日期儲存格
-function createDateCell(row, newRow) {
-    const dateCell = newRow.insertCell();
+function createDateCell(row) {
+    const dateCell = document.createElement("div");
+    dateCell.className = "date-cell";
+    
     const link = document.createElement("a");
     const date = row.date;
-    const formattedDate = `${date.substring(6, 8)}/${date.substring(
-        4,
-        6
-    )}/${date.substring(0, 4)}`;
+    const formattedDate = `${date.substring(6, 8)}/${date.substring(4, 6)}/${date.substring(0, 4)}`;
     link.href = row.link;
     link.textContent = formattedDate;
     link.target = "_blank";
 
-    link.onclick = function (event) {
+    link.onclick = function(event) {
         event.preventDefault();
         if (window.isValidYouTubeURL && window.isValidYouTubeURL(link.href)) {
             window.openFloatingPlayer(link.href);
@@ -176,6 +175,7 @@ function createTableRow(item, numDates) {
     newRow.insertCell().textContent = item.artist;
     newRow.insertCell().textContent = item.source || "";
 
+    // 對日期進行排序
     const sortedDates = item.dates.sort((a, b) => {
         const dateA = new Date(
             `${a.date.substring(0, 4)}-${a.date.substring(4, 6)}-${a.date.substring(6, 8)}T${a.time}`
@@ -186,15 +186,15 @@ function createTableRow(item, numDates) {
         return dateB - dateA;
     });
 
-    // 創建一個容器來存放所有日期儲存格
-    const datesContainer = document.createElement("td");
-    datesContainer.colSpan = numDates + 1; // +1 為了包含更多按鈕
-    
+    // 創建日期容器單元格
+    const datesContainerCell = newRow.insertCell();
+    datesContainerCell.colSpan = numDates + 1;
+
     // 創建可滾動的日期容器
     const scrollContainer = document.createElement("div");
     scrollContainer.className = "dates-container";
     
-    // 只展示最近的 numDates 個日期（預設為3個）
+    // 添加初始日期（最近的numDates個）
     const initialDates = sortedDates.slice(0, numDates);
     initialDates.forEach(dateInfo => {
         const dateCell = createDateCell(dateInfo);
@@ -211,16 +211,16 @@ function createTableRow(item, numDates) {
         
         moreButton.onclick = () => {
             if (!isExpanded) {
-                // 添加剩餘的日期（從第numDates個開始）
+                // 添加剩餘的日期
                 sortedDates.slice(numDates).forEach(dateInfo => {
                     const dateCell = createDateCell(dateInfo);
-                    dateCell.classList.add("date-cell", "extra-date");
+                    dateCell.classList.add("extra-date");
                     scrollContainer.appendChild(dateCell);
                 });
                 moreButton.textContent = "←";
                 isExpanded = true;
             } else {
-                // 只保留最初的numDates個日期
+                // 移除額外的日期
                 const extraDates = scrollContainer.querySelectorAll(".extra-date");
                 extraDates.forEach(cell => cell.remove());
                 moreButton.textContent = "...";
@@ -228,15 +228,13 @@ function createTableRow(item, numDates) {
             }
         };
 
-        // 將按鈕添加到容器中
-        const buttonCell = document.createElement("div");
-        buttonCell.className = "date-cell";
-        buttonCell.appendChild(moreButton);
-        scrollContainer.appendChild(buttonCell);
+        const buttonContainer = document.createElement("div");
+        buttonContainer.className = "date-cell";
+        buttonContainer.appendChild(moreButton);
+        scrollContainer.appendChild(buttonContainer);
     }
 
-    datesContainer.appendChild(scrollContainer);
-    newRow.appendChild(datesContainer);
+    datesContainerCell.appendChild(scrollContainer);
 
     return newRow;
 }
