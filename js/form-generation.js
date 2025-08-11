@@ -188,6 +188,7 @@ function createTableRow(item, numDates) {
 
     // 創建日期容器單元格
     const datesContainerCell = newRow.insertCell();
+    datesContainerCell.className = 'dates-container-cell';  // 添加這行
     datesContainerCell.colSpan = numDates + 1;
 
     // 創建可滾動的日期容器
