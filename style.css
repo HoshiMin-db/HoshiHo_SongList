@@ -245,6 +245,45 @@ table thead th {
     position: relative;
 }
 
+/* 日期欄位的容器樣式 */
+.dates-container {
+    position: relative;
+    display: flex;
+    max-width: 400px; /* 可根據需要調整寬度 */
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    padding: 0 5px;
+}
+
+/* 美化滾動條 */
+.dates-container::-webkit-scrollbar {
+    height: 6px;
+}
+
+.dates-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.dates-container::-webkit-scrollbar-thumb {
+    background: #8a80cd;
+    border-radius: 3px;
+}
+
+.dates-container::-webkit-scrollbar-thumb:hover {
+    background: #6a5acd;
+}
+
+/* 日期儲存格樣式 */
+.date-cell {
+    min-width: 120px; /* 確保每個日期儲存格有固定最小寬度 */
+    padding: 12px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 /* Discography styles */
 .disc-container {
     display: flex;
