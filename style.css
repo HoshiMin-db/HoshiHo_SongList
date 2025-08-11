@@ -55,25 +55,17 @@ body {
     box-sizing: border-box; /* 確保 padding 不會增加元素實際大小 */
 }
 
+/* 首先，確保表格使用固定佈局 */
 table {
     width: 100%;
     border-collapse: collapse;
     background: white;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    table-layout: fixed; /* 添加固定佈局 */
 }
 
 table, th, td {
     border: 1px solid #ddd;
-}
-
-th, td {
-    padding: 12px;
-    text-align: left;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 200px;
-    position: relative;
 }
 
 td:hover {
@@ -194,31 +186,48 @@ a:hover {
     }
 }
 
-/* 調整表格列寬度 */
+/* A-Z 欄位 */
 th:nth-child(1), td:nth-child(1) {
     width: 5%;
 }
 
+/* 曲名欄位 */
 th:nth-child(2), td:nth-child(2) {
-    width: 30%;
+    width: 25%;
 }
 
-th:nth-child(3), td:nth-child(3), th:nth-child(4), td:nth-child(4) {
-    width: 10%;
+/* 歌手欄位 */
+th:nth-child(3), td:nth-child(3) {
+    width: 15%;
 }
 
-/* 調整日期欄字體大小 */
-td:nth-child(5), td:nth-child(6),
-td:nth-child(7),
-td:nth-child(8),
-td.date-cell {
-    font-size: 12px;
+/* 出處欄位 */
+th:nth-child(4), td:nth-child(4) {
+    width: 15%;
 }
 
-/* 確保日期容器的父級 td 不會影響佈局 */
+/* 日期欄位容器 */
 td.dates-container-cell {
+    width: 40%; /* 分配剩餘空間給日期欄位 */
+}
+
+/* 日期容器的內部樣式 */
+.dates-container {
+    display: flex;
+    overflow-x: auto;
+    width: 100%; /* 使用100%寬度 */
+    margin: 0;
     padding: 0;
-    background: white;
+}
+
+/* 單個日期儲存格 */
+.date-cell {
+    flex: 0 0 auto;
+    min-width: 100px; /* 最小寬度 */
+    max-width: 120px; /* 最大寬度 */
+    padding: 12px;
+    border-right: 1px solid #ddd;
+    text-align: center;
 }
 
 /* 固定表頭樣式 */
@@ -251,49 +260,32 @@ table thead th {
     position: relative;
 }
 
-/* 修改日期相關的儲存格樣式 */
-.dates-container {
-    display: flex;
-    overflow-x: auto;
-    max-width: 400px;
-    border: none;
-    margin: -12px; /* 抵消 td 的 padding */
-}
-
-/* 精簡滾動條樣式 */
-.dates-container::-webkit-scrollbar {
-    height: 3px; /* 減小滾動條高度 */
-}
-
-.dates-container::-webkit-scrollbar-thumb {
-    background: #8a80cd;
-    border-radius: 1.5px;
-}
-
-/* 日期儲存格樣式 */
-.date-cell {
+/* 移除之前可能造成衝突的樣式 */
+th, td {
     padding: 12px;
-    border-right: 1px solid #ddd;
-    min-width: 100px;
-    text-align: center;
-    background: inherit;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
 }
 
+/* 更新更多按鈕容器的樣式 */
 .date-cell:last-child {
+    min-width: 50px; /* 更多按鈕使用較小的寬度 */
     border-right: none;
 }
 
-.date-cell.acapella {
-    background-color: #e0f7fa;
-}
-
-/* 更新更多按鈕樣式 */
 .more-button {
+    background-color: #8a80cd;
+    color: white;
+    border: none;
     padding: 2px 8px;
-    margin: 0 4px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
     height: 20px;
     line-height: 20px;
-    vertical-align: middle;
 }
 
 .more-button:hover {
