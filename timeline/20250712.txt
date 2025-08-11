@@ -17,9 +17,10 @@ ID = 81cDt2O_CmE
 14.    03:54:46    二人三脚  / 『Tales of Symphonia ~Knight of Ratatosk~』misono
 15.    04:55:19    スカイクラッドの観測者  / 『STEINS;GATE(ゲーム)』いとうかなこ
 16.    05:00:39    Hacking to the Gate  / 『STEINS;GATE』いとうかなこ
-17.    05:32:00    ファティマ(Short Ver.)  / 『STEINS;GATE 0』奥井雅美
+17.    05:32:00    ファティマ  / 『STEINS;GATE 0』奥井雅美
 18.    05:38:34    disillusion  / 『Fate/stay night (アニメ)』タイナカサチ
 19.    05:50:13    to the beginning  / 『Fate/Zero』Kalafina
 20.    06:04:41    満天  / 『Fate/Zero』Kalafina
 21.    06:13:20    MEMORIA  / 『Fate/Zero』藍井エイル
+
 
