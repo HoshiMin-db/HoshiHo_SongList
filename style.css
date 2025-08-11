@@ -215,6 +215,12 @@ td.date-cell {
     font-size: 12px;
 }
 
+/* 確保日期容器的父級 td 不會影響佈局 */
+td.dates-container-cell {
+    padding: 0;
+    background: white;
+}
+
 /* 固定表頭樣式 */
 table thead th {
     position: sticky;
@@ -245,58 +251,49 @@ table thead th {
     position: relative;
 }
 
-/* 添加或更新以下樣式 */
+/* 修改日期相關的儲存格樣式 */
 .dates-container {
     display: flex;
     overflow-x: auto;
-    overflow-y: hidden;
-    gap: 5px;
-    padding: 5px;
     max-width: 400px;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
+    border: none;
+    margin: -12px; /* 抵消 td 的 padding */
 }
 
+/* 精簡滾動條樣式 */
+.dates-container::-webkit-scrollbar {
+    height: 3px; /* 減小滾動條高度 */
+}
+
+.dates-container::-webkit-scrollbar-thumb {
+    background: #8a80cd;
+    border-radius: 1.5px;
+}
+
+/* 日期儲存格樣式 */
 .date-cell {
-    flex: 0 0 auto;
+    padding: 12px;
+    border-right: 1px solid #ddd;
     min-width: 100px;
-    padding: 8px;
     text-align: center;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    background-color: #fff;
+    background: inherit;
+}
+
+.date-cell:last-child {
+    border-right: none;
 }
 
 .date-cell.acapella {
     background-color: #e0f7fa;
 }
 
-.dates-container::-webkit-scrollbar {
-    height: 6px;
-}
-
-.dates-container::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 3px;
-}
-
-.dates-container::-webkit-scrollbar-thumb {
-    background: #8a80cd;
-    border-radius: 3px;
-}
-
-.dates-container::-webkit-scrollbar-thumb:hover {
-    background: #6a5acd;
-}
-
+/* 更新更多按鈕樣式 */
 .more-button {
-    background-color: #8a80cd;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 12px;
+    padding: 2px 8px;
+    margin: 0 4px;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
 }
 
 .more-button:hover {
