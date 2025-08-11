@@ -35,13 +35,21 @@ jobs:
         run: |
           python backend/getcomment.py
 
+      # 新增：檢查已刪除的影片
+      - name: Check Deleted Videos
+        env:
+          GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        run: |
+          python backend/check_deleted_videos.py
+
       - name: Commit and Push changes
         run: |
           git add timeline/
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "Add new comments for videos"
+            git commit -m "Update timeline files and exceptions.txt"
             git push https://${{ secrets.PAT_TOKEN }}@github.com/HoshiMin-db/HoshiHo_SongList.git HEAD:main
           fi
         env:
