@@ -1,7 +1,4 @@
 member_exclusive_dates|20231028,20231104,20231111,20231118,20231125,20231202,20231216,20231223
 private|20250719,20250712,20250705,20250517,20250506,20250419,20250412,20250329,20250322
-
-copyright|あいつこそがテニスの王子様
-copyright|さんぽ|井上あずみ
-copyright|硝子の少年|キンキキッズ
 copyright|さよならの夏|手嶌葵
+private_id|0mO1WLnuFYM,1RmXANp4b0I,1VxGGjlEBUU,2ioVSgO5mHk,4HSxenbiKVU,4UkUe2DaDGQ,60ezegiABkc,81cDt2O_CmE,AXCx3Yt5Va0,B1ecI9nKdqc,BF0gUXxv-SE,BulhDgGI_lY,CpX--Rfi6Mo,DNUScSpLNGo,DjJmVyIXfH8,EUyxxgR0Kh4,GKJdPg7oqgs,HuTpPbGbxhQ,KXakrsIGS1E,KaCBSXIgl-E,LD1a-tUMQ7g,NhN4ZUXZtd4,OQO0FzogBp4,QIuZP_DTjv8,QYXlOQd-6Zw,SU06Cmm5xCs,SX5pWgl_Sxk,SzWbDrjyE6A,UNhFtu7NrHw,UoMwNx3aklM,W2ysMOjn-WY,ZOVG4VqE7-0,ZaEDNAxHAPk,d-gNtzWudk0,d0jBqFCADCU,e1Zc6s5Uq3k,fdpGIoCs6AU,iGytuGdRFog,lWzTB5itLBQ,m-6mCT8Z3Bo,p2SJznZGFfA,pdTvRavUxVQ,q0G8Q_5OAVw,r5My_0Wa0kQ,r9gjTxemMes,sj4k8Y5ESTU,sw2v_L322yc,tRCurzx2Abk,vsXKbYFTPbI,xjSFVGe8eAo,xqq8-ChkFFk,z7ve2IVHUHw,zfOYWj9prDo,zv9Wousjbho
