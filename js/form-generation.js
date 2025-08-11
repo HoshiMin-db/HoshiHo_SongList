@@ -186,40 +186,57 @@ function createTableRow(item, numDates) {
         return dateB - dateA;
     });
 
-    const dateCount = Math.min(numDates, sortedDates.length);
-    for (let i = 0; i < dateCount; i++) {
-        createDateCell(sortedDates[i], newRow);
-    }
+    // 創建一個容器來存放所有日期儲存格
+    const datesContainer = document.createElement("td");
+    datesContainer.colSpan = numDates + 1; // +1 為了包含更多按鈕
+    
+    // 創建可滾動的日期容器
+    const scrollContainer = document.createElement("div");
+    scrollContainer.className = "dates-container";
+    
+    // 只展示最近的 numDates 個日期（預設為3個）
+    const initialDates = sortedDates.slice(0, numDates);
+    initialDates.forEach(dateInfo => {
+        const dateCell = createDateCell(dateInfo);
+        scrollContainer.appendChild(dateCell);
+    });
 
-    for (let i = dateCount; i < numDates; i++) {
-        newRow.insertCell();
-    }
-
+    // 如果有更多日期，添加展開按鈕
     if (sortedDates.length > numDates) {
-        const moreButtonCell = newRow.insertCell();
         const moreButton = document.createElement("button");
         moreButton.textContent = "...";
         moreButton.className = "more-button";
+        
+        let isExpanded = false;
+        
         moreButton.onclick = () => {
-            const isExpanded =
-                moreButton.getAttribute("data-expanded") === "true";
-
-            if (isExpanded) {
-                const toRemove = newRow.querySelectorAll(".extra-date");
-                toRemove.forEach((el) => el.remove());
-                moreButton.setAttribute("data-expanded", "false");
-            } else {
-                sortedDates.slice(numDates).forEach((row) => {
-                    const dateCell = createDateCell(row, newRow);
+            if (!isExpanded) {
+                // 添加剩餘的日期（從第numDates個開始）
+                sortedDates.slice(numDates).forEach(dateInfo => {
+                    const dateCell = createDateCell(dateInfo);
                     dateCell.classList.add("date-cell", "extra-date");
+                    scrollContainer.appendChild(dateCell);
                 });
-                moreButton.setAttribute("data-expanded", "true");
+                moreButton.textContent = "←";
+                isExpanded = true;
+            } else {
+                // 只保留最初的numDates個日期
+                const extraDates = scrollContainer.querySelectorAll(".extra-date");
+                extraDates.forEach(cell => cell.remove());
+                moreButton.textContent = "...";
+                isExpanded = false;
             }
         };
-        moreButtonCell.appendChild(moreButton);
-    } else {
-        newRow.insertCell();
+
+        // 將按鈕添加到容器中
+        const buttonCell = document.createElement("div");
+        buttonCell.className = "date-cell";
+        buttonCell.appendChild(moreButton);
+        scrollContainer.appendChild(buttonCell);
     }
+
+    datesContainer.appendChild(scrollContainer);
+    newRow.appendChild(datesContainer);
 
     return newRow;
 }
