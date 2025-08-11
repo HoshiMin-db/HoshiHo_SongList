@@ -17421,6 +17421,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20250712",
+                "time": "05:32:00",
+                "link": "https://www.youtube.com/watch?v=81cDt2O_CmE&t=19920s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
             }
         ]
     },
@@ -18881,23 +18889,6 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "ファティマ(Short Ver.)",
-        "artist": "奥井雅美",
-        "source": "STEINS;GATE 0",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250712",
-                "time": "05:32:00",
-                "link": "https://www.youtube.com/watch?v=81cDt2O_CmE&t=19920s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
             }
         ]
     },
