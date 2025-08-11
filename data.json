@@ -4308,6 +4308,14 @@
                 "is_private": false
             },
             {
+                "date": "20250809",
+                "time": "00:41:24",
+                "link": "https://www.youtube.com/watch?v=R3mP--Wbx0k&t=2484s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20250719",
                 "time": "02:29:05",
                 "link": "https://www.youtube.com/watch?v=zfOYWj9prDo&t=8945s",
@@ -6968,6 +6976,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20250809",
+                "time": "02:33:20",
+                "link": "https://www.youtube.com/watch?v=R3mP--Wbx0k&t=9200s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -8415,6 +8431,240 @@
                 "date": "20241123",
                 "time": "06:56:24",
                 "link": "https://www.youtube.com/watch?v=KXakrsIGS1E&t=24984s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "JUST COMMUNICATION",
+        "artist": "TWO-MIX",
+        "source": "新機動戦記ガンダムW",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250809",
+                "time": "01:16:35",
+                "link": "https://www.youtube.com/watch?v=R3mP--Wbx0k&t=4595s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240216",
+                "time": "04:15:02",
+                "link": "https://www.youtube.com/watch?v=Z-1sxd5PK_M&t=15302s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20231202",
+                "time": "03:42:24",
+                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=13344s",
+                "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240410",
+                "time": "03:45:25",
+                "link": "https://www.youtube.com/watch?v=EUyxxgR0Kh4&t=13525s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20231111",
+                "time": "03:55:30",
+                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=14130s",
+                "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "オルフェンズの涙",
+        "artist": "MISIA",
+        "source": "機動戦士ガンダム 鉄血のオルフェンズ",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250809",
+                "time": "01:31:50",
+                "link": "https://www.youtube.com/watch?v=R3mP--Wbx0k&t=5510s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240224",
+                "time": "03:51:21",
+                "link": "https://www.youtube.com/watch?v=8i9TOCJF8ps&t=13881s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20231111",
+                "time": "06:09:52",
+                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=22192s",
+                "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Reckless fire",
+        "artist": "井出泰彰",
+        "source": "スクライド",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250809",
+                "time": "01:45:41",
+                "link": "https://www.youtube.com/watch?v=R3mP--Wbx0k&t=6341s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240120",
+                "time": "02:02:15",
+                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=7335s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "限界バトル",
+        "artist": "JAM Project",
+        "source": "遊☆戯☆王デュエルモンスターズGX",
+        "is_copyright": false,
+        "az": "げ",
+        "dates": [
+            {
+                "date": "20250809",
+                "time": "02:51:37",
+                "link": "https://www.youtube.com/watch?v=R3mP--Wbx0k&t=10297s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240308",
+                "time": "03:01:53",
+                "link": "https://www.youtube.com/watch?v=mfO62RxfZPU&t=10913s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "コネクト",
+        "artist": "ClariS",
+        "source": "魔法少女まどか☆マギカ",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250809",
+                "time": "03:03:27",
+                "link": "https://www.youtube.com/watch?v=R3mP--Wbx0k&t=11007s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "ヤマダ電機の唄",
+        "artist": "",
+        "source": "",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250809",
+                "time": "03:13:08",
+                "link": "https://www.youtube.com/watch?v=R3mP--Wbx0k&t=11588s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "カランドリエ",
+        "artist": "奥井亜紀",
+        "source": "黄昏乙女×アムネジア",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250809",
+                "time": "03:22:11",
+                "link": "https://www.youtube.com/watch?v=R3mP--Wbx0k&t=12131s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Sing My Pleasure",
+        "artist": "ヴィヴィ(Vo.八木海莉)",
+        "source": "Vivy - Fluorite Eye's Song -",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250809",
+                "time": "03:34:37",
+                "link": "https://www.youtube.com/watch?v=R3mP--Wbx0k&t=12877s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "太陽が呼んでいる",
+        "artist": "加藤いづみ",
+        "source": "サモンナイト3",
+        "is_copyright": false,
+        "az": "た",
+        "dates": [
+            {
+                "date": "20250809",
+                "time": "03:46:54",
+                "link": "https://www.youtube.com/watch?v=R3mP--Wbx0k&t=13614s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "白夜",
+        "artist": "松本英子",
+        "source": "サモンナイトエクステーゼ 夜明けの翼",
+        "is_copyright": false,
+        "az": "し",
+        "dates": [
+            {
+                "date": "20250809",
+                "time": "03:55:52",
+                "link": "https://www.youtube.com/watch?v=R3mP--Wbx0k&t=14152s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -11300,47 +11550,6 @@
                 "date": "20231111",
                 "time": "04:38:51",
                 "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=16731s",
-                "is_member_exclusive": true,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "JUST COMMUNICATION",
-        "artist": "TWO-MIX",
-        "source": "新機動戦記ガンダムW",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20240216",
-                "time": "04:15:02",
-                "link": "https://www.youtube.com/watch?v=Z-1sxd5PK_M&t=15302s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20231202",
-                "time": "03:42:24",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=13344s",
-                "is_member_exclusive": true,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240410",
-                "time": "03:45:25",
-                "link": "https://www.youtube.com/watch?v=EUyxxgR0Kh4&t=13525s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20231111",
-                "time": "03:55:30",
-                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=14130s",
                 "is_member_exclusive": true,
                 "is_acapella": false,
                 "is_private": false
@@ -18304,31 +18513,6 @@
         ]
     },
     {
-        "song_name": "オルフェンズの涙",
-        "artist": "MISIA",
-        "source": "機動戦士ガンダム 鉄血のオルフェンズ",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20240224",
-                "time": "03:51:21",
-                "link": "https://www.youtube.com/watch?v=8i9TOCJF8ps&t=13881s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20231111",
-                "time": "06:09:52",
-                "link": "https://www.youtube.com/watch?v=exb9e2sr8u4&t=22192s",
-                "is_member_exclusive": true,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
         "song_name": "RAGE OF DUST",
         "artist": "SPYAIR",
         "source": "機動戦士ガンダム 鉄血のオルフェンズ",
@@ -19120,23 +19304,6 @@
                 "date": "20240308",
                 "time": "02:55:21",
                 "link": "https://www.youtube.com/watch?v=mfO62RxfZPU&t=10521s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "限界バトル",
-        "artist": "JAM Project",
-        "source": "遊☆戯☆王デュエルモンスターズGX",
-        "is_copyright": false,
-        "az": "げ",
-        "dates": [
-            {
-                "date": "20240308",
-                "time": "03:01:53",
-                "link": "https://www.youtube.com/watch?v=mfO62RxfZPU&t=10913s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -21035,23 +21202,6 @@
                 "date": "20240120",
                 "time": "01:53:28",
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=6808s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "Reckless fire",
-        "artist": "井出泰彰",
-        "source": "スクライド",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20240120",
-                "time": "02:02:15",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=7335s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
