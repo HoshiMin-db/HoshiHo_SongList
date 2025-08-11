@@ -231,15 +231,21 @@ def main():
     headers_file = os.path.join(timeline_dir, 'headers.txt')
     all_data = {}
 
+    print("Starting process_timeline.py")
+
     # 讀取headers檔案
     headers_dict = load_headers(headers_file)
+    print(f"Loaded headers dictionary with {len(headers_dict)} entries")
     
     # 讀取例外規則
     member_exclusive_dates, private_dates, private_ids, copyright_songs = load_exceptions(exceptions_file)
+    print(f"Loaded exceptions: {len(private_ids)} private_ids, {len(private_dates)} private_dates")
 
     # 讀取acapella文件
     acapella_songs, global_acapella_songs, acapella_songs_with_artist = load_acapella(acapella_file)
+    print("Loaded acapella settings")
     
+    file_count = 0
     for filename in os.listdir(timeline_dir):
         if filename in ['exceptions.txt', 'headers.txt', 'acapella.txt']:
             continue
@@ -249,18 +255,22 @@ def main():
         if match:
             date_str = match.group(1)
             try:
+                print(f"Processing file: {filename}")
                 data = process_timeline(
                     file_path, 
                     date_str, 
                     member_exclusive_dates, 
                     private_dates, 
-                    private_ids,  # 新增參數
+                    private_ids,
                     acapella_songs, 
                     global_acapella_songs, 
                     acapella_songs_with_artist, 
                     copyright_songs, 
                     headers_dict
                 )
+                
+                print(f"Processed {len(data)} songs from {filename}")
+                file_count += 1
                 
                 # 合併資料
                 for song_data in data:
@@ -275,9 +285,19 @@ def main():
             except Exception as e:
                 print(f"Error processing file {file_path}: {e}")
     
+    print(f"Processed {file_count} files")
+    print(f"Total unique songs: {len(all_data)}")
+    
     # 輸出最終資料
-    with open('data.json', 'w', encoding='utf-8') as f:
-        json.dump(list(all_data.values()), f, ensure_ascii=False, indent=4)
+    try:
+        output_data = list(all_data.values())
+        if not output_data:
+            print("Warning: No data to write!")
+        with open('data.json', 'w', encoding='utf-8') as f:
+            json.dump(output_data, f, ensure_ascii=False, indent=4)
+        print(f"Successfully wrote {len(output_data)} songs to data.json")
+    except Exception as e:
+        print(f"Error writing data.json: {e}")
 
 if __name__ == '__main__':
     main()
