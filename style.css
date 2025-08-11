@@ -215,19 +215,27 @@ td.dates-container-cell {
 .dates-container {
     display: flex;
     overflow-x: auto;
-    width: 100%; /* 使用100%寬度 */
+    width: 100%;
     margin: 0;
     padding: 0;
+    -ms-overflow-style: none;  /* IE 和 Edge */
+    scrollbar-width: none;     /* Firefox */
+    font-size: 11px;
+}
+
+/* 隱藏 Webkit 瀏覽器的滾動條 */
+.dates-container::-webkit-scrollbar {
+    display: none;
 }
 
 /* 單個日期儲存格 */
 .date-cell {
     flex: 0 0 auto;
-    min-width: 100px; /* 最小寬度 */
-    max-width: 120px; /* 最大寬度 */
+    min-width: 100px;
     padding: 12px;
     border-right: 1px solid #ddd;
     text-align: center;
+    font-size: 11px;    /* 確保日期儲存格內的文字大小一致 */
 }
 
 /* 固定表頭樣式 */
@@ -283,9 +291,9 @@ th, td {
     padding: 2px 8px;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 12px;
-    height: 20px;
-    line-height: 20px;
+    font-size: 11px;    /* 配合日期的字體大小 */
+    height: 18px;       /* 稍微調整按鈕高度 */
+    line-height: 18px;
 }
 
 .more-button:hover {
