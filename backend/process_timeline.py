@@ -147,7 +147,43 @@ def process_timeline(file_path, date_str, member_exclusive_dates, private_dates,
         
         for line in lines[1:]:
             try:
-                # ... [保持原有的時間和歌曲信息解析邏輯] ...
+                # 這裡需要恢復原來的解析邏輯
+                if date <= old_rule_date:
+                    # 舊規則解析
+                    parts = line.strip().split(' | ', 3)
+                    if len(parts) < 2:
+                        print(f"Warning: Skipping line due to insufficient parts: '{line.strip()}'")
+                        continue
+                    time_str = parts[0]
+                    song_name = parts[1]
+                    artist = parts[2] if len(parts) > 2 else ''
+                    source = parts[3] if len(parts) > 3 else ''
+                elif date >= new_rule_date:
+                    # 新規則解析
+                    line = re.sub(r'^\d+\.\s+', '', line)
+                    
+                    # 支持全形空格或 4 個半形空格作為分隔符
+                    parts = re.split(r'\u3000{1}| {4}', line.strip(), maxsplit=1)
+                    if len(parts) != 2:
+                        print(f"Warning: Skipping line due to incorrect format: '{line.strip()}'")
+                        continue
+                        
+                    time_str, song_info = parts
+                    song_name = ""
+                    artist = ""
+                    source = ""
+                    
+                    # 檢查是否有『』，如果有則視為 source
+                    if '『' in song_info and '』' in song_info:
+                        song_name = song_info.split('『')[0].split(' / ')[0].strip()
+                        source_artist = song_info.split('『')[1].split('』')
+                        source = source_artist[0].strip()
+                        artist = source_artist[1].strip() if len(source_artist) > 1 else ''
+                    else:
+                        # 沒有『』，視為曲名 / 歌手
+                        song_parts = song_info.split(' / ')
+                        song_name = song_parts[0].strip()
+                        artist = song_parts[1].strip() if len(song_parts) > 1 else ''
                 
                 # 建立唯一鍵（忽略大小寫和全半形）
                 normalized_key = (normalize_string(song_name), normalize_string(artist))
@@ -160,9 +196,8 @@ def process_timeline(file_path, date_str, member_exclusive_dates, private_dates,
                     (artist in acapella_songs_with_artist and song_name in acapella_songs_with_artist[artist])
                 )
                 is_copyright = (song_name, artist) in copyright_songs or (song_name, None) in copyright_songs
-                is_private = date_str in private_dates or is_deleted  # 修改：同時檢查日期和影片ID
+                is_private = date_str in private_dates or is_deleted
                 
-                # 將資料存入字典
                 if normalized_key not in data:
                     data[normalized_key] = {
                         'song_name': song_name,
@@ -187,7 +222,7 @@ def process_timeline(file_path, date_str, member_exclusive_dates, private_dates,
             except Exception as e:
                 print(f"Error processing line '{line.strip()}': {e}")
     
-    return list(data.values())    
+    return list(data.values())
 
 def main():
     timeline_dir = 'timeline'
