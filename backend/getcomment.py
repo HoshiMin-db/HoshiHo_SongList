@@ -200,19 +200,13 @@ def get_video_ids_from_channel(channel_id):
                         scheduled_start = video_details['liveStreamingDetails'].get('scheduledStartTime')
                         
                         if actual_start:
-                            stream_date = datetime.strptime(actual_start, '%Y-%m-%dT%H:%M:%SZ')
-                            print(f"DEBUG: 使用實際開始時間: {stream_date}")
+                            stream_date = get_jst_date(actual_start)
                         elif scheduled_start:
-                            stream_date = datetime.strptime(scheduled_start, '%Y-%m-%dT%H:%M:%SZ')
-                            print(f"DEBUG: 使用預定開始時間: {stream_date}")
+                            stream_date = get_jst_date(scheduled_start)
                         else:
-                            stream_date = datetime.strptime(
-                                video_details['snippet']['publishedAt'], 
-                                '%Y-%m-%dT%H:%M:%SZ'
-                            )
-                            print(f"DEBUG: 使用發布時間: {stream_date}")
+                            stream_date = get_jst_date(video_details['snippet']['publishedAt'])
                         
-                        video_info.append((video_id, stream_date.date()))
+                        video_info.append((video_id, stream_date))
                         print(f"DEBUG: 已加入清單: {video_id} - {title} - {stream_date.date()}")
             
             if published_time < thirty_days_ago:
