@@ -13,7 +13,7 @@ ID = 81cDt2O_CmE
 
 11.    03:22:03    大譜歌  / 『Tales of the Abyss』ティア・グランツ(CV.ゆかな)
 12.    03:34:16    Starry Heavens  / 『Tales of Symphonia』Day After Tomorrow
-13.    03:39:59    そして僕にできるコト  / 『Tales of Symphonia』misono
+13.    03:39:59    そして僕にできるコト  / 『Tales of Symphonia』day after tomorrow
 14.    03:54:46    二人三脚  / 『Tales of Symphonia ~Knight of Ratatosk~』misono
 15.    04:55:19    スカイクラッドの観測者  / 『STEINS;GATE(ゲーム)』いとうかなこ
 16.    05:00:39    Hacking to the Gate  / 『STEINS;GATE』いとうかなこ
@@ -22,3 +22,4 @@ ID = 81cDt2O_CmE
 19.    05:50:13    to the beginning  / 『Fate/Zero』Kalafina
 20.    06:04:41    満天  / 『Fate/Zero』Kalafina
 21.    06:13:20    MEMORIA  / 『Fate/Zero』藍井エイル
+
