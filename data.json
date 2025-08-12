@@ -14958,6 +14958,14 @@
                 "is_private": false
             },
             {
+                "date": "20241027",
+                "time": "02:07:39",
+                "link": "https://www.youtube.com/watch?v=slgufiU0sI4&t=7659s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20250201",
                 "time": "00:58:44",
                 "link": "https://www.youtube.com/watch?v=xqq8-ChkFFk&t=3524s",
@@ -22032,23 +22040,6 @@
                 "date": "20231231",
                 "time": "07:33:55",
                 "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=27235s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "EXEC_PHANTASMAGORIA/.",
-        "artist": "みとせのりこ・志方あきこ・霜月はるか",
-        "source": "アルトネリコ 世界の終わりで詩い続ける少女",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20241027",
-                "time": "02:07:39",
-                "link": "https://www.youtube.com/watch?v=slgufiU0sI4&t=7659s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
