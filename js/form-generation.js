@@ -286,12 +286,6 @@ function displayData(data, numDates = 3) {
             const row = createTableRow(item, numDates);
             songTableBody.appendChild(row);
         });
-
-    // 更新總曲數（完整表格行數）
-    const songCountElement = document.getElementById("songCount");
-    if (songCountElement) {
-        songCountElement.textContent = Object.keys(groupedData).length;
-    }
 }
 
 // 初始化數據加載和搜索功能
@@ -355,8 +349,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     );
                     displayData(filteredData);
                 }
-                
-                // 搜尋時不再更新 songCount，因此這裡不需要任何操作
             }, 800)
         );
     }
