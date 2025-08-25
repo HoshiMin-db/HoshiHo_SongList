@@ -1037,6 +1037,14 @@
                 "is_private": true
             },
             {
+                "date": "20250823",
+                "time": "00:25:18",
+                "link": "https://www.youtube.com/watch?v=Kie40rKCkzg&t=1518s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20231223",
                 "time": "03:37:37",
                 "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=13057s",
@@ -7754,6 +7762,14 @@
                 "is_private": true
             },
             {
+                "date": "20250823",
+                "time": "02:31:20",
+                "link": "https://www.youtube.com/watch?v=Kie40rKCkzg&t=9080s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20241012",
                 "time": "05:36:32",
                 "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=20192s",
@@ -9214,6 +9230,371 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            }
+        ]
+    },
+    {
+        "song_name": "Crow Song",
+        "artist": "Girls Dead Monster",
+        "source": "Angel Beats",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250823",
+                "time": "00:41:03",
+                "link": "https://www.youtube.com/watch?v=Kie40rKCkzg&t=2463s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "My Soul,Your Beats!",
+        "artist": "Lia (1番だけ)",
+        "source": "Angel Beats",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250823",
+                "time": "00:57:02",
+                "link": "https://www.youtube.com/watch?v=Kie40rKCkzg&t=3422s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Brave Song",
+        "artist": "多田葵",
+        "source": "Angel Beats",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250823",
+                "time": "01:13:39",
+                "link": "https://www.youtube.com/watch?v=Kie40rKCkzg&t=4419s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Little Busters! 〜TV animation ver.〜",
+        "artist": "Rita",
+        "source": "Little Busters!",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250823",
+                "time": "01:22:04",
+                "link": "https://www.youtube.com/watch?v=Kie40rKCkzg&t=4924s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Alicemagic",
+        "artist": "Rita",
+        "source": "Little Busters!",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250823",
+                "time": "01:32:26",
+                "link": "https://www.youtube.com/watch?v=Kie40rKCkzg&t=5546s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "雨のち晴れ",
+        "artist": "Rita (諸事情により途中でブツ切り)",
+        "source": "Little Busters!",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250823",
+                "time": "01:40:16",
+                "link": "https://www.youtube.com/watch?v=Kie40rKCkzg&t=6016s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Song for friends",
+        "artist": "Rita",
+        "source": "Little Busters!",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250823",
+                "time": "01:50:25",
+                "link": "https://www.youtube.com/watch?v=Kie40rKCkzg&t=6625s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240209",
+                "time": "04:04:27",
+                "link": "https://www.youtube.com/watch?v=kMAS4-EXsps&t=14667s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "遥か彼方",
+        "artist": "Rita",
+        "source": "リトルバスターズ!～Refrain～",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250823",
+                "time": "02:00:30",
+                "link": "https://www.youtube.com/watch?v=Kie40rKCkzg&t=7230s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Boys be smile",
+        "artist": "鈴湯",
+        "source": "リトルバスターズ!～Refrain～",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250823",
+                "time": "02:14:26",
+                "link": "https://www.youtube.com/watch?v=Kie40rKCkzg&t=8066s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "目覚めた朝には君が隣に",
+        "artist": "鈴湯",
+        "source": "リトルバスターズ!～Refrain～",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250823",
+                "time": "02:22:50",
+                "link": "https://www.youtube.com/watch?v=Kie40rKCkzg&t=8570s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "猫と硝子と円い月",
+        "artist": "笹瀬川佐々美(CV:民安ともえ)",
+        "source": "Little Busters! Ecstacy",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250823",
+                "time": "02:42:24",
+                "link": "https://www.youtube.com/watch?v=Kie40rKCkzg&t=9744s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Interstellar Journey",
+        "artist": "Lea Sirk",
+        "source": "崩壊:スターレイル",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250823",
+                "time": "02:54:17",
+                "link": "https://www.youtube.com/watch?v=Kie40rKCkzg&t=10457s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "WHITE NIGHT",
+        "artist": "Jake Miller",
+        "source": "崩壊:スターレイル",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250823",
+                "time": "02:58:12",
+                "link": "https://www.youtube.com/watch?v=Kie40rKCkzg&t=10692s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Nameless Faces",
+        "artist": "幾田りら",
+        "source": "崩壊:スターレイル",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250823",
+                "time": "03:03:53",
+                "link": "https://www.youtube.com/watch?v=Kie40rKCkzg&t=11033s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Philosophyz",
+        "artist": "水谷瑠奈(NanosizeMir)",
+        "source": "Rewrite",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250823",
+                "time": "03:19:29",
+                "link": "https://www.youtube.com/watch?v=Kie40rKCkzg&t=11969s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "闇の彼方へ",
+        "artist": "水谷瑠奈(NanosizeMir)",
+        "source": "Rewrite",
+        "is_copyright": false,
+        "az": "や",
+        "dates": [
+            {
+                "date": "20250823",
+                "time": "03:27:27",
+                "link": "https://www.youtube.com/watch?v=Kie40rKCkzg&t=12447s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "ささやかなはじまり (TV animation Ver.)",
+        "artist": "水谷瑠奈(NanosizeMir)",
+        "source": "Rewrite",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250823",
+                "time": "03:39:31",
+                "link": "https://www.youtube.com/watch?v=Kie40rKCkzg&t=13171s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "闇の彼方へ",
+        "artist": "サイキックラバー",
+        "source": "Rewrite",
+        "is_copyright": false,
+        "az": "や",
+        "dates": [
+            {
+                "date": "20250823",
+                "time": "03:51:12",
+                "link": "https://www.youtube.com/watch?v=Kie40rKCkzg&t=13872s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "アルカテイル",
+        "artist": "鈴木このみ",
+        "source": "Summer Pockets",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250823",
+                "time": "03:59:17",
+                "link": "https://www.youtube.com/watch?v=Kie40rKCkzg&t=14357s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Lasting Moment",
+        "artist": "鈴木このみ",
+        "source": "Summer Pockets",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250823",
+                "time": "04:05:27",
+                "link": "https://www.youtube.com/watch?v=Kie40rKCkzg&t=14727s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "アスタロア",
+        "artist": "鈴木このみ",
+        "source": "Summer Pockets REFLECTION BLUE",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250823",
+                "time": "04:13:25",
+                "link": "https://www.youtube.com/watch?v=Kie40rKCkzg&t=15205s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -22293,23 +22674,6 @@
                 "date": "20240209",
                 "time": "03:15:16",
                 "link": "https://www.youtube.com/watch?v=kMAS4-EXsps&t=11716s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "Song for friends",
-        "artist": "Rita",
-        "source": "リトルバスターズ！",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20240209",
-                "time": "04:04:27",
-                "link": "https://www.youtube.com/watch?v=kMAS4-EXsps&t=14667s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
