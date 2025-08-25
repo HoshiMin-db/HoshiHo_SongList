@@ -3256,6 +3256,22 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20250823",
+                "time": "00:57:02",
+                "link": "https://www.youtube.com/watch?v=Kie40rKCkzg&t=3422s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250823",
+                "time": "01:02:32",
+                "link": "https://www.youtube.com/watch?v=Kie40rKCkzg&t=3752s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -9251,23 +9267,6 @@
         ]
     },
     {
-        "song_name": "My Soul,Your Beats!",
-        "artist": "Lia (1番だけ)",
-        "source": "Angel Beats",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250823",
-                "time": "00:57:02",
-                "link": "https://www.youtube.com/watch?v=Kie40rKCkzg&t=3422s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
         "song_name": "Brave Song",
         "artist": "多田葵",
         "source": "Angel Beats",
@@ -9320,7 +9319,7 @@
     },
     {
         "song_name": "雨のち晴れ",
-        "artist": "Rita (諸事情により途中でブツ切り)",
+        "artist": "Rita",
         "source": "Little Busters!",
         "is_copyright": false,
         "az": null,
@@ -9395,7 +9394,7 @@
         ]
     },
     {
-        "song_name": "目覚めた朝には君が隣に",
+        "song_name": "目覚めた朝にはきみが隣に",
         "artist": "鈴湯",
         "source": "リトルバスターズ!～Refrain～",
         "is_copyright": false,
@@ -9413,7 +9412,7 @@
     },
     {
         "song_name": "猫と硝子と円い月",
-        "artist": "笹瀬川佐々美(CV:民安ともえ)",
+        "artist": "笹瀬川佐々美(民安ともえ)",
         "source": "Little Busters! Ecstacy",
         "is_copyright": false,
         "az": null,
@@ -9531,11 +9530,11 @@
         ]
     },
     {
-        "song_name": "闇の彼方へ",
+        "song_name": "Rewrite",
         "artist": "サイキックラバー",
         "source": "Rewrite",
         "is_copyright": false,
-        "az": "や",
+        "az": null,
         "dates": [
             {
                 "date": "20250823",
