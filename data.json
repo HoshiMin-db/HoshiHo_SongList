@@ -121,6 +121,14 @@
                 "is_private": true
             },
             {
+                "date": "20250831",
+                "time": "00:33:11",
+                "link": "https://www.youtube.com/watch?v=Y91SWo4ADS4&t=1991s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20240922",
                 "time": "00:21:43",
                 "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=1303s",
@@ -15157,23 +15165,6 @@
         ]
     },
     {
-        "song_name": "そして僕にできるコト",
-        "artist": "misono",
-        "source": "Tales of Symphonia",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250831",
-                "time": "00:33:11",
-                "link": "https://www.youtube.com/watch?v=Y91SWo4ADS4&t=1991s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
         "song_name": "エルガイム Time for L-GAIM",
         "artist": "MIO",
         "source": "重戦機エルガイム",
@@ -15225,7 +15216,7 @@
     },
     {
         "song_name": "もってけ!セーラーふく",
-        "artist": "泉こなた(CV.平野綾)、柊かがみ(CV.加藤英美里)、柊つかさ(CV.福原香織)、高良みゆき(CV.遠藤綾)",
+        "artist": "泉こなた(平野綾)、柊かがみ(加藤英美里)、柊つかさ(福原香織)、高良みゆき(遠藤綾)",
         "source": "らき☆すた",
         "is_copyright": false,
         "az": null,
@@ -15237,11 +15228,19 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20231231",
+                "time": "04:31:43",
+                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=16303s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
     {
-        "song_name": "ムリムリ進化論 (Short Ver.)",
+        "song_name": "ムリムリ進化論",
         "artist": "ナナヲアカリ",
         "source": "わたしが恋人になれるわけないじゃん、ムリムリ!（※ムリじゃなかった!?）",
         "is_copyright": false,
@@ -22469,23 +22468,6 @@
                 "date": "20231231",
                 "time": "04:01:08",
                 "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=14468s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "もってけ!セーラーふく",
-        "artist": "泉こなた(平野綾)、柊かがみ(加藤英美里)、柊つかさ(福原香織)、高良みゆき(遠藤綾)",
-        "source": "らき☆すた",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20231231",
-                "time": "04:31:43",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=16303s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
