@@ -12,8 +12,7 @@ ID = WPiTPi0qDBg
 08.  02:57:35  夢であるように / 『テイルズ オブ デスティニー』DEEN
 09.  03:26:08  TRIAD FORCE / 『プリンセッション・オーケストラ』オルケリア
 10.  04:08:14  ゼッタイ歌姫宣言ッ！ / 『プリンセッション・オーケストラ』オルケリア
-
-11.  04:17:20  新月の子守唄（第一章）：月と共に眠る(アカペラ) / 『原神-夕暮れを照らす月 (Original Game Soundtrack)』HOYO-MiX
-12.  04:20:53  ナド・クライ(アカペラ) / 『原神-夕暮れを照らす月 (Original Game Soundtrack)』 HOYO-MiX ・ AURORA
+11.  04:17:20  新月の子守唄（第一章）：月と共に眠る / 『原神-夕暮れを照らす月 (Original Game Soundtrack)』HOYO-MiX
+12.  04:20:53  ナド・クライ / 『原神-夕暮れを照らす月 (Original Game Soundtrack)』 HOYO-MiX ・ AURORA
 13.  04:39:14  贄-nie-(TV size) / 『私を喰べたい、ひとでなし』吉乃
 14.  05:01:00  キミガタメ / 『うたわれるもの～散りゆく者への子守唄～』Suara
