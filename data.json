@@ -4717,6 +4717,14 @@
                 "is_private": false
             },
             {
+                "date": "20251122",
+                "time": "05:12:28",
+                "link": "https://www.youtube.com/watch?v=fYlZenT4LqA&t=18748s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20240120",
                 "time": "04:40:58",
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=16858s",
@@ -6255,6 +6263,14 @@
                 "date": "20231209",
                 "time": "00:22:19",
                 "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=1339s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20251122",
+                "time": "02:56:46",
+                "link": "https://www.youtube.com/watch?v=fYlZenT4LqA&t=10606s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -10847,6 +10863,14 @@
                 "is_private": false
             },
             {
+                "date": "20251122",
+                "time": "05:24:16",
+                "link": "https://www.youtube.com/watch?v=fYlZenT4LqA&t=19456s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20240120",
                 "time": "04:17:57",
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=15477s",
@@ -11032,6 +11056,14 @@
                 "date": "20250507",
                 "time": "00:44:18",
                 "link": "https://www.youtube.com/watch?v=yNcKrESU2hU&t=2658s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20251122",
+                "time": "03:25:57",
+                "link": "https://www.youtube.com/watch?v=fYlZenT4LqA&t=12357s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -12591,6 +12623,14 @@
                 "is_private": false
             },
             {
+                "date": "20251122",
+                "time": "05:18:28",
+                "link": "https://www.youtube.com/watch?v=fYlZenT4LqA&t=19108s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20240120",
                 "time": "04:48:35",
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=17315s",
@@ -13680,6 +13720,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20251122",
+                "time": "01:48:35",
+                "link": "https://www.youtube.com/watch?v=fYlZenT4LqA&t=6515s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             },
             {
                 "date": "20240120",
@@ -17339,6 +17387,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20251122",
+                "time": "02:31:55",
+                "link": "https://www.youtube.com/watch?v=fYlZenT4LqA&t=9115s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -18610,6 +18666,14 @@
                 "date": "20240202",
                 "time": "00:11:17",
                 "link": "https://www.youtube.com/watch?v=70E6Ns3_THo&t=677s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20251122",
+                "time": "03:15:57",
+                "link": "https://www.youtube.com/watch?v=fYlZenT4LqA&t=11757s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -20255,6 +20319,14 @@
                 "is_private": false
             },
             {
+                "date": "20251122",
+                "time": "04:53:18",
+                "link": "https://www.youtube.com/watch?v=fYlZenT4LqA&t=17598s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20240120",
                 "time": "04:12:08",
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=15128s",
@@ -20690,6 +20762,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20251122",
+                "time": "01:36:59",
+                "link": "https://www.youtube.com/watch?v=fYlZenT4LqA&t=5819s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -22169,6 +22249,40 @@
                 "link": "https://www.youtube.com/watch?v=Kie40rKCkzg&t=15205s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "深紅",
+        "artist": "島谷ひとみ",
+        "source": "Another Century's Episode 3",
+        "is_copyright": false,
+        "az": "ふ",
+        "dates": [
+            {
+                "date": "20251122",
+                "time": "03:06:34",
+                "link": "https://www.youtube.com/watch?v=fYlZenT4LqA&t=11194s",
+                "is_member_exclusive": false,
+                "is_acapella": true,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "運命 -SADAME-",
+        "artist": "柚木涼香",
+        "source": "うたわれるもの 散り行くものへの子守唄",
+        "is_copyright": false,
+        "az": "う",
+        "dates": [
+            {
+                "date": "20251122",
+                "time": "05:00:53",
+                "link": "https://www.youtube.com/watch?v=fYlZenT4LqA&t=18053s",
+                "is_member_exclusive": false,
+                "is_acapella": true,
                 "is_private": false
             }
         ]
