@@ -2377,6 +2377,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20251108",
+                "time": "04:08:14",
+                "link": "https://www.youtube.com/watch?v=WPiTPi0qDBg&t=14894s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -9507,6 +9515,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20251108",
+                "time": "03:26:08",
+                "link": "https://www.youtube.com/watch?v=WPiTPi0qDBg&t=12368s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -10847,6 +10863,14 @@
                 "is_private": true
             },
             {
+                "date": "20251108",
+                "time": "05:01:00",
+                "link": "https://www.youtube.com/watch?v=WPiTPi0qDBg&t=18060s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20241116",
                 "time": "01:33:21",
                 "link": "https://www.youtube.com/watch?v=m7yQ0f7qG-E&t=5601s",
@@ -11752,6 +11776,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20251108",
+                "time": "02:57:35",
+                "link": "https://www.youtube.com/watch?v=WPiTPi0qDBg&t=10655s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             },
             {
                 "date": "20250419",
@@ -16639,6 +16671,14 @@
                 "is_private": true
             },
             {
+                "date": "20251108",
+                "time": "00:41:34",
+                "link": "https://www.youtube.com/watch?v=WPiTPi0qDBg&t=2494s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20240706",
                 "time": "01:57:39",
                 "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=7059s",
@@ -16725,6 +16765,14 @@
                 "time": "04:14:41",
                 "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=15281s",
                 "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20251108",
+                "time": "01:31:38",
+                "link": "https://www.youtube.com/watch?v=WPiTPi0qDBg&t=5498s",
+                "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
             },
@@ -18846,6 +18894,14 @@
                 "is_private": false
             },
             {
+                "date": "20251108",
+                "time": "02:14:15",
+                "link": "https://www.youtube.com/watch?v=WPiTPi0qDBg&t=8055s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20240615",
                 "time": "07:35:43",
                 "link": "https://www.youtube.com/watch?v=DjJmVyIXfH8&t=27343s",
@@ -20234,6 +20290,125 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            }
+        ]
+    },
+    {
+        "song_name": "Get along",
+        "artist": "林原めぐみ・奥井雅美",
+        "source": "スレイヤーズ",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20251108",
+                "time": "00:36:53",
+                "link": "https://www.youtube.com/watch?v=WPiTPi0qDBg&t=2213s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "somewhere",
+        "artist": "桑島法子",
+        "source": "スレイヤーズ TRY",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20251108",
+                "time": "01:05:25",
+                "link": "https://www.youtube.com/watch?v=WPiTPi0qDBg&t=3925s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "I'll be there/",
+        "artist": "林原めぐみ",
+        "source": "セイバーマリオネットJ",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20251108",
+                "time": "01:39:13",
+                "link": "https://www.youtube.com/watch?v=WPiTPi0qDBg&t=5953s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "禁断のパンセ",
+        "artist": "石塚早織",
+        "source": "サイレントメビウス",
+        "is_copyright": false,
+        "az": "き",
+        "dates": [
+            {
+                "date": "20251108",
+                "time": "01:54:56",
+                "link": "https://www.youtube.com/watch?v=WPiTPi0qDBg&t=6896s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "新月の子守唄（第一章）：月と共に眠る",
+        "artist": "HOYO-MiX",
+        "source": "原神-夕暮れを照らす月 (Original Game Soundtrack)",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20251108",
+                "time": "04:17:20",
+                "link": "https://www.youtube.com/watch?v=WPiTPi0qDBg&t=15440s",
+                "is_member_exclusive": false,
+                "is_acapella": true,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "ナド・クライ",
+        "artist": "HOYO-MiX ・ AURORA",
+        "source": "原神-夕暮れを照らす月 (Original Game Soundtrack)",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20251108",
+                "time": "04:20:53",
+                "link": "https://www.youtube.com/watch?v=WPiTPi0qDBg&t=15653s",
+                "is_member_exclusive": false,
+                "is_acapella": true,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "贄-nie-",
+        "artist": "吉乃",
+        "source": "私を喰べたい、ひとでなし",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20251108",
+                "time": "04:39:14",
+                "link": "https://www.youtube.com/watch?v=WPiTPi0qDBg&t=16754s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
