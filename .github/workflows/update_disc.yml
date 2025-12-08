@@ -1,5 +1,8 @@
 name: Update Discography
 
+permissions:
+  contents: write
+
 on:
   push:
     paths:
