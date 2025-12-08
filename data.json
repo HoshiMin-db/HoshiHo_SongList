@@ -304,6 +304,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20250906",
+                "time": "05:41:49",
+                "link": "https://www.youtube.com/watch?v=BDtP626eAb4&t=20509s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -2337,6 +2345,14 @@
                 "is_private": true
             },
             {
+                "date": "20250906",
+                "time": "05:51:09",
+                "link": "https://www.youtube.com/watch?v=BDtP626eAb4&t=21069s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20250201",
                 "time": "04:12:13",
                 "link": "https://www.youtube.com/watch?v=xqq8-ChkFFk&t=15133s",
@@ -2548,6 +2564,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20250906",
+                "time": "00:16:20",
+                "link": "https://www.youtube.com/watch?v=BDtP626eAb4&t=980s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -4573,6 +4597,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20250906",
+                "time": "03:12:33",
+                "link": "https://www.youtube.com/watch?v=BDtP626eAb4&t=11553s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -6565,6 +6597,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20250906",
+                "time": "03:46:27",
+                "link": "https://www.youtube.com/watch?v=BDtP626eAb4&t=13587s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             },
             {
                 "date": "20240608",
@@ -10534,6 +10574,14 @@
                 "time": "06:29:19",
                 "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=23359s",
                 "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250906",
+                "time": "04:43:36",
+                "link": "https://www.youtube.com/watch?v=BDtP626eAb4&t=17016s",
+                "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
             }
@@ -17830,6 +17878,14 @@
                 "is_private": true
             },
             {
+                "date": "20250906",
+                "time": "05:27:02",
+                "link": "https://www.youtube.com/watch?v=BDtP626eAb4&t=19622s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20240608",
                 "time": "04:52:46",
                 "link": "https://www.youtube.com/watch?v=UoMwNx3aklM&t=17566s",
@@ -19350,7 +19406,7 @@
         "artist": "",
         "source": "美女と野獣",
         "is_copyright": false,
-        "az": null,
+        "az": "か",
         "dates": [
             {
                 "date": "20251206",
@@ -20008,6 +20064,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20250906",
+                "time": "02:54:04",
+                "link": "https://www.youtube.com/watch?v=BDtP626eAb4&t=10444s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             },
             {
                 "date": "20240608",
@@ -20680,6 +20744,14 @@
                 "date": "20251108",
                 "time": "01:54:56",
                 "link": "https://www.youtube.com/watch?v=WPiTPi0qDBg&t=6896s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250906",
+                "time": "03:27:16",
+                "link": "https://www.youtube.com/watch?v=BDtP626eAb4&t=12436s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -22766,6 +22838,57 @@
                 "link": "https://www.youtube.com/watch?v=fYlZenT4LqA&t=18053s",
                 "is_member_exclusive": false,
                 "is_acapella": true,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Pale Blaze",
+        "artist": "米倉千尋",
+        "source": "9-nine- Ruler's Crown",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250906",
+                "time": "02:30:40",
+                "link": "https://www.youtube.com/watch?v=BDtP626eAb4&t=9040s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "MOMENT",
+        "artist": "国府田マリ子",
+        "source": "ママレード・ボーイ",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250906",
+                "time": "03:37:39",
+                "link": "https://www.youtube.com/watch?v=BDtP626eAb4&t=13059s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "スターダスト・ボーイズ",
+        "artist": "影山ヒロノブ",
+        "source": "宇宙船サジタリウス",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20250906",
+                "time": "05:20:21",
+                "link": "https://www.youtube.com/watch?v=BDtP626eAb4&t=19221s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
                 "is_private": false
             }
         ]
