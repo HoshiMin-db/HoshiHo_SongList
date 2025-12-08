@@ -163,7 +163,7 @@ def process_timeline(file_path, date_str, member_exclusive_dates, private_dates,
                     line = re.sub(r'^\d+\.\s+', '', line)
                     
                     # 支持全形空格或 4 個半形空格作為分隔符
-                    parts = re.split(r'\u3000{1}| {4}', line.strip(), maxsplit=1)
+                    parts = re.split(r'\u3000{1}| {2,4}', line.strip(), maxsplit=1)
                     if len(parts) != 2:
                         print(f"Warning: Skipping line due to incorrect format: '{line.strip()}'")
                         continue
