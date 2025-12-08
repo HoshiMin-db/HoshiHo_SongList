@@ -19681,7 +19681,7 @@
         ]
     },
     {
-        "song_name": "グッド・ニュース (No One Mourns the Wicked 日本語版)",
+        "song_name": "グッド・ニュース (No One Mourns the Wicked)",
         "artist": "劇団四季",
         "source": "ウィキッド (Wicked)",
         "is_copyright": false,
@@ -19698,7 +19698,7 @@
         ]
     },
     {
-        "song_name": "魔法使いと私 (The Wizard and I 日本語版)",
+        "song_name": "魔法使いと私 (The Wizard and I)",
         "artist": "劇団四季",
         "source": "ウィキッド (Wicked)",
         "is_copyright": false,
@@ -19732,7 +19732,7 @@
         ]
     },
     {
-        "song_name": "ポピュラー (popular 日本語版)",
+        "song_name": "ポピュラー (popular)",
         "artist": "劇団四季",
         "source": "ウィキッド (Wicked)",
         "is_copyright": false,
@@ -19766,7 +19766,7 @@
         ]
     },
     {
-        "song_name": "闇に生きる (No Good Deed 日本語版)",
+        "song_name": "闇に生きる (No Good Deed)",
         "artist": "劇団四季",
         "source": "ウィキッド (Wicked)",
         "is_copyright": false,
@@ -19783,7 +19783,7 @@
         ]
     },
     {
-        "song_name": "大嫌い！(What is this Feeling? 日本語版)",
+        "song_name": "大嫌い！(What is this Feeling?)",
         "artist": "劇団四季",
         "source": "ウィキッド (Wicked)",
         "is_copyright": false,
@@ -19800,11 +19800,11 @@
         ]
     },
     {
-        "song_name": "人生を踊り明かせ (Dancing Through Life 日本語版)",
+        "song_name": "人生を踊り明かせ (Dancing Through Life)",
         "artist": "劇団四季",
         "source": "ウィキッド (Wicked)",
         "is_copyright": false,
-        "az": "じ",
+        "az": null,
         "dates": [
             {
                 "date": "20250329",
@@ -19817,7 +19817,7 @@
         ]
     },
     {
-        "song_name": "エメラルドシティー (One Short Day 日本語版)",
+        "song_name": "エメラルドシティー (One Short Day)",
         "artist": "劇団四季",
         "source": "ウィキッド (Wicked)",
         "is_copyright": false,
@@ -19834,7 +19834,7 @@
         ]
     },
     {
-        "song_name": "魔女が迫る～この幸せ (Thank Goodness 日本語版)",
+        "song_name": "魔女が迫る～この幸せ (Thank Goodness)",
         "artist": "劇団四季",
         "source": "ウィキッド (Wicked)",
         "is_copyright": false,
@@ -19851,11 +19851,11 @@
         ]
     },
     {
-        "song_name": "二人は永遠に (As Long as You're Mine 日本語版)",
+        "song_name": "二人は永遠に (As Long as You're Mine)",
         "artist": "劇団四季",
         "source": "ウィキッド (Wicked)",
         "is_copyright": false,
-        "az": "ふ",
+        "az": "に",
         "dates": [
             {
                 "date": "20250329",
@@ -19868,7 +19868,7 @@
         ]
     },
     {
-        "song_name": "自由を求めて (Defying Gravity 日本語版)",
+        "song_name": "自由を求めて (Defying Gravity)",
         "artist": "劇団四季",
         "source": "ウィキッド (Wicked)",
         "is_copyright": false,
