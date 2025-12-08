@@ -19369,7 +19369,7 @@
     },
     {
         "song_name": "魔法使いと私(The Wizard and I)",
-        "artist": "",
+        "artist": "劇団四季",
         "source": "ウィキッド",
         "is_copyright": false,
         "az": "ま",
@@ -19381,12 +19381,20 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20250329",
+                "time": "00:13:27",
+                "link": "https://www.youtube.com/watch?v=KaCBSXIgl-E&t=807s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
             }
         ]
     },
     {
         "song_name": "大嫌い！(What Is This Feeling?)",
-        "artist": "",
+        "artist": "劇団四季",
         "source": "ウィキッド",
         "is_copyright": false,
         "az": "だ",
@@ -19398,6 +19406,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20250329",
+                "time": "01:15:02",
+                "link": "https://www.youtube.com/watch?v=KaCBSXIgl-E&t=4502s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
             }
         ]
     },
@@ -19698,23 +19714,6 @@
         ]
     },
     {
-        "song_name": "魔法使いと私 (The Wizard and I)",
-        "artist": "劇団四季",
-        "source": "ウィキッド (Wicked)",
-        "is_copyright": false,
-        "az": "ま",
-        "dates": [
-            {
-                "date": "20250329",
-                "time": "00:13:27",
-                "link": "https://www.youtube.com/watch?v=KaCBSXIgl-E&t=807s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
         "song_name": "What Is This Feeling?",
         "artist": "Idina Menzel, Kristin Chenoweth",
         "source": "Wicked",
@@ -19776,23 +19775,6 @@
                 "date": "20250329",
                 "time": "01:05:52",
                 "link": "https://www.youtube.com/watch?v=KaCBSXIgl-E&t=3952s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "大嫌い！(What is this Feeling?)",
-        "artist": "劇団四季",
-        "source": "ウィキッド (Wicked)",
-        "is_copyright": false,
-        "az": "だ",
-        "dates": [
-            {
-                "date": "20250329",
-                "time": "01:15:02",
-                "link": "https://www.youtube.com/watch?v=KaCBSXIgl-E&t=4502s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
