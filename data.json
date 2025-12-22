@@ -11286,6 +11286,14 @@
                 "is_private": true
             },
             {
+                "date": "20251220",
+                "time": "00:28:21",
+                "link": "https://www.youtube.com/watch?v=WHDupaPflXQ&t=1701s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20250201",
                 "time": "05:11:17",
                 "link": "https://www.youtube.com/watch?v=xqq8-ChkFFk&t=18677s",
@@ -15177,6 +15185,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20251220",
+                "time": "00:03:50",
+                "link": "https://www.youtube.com/watch?v=WHDupaPflXQ&t=230s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -23695,6 +23711,14 @@
                 "is_private": true
             },
             {
+                "date": "20251220",
+                "time": "00:07:54",
+                "link": "https://www.youtube.com/watch?v=WHDupaPflXQ&t=474s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20240406",
                 "time": "00:22:05",
                 "link": "https://www.youtube.com/watch?v=QIuZP_DTjv8&t=1325s",
@@ -24091,6 +24115,40 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            }
+        ]
+    },
+    {
+        "song_name": "君の銀の庭",
+        "artist": "Kalafina",
+        "source": "劇場版魔法少女まどか☆マギカ[新編]叛逆の物語",
+        "is_copyright": false,
+        "az": "き",
+        "dates": [
+            {
+                "date": "20251220",
+                "time": "00:13:31",
+                "link": "https://www.youtube.com/watch?v=WHDupaPflXQ&t=811s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "ダイアモンド クレバス",
+        "artist": "シェリル・ノーム(May'n)",
+        "source": "マクロスF",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20251220",
+                "time": "00:19:25",
+                "link": "https://www.youtube.com/watch?v=WHDupaPflXQ&t=1165s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
