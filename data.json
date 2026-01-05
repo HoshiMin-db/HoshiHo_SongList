@@ -97,6 +97,14 @@
                 "is_private": false
             },
             {
+                "date": "20260104",
+                "time": "03:02:53",
+                "link": "https://www.youtube.com/watch?v=x45CRGOV0fE&t=10973s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20241027",
                 "time": "00:40:39",
                 "link": "https://www.youtube.com/watch?v=slgufiU0sI4&t=2439s",
@@ -878,6 +886,14 @@
                 "date": "20231231",
                 "time": "07:33:55",
                 "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=27235s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20260104",
+                "time": "01:23:22",
+                "link": "https://www.youtube.com/watch?v=x45CRGOV0fE&t=5002s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -2258,6 +2274,14 @@
                 "date": "20240106",
                 "time": "02:39:52",
                 "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=9592s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20260104",
+                "time": "02:33:04",
+                "link": "https://www.youtube.com/watch?v=x45CRGOV0fE&t=9184s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -5677,6 +5701,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20260104",
+                "time": "03:44:14",
+                "link": "https://www.youtube.com/watch?v=x45CRGOV0fE&t=13454s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -5732,6 +5764,14 @@
                 "date": "20250315",
                 "time": "00:08:12",
                 "link": "https://www.youtube.com/watch?v=se6YFgRE_po&t=492s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20260104",
+                "time": "04:10:18",
+                "link": "https://www.youtube.com/watch?v=x45CRGOV0fE&t=15018s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -5809,6 +5849,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20260104",
+                "time": "03:12:21",
+                "link": "https://www.youtube.com/watch?v=x45CRGOV0fE&t=11541s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -20078,6 +20126,176 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            }
+        ]
+    },
+    {
+        "song_name": "檄！帝国華撃団",
+        "artist": "真宮寺さくら（横山智佐）& 帝国歌劇団",
+        "source": "サクラ大戦シリーズ",
+        "is_copyright": false,
+        "az": "げ",
+        "dates": [
+            {
+                "date": "20260104",
+                "time": "00:17:45",
+                "link": "https://www.youtube.com/watch?v=x45CRGOV0fE&t=1065s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "恋はみずいろ（Love is Blue)(L'amour est bleu)",
+        "artist": "ポール・モーリア",
+        "source": "",
+        "is_copyright": false,
+        "az": "こ",
+        "dates": [
+            {
+                "date": "20260104",
+                "time": "00:36:13",
+                "link": "https://www.youtube.com/watch?v=x45CRGOV0fE&t=2173s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "好きすぎて滅！",
+        "artist": "M!LK",
+        "source": "",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260104",
+                "time": "00:51:48",
+                "link": "https://www.youtube.com/watch?v=x45CRGOV0fE&t=3108s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "四方八方肘鉄砲",
+        "artist": "忍ジャーズ",
+        "source": "忍たま乱太郎(第3期)",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260104",
+                "time": "01:51:34",
+                "link": "https://www.youtube.com/watch?v=x45CRGOV0fE&t=6694s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "四方八方肘鉄砲(2001)",
+        "artist": "舩木真弓（忍ジャーズ）",
+        "source": "忍たま乱太郎(第8・9期)",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260104",
+                "time": "01:56:46",
+                "link": "https://www.youtube.com/watch?v=x45CRGOV0fE&t=7006s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "にんげんっていいな",
+        "artist": "中島義実",
+        "source": "まんが日本昔ばなし",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260104",
+                "time": "02:16:49",
+                "link": "https://www.youtube.com/watch?v=x45CRGOV0fE&t=8209s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "IRIS OUT",
+        "artist": "米津玄師",
+        "source": "チェンソーマン レゼ篇",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260104",
+                "time": "03:20:50",
+                "link": "https://www.youtube.com/watch?v=x45CRGOV0fE&t=12050s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "また君に恋してる",
+        "artist": "ビリー・バンバン/坂本冬美(Cover)",
+        "source": "",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260104",
+                "time": "03:33:01",
+                "link": "https://www.youtube.com/watch?v=x45CRGOV0fE&t=12781s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "千本桜",
+        "artist": "ボーカルシンセサイザー・初音ミク",
+        "source": "",
+        "is_copyright": false,
+        "az": "せ",
+        "dates": [
+            {
+                "date": "20260104",
+                "time": "03:54:34",
+                "link": "https://www.youtube.com/watch?v=x45CRGOV0fE&t=14074s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "回レ!雪月花",
+        "artist": "歌組雪月花(いろり(CV茅野愛衣)、夜々(CV原田ひとみ)、小紫(CV小倉唯))",
+        "source": "機巧少女は傷つかない",
+        "is_copyright": false,
+        "az": "ま",
+        "dates": [
+            {
+                "date": "20260104",
+                "time": "04:02:55",
+                "link": "https://www.youtube.com/watch?v=x45CRGOV0fE&t=14575s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
