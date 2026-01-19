@@ -2202,6 +2202,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20260118",
+                "time": "02:27:39",
+                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=8859s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -3453,6 +3461,14 @@
                 "is_private": false
             },
             {
+                "date": "20260118",
+                "time": "00:15:06",
+                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=906s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20240511",
                 "time": "00:14:07",
                 "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=847s",
@@ -4623,6 +4639,14 @@
                 "is_private": true
             },
             {
+                "date": "20260118",
+                "time": "00:33:03",
+                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=1983s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20250906",
                 "time": "03:12:33",
                 "link": "https://www.youtube.com/watch?v=BDtP626eAb4&t=11553s",
@@ -5083,6 +5107,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20260118",
+                "time": "00:53:33",
+                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=3213s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -5100,6 +5132,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20260118",
+                "time": "03:17:30",
+                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=11850s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -12850,12 +12890,209 @@
         ]
     },
     {
+        "song_name": "KUJIKENAIKARA!",
+        "artist": "林原めぐみ、奥井雅美",
+        "source": "スレイヤーズ",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260118",
+                "time": "00:21:46",
+                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=1306s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Going History(アカペラ)",
+        "artist": "林原めぐみ",
+        "source": "スレイヤーズEX",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260118",
+                "time": "00:38:31",
+                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=2311s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Give a reason",
+        "artist": "林原めぐみ",
+        "source": "スレイヤーズNEXT",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260118",
+                "time": "00:46:51",
+                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=2811s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240330",
+                "time": "00:33:40",
+                "link": "https://www.youtube.com/watch?v=W2ysMOjn-WY&t=2020s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20231125",
+                "time": "00:20:58",
+                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=1258s",
+                "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250719",
+                "time": "00:12:31",
+                "link": "https://www.youtube.com/watch?v=zfOYWj9prDo&t=751s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20240727",
+                "time": "03:32:19",
+                "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=12739s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20251108",
+                "time": "00:41:34",
+                "link": "https://www.youtube.com/watch?v=WPiTPi0qDBg&t=2494s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240706",
+                "time": "01:57:39",
+                "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=7059s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20231104",
+                "time": "04:31:31",
+                "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=16291s",
+                "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240922",
+                "time": "02:36:59",
+                "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=9419s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20240524",
+                "time": "00:08:24",
+                "link": "https://www.youtube.com/watch?v=1VxGGjlEBUU&t=504s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20240615",
+                "time": "01:55:48",
+                "link": "https://www.youtube.com/watch?v=DjJmVyIXfH8&t=6948s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            }
+        ]
+    },
+    {
+        "song_name": "邪魔はさせない(アカペラ)",
+        "artist": "奥井雅美",
+        "source": "スレイヤーズNEXT",
+        "is_copyright": false,
+        "az": "じ",
+        "dates": [
+            {
+                "date": "20260118",
+                "time": "01:04:37",
+                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=3877s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Breeze",
+        "artist": "林原めぐみ",
+        "source": "スレイヤーズTRY",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260118",
+                "time": "01:14:41",
+                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=4481s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20231125",
+                "time": "00:50:40",
+                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=3040s",
+                "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240202",
+                "time": "00:34:18",
+                "link": "https://www.youtube.com/watch?v=70E6Ns3_THo&t=2058s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250301",
+                "time": "06:06:36",
+                "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=21996s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            }
+        ]
+    },
+    {
         "song_name": "don't be discouraged",
         "artist": "林原めぐみ",
         "source": "スレイヤーズTRY",
         "is_copyright": false,
         "az": null,
         "dates": [
+            {
+                "date": "20260118",
+                "time": "01:21:04",
+                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=4864s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
             {
                 "date": "20231202",
                 "time": "00:11:46",
@@ -12887,6 +13124,268 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            }
+        ]
+    },
+    {
+        "song_name": "naked mind(アカペラ)",
+        "artist": "奥井雅美",
+        "source": "スレイヤーズN・EX.",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260118",
+                "time": "01:28:22",
+                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=5302s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "虹のように(アカペラ)",
+        "artist": "奥井雅美",
+        "source": "スレイヤーズN・EX.",
+        "is_copyright": false,
+        "az": "に",
+        "dates": [
+            {
+                "date": "20260118",
+                "time": "01:34:03",
+                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=5643s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "この世界のどこかで",
+        "artist": "桑島法子",
+        "source": "スレイヤーズTRY",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260118",
+                "time": "01:41:20",
+                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=6080s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Somewhere",
+        "artist": "桑島法子",
+        "source": "スレイヤーズTRY",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260118",
+                "time": "01:47:08",
+                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=6428s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20251108",
+                "time": "01:05:25",
+                "link": "https://www.youtube.com/watch?v=WPiTPi0qDBg&t=3925s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Just be conscious",
+        "artist": "林原めぐみ",
+        "source": "スレイヤーズRETURN",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260118",
+                "time": "02:01:32",
+                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=7292s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "MIDNIGHT BLUE",
+        "artist": "林原めぐみ",
+        "source": "スレイヤーズ(劇場版)",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260118",
+                "time": "02:08:40",
+                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=7720s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240615",
+                "time": "01:44:40",
+                "link": "https://www.youtube.com/watch?v=DjJmVyIXfH8&t=6280s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            }
+        ]
+    },
+    {
+        "song_name": "Revolution",
+        "artist": "林原めぐみ",
+        "source": "スレイヤーズREVOLUTION",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260118",
+                "time": "02:17:57",
+                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=8277s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "限りない欲望の中に(ショートVer)",
+        "artist": "林原めぐみ",
+        "source": "スレイヤーズすぺしゃる",
+        "is_copyright": false,
+        "az": "げ",
+        "dates": [
+            {
+                "date": "20260118",
+                "time": "02:39:30",
+                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=9570s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "限りない欲望の中に",
+        "artist": "林原めぐみ",
+        "source": "スレイヤーズすぺしゃる",
+        "is_copyright": false,
+        "az": "げ",
+        "dates": [
+            {
+                "date": "20260118",
+                "time": "02:44:05",
+                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=9845s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Meet again(アカペラ)",
+        "artist": "林原めぐみ",
+        "source": "スレイヤーズ 10周年記念イメージソング",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260118",
+                "time": "02:52:27",
+                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=10347s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "GLORIA ～君に届けたい～",
+        "artist": "林原めぐみ",
+        "source": "スレイヤーズぐれえと",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260118",
+                "time": "03:08:40",
+                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=11320s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "～infinity～∞",
+        "artist": "林原めぐみ",
+        "source": "ロスト・ユニバース",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260118",
+                "time": "03:42:16",
+                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=13336s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20251206",
+                "time": "02:38:09",
+                "link": "https://www.youtube.com/watch?v=QD7oNLRy-aU&t=9489s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Get along",
+        "artist": "林原めぐみ、奥井雅美(2回目)",
+        "source": "スレイヤーズ",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260118",
+                "time": "03:49:23",
+                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=13763s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Give a reason",
+        "artist": "林原めぐみ(2回目)",
+        "source": "スレイヤーズNEXT",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260118",
+                "time": "03:54:11",
+                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=14051s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -16800,95 +17299,6 @@
         ]
     },
     {
-        "song_name": "Give a reason",
-        "artist": "林原めぐみ",
-        "source": "",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20240330",
-                "time": "00:33:40",
-                "link": "https://www.youtube.com/watch?v=W2ysMOjn-WY&t=2020s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20231125",
-                "time": "00:20:58",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=1258s",
-                "is_member_exclusive": true,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20250719",
-                "time": "00:12:31",
-                "link": "https://www.youtube.com/watch?v=zfOYWj9prDo&t=751s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20240727",
-                "time": "03:32:19",
-                "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=12739s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20251108",
-                "time": "00:41:34",
-                "link": "https://www.youtube.com/watch?v=WPiTPi0qDBg&t=2494s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240706",
-                "time": "01:57:39",
-                "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=7059s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20231104",
-                "time": "04:31:31",
-                "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=16291s",
-                "is_member_exclusive": true,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240922",
-                "time": "02:36:59",
-                "link": "https://www.youtube.com/watch?v=ZOVG4VqE7-0&t=9419s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20240524",
-                "time": "00:08:24",
-                "link": "https://www.youtube.com/watch?v=1VxGGjlEBUU&t=504s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20240615",
-                "time": "01:55:48",
-                "link": "https://www.youtube.com/watch?v=DjJmVyIXfH8&t=6948s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
         "song_name": "ババーンと推参！バーンブレイバーン",
         "artist": "ブレイバーン(鈴村健一)",
         "source": "勇気爆発バーンブレイバーン",
@@ -17735,39 +18145,6 @@
                 "date": "20241214",
                 "time": "04:38:35",
                 "link": "https://www.youtube.com/watch?v=SX5pWgl_Sxk&t=16715s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "Breeze",
-        "artist": "林原めぐみ",
-        "source": "スレイヤーズ",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20231125",
-                "time": "00:50:40",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=3040s",
-                "is_member_exclusive": true,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240202",
-                "time": "00:34:18",
-                "link": "https://www.youtube.com/watch?v=70E6Ns3_THo&t=2058s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20250301",
-                "time": "06:06:36",
-                "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=21996s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
@@ -19499,23 +19876,6 @@
         ]
     },
     {
-        "song_name": "～infinity～∞",
-        "artist": "林原めぐみ",
-        "source": "ロスト・ユニバース",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20251206",
-                "time": "02:38:09",
-                "link": "https://www.youtube.com/watch?v=QD7oNLRy-aU&t=9489s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
         "song_name": "carrot (にんじん村一番娘)",
         "artist": "みずさわゆうき",
         "source": "ヴィオラートのアトリエ",
@@ -20909,23 +21269,6 @@
                 "date": "20251108",
                 "time": "00:36:53",
                 "link": "https://www.youtube.com/watch?v=WPiTPi0qDBg&t=2213s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "somewhere",
-        "artist": "桑島法子",
-        "source": "スレイヤーズ TRY",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20251108",
-                "time": "01:05:25",
-                "link": "https://www.youtube.com/watch?v=WPiTPi0qDBg&t=3925s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -23805,23 +24148,6 @@
                 "date": "20240720",
                 "time": "05:51:48",
                 "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=21108s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "MIDNIGHT BLUE",
-        "artist": "林原めぐみ",
-        "source": "スレイヤーズ（劇場版）",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20240615",
-                "time": "01:44:40",
-                "link": "https://www.youtube.com/watch?v=DjJmVyIXfH8&t=6280s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
