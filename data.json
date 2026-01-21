@@ -2574,6 +2574,14 @@
                 "is_private": true
             },
             {
+                "date": "20260104",
+                "time": "00:17:45",
+                "link": "https://www.youtube.com/watch?v=x45CRGOV0fE&t=1065s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20250104",
                 "time": "04:23:12",
                 "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=15792s",
@@ -7879,6 +7887,14 @@
                 "time": "03:47:10",
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=13630s",
                 "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20260104",
+                "time": "00:36:13",
+                "link": "https://www.youtube.com/watch?v=x45CRGOV0fE&t=2173s",
+                "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
             }
@@ -20490,40 +20506,6 @@
         ]
     },
     {
-        "song_name": "檄！帝国華撃団",
-        "artist": "真宮寺さくら（横山智佐）& 帝国歌劇団",
-        "source": "サクラ大戦シリーズ",
-        "is_copyright": false,
-        "az": "げ",
-        "dates": [
-            {
-                "date": "20260104",
-                "time": "00:17:45",
-                "link": "https://www.youtube.com/watch?v=x45CRGOV0fE&t=1065s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "恋はみずいろ（Love is Blue)(L'amour est bleu)",
-        "artist": "ポール・モーリア",
-        "source": "",
-        "is_copyright": false,
-        "az": "こ",
-        "dates": [
-            {
-                "date": "20260104",
-                "time": "00:36:13",
-                "link": "https://www.youtube.com/watch?v=x45CRGOV0fE&t=2173s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
         "song_name": "好きすぎて滅！",
         "artist": "M!LK",
         "source": "",
@@ -20644,7 +20626,7 @@
     },
     {
         "song_name": "回レ!雪月花",
-        "artist": "歌組雪月花(いろり(CV茅野愛衣)、夜々(CV原田ひとみ)、小紫(CV小倉唯))",
+        "artist": "歌組雪月花",
         "source": "機巧少女は傷つかない",
         "is_copyright": false,
         "az": "ま",
