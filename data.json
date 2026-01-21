@@ -5116,6 +5116,14 @@
                 "is_private": true
             },
             {
+                "date": "20260118",
+                "time": "00:21:46",
+                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=1306s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20250301",
                 "time": "05:54:13",
                 "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=21253s",
@@ -12930,23 +12938,6 @@
         ]
     },
     {
-        "song_name": "KUJIKENAIKARA!",
-        "artist": "林原めぐみ、奥井雅美",
-        "source": "スレイヤーズ",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20260118",
-                "time": "00:21:46",
-                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=1306s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
         "song_name": "Give a reason",
         "artist": "林原めぐみ",
         "source": "スレイヤーズNEXT",
@@ -13052,7 +13043,7 @@
         ]
     },
     {
-        "song_name": "邪魔はさせない(アカペラ)",
+        "song_name": "邪魔はさせない",
         "artist": "奥井雅美",
         "source": "スレイヤーズNEXT",
         "is_copyright": false,
@@ -13063,8 +13054,16 @@
                 "time": "01:04:37",
                 "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=3877s",
                 "is_member_exclusive": false,
-                "is_acapella": false,
+                "is_acapella": true,
                 "is_private": false
+            },
+            {
+                "date": "20240323",
+                "time": "00:21:15",
+                "link": "https://www.youtube.com/watch?v=fdpGIoCs6AU&t=1275s",
+                "is_member_exclusive": false,
+                "is_acapella": true,
+                "is_private": true
             }
         ]
     },
@@ -17467,23 +17466,6 @@
                 "link": "https://www.youtube.com/watch?v=W2ysMOjn-WY&t=14425s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "邪魔はさせない",
-        "artist": "奥井雅美",
-        "source": "スレイヤーズNEXT",
-        "is_copyright": false,
-        "az": "じ",
-        "dates": [
-            {
-                "date": "20240323",
-                "time": "00:21:15",
-                "link": "https://www.youtube.com/watch?v=fdpGIoCs6AU&t=1275s",
-                "is_member_exclusive": false,
-                "is_acapella": true,
                 "is_private": true
             }
         ]
