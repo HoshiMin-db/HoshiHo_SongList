@@ -3477,6 +3477,14 @@
                 "is_private": false
             },
             {
+                "date": "20260118",
+                "time": "03:49:23",
+                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=13763s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20240511",
                 "time": "00:14:07",
                 "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=847s",
@@ -4620,6 +4628,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20260118",
+                "time": "00:38:31",
+                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=2311s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             },
             {
                 "date": "20231125",
@@ -12923,23 +12939,6 @@
         ]
     },
     {
-        "song_name": "Going History(アカペラ)",
-        "artist": "林原めぐみ",
-        "source": "スレイヤーズEX",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20260118",
-                "time": "00:38:31",
-                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=2311s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
         "song_name": "Give a reason",
         "artist": "林原めぐみ",
         "source": "スレイヤーズNEXT",
@@ -12950,6 +12949,14 @@
                 "date": "20260118",
                 "time": "00:46:51",
                 "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=2811s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20260118",
+                "time": "03:54:11",
+                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=14051s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -13144,7 +13151,7 @@
         ]
     },
     {
-        "song_name": "naked mind(アカペラ)",
+        "song_name": "naked mind",
         "artist": "奥井雅美",
         "source": "スレイヤーズN・EX.",
         "is_copyright": false,
@@ -13161,7 +13168,7 @@
         ]
     },
     {
-        "song_name": "虹のように(アカペラ)",
+        "song_name": "虹のように",
         "artist": "奥井雅美",
         "source": "スレイヤーズN・EX.",
         "is_copyright": false,
@@ -13313,7 +13320,7 @@
         ]
     },
     {
-        "song_name": "Meet again(アカペラ)",
+        "song_name": "Meet again",
         "artist": "林原めぐみ",
         "source": "スレイヤーズ 10周年記念イメージソング",
         "is_copyright": false,
@@ -13365,40 +13372,6 @@
                 "date": "20251206",
                 "time": "02:38:09",
                 "link": "https://www.youtube.com/watch?v=QD7oNLRy-aU&t=9489s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "Get along",
-        "artist": "林原めぐみ、奥井雅美(2回目)",
-        "source": "スレイヤーズ",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20260118",
-                "time": "03:49:23",
-                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=13763s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "Give a reason",
-        "artist": "林原めぐみ(2回目)",
-        "source": "スレイヤーズNEXT",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20260118",
-                "time": "03:54:11",
-                "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=14051s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
