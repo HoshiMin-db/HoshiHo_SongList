@@ -5564,6 +5564,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20260104",
+                "time": "02:16:49",
+                "link": "https://www.youtube.com/watch?v=x45CRGOV0fE&t=8209s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -20513,23 +20521,6 @@
                 "date": "20260104",
                 "time": "01:56:46",
                 "link": "https://www.youtube.com/watch?v=x45CRGOV0fE&t=7006s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "にんげんっていいな",
-        "artist": "中島義実",
-        "source": "まんが日本昔ばなし",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20260104",
-                "time": "02:16:49",
-                "link": "https://www.youtube.com/watch?v=x45CRGOV0fE&t=8209s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
