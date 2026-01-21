@@ -3509,6 +3509,14 @@
                 "is_private": false
             },
             {
+                "date": "20251108",
+                "time": "00:36:53",
+                "link": "https://www.youtube.com/watch?v=WPiTPi0qDBg&t=2213s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20231104",
                 "time": "04:19:23",
                 "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=15563s",
@@ -4634,7 +4642,7 @@
                 "time": "00:38:31",
                 "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=2311s",
                 "is_member_exclusive": false,
-                "is_acapella": false,
+                "is_acapella": true,
                 "is_private": false
             },
             {
@@ -13162,7 +13170,7 @@
                 "time": "01:28:22",
                 "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=5302s",
                 "is_member_exclusive": false,
-                "is_acapella": false,
+                "is_acapella": true,
                 "is_private": false
             }
         ]
@@ -13179,7 +13187,7 @@
                 "time": "01:34:03",
                 "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=5643s",
                 "is_member_exclusive": false,
-                "is_acapella": false,
+                "is_acapella": true,
                 "is_private": false
             }
         ]
@@ -13331,7 +13339,7 @@
                 "time": "02:52:27",
                 "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=10347s",
                 "is_member_exclusive": false,
-                "is_acapella": false,
+                "is_acapella": true,
                 "is_private": false
             }
         ]
@@ -21210,23 +21218,6 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "Get along",
-        "artist": "林原めぐみ・奥井雅美",
-        "source": "スレイヤーズ",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20251108",
-                "time": "00:36:53",
-                "link": "https://www.youtube.com/watch?v=WPiTPi0qDBg&t=2213s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
             }
         ]
     },
