@@ -9354,6 +9354,14 @@
                 "is_private": true
             },
             {
+                "date": "20260207",
+                "time": "03:00:32",
+                "link": "https://www.youtube.com/watch?v=LWrTgm59MT8&t=10832s",
+                "is_member_exclusive": false,
+                "is_acapella": true,
+                "is_private": false
+            },
+            {
                 "date": "20250201",
                 "time": "05:21:31",
                 "link": "https://www.youtube.com/watch?v=xqq8-ChkFFk&t=19291s",
@@ -15661,6 +15669,14 @@
                 "is_member_exclusive": true,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20260207",
+                "time": "01:31:51",
+                "link": "https://www.youtube.com/watch?v=LWrTgm59MT8&t=5511s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -20450,6 +20466,14 @@
                 "is_private": true
             },
             {
+                "date": "20260207",
+                "time": "02:46:01",
+                "link": "https://www.youtube.com/watch?v=LWrTgm59MT8&t=9961s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20231216",
                 "time": "05:52:18",
                 "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=21138s",
@@ -21240,6 +21264,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": true,
                 "is_private": true
+            },
+            {
+                "date": "20260207",
+                "time": "03:19:08",
+                "link": "https://www.youtube.com/watch?v=LWrTgm59MT8&t=11948s",
+                "is_member_exclusive": false,
+                "is_acapella": true,
+                "is_private": false
             }
         ]
     },
@@ -21614,23 +21646,6 @@
         ]
     },
     {
-        "song_name": "夢見るシャンソン人形(Poupee de cire, poupee de son)",
-        "artist": "フランス・ギャル",
-        "source": "",
-        "is_copyright": false,
-        "az": "ゆ",
-        "dates": [
-            {
-                "date": "20260207",
-                "time": "01:31:51",
-                "link": "https://www.youtube.com/watch?v=LWrTgm59MT8&t=5511s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
         "song_name": "WHITE ALBUM",
         "artist": "",
         "source": "WHITE ALBUM",
@@ -21641,40 +21656,6 @@
                 "date": "20260207",
                 "time": "01:51:05",
                 "link": "https://www.youtube.com/watch?v=LWrTgm59MT8&t=6665s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "届かない恋",
-        "artist": "上原れな",
-        "source": "WHITE ALBUM2",
-        "is_copyright": false,
-        "az": "と",
-        "dates": [
-            {
-                "date": "20260207",
-                "time": "02:46:01",
-                "link": "https://www.youtube.com/watch?v=LWrTgm59MT8&t=9961s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "POWDER SNOW(アカペラ)",
-        "artist": "AKKO",
-        "source": "WHITE ALBUM",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20260207",
-                "time": "03:00:32",
-                "link": "https://www.youtube.com/watch?v=LWrTgm59MT8&t=10832s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -21699,23 +21680,6 @@
         ]
     },
     {
-        "song_name": "Twinkle Snow(アカペラ)",
-        "artist": "津田朱里",
-        "source": "WHITE ALBUM2",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20260207",
-                "time": "03:19:08",
-                "link": "https://www.youtube.com/watch?v=LWrTgm59MT8&t=11948s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
         "song_name": "After All ～綴る想い～",
         "artist": "上原れな",
         "source": "WHITE ALBUM2",
@@ -21733,7 +21697,7 @@
         ]
     },
     {
-        "song_name": "舞い落ちる雪のように(アカペラ)",
+        "song_name": "舞い落ちる雪のように",
         "artist": "Suara",
         "source": "WHITE ALBUM",
         "is_copyright": false,
@@ -21744,7 +21708,7 @@
                 "time": "03:44:14",
                 "link": "https://www.youtube.com/watch?v=LWrTgm59MT8&t=13454s",
                 "is_member_exclusive": false,
-                "is_acapella": false,
+                "is_acapella": true,
                 "is_private": false
             }
         ]
@@ -21924,8 +21888,8 @@
         ]
     },
     {
-        "song_name": "Snow Rain(アカペラ)",
-        "artist": "八神はやて(CV:植田佳奈)",
+        "song_name": "Snow Rain",
+        "artist": "八神はやて(植田佳奈)",
         "source": "魔法少女リリカルなのはA's",
         "is_copyright": false,
         "az": null,
@@ -21937,12 +21901,20 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20240120",
+                "time": "00:51:28",
+                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=3088s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
     {
         "song_name": "夏祭り",
-        "artist": "Jitterin’ Jinn(Cover:Whiteberry)",
+        "artist": "Whiteberry",
         "source": "",
         "is_copyright": false,
         "az": "な",
@@ -21954,6 +21926,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20240615",
+                "time": "08:58:44",
+                "link": "https://www.youtube.com/watch?v=DjJmVyIXfH8&t=32324s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
             }
         ]
     },
@@ -24604,23 +24584,6 @@
         ]
     },
     {
-        "song_name": "夏祭り",
-        "artist": "Whiteberry",
-        "source": "",
-        "is_copyright": false,
-        "az": "な",
-        "dates": [
-            {
-                "date": "20240615",
-                "time": "08:58:44",
-                "link": "https://www.youtube.com/watch?v=DjJmVyIXfH8&t=32324s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
         "song_name": "ババーンと推参! バーンブレイバーン",
         "artist": "ブレイバーン(鈴村健一)",
         "source": "勇気爆発バーンブレイバーン",
@@ -24970,23 +24933,6 @@
                 "date": "20260118",
                 "time": "03:08:40",
                 "link": "https://www.youtube.com/watch?v=I44-rUZbKzE&t=11320s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "Snow Rain",
-        "artist": "八神はやて(植田佳奈) ",
-        "source": "魔法少女リリカルなのは",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20240120",
-                "time": "00:51:28",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=3088s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
