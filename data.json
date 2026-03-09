@@ -3593,6 +3593,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20260308",
+                "time": "03:38:47",
+                "link": "https://www.youtube.com/watch?v=0cbulxcivk8&t=13127s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -10454,6 +10462,14 @@
                 "date": "20250906",
                 "time": "00:16:20",
                 "link": "https://www.youtube.com/watch?v=BDtP626eAb4&t=980s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20260308",
+                "time": "03:47:10",
+                "link": "https://www.youtube.com/watch?v=0cbulxcivk8&t=13630s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -24026,40 +24042,6 @@
                 "date": "20260308",
                 "time": "02:05:12",
                 "link": "https://www.youtube.com/watch?v=0cbulxcivk8&t=7512s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "調和 oto ～with reflection～(アカペラ)",
-        "artist": "KOKIA",
-        "source": "銀色の髪のアギト",
-        "is_copyright": false,
-        "az": "ち",
-        "dates": [
-            {
-                "date": "20260308",
-                "time": "03:38:47",
-                "link": "https://www.youtube.com/watch?v=0cbulxcivk8&t=13127s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "檄！帝国華撃団",
-        "artist": "真宮寺さくら（横山智佐）＆帝国歌劇団",
-        "source": "サクラ大戦シリーズ",
-        "is_copyright": false,
-        "az": "げ",
-        "dates": [
-            {
-                "date": "20260308",
-                "time": "03:47:10",
-                "link": "https://www.youtube.com/watch?v=0cbulxcivk8&t=13630s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
