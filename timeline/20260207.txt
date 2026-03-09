@@ -1,6 +1,6 @@
 ID = LWrTgm59MT8
 💐🌟🎶タイムスタンプ💐🌟🎶
-01.  01:31:51   夢見るシャンソン人形(Poupee de cire, poupee de son) / フランス・ギャル
+01.  01:31:51   夢見るシャンソン人形 / France Gall
 02.  01:37:27   夢見る愛天使 / 『愛天使伝説ウェディングピーチ』FURIL
 03.  01:51:05   WHITE ALBUM / 『WHITE ALBUM』
 04.  02:07:44   深愛 / 『WHITE ALBUM』水樹奈々
@@ -8,13 +8,13 @@ ID = LWrTgm59MT8
 06.  02:21:38   ツイてるねノッてるね / 『WHITE ALBUM』中山美穂
 07.  02:27:29   ebullient future / 『ef - a tale of melodies.』ELISA
 08.  02:36:17   euphoric field / 『ef - a tale of memories.』ELISA
-09.  02:46:01   届かない恋 / 『WHITE ALBUM2』上原れな
-10.  03:00:32   POWDER SNOW(アカペラ)  / 『WHITE ALBUM』AKKO
+09.  02:46:01   届かない恋'13 / 『WHITE ALBUM2』上原れな
+10.  03:00:32   POWDER SNOW  / 『WHITE ALBUM』緒方理奈(水樹奈々)
 
 11.  03:13:08   幸せな記憶 / 『WHITE ALBUM2』上原れな
-12.  03:19:08   Twinkle Snow(アカペラ) / 『WHITE ALBUM2』津田朱里
+12.  03:19:08   Twinkle Snow / 『WHITE ALBUM2』津田朱里
 13.  03:33:42   After All ～綴る想い～ / 『WHITE ALBUM2』上原れな
-14.  03:44:14   舞い落ちる雪のように(アカペラ) / 『WHITE ALBUM』Suara
+14.  03:44:14   舞い落ちる雪のように / 『WHITE ALBUM』Suara
 15.  03:52:28   Feeling Heart / 『To Heart』中司雅美
 16.  03:58:40   トモシビ / 『To Heart2』Suara
 17.  04:06:12   あなたを想いたい / 『Routes -ルーツ-』池田春菜
@@ -23,9 +23,9 @@ ID = LWrTgm59MT8
 20.  04:52:32   ETERNAL BLAZE / 『魔法少女リリカルなのはA's』水樹奈々
 
 21.  05:00:04   BRAVE PHOENIX / 『魔法少女リリカルなのはA's』水樹奈々
-22.  05:09:43   Snow Rain(アカペラ) / 『魔法少女リリカルなのはA's』八神はやて(CV:植田佳奈)
+22.  05:09:43   Snow Rain / 『魔法少女リリカルなのはA's』八神はやて(植田佳奈)
 23.  05:23:12   SECRET AMBITION / 『魔法少女リリカルなのはStrikerS』水樹奈々
-24.  05:33:20   夏祭り / Jitterin’ Jinn(Cover:Whiteberry)
+24.  05:33:20   夏祭り / Whiteberry
 25.  05:38:55   星空のSpica / 『魔法少女リリカルなのはStrikerS』田村ゆかり
 26.  05:52:28   Beautiful Amulet / 『魔法少女リリカルなのはStrikerS』田村ゆかり
 27.  05:58:41   Pray / 『魔法少女リリカルなのはStrikerS』水樹奈々
