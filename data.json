@@ -2058,6 +2058,14 @@
                 "is_private": true
             },
             {
+                "date": "20260228",
+                "time": "00:33:17",
+                "link": "https://www.youtube.com/watch?v=Lg7z6JcFRsY&t=1997s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20240216",
                 "time": "05:33:55",
                 "link": "https://www.youtube.com/watch?v=Z-1sxd5PK_M&t=20035s",
@@ -18197,23 +18205,6 @@
         ]
     },
     {
-        "song_name": "去り際のロマンティクス(Take2)",
-        "artist": "See-Saw",
-        "source": "機動戦士ガンダムSEED FREEDOM",
-        "is_copyright": false,
-        "az": "さ",
-        "dates": [
-            {
-                "date": "20260228",
-                "time": "00:33:17",
-                "link": "https://www.youtube.com/watch?v=Lg7z6JcFRsY&t=1997s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
         "song_name": "True My Heart(ショート)",
         "artist": "佐倉紗織",
         "source": "Nursery Rhyme -ナーサリィ☆ライム-",
@@ -18257,7 +18248,7 @@
     },
     {
         "song_name": "どうにもとまらない",
-        "artist": "天の妃少女合唱団 かなこ（真田アサミ）&鞠也（小林ゆう）&茉莉花（井上麻里奈）(Original:山本リンダ)",
+        "artist": "天の妃少女合唱団 かなこ（真田アサミ）&鞠也（小林ゆう）&茉莉花（井上麻里奈）",
         "source": "まりあ†ほりっく あらいぶ",
         "is_copyright": false,
         "az": null,
@@ -18376,6 +18367,14 @@
                 "date": "20260228",
                 "time": "03:18:37",
                 "link": "https://www.youtube.com/watch?v=Lg7z6JcFRsY&t=11917s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20260228",
+                "time": "05:05:36",
+                "link": "https://www.youtube.com/watch?v=Lg7z6JcFRsY&t=18336s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -18570,25 +18569,8 @@
         ]
     },
     {
-        "song_name": "原色(2回目)",
-        "artist": "Sān-Z",
-        "source": "Zenless Zone Zero",
-        "is_copyright": false,
-        "az": "げ",
-        "dates": [
-            {
-                "date": "20260228",
-                "time": "05:05:36",
-                "link": "https://www.youtube.com/watch?v=Lg7z6JcFRsY&t=18336s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
         "song_name": "ReDreaming Angel",
-        "artist": "苺りなはむ(BPM15Q) / にかもきゅ(BPM15Q) / 4s4ki",
+        "artist": "苺りなはむ(BPM15Q)/にかもきゅ(BPM15Q)/4s4ki",
         "source": "Zenless Zone Zero",
         "is_copyright": false,
         "az": null,
@@ -18604,24 +18586,32 @@
         ]
     },
     {
-        "song_name": "新月の子守唄（第一章）：月と共に眠る(アカペラ)",
+        "song_name": "新月の子守唄（第一章）：月と共に眠る",
         "artist": "HOYO-MiX",
         "source": "原神-夕暮れを照らす月",
         "is_copyright": false,
-        "az": null,
+        "az": "し",
         "dates": [
             {
                 "date": "20260228",
                 "time": "05:35:22",
                 "link": "https://www.youtube.com/watch?v=Lg7z6JcFRsY&t=20122s",
                 "is_member_exclusive": false,
-                "is_acapella": false,
+                "is_acapella": true,
+                "is_private": false
+            },
+            {
+                "date": "20251108",
+                "time": "04:17:20",
+                "link": "https://www.youtube.com/watch?v=WPiTPi0qDBg&t=15440s",
+                "is_member_exclusive": false,
+                "is_acapella": true,
                 "is_private": false
             }
         ]
     },
     {
-        "song_name": "ナタ(アカペラ)",
+        "song_name": "ナタ",
         "artist": "HOYO-MiX",
         "source": "原神-熾焔が駆け巡る野原",
         "is_copyright": false,
@@ -18638,8 +18628,8 @@
         ]
     },
     {
-        "song_name": "ナド・クライ(アカペラ)",
-        "artist": "AURORA",
+        "song_name": "ナド・クライ",
+        "artist": "HOYO-MiX・AURORA",
         "source": "原神-夕暮れを照らす月",
         "is_copyright": false,
         "az": null,
@@ -18649,7 +18639,15 @@
                 "time": "05:50:16",
                 "link": "https://www.youtube.com/watch?v=Lg7z6JcFRsY&t=21016s",
                 "is_member_exclusive": false,
-                "is_acapella": false,
+                "is_acapella": true,
+                "is_private": false
+            },
+            {
+                "date": "20251108",
+                "time": "04:20:53",
+                "link": "https://www.youtube.com/watch?v=WPiTPi0qDBg&t=15653s",
+                "is_member_exclusive": false,
+                "is_acapella": true,
                 "is_private": false
             }
         ]
@@ -18691,7 +18689,7 @@
     {
         "song_name": "Gravity",
         "artist": "",
-        "source": "ハズビン・ホテルへようこそ シーズン2",
+        "source": "HAZBIN HOTEL",
         "is_copyright": false,
         "az": null,
         "dates": [
@@ -18707,8 +18705,8 @@
     },
     {
         "song_name": "色は匂へど散りぬるを",
-        "artist": "",
-        "source": "幽閉サテライト",
+        "artist": "幽閉サテライト",
+        "source": "",
         "is_copyright": false,
         "az": "い",
         "dates": [
@@ -18719,13 +18717,21 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20240621",
+                "time": "05:34:10",
+                "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=20050s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
             }
         ]
     },
     {
         "song_name": "月に叢雲華に風",
-        "artist": "",
-        "source": "幽閉サテライト",
+        "artist": "幽閉サテライト",
+        "source": "",
         "is_copyright": false,
         "az": "つ",
         "dates": [
@@ -18736,13 +18742,21 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20240621",
+                "time": "05:39:43",
+                "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=20383s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
             }
         ]
     },
     {
         "song_name": "泡沫、哀のまほろば",
-        "artist": "",
-        "source": "幽閉サテライト",
+        "artist": "幽閉サテライト",
+        "source": "",
         "is_copyright": false,
         "az": "う",
         "dates": [
@@ -18753,6 +18767,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20240621",
+                "time": "05:46:31",
+                "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=20791s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
             }
         ]
     },
@@ -18936,40 +18958,6 @@
                 "link": "https://www.youtube.com/watch?v=Vcp-F0ELja0&t=11894s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "新月の子守唄（第一章）：月と共に眠る",
-        "artist": "HOYO-MiX",
-        "source": "原神-夕暮れを照らす月 (Original Game Soundtrack)",
-        "is_copyright": false,
-        "az": "し",
-        "dates": [
-            {
-                "date": "20251108",
-                "time": "04:17:20",
-                "link": "https://www.youtube.com/watch?v=WPiTPi0qDBg&t=15440s",
-                "is_member_exclusive": false,
-                "is_acapella": true,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "ナド・クライ",
-        "artist": "HOYO-MiX ・ AURORA",
-        "source": "原神-夕暮れを照らす月 (Original Game Soundtrack)",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20251108",
-                "time": "04:20:53",
-                "link": "https://www.youtube.com/watch?v=WPiTPi0qDBg&t=15653s",
-                "is_member_exclusive": false,
-                "is_acapella": true,
                 "is_private": false
             }
         ]
@@ -24342,57 +24330,6 @@
                 "date": "20240621",
                 "time": "04:59:48",
                 "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=17988s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "色は匂へど散りぬるを",
-        "artist": "幽閉サテライト",
-        "source": "幻想万華鏡 春雪異変の章",
-        "is_copyright": false,
-        "az": "い",
-        "dates": [
-            {
-                "date": "20240621",
-                "time": "05:34:10",
-                "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=20050s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "月に叢雲華に風",
-        "artist": "幽閉サテライト",
-        "source": "幻想万華鏡 紅霧異変の章",
-        "is_copyright": false,
-        "az": "つ",
-        "dates": [
-            {
-                "date": "20240621",
-                "time": "05:39:43",
-                "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=20383s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "泡沫、哀のまほろば",
-        "artist": "幽閉サテライト",
-        "source": "幻想万華鏡 永夜異変の章",
-        "is_copyright": false,
-        "az": "う",
-        "dates": [
-            {
-                "date": "20240621",
-                "time": "05:46:31",
-                "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=20791s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
