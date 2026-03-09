@@ -18638,7 +18638,7 @@
                 "time": "05:43:07",
                 "link": "https://www.youtube.com/watch?v=Lg7z6JcFRsY&t=20587s",
                 "is_member_exclusive": false,
-                "is_acapella": false,
+                "is_acapella": true,
                 "is_private": false
             }
         ]
