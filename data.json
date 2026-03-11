@@ -5766,6 +5766,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20260228",
+                "time": "07:58:52",
+                "link": "https://www.youtube.com/watch?v=Lg7z6JcFRsY&t=28732s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -5780,6 +5788,14 @@
                 "date": "20250823",
                 "time": "03:27:27",
                 "link": "https://www.youtube.com/watch?v=Kie40rKCkzg&t=12447s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20260228",
+                "time": "08:15:01",
+                "link": "https://www.youtube.com/watch?v=Lg7z6JcFRsY&t=29701s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -18799,40 +18815,6 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "Philosophyz",
-        "artist": "水谷瑠奈",
-        "source": "Rewrite",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20260228",
-                "time": "07:58:52",
-                "link": "https://www.youtube.com/watch?v=Lg7z6JcFRsY&t=28732s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "闇の彼方へ",
-        "artist": "水谷瑠奈",
-        "source": "Rewrite",
-        "is_copyright": false,
-        "az": "や",
-        "dates": [
-            {
-                "date": "20260228",
-                "time": "08:15:01",
-                "link": "https://www.youtube.com/watch?v=Lg7z6JcFRsY&t=29701s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
             }
         ]
     },
