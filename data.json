@@ -20413,7 +20413,7 @@
     },
     {
         "song_name": "Sing My Pleasure",
-        "artist": "Vivy(Kairi Yagi)",
+        "artist": "ヴィヴィ(Vo.八木海莉)",
         "source": "Vivy - Fluorite Eye's Song -",
         "is_copyright": false,
         "az": null,
@@ -20423,6 +20423,14 @@
                 "time": "04:25:43",
                 "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=15943s",
                 "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250809",
+                "time": "03:34:37",
+                "link": "https://www.youtube.com/watch?v=R3mP--Wbx0k&t=12877s",
+                "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
             }
@@ -24545,23 +24553,6 @@
                 "date": "20250809",
                 "time": "03:22:11",
                 "link": "https://www.youtube.com/watch?v=R3mP--Wbx0k&t=12131s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "Sing My Pleasure",
-        "artist": "ヴィヴィ(Vo.八木海莉)",
-        "source": "Vivy - Fluorite Eye's Song -",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250809",
-                "time": "03:34:37",
-                "link": "https://www.youtube.com/watch?v=R3mP--Wbx0k&t=12877s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
