@@ -30,7 +30,7 @@ ID = Lg7z6JcFRsY
 26.  04:22:33   Nameless Faces / 『崩壊:スターレイル』幾田りら
 27.  04:26:42   Ripples of Past Reverie / 『崩壊:スターレイル』Cassie Wei
 28.  04:32:03   Interstellar Journey / 『崩壊:スターレイル』Lea Sirk
-29.  04:35:31   WHITE NIGHT / 『崩壊:スターレイル』(英語版歌手)Jake Miller
+29.  04:35:31   WHITE NIGHT / 『崩壊:スターレイル』Jake Miller
 30.  04:41:52   銀河を独り揺蕩う / 『崩壊:スターレイル』Chevy
 
 31.  04:49:21   翼の生えた希望 / 『崩壊:スターレイル』Chevy
@@ -53,4 +53,5 @@ ID = Lg7z6JcFRsY
 47.  08:22:44   アルカテイル / 『Summer Pockets』鈴木このみ
 48.  08:29:47   アスタロア / 『Summer Pockets』鈴木このみ
 49.  08:36:00   鳥の詩 / 『Air』Lia
+
 
