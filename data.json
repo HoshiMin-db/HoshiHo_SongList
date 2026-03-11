@@ -8655,6 +8655,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20260104",
+                "time": "03:54:34",
+                "link": "https://www.youtube.com/watch?v=x45CRGOV0fE&t=14074s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -17025,23 +17033,6 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "千本桜",
-        "artist": "ボーカルシンセサイザー・初音ミク",
-        "source": "",
-        "is_copyright": false,
-        "az": "せ",
-        "dates": [
-            {
-                "date": "20260104",
-                "time": "03:54:34",
-                "link": "https://www.youtube.com/watch?v=x45CRGOV0fE&t=14074s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
             }
         ]
     },
