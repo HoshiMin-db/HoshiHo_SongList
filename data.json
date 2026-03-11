@@ -21660,6 +21660,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20260207",
+                "time": "07:47:28",
+                "link": "https://www.youtube.com/watch?v=LWrTgm59MT8&t=28048s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -22116,23 +22124,6 @@
                 "date": "20260207",
                 "time": "07:41:05",
                 "link": "https://www.youtube.com/watch?v=LWrTgm59MT8&t=27665s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "Trio Dreams",
-        "artist": "キュアアイドル(松岡美里)＆キュアウインク(髙橋ミナミ)＆キュアキュンキュン(高森奈津美)",
-        "source": "キミとアイドルプリキュア♪",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20260207",
-                "time": "07:47:28",
-                "link": "https://www.youtube.com/watch?v=LWrTgm59MT8&t=28048s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
