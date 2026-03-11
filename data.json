@@ -551,6 +551,14 @@
                 "is_member_exclusive": true,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20260308",
+                "time": "00:46:20",
+                "link": "https://www.youtube.com/watch?v=0cbulxcivk8&t=2780s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -6665,6 +6673,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20260308",
+                "time": "00:51:41",
+                "link": "https://www.youtube.com/watch?v=0cbulxcivk8&t=3101s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             },
             {
                 "date": "20240615",
@@ -23973,40 +23989,6 @@
                 "time": "08:12:15",
                 "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=29535s",
                 "is_member_exclusive": true,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "Weis ～幻想への誘い～",
-        "artist": "霜月はるか†Revo(Sound Horizon)",
-        "source": "",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20260308",
-                "time": "00:46:20",
-                "link": "https://www.youtube.com/watch?v=0cbulxcivk8&t=2780s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "Schwarzweis ～霧の向こうに繋がる世界～",
-        "artist": "霜月はるか†Revo(Sound Horizon)",
-        "source": "",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20260308",
-                "time": "00:51:41",
-                "link": "https://www.youtube.com/watch?v=0cbulxcivk8&t=3101s",
-                "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
             }
