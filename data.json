@@ -20179,6 +20179,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20250831",
+                "time": "04:56:32",
+                "link": "https://www.youtube.com/watch?v=Y91SWo4ADS4&t=17792s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -21479,23 +21487,6 @@
                 "date": "20240831",
                 "time": "00:23:31",
                 "link": "https://www.youtube.com/watch?v=NndUWLM1BjE&t=1411s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "世界でいちばん熱い夏",
-        "artist": "プリンセス プリンセス",
-        "source": "",
-        "is_copyright": false,
-        "az": "せ",
-        "dates": [
-            {
-                "date": "20250831",
-                "time": "04:56:32",
-                "link": "https://www.youtube.com/watch?v=Y91SWo4ADS4&t=17792s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
