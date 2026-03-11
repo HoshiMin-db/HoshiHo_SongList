@@ -5732,6 +5732,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20260228",
+                "time": "04:35:31",
+                "link": "https://www.youtube.com/watch?v=Lg7z6JcFRsY&t=16531s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -18550,23 +18558,6 @@
                 "date": "20260228",
                 "time": "04:26:42",
                 "link": "https://www.youtube.com/watch?v=Lg7z6JcFRsY&t=16002s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "WHITE NIGHT",
-        "artist": "(英語版歌手)Jake Miller",
-        "source": "崩壊:スターレイル",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20260228",
-                "time": "04:35:31",
-                "link": "https://www.youtube.com/watch?v=Lg7z6JcFRsY&t=16531s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
