@@ -24743,7 +24743,7 @@
         ]
     },
     {
-        "song_name": "限りない欲望の中に(ショートVer)",
+        "song_name": "限りない欲望の中に",
         "artist": "林原めぐみ",
         "source": "スレイヤーズすぺしゃる",
         "is_copyright": false,
@@ -24756,16 +24756,7 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "限りない欲望の中に",
-        "artist": "林原めぐみ",
-        "source": "スレイヤーズすぺしゃる",
-        "is_copyright": false,
-        "az": "げ",
-        "dates": [
+            },
             {
                 "date": "20260118",
                 "time": "02:44:05",
