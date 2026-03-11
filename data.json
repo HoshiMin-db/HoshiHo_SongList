@@ -18565,11 +18565,11 @@
         ]
     },
     {
-        "song_name": "銀河を独り揺蕩う",
+        "song_name": "Sway to My Beat in Cosmos (銀河を独り揺蕩う)",
         "artist": "Chevy",
         "source": "崩壊:スターレイル",
         "is_copyright": false,
-        "az": "ぎ",
+        "az": null,
         "dates": [
             {
                 "date": "20260228",
@@ -18578,15 +18578,23 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20240720",
+                "time": "01:13:55",
+                "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=4435s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
             }
         ]
     },
     {
-        "song_name": "翼の生えた希望",
+        "song_name": "Hope Is the Thing With Feathers (翼の生えた希望)",
         "artist": "Chevy",
         "source": "崩壊:スターレイル",
         "is_copyright": false,
-        "az": "つ",
+        "az": null,
         "dates": [
             {
                 "date": "20260228",
@@ -18595,15 +18603,23 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20240720",
+                "time": "01:25:09",
+                "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=5109s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
             }
         ]
     },
     {
-        "song_name": "傷つく誰かの心を守ることができたなら",
+        "song_name": "If I Can Stop One Heart From Breaking (傷つく誰かの心を守ることができたなら)",
         "artist": "Chevy",
         "source": "崩壊:スターレイル",
         "is_copyright": false,
-        "az": "き",
+        "az": null,
         "dates": [
             {
                 "date": "20260228",
@@ -18612,6 +18628,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20240720",
+                "time": "01:18:28",
+                "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=4708s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
             }
         ]
     },
@@ -25892,57 +25916,6 @@
                 "date": "20240720",
                 "time": "00:52:20",
                 "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=3140s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "Sway to My Beat in Cosmos (銀河を独り揺蕩う)",
-        "artist": "Chevy",
-        "source": "崩壊：スターレイル",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20240720",
-                "time": "01:13:55",
-                "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=4435s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "If I Can Stop One Heart From Breaking (傷つく誰かの心を守ることができたなら)",
-        "artist": "Chevy",
-        "source": "崩壊：スターレイル",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20240720",
-                "time": "01:18:28",
-                "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=4708s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "Hope Is the Thing With Feathers (翼の生えた希望)",
-        "artist": "Chevy",
-        "source": "崩壊：スターレイル",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20240720",
-                "time": "01:25:09",
-                "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=5109s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
