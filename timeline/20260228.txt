@@ -31,10 +31,10 @@ ID = Lg7z6JcFRsY
 27.  04:26:42   Ripples of Past Reverie / 『崩壊:スターレイル』Cassie Wei
 28.  04:32:03   Interstellar Journey / 『崩壊:スターレイル』Lea Sirk
 29.  04:35:31   WHITE NIGHT / 『崩壊:スターレイル』Jake Miller
-30.  04:41:52   銀河を独り揺蕩う / 『崩壊:スターレイル』Chevy
+30.  04:41:52   Sway to My Beat in Cosmos (銀河を独り揺蕩う) / 『崩壊:スターレイル』Chevy
 
-31.  04:49:21   翼の生えた希望 / 『崩壊:スターレイル』Chevy
-32.  04:58:03   傷つく誰かの心を守ることができたなら / 『崩壊:スターレイル』Chevy
+31.  04:49:21   Hope Is the Thing With Feathers (翼の生えた希望) / 『崩壊:スターレイル』Chevy
+32.  04:58:03   If I Can Stop One Heart From Breaking (傷つく誰かの心を守ることができたなら) / 『崩壊:スターレイル』Chevy
 33.  05:05:36   原色 / 『Zenless Zone Zero』Sān-Z
 34.  05:17:29   ReDreaming Angel / 『Zenless Zone Zero』苺りなはむ(BPM15Q)/にかもきゅ(BPM15Q)/4s4ki
 35.  05:35:22   新月の子守唄（第一章）：月と共に眠る / 『原神-夕暮れを照らす月』HOYO-MiX
@@ -53,5 +53,6 @@ ID = Lg7z6JcFRsY
 47.  08:22:44   アルカテイル / 『Summer Pockets』鈴木このみ
 48.  08:29:47   アスタロア / 『Summer Pockets』鈴木このみ
 49.  08:36:00   鳥の詩 / 『Air』Lia
+
 
 
