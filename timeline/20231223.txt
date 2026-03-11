@@ -18,7 +18,7 @@ ID = VUYRC_GlIl8
 
 04:08:50 | Memory | CATS
 
-04:25:43 | Sing My Pleasure | Vivy(Kairi Yagi) | Vivy - Fluorite Eye's Song -
+04:25:43 | Sing My Pleasure | ヴィヴィ(Vo.八木海莉) | Vivy - Fluorite Eye's Song -
 
 04:54:05 | 深愛 | 水樹奈々 | WHITE ALBUM
 
@@ -49,3 +49,4 @@ ID = VUYRC_GlIl8
 06:40:52 | エーデルワイスの白い花 | 潘恵子 | わたしとアンネット
 
 06:48:39 | ナージャ!! | 本田美奈子 | 明日のナージャ
+
