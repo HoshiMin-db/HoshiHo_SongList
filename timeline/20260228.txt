@@ -48,8 +48,9 @@ ID = Lg7z6JcFRsY
 42.  06:59:55   月に叢雲華に風 / 幽閉サテライト
 43.  07:06:53   泡沫、哀のまほろば / 幽閉サテライト
 44.  07:41:32   inner universe / 『攻殻機動隊 STAND ALONE COMPLEX』Origa
-45.  07:58:52   Philosophyz / 『Rewrite』水谷瑠奈
-46.  08:15:01   闇の彼方へ / 『Rewrite』水谷瑠奈
+45.  07:58:52   Philosophyz / 『Rewrite』水谷瑠奈(NanosizeMir)
+46.  08:15:01   闇の彼方へ / 『Rewrite』水谷瑠奈(NanosizeMir)
 47.  08:22:44   アルカテイル / 『Summer Pockets』鈴木このみ
 48.  08:29:47   アスタロア / 『Summer Pockets』鈴木このみ
 49.  08:36:00   鳥の詩 / 『Air』Lia
+
