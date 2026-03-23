@@ -3184,6 +3184,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20260321",
+                "time": "03:18:23",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=11903s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -7912,6 +7920,14 @@
                 "is_private": true
             },
             {
+                "date": "20260321",
+                "time": "04:57:05",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=17825s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20240209",
                 "time": "00:50:39",
                 "link": "https://www.youtube.com/watch?v=kMAS4-EXsps&t=3039s",
@@ -9046,6 +9062,14 @@
                 "is_member_exclusive": true,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20260321",
+                "time": "07:46:52",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=28012s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -9071,6 +9095,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20260321",
+                "time": "07:12:38",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=25958s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -16849,6 +16881,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20260321",
+                "time": "05:18:48",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=19128s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -17514,6 +17554,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20260321",
+                "time": "01:26:33",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=5193s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -19836,6 +19884,14 @@
                 "is_private": false
             },
             {
+                "date": "20260321",
+                "time": "04:43:40",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=17020s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20240511",
                 "time": "03:35:34",
                 "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=12934s",
@@ -20419,6 +20475,14 @@
                 "time": "03:50:19",
                 "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=13819s",
                 "is_member_exclusive": true,
+                "is_acapella": true,
+                "is_private": false
+            },
+            {
+                "date": "20260321",
+                "time": "03:45:02",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=13502s",
+                "is_member_exclusive": false,
                 "is_acapella": true,
                 "is_private": false
             }
@@ -23785,6 +23849,14 @@
                 "is_member_exclusive": true,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20260321",
+                "time": "05:46:01",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=20761s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -23800,6 +23872,14 @@
                 "time": "01:54:14",
                 "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=6854s",
                 "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20260321",
+                "time": "06:10:42",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=22242s",
+                "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
             },
@@ -23842,6 +23922,14 @@
                 "time": "02:21:29",
                 "link": "https://www.youtube.com/watch?v=COMhpmfK1JM&t=8489s",
                 "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20260321",
+                "time": "05:54:58",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=21298s",
+                "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
             }
@@ -25675,6 +25763,362 @@
         ]
     },
     {
+        "song_name": "さくらんぼ",
+        "artist": "大塚愛",
+        "source": "",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260321",
+                "time": "00:28:00",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=1680s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240511",
+                "time": "01:56:43",
+                "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=7003s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            }
+        ]
+    },
+    {
+        "song_name": "Torna a Sorrento (帰れソレントへ)",
+        "artist": "",
+        "source": "",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260321",
+                "time": "01:13:20",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=4400s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "魔法使いと私(The Wizard and I)",
+        "artist": "",
+        "source": "ウィキッド ふたりの魔女",
+        "is_copyright": false,
+        "az": "ま",
+        "dates": [
+            {
+                "date": "20260321",
+                "time": "01:41:42",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=6102s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "ダ・カーポ ～第2ボタンの誓い～",
+        "artist": "yozuca*",
+        "source": "D.C. ～ダ・カーポ～",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260321",
+                "time": "02:01:27",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=7287s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "moonfesta～ムーンフェスタ～",
+        "artist": "Kalafina",
+        "source": "みんなのうた",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260321",
+                "time": "02:35:45",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=9345s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "オリオンをなぞる",
+        "artist": "UNISON SQUARE GARDEN",
+        "source": "TIGER & BUNNY",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260321",
+                "time": "02:46:29",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=9989s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "lulu.",
+        "artist": "Mrs. GREEN APPLE",
+        "source": "葬送のフリーレン(第2期)",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260321",
+                "time": "03:33:23",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=12803s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "真実の行方(アカペラ)",
+        "artist": "三谷朋世",
+        "source": ".hack//G.U.",
+        "is_copyright": false,
+        "az": "し",
+        "dates": [
+            {
+                "date": "20260321",
+                "time": "03:56:12",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=14172s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "優しくキミは微笑んでいた(アカペラ)",
+        "artist": "三谷朋世",
+        "source": ".hack//G.U.",
+        "is_copyright": false,
+        "az": "や",
+        "dates": [
+            {
+                "date": "20260321",
+                "time": "04:01:12",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=14472s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "TEST ME",
+        "artist": "ちゃんみな",
+        "source": "推しの子(第3期)",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260321",
+                "time": "04:21:05",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=15665s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "セレナーデ",
+        "artist": "なとり",
+        "source": "推しの子(第3期)",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260321",
+                "time": "04:26:13",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=15973s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "LOOP",
+        "artist": "坂本真綾",
+        "source": "ツバサ・クロニクル(第1期)",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260321",
+                "time": "04:49:00",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=17340s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Love Power",
+        "artist": "Aice5",
+        "source": "(アニメ版)乙女はお姉さまに恋してる",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260321",
+                "time": "05:08:50",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=18530s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "爆裂愛してる",
+        "artist": "M!LK",
+        "source": "",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260321",
+                "time": "05:25:04",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=19504s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "STONE OCEAN",
+        "artist": "ichigo from 岸田教団&THE明星ロケッツ",
+        "source": "ジョジョの奇妙な冒険(第6部)",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260321",
+                "time": "06:23:05",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=22985s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240720",
+                "time": "02:39:11",
+                "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=9551s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            }
+        ]
+    },
+    {
+        "song_name": "黄金の彼方 - Golden Horizon",
+        "artist": "Awich × ALI",
+        "source": "ゴールデンカムイ(最終章・劇場先行版)",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260321",
+                "time": "06:46:20",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=24380s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "雪花繚乱",
+        "artist": "プリンセス・ヴィオラ×プリンセス・ネージュ",
+        "source": "プリンセッション・オーケストラ",
+        "is_copyright": false,
+        "az": "ゆ",
+        "dates": [
+            {
+                "date": "20260321",
+                "time": "06:55:09",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=24909s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "卒業",
+        "artist": "斉藤由貴",
+        "source": "",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260321",
+                "time": "07:24:58",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=26698s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "consolation",
+        "artist": "Kalafina",
+        "source": "",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260321",
+                "time": "07:36:24",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=27384s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "なぜ？謎？！ANSWER(TVサイズ)",
+        "artist": "熊田茜音＆増井優花",
+        "source": "名探偵プリキュア！",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260321",
+                "time": "07:44:18",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=27858s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
         "song_name": "悪魔の子",
         "artist": "ヒグチアイ",
         "source": "進撃の巨人",
@@ -25719,23 +26163,6 @@
                 "date": "20240511",
                 "time": "01:50:08",
                 "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=6608s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "さくらんぼ",
-        "artist": "大塚 愛",
-        "source": "",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20240511",
-                "time": "01:56:43",
-                "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=7003s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
@@ -25906,23 +26333,6 @@
                 "date": "20240720",
                 "time": "01:53:01",
                 "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=6781s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "STONE OCEAN",
-        "artist": "ichigo from 岸田教団&THE明星ロケッツ",
-        "source": "ジョジョの奇妙な冒険 ストーンオーシャン",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20240720",
-                "time": "02:39:11",
-                "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=9551s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
