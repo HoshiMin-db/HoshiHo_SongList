@@ -15291,7 +15291,7 @@
     },
     {
         "song_name": "Just Look My Way",
-        "artist": "",
+        "artist": "Bryce",
         "source": "HELLUVA BOSS",
         "is_copyright": false,
         "az": null,
@@ -15303,6 +15303,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20260228",
+                "time": "06:15:57",
+                "link": "https://www.youtube.com/watch?v=Lg7z6JcFRsY&t=22557s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -18773,23 +18781,6 @@
                 "date": "20260228",
                 "time": "06:01:37",
                 "link": "https://www.youtube.com/watch?v=Lg7z6JcFRsY&t=21697s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "Just Look My Way",
-        "artist": "Bryce",
-        "source": "HELLUVA BOSS",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20260228",
-                "time": "06:15:57",
-                "link": "https://www.youtube.com/watch?v=Lg7z6JcFRsY&t=22557s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
