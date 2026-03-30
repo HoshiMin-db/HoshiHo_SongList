@@ -7810,6 +7810,14 @@
                 "is_private": true
             },
             {
+                "date": "20260329",
+                "time": "02:09:52",
+                "link": "https://www.youtube.com/watch?v=fG1ugxfO35A&t=7792s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20250426",
                 "time": "01:47:41",
                 "link": "https://www.youtube.com/watch?v=Vcp-F0ELja0&t=6461s",
@@ -9750,6 +9758,14 @@
                 "date": "20240224",
                 "time": "06:18:16",
                 "link": "https://www.youtube.com/watch?v=8i9TOCJF8ps&t=22696s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20260329",
+                "time": "00:32:56",
+                "link": "https://www.youtube.com/watch?v=fG1ugxfO35A&t=1976s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -20818,6 +20834,149 @@
         ]
     },
     {
+        "song_name": "盛れ！ミ・アモーレ",
+        "artist": "Juice=Juice",
+        "source": "",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260329",
+                "time": "00:42:33",
+                "link": "https://www.youtube.com/watch?v=fG1ugxfO35A&t=2553s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "異邦人",
+        "artist": "久保田早紀",
+        "source": "",
+        "is_copyright": false,
+        "az": "い",
+        "dates": [
+            {
+                "date": "20260329",
+                "time": "00:51:27",
+                "link": "https://www.youtube.com/watch?v=fG1ugxfO35A&t=3087s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "The Sound of Music",
+        "artist": "",
+        "source": "サウンド・オブ・ミュージック",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260329",
+                "time": "01:16:16",
+                "link": "https://www.youtube.com/watch?v=fG1ugxfO35A&t=4576s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Do-Re-Mi",
+        "artist": "",
+        "source": "サウンド・オブ・ミュージック",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260329",
+                "time": "01:26:27",
+                "link": "https://www.youtube.com/watch?v=fG1ugxfO35A&t=5187s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "fairytale",
+        "artist": "Kalafina",
+        "source": "空の境界",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260329",
+                "time": "01:48:20",
+                "link": "https://www.youtube.com/watch?v=fG1ugxfO35A&t=6500s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "太陽が呼んでいる",
+        "artist": "加藤いづみ",
+        "source": "サモンナイト3",
+        "is_copyright": false,
+        "az": "た",
+        "dates": [
+            {
+                "date": "20260329",
+                "time": "03:11:09",
+                "link": "https://www.youtube.com/watch?v=fG1ugxfO35A&t=11469s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250809",
+                "time": "03:46:54",
+                "link": "https://www.youtube.com/watch?v=R3mP--Wbx0k&t=13614s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Perseus - ペルセウス -",
+        "artist": "島谷ひとみ",
+        "source": "野球烈闘",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260329",
+                "time": "03:16:58",
+                "link": "https://www.youtube.com/watch?v=fG1ugxfO35A&t=11818s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20251122",
+                "time": "03:15:57",
+                "link": "https://www.youtube.com/watch?v=fYlZenT4LqA&t=11757s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240202",
+                "time": "00:11:17",
+                "link": "https://www.youtube.com/watch?v=70E6Ns3_THo&t=677s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
         "song_name": "この世界のどこかで…",
         "artist": "桑島法子",
         "source": "スレイヤーズ",
@@ -21704,31 +21863,6 @@
                 "link": "https://www.youtube.com/watch?v=fYlZenT4LqA&t=11194s",
                 "is_member_exclusive": false,
                 "is_acapella": true,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "Perseus-ペルセウス-",
-        "artist": "島谷ひとみ",
-        "source": "野球烈闘(2003年度テーマソング)",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20251122",
-                "time": "03:15:57",
-                "link": "https://www.youtube.com/watch?v=fYlZenT4LqA&t=11757s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240202",
-                "time": "00:11:17",
-                "link": "https://www.youtube.com/watch?v=70E6Ns3_THo&t=677s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
                 "is_private": false
             }
         ]
@@ -25128,23 +25262,6 @@
                 "time": "04:25:43",
                 "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=15943s",
                 "is_member_exclusive": true,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "太陽が呼んでいる",
-        "artist": "加藤いづみ",
-        "source": "サモンナイト3",
-        "is_copyright": false,
-        "az": "た",
-        "dates": [
-            {
-                "date": "20250809",
-                "time": "03:46:54",
-                "link": "https://www.youtube.com/watch?v=R3mP--Wbx0k&t=13614s",
-                "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
             }
