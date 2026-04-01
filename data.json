@@ -2357,7 +2357,7 @@
         ]
     },
     {
-        "song_name": "真実の行方(アカペラ)",
+        "song_name": "真実の行方",
         "artist": "三谷朋世",
         "source": ".hack//G.U.",
         "is_copyright": false,
@@ -2368,13 +2368,21 @@
                 "time": "03:56:12",
                 "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=14172s",
                 "is_member_exclusive": false,
-                "is_acapella": false,
+                "is_acapella": true,
+                "is_private": false
+            },
+            {
+                "date": "20231223",
+                "time": "05:24:26",
+                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=19466s",
+                "is_member_exclusive": true,
+                "is_acapella": true,
                 "is_private": false
             }
         ]
     },
     {
-        "song_name": "優しくキミは微笑んでいた(アカペラ)",
+        "song_name": "優しくキミは微笑んでいた",
         "artist": "三谷朋世",
         "source": ".hack//G.U.",
         "is_copyright": false,
@@ -2385,7 +2393,15 @@
                 "time": "04:01:12",
                 "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=14472s",
                 "is_member_exclusive": false,
-                "is_acapella": false,
+                "is_acapella": true,
+                "is_private": false
+            },
+            {
+                "date": "20231223",
+                "time": "05:31:06",
+                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=19866s",
+                "is_member_exclusive": true,
+                "is_acapella": true,
                 "is_private": false
             }
         ]
@@ -25458,40 +25474,6 @@
                 "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=14930s",
                 "is_member_exclusive": true,
                 "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "真実の行方",
-        "artist": "三谷朋世",
-        "source": ".hack//G.U.",
-        "is_copyright": false,
-        "az": "し",
-        "dates": [
-            {
-                "date": "20231223",
-                "time": "05:24:26",
-                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=19466s",
-                "is_member_exclusive": true,
-                "is_acapella": true,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "優しくキミは微笑んでいた",
-        "artist": "三谷朋世",
-        "source": ".hack//G.U.",
-        "is_copyright": false,
-        "az": "や",
-        "dates": [
-            {
-                "date": "20231223",
-                "time": "05:31:06",
-                "link": "https://www.youtube.com/watch?v=VUYRC_GlIl8&t=19866s",
-                "is_member_exclusive": true,
-                "is_acapella": true,
                 "is_private": false
             }
         ]
