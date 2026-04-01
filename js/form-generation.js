@@ -20,38 +20,31 @@ document.addEventListener("DOMContentLoaded", function () {
 // 字符串規範化函數，用於處理不同的字符串格式
 import { convert_jp } from "./romaji.js";
 
-// 增加輸入驗證和清理函數
+// 增加輸入驗證和清理函數 - 改進版
 function sanitizeInput(input) {
     if (typeof input !== "string") return "";
-
-    let sanitizedInput = input;
-    const unsafePatterns =
-        /[<>&'"]|<[^>]*>|[^\w\s\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]/g;
-
-    while (unsafePatterns.test(sanitizedInput)) {
-        sanitizedInput = sanitizedInput.replace(unsafePatterns, "");
-    }
-
-    return sanitizedInput;
+    // 移除：XSS 相關字符（< > & ' "）、控制字符、其他危險符號
+    return input.replace(/[<>&'"]/g, "")
+                .replace(/[\x00-\x1F\x7F]/g, "");  // 移除控制字符
 }
 
 // 改善 normalizeString 函數
 function normalizeString(str) {
     if (!str) return "";
-
+    
     str = sanitizeInput(str);
     str = convert_jp(str);
     // 將 (CV.xxx) 改為 (xxx)
     str = str.replace(/\(cv\.(.*?)\)/gi, "($1)");
-
+    
     return str
-        .normalize("NFKC")
-        .replace(/[~\u301c\uff5e]/g, "~")
-        .replace(/，/g, ",")
-        .replace(/。/g, ".")
-        .replace(/['']/g, "'")
-        .replace(/…/g, "...")
-        .replace(/\s+/g, "")
+        .normalize("NFKC")  // 全形→半形（包括連字符、標點）
+        .replace(/[~\u301c\uff5e]/g, "~")     // 波浪號統一
+        .replace(/，/g, ",")                   // 全形逗號
+        .replace(/。/g, ".")                   // 全形句號
+        .replace(/['']/g, "'")                // 彎引號
+        .replace(/…/g, "...")                 // 省略號
+        .replace(/\s+/g, "")                  // 移除空格
         .toLowerCase();
 }
 
