@@ -37,32 +37,47 @@ function katakanaToHiragana(input) {
     });
 }
 
-// 轉換羅馬字為平假名
-function romajiToHiraganaConversion(input) {
+// 平假名轉羅馬拼音（反向轉換）
+function hiraganaToRomaji(input) {
+    // 建立反向映射
+    const reverseMap = {};
+    for (const [romaji, hiragana] of Object.entries(romajiToHiragana)) {
+        reverseMap[hiragana] = romaji;
+    }
+    
     let result = '';
-    let temp = '';
-
-    for (let char of input) {
-        temp += char;
-        if (romajiToHiragana[temp]) {
-            result += romajiToHiragana[temp];
-            temp = '';
-        } else if (temp.length > 2) {
-            result += temp[0];
-            temp = temp.slice(1);
+    let i = 0;
+    
+    while (i < input.length) {
+        let matched = false;
+        
+        // 嘗試匹配 2 字符（複合音如 きゃ）
+        if (i + 1 < input.length) {
+            const twoChar = input.substring(i, i + 2);
+            if (reverseMap[twoChar]) {
+                result += reverseMap[twoChar];
+                i += 2;
+                matched = true;
+            }
+        }
+        
+        // 匹配 1 字符
+        if (!matched) {
+            const oneChar = input[i];
+            result += reverseMap[oneChar] || oneChar;
+            i++;
         }
     }
-
-    return result + temp;
+    
+    return result;
 }
 
-// 統一轉換函數
+// 統一轉換：所有日文 → 羅馬拼音
 function convert_jp(input) {
-    // 先將片假名轉換為平假名
-    let result = katakanaToHiragana(input);
-    // 再將羅馬字轉換為平假名
-    result = romajiToHiraganaConversion(result.toLowerCase());
-    return result;
+    // 片假名 → 平假名
+    let hiragana = katakanaToHiragana(input);
+    // 平假名 → 羅馬拼音
+    return hiraganaToRomaji(hiragana);
 }
 
 export { convert_jp };
