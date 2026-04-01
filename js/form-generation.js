@@ -33,18 +33,23 @@ function normalizeString(str) {
     if (!str) return "";
     
     str = sanitizeInput(str);
-    str = convert_jp(str);
+    
+    // 只對平假名和片假名進行轉換（不轉漢字）
+    if (/[\u3040-\u309F\u30A0-\u30FF]/.test(str)) {
+        str = convert_jp(str);
+    }
+    
     // 將 (CV.xxx) 改為 (xxx)
     str = str.replace(/\(cv\.(.*?)\)/gi, "($1)");
     
     return str
-        .normalize("NFKC")  // 全形→半形（包括連字符、標點）
-        .replace(/[~\u301c\uff5e]/g, "~")     // 波浪號統一
-        .replace(/，/g, ",")                   // 全形逗號
-        .replace(/。/g, ".")                   // 全形句號
-        .replace(/['']/g, "'")                // 彎引號
-        .replace(/…/g, "...")                 // 省略號
-        .replace(/\s+/g, "")                  // 移除空格
+        .normalize("NFKC")
+        .replace(/[~\u301c\uff5e]/g, "~")
+        .replace(/，/g, ",")
+        .replace(/。/g, ".")
+        .replace(/['']/g, "'")
+        .replace(/…/g, "...")
+        .replace(/\s+/g, "")
         .toLowerCase();
 }
 
