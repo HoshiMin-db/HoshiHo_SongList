@@ -2343,7 +2343,7 @@
                 "time": "03:45:02",
                 "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=13502s",
                 "is_member_exclusive": false,
-                "is_acapella": true,
+                "is_acapella": false,
                 "is_private": false
             },
             {
@@ -22388,7 +22388,7 @@
                 "time": "01:45:59",
                 "link": "https://www.youtube.com/watch?v=CpX--Rfi6Mo&t=6359s",
                 "is_member_exclusive": false,
-                "is_acapella": false,
+                "is_acapella": true,
                 "is_private": true
             }
         ]
