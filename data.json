@@ -2474,7 +2474,7 @@
         ]
     },
     {
-        "song_name": "LOOP",
+        "song_name": "ループ",
         "artist": "坂本真綾",
         "source": "ツバサ・クロニクル(第1期)",
         "is_copyright": false,
@@ -2487,6 +2487,38 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20240106",
+                "time": "05:06:50",
+                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=18410s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240511",
+                "time": "03:46:55",
+                "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=13615s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20240915",
+                "time": "01:22:13",
+                "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=4933s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20250517",
+                "time": "04:11:38",
+                "link": "https://www.youtube.com/watch?v=1RmXANp4b0I&t=15098s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
             }
         ]
     },
@@ -3522,47 +3554,6 @@
                 "is_member_exclusive": true,
                 "is_acapella": false,
                 "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "ループ",
-        "artist": "坂本真綾",
-        "source": "ツバサ・クロニクル",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20240106",
-                "time": "05:06:50",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=18410s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240511",
-                "time": "03:46:55",
-                "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=13615s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20240915",
-                "time": "01:22:13",
-                "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=4933s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20250517",
-                "time": "04:11:38",
-                "link": "https://www.youtube.com/watch?v=1RmXANp4b0I&t=15098s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
             }
         ]
     },
