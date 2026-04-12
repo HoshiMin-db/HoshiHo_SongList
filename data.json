@@ -16909,6 +16909,14 @@
                 "is_private": true
             },
             {
+                "date": "20250831",
+                "time": "02:31:02",
+                "link": "https://www.youtube.com/watch?v=Y91SWo4ADS4&t=9062s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20240216",
                 "time": "01:54:52",
                 "link": "https://www.youtube.com/watch?v=Z-1sxd5PK_M&t=6892s",
@@ -18905,23 +18913,6 @@
                 "date": "20240216",
                 "time": "01:46:40",
                 "link": "https://www.youtube.com/watch?v=Z-1sxd5PK_M&t=6400s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "エルガイム Time for L-GAIM",
-        "artist": "MIO",
-        "source": "重戦機エルガイム",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250831",
-                "time": "02:31:02",
-                "link": "https://www.youtube.com/watch?v=Y91SWo4ADS4&t=9062s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
