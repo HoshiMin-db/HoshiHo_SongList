@@ -15281,6 +15281,14 @@
                 "is_private": true
             },
             {
+                "date": "20240621",
+                "time": "06:03:00",
+                "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=21780s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
                 "date": "20250308",
                 "time": "00:24:41",
                 "link": "https://www.youtube.com/watch?v=OQO0FzogBp4&t=1481s",
@@ -17291,14 +17299,6 @@
                 "date": "20250712",
                 "time": "01:14:01",
                 "link": "https://www.youtube.com/watch?v=81cDt2O_CmE&t=4441s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20240621",
-                "time": "06:03:00",
-                "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=21780s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
