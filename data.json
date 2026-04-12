@@ -17296,14 +17296,6 @@
                 "is_private": true
             },
             {
-                "date": "20240308",
-                "time": "03:42:50",
-                "link": "https://www.youtube.com/watch?v=mfO62RxfZPU&t=13370s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
                 "date": "20240621",
                 "time": "06:03:00",
                 "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=21780s",
@@ -19627,6 +19619,23 @@
                 "date": "20240308",
                 "time": "03:21:22",
                 "link": "https://www.youtube.com/watch?v=mfO62RxfZPU&t=12082s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "謳う丘 ～Harmonics EOLIA～/",
+        "artist": "志方あきこ",
+        "source": "アルトネリコ 世界の終わりで詩い続ける少女",
+        "is_copyright": false,
+        "az": "う",
+        "dates": [
+            {
+                "date": "20240308",
+                "time": "03:42:50",
+                "link": "https://www.youtube.com/watch?v=mfO62RxfZPU&t=13370s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
