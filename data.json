@@ -11050,7 +11050,7 @@
         ]
     },
     {
-        "song_name": "異邦人",
+        "song_name": "異邦人 -シルクロードのテーマ-",
         "artist": "久保田早紀",
         "source": "",
         "is_copyright": false,
@@ -11063,6 +11063,38 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20250201",
+                "time": "01:10:51",
+                "link": "https://www.youtube.com/watch?v=xqq8-ChkFFk&t=4251s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20240127",
+                "time": "00:55:58",
+                "link": "https://www.youtube.com/watch?v=kw8Ia8qEJ74&t=3358s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20231118",
+                "time": "04:39:08",
+                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=16748s",
+                "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20241109",
+                "time": "00:47:41",
+                "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=2861s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
             }
         ]
     },
@@ -15368,47 +15400,6 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "異邦人 - シルクロードのテーマ -",
-        "artist": "久保田早紀",
-        "source": "",
-        "is_copyright": false,
-        "az": "い",
-        "dates": [
-            {
-                "date": "20250201",
-                "time": "01:10:51",
-                "link": "https://www.youtube.com/watch?v=xqq8-ChkFFk&t=4251s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20240127",
-                "time": "00:55:58",
-                "link": "https://www.youtube.com/watch?v=kw8Ia8qEJ74&t=3358s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20231118",
-                "time": "04:39:08",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=16748s",
-                "is_member_exclusive": true,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20241109",
-                "time": "00:47:41",
-                "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=2861s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
             }
         ]
     },
