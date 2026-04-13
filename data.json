@@ -920,6 +920,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20260412",
+                "time": "00:22:39",
+                "link": "https://www.youtube.com/watch?v=Gcf_AxFhv8Q&t=1359s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -985,6 +993,14 @@
                 "is_member_exclusive": true,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20260412",
+                "time": "00:48:31",
+                "link": "https://www.youtube.com/watch?v=Gcf_AxFhv8Q&t=2911s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -1018,6 +1034,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20260412",
+                "time": "01:45:44",
+                "link": "https://www.youtube.com/watch?v=Gcf_AxFhv8Q&t=6344s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -24680,6 +24704,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20260412",
+                "time": "03:57:11",
+                "link": "https://www.youtube.com/watch?v=Gcf_AxFhv8Q&t=14231s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -24697,6 +24729,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20260412",
+                "time": "04:03:49",
+                "link": "https://www.youtube.com/watch?v=Gcf_AxFhv8Q&t=14629s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -26458,40 +26498,6 @@
         ]
     },
     {
-        "song_name": "檄！帝国華撃団",
-        "artist": "真宮寺さくら（横山智佐）＆帝国歌劇団",
-        "source": "サクラ大戦シリーズ",
-        "is_copyright": false,
-        "az": "げ",
-        "dates": [
-            {
-                "date": "20260412",
-                "time": "00:22:39",
-                "link": "https://www.youtube.com/watch?v=Gcf_AxFhv8Q&t=1359s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "夢のつづき",
-        "artist": "帝国歌劇団",
-        "source": "サクラ大戦2",
-        "is_copyright": false,
-        "az": "ゆ",
-        "dates": [
-            {
-                "date": "20260412",
-                "time": "00:48:31",
-                "link": "https://www.youtube.com/watch?v=Gcf_AxFhv8Q&t=2911s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
         "song_name": "花の巴里",
         "artist": "小島幸子(メル・レゾン)、かないみか(シー・カプリス)",
         "source": "サクラ大戦3",
@@ -26526,24 +26532,7 @@
         ]
     },
     {
-        "song_name": "檄！帝～最終章～",
-        "artist": "大神一郎（陶山章央）・真宮寺さくら（横山智佐）・神崎すみれ（富沢美智恵）・マリア・タチバナ（高乃麗）・アイリス（西原久美子）・李紅蘭（渕崎ゆり子）・桐島カンナ（田中真弓）・ソレッタ・織姫（岡本麻弥）・レニ・ミルヒシュトラーセ（伊倉一恵）・エリカ・フォンティーヌ（日髙のり子）、グリシーヌ・ブルーメール（島津冴子）、コクリコ（小桜エツ子）、ロベリア･カルリーニ（井上喜久子）、北大路花火（鷹森淑乃）",
-        "source": "サクラ大戦4",
-        "is_copyright": false,
-        "az": "げ",
-        "dates": [
-            {
-                "date": "20260412",
-                "time": "01:45:44",
-                "link": "https://www.youtube.com/watch?v=Gcf_AxFhv8Q&t=6344s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "サクラ アマネク セカイ(short)",
+        "song_name": "サクラ アマネク セカイ",
         "artist": "Yozuca*",
         "source": "D.C.II S.S. ～ダ・カーポII セカンドシーズン～",
         "is_copyright": false,
@@ -26645,24 +26634,7 @@
         ]
     },
     {
-        "song_name": "カカカタ☆カタオモイ-C(short)",
-        "artist": "ヒャダイン",
-        "source": "日常",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20260412",
-                "time": "03:57:11",
-                "link": "https://www.youtube.com/watch?v=Gcf_AxFhv8Q&t=14231s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "カカカタ☆カタオモイ-C",
+        "song_name": "ヒャダインのカカカタ☆カタオモイ-C\t/",
         "artist": "ヒャダイン",
         "source": "日常",
         "is_copyright": false,
@@ -26672,23 +26644,6 @@
                 "date": "20260412",
                 "time": "03:59:18",
                 "link": "https://www.youtube.com/watch?v=Gcf_AxFhv8Q&t=14358s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "じょーじょーゆーじょー",
-        "artist": "ヒャダイン",
-        "source": "日常",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20260412",
-                "time": "04:03:49",
-                "link": "https://www.youtube.com/watch?v=Gcf_AxFhv8Q&t=14629s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -26714,7 +26669,7 @@
     },
     {
         "song_name": "Endless Story",
-        "artist": "田村ゆかり\\",
+        "artist": "田村ゆかり",
         "source": "C3 -シーキューブ-",
         "is_copyright": false,
         "az": null,
