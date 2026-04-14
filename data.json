@@ -9165,6 +9165,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20251108",
+                "time": "01:39:13",
+                "link": "https://www.youtube.com/watch?v=WPiTPi0qDBg&t=5953s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -25144,23 +25152,6 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "I'll be there/",
-        "artist": "林原めぐみ",
-        "source": "セイバーマリオネットJ",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20251108",
-                "time": "01:39:13",
-                "link": "https://www.youtube.com/watch?v=WPiTPi0qDBg&t=5953s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
             }
         ]
     },
