@@ -15533,7 +15533,7 @@
         ]
     },
     {
-        "song_name": "Falco ~ファルコ~",
+        "song_name": "Falco - ファルコ -",
         "artist": "島谷ひとみ",
         "source": "うえきの法則",
         "is_copyright": false,
@@ -15543,6 +15543,30 @@
                 "date": "20250201",
                 "time": "01:29:14",
                 "link": "https://www.youtube.com/watch?v=xqq8-ChkFFk&t=5354s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20240511",
+                "time": "05:38:40",
+                "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=20320s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20231202",
+                "time": "02:44:38",
+                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=9878s",
+                "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240720",
+                "time": "08:09:29",
+                "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=29369s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
@@ -16973,39 +16997,6 @@
                 "date": "20250301",
                 "time": "04:17:08",
                 "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=15428s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "Falco - ファルコ -",
-        "artist": "島谷ひとみ",
-        "source": "うえきの法則",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20240511",
-                "time": "05:38:40",
-                "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=20320s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20231202",
-                "time": "02:44:38",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=9878s",
-                "is_member_exclusive": true,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240720",
-                "time": "08:09:29",
-                "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=29369s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
