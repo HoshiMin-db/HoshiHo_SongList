@@ -1148,6 +1148,14 @@
                 "is_member_exclusive": true,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20260412",
+                "time": "01:02:45",
+                "link": "https://www.youtube.com/watch?v=Gcf_AxFhv8Q&t=3765s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -26474,23 +26482,6 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "花の巴里",
-        "artist": "小島幸子(メル・レゾン)、かないみか(シー・カプリス)",
-        "source": "サクラ大戦3",
-        "is_copyright": false,
-        "az": "は",
-        "dates": [
-            {
-                "date": "20260412",
-                "time": "01:02:45",
-                "link": "https://www.youtube.com/watch?v=Gcf_AxFhv8Q&t=3765s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
             }
         ]
     },
