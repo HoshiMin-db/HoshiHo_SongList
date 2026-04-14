@@ -24717,6 +24717,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20260412",
+                "time": "03:59:18",
+                "link": "https://www.youtube.com/watch?v=Gcf_AxFhv8Q&t=14358s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -26564,23 +26572,6 @@
                 "date": "20260412",
                 "time": "03:46:52",
                 "link": "https://www.youtube.com/watch?v=Gcf_AxFhv8Q&t=13612s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "ヒャダインのカカカタ☆カタオモイ-C\t/",
-        "artist": "ヒャダイン",
-        "source": "日常",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20260412",
-                "time": "03:59:18",
-                "link": "https://www.youtube.com/watch?v=Gcf_AxFhv8Q&t=14358s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
