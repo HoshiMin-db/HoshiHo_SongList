@@ -3761,6 +3761,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20260412",
+                "time": "01:16:56",
+                "link": "https://www.youtube.com/watch?v=Gcf_AxFhv8Q&t=4616s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -26472,23 +26480,6 @@
                 "date": "20260412",
                 "time": "01:02:45",
                 "link": "https://www.youtube.com/watch?v=Gcf_AxFhv8Q&t=3765s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "涙よ、Au revoir",
-        "artist": "日髙 のり子 (エリカ･フォンティーヌ)",
-        "source": "サクラ大戦 エコール・ド・巴里",
-        "is_copyright": false,
-        "az": "な",
-        "dates": [
-            {
-                "date": "20260412",
-                "time": "01:16:56",
-                "link": "https://www.youtube.com/watch?v=Gcf_AxFhv8Q&t=4616s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
