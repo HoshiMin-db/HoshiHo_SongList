@@ -19371,6 +19371,14 @@
                 "is_private": true
             },
             {
+                "date": "20251220",
+                "time": "00:19:25",
+                "link": "https://www.youtube.com/watch?v=WHDupaPflXQ&t=1165s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20241026",
                 "time": "02:06:57",
                 "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=7617s",
@@ -21781,23 +21789,6 @@
                 "date": "20251220",
                 "time": "00:13:31",
                 "link": "https://www.youtube.com/watch?v=WHDupaPflXQ&t=811s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "ダイアモンド クレバス",
-        "artist": "シェリル・ノーム(May'n)",
-        "source": "マクロスF",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20251220",
-                "time": "00:19:25",
-                "link": "https://www.youtube.com/watch?v=WHDupaPflXQ&t=1165s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
