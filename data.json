@@ -7271,6 +7271,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20260412",
+                "time": "02:48:02",
+                "link": "https://www.youtube.com/watch?v=Gcf_AxFhv8Q&t=10082s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -26514,23 +26522,6 @@
                 "date": "20260412",
                 "time": "02:34:27",
                 "link": "https://www.youtube.com/watch?v=Gcf_AxFhv8Q&t=9267s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "ハッピー☆マテリアル",
-        "artist": "麻帆良学園中等部2年A組",
-        "source": "魔法先生ネギま！",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20260412",
-                "time": "02:48:02",
-                "link": "https://www.youtube.com/watch?v=Gcf_AxFhv8Q&t=10082s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
