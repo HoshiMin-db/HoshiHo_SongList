@@ -66,15 +66,28 @@ def extract_video_id(url_or_id):
 def parse_participation_indices(participation_str):
     """
     解析參與歌曲索引
-    例如："0,2,4" -> [0, 2, 4]
+    支援格式：
+    - 單一數字: "0" 或 "1" -> [0] 或 [1]
+    - 逗號分隔: "0,2,4" -> [0, 2, 4]
+    - 空值: "" 或 None -> []
     """
     if not participation_str or not participation_str.strip():
         return []
     
+    participation_str = participation_str.strip()
+    
     try:
-        indices = [int(x.strip()) for x in participation_str.split(',')]
-        return indices
-    except:
+        # 如果只包含數字和逗號，則分割並轉換
+        indices = []
+        for part in participation_str.split(','):
+            part = part.strip()
+            if part.isdigit():
+                indices.append(int(part))
+        
+        return indices if indices else []
+    
+    except Exception as e:
+        print(f"警告: 無法解析參與索引 '{participation_str}': {e}")
         return []
 
 def parse_disc_file():
