@@ -413,6 +413,48 @@ th, td {
 .external-link:hover {
     background: #1c7ed6;
 }
+/* Participation Album Card 樣式 */
+.disc-card-participation {
+    opacity: 0.95;
+}
+
+.disc-circle {
+    font-size: 0.75em;
+    color: #868e96;
+    font-style: italic;
+    margin-top: 3px;
+    font-weight: 500;
+}
+
+/* 參與歌曲的標記 */
+.participation-badge {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 3px;
+    margin-right: 6px;
+    color: #f59f00;
+    font-size: 0.9em;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.track-item-participation .participation-badge {
+    opacity: 0.8;
+}
+
+.track-item-participation:hover .participation-badge {
+    opacity: 1;
+}
+
+.track-item-participation .track-title {
+    color: #f59f00;
+    font-weight: 600;
+}
+
+.track-item-participation:hover {
+    background-color: #fff8dc;
+}
 
 /* Sidebar 樣式 */
 .sidebar {
