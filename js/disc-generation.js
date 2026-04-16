@@ -173,20 +173,62 @@ function createMainAlbumCard(album) {
 }
 
 // 創建參與作品卡片（Other Circles）
-function createParticipationCard(album) {
+function createParticipationAlbumCard(album) {
     try {
-        const backdropUrl = album.videoId 
-            ? getYouTubeThumbnail(album.videoId)
+        const tracksList = album.tracks.map((track, index) => {
+            const isParticipating = album.participationIndices && album.participationIndices.includes(index);
+            const participationBadge = isParticipating 
+                ? '<span class="participation-badge" title="HoshiHo 參與">✦</span>' 
+                : '';
+            
+            return `
+                <li class="track-item ${isParticipating ? 'track-item-participation' : ''}">
+                    <span class="track-number">${index + 1}</span>
+                    ${participationBadge}
+                    <div class="track-info">
+                        <div class="track-title">${track.title}</div>
+                        <div class="track-credit">${track.credits || ''}</div>
+                    </div>
+                    <button class="play-button" onclick="openFloatingPlayer('https://www.youtube.com/watch?v=${track.videoId}')">▷</button>
+                </li>
+            `;
+        }).join('');
+
+        let ytLink = '';
+        let ytInfo = {};
+        if (album.ytUrl) {
+            ytInfo = parseYouTubeId(album.ytUrl);
+            ytLink = ytInfo.type === 'playlist' 
+                ? `https://music.youtube.com/playlist?list=${ytInfo.id}`
+                : `https://youtu.be/${ytInfo.id}`;
+        }
+
+        // 取得第一個曲目的影片ID作為背景圖片
+        const backdropVideoId = album.tracks.length > 0 
+            ? album.tracks[0].videoId 
+            : (album.xfdVideoId || null);
+        const backdropUrl = backdropVideoId 
+            ? getYouTubeThumbnail(backdropVideoId)
             : 'none';
 
+        // 準備外部連結
         let externalLinksHtml = '';
         
-        // 影片連結
-        if (album.videoId) {
+        // XFD 連結（如果存在）
+        if (album.xfdVideoId) {
             externalLinksHtml += `
-                <a href="https://www.youtube.com/watch?v=${album.videoId}" 
-                   target="_blank" class="external-link external-link-video">
-                    🎬 觀看
+                <a href="https://www.youtube.com/watch?v=${album.xfdVideoId}" 
+                   target="_blank" class="external-link external-link-xfd">
+                    🎵 CD試聽 (XFD)
+                </a>
+            `;
+        }
+
+        // Playlist 連結
+        if (ytLink) {
+            externalLinksHtml += `
+                <a href="${ytLink}" target="_blank" class="external-link external-link-playlist">
+                    ${ytInfo.type === 'playlist' ? '🎶 完整版' : '🎬 YouTube'}
                 </a>
             `;
         }
@@ -204,27 +246,32 @@ function createParticipationCard(album) {
         return `
             <div class="disc-card disc-card-participation" style="background-image: url('${backdropUrl}')">
                 <div class="disc-card-overlay"></div>
-                <div class="disc-header disc-header-participation">
-                    <div class="disc-title disc-title-participation">${album.title}</div>
+                <div class="disc-header">
+                    <div class="disc-title">${album.title}</div>
                     <div class="disc-circle">${album.circle}</div>
                     <div class="disc-release-date">${album.releaseDate}</div>
                 </div>
+                <ul class="track-list">
+                    ${tracksList}
+                </ul>
                 <div class="external-links">
                     ${externalLinksHtml}
                 </div>
             </div>
         `;
     } catch (error) {
-        console.error('Error creating participation card:', error, 'Album:', album);
+        console.error('Error creating participation album card:', error, 'Album:', album);
         return '';
     }
 }
 
 // 根據類型建立卡片
 function createAlbumCard(album) {
-    if (album.isParticipation) {
-        return createParticipationCard(album);
+    if (album.circle) {
+        // Other Circles
+        return createParticipationAlbumCard(album);
     } else {
+        // Armony/Solo
         return createMainAlbumCard(album);
     }
 }
