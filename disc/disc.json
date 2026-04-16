@@ -8,7 +8,9 @@
         "type": "1st EP",
         "releaseDate": "2023.11.27",
         "ytUrl": "OLAK5uy_kOh2CM5W2S4GFO1zxmY2HIHtHcLT3Yi4k",
-        "linkcore": "61a6UMRe",
+        "purchaseUrl": "https://linkco.re/61a6UMRe",
+        "xfdVideoId": "6AFPVERA12k",
+        "participationIndices": [],
         "tracks": [
           {
             "title": "門出",
@@ -37,7 +39,9 @@
         "type": "2nd EP",
         "releaseDate": "2024.05.04",
         "ytUrl": "OLAK5uy_nhCNha90hSCm8TC5AEWGfgezjItSPwUFw",
-        "linkcore": "zUpguMMu",
+        "purchaseUrl": "https://linkco.re/zUpguMMu",
+        "xfdVideoId": "9Op9F0XJSFA",
+        "participationIndices": [],
         "tracks": [
           {
             "title": "Gracia",
@@ -70,7 +74,9 @@
         "type": "3rd EP",
         "releaseDate": "2024.11.04",
         "ytUrl": "OLAK5uy_l0Qmu7NiDBcGWxcInCxR25x3c8Gkoi7_c",
-        "linkcore": "5B09uFbP",
+        "purchaseUrl": "https://linkco.re/5B09uFbP",
+        "xfdVideoId": "lnnJSORmOeA",
+        "participationIndices": [],
         "tracks": [
           {
             "title": "TRIQUETRA",
@@ -99,7 +105,62 @@
   "other_circles": {
     "name": "Other Circles",
     "description": "參與其他社團的作品",
-    "albums": []
+    "albums": [
+      {
+        "title": "スト・ナ・クヱタ",
+        "circle": "love solfege",
+        "releaseDate": "2025.04.27",
+        "ytUrl": "OLAK5uy_lgXe8kbQKTTlrToG1Ki_yzfpMKsxUWDYw",
+        "purchaseUrl": "https://lovesolfege.bandcamp.com/album/--13",
+        "xfdVideoId": "9dc-MyPpETg",
+        "participationIndices": [
+          1
+        ],
+        "tracks": [
+          {
+            "title": "Il teatrino degli dei",
+            "videoId": "_fyNAYQqas0"
+          },
+          {
+            "title": "鏡合わせの翡翠",
+            "videoId": "cfWtluw4Wzw"
+          },
+          {
+            "title": "Heart of Prominence",
+            "videoId": "azQ8RxNNAPU"
+          },
+          {
+            "title": "リカオン",
+            "videoId": "NqHjPtqm--g"
+          },
+          {
+            "title": "スト・ナ・クヱタ",
+            "videoId": "EMMwXZAv3Zk"
+          }
+        ]
+      },
+      {
+        "title": "My Lament",
+        "circle": "lMO2RE〉",
+        "releaseDate": "2025.04.27",
+        "ytUrl": "OLAK5uy_kI0wvlnicKXuOuKB0gGZwUlDO7KWNuw0w",
+        "purchaseUrl": "https://mo2re.bandcamp.com/album/my-lament",
+        "xfdVideoId": "AOCn91b2TzA",
+        "participationIndices": [
+          0
+        ],
+        "tracks": [
+          {
+            "title": "My Lament",
+            "videoId": "E8TfOI3n7dA"
+          },
+          {
+            "title": "Dog Tag",
+            "videoId": "gUBuS93UVC8"
+          }
+        ]
+      }
+    ]
   },
   "solo": {
     "name": "Solo Works",
