@@ -212,7 +212,7 @@ function createParticipationAlbumCard(album) {
             externalLinksHtml += `
                 <button class="external-link external-link-xfd" 
                         onclick="playXFDInCard(this, '${album.xfdVideoId}')">
-                    🎵 CD試聽
+                    🎵 XFD試聽
                 </button>
             `;
         }
@@ -220,7 +220,7 @@ function createParticipationAlbumCard(album) {
         if (ytLink) {
             externalLinksHtml += `
                 <a href="${ytLink}" target="_blank" class="external-link external-link-playlist">
-                    🎶 完整版
+                    🎶 Playlist
                 </a>
             `;
         }
