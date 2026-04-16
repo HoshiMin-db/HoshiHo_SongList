@@ -71,27 +71,29 @@ async function loadDiscData() {
     }
 }
 
-// 獲取 YouTube 縮圖 URL（中心部分 - 真正的封面）
+// 獲取 YouTube 縮圖 URL
 function getYouTubeThumbnail(videoId, quality = 'hqdefault') {
-    // hqdefault: 480x360 (CD 封面中心部分)
-    // sddefault: 640x480 (可能有黑邊)
-    // maxresdefault: 1280x720 (不總是有)
     return `https://img.youtube.com/vi/${videoId}/${quality}.jpg`;
 }
 
-// 創建影片播放器嵌入
-function createYoutubeEmbed(videoId) {
-    return `https://www.youtube.com/embed/${videoId}?controls=1&modestbranding=1`;
+// 輔助函數：HTML 轉義
+function escapeHtml(text) {
+    const map = {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#039;'
+    };
+    return text.replace(/[&<>"']/g, m => map[m]);
 }
 
 // 創建主作品卡片（Armony/Solo）
 function createMainAlbumCard(album) {
     try {
-        // 獲取第一首曲目作為背景
         const xfdVideoId = album.xfdVideoId;
         const backdropUrl = xfdVideoId ? getYouTubeThumbnail(xfdVideoId, 'hqdefault') : null;
 
-        // 建構曲目列表
         const tracksList = album.tracks.map((track, index) => {
             return `
                 <li class="track-item" onclick="playTrackInCard(this, 'https://www.youtube.com/watch?v=${track.videoId}')">
@@ -105,7 +107,6 @@ function createMainAlbumCard(album) {
             `;
         }).join('');
 
-        // 構建連結
         let ytLink = '';
         let ytInfo = {};
         if (album.ytUrl) {
@@ -115,7 +116,6 @@ function createMainAlbumCard(album) {
                 : `https://youtu.be/${ytInfo.id}`;
         }
 
-        // 外部連結
         let externalLinksHtml = '';
         
         if (album.xfdVideoId) {
@@ -315,42 +315,8 @@ async function generateDiscography() {
     container.innerHTML = allCategoriesHtml;
 }
 
-// 輔助函數：HTML 轉義
-function escapeHtml(text) {
-    const map = {
-        '&': '&amp;',
-        '<': '&lt;',
-        '>': '&gt;',
-        '"': '&quot;',
-        "'": '&#039;'
-    };
-    return text.replace(/[&<>"']/g, m => map[m]);
-}
-
-// 在卡片內播放 XFD
-function playXFDInCard(element, videoId) {
-    const card = element.closest('.disc-card');
-    const videoContainer = card.querySelector('.disc-video-container');
-    
-    videoContainer.innerHTML = `
-        <iframe src="${createYoutubeEmbed(videoId)}" 
-                allowfullscreen 
-                style="width: 100%; height: 100%; border: none;"></iframe>
-    `;
-}
-
-// 在卡片內播放曲目
-function playTrackInCard(element, videoUrl) {
-    const videoId = new URL(videoUrl).searchParams.get('v');
-    const card = element.closest('.disc-card');
-    const videoContainer = card.querySelector('.disc-video-container');
-    
-    videoContainer.innerHTML = `
-        <iframe src="${createYoutubeEmbed(videoId)}" 
-                allowfullscreen 
-                style="width: 100%; height: 100%; border: none;"></iframe>
-    `;
-}
+// 將函數暴露到全局作用域
+window.generateDiscography = generateDiscography;
 
 // 確保 DOM 完全加載後再執行
 if (document.readyState === 'loading') {
