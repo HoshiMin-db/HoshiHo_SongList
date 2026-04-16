@@ -122,7 +122,7 @@ function createMainAlbumCard(album) {
             externalLinksHtml += `
                 <button class="external-link external-link-xfd" 
                         onclick="playXFDInCard(this, '${album.xfdVideoId}')">
-                    🎵 CD試聽
+                    🎵 試聽
                 </button>
             `;
         }
@@ -130,7 +130,7 @@ function createMainAlbumCard(album) {
         if (ytLink) {
             externalLinksHtml += `
                 <a href="${ytLink}" target="_blank" class="external-link external-link-playlist">
-                    🎶 完整版
+                    🎶 Playlist
                 </a>
             `;
         }
@@ -212,7 +212,7 @@ function createParticipationAlbumCard(album) {
             externalLinksHtml += `
                 <button class="external-link external-link-xfd" 
                         onclick="playXFDInCard(this, '${album.xfdVideoId}')">
-                    🎵 XFD試聽
+                    🎵 試聽
                 </button>
             `;
         }
