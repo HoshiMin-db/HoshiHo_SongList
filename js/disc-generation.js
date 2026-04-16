@@ -8,7 +8,6 @@ const YT_TYPES = {
 // 解析 YouTube URL 或 ID
 function parseYouTubeId(url) {
     try {
-        // 直接處理 OLAK5uy_ 格式的 playlist ID
         if (url.startsWith('OLAK5uy_')) {
             return {
                 id: url,
@@ -29,13 +28,6 @@ function parseYouTubeId(url) {
             return {
                 id: urlObj.searchParams.get('list'),
                 type: YT_TYPES.PLAYLIST
-            };
-        }
-        
-        if (urlObj.hostname === 'music.youtube.com' && urlObj.pathname.includes('/watch')) {
-            return {
-                id: urlObj.searchParams.get('v'),
-                type: YT_TYPES.MUSIC_TRACK
             };
         }
 
@@ -59,7 +51,6 @@ function parseYouTubeId(url) {
     } catch (error) {
         console.error('Error parsing YouTube URL:', error, 'URL:', url);
     }
-    // 如果無法解析，直接使用原始URL作為playlist ID
     return {
         id: url,
         type: YT_TYPES.PLAYLIST
@@ -80,27 +71,41 @@ async function loadDiscData() {
     }
 }
 
-// 獲取 YouTube 預覽圖 URL
-function getYouTubeThumbnail(videoId) {
-    return `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+// 獲取 YouTube 縮圖 URL（中心部分 - 真正的封面）
+function getYouTubeThumbnail(videoId, quality = 'hqdefault') {
+    // hqdefault: 480x360 (CD 封面中心部分)
+    // sddefault: 640x480 (可能有黑邊)
+    // maxresdefault: 1280x720 (不總是有)
+    return `https://img.youtube.com/vi/${videoId}/${quality}.jpg`;
+}
+
+// 創建影片播放器嵌入
+function createYoutubeEmbed(videoId) {
+    return `https://www.youtube.com/embed/${videoId}?controls=1&modestbranding=1`;
 }
 
 // 創建主作品卡片（Armony/Solo）
 function createMainAlbumCard(album) {
     try {
+        // 獲取第一首曲目作為背景
+        const xfdVideoId = album.xfdVideoId;
+        const backdropUrl = xfdVideoId ? getYouTubeThumbnail(xfdVideoId, 'hqdefault') : null;
+
+        // 建構曲目列表
         const tracksList = album.tracks.map((track, index) => {
             return `
-                <li class="track-item">
+                <li class="track-item" onclick="playTrackInCard(this, 'https://www.youtube.com/watch?v=${track.videoId}')">
                     <span class="track-number">${index + 1}</span>
                     <div class="track-info">
-                        <div class="track-title">${track.title}</div>
+                        <div class="track-title">${escapeHtml(track.title)}</div>
                         <div class="track-credit">${track.credits || ''}</div>
                     </div>
-                    <button class="play-button" onclick="openFloatingPlayer('https://www.youtube.com/watch?v=${track.videoId}')">▷</button>
+                    <button class="play-button-small" onclick="event.stopPropagation();">▷</button>
                 </li>
             `;
         }).join('');
 
+        // 構建連結
         let ytLink = '';
         let ytInfo = {};
         if (album.ytUrl) {
@@ -110,51 +115,48 @@ function createMainAlbumCard(album) {
                 : `https://youtu.be/${ytInfo.id}`;
         }
 
-        // 取得第一個曲目的影片ID作為背景圖片
-        const backdropVideoId = album.tracks.length > 0 
-            ? album.tracks[0].videoId 
-            : (album.xfdVideoId || null);
-        const backdropUrl = backdropVideoId 
-            ? getYouTubeThumbnail(backdropVideoId)
-            : 'none';
-
-        // 準備外部連結
+        // 外部連結
         let externalLinksHtml = '';
         
-        // XFD 連結（如果存在）
         if (album.xfdVideoId) {
             externalLinksHtml += `
-                <a href="https://www.youtube.com/watch?v=${album.xfdVideoId}" 
-                   target="_blank" class="external-link external-link-xfd">
-                    🎵 CD試聽 (XFD)
-                </a>
+                <button class="external-link external-link-xfd" 
+                        onclick="playXFDInCard(this, '${album.xfdVideoId}')">
+                    🎵 CD試聽
+                </button>
             `;
         }
 
-        // Playlist 連結
         if (ytLink) {
             externalLinksHtml += `
                 <a href="${ytLink}" target="_blank" class="external-link external-link-playlist">
-                    ${ytInfo.type === 'playlist' ? '🎶 完整版' : '🎬 YouTube'}
+                    🎶 完整版
                 </a>
             `;
         }
 
-        // 購買連結
         if (album.purchaseUrl) {
             externalLinksHtml += `
-                <a href="${album.purchaseUrl}" 
-                   target="_blank" class="external-link external-link-purchase">
+                <a href="${album.purchaseUrl}" target="_blank" class="external-link external-link-purchase">
                     🛒 購買
                 </a>
             `;
         }
 
+        const videoContainerHtml = backdropUrl ? `
+            <div class="disc-video-container">
+                <div class="disc-video-placeholder" style="--thumbnail-url: url('${backdropUrl}')"
+                     onclick="playXFDInCard(this, '${album.xfdVideoId}')">
+                    <div class="play-icon">▶</div>
+                </div>
+            </div>
+        ` : '<div class="disc-video-container" style="background: #ddd;"></div>';
+
         return `
-            <div class="disc-card disc-card-main" style="background-image: url('${backdropUrl}')">
-                <div class="disc-card-overlay"></div>
+            <div class="disc-card disc-card-main">
+                ${videoContainerHtml}
                 <div class="disc-header">
-                    <div class="disc-title">${album.title}</div>
+                    <div class="disc-title">${escapeHtml(album.title)}</div>
                     <div class="disc-type">${album.type}</div>
                     <div class="disc-release-date">${album.releaseDate}</div>
                 </div>
@@ -175,21 +177,22 @@ function createMainAlbumCard(album) {
 // 創建參與作品卡片（Other Circles）
 function createParticipationAlbumCard(album) {
     try {
+        const backdropUrl = album.xfdVideoId ? getYouTubeThumbnail(album.xfdVideoId, 'hqdefault') : null;
+
         const tracksList = album.tracks.map((track, index) => {
             const isParticipating = album.participationIndices && album.participationIndices.includes(index);
-            const participationBadge = isParticipating 
-                ? '<span class="participation-badge" title="HoshiHo 參與">✦</span>' 
-                : '';
+            const participationBadge = isParticipating ? '<span class="participation-badge">✦</span>' : '';
             
             return `
-                <li class="track-item ${isParticipating ? 'track-item-participation' : ''}">
+                <li class="track-item ${isParticipating ? 'track-item-participation' : ''}" 
+                    onclick="playTrackInCard(this, 'https://www.youtube.com/watch?v=${track.videoId}')">
                     <span class="track-number">${index + 1}</span>
                     ${participationBadge}
                     <div class="track-info">
-                        <div class="track-title">${track.title}</div>
+                        <div class="track-title">${escapeHtml(track.title)}</div>
                         <div class="track-credit">${track.credits || ''}</div>
                     </div>
-                    <button class="play-button" onclick="openFloatingPlayer('https://www.youtube.com/watch?v=${track.videoId}')">▷</button>
+                    <button class="play-button-small" onclick="event.stopPropagation();">▷</button>
                 </li>
             `;
         }).join('');
@@ -203,52 +206,48 @@ function createParticipationAlbumCard(album) {
                 : `https://youtu.be/${ytInfo.id}`;
         }
 
-        // 取得第一個曲目的影片ID作為背景圖片
-        const backdropVideoId = album.tracks.length > 0 
-            ? album.tracks[0].videoId 
-            : (album.xfdVideoId || null);
-        const backdropUrl = backdropVideoId 
-            ? getYouTubeThumbnail(backdropVideoId)
-            : 'none';
-
-        // 準備外部連結
         let externalLinksHtml = '';
         
-        // XFD 連結（如果存在）
         if (album.xfdVideoId) {
             externalLinksHtml += `
-                <a href="https://www.youtube.com/watch?v=${album.xfdVideoId}" 
-                   target="_blank" class="external-link external-link-xfd">
-                    🎵 CD試聽 (XFD)
-                </a>
+                <button class="external-link external-link-xfd" 
+                        onclick="playXFDInCard(this, '${album.xfdVideoId}')">
+                    🎵 CD試聽
+                </button>
             `;
         }
 
-        // Playlist 連結
         if (ytLink) {
             externalLinksHtml += `
                 <a href="${ytLink}" target="_blank" class="external-link external-link-playlist">
-                    ${ytInfo.type === 'playlist' ? '🎶 完整版' : '🎬 YouTube'}
+                    🎶 完整版
                 </a>
             `;
         }
 
-        // 購買連結
         if (album.purchaseUrl) {
             externalLinksHtml += `
-                <a href="${album.purchaseUrl}" 
-                   target="_blank" class="external-link external-link-purchase">
+                <a href="${album.purchaseUrl}" target="_blank" class="external-link external-link-purchase">
                     🛒 購買
                 </a>
             `;
         }
 
+        const videoContainerHtml = backdropUrl ? `
+            <div class="disc-video-container">
+                <div class="disc-video-placeholder" style="--thumbnail-url: url('${backdropUrl}')"
+                     onclick="playXFDInCard(this, '${album.xfdVideoId}')">
+                    <div class="play-icon">▶</div>
+                </div>
+            </div>
+        ` : '<div class="disc-video-container" style="background: #ddd;"></div>';
+
         return `
-            <div class="disc-card disc-card-participation" style="background-image: url('${backdropUrl}')">
-                <div class="disc-card-overlay"></div>
+            <div class="disc-card disc-card-participation">
+                ${videoContainerHtml}
                 <div class="disc-header">
-                    <div class="disc-title">${album.title}</div>
-                    <div class="disc-circle">${album.circle}</div>
+                    <div class="disc-title">${escapeHtml(album.title)}</div>
+                    <div class="disc-circle">${escapeHtml(album.circle)}</div>
                     <div class="disc-release-date">${album.releaseDate}</div>
                 </div>
                 <ul class="track-list">
@@ -268,10 +267,8 @@ function createParticipationAlbumCard(album) {
 // 根據類型建立卡片
 function createAlbumCard(album) {
     if (album.circle) {
-        // Other Circles
         return createParticipationAlbumCard(album);
     } else {
-        // Armony/Solo
         return createMainAlbumCard(album);
     }
 }
@@ -290,7 +287,6 @@ async function generateDiscography() {
         return;
     }
 
-    // 收集所有 HTML 然後一次性設置
     let allCategoriesHtml = '';
 
     Object.entries(discography).forEach(([key, category]) => {
@@ -316,8 +312,44 @@ async function generateDiscography() {
         allCategoriesHtml += categoryHtml;
     });
 
-    // 一次性設置所有內容
     container.innerHTML = allCategoriesHtml;
+}
+
+// 輔助函數：HTML 轉義
+function escapeHtml(text) {
+    const map = {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#039;'
+    };
+    return text.replace(/[&<>"']/g, m => map[m]);
+}
+
+// 在卡片內播放 XFD
+function playXFDInCard(element, videoId) {
+    const card = element.closest('.disc-card');
+    const videoContainer = card.querySelector('.disc-video-container');
+    
+    videoContainer.innerHTML = `
+        <iframe src="${createYoutubeEmbed(videoId)}" 
+                allowfullscreen 
+                style="width: 100%; height: 100%; border: none;"></iframe>
+    `;
+}
+
+// 在卡片內播放曲目
+function playTrackInCard(element, videoUrl) {
+    const videoId = new URL(videoUrl).searchParams.get('v');
+    const card = element.closest('.disc-card');
+    const videoContainer = card.querySelector('.disc-video-container');
+    
+    videoContainer.innerHTML = `
+        <iframe src="${createYoutubeEmbed(videoId)}" 
+                allowfullscreen 
+                style="width: 100%; height: 100%; border: none;"></iframe>
+    `;
 }
 
 // 確保 DOM 完全加載後再執行
