@@ -71,7 +71,7 @@ async function loadDiscData() {
     }
 }
 
-// 獲取 YouTube 縮圖 URL
+// 獲取 YouTube 縮圖 URL（使用 hqdefault 而非 maxresdefault）
 function getYouTubeThumbnail(videoId, quality = 'hqdefault') {
     return `https://img.youtube.com/vi/${videoId}/${quality}.jpg`;
 }
@@ -94,6 +94,7 @@ function createMainAlbumCard(album) {
         const xfdVideoId = album.xfdVideoId;
         const backdropUrl = xfdVideoId ? getYouTubeThumbnail(xfdVideoId, 'hqdefault') : null;
 
+        // 建構曲目列表
         const tracksList = album.tracks.map((track, index) => {
             return `
                 <li class="track-item" onclick="playTrackInCard(this, 'https://www.youtube.com/watch?v=${track.videoId}')">
@@ -107,6 +108,7 @@ function createMainAlbumCard(album) {
             `;
         }).join('');
 
+        // 構建連結
         let ytLink = '';
         let ytInfo = {};
         if (album.ytUrl) {
@@ -116,6 +118,7 @@ function createMainAlbumCard(album) {
                 : `https://youtu.be/${ytInfo.id}`;
         }
 
+        // 外部連結
         let externalLinksHtml = '';
         
         if (album.xfdVideoId) {
@@ -130,7 +133,7 @@ function createMainAlbumCard(album) {
         if (ytLink) {
             externalLinksHtml += `
                 <a href="${ytLink}" target="_blank" class="external-link external-link-playlist">
-                    🎶 Playlist
+                    🎶 播放清單
                 </a>
             `;
         }
@@ -143,6 +146,7 @@ function createMainAlbumCard(album) {
             `;
         }
 
+        // 影片容器
         const videoContainerHtml = backdropUrl ? `
             <div class="disc-video-container">
                 <div class="disc-video-placeholder" style="--thumbnail-url: url('${backdropUrl}')"
@@ -179,6 +183,7 @@ function createParticipationAlbumCard(album) {
     try {
         const backdropUrl = album.xfdVideoId ? getYouTubeThumbnail(album.xfdVideoId, 'hqdefault') : null;
 
+        // 建構曲目列表
         const tracksList = album.tracks.map((track, index) => {
             const isParticipating = album.participationIndices && album.participationIndices.includes(index);
             const participationBadge = isParticipating ? '<span class="participation-badge">✦</span>' : '';
@@ -197,6 +202,7 @@ function createParticipationAlbumCard(album) {
             `;
         }).join('');
 
+        // 構建連結
         let ytLink = '';
         let ytInfo = {};
         if (album.ytUrl) {
@@ -206,6 +212,7 @@ function createParticipationAlbumCard(album) {
                 : `https://youtu.be/${ytInfo.id}`;
         }
 
+        // 外部連結
         let externalLinksHtml = '';
         
         if (album.xfdVideoId) {
@@ -220,7 +227,7 @@ function createParticipationAlbumCard(album) {
         if (ytLink) {
             externalLinksHtml += `
                 <a href="${ytLink}" target="_blank" class="external-link external-link-playlist">
-                    🎶 Playlist
+                    🎶 播放清單
                 </a>
             `;
         }
@@ -233,6 +240,7 @@ function createParticipationAlbumCard(album) {
             `;
         }
 
+        // 影片容器
         const videoContainerHtml = backdropUrl ? `
             <div class="disc-video-container">
                 <div class="disc-video-placeholder" style="--thumbnail-url: url('${backdropUrl}')"
@@ -314,9 +322,6 @@ async function generateDiscography() {
 
     container.innerHTML = allCategoriesHtml;
 }
-
-// 將函數暴露到全局作用域
-window.generateDiscography = generateDiscography;
 
 // 確保 DOM 完全加載後再執行
 if (document.readyState === 'loading') {
