@@ -44,10 +44,6 @@ def fetch_youtube_playlist_tracks(playlist_id):
 def extract_video_id(url_or_id):
     """
     從 YouTube URL 或 ID 中提取影片 ID
-    支援：
-    - 直接 ID (如 "dQw4w9WgXcQ")
-    - 短鏈接 (https://youtu.be/dQw4w9WgXcQ)
-    - 完整 URL (https://www.youtube.com/watch?v=dQw4w9WgXcQ)
     """
     if not url_or_id:
         return None
@@ -66,6 +62,20 @@ def extract_video_id(url_or_id):
         pass
     
     return url_or_id.strip()
+
+def parse_participation_indices(participation_str):
+    """
+    解析參與歌曲索引
+    例如："0,2,4" -> [0, 2, 4]
+    """
+    if not participation_str or not participation_str.strip():
+        return []
+    
+    try:
+        indices = [int(x.strip()) for x in participation_str.split(',')]
+        return indices
+    except:
+        return []
 
 def parse_disc_file():
     discography = {
@@ -92,42 +102,37 @@ def parse_disc_file():
                 continue
 
             if current_category:
-                parts = (trimmed_line.split('|') + [None] * 6)[:6]
-                field1, field2, release_date, yt_url, purchase_url, video_id = parts
+                parts = (trimmed_line.split('|') + [None] * 7)[:7]
+                title, field2, release_date, yt_url, purchase_url, video_id, participation = parts
                 
                 yt_url = yt_url.strip() if yt_url else None
                 purchase_url = purchase_url.strip() if purchase_url else None
                 video_id = extract_video_id(video_id) if video_id else None
                 
-                # 判斷是否為參與作品（Other Circles）
-                is_participation = current_category == 'other_circles' and not yt_url
-                
-                if is_participation:
-                    # Other Circles: 歌曲名稱|社團名稱|發售日||購買連結|影片ID
+                if current_category == 'other_circles':
+                    # Other Circles: 作品名稱|社團名稱|發售日|YouTube播放清單ID|購買連結|XFD影片ID|參與索引
+                    participation_indices = parse_participation_indices(participation)
+                    
                     album = {
-                        "title": field1.strip(),
+                        "title": title.strip(),
                         "circle": field2.strip(),  # 社團名稱
                         "releaseDate": release_date.strip(),
+                        "ytUrl": yt_url,
                         "purchaseUrl": purchase_url,
-                        "videoId": video_id,  # 單一影片 ID
-                        "isParticipation": True,
-                        "type": None,
-                        "ytUrl": None,
-                        "xfdVideoId": None,
-                        "tracks": []
+                        "xfdVideoId": video_id,
+                        "participationIndices": participation_indices,  # 新增：參與歌曲索引
+                        "tracks": fetch_youtube_playlist_tracks(yt_url) if yt_url else []
                     }
                 else:
                     # Armony/Solo: 標題|類型|發售日|YouTube播放清單ID|購買連結|XFD影片ID
                     album = {
-                        "title": field1.strip(),
+                        "title": title.strip(),
                         "type": field2.strip(),  # 類型
                         "releaseDate": release_date.strip(),
                         "ytUrl": yt_url,
                         "purchaseUrl": purchase_url,
-                        "xfdVideoId": video_id,  # XFD 影片 ID
-                        "isParticipation": False,
-                        "circle": None,
-                        "videoId": None,
+                        "xfdVideoId": video_id,
+                        "participationIndices": [],  # 不適用
                         "tracks": fetch_youtube_playlist_tracks(yt_url) if yt_url else []
                     }
                 
