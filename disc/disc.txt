@@ -1,8 +1,8 @@
 //CD|#|日期|Playlist|購買連結|XFD
 [Armony]
-Armonico|1st EP|2023.11.27|OLAK5uy_kOh2CM5W2S4GFO1zxmY2HIHtHcLT3Yi4k|https://linkco.re/61a6UMRe|6AFPVERA12k|
-Gracia|2nd EP|2024.05.04|OLAK5uy_nhCNha90hSCm8TC5AEWGfgezjItSPwUFw|https://linkco.re/zUpguMMu|9Op9F0XJSFA|
-Triquetra|3rd EP|2024.11.04|OLAK5uy_l0Qmu7NiDBcGWxcInCxR25x3c8Gkoi7_c|https://linkco.re/5B09uFbP|lnnJSORmOeA|
+Armonico|1st EP|2023.11.27|OLAK5uy_kOh2CM5W2S4GFO1zxmY2HIHtHcLT3Yi4k|https://linkco.re/61a6UMRe|6AFPVERA12k
+Gracia|2nd EP|2024.05.04|OLAK5uy_nhCNha90hSCm8TC5AEWGfgezjItSPwUFw|https://linkco.re/zUpguMMu|9Op9F0XJSFA
+Triquetra|3rd EP|2024.11.04|OLAK5uy_l0Qmu7NiDBcGWxcInCxR25x3c8Gkoi7_c|https://linkco.re/5B09uFbP|lnnJSORmOeA
 
 //CD|社團|日期|Playlist|購買連結|XFD|參與#-1
 [Other Circles]
