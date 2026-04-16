@@ -72,7 +72,7 @@ async function loadDiscData() {
         const response = await fetch('disc/disc.json');
         if (!response.ok) throw new Error('Network response was not ok');
         const discography = await response.json();
-        console.log('Loaded discography:', discography); // 調試用
+        console.log('Loaded discography:', discography);
         return discography;
     } catch (error) {
         console.error('Error loading disc data:', error);
@@ -80,8 +80,13 @@ async function loadDiscData() {
     }
 }
 
-// 創建專輯卡片的HTML
-function createAlbumCard(album) {
+// 獲取 YouTube 預覽圖 URL
+function getYouTubeThumbnail(videoId) {
+    return `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+}
+
+// 創建主作品卡片（Armony/Solo）
+function createMainAlbumCard(album) {
     try {
         const tracksList = album.tracks.map((track, index) => {
             return `
@@ -105,8 +110,49 @@ function createAlbumCard(album) {
                 : `https://youtu.be/${ytInfo.id}`;
         }
 
+        // 取得第一個曲目的影片ID作為背景圖片
+        const backdropVideoId = album.tracks.length > 0 
+            ? album.tracks[0].videoId 
+            : (album.xfdVideoId || null);
+        const backdropUrl = backdropVideoId 
+            ? getYouTubeThumbnail(backdropVideoId)
+            : 'none';
+
+        // 準備外部連結
+        let externalLinksHtml = '';
+        
+        // XFD 連結（如果存在）
+        if (album.xfdVideoId) {
+            externalLinksHtml += `
+                <a href="https://www.youtube.com/watch?v=${album.xfdVideoId}" 
+                   target="_blank" class="external-link external-link-xfd">
+                    🎵 CD試聽 (XFD)
+                </a>
+            `;
+        }
+
+        // Playlist 連結
+        if (ytLink) {
+            externalLinksHtml += `
+                <a href="${ytLink}" target="_blank" class="external-link external-link-playlist">
+                    ${ytInfo.type === 'playlist' ? '🎶 完整版' : '🎬 YouTube'}
+                </a>
+            `;
+        }
+
+        // 購買連結
+        if (album.purchaseUrl) {
+            externalLinksHtml += `
+                <a href="${album.purchaseUrl}" 
+                   target="_blank" class="external-link external-link-purchase">
+                    🛒 購買
+                </a>
+            `;
+        }
+
         return `
-            <div class="disc-card">
+            <div class="disc-card disc-card-main" style="background-image: url('${backdropUrl}')">
+                <div class="disc-card-overlay"></div>
                 <div class="disc-header">
                     <div class="disc-title">${album.title}</div>
                     <div class="disc-type">${album.type}</div>
@@ -116,21 +162,70 @@ function createAlbumCard(album) {
                     ${tracksList}
                 </ul>
                 <div class="external-links">
-                    ${ytLink ? `
-                        <a href="${ytLink}" target="_blank" class="external-link">
-                            ${ytInfo.type === 'playlist' ? 'YouTube Music' : 'YouTube'}
-                        </a>
-                    ` : ''}
-                    ${album.linkcore ? `
-                        <a href="https://linkco.re/${album.linkcore}" 
-                           target="_blank" class="external-link">其他平台</a>
-                    ` : ''}
+                    ${externalLinksHtml}
                 </div>
             </div>
         `;
     } catch (error) {
-        console.error('Error creating album card:', error, 'Album:', album);
+        console.error('Error creating main album card:', error, 'Album:', album);
         return '';
+    }
+}
+
+// 創建參與作品卡片（Other Circles）
+function createParticipationCard(album) {
+    try {
+        const backdropUrl = album.videoId 
+            ? getYouTubeThumbnail(album.videoId)
+            : 'none';
+
+        let externalLinksHtml = '';
+        
+        // 影片連結
+        if (album.videoId) {
+            externalLinksHtml += `
+                <a href="https://www.youtube.com/watch?v=${album.videoId}" 
+                   target="_blank" class="external-link external-link-video">
+                    🎬 觀看
+                </a>
+            `;
+        }
+
+        // 購買連結
+        if (album.purchaseUrl) {
+            externalLinksHtml += `
+                <a href="${album.purchaseUrl}" 
+                   target="_blank" class="external-link external-link-purchase">
+                    🛒 購買
+                </a>
+            `;
+        }
+
+        return `
+            <div class="disc-card disc-card-participation" style="background-image: url('${backdropUrl}')">
+                <div class="disc-card-overlay"></div>
+                <div class="disc-header disc-header-participation">
+                    <div class="disc-title disc-title-participation">${album.title}</div>
+                    <div class="disc-circle">${album.circle}</div>
+                    <div class="disc-release-date">${album.releaseDate}</div>
+                </div>
+                <div class="external-links">
+                    ${externalLinksHtml}
+                </div>
+            </div>
+        `;
+    } catch (error) {
+        console.error('Error creating participation card:', error, 'Album:', album);
+        return '';
+    }
+}
+
+// 根據類型建立卡片
+function createAlbumCard(album) {
+    if (album.isParticipation) {
+        return createParticipationCard(album);
+    } else {
+        return createMainAlbumCard(album);
     }
 }
 
@@ -152,12 +247,12 @@ async function generateDiscography() {
     let allCategoriesHtml = '';
 
     Object.entries(discography).forEach(([key, category]) => {
-        console.log(`Processing category: ${key}, albums:`, category.albums); // 調試用
+        console.log(`Processing category: ${key}, albums:`, category.albums);
         
         if (category.albums.length === 0) return;
 
         const albumsHtml = category.albums.map(album => {
-            console.log(`Creating card for album:`, album.title); // 調試用
+            console.log(`Creating card for album:`, album.title);
             return createAlbumCard(album);
         }).join('');
 
