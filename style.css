@@ -1,13 +1,49 @@
-/* style.css */
-body {
-    font-family: 'Microsoft JhengHei', '微軟正黑體', sans-serif;
-    max-width: 1200px;
-    height: 100vh;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f5f5f5;
+/* style.css - 包含所有頁面的共用樣式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Microsoft JhengHei', '微軟正黑體', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    overflow: hidden;
+}
+
+/* ==================== 通用樣式 ==================== */
+a {
+    color: #6a5acd;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ==================== 主容器 ==================== */
+#app-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+#sidebar-container {
+    flex-shrink: 0;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* ==================== 頁面頭部 ==================== */
 .header {
     text-align: center;
     margin-bottom: 20px;
@@ -16,14 +52,22 @@ body {
 
 .header h1 {
     color: #6a5acd;
+    font-size: 2em;
 }
 
+#totalSongs {
+    color: #868e96;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* ==================== 搜尋框（index.html 用） ==================== */
 .search-container {
     margin-bottom: 20px;
     background: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #searchInput {
@@ -34,55 +78,63 @@ body {
     border: 2px solid #ddd;
     border-radius: 4px;
     font-size: 16px;
+    transition: border-color 0.3s ease;
 }
 
-#app-container {
-    display: flex;
-    height: 100vh;
-    width: 100%;
+#searchInput:focus {
+    outline: none;
+    border-color: #6a5acd;
 }
 
-#sidebar-container {
-    flex-shrink: 0; /* 防止側邊欄被壓縮 */
-}
-
-.main-content {
+/* ==================== 虛擬滾動容器（index.html 用） ==================== */
+.virtual-scroll-container {
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    padding: 20px;
-    box-sizing: border-box; /* 確保 padding 不會增加元素實際大小 */
+    overflow-y: auto;
+    overflow-x: auto;
+    position: relative;
+    margin-bottom: 20px;
 }
 
-/* 首先，確保表格使用固定佈局 */
+.virtual-scroll-content {
+    width: 100%;
+    position: relative;
+}
+
+/* ==================== 表格樣式（index.html 用） ==================== */
 table {
     width: 100%;
     border-collapse: collapse;
     background: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    table-layout: fixed; /* 添加固定佈局 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    table-layout: fixed;
 }
 
 table, th, td {
     border: 1px solid #ddd;
 }
 
-td:hover {
-    overflow: visible;
-    white-space: normal;
-    background-color: #f8f8f8;
-    z-index: 1;
-}
-
 th {
     background-color: #6a5acd;
     color: white;
     cursor: pointer;
+    padding: 12px;
+    text-align: left;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 th:hover {
     background-color: #5849b8;
+}
+
+td {
+    padding: 12px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
 }
 
 tr:nth-child(even) {
@@ -93,13 +145,80 @@ tr:hover {
     background-color: #f5f5f5;
 }
 
+td:hover {
+    overflow: visible;
+    white-space: normal;
+    background-color: #f8f8f8;
+    z-index: 1;
+}
+
+/* 表格欄寬 */
+th:nth-child(1), td:nth-child(1) { width: 5%; }
+th:nth-child(2), td:nth-child(2) { width: 25%; }
+th:nth-child(3), td:nth-child(3) { width: 15%; }
+th:nth-child(4), td:nth-child(4) { width: 15%; }
+
+td.dates-container-cell { width: 40%; }
+
+/* 日期容器 */
+.dates-container {
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.dates-container::-webkit-scrollbar {
+    display: none;
+}
+
+.date-cell {
+    flex: 0 0 auto;
+    min-width: 100px;
+    padding: 12px;
+    border-right: 1px solid #ddd;
+    text-align: center;
+    font-size: 11px;
+}
+
+.date-cell:last-child {
+    min-width: 50px;
+    border-right: none;
+}
+
+.more-button {
+    background-color: #8a80cd;
+    color: white;
+    border: none;
+    padding: 2px 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 11px;
+    height: 18px;
+    line-height: 18px;
+    transition: background-color 0.2s ease;
+}
+
+.more-button:hover {
+    background-color: #6a5acd;
+}
+
+.acapella {
+    background-color: #e0f7fa;
+}
+
+/* ==================== 浮動播放器（index.html 用） ==================== */
 .floating-player-container {
     position: fixed;
     bottom: 20px;
     right: 20px;
     width: 640px;
     height: 360px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     display: none;
     background-color: white;
     z-index: 1000;
@@ -119,242 +238,213 @@ tr:hover {
     height: 20px;
     cursor: pointer;
     user-select: none;
+    transition: background-color 0.2s ease;
+    z-index: 10;
 }
 
 .close-btn:hover {
     background-color: #5849b8;
 }
 
-a {
-    color: #6a5acd;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.more-button {
-    background-color: #8a80cd;
-    color: white;
-    border: none;
-    padding: 5px 8px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.more-button:hover {
-    background-color: #5849b8;
-}
-
-.acapella {
-    background-color: #e0f7fa;
-}
-
-@media screen and (max-width: 600px) {
-    body {
-        padding: 10px;
-    }
-
-    .header h1 {
-        font-size: 24px;
-    }
-
-    .search-container {
-        padding: 10px;
-    }
-
-    #searchInput {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    th, td {
-        padding: 8px;
-        font-size: 14px;
-    }
-
-    .floating-player-container {
-        width: 100%;
-        height: auto;
-        bottom: 10px;
-        right: 10px;
-    }
-
-    .floating-player {
-        height: 200px;
-    }
-}
-
-/* A-Z 欄位 */
-th:nth-child(1), td:nth-child(1) {
-    width: 5%;
-}
-
-/* 曲名欄位 */
-th:nth-child(2), td:nth-child(2) {
-    width: 25%;
-}
-
-/* 歌手欄位 */
-th:nth-child(3), td:nth-child(3) {
-    width: 15%;
-}
-
-/* 出處欄位 */
-th:nth-child(4), td:nth-child(4) {
-    width: 15%;
-}
-
-/* 日期欄位容器 */
-td.dates-container-cell {
-    width: 40%; /* 分配剩餘空間給日期欄位 */
-}
-
-/* 日期容器的內部樣式 */
-.dates-container {
-    display: flex;
-    overflow-x: auto;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    -ms-overflow-style: none;  /* IE 和 Edge */
-    scrollbar-width: none;     /* Firefox */
-    font-size: 11px;
-}
-
-/* 隱藏 Webkit 瀏覽器的滾動條 */
-.dates-container::-webkit-scrollbar {
-    display: none;
-}
-
-/* 單個日期儲存格 */
-.date-cell {
-    flex: 0 0 auto;
-    min-width: 100px;
-    padding: 12px;
-    border-right: 1px solid #ddd;
-    text-align: center;
-    font-size: 11px;    /* 確保日期儲存格內的文字大小一致 */
-}
-
-/* 固定表頭樣式 */
-table thead th {
-    position: sticky;
-    top: 0;
-    background-color: #6a5acd;
-    color: white;
-    z-index: 10;
-    cursor: default;
-}
-
-#songTable {
-    width: 100%;
-    margin-bottom: 20px; /* 添加表格底部間距 */
-}
-
-.virtual-scroll-container {
+/* ==================== Discography 容器（disc.html 用） ==================== */
+.discography-wrapper {
     flex: 1;
     overflow-y: auto;
-    overflow-x: auto;
-    position: relative;
-    /* 移除固定高度設定，改用 flex 自動計算 */
-    margin-bottom: 20px; /* 添加底部間距 */
+    padding: 0;
 }
 
-.virtual-scroll-content {
-    width: 100%;
-    height: 100%;
-    position: relative;
+.category-section {
+    margin-bottom: 50px;
 }
 
-/* 移除之前可能造成衝突的樣式 */
-th, td {
-    padding: 12px;
-    text-align: left;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    position: relative;
+.category-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #6a5acd;
+    margin-bottom: 10px;
+    padding-left: 20px;
 }
 
-/* 更新更多按鈕容器的樣式 */
-.date-cell:last-child {
-    min-width: 50px; /* 更多按鈕使用較小的寬度 */
-    border-right: none;
+.category-description {
+    color: #868e96;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    font-size: 0.95em;
 }
 
-.more-button {
-    background-color: #8a80cd;
-    color: white;
-    border: none;
-    padding: 2px 8px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 11px;    /* 配合日期的字體大小 */
-    height: 18px;       /* 稍微調整按鈕高度 */
-    line-height: 18px;
-}
-
-.more-button:hover {
-    background-color: #6a5acd;
-}
-
-/* Discography styles */
+/* 專輯卡片容器（水平滾動）*/
 .disc-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 20px;
-    justify-content: center; /* 讓卡片居中對齊 */
-    overflow-x: auto; /* 如果內容超出，啟用水平滾動條 */
+    gap: 25px;
+    padding: 0 20px 20px 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
 }
 
+.disc-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.disc-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.disc-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.disc-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* ==================== 專輯卡片 ==================== */
 .disc-card {
+    flex: 0 0 340px;
     background: white;
     border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    width: 300px; /* 固定寬度 */
-    flex: 0 1 300px; /* 更加靈活的寬度設置 */
-    margin: 10px; /* 添加外邊距，避免卡片緊貼 */
+    display: flex;
+    flex-direction: column;
+    height: 600px;
 }
 
 .disc-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0,0,0,0.15);
 }
 
+/* 卡片上部 - 影片區域 */
+.disc-video-container {
+    width: 100%;
+    height: 200px;
+    background: #000;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.disc-video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.disc-video-placeholder {
+    width: 100%;
+    height: 100%;
+    background-image: var(--thumbnail-url);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transition: opacity 0.3s ease;
+}
+
+.disc-video-placeholder:hover {
+    opacity: 0.8;
+}
+
+.play-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #f59f00;
+    transition: all 0.3s ease;
+}
+
+.disc-video-placeholder:hover .play-icon {
+    background: rgba(255, 255, 255, 1);
+    transform: scale(1.1);
+}
+
+/* 卡片中部 - 專輯資訊 */
 .disc-header {
-    margin-bottom: 15px;
+    padding: 15px 20px;
     border-bottom: 2px solid #e9ecef;
-    padding-bottom: 10px;
+    flex-shrink: 0;
 }
 
 .disc-title {
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: bold;
     color: #228be6;
-    margin-bottom: 5px;
+    margin: 0 0 5px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .disc-type {
     color: #868e96;
-    font-size: 0.9em;
+    font-size: 0.85em;
+    margin: 0;
 }
 
+.disc-circle {
+    font-size: 0.8em;
+    color: #f59f00;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.disc-release-date {
+    color: #999;
+    font-size: 0.8em;
+    margin-top: 3px;
+}
+
+/* 卡片下部 - 曲目列表 */
 .track-list {
     list-style: none;
     padding: 0;
     margin: 0;
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px 0;
+}
+
+.track-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.track-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.track-list::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 3px;
+}
+
+.track-list::-webkit-scrollbar-thumb:hover {
+    background: #999;
 }
 
 .track-item {
-    padding: 8px 0;
+    padding: 8px 15px;
     border-bottom: 1px solid #f1f3f5;
     display: flex;
     align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.track-item:hover {
+    background-color: #f8f9fa;
 }
 
 .track-number {
@@ -366,85 +456,38 @@ th, td {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.8em;
-    margin-right: 10px;
+    font-size: 0.75em;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.participation-badge {
+    color: #f59f00;
+    font-size: 0.9em;
+    opacity: 0.8;
 }
 
 .track-info {
-    flex-grow: 1;
+    flex: 1;
+    min-width: 0;
 }
 
 .track-title {
     font-weight: 500;
     color: #495057;
+    font-size: 0.9em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .track-credit {
-    font-size: 0.8em;
-    color: #868e96;
-    margin-top: 2px;
-}
-
-.play-button {
-    margin-left: 10px;
-    padding: 5px 10px;
-    background: #228be6;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.play-button:hover {
-    background: #1c7ed6;
-}
-
-.external-link {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 8px 16px;
-    background: #228be6;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background 0.3s ease;
-}
-
-.external-link:hover {
-    background: #1c7ed6;
-}
-/* Participation Album Card 樣式 */
-.disc-card-participation {
-    opacity: 0.95;
-}
-
-.disc-circle {
     font-size: 0.75em;
     color: #868e96;
-    font-style: italic;
-    margin-top: 3px;
-    font-weight: 500;
-}
-
-/* 參與歌曲的標記 */
-.participation-badge {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    margin-left: 3px;
-    margin-right: 6px;
-    color: #f59f00;
-    font-size: 0.9em;
-    opacity: 0.7;
-    transition: opacity 0.2s ease;
-}
-
-.track-item-participation .participation-badge {
-    opacity: 0.8;
-}
-
-.track-item-participation:hover .participation-badge {
-    opacity: 1;
+    margin-top: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .track-item-participation .track-title {
@@ -456,7 +499,76 @@ th, td {
     background-color: #fff8dc;
 }
 
-/* Sidebar 樣式 */
+.play-button-small {
+    padding: 4px 8px;
+    background: #228be6;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8em;
+    flex-shrink: 0;
+    transition: background 0.2s ease;
+}
+
+.play-button-small:hover {
+    background: #1c7ed6;
+}
+
+/* 卡片底部 - 外部連結 */
+.external-links {
+    display: flex;
+    gap: 8px;
+    padding: 15px;
+    border-top: 2px solid #e9ecef;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
+
+.external-link {
+    flex: 1;
+    padding: 8px 12px;
+    background: #228be6;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 0.85em;
+    transition: background 0.2s ease;
+    border: none;
+    cursor: pointer;
+    min-width: 80px;
+}
+
+.external-link:hover {
+    background: #1c7ed6;
+}
+
+.external-link-xfd {
+    background: #f59f00;
+}
+
+.external-link-xfd:hover {
+    background: #e89a00;
+}
+
+.external-link-purchase {
+    background: #51cf66;
+}
+
+.external-link-purchase:hover {
+    background: #40c057;
+}
+
+.external-link-playlist {
+    background: #228be6;
+}
+
+.external-link-playlist:hover {
+    background: #1c7ed6;
+}
+
+/* ==================== Sidebar 樣式 ==================== */
 .sidebar {
     width: 50px;
     height: 100vh;
@@ -467,6 +579,7 @@ th, td {
     border-right: 1px solid #e9ecef;
     transition: width 0.3s ease;
     z-index: 1000;
+    overflow: hidden;
 }
 
 .sidebar.expanded {
@@ -481,6 +594,7 @@ th, td {
     justify-content: center;
     cursor: pointer;
     font-size: 1.5em;
+    flex-shrink: 0;
 }
 
 .sidebar-nav {
@@ -488,7 +602,6 @@ th, td {
     padding: 0;
     margin-top: 20px;
     overflow: hidden;
-    white-space: nowrap;
 }
 
 .sidebar-nav li {
@@ -504,6 +617,7 @@ th, td {
     padding: 8px 15px;
     border-radius: 5px;
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
 .sidebar-nav a:hover {
@@ -520,4 +634,162 @@ th, td {
     width: 20px;
     text-align: center;
     margin-right: 10px;
+    flex-shrink: 0;
+}
+
+/* 語言選擇器 */
+.language-switcher {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #dee2e6;
+}
+
+.language-switcher select {
+    padding: 8px;
+    width: 90%;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease;
+}
+
+.language-switcher select:hover {
+    border-color: #228be6;
+}
+
+.language-switcher select:focus {
+    outline: none;
+    border-color: #1c7ed6;
+    box-shadow: 0 0 5px rgba(28, 126, 214, 0.5);
+}
+
+/* ==================== 響應式設計 ==================== */
+@media screen and (max-width: 768px) {
+    .main-content {
+        padding: 10px;
+    }
+
+    .header h1 {
+        font-size: 1.5em;
+    }
+
+    .category-title {
+        font-size: 1.3em;
+        padding-left: 10px;
+    }
+
+    .category-description {
+        padding-left: 10px;
+        font-size: 0.9em;
+    }
+
+    .disc-container {
+        padding: 0 10px 15px 10px;
+        gap: 15px;
+    }
+
+    .disc-card {
+        flex: 0 0 280px;
+        height: 550px;
+    }
+
+    .disc-video-container {
+        height: 160px;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    #searchInput {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 0;
+    }
+
+    .main-content {
+        padding: 10px;
+        min-height: 100vh;
+    }
+
+    .header h1 {
+        font-size: 1.3em;
+        margin-bottom: 15px;
+    }
+
+    .category-title {
+        font-size: 1.1em;
+        padding-left: 5px;
+    }
+
+    .category-description {
+        display: none;
+    }
+
+    .disc-container {
+        padding: 0 5px 10px 5px;
+        gap: 10px;
+    }
+
+    .disc-card {
+        flex: 0 0 100%;
+        height: auto;
+        min-height: 500px;
+    }
+
+    .disc-video-container {
+        height: 180px;
+    }
+
+    .track-list {
+        max-height: 200px;
+    }
+
+    .external-link {
+        min-width: 70px;
+        padding: 6px 10px;
+        font-size: 0.8em;
+    }
+
+    .floating-player-container {
+        width: 100%;
+        height: auto;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .search-container {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    #searchInput {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .date-cell {
+        min-width: 80px;
+        font-size: 10px;
+    }
+
+    .more-button {
+        font-size: 10px;
+        padding: 2px 4px;
+        height: 16px;
+        line-height: 16px;
+    }
 }
