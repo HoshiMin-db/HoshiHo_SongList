@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const validUrls = ['https://www.youtube.com', 'https://music.youtube.com', 'https://youtu.be'];
 
-    // URL 驗證
+    // ==================== URL 驗證 ====================
     function isValidYouTubeURL(url) {
         try {
             const urlObj = new URL(url);
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // 提取 Video ID
+    // ==================== 提取 Video ID ====================
     function extractVideoId(url) {
         try {
             const urlObj = new URL(url);
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
         return null;
     }
 
-    // 創建 YouTube Embed URL
+    // ==================== 創建 YouTube Embed URL ====================
     function createYoutubeEmbed(url) {
         if (!isValidYouTubeURL(url)) {
             console.error("Invalid YouTube URL:", url);
@@ -61,30 +61,36 @@ document.addEventListener("DOMContentLoaded", function() {
         return `https://www.youtube.com/embed/${videoId}?start=${startTime}&controls=1&modestbranding=1`;
     }
 
-    // 從 Video ID 創建 Embed URL
-    function createYoutubeEmbedFromId(videoId) {
-        if (!videoId || typeof videoId !== 'string' || videoId.trim() === '') {
-            console.error("Invalid video ID:", videoId);
-            return null;
-        }
-        return `https://www.youtube.com/embed/${videoId}?controls=1&modestbranding=1`;
-    }
-
-    // 裝置偵測
+    // ==================== 裝置偵測 ====================
     function isMobileDevice() {
         return /Mobi|Android/i.test(navigator.userAgent);
     }
 
-    // 浮動播放器（index.html）
+    // ==================== 在 YouTube 中打開影片（安全驗證） ====================
+    function openTrackOnYouTube(url) {
+        // 驗證 URL 的安全性
+        if (!isValidYouTubeURL(url)) {
+            console.error("Invalid YouTube URL:", url);
+            return;
+        }
+
+        // 在新標籤頁打開
+        window.open(url, '_blank');
+    }
+
+    // ==================== 浮動播放器（index.html 用） ====================
     function openFloatingPlayer(url) {
+        // 驗證 URL 的安全性
         if (!isValidYouTubeURL(url)) {
             console.error("Invalid YouTube URL:", url);
             return;
         }
 
         if (isMobileDevice()) {
-            window.open(url, '_blank');
+            // 行動設備直接打開 YouTube
+            openTrackOnYouTube(url);
         } else {
+            // 桌面設備使用浮動播放器
             const floatingPlayerContainer = document.getElementById('floatingPlayerContainer');
             const floatingPlayer = document.getElementById('floatingPlayer');
             
@@ -113,85 +119,11 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // 卡片內播放 XFD（disc.html）
-    function playXFDInCard(element, videoId) {
-        try {
-            if (!videoId || typeof videoId !== 'string' || videoId.trim() === '') {
-                console.error("Invalid video ID:", videoId);
-                return;
-            }
-
-            const card = element.closest('.disc-card');
-            if (!card) {
-                console.error('Card not found');
-                return;
-            }
-
-            const videoContainer = card.querySelector('.disc-video-container');
-            if (!videoContainer) {
-                console.error('Video container not found');
-                return;
-            }
-
-            const embedUrl = createYoutubeEmbedFromId(videoId.trim());
-            if (embedUrl) {
-                videoContainer.innerHTML = `
-                    <iframe src="${embedUrl}" 
-                            allowfullscreen 
-                            style="width: 100%; height: 100%; border: none;"></iframe>
-                `;
-            }
-        } catch (error) {
-            console.error('Error playing XFD in card:', error);
-        }
-    }
-
-    // 卡片內播放曲目（disc.html）
-    function playTrackInCard(element, videoUrl) {
-        try {
-            if (!isValidYouTubeURL(videoUrl)) {
-                console.error("Invalid YouTube URL:", videoUrl);
-                return;
-            }
-
-            const videoId = extractVideoId(videoUrl);
-            if (!videoId) {
-                console.error("Could not extract video ID from URL:", videoUrl);
-                return;
-            }
-
-            const card = element.closest('.disc-card');
-            if (!card) {
-                console.error('Card not found');
-                return;
-            }
-
-            const videoContainer = card.querySelector('.disc-video-container');
-            if (!videoContainer) {
-                console.error('Video container not found');
-                return;
-            }
-
-            const embedUrl = createYoutubeEmbedFromId(videoId);
-            if (embedUrl) {
-                videoContainer.innerHTML = `
-                    <iframe src="${embedUrl}" 
-                            allowfullscreen 
-                            style="width: 100%; height: 100%; border: none;"></iframe>
-                `;
-            }
-        } catch (error) {
-            console.error('Error playing track in card:', error);
-        }
-    }
-
-    // 將函數導出到全局作用域
+    // ==================== 將函數導出到全局作用域 ====================
     window.isValidYouTubeURL = isValidYouTubeURL;
     window.extractVideoId = extractVideoId;
     window.createYoutubeEmbed = createYoutubeEmbed;
-    window.createYoutubeEmbedFromId = createYoutubeEmbedFromId;
     window.openFloatingPlayer = openFloatingPlayer;
     window.closeFloatingPlayer = closeFloatingPlayer;
-    window.playXFDInCard = playXFDInCard;
-    window.playTrackInCard = playTrackInCard;
+    window.openTrackOnYouTube = openTrackOnYouTube;
 });
