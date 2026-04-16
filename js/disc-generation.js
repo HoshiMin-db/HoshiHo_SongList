@@ -71,7 +71,7 @@ async function loadDiscData() {
     }
 }
 
-// 獲取 YouTube 縮圖 URL（使用 hqdefault 而非 maxresdefault）
+// 獲取 YouTube 縮圖 URL
 function getYouTubeThumbnail(videoId, quality = 'hqdefault') {
     return `https://img.youtube.com/vi/${videoId}/${quality}.jpg`;
 }
@@ -97,13 +97,13 @@ function createMainAlbumCard(album) {
         // 建構曲目列表
         const tracksList = album.tracks.map((track, index) => {
             return `
-                <li class="track-item" onclick="playTrackInCard(this, 'https://www.youtube.com/watch?v=${track.videoId}')">
+                <li class="track-item">
                     <span class="track-number">${index + 1}</span>
                     <div class="track-info">
                         <div class="track-title">${escapeHtml(track.title)}</div>
                         <div class="track-credit">${track.credits || ''}</div>
                     </div>
-                    <button class="play-button-small" onclick="event.stopPropagation();">▷</button>
+                    <button class="play-button-small" onclick="openTrackOnYouTube('https://www.youtube.com/watch?v=${track.videoId}')">▷</button>
                 </li>
             `;
         }).join('');
@@ -124,7 +124,7 @@ function createMainAlbumCard(album) {
         if (album.xfdVideoId) {
             externalLinksHtml += `
                 <button class="external-link external-link-xfd" 
-                        onclick="playXFDInCard(this, '${album.xfdVideoId}')">
+                        onclick="openTrackOnYouTube('https://www.youtube.com/watch?v=${album.xfdVideoId}')">
                     🎵 試聽
                 </button>
             `;
@@ -150,7 +150,7 @@ function createMainAlbumCard(album) {
         const videoContainerHtml = backdropUrl ? `
             <div class="disc-video-container">
                 <div class="disc-video-placeholder" style="--thumbnail-url: url('${backdropUrl}')"
-                     onclick="playXFDInCard(this, '${album.xfdVideoId}')">
+                     onclick="openTrackOnYouTube('https://www.youtube.com/watch?v=${album.xfdVideoId}')">
                     <div class="play-icon">▶</div>
                 </div>
             </div>
@@ -189,15 +189,14 @@ function createParticipationAlbumCard(album) {
             const participationBadge = isParticipating ? '<span class="participation-badge">✦</span>' : '';
             
             return `
-                <li class="track-item ${isParticipating ? 'track-item-participation' : ''}" 
-                    onclick="playTrackInCard(this, 'https://www.youtube.com/watch?v=${track.videoId}')">
+                <li class="track-item ${isParticipating ? 'track-item-participation' : ''}">
                     <span class="track-number">${index + 1}</span>
                     ${participationBadge}
                     <div class="track-info">
                         <div class="track-title">${escapeHtml(track.title)}</div>
                         <div class="track-credit">${track.credits || ''}</div>
                     </div>
-                    <button class="play-button-small" onclick="event.stopPropagation();">▷</button>
+                    <button class="play-button-small" onclick="openTrackOnYouTube('https://www.youtube.com/watch?v=${track.videoId}')">▷</button>
                 </li>
             `;
         }).join('');
@@ -218,7 +217,7 @@ function createParticipationAlbumCard(album) {
         if (album.xfdVideoId) {
             externalLinksHtml += `
                 <button class="external-link external-link-xfd" 
-                        onclick="playXFDInCard(this, '${album.xfdVideoId}')">
+                        onclick="openTrackOnYouTube('https://www.youtube.com/watch?v=${album.xfdVideoId}')">
                     🎵 試聽
                 </button>
             `;
@@ -244,7 +243,7 @@ function createParticipationAlbumCard(album) {
         const videoContainerHtml = backdropUrl ? `
             <div class="disc-video-container">
                 <div class="disc-video-placeholder" style="--thumbnail-url: url('${backdropUrl}')"
-                     onclick="playXFDInCard(this, '${album.xfdVideoId}')">
+                     onclick="openTrackOnYouTube('https://www.youtube.com/watch?v=${album.xfdVideoId}')">
                     <div class="play-icon">▶</div>
                 </div>
             </div>
