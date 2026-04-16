@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // 創建 YouTube Embed URL
     function createYoutubeEmbed(url) {
-        // 驗證 URL
         if (!isValidYouTubeURL(url)) {
             console.error("Invalid YouTube URL:", url);
             return null;
@@ -62,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
         return `https://www.youtube.com/embed/${videoId}?start=${startTime}&controls=1&modestbranding=1`;
     }
 
-    // 創建直接 Video ID 的 Embed URL
+    // 從 Video ID 創建 Embed URL
     function createYoutubeEmbedFromId(videoId) {
         if (!videoId || typeof videoId !== 'string' || videoId.trim() === '') {
             console.error("Invalid video ID:", videoId);
@@ -114,10 +113,9 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // 卡片內播放（disc.html）
+    // 卡片內播放 XFD（disc.html）
     function playXFDInCard(element, videoId) {
         try {
-            // 驗證 video ID
             if (!videoId || typeof videoId !== 'string' || videoId.trim() === '') {
                 console.error("Invalid video ID:", videoId);
                 return;
@@ -151,7 +149,6 @@ document.addEventListener("DOMContentLoaded", function() {
     // 卡片內播放曲目（disc.html）
     function playTrackInCard(element, videoUrl) {
         try {
-            // 驗證 URL
             if (!isValidYouTubeURL(videoUrl)) {
                 console.error("Invalid YouTube URL:", videoUrl);
                 return;
