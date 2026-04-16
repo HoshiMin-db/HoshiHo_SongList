@@ -3,6 +3,7 @@ import hashlib
 import os
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
+from googleapiclient.errors import HttpError
 
 # 從環境變量中讀取 Google API 憑證
 google_sheets_credentials = os.getenv('GOOGLE_SHEETS_CREDENTIALS')
@@ -23,34 +24,80 @@ youtube = build('youtube', 'v3', developerKey=google_api_key)
 DISC_FILE_PATH = './disc/disc.txt'
 CACHE_FILE_PATH = './disc/disc.json'
 
+def is_valid_playlist_id(playlist_id):
+    """
+    驗證 Playlist ID 是否有效
+    """
+    if not playlist_id:
+        return False
+    
+    playlist_id = playlist_id.strip()
+    
+    # 排除常見的佔位符和無效值
+    invalid_values = ['Playlist', 'playlist', 'PLAYLIST', 'ID', 'id', 'xxxxx', 'xxx', '', 'None']
+    if playlist_id in invalid_values:
+        return False
+    
+    # 檢查是否符合有效的 Playlist ID 格式
+    if playlist_id.startswith('OLAK5uy_'):
+        return len(playlist_id) > 20
+    elif playlist_id.startswith('PL'):
+        return len(playlist_id) > 10
+    else:
+        # 其他格式也檢查最小長度
+        return len(playlist_id) > 20
+
 def fetch_youtube_playlist_tracks(playlist_id):
-    request = youtube.playlistItems().list(
-        part="snippet",
-        playlistId=playlist_id,
-        maxResults=50
-    )
-    response = request.execute()
+    """
+    從 YouTube Playlist 抓取曲目列表
+    """
+    if not is_valid_playlist_id(playlist_id):
+        print(f"警告: 無效的 Playlist ID: '{playlist_id}'，跳過此 Playlist")
+        return []
     
-    tracks = []
-    for item in response.get("items", []):
-        track = {
-            "title": item["snippet"]["title"],
-            "videoId": item["snippet"]["resourceId"]["videoId"]
-        }
-        tracks.append(track)
+    try:
+        request = youtube.playlistItems().list(
+            part="snippet",
+            playlistId=playlist_id,
+            maxResults=50
+        )
+        response = request.execute()
+        
+        tracks = []
+        for item in response.get("items", []):
+            track = {
+                "title": item["snippet"]["title"],
+                "videoId": item["snippet"]["resourceId"]["videoId"]
+            }
+            tracks.append(track)
+        
+        print(f"成功抓取 Playlist: {len(tracks)} 首曲目")
+        return tracks
     
-    return tracks
+    except HttpError as e:
+        print(f"錯誤: 無法抓取 Playlist '{playlist_id}'")
+        print(f"  詳情: {e}")
+        return []
+    except Exception as e:
+        print(f"未知錯誤: {e}")
+        return []
 
 def extract_video_id(url_or_id):
     """
     從 YouTube URL 或 ID 中提取影片 ID
+    支援：
+    - 直接 ID (如 "dQw4w9WgXcQ")
+    - 短鏈接 (https://youtu.be/dQw4w9WgXcQ)
+    - 完整 URL (https://www.youtube.com/watch?v=dQw4w9WgXcQ)
     """
     if not url_or_id:
         return None
     
+    url_or_id = url_or_id.strip()
+    
     # 如果是直接 ID
     if not url_or_id.startswith('http'):
-        return url_or_id.strip()
+        return url_or_id if url_or_id else None
     
     try:
         url = url_or_id
@@ -61,7 +108,7 @@ def extract_video_id(url_or_id):
     except:
         pass
     
-    return url_or_id.strip()
+    return url_or_id
 
 def parse_participation_indices(participation_str):
     """
@@ -77,7 +124,6 @@ def parse_participation_indices(participation_str):
     participation_str = participation_str.strip()
     
     try:
-        # 如果只包含數字和逗號，則分割並轉換
         indices = []
         for part in participation_str.split(','):
             part = part.strip()
@@ -98,50 +144,72 @@ def parse_disc_file():
     }
 
     current_category = None
+    line_num = 0
+    
     with open(DISC_FILE_PATH, 'r', encoding='utf-8') as file:
         for line in file:
+            line_num += 1
             trimmed_line = line.strip()
-            if not trimmed_line:
+            
+            # 跳過空行和註釋行
+            if not trimmed_line or trimmed_line.startswith('//'):
                 continue
 
             if trimmed_line.startswith('[') and trimmed_line.endswith(']'):
                 category_name = trimmed_line[1:-1]
                 if category_name == 'Armony':
                     current_category = 'armony'
+                    print(f"\n[處理分類] Armony")
                 elif category_name == 'Other Circles':
                     current_category = 'other_circles'
+                    print(f"\n[處理分類] Other Circles")
                 elif category_name == 'Solo Works':
                     current_category = 'solo'
+                    print(f"\n[處理分類] Solo Works")
                 continue
 
             if current_category:
                 parts = (trimmed_line.split('|') + [None] * 7)[:7]
                 title, field2, release_date, yt_url, purchase_url, video_id, participation = parts
                 
+                title = title.strip() if title else ""
+                field2 = field2.strip() if field2 else ""
+                release_date = release_date.strip() if release_date else ""
                 yt_url = yt_url.strip() if yt_url else None
                 purchase_url = purchase_url.strip() if purchase_url else None
                 video_id = extract_video_id(video_id) if video_id else None
                 
+                # 驗證必要欄位
+                if not title:
+                    print(f"  ✗ 第 {line_num} 行: 缺少標題，跳過")
+                    continue
+                
+                print(f"  • {title}")
+                
                 if current_category == 'other_circles':
                     # Other Circles: 作品名稱|社團名稱|發售日|YouTube播放清單ID|購買連結|XFD影片ID|參與索引
+                    if not field2:
+                        print(f"    ✗ 缺少社團名稱，跳過")
+                        continue
+                    
                     participation_indices = parse_participation_indices(participation)
                     
                     album = {
-                        "title": title.strip(),
-                        "circle": field2.strip(),  # 社團名稱
-                        "releaseDate": release_date.strip(),
+                        "title": title,
+                        "circle": field2,  # 社團名稱
+                        "releaseDate": release_date,
                         "ytUrl": yt_url,
                         "purchaseUrl": purchase_url,
                         "xfdVideoId": video_id,
-                        "participationIndices": participation_indices,  # 新增：參與歌曲索引
+                        "participationIndices": participation_indices,
                         "tracks": fetch_youtube_playlist_tracks(yt_url) if yt_url else []
                     }
                 else:
                     # Armony/Solo: 標題|類型|發售日|YouTube播放清單ID|購買連結|XFD影片ID
                     album = {
-                        "title": title.strip(),
-                        "type": field2.strip(),  # 類型
-                        "releaseDate": release_date.strip(),
+                        "title": title,
+                        "type": field2,  # 類型
+                        "releaseDate": release_date,
                         "ytUrl": yt_url,
                         "purchaseUrl": purchase_url,
                         "xfdVideoId": video_id,
@@ -156,7 +224,16 @@ def parse_disc_file():
 def save_to_json(data, file_path):
     with open(file_path, 'w', encoding='utf-8') as json_file:
         json.dump(data, json_file, ensure_ascii=False, indent=2)
+    print(f"\n✓ 成功保存到 {file_path}")
 
 if __name__ == "__main__":
-    discography = parse_disc_file()
-    save_to_json(discography, CACHE_FILE_PATH)
+    print("開始處理 disc.txt...\n")
+    try:
+        discography = parse_disc_file()
+        save_to_json(discography, CACHE_FILE_PATH)
+        print("\n處理完成！")
+    except Exception as e:
+        print(f"\n致命錯誤: {e}")
+        import traceback
+        traceback.print_exc()
+        raise
