@@ -1,9 +1,12 @@
+//CD|#|日期|Playlist|購買連結|XFD
 [Armony]
-Armonico|1st EP|2023.11.27|OLAK5uy_kOh2CM5W2S4GFO1zxmY2HIHtHcLT3Yi4k|61a6UMRe
-Gracia|2nd EP|2024.05.04|OLAK5uy_nhCNha90hSCm8TC5AEWGfgezjItSPwUFw|zUpguMMu
-Triquetra|3rd EP|2024.11.04|OLAK5uy_l0Qmu7NiDBcGWxcInCxR25x3c8Gkoi7_c|5B09uFbP
+Armonico|1st EP|2023.11.27|OLAK5uy_kOh2CM5W2S4GFO1zxmY2HIHtHcLT3Yi4k|https://linkco.re/61a6UMRe|6AFPVERA12k
+Gracia|2nd EP|2024.05.04|OLAK5uy_nhCNha90hSCm8TC5AEWGfgezjItSPwUFw|https://linkco.re/zUpguMMu|9Op9F0XJSFA
+Triquetra|3rd EP|2024.11.04|OLAK5uy_l0Qmu7NiDBcGWxcInCxR25x3c8Gkoi7_c|https://linkco.re/5B09uFbP|lnnJSORmOeA
 
+//CD|社團|日期|Playlist|購買連結|XFD|參與#-1
 [Other Circles]
-
+スト・ナ・クヱタ|love solfege|2025.04.27|OLAK5uy_lgXe8kbQKTTlrToG1Ki_yzfpMKsxUWDYw|https://lovesolfege.bandcamp.com/album/--13|9dc-MyPpETg|1
+My Lament|lMO2RE〉|2025.04.27|OLAK5uy_kI0wvlnicKXuOuKB0gGZwUlDO7KWNuw0w|https://mo2re.bandcamp.com/album/my-lament|AOCn91b2TzA|0
 
 [Solo Works]
