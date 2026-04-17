@@ -1,5 +1,5 @@
 # 我的專案
-  這是一個更新。v7.0  
+  這是一個更新。v8.0  
   寫得好爛嗚哇啊啊啊啊啊破防惹
 
 # 邏輯
@@ -22,5 +22,5 @@
   `youtube-player.js`  Html播放器  
 
 # 鳴謝
-  時間軸：Avery、アスパラ  
-  程式碼：Copilot、Claude-3.5、GPT-4o  
+  時間軸：Avery、アスパラ、霜月ルーニァ  
+  程式碼：Claude、GPT、Gemini  
