@@ -539,18 +539,20 @@ td.dates-container-cell { width: 40%; }
 }
 
 .external-link {
-    flex: 1;
-    padding: 8px 12px;
+    flex: 0 0 80px;
+    padding: 8px 6px;
     background: #228be6;
     color: white;
     text-decoration: none;
     border-radius: 6px;
     text-align: center;
-    font-size: 0.85em;
+    font-size: 0.75em;         /* 直接設為 0.75em 以容納最長的日文 */
+    font-weight: 600;
     transition: background 0.2s ease;
     border: none;
     cursor: pointer;
     min-width: 80px;
+    white-space: nowrap;       /* 不換行 */
 }
 
 .external-link:hover {
