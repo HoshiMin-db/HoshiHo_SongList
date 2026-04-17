@@ -109,6 +109,11 @@ function getCurrentLanguage() {
 function initLanguage() {
     const defaultLang = localStorage.getItem('language') || 'zh-TW';
     setLanguage(defaultLang);
+    
+    const langSelect = document.getElementById('languageSelect');
+    if (langSelect) {
+        langSelect.value = defaultLang;
+    }
 }
 
 // 添加語言切換功能
