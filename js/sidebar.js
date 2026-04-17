@@ -32,6 +32,13 @@ async function loadSidebar() {
         // 初始化語言選擇器
         const languageSelect = document.getElementById('languageSelect');
         if (languageSelect) {
+            // 1. 從 localStorage 取得目前的語言
+            const savedLang = localStorage.getItem('language') || 'zh-TW';
+            
+            // 2. 強制設定選單的值，確保與當前語言同步
+            languageSelect.value = savedLang;
+
+            // 3. 綁定事件監聽器
             languageSelect.addEventListener('change', function(event) {
                 if (typeof onLanguageChange === 'function') {
                     onLanguageChange(event.target.value);
