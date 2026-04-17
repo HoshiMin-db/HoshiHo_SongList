@@ -25,7 +25,7 @@ const translations = {
         'artist': 'Artist',
         'source': 'Source',
         'date': 'Date',
-        // 新增：Discography 翻譯
+        // Discography 翻譯
         'discography': '🌟 HoshiHo Discography 💐',
         'sample': 'Preview',
         'playlist': 'Playlist',
@@ -40,7 +40,7 @@ const translations = {
         'artist': '歌手',
         'source': '出處',
         'date': '日期',
-        // 新增：Discography 翻譯
+        // Discography 翻譯
         'discography': '🌟 HoshiHo Discography 💐',
         'sample': '試聽',
         'playlist': '播放清單',
@@ -70,13 +70,13 @@ function setLanguage(lang) {
     document.querySelector('th.date-header').innerText = translations[lang]['date'];
 }
 
-// ✅ 新增：全局翻譯函數（供 disc-generation.js 使用）
+// 新增：全局翻譯函數（供 disc-generation.js 使用）
 function getTranslation(key, lang = null) {
     const targetLang = lang || getCurrentLanguage?.() || 'zh-TW';
     return translations[targetLang]?.[key] || translations['zh-TW'][key] || key;
 }
 
-// ✅ 新增：取得當前語言
+// 新增：取得當前語言
 function getCurrentLanguage() {
     return localStorage.getItem('language') || 'zh-TW';
 }
@@ -91,11 +91,15 @@ function initLanguage() {
 function onLanguageChange(lang) {
     localStorage.setItem('language', lang);
     setLanguage(lang);
-    // ✅ 重新生成 Discography 頁面（如果存在）
+    // 重新生成 Discography 頁面（如果存在）
     if (typeof generateDiscography === 'function') {
         generateDiscography();
     }
 }
+
+// 導出全局函數
+window.getTranslation = getTranslation;
+window.getCurrentLanguage = getCurrentLanguage;
 
 // 初始化語言 (延後到 Sidebar 加載後)
 document.addEventListener('DOMContentLoaded', function() {
