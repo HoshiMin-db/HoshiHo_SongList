@@ -38,9 +38,15 @@ a:hover {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    margin-left: 60px;          
     padding: 20px;
     box-sizing: border-box;
     overflow: hidden;
+    transition: margin-left 0.3s ease;  
+}
+
+.main-content.shifted {
+    margin-left: 200px;
 }
 
 /* ==================== 頁面頭部 ==================== */
@@ -644,6 +650,7 @@ td.dates-container-cell { width: 40%; }
     margin-right: 10px;
     flex-shrink: 0;
 }
+
 
 /* 語言選擇器 */
 .language-switcher {
