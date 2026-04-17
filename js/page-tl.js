@@ -49,25 +49,39 @@ const translations = {
 };
 
 function setLanguage(lang) {
-    // 更新 tab 標題
-    document.getElementById('title').innerText = translations[lang]['title']; 
-    
-    // 更新網頁內的標題
-    document.getElementById('pageTitle').innerText = translations[lang]['title'];
+    const data = translations[lang];
+    if (!data) return;
+
+    // 使用可選鏈或條件判斷
+    const titleEl = document.getElementById('title');
+    if (titleEl) titleEl.innerText = data['title'];
+
+    const pageTitleEl = document.getElementById('pageTitle');
+    if (pageTitleEl) pageTitleEl.innerText = data['title'];
 
     const totalSongsElement = document.getElementById('totalSongs');
-    if (totalSongsElement) {
-        // 只更新文字部分，保留內部的 <span id="songCount">
-        totalSongsElement.firstChild.nodeValue = translations[lang]['totalSongs'];
+    if (totalSongsElement && totalSongsElement.firstChild) {
+        totalSongsElement.firstChild.nodeValue = data['totalSongs'];
     }
+
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) searchInput.placeholder = data['searchPlaceholder'];
+
+    // 表格標題防錯
+    const thAz = document.querySelector('th.az');
+    if (thAz) thAz.innerText = data['az'];
     
-    // 更新其他翻譯內容
-    document.getElementById('searchInput').placeholder = translations[lang]['searchPlaceholder'];
-    document.querySelector('th.az').innerText = translations[lang]['az'];
-    document.querySelector('th.song-title').innerText = translations[lang]['songTitle'];
-    document.querySelector('th.artist').innerText = translations[lang]['artist'];
-    document.querySelector('th.source').innerText = translations[lang]['source'];
-    document.querySelector('th.date-header').innerText = translations[lang]['date'];
+    const thSong = document.querySelector('th.song-title');
+    if (thSong) thSong.innerText = data['songTitle'];
+    
+    const thArtist = document.querySelector('th.artist');
+    if (thArtist) thArtist.innerText = data['artist'];
+    
+    const thSource = document.querySelector('th.source');
+    if (thSource) thSource.innerText = data['source'];
+    
+    const thDate = document.querySelector('th.date-header');
+    if (thDate) thDate.innerText = data['date'];
 }
 
 // 新增：全局翻譯函數（供 disc-generation.js 使用）
