@@ -91,9 +91,10 @@ function initLanguage() {
 function onLanguageChange(lang) {
     localStorage.setItem('language', lang);
     setLanguage(lang);
-    // 重新生成 Discography 頁面（如果存在）
-    if (typeof generateDiscography === 'function') {
-        generateDiscography();
+    
+    // 如果在 disc.html 頁面，只更新翻譯文字，不重新生成卡片
+    if (typeof updateDiscTranslations === 'function') {
+        updateDiscTranslations(lang);
     }
 }
 
