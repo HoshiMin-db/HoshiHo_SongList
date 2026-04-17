@@ -40,7 +40,7 @@ function generateExternalLinksHtml(album) {
             <button class="external-link external-link-xfd" 
                     onclick="playInCardById(this, '${album.xfdVideoId}')"
                     title="🎵 ${sampleText}">
-                🎵 ${sampleText}
+                <span class="btn-icon">🎵</span> <span class="btn-text">${sampleText}</span>
             </button>
         `;
     }
@@ -59,7 +59,7 @@ function generateExternalLinksHtml(album) {
         externalLinksHtml += `
             <a href="${ytLink}" target="_blank" class="external-link external-link-playlist"
                title="🎶 ${playlistText}">
-                🎶 ${playlistText}
+                <span class="btn-icon">🎶</span> <span class="btn-text">${playlistText}</span>
             </a>
         `;
     }
@@ -70,7 +70,7 @@ function generateExternalLinksHtml(album) {
         externalLinksHtml += `
             <a href="${album.purchaseUrl}" target="_blank" class="external-link external-link-purchase"
                title="🛒 ${purchaseText}">
-                🛒 ${purchaseText}
+                <span class="btn-icon">🛒</span> <span class="btn-text">${purchaseText}</span>
             </a>
         `;
     }
@@ -206,25 +206,18 @@ function createParticipationAlbumCard(album) {
 
 // 新增：只更新翻譯文字（不重新生成卡片）
 function updateDiscTranslations(lang) {
-    // 更新樣本按鈕
-    document.querySelectorAll('.external-link-xfd').forEach(btn => {
-        const sampleText = getTranslation('sample', lang);
-        btn.title = `🎵 ${sampleText}`;
-        btn.textContent = `🎵 ${sampleText}`;
-    });
-    
-    // 更新播放清單連結
-    document.querySelectorAll('.external-link-playlist').forEach(link => {
-        const playlistText = getTranslation('playlist', lang);
-        link.title = `🎶 ${playlistText}`;
-        link.textContent = `🎶 ${playlistText}`;
-    });
-    
-    // 更新購買連結
-    document.querySelectorAll('.external-link-purchase').forEach(link => {
-        const purchaseText = getTranslation('purchase', lang);
-        link.title = `🛒 ${purchaseText}`;
-        link.textContent = `🛒 ${purchaseText}`;
+    document.querySelectorAll('.external-link').forEach(link => {
+        const type = link.classList.contains('external-link-xfd') ? 'sample' :
+                     link.classList.contains('external-link-playlist') ? 'playlist' : 'purchase';
+        const newText = getTranslation(type, lang);
+        
+        // 更新 Title (滑鼠懸停提示)
+        const emoji = link.querySelector('.btn-icon').textContent;
+        link.title = `${emoji} ${newText}`;
+        
+        // 只更新 span 內的文字，不更動 emoji
+        const textSpan = link.querySelector('.btn-text');
+        if (textSpan) textSpan.textContent = newText;
     });
 }
 
