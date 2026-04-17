@@ -1,62 +1,3 @@
-// YouTube 連結類型定義
-const YT_TYPES = {
-    PLAYLIST: 'playlist',
-    VIDEO: 'video',
-    MUSIC_TRACK: 'music_track'
-};
-
-// 解析 YouTube URL 或 ID
-function parseYouTubeId(url) {
-    try {
-        if (url.startsWith('OLAK5uy_')) {
-            return {
-                id: url,
-                type: YT_TYPES.PLAYLIST
-            };
-        }
-
-        if (!url.includes('/') && !url.includes('.')) {
-            return {
-                id: url,
-                type: url.length > 20 ? YT_TYPES.PLAYLIST : YT_TYPES.VIDEO
-            };
-        }
-
-        const urlObj = new URL(url);
-        
-        if (urlObj.hostname === 'music.youtube.com' && urlObj.searchParams.has('list')) {
-            return {
-                id: urlObj.searchParams.get('list'),
-                type: YT_TYPES.PLAYLIST
-            };
-        }
-
-        if (urlObj.searchParams.has('list')) {
-            return {
-                id: urlObj.searchParams.get('list'),
-                type: YT_TYPES.PLAYLIST
-            };
-        }
-
-        if (urlObj.pathname.includes('/watch') || urlObj.hostname === 'youtu.be') {
-            const videoId = urlObj.hostname === 'youtu.be' 
-                ? urlObj.pathname.slice(1)
-                : urlObj.searchParams.get('v');
-            return {
-                id: videoId,
-                type: YT_TYPES.VIDEO
-            };
-        }
-
-    } catch (error) {
-        console.error('Error parsing YouTube URL:', error, 'URL:', url);
-    }
-    return {
-        id: url,
-        type: YT_TYPES.PLAYLIST
-    };
-}
-
 // 讀取 JSON 內容
 async function loadDiscData() {
     try {
@@ -76,7 +17,7 @@ function getYouTubeThumbnail(videoId, quality = 'hqdefault') {
     return `https://img.youtube.com/vi/${videoId}/${quality}.jpg`;
 }
 
-// 輔助函數：HTML 轉義
+// 輔助函數：HTML 轉義（保留此函數，因為 youtube-player.js 沒有）
 function escapeHtml(text) {
     const map = {
         '&': '&amp;',
@@ -88,7 +29,7 @@ function escapeHtml(text) {
     return text.replace(/[&<>"']/g, m => map[m]);
 }
 
-// 創建主作品卡片（Armony/Solo）
+// 創建主作品卡片（Armony）
 function createMainAlbumCard(album) {
     try {
         const xfdVideoId = album.xfdVideoId;
@@ -108,11 +49,10 @@ function createMainAlbumCard(album) {
             `;
         }).join('');
 
-        // 構建連結
+        // 改用全局函數：window.parseYouTubeUrl
         let ytLink = '';
-        let ytInfo = {};
-        if (album.ytUrl) {
-            ytInfo = parseYouTubeId(album.ytUrl);
+        if (album.ytUrl && window.parseYouTubeUrl) {
+            const ytInfo = window.parseYouTubeUrl(album.ytUrl);
             ytLink = ytInfo.type === 'playlist' 
                 ? `https://music.youtube.com/playlist?list=${ytInfo.id}`
                 : `https://youtu.be/${ytInfo.id}`;
@@ -133,7 +73,7 @@ function createMainAlbumCard(album) {
         if (ytLink) {
             externalLinksHtml += `
                 <a href="${ytLink}" target="_blank" class="external-link external-link-playlist">
-                    🎶 播放清單
+                    🎶 完整版
                 </a>
             `;
         }
@@ -146,8 +86,7 @@ function createMainAlbumCard(album) {
             `;
         }
 
-        // 影片容器 - 預設顯示 XFD iframe，點擊縮圖也在卡片內播放 XFD
-        // ✅ 改用全局版本：window.createYoutubeEmbedFromId
+        // 改用全局函數：window.createYoutubeEmbedFromId
         let videoContainerHtml = '';
         if (album.xfdVideoId) {
             const embedUrl = window.createYoutubeEmbedFromId(album.xfdVideoId);
@@ -209,11 +148,10 @@ function createParticipationAlbumCard(album) {
             `;
         }).join('');
 
-        // 構建連結
+        // 改用全局函數：window.parseYouTubeUrl
         let ytLink = '';
-        let ytInfo = {};
-        if (album.ytUrl) {
-            ytInfo = parseYouTubeId(album.ytUrl);
+        if (album.ytUrl && window.parseYouTubeUrl) {
+            const ytInfo = window.parseYouTubeUrl(album.ytUrl);
             ytLink = ytInfo.type === 'playlist' 
                 ? `https://music.youtube.com/playlist?list=${ytInfo.id}`
                 : `https://youtu.be/${ytInfo.id}`;
@@ -234,7 +172,7 @@ function createParticipationAlbumCard(album) {
         if (ytLink) {
             externalLinksHtml += `
                 <a href="${ytLink}" target="_blank" class="external-link external-link-playlist">
-                    🎶 播放清單
+                    🎶 完整版
                 </a>
             `;
         }
@@ -247,7 +185,7 @@ function createParticipationAlbumCard(album) {
             `;
         }
 
-        // 影片容器 - 預設顯示 XFD iframe
+        // 改用全局函數：window.createYoutubeEmbedFromId
         let videoContainerHtml = '';
         if (album.xfdVideoId) {
             const embedUrl = window.createYoutubeEmbedFromId(album.xfdVideoId);
