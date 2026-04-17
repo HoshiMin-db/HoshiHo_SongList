@@ -17,7 +17,7 @@ function getYouTubeThumbnail(videoId, quality = 'hqdefault') {
     return `https://img.youtube.com/vi/${videoId}/${quality}.jpg`;
 }
 
-// 輔助函數：HTML 轉義（保留此函數，因為 youtube-player.js 沒有）
+// 輔助函數：HTML 轉義
 function escapeHtml(text) {
     const map = {
         '&': '&amp;',
@@ -33,7 +33,9 @@ function escapeHtml(text) {
 function createMainAlbumCard(album) {
     try {
         const xfdVideoId = album.xfdVideoId;
+        // 獲取並應用背景縮圖
         const backdropUrl = xfdVideoId ? getYouTubeThumbnail(xfdVideoId, 'hqdefault') : null;
+        const backgroundStyle = backdropUrl ? `background-image: url('${backdropUrl}'); background-size: cover; background-position: center;` : 'background: #ddd;';
 
         // 建構曲目列表 - 點擊按鈕在卡片內播放
         const tracksList = album.tracks.map((track, index) => {
@@ -58,35 +60,41 @@ function createMainAlbumCard(album) {
                 : `https://youtu.be/${ytInfo.id}`;
         }
 
-        // 外部連結
+        // 使用 page-tl.js 的翻譯函數
         let externalLinksHtml = '';
         
         if (album.xfdVideoId) {
+            const sampleText = getTranslation('sample');
             externalLinksHtml += `
                 <button class="external-link external-link-xfd" 
-                        onclick="playInCardById(this, '${album.xfdVideoId}')">
-                    🎵 CD試聽
+                        onclick="playInCardById(this, '${album.xfdVideoId}')"
+                        title="🎵 ${sampleText}">
+                    🎵 ${sampleText}
                 </button>
             `;
         }
 
         if (ytLink) {
+            const playlistText = getTranslation('playlist');
             externalLinksHtml += `
-                <a href="${ytLink}" target="_blank" class="external-link external-link-playlist">
-                    🎶 完整版
+                <a href="${ytLink}" target="_blank" class="external-link external-link-playlist"
+                   title="🎶 ${playlistText}">
+                    🎶 ${playlistText}
                 </a>
             `;
         }
 
         if (album.purchaseUrl) {
+            const purchaseText = getTranslation('purchase');
             externalLinksHtml += `
-                <a href="${album.purchaseUrl}" target="_blank" class="external-link external-link-purchase">
-                    🛒 購買
+                <a href="${album.purchaseUrl}" target="_blank" class="external-link external-link-purchase"
+                   title="🛒 ${purchaseText}">
+                    🛒 ${purchaseText}
                 </a>
             `;
         }
 
-        // 改用全局函數：window.createYoutubeEmbedFromId
+        // 改用全局函數
         let videoContainerHtml = '';
         if (album.xfdVideoId) {
             const embedUrl = window.createYoutubeEmbedFromId(album.xfdVideoId);
@@ -100,7 +108,8 @@ function createMainAlbumCard(album) {
                 `;
             }
         } else {
-            videoContainerHtml = '<div class="disc-video-container" style="background: #ddd;"></div>';
+            // 應用背景縮圖作為占位符
+            videoContainerHtml = `<div class="disc-video-container" style="${backgroundStyle}"></div>`;
         }
 
         return `
@@ -128,7 +137,10 @@ function createMainAlbumCard(album) {
 // 創建參與作品卡片（Other Circles）
 function createParticipationAlbumCard(album) {
     try {
-        const backdropUrl = album.xfdVideoId ? getYouTubeThumbnail(album.xfdVideoId, 'hqdefault') : null;
+        const xfdVideoId = album.xfdVideoId;
+        // 獲取並應用背景縮圖
+        const backdropUrl = xfdVideoId ? getYouTubeThumbnail(xfdVideoId, 'hqdefault') : null;
+        const backgroundStyle = backdropUrl ? `background-image: url('${backdropUrl}'); background-size: cover; background-position: center;` : 'background: #ddd;';
 
         // 建構曲目列表
         const tracksList = album.tracks.map((track, index) => {
@@ -157,30 +169,36 @@ function createParticipationAlbumCard(album) {
                 : `https://youtu.be/${ytInfo.id}`;
         }
 
-        // 外部連結
+        // 使用 page-tl.js 的翻譯函數
         let externalLinksHtml = '';
         
         if (album.xfdVideoId) {
+            const sampleText = getTranslation('sample');
             externalLinksHtml += `
                 <button class="external-link external-link-xfd" 
-                        onclick="playInCardById(this, '${album.xfdVideoId}')">
-                    🎵 CD試聽
+                        onclick="playInCardById(this, '${album.xfdVideoId}')"
+                        title="🎵 ${sampleText}">
+                    🎵 ${sampleText}
                 </button>
             `;
         }
 
         if (ytLink) {
+            const playlistText = getTranslation('playlist');
             externalLinksHtml += `
-                <a href="${ytLink}" target="_blank" class="external-link external-link-playlist">
-                    🎶 完整版
+                <a href="${ytLink}" target="_blank" class="external-link external-link-playlist"
+                   title="🎶 ${playlistText}">
+                    🎶 ${playlistText}
                 </a>
             `;
         }
 
         if (album.purchaseUrl) {
+            const purchaseText = getTranslation('purchase');
             externalLinksHtml += `
-                <a href="${album.purchaseUrl}" target="_blank" class="external-link external-link-purchase">
-                    🛒 購買
+                <a href="${album.purchaseUrl}" target="_blank" class="external-link external-link-purchase"
+                   title="🛒 ${purchaseText}">
+                    🛒 ${purchaseText}
                 </a>
             `;
         }
@@ -199,7 +217,8 @@ function createParticipationAlbumCard(album) {
                 `;
             }
         } else {
-            videoContainerHtml = '<div class="disc-video-container" style="background: #ddd;"></div>';
+            // 應用背景縮圖作為占位符
+            videoContainerHtml = `<div class="disc-video-container" style="${backgroundStyle}"></div>`;
         }
 
         return `
@@ -277,7 +296,6 @@ async function generateDiscography() {
 
 // 等待 youtube-player.js 載入完成，然後檢查全局函數是否存在
 function initDiscGeneration() {
-    // 檢查全局函數是否已被 youtube-player.js 載入
     if (typeof window.createYoutubeEmbedFromId === 'undefined') {
         console.warn('Waiting for youtube-player.js to load...');
         setTimeout(initDiscGeneration, 100);
