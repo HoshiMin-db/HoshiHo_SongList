@@ -29,15 +29,62 @@ function escapeHtml(text) {
     return text.replace(/[&<>"']/g, m => map[m]);
 }
 
-// 創建主作品卡片（Armony）
+// 新增：生成外部連結 HTML 的共用函數
+function generateExternalLinksHtml(album) {
+    let externalLinksHtml = '';
+    
+    // 樣本按鈕
+    if (album.xfdVideoId) {
+        const sampleText = getTranslation('sample');
+        externalLinksHtml += `
+            <button class="external-link external-link-xfd" 
+                    onclick="playInCardById(this, '${album.xfdVideoId}')"
+                    title="🎵 ${sampleText}">
+                🎵 ${sampleText}
+            </button>
+        `;
+    }
+
+    // 播放清單連結
+    let ytLink = '';
+    if (album.ytUrl && window.parseYouTubeUrl) {
+        const ytInfo = window.parseYouTubeUrl(album.ytUrl);
+        ytLink = ytInfo.type === 'playlist' 
+            ? `https://music.youtube.com/playlist?list=${ytInfo.id}`
+            : `https://youtu.be/${ytInfo.id}`;
+    }
+    
+    if (ytLink) {
+        const playlistText = getTranslation('playlist');
+        externalLinksHtml += `
+            <a href="${ytLink}" target="_blank" class="external-link external-link-playlist"
+               title="🎶 ${playlistText}">
+                🎶 ${playlistText}
+            </a>
+        `;
+    }
+
+    // 購買連結
+    if (album.purchaseUrl) {
+        const purchaseText = getTranslation('purchase');
+        externalLinksHtml += `
+            <a href="${album.purchaseUrl}" target="_blank" class="external-link external-link-purchase"
+               title="🛒 ${purchaseText}">
+                🛒 ${purchaseText}
+            </a>
+        `;
+    }
+
+    return externalLinksHtml;
+}
+
+// 修改 createMainAlbumCard - 簡化為使用共用函數
 function createMainAlbumCard(album) {
     try {
         const xfdVideoId = album.xfdVideoId;
-        // 獲取並應用背景縮圖
         const backdropUrl = xfdVideoId ? getYouTubeThumbnail(xfdVideoId, 'hqdefault') : null;
         const backgroundStyle = backdropUrl ? `background-image: url('${backdropUrl}'); background-size: cover; background-position: center;` : 'background: #ddd;';
 
-        // 建構曲目列表 - 點擊按鈕在卡片內播放
         const tracksList = album.tracks.map((track, index) => {
             return `
                 <li class="track-item">
@@ -51,50 +98,9 @@ function createMainAlbumCard(album) {
             `;
         }).join('');
 
-        // 改用全局函數：window.parseYouTubeUrl
-        let ytLink = '';
-        if (album.ytUrl && window.parseYouTubeUrl) {
-            const ytInfo = window.parseYouTubeUrl(album.ytUrl);
-            ytLink = ytInfo.type === 'playlist' 
-                ? `https://music.youtube.com/playlist?list=${ytInfo.id}`
-                : `https://youtu.be/${ytInfo.id}`;
-        }
+        // 使用共用函數
+        const externalLinksHtml = generateExternalLinksHtml(album);
 
-        // 使用 page-tl.js 的翻譯函數
-        let externalLinksHtml = '';
-        
-        if (album.xfdVideoId) {
-            const sampleText = getTranslation('sample');
-            externalLinksHtml += `
-                <button class="external-link external-link-xfd" 
-                        onclick="playInCardById(this, '${album.xfdVideoId}')"
-                        title="🎵 ${sampleText}">
-                    🎵 ${sampleText}
-                </button>
-            `;
-        }
-
-        if (ytLink) {
-            const playlistText = getTranslation('playlist');
-            externalLinksHtml += `
-                <a href="${ytLink}" target="_blank" class="external-link external-link-playlist"
-                   title="🎶 ${playlistText}">
-                    🎶 ${playlistText}
-                </a>
-            `;
-        }
-
-        if (album.purchaseUrl) {
-            const purchaseText = getTranslation('purchase');
-            externalLinksHtml += `
-                <a href="${album.purchaseUrl}" target="_blank" class="external-link external-link-purchase"
-                   title="🛒 ${purchaseText}">
-                    🛒 ${purchaseText}
-                </a>
-            `;
-        }
-
-        // 改用全局函數
         let videoContainerHtml = '';
         if (album.xfdVideoId) {
             const embedUrl = window.createYoutubeEmbedFromId(album.xfdVideoId);
@@ -108,7 +114,6 @@ function createMainAlbumCard(album) {
                 `;
             }
         } else {
-            // 應用背景縮圖作為占位符
             videoContainerHtml = `<div class="disc-video-container" style="${backgroundStyle}"></div>`;
         }
 
@@ -134,15 +139,13 @@ function createMainAlbumCard(album) {
     }
 }
 
-// 創建參與作品卡片（Other Circles）
+// 修改 createParticipationAlbumCard - 簡化為使用共用函數
 function createParticipationAlbumCard(album) {
     try {
         const xfdVideoId = album.xfdVideoId;
-        // 獲取並應用背景縮圖
         const backdropUrl = xfdVideoId ? getYouTubeThumbnail(xfdVideoId, 'hqdefault') : null;
         const backgroundStyle = backdropUrl ? `background-image: url('${backdropUrl}'); background-size: cover; background-position: center;` : 'background: #ddd;';
 
-        // 建構曲目列表
         const tracksList = album.tracks.map((track, index) => {
             const isParticipating = album.participationIndices && album.participationIndices.includes(index);
             const participationBadge = isParticipating ? '<span class="participation-badge">✦</span>' : '';
@@ -160,50 +163,9 @@ function createParticipationAlbumCard(album) {
             `;
         }).join('');
 
-        // 改用全局函數：window.parseYouTubeUrl
-        let ytLink = '';
-        if (album.ytUrl && window.parseYouTubeUrl) {
-            const ytInfo = window.parseYouTubeUrl(album.ytUrl);
-            ytLink = ytInfo.type === 'playlist' 
-                ? `https://music.youtube.com/playlist?list=${ytInfo.id}`
-                : `https://youtu.be/${ytInfo.id}`;
-        }
+        // 使用共用函數
+        const externalLinksHtml = generateExternalLinksHtml(album);
 
-        // 使用 page-tl.js 的翻譯函數
-        let externalLinksHtml = '';
-        
-        if (album.xfdVideoId) {
-            const sampleText = getTranslation('sample');
-            externalLinksHtml += `
-                <button class="external-link external-link-xfd" 
-                        onclick="playInCardById(this, '${album.xfdVideoId}')"
-                        title="🎵 ${sampleText}">
-                    🎵 ${sampleText}
-                </button>
-            `;
-        }
-
-        if (ytLink) {
-            const playlistText = getTranslation('playlist');
-            externalLinksHtml += `
-                <a href="${ytLink}" target="_blank" class="external-link external-link-playlist"
-                   title="🎶 ${playlistText}">
-                    🎶 ${playlistText}
-                </a>
-            `;
-        }
-
-        if (album.purchaseUrl) {
-            const purchaseText = getTranslation('purchase');
-            externalLinksHtml += `
-                <a href="${album.purchaseUrl}" target="_blank" class="external-link external-link-purchase"
-                   title="🛒 ${purchaseText}">
-                    🛒 ${purchaseText}
-                </a>
-            `;
-        }
-
-        // 改用全局函數：window.createYoutubeEmbedFromId
         let videoContainerHtml = '';
         if (album.xfdVideoId) {
             const embedUrl = window.createYoutubeEmbedFromId(album.xfdVideoId);
@@ -217,7 +179,6 @@ function createParticipationAlbumCard(album) {
                 `;
             }
         } else {
-            // 應用背景縮圖作為占位符
             videoContainerHtml = `<div class="disc-video-container" style="${backgroundStyle}"></div>`;
         }
 
@@ -242,6 +203,33 @@ function createParticipationAlbumCard(album) {
         return '';
     }
 }
+
+// 新增：只更新翻譯文字（不重新生成卡片）
+function updateDiscTranslations(lang) {
+    // 更新樣本按鈕
+    document.querySelectorAll('.external-link-xfd').forEach(btn => {
+        const sampleText = getTranslation('sample', lang);
+        btn.title = `🎵 ${sampleText}`;
+        btn.textContent = `🎵 ${sampleText}`;
+    });
+    
+    // 更新播放清單連結
+    document.querySelectorAll('.external-link-playlist').forEach(link => {
+        const playlistText = getTranslation('playlist', lang);
+        link.title = `🎶 ${playlistText}`;
+        link.textContent = `🎶 ${playlistText}`;
+    });
+    
+    // 更新購買連結
+    document.querySelectorAll('.external-link-purchase').forEach(link => {
+        const purchaseText = getTranslation('purchase', lang);
+        link.title = `🛒 ${purchaseText}`;
+        link.textContent = `🛒 ${purchaseText}`;
+    });
+}
+
+// 匯出為全局函數
+window.updateDiscTranslations = updateDiscTranslations;
 
 // 根據類型建立卡片
 function createAlbumCard(album) {
