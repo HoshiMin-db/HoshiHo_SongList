@@ -603,6 +603,11 @@ td.dates-container-cell { width: 40%; }
     background: #1c7ed6;
 }
 
+:lang(ja) .external-link {
+    letter-spacing: -0.02em;
+    font-feature-settings: "palt";
+}
+
 /* ==================== Sidebar 樣式 ==================== */
 .sidebar {
     width: 50px;
