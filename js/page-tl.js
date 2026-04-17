@@ -52,6 +52,8 @@ function setLanguage(lang) {
     const data = translations[lang];
     if (!data) return;
 
+    document.documentElement.lang = lang;
+
     // 1. 更新瀏覽器分頁標題 (ID="title")
     const titleEl = document.getElementById('title');
     if (titleEl) {
