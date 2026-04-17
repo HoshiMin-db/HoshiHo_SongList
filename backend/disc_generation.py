@@ -30,26 +30,37 @@ CACHE_FILE_PATH = os.path.join(BASE_DIR, 'disc', 'disc.json')
 
 def extract_youtube_id(url_or_id):
     """
-    安全地提取 YouTube ID (修正 CodeQL Incomplete URL substring sanitization)
+    安全地提取 YouTube ID (修復 CodeQL Incomplete URL substring sanitization)
     """
     if not url_or_id:
         return ""
     
     val = url_or_id.strip()
-    # 如果已經是 11 碼 ID
+    # 如果已經是 11 碼 ID，則直接回傳
     if len(val) == 11 and not ('/' in val or '.' in val):
         return val
 
     try:
         parsed = urlparse(val)
+        # 1. 處理短網址 youtu.be
         if parsed.netloc == 'youtu.be':
             return parsed.path.lstrip('/')
-        if 'youtube.com' in parsed.netloc:
+        
+        # 2. 處理標準網址 youtube.com (使用精確匹配或 tuple 匹配)
+        # 這樣寫可以防止惡意網域如 'evil-youtube.com' 通過檢查
+        if parsed.netloc in ('www.youtube.com', 'youtube.com', 'm.youtube.com', 'music.youtube.com'):
+            # 處理 /watch?v=ID
             if parsed.path == '/watch':
                 return parse_qs(parsed.query).get('v', [None])[0]
+            # 處理 /embed/ID 或 /v/ID
             if parsed.path.startswith(('/embed/', '/v/')):
+                parts = parsed.path.split('/')
+                if len(parts) >= 3:
+                    return parts[2]
+            # 處理 youtube.com/shorts/ID
+            if parsed.path.startswith('/shorts/'):
                 return parsed.path.split('/')[2]
-    except:
+    except Exception:
         pass
     return val
 
