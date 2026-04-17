@@ -52,12 +52,20 @@ function setLanguage(lang) {
     const data = translations[lang];
     if (!data) return;
 
-    // 使用可選鏈或條件判斷
+    // 1. 更新瀏覽器分頁標題 (ID="title")
     const titleEl = document.getElementById('title');
-    if (titleEl) titleEl.innerText = data['title'];
+    if (titleEl) {
+        // 如果是專輯頁，用 discography 翻譯；否則用 title
+        const isDiscPage = window.location.pathname.includes('disc.html');
+        titleEl.innerText = isDiscPage ? data['discography'] : data['title'];
+    }
 
+    // 2. 更新頁面內的大標題 (ID="pageTitle")
     const pageTitleEl = document.getElementById('pageTitle');
-    if (pageTitleEl) pageTitleEl.innerText = data['title'];
+    if (pageTitleEl) {
+        const isDiscPage = window.location.pathname.includes('disc.html');
+        pageTitleEl.innerText = isDiscPage ? data['discography'] : data['title'];
+    }
 
     const totalSongsElement = document.getElementById('totalSongs');
     if (totalSongsElement && totalSongsElement.firstChild) {
