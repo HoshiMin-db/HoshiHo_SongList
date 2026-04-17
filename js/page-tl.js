@@ -41,7 +41,7 @@ const translations = {
         'source': '出處',
         'date': '日期',
         // Discography 翻譯
-        'discography': '🌟 HoshiHo Discography 💐',
+        'discography': '🌟 HoshiHo 專輯 💐',
         'sample': '試聽',
         'playlist': '播放清單',
         'purchase': '購買'
