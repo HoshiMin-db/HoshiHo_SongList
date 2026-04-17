@@ -1,5 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
     const validUrls = ['https://www.youtube.com', 'https://music.youtube.com', 'https://youtu.be'];
+    const YT_TYPES = {
+        PLAYLIST: 'playlist',
+        VIDEO: 'video',
+        MUSIC_TRACK: 'music_track'
+    };
 
     // URL 驗證
     function isValidYouTubeURL(url) {
@@ -12,6 +17,58 @@ document.addEventListener("DOMContentLoaded", function() {
         } catch (e) {
             return false;
         }
+    }
+
+    // 統一的 URL 解析函數（替代 disc-generation.js 的 parseYouTubeId）
+    function parseYouTubeUrl(url) {
+        try {
+            if (url.startsWith('OLAK5uy_')) {
+                return {
+                    id: url,
+                    type: YT_TYPES.PLAYLIST
+                };
+            }
+
+            if (!url.includes('/') && !url.includes('.')) {
+                return {
+                    id: url,
+                    type: url.length > 20 ? YT_TYPES.PLAYLIST : YT_TYPES.VIDEO
+                };
+            }
+
+            const urlObj = new URL(url);
+            
+            if (urlObj.hostname === 'music.youtube.com' && urlObj.searchParams.has('list')) {
+                return {
+                    id: urlObj.searchParams.get('list'),
+                    type: YT_TYPES.PLAYLIST
+                };
+            }
+
+            if (urlObj.searchParams.has('list')) {
+                return {
+                    id: urlObj.searchParams.get('list'),
+                    type: YT_TYPES.PLAYLIST
+                };
+            }
+
+            if (urlObj.pathname.includes('/watch') || urlObj.hostname === 'youtu.be') {
+                const videoId = urlObj.hostname === 'youtu.be' 
+                    ? urlObj.pathname.slice(1)
+                    : urlObj.searchParams.get('v');
+                return {
+                    id: videoId,
+                    type: YT_TYPES.VIDEO
+                };
+            }
+
+        } catch (error) {
+            console.error('Error parsing YouTube URL:', error, 'URL:', url);
+        }
+        return {
+            id: url,
+            type: YT_TYPES.PLAYLIST
+        };
     }
 
     // 提取 Video ID
@@ -185,6 +242,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // 將函數導出到全局作用域
     window.isValidYouTubeURL = isValidYouTubeURL;
+    window.parseYouTubeUrl = parseYouTubeUrl;  
     window.extractVideoId = extractVideoId;
     window.createYoutubeEmbed = createYoutubeEmbed;
     window.createYoutubeEmbedFromId = createYoutubeEmbedFromId;
