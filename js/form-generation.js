@@ -55,19 +55,11 @@ function normalizeString(str) {
 
 // 檢查是否為有效的 DDMMYYYY 日期格式
 function isValidDateFormat(dateStr) {
-    const regex = /^\d{2}\d{2}\d{4}$/; // 檢查 DDMMYYYY 格式
-    if (!regex.test(dateStr)) return false;
-
-    const day = parseInt(dateStr.substring(0, 2), 10);
-    const month = parseInt(dateStr.substring(2, 4), 10);
-    const year = parseInt(dateStr.substring(4, 8), 10);
-
-    const date = new Date(year, month - 1, day);
-    return (
-        date.getFullYear() === year &&
-        date.getMonth() === month - 1 &&
-        date.getDate() === day
+    if (!/^\d{8}$/.test(dateStr)) return false;
+    const date = new Date(
+        `${dateStr.slice(4)}-${dateStr.slice(2,4)}-${dateStr.slice(0,2)}`
     );
+    return date.toISOString().slice(0,10) === `${dateStr.slice(4)}-${dateStr.slice(2,4)}-${dateStr.slice(0,2)}`;
 }
 
 // 判斷字符類型
