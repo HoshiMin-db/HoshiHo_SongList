@@ -94,7 +94,7 @@ function createMainAlbumCard(album) {
         const xfdVideoId = album.xfdVideoId;
         const backdropUrl = xfdVideoId ? getYouTubeThumbnail(xfdVideoId, 'hqdefault') : null;
 
-        // 建構曲目列表
+        // 建構曲目列表 - 點擊按鈕在卡片內播放
         const tracksList = album.tracks.map((track, index) => {
             return `
                 <li class="track-item">
@@ -103,7 +103,7 @@ function createMainAlbumCard(album) {
                         <div class="track-title">${escapeHtml(track.title)}</div>
                         <div class="track-credit">${track.credits || ''}</div>
                     </div>
-                    <button class="play-button-small" onclick="openTrackOnYouTube('https://www.youtube.com/watch?v=${track.videoId}')">▷</button>
+                    <button class="play-button-small" onclick="playInCard(this, 'https://www.youtube.com/watch?v=${track.videoId}')">▷</button>
                 </li>
             `;
         }).join('');
@@ -124,8 +124,8 @@ function createMainAlbumCard(album) {
         if (album.xfdVideoId) {
             externalLinksHtml += `
                 <button class="external-link external-link-xfd" 
-                        onclick="openTrackOnYouTube('https://www.youtube.com/watch?v=${album.xfdVideoId}')">
-                    🎵 試聽
+                        onclick="playInCardById(this, '${album.xfdVideoId}')">
+                    🎵 CD試聽
                 </button>
             `;
         }
@@ -133,7 +133,7 @@ function createMainAlbumCard(album) {
         if (ytLink) {
             externalLinksHtml += `
                 <a href="${ytLink}" target="_blank" class="external-link external-link-playlist">
-                    🎶 播放清單
+                    🎶 完整版
                 </a>
             `;
         }
@@ -146,15 +146,22 @@ function createMainAlbumCard(album) {
             `;
         }
 
-        // 影片容器
-        const videoContainerHtml = backdropUrl ? `
-            <div class="disc-video-container">
-                <div class="disc-video-placeholder" style="--thumbnail-url: url('${backdropUrl}')"
-                     onclick="openTrackOnYouTube('https://www.youtube.com/watch?v=${album.xfdVideoId}')">
-                    <div class="play-icon">▶</div>
-                </div>
-            </div>
-        ` : '<div class="disc-video-container" style="background: #ddd;"></div>';
+        // 影片容器 - 預設顯示 XFD iframe，點擊縮圖也在卡片內播放 XFD
+        let videoContainerHtml = '';
+        if (album.xfdVideoId) {
+            const embedUrl = createYoutubeEmbedFromId(album.xfdVideoId);
+            if (embedUrl) {
+                videoContainerHtml = `
+                    <div class="disc-video-container">
+                        <iframe src="${embedUrl}" 
+                                allowfullscreen 
+                                style="width: 100%; height: 100%; border: none;"></iframe>
+                    </div>
+                `;
+            }
+        } else {
+            videoContainerHtml = '<div class="disc-video-container" style="background: #ddd;"></div>';
+        }
 
         return `
             <div class="disc-card disc-card-main">
@@ -196,7 +203,7 @@ function createParticipationAlbumCard(album) {
                         <div class="track-title">${escapeHtml(track.title)}</div>
                         <div class="track-credit">${track.credits || ''}</div>
                     </div>
-                    <button class="play-button-small" onclick="openTrackOnYouTube('https://www.youtube.com/watch?v=${track.videoId}')">▷</button>
+                    <button class="play-button-small" onclick="playInCard(this, 'https://www.youtube.com/watch?v=${track.videoId}')">▷</button>
                 </li>
             `;
         }).join('');
@@ -217,8 +224,8 @@ function createParticipationAlbumCard(album) {
         if (album.xfdVideoId) {
             externalLinksHtml += `
                 <button class="external-link external-link-xfd" 
-                        onclick="openTrackOnYouTube('https://www.youtube.com/watch?v=${album.xfdVideoId}')">
-                    🎵 試聽
+                        onclick="playInCardById(this, '${album.xfdVideoId}')">
+                    🎵 CD試聽
                 </button>
             `;
         }
@@ -226,7 +233,7 @@ function createParticipationAlbumCard(album) {
         if (ytLink) {
             externalLinksHtml += `
                 <a href="${ytLink}" target="_blank" class="external-link external-link-playlist">
-                    🎶 播放清單
+                    🎶 完整版
                 </a>
             `;
         }
@@ -239,15 +246,22 @@ function createParticipationAlbumCard(album) {
             `;
         }
 
-        // 影片容器
-        const videoContainerHtml = backdropUrl ? `
-            <div class="disc-video-container">
-                <div class="disc-video-placeholder" style="--thumbnail-url: url('${backdropUrl}')"
-                     onclick="openTrackOnYouTube('https://www.youtube.com/watch?v=${album.xfdVideoId}')">
-                    <div class="play-icon">▶</div>
-                </div>
-            </div>
-        ` : '<div class="disc-video-container" style="background: #ddd;"></div>';
+        // 影片容器 - 預設顯示 XFD iframe
+        let videoContainerHtml = '';
+        if (album.xfdVideoId) {
+            const embedUrl = createYoutubeEmbedFromId(album.xfdVideoId);
+            if (embedUrl) {
+                videoContainerHtml = `
+                    <div class="disc-video-container">
+                        <iframe src="${embedUrl}" 
+                                allowfullscreen 
+                                style="width: 100%; height: 100%; border: none;"></iframe>
+                    </div>
+                `;
+            }
+        } else {
+            videoContainerHtml = '<div class="disc-video-container" style="background: #ddd;"></div>';
+        }
 
         return `
             <div class="disc-card disc-card-participation">
@@ -320,6 +334,15 @@ async function generateDiscography() {
     });
 
     container.innerHTML = allCategoriesHtml;
+}
+
+// 輔助函數：從 Video ID 創建 Embed URL（在這裡也要有備份）
+function createYoutubeEmbedFromId(videoId) {
+    if (!videoId || typeof videoId !== 'string' || videoId.trim() === '') {
+        console.error("Invalid video ID:", videoId);
+        return null;
+    }
+    return `https://www.youtube.com/embed/${videoId}?controls=1&modestbranding=1`;
 }
 
 // 確保 DOM 完全加載後再執行
