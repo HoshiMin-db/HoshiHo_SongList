@@ -18,6 +18,7 @@
 /* 統一應用到所有需要的元素 */
 body, button, input, select {
     font-family: var(--main-font);
+    line-height: 1.5;
 }
 
 /* 剩下的 body 樣式 */
