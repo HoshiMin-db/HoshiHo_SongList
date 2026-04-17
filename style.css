@@ -8,16 +8,19 @@
 /* 定義字體變數 */
 :root {
     --main-font: 'Microsoft JhengHei', '微軟正黑體', sans-serif;
+    --main-weight: normal;
 }
 
 /* 只有在日文模式下，覆蓋變數的值 */
 :lang(ja) {
     --main-font: 'Meiryo', 'メイリオ', 'Microsoft JhengHei', sans-serif;
+    --main-weight: 400;
 }
 
 /* 統一應用到所有需要的元素 */
 body, button, input, select {
     font-family: var(--main-font);
+    font-weight: var(--main-weight);
 }
 
 /* 剩下的 body 樣式 */
