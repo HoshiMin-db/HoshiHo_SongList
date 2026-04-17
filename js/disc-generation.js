@@ -133,7 +133,7 @@ function createMainAlbumCard(album) {
         if (ytLink) {
             externalLinksHtml += `
                 <a href="${ytLink}" target="_blank" class="external-link external-link-playlist">
-                    🎶 完整版
+                    🎶 播放清單
                 </a>
             `;
         }
@@ -147,9 +147,10 @@ function createMainAlbumCard(album) {
         }
 
         // 影片容器 - 預設顯示 XFD iframe，點擊縮圖也在卡片內播放 XFD
+        // ✅ 改用全局版本：window.createYoutubeEmbedFromId
         let videoContainerHtml = '';
         if (album.xfdVideoId) {
-            const embedUrl = createYoutubeEmbedFromId(album.xfdVideoId);
+            const embedUrl = window.createYoutubeEmbedFromId(album.xfdVideoId);
             if (embedUrl) {
                 videoContainerHtml = `
                     <div class="disc-video-container">
@@ -233,7 +234,7 @@ function createParticipationAlbumCard(album) {
         if (ytLink) {
             externalLinksHtml += `
                 <a href="${ytLink}" target="_blank" class="external-link external-link-playlist">
-                    🎶 完整版
+                    🎶 播放清單
                 </a>
             `;
         }
@@ -249,7 +250,7 @@ function createParticipationAlbumCard(album) {
         // 影片容器 - 預設顯示 XFD iframe
         let videoContainerHtml = '';
         if (album.xfdVideoId) {
-            const embedUrl = createYoutubeEmbedFromId(album.xfdVideoId);
+            const embedUrl = window.createYoutubeEmbedFromId(album.xfdVideoId);
             if (embedUrl) {
                 videoContainerHtml = `
                     <div class="disc-video-container">
@@ -336,18 +337,22 @@ async function generateDiscography() {
     container.innerHTML = allCategoriesHtml;
 }
 
-// 輔助函數：從 Video ID 創建 Embed URL（在這裡也要有備份）
-function createYoutubeEmbedFromId(videoId) {
-    if (!videoId || typeof videoId !== 'string' || videoId.trim() === '') {
-        console.error("Invalid video ID:", videoId);
-        return null;
+// 等待 youtube-player.js 載入完成，然後檢查全局函數是否存在
+function initDiscGeneration() {
+    // 檢查全局函數是否已被 youtube-player.js 載入
+    if (typeof window.createYoutubeEmbedFromId === 'undefined') {
+        console.warn('Waiting for youtube-player.js to load...');
+        setTimeout(initDiscGeneration, 100);
+        return;
     }
-    return `https://www.youtube.com/embed/${videoId}?controls=1&modestbranding=1`;
+    
+    // 全局函數已載入，執行專輯生成
+    generateDiscography();
 }
 
 // 確保 DOM 完全加載後再執行
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', generateDiscography);
+    document.addEventListener('DOMContentLoaded', initDiscGeneration);
 } else {
-    generateDiscography();
+    initDiscGeneration();
 }
