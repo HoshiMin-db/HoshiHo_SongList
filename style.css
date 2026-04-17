@@ -531,33 +531,33 @@ td.dates-container-cell { width: 40%; }
 /* 卡片底部 - 外部連結 */
 .external-links {
     display: flex;
-    gap: 8px;           
+    gap: 8px;
     padding: 15px;
     border-top: 2px solid #e9ecef;
-    flex-wrap: nowrap;     /* 強制不換行，讓按鈕並排 */
-    flex-shrink: 0;
-    justify-content: space-between; /* 讓按鈕填滿水平空間 */
+    flex-wrap: nowrap; /* 強制不換行 */
+    justify-content: space-between;
 }
 
 .external-link {
-    flex: 1;               /* 重要：讓所有按鈕平分剩餘空間 */
-    display: flex;         /* 使用 flex 讓文字居中更精準 */
+    flex: 1; /* 平分空間 */
+    display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px 4px;     /* 增加上下高度，縮小左右內距以容納長文字 */
-    background: #228be6;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    text-align: center;
-    font-size: 0.85em;      /* 稍微調大一點，配合按鈕變寬 */
+    padding: 10px 5px;
+    border-radius: 8px;
+    font-size: 0.85em;
     font-weight: 600;
+    white-space: nowrap;
     transition: all 0.2s ease;
+    min-width: 0; /* 允許縮小 */
+    text-decoration: none;
+    color: white;
     border: none;
     cursor: pointer;
-    white-space: nowrap;    /* 強制文字不換行 */
-    min-width: 0;           /* 允許按鈕在極端情況下縮小而不破壞佈局 */
-    overflow: hidden;       /* 防止萬一文字還是太長時撐開容器 */
+}
+
+.btn-icon {
+    margin-right: 4px; /* 文字存在時，Icon 往右推一點 */
 }
 
 .external-link:hover {
@@ -780,11 +780,24 @@ td.dates-container-cell { width: 40%; }
     }
 
     .external-link {
-        min-width: 70px;
-        padding: 6px 10px;
-        font-size: 0.8em;
+        padding: 10px 0; /* 減少內距 */
+        aspect-ratio: 1 / 1; /* 嘗試讓按鈕變正方形 (若空間允許) */
     }
 
+    .btn-text {
+        display: none; /* 直接隱藏文字 */
+    }
+
+    .btn-icon {
+        margin-right: 0; /* 文字消失，Icon 居中 */
+        font-size: 1.2em; /* 放大表情符號讓它更好點擊 */
+    }
+    
+    .external-links {
+        gap: 15px; /* 在手機上按鈕變小了，可以加大間距防止誤觸 */
+        justify-content: center; /* 居中排列 */
+    }
+    
     .floating-player-container {
         width: 100%;
         height: auto;
