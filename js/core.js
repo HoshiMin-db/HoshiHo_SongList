@@ -38,7 +38,7 @@ window.updateUILS = function(lang) {
 async function initCore() {
     try {
         // A. 抓取並解析翻譯
-        const txResp = await fetch('translations.txt');
+        const txResp = await fetch('js/translations.txt');
         translations = parseTranslations(await txResp.text());
 
         // B. 載入側邊欄 (如果頁面有容器)
