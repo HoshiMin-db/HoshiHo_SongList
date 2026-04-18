@@ -18,6 +18,5 @@ playlist|播放清單|Playlist|プレイリスト
 purchase|購買|Purchase|購入
 
 # --- 側邊欄導覽 (Sidebar) ---
-navHome|首頁|Home|ホーム
-navDisc|專輯列表|Discography|ディスコグラフィ
-navAbout|關於|About|アバウト
+navHome|歌單|Song List|歌曲リスト
+navDisc|專輯|Discography|作品リスト
