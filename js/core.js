@@ -8,12 +8,13 @@ function parseTranslations(text) {
     const dict = { 'zh-TW': {}, 'en': {}, 'ja': {} };
     
     lines.forEach(line => {
-        if (!line || line.startsWith('#')) return;
-        const [id, zh, en, ja] = line.split('|').map(s => s.trim());
-        if (id) {
-            dict['zh-TW'][id] = zh;
-            dict['en'][id] = en;
-            dict['ja'][id] = ja;
+        if (!line.trim() || line.startsWith('#')) return;
+        const parts = line.split('|').map(s => s.trim());
+        if (parts.length >= 2) {
+            const id = parts[0];
+            dict['zh-TW'][id] = parts[1] || id;
+            dict['en'][id] = parts[2] || id;
+            dict['ja'][id] = parts[3] || id;
         }
     });
     return dict;
@@ -22,57 +23,80 @@ function parseTranslations(text) {
 // 2. 統一掃描函數 (i18n)
 window.updateUILS = function(lang) {
     const data = translations[lang] || translations['zh-TW'];
+    if (!data) return;
+
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         if (data[key]) {
-            // 如果是輸入框則改 placeholder，否則改 innerText
             if (el.tagName === 'INPUT') el.placeholder = data[key];
             else el.innerText = data[key];
         }
     });
-    // 同步更新 <html> 的 lang 屬性
     document.documentElement.lang = lang;
 };
 
-// 3. 核心初始化 (鏈式執行)
+// 3. 側邊欄開關功能 (掛載到 window 以修復 HTML onclick 報錯)
+window.toggleSidebar = function() {
+    const sidebar = document.getElementById('sidebar');
+    const mainContent = document.getElementById('mainContent');
+    if (sidebar && mainContent) {
+        sidebar.classList.toggle('expanded');
+        mainContent.classList.toggle('shifted');
+    }
+};
+
+// 4. 語言切換邏輯
+window.onLanguageChange = function(newLang) {
+    localStorage.setItem('language', newLang);
+    window.updateUILS(newLang);
+    // 連動專輯頁面的即時更新
+    if (window.updateDiscTranslations) window.updateDiscTranslations(newLang);
+};
+
+// 5. 核心初始化 (單一 entry point)
 async function initCore() {
     try {
         // A. 抓取並解析翻譯
         const txResp = await fetch('js/translations.txt');
         translations = parseTranslations(await txResp.text());
 
-        // B. 載入側邊欄 (如果頁面有容器)
+        // B. 載入側邊欄並初始化行為
         const sideContainer = document.getElementById('sidebar-container');
         if (sideContainer) {
             const sideResp = await fetch('sidebar.html');
             sideContainer.innerHTML = await sideResp.text();
             
-            // 綁定側邊欄切換事件 (假設 ID 是 languageSelect)
+            // 設置導覽列 Active 狀態
+            const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+            document.querySelectorAll('.sidebar-nav a').forEach(link => {
+                if (link.getAttribute('href') === currentPage) link.classList.add('active');
+            });
+
+            // 綁定語言選擇器
             const sel = document.getElementById('languageSelect');
             if (sel) {
-                sel.value = localStorage.getItem('language') || 'zh-TW';
-                sel.onchange = (e) => {
-                    const newLang = e.target.value;
-                    localStorage.setItem('language', newLang);
-                    updateUILS(newLang);
-                    // 如果 disc.js 存在則通知它
-                    if (window.updateDiscTranslations) window.updateDiscTranslations(newLang);
-                };
+                const currentLang = localStorage.getItem('language') || 'zh-TW';
+                sel.value = currentLang;
+                sel.onchange = (e) => window.onLanguageChange(e.target.value);
             }
         }
 
         // C. 執行第一次翻譯渲染
-        updateUILS(localStorage.getItem('language') || 'zh-TW');
+        window.updateUILS(localStorage.getItem('language') || 'zh-TW');
 
     } catch (e) {
-        console.error("Initialization failed:", e);
+        console.error("Core initialization failed:", e);
     }
 }
 
-// 啟動 (配合 defer 屬性)
-initCore();
+// 啟動
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCore);
+} else {
+    initCore();
+}
 
-// 提供給其他 JS (如 disc-generation) 獲取單個詞條的工具
+// 工具函式
 window.getTL = (key) => {
     const lang = localStorage.getItem('language') || 'zh-TW';
     return translations[lang]?.[key] || key;
