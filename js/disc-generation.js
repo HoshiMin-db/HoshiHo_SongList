@@ -98,7 +98,7 @@ function createAlbumCard(album) {
         videoContainerHtml = `
             <div class="video-placeholder" 
                  style="width:100%; height:100%; background: url('${thumb}') center/cover; cursor:pointer; position:relative; display:flex; align-items:center; justify-content:center;"
-                 onclick="this.parentElement.innerHTML = '<iframe src=\'https://www.youtube.com/embed/${xfdVideoId}?autoplay=1\' allow=\'autoplay; encrypted-media\' allowfullscreen style=\'width:100%;height:100%;border:none;\'></iframe>'">
+                 onclick="window.playInCardById(this, '${xfdVideoId}')">
                 <div class="play-overlay-icon" style="font-size: 50px; color: white; opacity: 0.8; filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));">▶</div>
             </div>`;
     } else {
