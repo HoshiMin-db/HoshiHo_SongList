@@ -336,7 +336,7 @@ td.dates-container-cell { width: 40%; }
 
 .disc-card:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-    transform: translateY(-5px);
+    transform: none; /* 強制不進行位移 */
 }
 
 /* 卡片上部 - 影片區域 */
