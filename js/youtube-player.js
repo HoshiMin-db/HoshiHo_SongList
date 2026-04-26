@@ -132,31 +132,43 @@ document.addEventListener("DOMContentLoaded", function() {
         return /Mobi|Android/i.test(navigator.userAgent);
     }
 
-    // 在卡片內播放影片（disc.html）
+    // 在卡片內播放影片（優化後的版本，包含 URL 驗證與自動播放）
     function playInCard(element, url) {
         try {
-            // 驗證 URL
+            // 1. 執行安全性驗證：檢查是否為有效的 YouTube URL
             if (!isValidYouTubeURL(url)) {
                 console.error("Invalid YouTube URL:", url);
                 return;
             }
-
+    
+            // 2. 尋找父層卡片容器與影片容器
             const card = element.closest('.disc-card');
             if (!card) {
                 console.error('Card not found');
                 return;
             }
-
+    
             const videoContainer = card.querySelector('.disc-video-container');
             if (!videoContainer) {
                 console.error('Video container not found');
                 return;
             }
-
+    
+            // 3. 生成嵌入網址
+            // 提示：這裡使用標準的 www.youtube.com 以確保會員影片權限驗證正常
             const embedUrl = createYoutubeEmbed(url);
+            
             if (embedUrl) {
+                // 加入 autoplay=1 參數（如果 createYoutubeEmbed 尚未包含）
+                const finalUrl = embedUrl.includes('?') 
+                    ? `${embedUrl}&autoplay=1` 
+                    : `${embedUrl}?autoplay=1`;
+    
+                // 4. 動態替換容器內容[cite: 2]
+                // 注意：必須加入 allow="autoplay" 否則瀏覽器會封鎖自動播放
                 videoContainer.innerHTML = `
-                    <iframe src="${embedUrl}" 
+                    <iframe src="${finalUrl}" 
+                            allow="autoplay; encrypted-media; fullscreen" 
                             allowfullscreen 
                             style="width: 100%; height: 100%; border: none;"></iframe>
                 `;
@@ -165,40 +177,36 @@ document.addEventListener("DOMContentLoaded", function() {
             console.error('Error playing in card:', error);
         }
     }
-
-    // 在卡片內播放影片（使用 Video ID）
+    
+    // 為了保持一致性，建議也一併更新 playInCardById
     function playInCardById(element, videoId) {
         try {
             if (!videoId || typeof videoId !== 'string' || videoId.trim() === '') {
                 console.error("Invalid video ID:", videoId);
                 return;
             }
-
+    
             const card = element.closest('.disc-card');
-            if (!card) {
-                console.error('Card not found');
-                return;
-            }
-
             const videoContainer = card.querySelector('.disc-video-container');
-            if (!videoContainer) {
-                console.error('Video container not found');
-                return;
-            }
-
-            const embedUrl = createYoutubeEmbedFromId(videoId.trim());
-            if (embedUrl) {
-                videoContainer.innerHTML = `
-                    <iframe src="${embedUrl}" 
-                            allowfullscreen 
-                            style="width: 100%; height: 100%; border: none;"></iframe>
-                `;
+            
+            if (videoContainer) {
+                const embedUrl = createYoutubeEmbedFromId(videoId.trim());
+                if (embedUrl) {
+                    const finalUrl = `${embedUrl}${embedUrl.includes('?') ? '&' : '?'}autoplay=1`;
+                    
+                    videoContainer.innerHTML = `
+                        <iframe src="${finalUrl}" 
+                                allow="autoplay; encrypted-media; fullscreen" 
+                                allowfullscreen 
+                                style="width: 100%; height: 100%; border: none;"></iframe>
+                    `;
+                }
             }
         } catch (error) {
-            console.error('Error playing in card:', error);
+            console.error('Error playing in card by ID:', error);
         }
     }
-
+    
     // 浮動播放器（index.html）
     function openFloatingPlayer(url) {
         // 驗證 URL 的安全性
