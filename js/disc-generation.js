@@ -93,7 +93,7 @@ function createAlbumCard(album) {
     // 影片容器初始化：使用 window.createYoutubeEmbedFromId[cite: 8]
     let videoContainerHtml = '';
     if (xfdVideoId) {
-        const thumb = getYouTubeThumbnail(xfdVideoId, 'maxresdefault'); // 使用高品質縮圖
+        const thumb = getYouTubeThumbnail(xfdVideoId, 'hqdefault'); // 使用高品質縮圖
         // 初始只顯示背景圖和一個中央播放按鈕樣式
         videoContainerHtml = `
             <div class="video-placeholder" 
