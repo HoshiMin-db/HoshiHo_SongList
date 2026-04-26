@@ -13,7 +13,7 @@ async function loadDiscData() {
 }
 
 // 2. 獲取 YouTube 縮圖（用於無影片時的背景）[cite: 4]
-function getYouTubeThumbnail(videoId, quality = 'maxresdefault') {
+function getYouTubeThumbnail(videoId, quality = 'hqdefault') {
     return `https://img.youtube.com/vi/${videoId}/${quality}.jpg`;
 }
 
