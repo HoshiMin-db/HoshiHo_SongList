@@ -109,12 +109,12 @@ function createAlbumCard(album) {
         <div class="disc-card ${isParticipation ? 'disc-card-participation' : 'disc-card-main'}">
             <div class="disc-video-container" style="aspect-ratio: 16/9; background: #000;">${videoContainerHtml}</div>
             <div class="disc-header">
-            <div class="disc-title">${escapeHtml(album.title)}</div>
-            <!-- 根據是否為社團參與切換 CSS 類名 -->
-            <div class="${isParticipation ? 'disc-circle' : 'disc-subtitle'}">
-                ${isParticipation ? escapeHtml(album.circle) : album.type}
-            </div>
-            <div class="disc-release-date">${album.releaseDate}</div>
+                <div class="disc-title">${escapeHtml(album.title)}</div>
+                <!-- 根據是否為社團參與切換 CSS 類名 -->
+                <div class="${isParticipation ? 'disc-circle' : 'disc-subtitle'}">
+                    ${isParticipation ? escapeHtml(album.circle) : album.type}
+                </div>
+                <div class="disc-release-date">${album.releaseDate}</div>
             </div>
             <ul class="track-list">${tracksList}</ul>
             <div class="external-links">${generateExternalLinksHtml(album)}</div>
