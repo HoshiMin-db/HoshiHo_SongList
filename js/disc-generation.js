@@ -13,7 +13,7 @@ async function loadDiscData() {
 }
 
 // 2. 獲取 YouTube 縮圖（用於無影片時的背景）[cite: 4]
-function getYouTubeThumbnail(videoId, quality = 'hqdefault') {
+function getYouTubeThumbnail(videoId, quality = 'maxresdefault') {
     return `https://img.youtube.com/vi/${videoId}/${quality}.jpg`;
 }
 
@@ -92,17 +92,22 @@ function createAlbumCard(album) {
 
     // 影片容器初始化：使用 window.createYoutubeEmbedFromId[cite: 8]
     let videoContainerHtml = '';
-    if (xfdVideoId && window.createYoutubeEmbedFromId) {
-        const embedUrl = window.createYoutubeEmbedFromId(xfdVideoId);
-        videoContainerHtml = `<iframe src="${embedUrl}" allowfullscreen style="width:100%;height:100%;border:none;"></iframe>`;
+    if (xfdVideoId) {
+        const thumb = getYouTubeThumbnail(xfdVideoId, 'maxresdefault'); // 使用高品質縮圖
+        // 初始只顯示背景圖和一個中央播放按鈕樣式
+        videoContainerHtml = `
+            <div class="video-placeholder" 
+                 style="width:100%; height:100%; background: url('${thumb}') center/cover; cursor:pointer; position:relative; display:flex; align-items:center; justify-content:center;"
+                 onclick="this.parentElement.innerHTML = '<iframe src=\'https://www.youtube.com/embed/${xfdVideoId}?autoplay=1\' allow=\'autoplay; encrypted-media\' allowfullscreen style=\'width:100%;height:100%;border:none;\'></iframe>'">
+                <div class="play-overlay-icon" style="font-size: 50px; color: white; opacity: 0.8; filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));">▶</div>
+            </div>`;
     } else {
-        const thumb = xfdVideoId ? getYouTubeThumbnail(xfdVideoId) : '';
-        videoContainerHtml = `<div style="width:100%;height:100%;background:url('${thumb}') center/cover;"></div>`;
+        videoContainerHtml = `<div style="width:100%;height:100%;background:#333;"></div>`;
     }
 
     return `
         <div class="disc-card ${isParticipation ? 'disc-card-participation' : 'disc-card-main'}">
-            <div class="disc-video-container">${videoContainerHtml}</div>
+            <div class="disc-video-container" style="aspect-ratio: 16/9; background: #000;">${videoContainerHtml}</div>
             <div class="disc-header">
                 <div class="disc-title">${escapeHtml(album.title)}</div>
                 <div class="disc-subtitle">${isParticipation ? escapeHtml(album.circle) : album.type}</div>
