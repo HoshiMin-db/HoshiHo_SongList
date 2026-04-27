@@ -14,11 +14,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 升級至 v4 以支援 Node.js 24
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
+      # 升級至 v5 以支援 Node.js 24
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
@@ -37,7 +39,16 @@ jobs:
 
       - name: Force add and commit data.json
         run: |
-          git add -f data.json
-          git commit -m 'Update data.json with timestamp'
-          git push
-        continue-on-error: true
+          # 檢查 data.json 是否存在並嘗試加入暫存
+          if [ -f "data.json" ]; then
+            git add -f data.json
+            # 檢查是否有內容變動
+            if git diff --staged --quiet; then
+              echo "No changes in data.json to commit."
+            else
+              git commit -m "Update data.json with timestamp [skip ci]"
+              git push
+            fi
+          else
+            echo "data.json not found, skipping commit."
+          fi
