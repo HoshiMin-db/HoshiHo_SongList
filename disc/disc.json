@@ -5,12 +5,10 @@
     "albums": [
       {
         "title": "Armonico",
-        "type": "1st EP",
         "releaseDate": "2023.11.27",
         "ytUrl": "OLAK5uy_kOh2CM5W2S4GFO1zxmY2HIHtHcLT3Yi4k",
         "purchaseUrl": "https://linkco.re/61a6UMRe",
         "xfdVideoId": "6AFPVERA12k",
-        "participationIndices": [],
         "tracks": [
           {
             "title": "門出",
@@ -32,16 +30,16 @@
             "title": "Armonico",
             "videoId": "HJOusGflRUY"
           }
-        ]
+        ],
+        "participationIndices": [],
+        "type": "1st EP"
       },
       {
         "title": "Gracia",
-        "type": "2nd EP",
         "releaseDate": "2024.05.04",
         "ytUrl": "OLAK5uy_nhCNha90hSCm8TC5AEWGfgezjItSPwUFw",
         "purchaseUrl": "https://linkco.re/zUpguMMu",
         "xfdVideoId": "9Op9F0XJSFA",
-        "participationIndices": [],
         "tracks": [
           {
             "title": "Gracia",
@@ -67,16 +65,16 @@
             "title": "Pray for the flower",
             "videoId": "5_g_S6kdUi0"
           }
-        ]
+        ],
+        "participationIndices": [],
+        "type": "2nd EP"
       },
       {
         "title": "Triquetra",
-        "type": "3rd EP",
         "releaseDate": "2024.11.04",
         "ytUrl": "OLAK5uy_l0Qmu7NiDBcGWxcInCxR25x3c8Gkoi7_c",
         "purchaseUrl": "https://linkco.re/5B09uFbP",
         "xfdVideoId": "lnnJSORmOeA",
-        "participationIndices": [],
         "tracks": [
           {
             "title": "TRIQUETRA",
@@ -98,7 +96,9 @@
             "title": "Yule",
             "videoId": "bReL0hAKW14"
           }
-        ]
+        ],
+        "participationIndices": [],
+        "type": "3rd EP"
       }
     ]
   },
@@ -108,14 +108,10 @@
     "albums": [
       {
         "title": "スト・ナ・クヱタ",
-        "circle": "love solfege",
         "releaseDate": "2025.04.27",
         "ytUrl": "OLAK5uy_lgXe8kbQKTTlrToG1Ki_yzfpMKsxUWDYw",
         "purchaseUrl": "https://lovesolfege.bandcamp.com/album/--13",
         "xfdVideoId": "9dc-MyPpETg",
-        "participationIndices": [
-          1
-        ],
         "tracks": [
           {
             "title": "Il teatrino degli dei",
@@ -137,18 +133,18 @@
             "title": "スト・ナ・クヱタ",
             "videoId": "EMMwXZAv3Zk"
           }
-        ]
+        ],
+        "participationIndices": [
+          1
+        ],
+        "circle": "love solfege"
       },
       {
         "title": "My Lament",
-        "circle": "lMO2RE〉",
         "releaseDate": "2025.04.27",
         "ytUrl": "OLAK5uy_kI0wvlnicKXuOuKB0gGZwUlDO7KWNuw0w",
         "purchaseUrl": "https://mo2re.bandcamp.com/album/my-lament",
         "xfdVideoId": "AOCn91b2TzA",
-        "participationIndices": [
-          0
-        ],
         "tracks": [
           {
             "title": "My Lament",
@@ -158,7 +154,113 @@
             "title": "Dog Tag",
             "videoId": "gUBuS93UVC8"
           }
-        ]
+        ],
+        "participationIndices": [
+          0
+        ],
+        "circle": "lMO2RE〉"
+      },
+      {
+        "title": "奔流の協奏曲（コンチェルト）",
+        "releaseDate": "2026.04.26",
+        "ytUrl": "OLAK5uy_lhhaI6zkY8LYHwiGTRS_uOm2oL03dVBW4",
+        "purchaseUrl": "https://lovesolfege.bandcamp.com/album/--14",
+        "xfdVideoId": "lf6EjZeN4C0",
+        "tracks": [
+          {
+            "title": "奔流の協奏曲 ～ Concerto in balia della corrente",
+            "videoId": "to9A1f6-eFM"
+          },
+          {
+            "title": "赤の女王より或るポーンへの訓示について",
+            "videoId": "J6kim-UGnK8"
+          },
+          {
+            "title": "cogito",
+            "videoId": "-SQPLy53hao"
+          },
+          {
+            "title": "Under yonder verdant yew",
+            "videoId": "oQ7fkeviT7c"
+          },
+          {
+            "title": "雷霆旋渦",
+            "videoId": "56rYPorFWJo"
+          },
+          {
+            "title": "Le Rêve du papillon",
+            "videoId": "5i4GGD5ErII"
+          },
+          {
+            "title": "el pescador",
+            "videoId": "CInoah71dvI"
+          },
+          {
+            "title": "Silk and Dust",
+            "videoId": "rVsivfQhTFY"
+          },
+          {
+            "title": "エピタフに眠る記憶",
+            "videoId": "l-21Udk3JZo"
+          }
+        ],
+        "participationIndices": [
+          1
+        ],
+        "circle": "love solfege"
+      },
+      {
+        "title": "Epistle to the Earthlings",
+        "releaseDate": "2026.04.26",
+        "ytUrl": "OLAK5uy_kbqXuyjx9JlmxnHpeh-lE-2XDssjaoyCo",
+        "purchaseUrl": "https://bernis.bandcamp.com/album/epistle-to-the-earthlings",
+        "xfdVideoId": "jJT4gTfZKVc",
+        "tracks": [
+          {
+            "title": "Awakening",
+            "videoId": "QldCeyhT8i8"
+          },
+          {
+            "title": "New Horizon",
+            "videoId": "waj0owpsxY4"
+          },
+          {
+            "title": "Exoworld Expedition",
+            "videoId": "N86xfvUCI5Q"
+          },
+          {
+            "title": "Hyperdrive",
+            "videoId": "e_YZhQyw2ZY"
+          },
+          {
+            "title": "Pulsar",
+            "videoId": "Efal6JKIbvM"
+          },
+          {
+            "title": "Orbit",
+            "videoId": "5_htTkT0C_8"
+          },
+          {
+            "title": "Elsewhen Elsewhere",
+            "videoId": "COiGSo1QvXc"
+          },
+          {
+            "title": "Pale Blue Dot",
+            "videoId": "klKvZUYSjzk"
+          },
+          {
+            "title": "Epistle (feat. HoshiHo)",
+            "videoId": "x_Eaj0TRCMI"
+          },
+          {
+            "title": "Epistle (Dub Mix)",
+            "videoId": "nQa-LbJpLE4"
+          }
+        ],
+        "participationIndices": [
+          8
+        ],
+        "circle": "Bernis"
       }
     ]
   },
