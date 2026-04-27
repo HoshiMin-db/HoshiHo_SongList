@@ -846,9 +846,19 @@ td.dates-container-cell { width: 40%; }
         padding: 10px;
     }
 
+    table {
+        font-size: 0.8em; /* 從電腦版的 1.0em 縮減為 0.8 倍 */
+    }
+
+    /* 2. 縮小表頭與單元格的內距，釋放更多空間 */
+    th, td {
+        padding: 6px 4px; /* 原本是 8px */
+    }
+
+    /* 3. 針對 index 頁面特定的日期單元格微調 */
     .date-cell {
-        min-width: 80px;
-        font-size: 10px;
+        min-width: 70px;  /* 稍微縮小最小寬度，防止表格被撐開 */
+        font-size: 9px;   /* 從原本手機版的 10px 再降一點 */
     }
 
     .more-button {
