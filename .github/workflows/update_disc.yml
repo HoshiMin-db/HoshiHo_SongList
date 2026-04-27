@@ -14,11 +14,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 升級至 v4 以支援 Node.js 24
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
+      # 升級至 v5 以支援 Node.js 24，並加入快取機制提升速度
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
@@ -27,12 +29,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install google-api-python-client google-auth google-auth-oauthlib google-auth-httplib2
 
-      - name: Set environment variables
-        run: echo "Setting environment variables"
-        env:
-          GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
-          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
-
+      # 直接在執行腳本的步驟設定環境變數即可，減少冗餘步驟
       - name: Run disc_generation.py
         run: python backend/disc_generation.py
         env:
@@ -47,6 +44,11 @@ jobs:
       - name: Force add and commit disc.json
         run: |
           git add -f disc/disc.json
-          git commit -m 'Update disc.json with timestamp'
-          git push
-        continue-on-error: true
+          # 檢查是否有檔案變動，避免在沒有變動時 commit 導致報錯
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update disc.json with timestamp [skip ci]"
+            git push
+          fi
+        # 由於上方加入了 if 判斷，通常不再需要 continue-on-error
