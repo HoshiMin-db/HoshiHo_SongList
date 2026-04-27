@@ -1707,6 +1707,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20260425",
+                "time": "00:10:36",
+                "link": "https://www.youtube.com/watch?v=STIjQOwdjJM&t=636s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -6782,6 +6790,14 @@
                 "time": "03:22:54",
                 "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=12174s",
                 "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20260425",
+                "time": "00:21:09",
+                "link": "https://www.youtube.com/watch?v=STIjQOwdjJM&t=1269s",
+                "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
             },
@@ -21170,6 +21186,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20260425",
+                "time": "00:03:15",
+                "link": "https://www.youtube.com/watch?v=STIjQOwdjJM&t=195s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -23030,6 +23054,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20260425",
+                "time": "00:27:41",
+                "link": "https://www.youtube.com/watch?v=STIjQOwdjJM&t=1661s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -25519,6 +25551,23 @@
                 "date": "20260412",
                 "time": "05:14:36",
                 "link": "https://www.youtube.com/watch?v=Gcf_AxFhv8Q&t=18876s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "The Story of Us/",
+        "artist": "milet",
+        "source": "葬送のフリーレン",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260425",
+                "time": "00:15:53",
+                "link": "https://www.youtube.com/watch?v=STIjQOwdjJM&t=953s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
