@@ -23,21 +23,27 @@ except Exception as e:
 # YouTube Data API 客戶端
 youtube = build('youtube', 'v3', developerKey=google_api_key)
 
-# 路徑處理改用 os.path
+# ================= 修正路徑處理 =================
+# BASE_DIR 現在是 backend/ 資料夾
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DISC_FILE_PATH = os.path.join(BASE_DIR, 'disc', 'disc.txt')
-CACHE_FILE_PATH = os.path.join(BASE_DIR, 'disc', 'disc.json')
+# ROOT_DIR 往上退一級，指向專案根目錄 (HoshiHo_SongList)
+ROOT_DIR = os.path.dirname(BASE_DIR)
+
+# 正確指向根目錄下的 disc 資料夾
+DISC_FILE_PATH = os.path.join(ROOT_DIR, 'disc', 'disc.txt')
+CACHE_FILE_PATH = os.path.join(ROOT_DIR, 'disc', 'disc.json')
+# ================================================
 
 def extract_youtube_id(url_or_id):
     """
-    安全地提取 YouTube ID (修復 CodeQL Incomplete URL substring sanitization)
+    安全地提取 YouTube Video ID 或 Playlist ID
     """
     if not url_or_id:
         return ""
     
     val = url_or_id.strip()
-    # 如果已經是 11 碼 ID，則直接回傳
-    if len(val) == 11 and not ('/' in val or '.' in val):
+    # 如果已經是純 ID (Video ID 通常 11 碼，Playlist ID 通常大於 12 碼)
+    if not ('/' in val or '.' in val or '?' in val):
         return val
 
     try:
@@ -46,17 +52,26 @@ def extract_youtube_id(url_or_id):
         if parsed.netloc == 'youtu.be':
             return parsed.path.lstrip('/')
         
-        # 2. 處理標準網址 youtube.com (使用精確匹配或 tuple 匹配)
-        # 這樣寫可以防止惡意網域如 'evil-youtube.com' 通過檢查
+        # 2. 處理標準網址 youtube.com
         if parsed.netloc in ('www.youtube.com', 'youtube.com', 'm.youtube.com', 'music.youtube.com'):
-            # 處理 /watch?v=ID
+            qs = parse_qs(parsed.query)
+            
+            # 處理播放清單網址 /playlist?list=ID
+            if parsed.path == '/playlist':
+                return qs.get('list', [None])[0]
+                
+            # 處理一般影片 /watch?v=ID (如果含有 list 參數，優先回傳 list ID 以利播放清單抓取)
             if parsed.path == '/watch':
-                return parse_qs(parsed.query).get('v', [None])[0]
+                if 'list' in qs:
+                    return qs.get('list')[0]
+                return qs.get('v', [None])[0]
+                
             # 處理 /embed/ID 或 /v/ID
             if parsed.path.startswith(('/embed/', '/v/')):
                 parts = parsed.path.split('/')
                 if len(parts) >= 3:
                     return parts[2]
+                    
             # 處理 youtube.com/shorts/ID
             if parsed.path.startswith('/shorts/'):
                 return parsed.path.split('/')[2]
@@ -74,7 +89,8 @@ def is_valid_playlist_id(playlist_id):
 def fetch_youtube_playlist_tracks(playlist_url):
     """抓取 YouTube 播放清單中的曲目"""
     playlist_id = extract_youtube_id(playlist_url)
-    if not is_valid_playlist_id(playlist_id):
+    
+    if not playlist_id or not is_valid_playlist_id(playlist_id):
         return []
 
     tracks = []
@@ -163,7 +179,7 @@ def save_to_json(data, file_path):
     os.makedirs(os.path.dirname(file_path), exist_ok=True)
     with open(file_path, 'w', encoding='utf-8') as json_file:
         json.dump(data, json_file, ensure_ascii=False, indent=2)
-    print(f"\n✓ 成功保存到 {file_path}")
+    print(f"\n✓成功保存到 {file_path}")
 
 if __name__ == "__main__":
     print("開始處理 disc.txt...\n")
