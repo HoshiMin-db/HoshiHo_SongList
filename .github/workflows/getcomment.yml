@@ -2,7 +2,7 @@ name: Get YouTube Comments
 
 on:
   schedule:
-    - cron: '0 3 * * 1'  # 每周一 UTC 時間上午 3 時（日本標準時間中午 12 時）
+    - cron: '0 3 * * 1'  # 每周一 UTC 03:00 (JST 12:00)
   workflow_dispatch:
 
 permissions:
@@ -13,12 +13,17 @@ jobs:
   check-and-fetch:
     runs-on: ubuntu-latest
 
+    # 定義共用環境變數，避免重複在多個步驟撰寫
+    env:
+      GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
+      GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
@@ -33,19 +38,10 @@ jobs:
           git config user.email "actions@github.com"
 
       - name: Check and Fetch Comments
-        env:
-          GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
-          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
-        run: |
-          python backend/getcomment.py
+        run: python backend/getcomment.py
 
-      # 新增：檢查已刪除的影片
       - name: Check Deleted Videos
-        env:
-          GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
-          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
-        run: |
-          python backend/check_deleted_videos.py
+        run: python backend/check_deleted_videos.py
 
       - name: Commit and Push changes
         run: |
@@ -53,28 +49,25 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "Update timeline files and exceptions.txt"
-            git push https://${{ secrets.PAT_TOKEN }}@github.com/HoshiMin-db/HoshiHo_SongList.git HEAD:main
-          fi
+            git commit -m "Update timeline files and exceptions.txt [skip ci]"
+            # 使用內建的 GITHUB_TOKEN 或直接推送到 main 即可，現代 Actions 多已自動處理驗證
+            git push origin HEAD:main
         env:
-          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  # Add this section to trigger parse_timeline.yml
+  # 觸發下一個工作流
   trigger-parse-timeline:
     needs: check-and-fetch
     runs-on: ubuntu-latest
     steps:
       - name: Trigger parse_timeline workflow
-        uses: actions/github-script@v4
+        # 升級 actions/github-script 從 v4 到 v7 (支援 Node.js 24)
+        uses: actions/github-script@v7
         with:
           script: |
-            const owner = 'HoshiMin-db';
-            const repo = 'HoshiHo_SongList';
-            const workflow_id = 'parse_timeline.yml';
-            const ref = 'main';
-            await github.actions.createWorkflowDispatch({
-              owner,
-              repo,
-              workflow_id,
-              ref
+            await github.rest.actions.createWorkflowDispatch({
+              owner: 'HoshiMin-db',
+              repo: 'HoshiHo_SongList',
+              workflow_id: 'parse_timeline.yml',
+              ref: 'main'
             });
