@@ -2074,7 +2074,7 @@
     },
     {
         "song_name": "撲殺天使ドクロちゃん",
-        "artist": "千葉紗子",
+        "artist": "ドクロちゃん(千葉紗子)",
         "source": "撲殺天使ドクロちゃん",
         "is_copyright": false,
         "az": "ぼ",
@@ -2083,6 +2083,14 @@
                 "date": "20260502",
                 "time": "01:55:17",
                 "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=6917s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240120",
+                "time": "07:53:20",
+                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=28400s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -26598,23 +26606,6 @@
                 "date": "20240120",
                 "time": "07:46:07",
                 "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=27967s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "撲殺天使ドクロちゃん",
-        "artist": "ドクロちゃん(千葉紗子)",
-        "source": "撲殺天使ドクロちゃん",
-        "is_copyright": false,
-        "az": "ぼ",
-        "dates": [
-            {
-                "date": "20240120",
-                "time": "07:53:20",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=28400s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
