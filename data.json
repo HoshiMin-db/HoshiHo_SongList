@@ -651,6 +651,14 @@
                 "is_private": true
             },
             {
+                "date": "20260502",
+                "time": "07:11:45",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=25905s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20231118",
                 "time": "06:31:20",
                 "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=23480s",
@@ -1835,6 +1843,1206 @@
         ]
     },
     {
+        "song_name": "ループ",
+        "artist": "坂本真綾",
+        "source": "ツバサ・クロニクル(第1期)",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "00:41:39",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=2499s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240106",
+                "time": "05:06:50",
+                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=18410s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240511",
+                "time": "03:46:55",
+                "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=13615s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20260321",
+                "time": "04:49:00",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=17340s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250517",
+                "time": "04:11:38",
+                "link": "https://www.youtube.com/watch?v=1RmXANp4b0I&t=15098s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20240915",
+                "time": "01:22:13",
+                "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=4933s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            }
+        ]
+    },
+    {
+        "song_name": "風待ちジェット",
+        "artist": "坂本真綾",
+        "source": "ツバサ・クロニクル(第2期)",
+        "is_copyright": false,
+        "az": "か",
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "00:48:08",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=2888s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240106",
+                "time": "05:00:10",
+                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=18010s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240511",
+                "time": "03:35:34",
+                "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=12934s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20260321",
+                "time": "04:43:40",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=17020s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "COLORS",
+        "artist": "FLOW",
+        "source": "コードギアス 反逆のルルーシュ",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "01:04:41",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=3881s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240706",
+                "time": "00:56:56",
+                "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=3416s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20240127",
+                "time": "05:39:47",
+                "link": "https://www.youtube.com/watch?v=kw8Ia8qEJ74&t=20387s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20241019",
+                "time": "05:08:36",
+                "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=18516s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20240727",
+                "time": "04:03:28",
+                "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=14608s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            }
+        ]
+    },
+    {
+        "song_name": "勇侠青春謳",
+        "artist": "ALI PROJECT",
+        "source": "コードギアス 反逆のルルーシュ",
+        "is_copyright": false,
+        "az": "ゆ",
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "01:13:10",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=4390s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240706",
+                "time": "01:05:18",
+                "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=3918s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20231104",
+                "time": "03:11:36",
+                "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=11496s",
+                "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240720",
+                "time": "03:55:56",
+                "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=14156s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20241019",
+                "time": "05:19:57",
+                "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=19197s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            }
+        ]
+    },
+    {
+        "song_name": "わが臈たし悪の華",
+        "artist": "ALI PROJECT",
+        "source": "コードギアス 反逆のルルーシュR2",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "01:21:06",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=4866s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "マジックナンバー",
+        "artist": "坂本真綾",
+        "source": "こばと。",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "01:31:22",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=5482s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "撲殺天使ドクロちゃん",
+        "artist": "千葉紗子",
+        "source": "撲殺天使ドクロちゃん",
+        "is_copyright": false,
+        "az": "ぼ",
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "01:55:17",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=6917s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "明日もし君が壊れても",
+        "artist": "WANDS",
+        "source": "遊☆戯☆王",
+        "is_copyright": false,
+        "az": "あ",
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "02:09:05",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=7745s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20231231",
+                "time": "03:38:14",
+                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=13094s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240706",
+                "time": "00:40:12",
+                "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=2412s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            }
+        ]
+    },
+    {
+        "song_name": "渇いた叫び",
+        "artist": "FIELD OF VIEW",
+        "source": "遊☆戯☆王",
+        "is_copyright": false,
+        "az": "か",
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "02:16:09",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=8169s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20231231",
+                "time": "03:33:21",
+                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=12801s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250104",
+                "time": "01:53:28",
+                "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=6808s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20240518",
+                "time": "06:46:49",
+                "link": "https://www.youtube.com/watch?v=0mO1WLnuFYM&t=24409s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            }
+        ]
+    },
+    {
+        "song_name": "Shuffle",
+        "artist": "奥井雅美",
+        "source": "遊☆戯☆王デュエルモンスターズ",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "02:23:10",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=8590s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20231231",
+                "time": "03:47:24",
+                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=13644s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250111",
+                "time": "03:08:27",
+                "link": "https://www.youtube.com/watch?v=d8-4g0Tf9IE&t=11307s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "晴れてハレルヤ",
+        "artist": "奥井亜紀",
+        "source": "魔法陣グルグル",
+        "is_copyright": false,
+        "az": "は",
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "02:32:36",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=9156s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250719",
+                "time": "00:51:23",
+                "link": "https://www.youtube.com/watch?v=zfOYWj9prDo&t=3083s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20241012",
+                "time": "01:06:15",
+                "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=3975s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20240608",
+                "time": "01:17:34",
+                "link": "https://www.youtube.com/watch?v=UoMwNx3aklM&t=4654s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20260308",
+                "time": "04:18:25",
+                "link": "https://www.youtube.com/watch?v=0cbulxcivk8&t=15505s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20231125",
+                "time": "03:16:16",
+                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=11776s",
+                "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240308",
+                "time": "02:44:31",
+                "link": "https://www.youtube.com/watch?v=mfO62RxfZPU&t=9871s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250315",
+                "time": "00:19:22",
+                "link": "https://www.youtube.com/watch?v=se6YFgRE_po&t=1162s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240410",
+                "time": "00:18:59",
+                "link": "https://www.youtube.com/watch?v=EUyxxgR0Kh4&t=1139s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20250301",
+                "time": "03:19:02",
+                "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=11942s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            }
+        ]
+    },
+    {
+        "song_name": "微笑みの爆弾",
+        "artist": "馬渡松子",
+        "source": "幽☆遊☆白書",
+        "is_copyright": false,
+        "az": "ほ",
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "02:39:27",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=9567s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20231125",
+                "time": "02:01:25",
+                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=7285s",
+                "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "アンバランスなKissをして",
+        "artist": "高橋ひろ",
+        "source": "幽☆遊☆白書",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "02:47:46",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=10066s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "太陽がまた輝くとき",
+        "artist": "高橋ひろ",
+        "source": "幽☆遊☆白書",
+        "is_copyright": false,
+        "az": "た",
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "02:57:33",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=10653s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20231125",
+                "time": "02:23:14",
+                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=8594s",
+                "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "あなただけ見つめてる",
+        "artist": "大黒摩季",
+        "source": "SLAM DUNK",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "03:09:43",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=11383s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20231209",
+                "time": "00:43:00",
+                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=2580s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20241026",
+                "time": "00:50:21",
+                "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=3021s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            }
+        ]
+    },
+    {
+        "song_name": "煌めく瞬間に捕われて",
+        "artist": "MANISH",
+        "source": "SLAM DUNK",
+        "is_copyright": false,
+        "az": "き",
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "03:20:35",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=12035s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "マイ フレンド",
+        "artist": "ZARD",
+        "source": "SLAM DUNK",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "03:32:12",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=12732s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250412",
+                "time": "06:18:00",
+                "link": "https://www.youtube.com/watch?v=SU06Cmm5xCs&t=22680s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20231209",
+                "time": "01:06:32",
+                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=3992s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20231125",
+                "time": "07:21:30",
+                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=26490s",
+                "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "泪のムコウ",
+        "artist": "ステレオポニー",
+        "source": "機動戦士ガンダム00 -2nd Season-",
+        "is_copyright": false,
+        "az": "な",
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "04:04:23",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=14663s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20241228",
+                "time": "01:23:01",
+                "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=4981s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20240224",
+                "time": "03:31:23",
+                "link": "https://www.youtube.com/watch?v=8i9TOCJF8ps&t=12683s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "カントリー・ロード",
+        "artist": "本名陽子",
+        "source": "耳をすませば",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "04:15:07",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=15307s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20260207",
+                "time": "08:06:58",
+                "link": "https://www.youtube.com/watch?v=LWrTgm59MT8&t=29218s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240524",
+                "time": "01:48:59",
+                "link": "https://www.youtube.com/watch?v=1VxGGjlEBUU&t=6539s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            }
+        ]
+    },
+    {
+        "song_name": "スーパーウルトラハイパーミラクルロマンチック",
+        "artist": "敷島魅零（井口裕香）&処女まもり（井澤美香子）",
+        "source": "VALKYRIE DRIVE",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "04:31:05",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=16265s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "THE DAY",
+        "artist": "ポルノグラフィティ",
+        "source": "僕のヒーローアカデミア",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "04:42:44",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=16964s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20241109",
+                "time": "01:46:09",
+                "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=6369s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            }
+        ]
+    },
+    {
+        "song_name": "アイデンティティ",
+        "artist": "酒井ミキオ",
+        "source": "落第騎士の英雄譚",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "04:54:35",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=17675s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250315",
+                "time": "00:57:10",
+                "link": "https://www.youtube.com/watch?v=tRCurzx2Abk&t=3430s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20240629",
+                "time": "01:29:14",
+                "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=5354s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20240120",
+                "time": "02:25:53",
+                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=8753s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20260412",
+                "time": "01:54:55",
+                "link": "https://www.youtube.com/watch?v=Gcf_AxFhv8Q&t=6895s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "大嫌い！",
+        "artist": "",
+        "source": "ウィキッド ふたりの魔女",
+        "is_copyright": false,
+        "az": "だ",
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "05:15:27",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=18927s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "ポピュラー",
+        "artist": "",
+        "source": "ウィキッド ふたりの魔女",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "05:19:59",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=19199s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "Reweave",
+        "artist": "鈴木このみ",
+        "source": "Re:ゼロから始める異世界生活(3rd season)",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "05:30:45",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=19845s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250507",
+                "time": "00:22:36",
+                "link": "https://www.youtube.com/watch?v=yNcKrESU2hU&t=1356s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250118",
+                "time": "00:08:24",
+                "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=504s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            }
+        ]
+    },
+    {
+        "song_name": "lulu.",
+        "artist": "Mrs. GREEN APPLE",
+        "source": "葬送のフリーレン(第2期)",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "05:40:55",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=20455s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20260321",
+                "time": "03:33:23",
+                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=12803s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "アメフラシの歌 ～Beautiful Rain～",
+        "artist": "ニケ・ルメルシエ（CV：前田玲奈）",
+        "source": "それでも世界は美しい",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "05:56:08",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=21368s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "ハナコトバ",
+        "artist": "讃州中学勇者部",
+        "source": "結城友奈は勇者である -勇者の章-",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "06:08:33",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=22113s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "君ノ記憶(shortVer.)",
+        "artist": "Mao",
+        "source": "薄桜鬼",
+        "is_copyright": false,
+        "az": "き",
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "06:19:06",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=22746s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "甲賀忍法帖",
+        "artist": "陰陽座",
+        "source": "バジリスク ～甲賀忍法帖～",
+        "is_copyright": false,
+        "az": "こ",
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "06:30:21",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=23421s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240106",
+                "time": "03:18:15",
+                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=11895s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250118",
+                "time": "04:13:47",
+                "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=15227s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20250315",
+                "time": "00:08:12",
+                "link": "https://www.youtube.com/watch?v=se6YFgRE_po&t=492s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20260104",
+                "time": "04:10:18",
+                "link": "https://www.youtube.com/watch?v=x45CRGOV0fE&t=15018s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250308",
+                "time": "02:14:00",
+                "link": "https://www.youtube.com/watch?v=OQO0FzogBp4&t=8040s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            }
+        ]
+    },
+    {
+        "song_name": "Over the clouds",
+        "artist": "alan",
+        "source": "GOD EATER",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "06:46:59",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=24419s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "光のアリア(アカペラ)",
+        "artist": "葦原ユノ starring yu-yu",
+        "source": "GOD EATER 2",
+        "is_copyright": false,
+        "az": "ひ",
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "06:56:08",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=24968s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "迷い道",
+        "artist": "渡辺真知子",
+        "source": "",
+        "is_copyright": false,
+        "az": "ま",
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "07:17:26",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=26246s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250517",
+                "time": "02:12:29",
+                "link": "https://www.youtube.com/watch?v=1RmXANp4b0I&t=7949s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            }
+        ]
+    },
+    {
+        "song_name": "MUGO・ん…色っぽい",
+        "artist": "工藤静香",
+        "source": "",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "07:22:21",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=26541s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "フライディ・チャイナタウン",
+        "artist": "泰葉",
+        "source": "",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "07:31:26",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=27086s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20231118",
+                "time": "05:02:54",
+                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=18174s",
+                "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20241109",
+                "time": "00:33:17",
+                "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=1997s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20240621",
+                "time": "07:31:55",
+                "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=27115s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            }
+        ]
+    },
+    {
+        "song_name": "アシタノツバサ",
+        "artist": "石田燿子",
+        "source": "ブレイブウィッチーズ",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "07:42:15",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=27735s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20241214",
+                "time": "02:11:03",
+                "link": "https://www.youtube.com/watch?v=SX5pWgl_Sxk&t=7863s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            }
+        ]
+    },
+    {
+        "song_name": "Deep in Abyss",
+        "artist": "リコ(CV:富田美憂)、レグ(CV:伊瀬茉莉也).",
+        "source": "メイドインアビス",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "07:51:06",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=28266s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "ロ・ロ・ロ・ロシアン・ルーレット",
+        "artist": "中原めいこ",
+        "source": "ダーティペア",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "08:15:37",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=29737s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250831",
+                "time": "03:16:17",
+                "link": "https://www.youtube.com/watch?v=Y91SWo4ADS4&t=11777s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "SHINY DAYS",
+        "artist": "亜咲花",
+        "source": "ゆるキャン△",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "08:34:47",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=30887s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240720",
+                "time": "00:39:40",
+                "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=2380s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            }
+        ]
+    },
+    {
+        "song_name": "ユニバーページ",
+        "artist": "三森すずこ",
+        "source": "アウトブレイク・カンパニー",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260502",
+                "time": "08:41:55",
+                "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=31315s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240928",
+                "time": "00:15:35",
+                "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=935s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20250705",
+                "time": "06:54:56",
+                "link": "https://www.youtube.com/watch?v=UNhFtu7NrHw&t=24896s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            }
+        ]
+    },
+    {
         "song_name": "唱",
         "artist": "Ado",
         "source": "",
@@ -2119,89 +3327,6 @@
                 "date": "20240308",
                 "time": "00:53:11",
                 "link": "https://www.youtube.com/watch?v=mfO62RxfZPU&t=3191s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "渇いた叫び",
-        "artist": "FIELD OF VIEW",
-        "source": "遊戯王",
-        "is_copyright": false,
-        "az": "か",
-        "dates": [
-            {
-                "date": "20231231",
-                "time": "03:33:21",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=12801s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20250104",
-                "time": "01:53:28",
-                "link": "https://www.youtube.com/watch?v=sj4k8Y5ESTU&t=6808s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20240518",
-                "time": "06:46:49",
-                "link": "https://www.youtube.com/watch?v=0mO1WLnuFYM&t=24409s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "明日もし君が壊れても",
-        "artist": "WANDS",
-        "source": "遊戯王",
-        "is_copyright": false,
-        "az": "あ",
-        "dates": [
-            {
-                "date": "20231231",
-                "time": "03:38:14",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=13094s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240706",
-                "time": "00:40:12",
-                "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=2412s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "Shuffle",
-        "artist": "奥井雅美",
-        "source": "遊戯王",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20231231",
-                "time": "03:47:24",
-                "link": "https://www.youtube.com/watch?v=CuKouw0fUAE&t=13644s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20250111",
-                "time": "03:08:27",
-                "link": "https://www.youtube.com/watch?v=d8-4g0Tf9IE&t=11307s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -2950,88 +4075,6 @@
                 "date": "20240706",
                 "time": "00:47:13",
                 "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=2833s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "COLORS",
-        "artist": "FLOW",
-        "source": "コードギアス 反逆のルルーシュ",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20240706",
-                "time": "00:56:56",
-                "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=3416s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20240127",
-                "time": "05:39:47",
-                "link": "https://www.youtube.com/watch?v=kw8Ia8qEJ74&t=20387s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20241019",
-                "time": "05:08:36",
-                "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=18516s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20240727",
-                "time": "04:03:28",
-                "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=14608s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "勇侠青春謳",
-        "artist": "ALI PROJECT",
-        "source": "コードギアス 反逆のルルーシュ",
-        "is_copyright": false,
-        "az": "ゆ",
-        "dates": [
-            {
-                "date": "20240706",
-                "time": "01:05:18",
-                "link": "https://www.youtube.com/watch?v=60ezegiABkc&t=3918s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20231104",
-                "time": "03:11:36",
-                "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=11496s",
-                "is_member_exclusive": true,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240720",
-                "time": "03:55:56",
-                "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=14156s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20241019",
-                "time": "05:19:57",
-                "link": "https://www.youtube.com/watch?v=vsXKbYFTPbI&t=19197s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
@@ -8038,55 +9081,6 @@
         ]
     },
     {
-        "song_name": "甲賀忍法帖",
-        "artist": "陰陽座",
-        "source": "バジリスク 〜甲賀忍法帖〜",
-        "is_copyright": false,
-        "az": "こ",
-        "dates": [
-            {
-                "date": "20240106",
-                "time": "03:18:15",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=11895s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20250118",
-                "time": "04:13:47",
-                "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=15227s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20250315",
-                "time": "00:08:12",
-                "link": "https://www.youtube.com/watch?v=se6YFgRE_po&t=492s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20260104",
-                "time": "04:10:18",
-                "link": "https://www.youtube.com/watch?v=x45CRGOV0fE&t=15018s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20250308",
-                "time": "02:14:00",
-                "link": "https://www.youtube.com/watch?v=OQO0FzogBp4&t=8040s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
         "song_name": "みずいろの雨",
         "artist": "八神純子",
         "source": "",
@@ -8258,88 +9252,6 @@
                 "is_member_exclusive": true,
                 "is_acapella": false,
                 "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "風待ちジェット",
-        "artist": "坂本真綾",
-        "source": "ツバサ・クロニクル",
-        "is_copyright": false,
-        "az": "か",
-        "dates": [
-            {
-                "date": "20240106",
-                "time": "05:00:10",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=18010s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240511",
-                "time": "03:35:34",
-                "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=12934s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20260321",
-                "time": "04:43:40",
-                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=17020s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "ループ",
-        "artist": "坂本真綾",
-        "source": "ツバサ・クロニクル",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20240106",
-                "time": "05:06:50",
-                "link": "https://www.youtube.com/watch?v=WW38Wwhm46g&t=18410s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240511",
-                "time": "03:46:55",
-                "link": "https://www.youtube.com/watch?v=4UkUe2DaDGQ&t=13615s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20260321",
-                "time": "04:49:00",
-                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=17340s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20250517",
-                "time": "04:11:38",
-                "link": "https://www.youtube.com/watch?v=1RmXANp4b0I&t=15098s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20240915",
-                "time": "01:22:13",
-                "link": "https://www.youtube.com/watch?v=sw2v_L322yc&t=4933s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
             }
         ]
     },
@@ -8811,39 +9723,6 @@
         ]
     },
     {
-        "song_name": "マイ フレンド",
-        "artist": "ZARD",
-        "source": "SLAM DUNK",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250412",
-                "time": "06:18:00",
-                "link": "https://www.youtube.com/watch?v=SU06Cmm5xCs&t=22680s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20231209",
-                "time": "01:06:32",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=3992s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20231125",
-                "time": "07:21:30",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=26490s",
-                "is_member_exclusive": true,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
         "song_name": "SECRET AMBITION",
         "artist": "水樹奈々",
         "source": "魔法少女リリカルなのはStrikerS",
@@ -8956,31 +9835,6 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "あなただけ見つめてる",
-        "artist": "大黒摩季",
-        "source": "スラムダンク",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20231209",
-                "time": "00:43:00",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=2580s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20241026",
-                "time": "00:50:21",
-                "link": "https://www.youtube.com/watch?v=BulhDgGI_lY&t=3021s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
             }
         ]
     },
@@ -10200,87 +11054,6 @@
         ]
     },
     {
-        "song_name": "晴れてハレルヤ",
-        "artist": "奥井亜紀",
-        "source": "魔法陣グルグル",
-        "is_copyright": false,
-        "az": "は",
-        "dates": [
-            {
-                "date": "20250719",
-                "time": "00:51:23",
-                "link": "https://www.youtube.com/watch?v=zfOYWj9prDo&t=3083s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20241012",
-                "time": "01:06:15",
-                "link": "https://www.youtube.com/watch?v=AXCx3Yt5Va0&t=3975s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20240608",
-                "time": "01:17:34",
-                "link": "https://www.youtube.com/watch?v=UoMwNx3aklM&t=4654s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20260308",
-                "time": "04:18:25",
-                "link": "https://www.youtube.com/watch?v=0cbulxcivk8&t=15505s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20231125",
-                "time": "03:16:16",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=11776s",
-                "is_member_exclusive": true,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240308",
-                "time": "02:44:31",
-                "link": "https://www.youtube.com/watch?v=mfO62RxfZPU&t=9871s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20250315",
-                "time": "00:19:22",
-                "link": "https://www.youtube.com/watch?v=se6YFgRE_po&t=1162s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240410",
-                "time": "00:18:59",
-                "link": "https://www.youtube.com/watch?v=EUyxxgR0Kh4&t=1139s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20250301",
-                "time": "03:19:02",
-                "link": "https://www.youtube.com/watch?v=LD1a-tUMQ7g&t=11942s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
         "song_name": "花のささやき",
         "artist": "下成佐登子",
         "source": "小公女セーラ",
@@ -10910,23 +11683,6 @@
                 "date": "20241221",
                 "time": "04:43:48",
                 "link": "https://www.youtube.com/watch?v=iGytuGdRFog&t=17028s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "アシタノツバサ",
-        "artist": "石田燿子",
-        "source": "ブレイブウィッチーズ",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20241214",
-                "time": "02:11:03",
-                "link": "https://www.youtube.com/watch?v=SX5pWgl_Sxk&t=7863s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
@@ -12130,31 +12886,6 @@
         ]
     },
     {
-        "song_name": "Reweave",
-        "artist": "鈴木このみ",
-        "source": "Re:ゼロから始める異世界生活",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250507",
-                "time": "00:22:36",
-                "link": "https://www.youtube.com/watch?v=yNcKrESU2hU&t=1356s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20250118",
-                "time": "00:08:24",
-                "link": "https://www.youtube.com/watch?v=ZaEDNAxHAPk&t=504s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
         "song_name": "BOW AND ARROW",
         "artist": "米津玄師",
         "source": "メダリスト",
@@ -12855,31 +13586,6 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "泪のムコウ",
-        "artist": "ステレオポニー",
-        "source": "機動戦士ガンダム00",
-        "is_copyright": false,
-        "az": "な",
-        "dates": [
-            {
-                "date": "20241228",
-                "time": "01:23:01",
-                "link": "https://www.youtube.com/watch?v=DNUScSpLNGo&t=4981s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20240224",
-                "time": "03:31:23",
-                "link": "https://www.youtube.com/watch?v=8i9TOCJF8ps&t=12683s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
             }
         ]
     },
@@ -15937,31 +16643,6 @@
         ]
     },
     {
-        "song_name": "ユニバーページ",
-        "artist": "三森すずこ",
-        "source": "アウトブレイク・カンパニー",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20240928",
-                "time": "00:15:35",
-                "link": "https://www.youtube.com/watch?v=p2SJznZGFfA&t=935s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20250705",
-                "time": "06:54:56",
-                "link": "https://www.youtube.com/watch?v=UNhFtu7NrHw&t=24896s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
         "song_name": "絶対運命黙示録",
         "artist": "J.A.シーザー、杉並児童合唱団",
         "source": "少女革命ウテナ",
@@ -17897,23 +18578,6 @@
         ]
     },
     {
-        "song_name": "lulu.",
-        "artist": "Mrs. GREEN APPLE",
-        "source": "葬送のフリーレン(第2期)",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20260321",
-                "time": "03:33:23",
-                "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=12803s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
         "song_name": "やさしい両手",
         "artist": "三谷朋世",
         "source": ".hack//G.U.",
@@ -18868,23 +19532,6 @@
         ]
     },
     {
-        "song_name": "微笑みの爆弾",
-        "artist": "馬渡松子",
-        "source": "幽遊白書",
-        "is_copyright": false,
-        "az": "ほ",
-        "dates": [
-            {
-                "date": "20231125",
-                "time": "02:01:25",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=7285s",
-                "is_member_exclusive": true,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
         "song_name": "アンバランスなKiss",
         "artist": "高橋ひろ",
         "source": "幽遊白書",
@@ -18912,23 +19559,6 @@
                 "date": "20231125",
                 "time": "02:17:16",
                 "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=8236s",
-                "is_member_exclusive": true,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "太陽がまた輝くとき",
-        "artist": "高橋ひろ",
-        "source": "幽遊白書",
-        "is_copyright": false,
-        "az": "た",
-        "dates": [
-            {
-                "date": "20231125",
-                "time": "02:23:14",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=8594s",
                 "is_member_exclusive": true,
                 "is_acapella": false,
                 "is_private": false
@@ -19137,23 +19767,6 @@
                 "date": "20250831",
                 "time": "02:58:31",
                 "link": "https://www.youtube.com/watch?v=Y91SWo4ADS4&t=10711s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "ロ・ロ・ロ・ロシアン・ルーレット",
-        "artist": "中原めいこ",
-        "source": "ダーティペア",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250831",
-                "time": "03:16:17",
-                "link": "https://www.youtube.com/watch?v=Y91SWo4ADS4&t=11777s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -19927,23 +20540,6 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "迷い道",
-        "artist": "渡辺真知子",
-        "source": "",
-        "is_copyright": false,
-        "az": "ま",
-        "dates": [
-            {
-                "date": "20250517",
-                "time": "02:12:29",
-                "link": "https://www.youtube.com/watch?v=1RmXANp4b0I&t=7949s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
             }
         ]
     },
@@ -20958,47 +21554,6 @@
                 "date": "20240224",
                 "time": "04:50:30",
                 "link": "https://www.youtube.com/watch?v=8i9TOCJF8ps&t=17430s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "アイデンティティ",
-        "artist": "酒井ミキオ",
-        "source": "落第騎士の英雄譚",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250315",
-                "time": "00:57:10",
-                "link": "https://www.youtube.com/watch?v=tRCurzx2Abk&t=3430s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20240629",
-                "time": "01:29:14",
-                "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=5354s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20240120",
-                "time": "02:25:53",
-                "link": "https://www.youtube.com/watch?v=7aE23TsO07k&t=8753s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20260412",
-                "time": "01:54:55",
-                "link": "https://www.youtube.com/watch?v=Gcf_AxFhv8Q&t=6895s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -22439,39 +22994,6 @@
                 "is_member_exclusive": true,
                 "is_acapella": false,
                 "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "フライディ・チャイナタウン",
-        "artist": "泰葉",
-        "source": "",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20231118",
-                "time": "05:02:54",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=18174s",
-                "is_member_exclusive": true,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20241109",
-                "time": "00:33:17",
-                "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=1997s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20240621",
-                "time": "07:31:55",
-                "link": "https://www.youtube.com/watch?v=BF0gUXxv-SE&t=27115s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
             }
         ]
     },
@@ -23917,23 +24439,6 @@
         ]
     },
     {
-        "song_name": "THE DAY",
-        "artist": "ポルノグラフィティ",
-        "source": "僕のヒーローアカデミア",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20241109",
-                "time": "01:46:09",
-                "link": "https://www.youtube.com/watch?v=r5My_0Wa0kQ&t=6369s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
         "song_name": "ALL MY LOVE",
         "artist": "堀江由衣",
         "source": "陸上防衛隊まおちゃん",
@@ -24609,31 +25114,6 @@
         ]
     },
     {
-        "song_name": "カントリー・ロード",
-        "artist": "本名陽子",
-        "source": "耳をすませば",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20260207",
-                "time": "08:06:58",
-                "link": "https://www.youtube.com/watch?v=LWrTgm59MT8&t=29218s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240524",
-                "time": "01:48:59",
-                "link": "https://www.youtube.com/watch?v=1VxGGjlEBUU&t=6539s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
         "song_name": "ダーリン",
         "artist": "須田景凪",
         "source": "",
@@ -24872,23 +25352,6 @@
                 "date": "20240720",
                 "time": "00:24:16",
                 "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=1456s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "SHINY DAYS",
-        "artist": "亜咲花",
-        "source": "ゆるキャン△",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20240720",
-                "time": "00:39:40",
-                "link": "https://www.youtube.com/watch?v=lWzTB5itLBQ&t=2380s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
