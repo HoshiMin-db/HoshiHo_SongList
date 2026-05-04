@@ -50,8 +50,8 @@ jobs:
             echo "No changes to commit."
           else
             git commit -m "Update timeline files and exceptions.txt [skip ci]"
-            # 使用內建的 GITHUB_TOKEN 或直接推送到 main 即可，現代 Actions 多已自動處理驗證
             git push origin HEAD:main
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
