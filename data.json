@@ -2601,8 +2601,8 @@
         ]
     },
     {
-        "song_name": "大嫌い！",
-        "artist": "",
+        "song_name": "大嫌い！(What is this Feeling?)",
+        "artist": "劇団四季",
         "source": "ウィキッド ふたりの魔女",
         "is_copyright": false,
         "az": "だ",
@@ -2614,12 +2614,28 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20250329",
+                "time": "01:15:02",
+                "link": "https://www.youtube.com/watch?v=KaCBSXIgl-E&t=4502s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20251206",
+                "time": "01:49:01",
+                "link": "https://www.youtube.com/watch?v=QD7oNLRy-aU&t=6541s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
     {
-        "song_name": "ポピュラー",
-        "artist": "",
+        "song_name": "ポピュラー (Popular)",
+        "artist": "劇団四季",
         "source": "ウィキッド ふたりの魔女",
         "is_copyright": false,
         "az": null,
@@ -2631,6 +2647,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20250329",
+                "time": "00:26:22",
+                "link": "https://www.youtube.com/watch?v=KaCBSXIgl-E&t=1582s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
             }
         ]
     },
@@ -2694,7 +2718,7 @@
     },
     {
         "song_name": "アメフラシの歌 ～Beautiful Rain～",
-        "artist": "ニケ・ルメルシエ（CV：前田玲奈）",
+        "artist": "ニケ・ルメルシエ（前田玲奈）",
         "source": "それでも世界は美しい",
         "is_copyright": false,
         "az": null,
@@ -2727,7 +2751,7 @@
         ]
     },
     {
-        "song_name": "君ノ記憶(shortVer.)",
+        "song_name": "君ノ記憶",
         "artist": "Mao",
         "source": "薄桜鬼",
         "is_copyright": false,
@@ -2818,7 +2842,7 @@
         ]
     },
     {
-        "song_name": "光のアリア(アカペラ)",
+        "song_name": "光のアリア",
         "artist": "葦原ユノ starring yu-yu",
         "source": "GOD EATER 2",
         "is_copyright": false,
@@ -2829,7 +2853,7 @@
                 "time": "06:56:08",
                 "link": "https://www.youtube.com/watch?v=V69ylgRZeyM&t=24968s",
                 "is_member_exclusive": false,
-                "is_acapella": false,
+                "is_acapella": true,
                 "is_private": false
             }
         ]
@@ -2944,7 +2968,7 @@
     },
     {
         "song_name": "Deep in Abyss",
-        "artist": "リコ(CV:富田美憂)、レグ(CV:伊瀬茉莉也).",
+        "artist": "リコ(富田美憂)、レグ(伊瀬茉莉也).",
         "source": "メイドインアビス",
         "is_copyright": false,
         "az": null,
@@ -24000,23 +24024,6 @@
         ]
     },
     {
-        "song_name": "ポピュラー (popular)",
-        "artist": "劇団四季",
-        "source": "ウィキッド (Wicked)",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20250329",
-                "time": "00:26:22",
-                "link": "https://www.youtube.com/watch?v=KaCBSXIgl-E&t=1582s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
         "song_name": "Defying Gravity",
         "artist": "Idina Menzel, Kristin Chenoweth",
         "source": "Wicked",
@@ -24047,31 +24054,6 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "大嫌い！(What is this Feeling?)",
-        "artist": "劇団四季",
-        "source": "ウィキッド (Wicked)",
-        "is_copyright": false,
-        "az": "だ",
-        "dates": [
-            {
-                "date": "20250329",
-                "time": "01:15:02",
-                "link": "https://www.youtube.com/watch?v=KaCBSXIgl-E&t=4502s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20251206",
-                "time": "01:49:01",
-                "link": "https://www.youtube.com/watch?v=QD7oNLRy-aU&t=6541s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
             }
         ]
     },
