@@ -19083,7 +19083,7 @@
         ]
     },
     {
-        "song_name": "なぜ？謎？！ANSWER(TVサイズ)",
+        "song_name": "なぜ？謎？！ANSWER",
         "artist": "熊田茜音＆増井優花",
         "source": "名探偵プリキュア！",
         "is_copyright": false,
@@ -19093,6 +19093,14 @@
                 "date": "20260321",
                 "time": "07:44:18",
                 "link": "https://www.youtube.com/watch?v=yYOPjr5wbwI&t=27858s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20260509",
+                "time": "02:45:35",
+                "link": "https://www.youtube.com/watch?v=mfI-NkdSu5I&t=9935s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -21343,23 +21351,6 @@
                 "date": "20260509",
                 "time": "02:33:14",
                 "link": "https://www.youtube.com/watch?v=mfI-NkdSu5I&t=9194s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "なぜ？謎？！ANSWER",
-        "artist": "熊田茜音＆増井優花",
-        "source": "名探偵プリキュア！",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20260509",
-                "time": "02:45:35",
-                "link": "https://www.youtube.com/watch?v=mfI-NkdSu5I&t=9935s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
