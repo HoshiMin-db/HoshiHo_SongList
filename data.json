@@ -2407,6 +2407,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20240608",
+                "time": "03:27:40",
+                "link": "https://www.youtube.com/watch?v=UoMwNx3aklM&t=12460s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
             }
         ]
     },
@@ -9924,14 +9932,6 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
-            },
-            {
-                "date": "20240608",
-                "time": "03:27:40",
-                "link": "https://www.youtube.com/watch?v=UoMwNx3aklM&t=12460s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
             }
         ]
     },
