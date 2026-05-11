@@ -2409,6 +2409,14 @@
                 "is_private": false
             },
             {
+                "date": "20231209",
+                "time": "00:56:05",
+                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=3365s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20240608",
                 "time": "03:27:40",
                 "link": "https://www.youtube.com/watch?v=UoMwNx3aklM&t=12460s",
@@ -9912,23 +9920,6 @@
                 "date": "20231209",
                 "time": "00:30:39",
                 "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=1839s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "煌めく瞬間に捕らわれて",
-        "artist": "MANISH",
-        "source": "スラムダンク",
-        "is_copyright": false,
-        "az": "き",
-        "dates": [
-            {
-                "date": "20231209",
-                "time": "00:56:05",
-                "link": "https://www.youtube.com/watch?v=7RKz-HZmKns&t=3365s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
