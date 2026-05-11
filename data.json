@@ -2332,6 +2332,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20231125",
+                "time": "02:10:41",
+                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=7841s",
+                "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -19647,23 +19655,6 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "アンバランスなKiss",
-        "artist": "高橋ひろ",
-        "source": "幽遊白書",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20231125",
-                "time": "02:10:41",
-                "link": "https://www.youtube.com/watch?v=4Kcoy6ZH7uI&t=7841s",
-                "is_member_exclusive": true,
-                "is_acapella": false,
-                "is_private": false
             }
         ]
     },
