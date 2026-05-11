@@ -6917,6 +6917,14 @@
                 "is_private": false
             },
             {
+                "date": "20260509",
+                "time": "01:03:01",
+                "link": "https://www.youtube.com/watch?v=mfI-NkdSu5I&t=3781s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20240127",
                 "time": "02:19:59",
                 "link": "https://www.youtube.com/watch?v=kw8Ia8qEJ74&t=8399s",
@@ -7234,6 +7242,14 @@
                 "date": "20250816",
                 "time": "04:38:41",
                 "link": "https://www.youtube.com/watch?v=NpuPpDD08GM&t=16721s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20260509",
+                "time": "03:01:57",
+                "link": "https://www.youtube.com/watch?v=mfI-NkdSu5I&t=10917s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -8860,6 +8876,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20260509",
+                "time": "00:38:08",
+                "link": "https://www.youtube.com/watch?v=mfI-NkdSu5I&t=2288s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -9550,6 +9574,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20260509",
+                "time": "01:52:22",
+                "link": "https://www.youtube.com/watch?v=mfI-NkdSu5I&t=6742s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             },
             {
                 "date": "20240727",
@@ -11955,6 +11987,14 @@
                 "is_private": false
             },
             {
+                "date": "20260509",
+                "time": "03:58:55",
+                "link": "https://www.youtube.com/watch?v=mfI-NkdSu5I&t=14335s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20240224",
                 "time": "06:18:16",
                 "link": "https://www.youtube.com/watch?v=8i9TOCJF8ps&t=22696s",
@@ -12066,6 +12106,14 @@
                 "date": "20250809",
                 "time": "03:46:54",
                 "link": "https://www.youtube.com/watch?v=R3mP--Wbx0k&t=13614s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20260509",
+                "time": "03:47:18",
+                "link": "https://www.youtube.com/watch?v=mfI-NkdSu5I&t=13638s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -13487,6 +13535,14 @@
                 "is_private": true
             },
             {
+                "date": "20260509",
+                "time": "03:17:48",
+                "link": "https://www.youtube.com/watch?v=mfI-NkdSu5I&t=11868s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20240817",
                 "time": "00:16:00",
                 "link": "https://www.youtube.com/watch?v=4HSxenbiKVU&t=960s",
@@ -14450,6 +14506,14 @@
                 "date": "20260308",
                 "time": "04:38:48",
                 "link": "https://www.youtube.com/watch?v=0cbulxcivk8&t=16728s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20260509",
+                "time": "03:53:09",
+                "link": "https://www.youtube.com/watch?v=mfI-NkdSu5I&t=13989s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -18358,6 +18422,14 @@
                 "is_private": false
             },
             {
+                "date": "20260509",
+                "time": "01:44:26",
+                "link": "https://www.youtube.com/watch?v=mfI-NkdSu5I&t=6266s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20251206",
                 "time": "04:13:46",
                 "link": "https://www.youtube.com/watch?v=QD7oNLRy-aU&t=15226s",
@@ -21210,6 +21282,166 @@
         ]
     },
     {
+        "song_name": "嘆きノ森",
+        "artist": "彩音",
+        "source": "ひぐらしのなく頃に祭",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260509",
+                "time": "02:05:32",
+                "link": "https://www.youtube.com/watch?v=mfI-NkdSu5I&t=7532s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "コンプレックス・イマージュ",
+        "artist": "彩音",
+        "source": "ひぐらしのなく頃に祭",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260509",
+                "time": "02:11:52",
+                "link": "https://www.youtube.com/watch?v=mfI-NkdSu5I&t=7912s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "You",
+        "artist": "雪野五月",
+        "source": "ひぐらしのなく頃に",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260509",
+                "time": "02:19:57",
+                "link": "https://www.youtube.com/watch?v=mfI-NkdSu5I&t=8397s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "緋色の薔薇",
+        "artist": "霜月はるか",
+        "source": "レムルローズの魔女",
+        "is_copyright": false,
+        "az": "ひ",
+        "dates": [
+            {
+                "date": "20260509",
+                "time": "02:33:14",
+                "link": "https://www.youtube.com/watch?v=mfI-NkdSu5I&t=9194s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "なぜ？謎？！ANSWER",
+        "artist": "熊田茜音＆増井優花",
+        "source": "名探偵プリキュア！",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260509",
+                "time": "02:45:35",
+                "link": "https://www.youtube.com/watch?v=mfI-NkdSu5I&t=9935s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "七色シンフォニー",
+        "artist": "コアラモード",
+        "source": "四月は君の嘘",
+        "is_copyright": false,
+        "az": "な",
+        "dates": [
+            {
+                "date": "20260509",
+                "time": "02:55:02",
+                "link": "https://www.youtube.com/watch?v=mfI-NkdSu5I&t=10502s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "鏡の中のアクトレス",
+        "artist": "中原めいこ",
+        "source": "きまぐれオレンジロード",
+        "is_copyright": false,
+        "az": "か",
+        "dates": [
+            {
+                "date": "20260509",
+                "time": "03:26:56",
+                "link": "https://www.youtube.com/watch?v=mfI-NkdSu5I&t=12416s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20231118",
+                "time": "05:42:58",
+                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=20578s",
+                "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20231202",
+                "time": "02:31:57",
+                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=9117s",
+                "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240727",
+                "time": "05:26:21",
+                "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=19581s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            }
+        ]
+    },
+    {
+        "song_name": "NEVERLAND",
+        "artist": "松澤由美",
+        "source": "サモンナイト4",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260509",
+                "time": "03:41:27",
+                "link": "https://www.youtube.com/watch?v=mfI-NkdSu5I&t=13287s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
         "song_name": "翔べ！ガンダム",
         "artist": "池田鴻",
         "source": "機動戦士ガンダム",
@@ -23127,39 +23359,6 @@
                 "is_member_exclusive": true,
                 "is_acapella": false,
                 "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "鏡の中のアクトレス",
-        "artist": "中原めいこ",
-        "source": "きまぐれオレンジ☆ロード",
-        "is_copyright": false,
-        "az": "か",
-        "dates": [
-            {
-                "date": "20231118",
-                "time": "05:42:58",
-                "link": "https://www.youtube.com/watch?v=Qu_kdqLS4B4&t=20578s",
-                "is_member_exclusive": true,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20231202",
-                "time": "02:31:57",
-                "link": "https://www.youtube.com/watch?v=-veW1Hu-rTM&t=9117s",
-                "is_member_exclusive": true,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240727",
-                "time": "05:26:21",
-                "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=19581s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
             }
         ]
     },
