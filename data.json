@@ -7304,6 +7304,14 @@
                 "is_private": false
             },
             {
+                "date": "20260509",
+                "time": "02:55:02",
+                "link": "https://www.youtube.com/watch?v=mfI-NkdSu5I&t=10502s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20250315",
                 "time": "00:45:04",
                 "link": "https://www.youtube.com/watch?v=tRCurzx2Abk&t=2704s",
@@ -21342,23 +21350,6 @@
                 "date": "20260509",
                 "time": "02:33:14",
                 "link": "https://www.youtube.com/watch?v=mfI-NkdSu5I&t=9194s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "七色シンフォニー",
-        "artist": "コアラモード",
-        "source": "四月は君の嘘",
-        "is_copyright": false,
-        "az": "な",
-        "dates": [
-            {
-                "date": "20260509",
-                "time": "02:55:02",
-                "link": "https://www.youtube.com/watch?v=mfI-NkdSu5I&t=10502s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
