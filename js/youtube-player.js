@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
         VIDEO: 'video',
         MUSIC_TRACK: 'music_track'
     };
+    const YT_ALLOW_POLICIES = "autoplay; encrypted-media; fullscreen; picture-in-picture";
 
     // URL 驗證
     function isValidYouTubeURL(url) {
@@ -165,10 +166,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     : `${embedUrl}?autoplay=1`;
     
                 // 4. 動態替換容器內容[cite: 2]
-                // 注意：必須加入 allow="autoplay" 否則瀏覽器會封鎖自動播放
                 videoContainer.innerHTML = `
                     <iframe src="${finalUrl}" 
-                            allow="autoplay; encrypted-media; fullscreen" 
+                            allow="${YT_ALLOW_POLICIES}" 
                             allowfullscreen 
                             style="width: 100%; height: 100%; border: none;"></iframe>
                 `;
@@ -196,7 +196,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     
                     videoContainer.innerHTML = `
                         <iframe src="${finalUrl}" 
-                                allow="autoplay; encrypted-media; fullscreen" 
+                                allow="${YT_ALLOW_POLICIES}" 
                                 allowfullscreen 
                                 style="width: 100%; height: 100%; border: none;"></iframe>
                     `;
