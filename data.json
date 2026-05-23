@@ -11964,14 +11964,6 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
-            },
-            {
-                "date": "20240629",
-                "time": "06:18:59",
-                "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=22739s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
             }
         ]
     },
@@ -23522,6 +23514,23 @@
                 "date": "20240629",
                 "time": "05:40:10",
                 "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=20410s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            }
+        ]
+    },
+    {
+        "song_name": "ファティマ",
+        "artist": "いとうかなこ",
+        "source": "STEINS;GATE 0",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20240629",
+                "time": "06:18:59",
+                "link": "https://www.youtube.com/watch?v=B1ecI9nKdqc&t=22739s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
