@@ -22,7 +22,7 @@ navHome|歌單|Song List|歌曲リスト
 navDisc|專輯|Discography|作品リスト
 
 # --- Tag 過濾 (動態生成) ---
-filterByTag|篩選 Tag：|Filter by Tag：|タグでフィルター：
+filterByTag|Tag：|Tag：|タグ：
 allTags|全部|All|すべて
 Showa|昭和年代|Showa Era|昭和
 90s|90年代|1990s|90年代
