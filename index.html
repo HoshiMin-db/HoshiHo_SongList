@@ -23,6 +23,17 @@
         </div>
         <div class="search-container">
             <input type="text" id="searchInput" data-i18n="searchPlaceholder" placeholder="搜尋歌名、歌手、來源或日期(DDMMYYYY) ...">
+            <div class="tag-toggle-wrapper">
+                <button id="tagToggle" class="tag-toggle" aria-expanded="false" aria-label="Toggle tags">
+                    <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M2 2L8 7L14 2" stroke="#6a5acd" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="tags-filter-container collapsed" id="tagsFilterContainer">
+            <span data-i18n="filterByTag">篩選 Tag：</span>
+            <div id="tagButtons" class="tag-buttons"></div>
         </div>
         <div class="virtual-scroll-container" id="virtualScrollContainer">
             <div class="virtual-scroll-content" id="virtualScrollContent">
