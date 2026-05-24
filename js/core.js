@@ -32,6 +32,18 @@ window.updateUILS = function(lang) {
             else el.innerText = data[key];
         }
     });
+    
+    // 更新 tag buttons 的翻譯
+    const tagButtons = document.querySelectorAll('#tagButtons .tag-button');
+    if (tagButtons.length) {
+        tagButtons.forEach(button => {
+            const tag = button.dataset.tag || '';
+            button.textContent = tag
+                ? data[tag] || tag
+                : data['allTags'] || button.textContent;
+        });
+    }
+    
     document.documentElement.lang = lang;
 };
 
