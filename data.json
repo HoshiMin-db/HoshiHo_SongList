@@ -1053,7 +1053,7 @@
         ]
     },
     {
-        "song_name": "調和 oto~with reflection~",
+        "song_name": "調和 oto ～with reflection～",
         "artist": "KOKIA",
         "source": "",
         "is_copyright": false,
@@ -1066,6 +1066,30 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
+            },
+            {
+                "date": "20260308",
+                "time": "03:38:04",
+                "link": "https://www.youtube.com/watch?v=0cbulxcivk8&t=13084s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240524",
+                "time": "04:35:08",
+                "link": "https://www.youtube.com/watch?v=1VxGGjlEBUU&t=16508s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20240727",
+                "time": "02:39:02",
+                "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=9542s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
             }
         ]
     },
@@ -7133,39 +7157,6 @@
                 "is_member_exclusive": true,
                 "is_acapella": false,
                 "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "調和 oto ～with reflection～",
-        "artist": "KOKIA",
-        "source": "銀色の髪のアギト",
-        "is_copyright": false,
-        "az": "ち",
-        "dates": [
-            {
-                "date": "20260308",
-                "time": "03:38:04",
-                "link": "https://www.youtube.com/watch?v=0cbulxcivk8&t=13084s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240524",
-                "time": "04:35:08",
-                "link": "https://www.youtube.com/watch?v=1VxGGjlEBUU&t=16508s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            },
-            {
-                "date": "20240727",
-                "time": "02:39:02",
-                "link": "https://www.youtube.com/watch?v=z7ve2IVHUHw&t=9542s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
             }
         ]
     },
