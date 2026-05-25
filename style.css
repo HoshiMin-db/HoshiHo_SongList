@@ -125,26 +125,29 @@ a:hover {
     flex-shrink: 0;
     width: 40px;
     height: 40px;
+    padding: 6px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(106, 90, 205, 0.1);
+    background: white;
     border: 1px solid rgba(90,80,160,0.2);
     border-radius: 6px;
     cursor: pointer;
-    font-size: 24px; /* 放大骰子 emoji */
-    transition: background-color 0.15s ease, transform 0.12s ease;
-    box-shadow: 0 1px 3px rgba(106, 90, 205, 0.15); /* 讓陰影也稍微帶點主題色 */
+    transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.12s ease;
+    box-shadow: 0 1px 3px rgba(90,80,160,0.06);
 }
 
 .random-button:hover {
-    /* Hover 時讓背景色稍微加深到 20% */
-    background-color: rgba(106, 90, 205, 0.2); 
-    border-color: rgba(90,80,160,0.3); 
+    background-color: rgba(106, 90, 205, 0.08);
+    border-color: rgba(90,80,160,0.3);
 }
 
 .random-button:active {
     transform: scale(0.95);
+}
+
+.random-button svg {
+    display: block;
 }
 
 /* 標籤切換按鈕 (置中箭頭) */
@@ -376,6 +379,36 @@ td.dates-container-cell { width: 40%; }
 
 .acapella {
     background-color: #e0f7fa;
+}
+
+/* tags 樣式 - 曲名下一行，隱藏狀態 */
+.song-tags {
+        font-size: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 3px;
+        margin-top: 4px;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+    
+/* 滑鼠移入時顯示 */
+table tbody td:hover .song-tags {
+        max-height: 50px;
+        opacity: 1;
+        overflow: visible;
+}
+    
+.song-tag {
+        background-color: #8a80cd;
+        color: #ffffff;
+        padding: 2px 6px;
+        border-radius: 3px;
+        white-space: nowrap;
+        display: inline-block;
+        font-weight: 500;
 }
 
 /* ==================== 浮動播放器（index.html 用） ==================== */
