@@ -5,6 +5,7 @@ discography|🌟 HoshiHo 專輯 💐|🌟 HoshiHo Discography 💐|🌟 HoshiHo 
 totalSongs|總曲數：|Total Songs：|総曲数：
 searchPlaceholder|搜尋歌名、歌手、來源或日期(DDMMYYYY)...|Search song name, artist, source, or date (DDMMYYYY)...|曲名、歌手、出典、または日付(DDMMYYYY)を検索...
 az|A-Z|A-Z|A-Z
+randomBtn|隨機|Random|ランダム
 
 # --- index.html 表格標頭 ---
 songTitle|曲名|Song Title|曲名
