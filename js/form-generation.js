@@ -397,40 +397,30 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function sortTagsForDisplay(a, b) {
-        const priority = {
-            '昭和': 0,
-            'Showa': 0,
-            '90s': 1,
-            '00s': 2,
-            '10s': 3,
-            '20s': 4,
-            'Female': 5,
-            'Male': 6,
-            'female': 5,
-            'male': 6,
-            '女性': 5,
-            '男性': 6,
-            '男': 6,
-            '女': 5,
-        };
-
+        // 只定義需要固定在最前面的標籤順序
+        const tagOrder = [
+            'Showa',
+            '90s',
+            '00s',
+            '10s',
+            '20s',
+            'Female',
+            'Male',
+            'Anime',
+            'Game'
+        ];
+    
         const getPriority = (tag) => {
-            if (priority.hasOwnProperty(tag)) return priority[tag];
-            const lower = tag.toLowerCase();
-            if (lower === 'female' || lower === '女性' || lower === '女') return 5;
-            if (lower === 'male' || lower === '男性' || lower === '男') return 6;
-            if (/(昭和|Showa)/i.test(tag)) return 0;
-            if (/^90s$/i.test(tag)) return 1;
-            if (/^00s$/i.test(tag)) return 2;
-            if (/^10s$/i.test(tag)) return 3;
-            if (/^20s$/i.test(tag)) return 4;
-            return 100;
+            const index = tagOrder.indexOf(tag);
+            // 在名單內的照順序，不在名單內的一律給 999 丟到後面
+            return index !== -1 ? index : 999;
         };
-
+    
         const pa = getPriority(a);
         const pb = getPriority(b);
-        if (pa !== pb) return pa - pb;
-        return a.localeCompare(b, 'ja-JP');
+    
+        // 優先級不同就照優先級排；優先級相同（例如都是 999 的 genre）就自動按字母排序
+        return pa !== pb ? pa - pb : a.localeCompare(b, 'en');
     }
 
     function populateTagFilter(allTags) {
@@ -447,38 +437,40 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-// 統一過濾函數
+    // 統一過濾函數
     function applyFilters() {
-    const query = normalizeString(document.getElementById("searchInput").value.toLowerCase());
-
-    const filteredData = allData.filter((row) => {
-        let searchMatch = true;
-        let tagMatch = true;
-
-        if (selectedTags.size === 0) {
-            tagMatch = true;
-        } else {
-            tagMatch = Array.isArray(row.tags) && row.tags.some(t => selectedTags.has(t));
-        }
-
-        if (isValidDateFormat(query)) {
-            searchMatch = row.dates.some(
-                (date) =>
-                    date.date ===
-                    `${query.substring(4, 8)}${query.substring(2, 4)}${query.substring(0, 2)}`
-            );
-        } else if (query) {
-            searchMatch =
-                normalizeString(row.song_name).includes(query) ||
-                normalizeString(row.artist).includes(query) ||
-                normalizeString(row.source).includes(query);
-        }
-
-        return searchMatch && tagMatch;
-    });
-
-    displayData(filteredData);
-}
+        const query = normalizeString(document.getElementById("searchInput").value.toLowerCase());
+    
+        const filteredData = allData.filter((row) => {
+            let searchMatch = true;
+            let tagMatch = true;
+    
+            if (selectedTags.size === 0) {
+                tagMatch = true;
+            } else {
+                // 將 OR (some) 邏輯改為 AND (every) 邏輯
+                // 檢查 selectedTags 中的「每一個」標籤是否都包含在 row.tags 中
+                tagMatch = Array.isArray(row.tags) && Array.from(selectedTags).every(t => row.tags.includes(t));
+            }
+    
+            if (isValidDateFormat(query)) {
+                searchMatch = row.dates.some(
+                    (date) =>
+                        date.date ===
+                        `${query.substring(4, 8)}${query.substring(2, 4)}${query.substring(0, 2)}`
+                );
+            } else if (query) {
+                searchMatch =
+                    normalizeString(row.song_name).includes(query) ||
+                    normalizeString(row.artist).includes(query) ||
+                    normalizeString(row.source).includes(query);
+            }
+    
+            return searchMatch && tagMatch;
+        });
+    
+        displayData(filteredData);
+    }
     
 // 搜尋欄監聽
 if (searchInput) {
