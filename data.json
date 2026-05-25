@@ -3516,7 +3516,7 @@
         "song_name": "さよならの夏",
         "artist": "手嶌葵",
         "source": "コクリコ坂から",
-        "is_copyright": false,
+        "is_copyright": true,
         "az": null,
         "dates": [
             {
@@ -3872,7 +3872,7 @@
         "song_name": "硝子の少年",
         "artist": "キンキキッズ",
         "source": "",
-        "is_copyright": false,
+        "is_copyright": true,
         "az": "が",
         "dates": [
             {
@@ -24036,7 +24036,7 @@
         "song_name": "あいつこそがテニスの王子様",
         "artist": "",
         "source": "ミュージカル・テニスの王子様",
-        "is_copyright": false,
+        "is_copyright": true,
         "az": null,
         "dates": [
             {
