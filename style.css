@@ -128,8 +128,8 @@ a:hover {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(106, 90, 205, 0.1); 
-    border: none; /* 移除邊框，讓視覺更乾淨 */
+    background-color: rgba(106, 90, 205, 0.1);
+    border: 1px solid rgba(90,80,160,0.2);
     border-radius: 6px;
     cursor: pointer;
     font-size: 24px; /* 放大骰子 emoji */
@@ -140,6 +140,7 @@ a:hover {
 .random-button:hover {
     /* Hover 時讓背景色稍微加深到 20% */
     background-color: rgba(106, 90, 205, 0.2); 
+    border-color: rgba(90,80,160,0.3); 
 }
 
 .random-button:active {
