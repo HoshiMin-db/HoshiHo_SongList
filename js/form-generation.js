@@ -494,6 +494,11 @@ if (searchInput) {
     // 隨機按鈕功能
     const randomButton = document.getElementById('randomButton');
     if (randomButton) {
+        // 動態寫入 i18n 翻譯，若抓不到則給予預設值
+        const randomText = window.getTL('randomBtn') || '隨機';
+        randomButton.setAttribute('aria-label', randomText);
+        randomButton.title = randomText;
+        
         randomButton.addEventListener('click', () => {
             const songTable = document.getElementById('songTable');
             const tbody = songTable?.getElementsByTagName('tbody')[0];
