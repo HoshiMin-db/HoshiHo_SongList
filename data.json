@@ -261,11 +261,7 @@
                 "is_private": true
             }
         ],
-        "tags": [
-            "Showa",
-            "Female",
-            "Anime"
-        ]
+        "tags": []
     },
     {
         "song_name": "WHITE ALBUM Live at Campus Fes",
@@ -338,12 +334,7 @@
                 "is_private": true
             }
         ],
-        "tags": [
-            "10s",
-            "Female",
-            "Anime",
-            "Game"
-        ]
+        "tags": []
     },
     {
         "song_name": "おしえて",
@@ -2512,11 +2503,7 @@
                 "is_private": false
             }
         ],
-        "tags": [
-            "Showa",
-            "Male",
-            "Anime"
-        ]
+        "tags": []
     },
     {
         "song_name": "サイレント・ヴォイス",
@@ -4265,10 +4252,7 @@
                 "is_private": true
             }
         ],
-        "tags": [
-            "00s",
-            "Female"
-        ]
+        "tags": []
     },
     {
         "song_name": "花に亡霊",
@@ -8753,9 +8737,7 @@
                 "is_private": false
             }
         ],
-        "tags": [
-            "00s"
-        ]
+        "tags": []
     },
     {
         "song_name": "光の旋律",
@@ -14844,9 +14826,7 @@
                 "is_private": false
             }
         ],
-        "tags": [
-            "Musical"
-        ]
+        "tags": []
     },
     {
         "song_name": "What Is This Feeling?",
@@ -14864,7 +14844,9 @@
                 "is_private": true
             }
         ],
-        "tags": []
+        "tags": [
+            "Musical"
+        ]
     },
     {
         "song_name": "ポピュラー (popular)",
@@ -14910,7 +14892,9 @@
                 "is_private": true
             }
         ],
-        "tags": []
+        "tags": [
+            "Musical"
+        ]
     },
     {
         "song_name": "闇に生きる (No Good Deed)",
@@ -19364,7 +19348,9 @@
                 "is_private": false
             }
         ],
-        "tags": []
+        "tags": [
+            "Musical"
+        ]
     },
     {
         "song_name": "変わりものベル",
@@ -19661,7 +19647,10 @@
                 "is_private": false
             }
         ],
-        "tags": []
+        "tags": [
+            "00s",
+            "Female"
+        ]
     },
     {
         "song_name": "Torna a Surriento (帰れソレントへ)",
@@ -20581,7 +20570,9 @@
                 "is_private": true
             }
         ],
-        "tags": []
+        "tags": [
+            "00s"
+        ]
     },
     {
         "song_name": "Separation",
@@ -20848,7 +20839,12 @@
                 "is_private": false
             }
         ],
-        "tags": []
+        "tags": [
+            "10s",
+            "Female",
+            "Anime",
+            "Game"
+        ]
     },
     {
         "song_name": "幸せな記憶",
@@ -21238,7 +21234,11 @@
                 "is_private": false
             }
         ],
-        "tags": []
+        "tags": [
+            "00s",
+            "Female",
+            "Game"
+        ]
     },
     {
         "song_name": "Trio Dreams",
@@ -21935,7 +21935,11 @@
                 "is_private": false
             }
         ],
-        "tags": []
+        "tags": [
+            "Showa",
+            "Female",
+            "Anime"
+        ]
     },
     {
         "song_name": "嵐の素顔",
@@ -23077,7 +23081,11 @@
                 "is_private": true
             }
         ],
-        "tags": []
+        "tags": [
+            "Showa",
+            "Male",
+            "Anime"
+        ]
     },
     {
         "song_name": "ダイアの花",
