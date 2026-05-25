@@ -1007,4 +1007,4 @@ It's My Life|Bon Jovi|00s,Male
 君の知らない物語|supercell|00s,Female,Anime
 resonance|T.M.Revolution|00s,Anime
 Quel guardo il cavaliere|Gaetano Donizetti|Musical
-背中ごしにセンチメンタル|宮里久美|80s,Female,Anime
+背中ごしにセンチメンタル|宮里久美|Showa,Female,Anime
