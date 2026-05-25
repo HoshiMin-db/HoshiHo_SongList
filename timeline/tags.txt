@@ -390,7 +390,7 @@ UNDEAD|YOASOBI|20s,Female,Anime
 お願いジュンブライト|牧野由依|10s,Female
 Pale Blaze|米倉千尋|20s,Anime,Female
 禁断のパンセ|石塚早織|90s,Anime,Female
-MOMENT|国府田マリ子|90s,Female,Anime
+MOMENT|國府田マリ子|90s,Female,Anime
 笑顔に会いたい|濱田理恵|90s,Anime,Female
 スターダスト・ボーイズ|影山ヒロノブ|Showa,Male,Anime
 りりかSOS|麻生かほ里|90s,Female,Anime
