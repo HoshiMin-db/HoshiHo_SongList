@@ -498,4 +498,40 @@ if (searchInput) {
             tagsFilterContainer.classList.toggle('collapsed');
         });
     }
+
+    // 隨機按鈕功能
+    const randomButton = document.getElementById('randomButton');
+    if (randomButton) {
+        randomButton.addEventListener('click', () => {
+            const songTable = document.getElementById('songTable');
+            const tbody = songTable?.getElementsByTagName('tbody')[0];
+            
+            if (!tbody) return;
+            
+            const rows = tbody.getElementsByTagName('tr');
+            if (rows.length === 0) return;
+            
+            // 隨機選擇一行
+            const randomIndex = Math.floor(Math.random() * rows.length);
+            const selectedRow = rows[randomIndex];
+            
+            // 先移除之前的動畫類（如果存在）
+            if (selectedRow.classList.contains('blink-animation')) {
+                selectedRow.classList.remove('blink-animation');
+            }
+            
+            // 滾動該行到視圖中心
+            selectedRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // 等待滾動完成後再開始閃爍（滾動動畫約800ms）
+            setTimeout(() => {
+                selectedRow.classList.add('blink-animation');
+            }, 800);
+            
+            // 3秒後移除動畫類（動畫時長1s * 3 = 3s，加滾動延遲）
+            setTimeout(() => {
+                selectedRow.classList.remove('blink-animation');
+            }, 3800);
+        });
+    }
 });
