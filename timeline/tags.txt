@@ -4,8 +4,8 @@
 GATE OF STEINER|佐々木恵梨|10s,Female,Anime,Game
 薔薇は美しく散る|鈴木宏子|Showa,Female,Anime
 キャンディ キャンディ|堀江美都子、ザ・チャープス|Showa,Female,Anime
-WHITE ALBUM Live at Campus Fes|小木曽雪菜(米澤円)|10s,Female,Anime
-届かない恋 '13|上原れな|10s,Female,Anime
+WHITE ALBUM Live at Campus Fes|小木曽雪菜(米澤円)|10s,Female,Anime,Game
+届かない恋 '13|上原れな|10s,Female,Anime,Game
 おしえて|伊集加代子&ネリー・シュワルツ（ヨーデル）|Showa,Female,Anime
 アンインストール|石川智晶|00s,Female,Anime
 Armonico|Armony|Female,Folk,Original
@@ -49,7 +49,7 @@ First Kiss|ICHIKO|00s,Female,Anime
 I SAY YES|ICHIKO|00s,Female,Anime
 めぐる季節|井上あずみ|Showa,Female,Anime
 ルージュの伝言|松任谷由実|Showa,Female,Anime
-撲殺天使ドクロちゃん|ドクロちゃん(千葉紗子)|00s,Denpa,Female,Anime
+撲殺天使ドクロちゃん|ドクロちゃん(千葉紗子)|00s,Denpa,Female,Anime,Meme
 奈落の花|島みやえい子|00s,Female,Anime
 DANZEN！ふたりはプリキュア|五條真由美|00s,Female,Anime
 イェイ!イェイ!イェイ!|吉田仁美|10s,Female,Anime
@@ -288,7 +288,7 @@ Yes, I Will...|森川美穂|90s,Female,Anime
 バラライカ|月島きらり starring 久住小春(モーニング娘。)|00s,Female,Anime,Meme
 輪舞-revolution|奥井雅美|90s,Female,Anime
 檄！帝国華撃団＜新章＞|天宮さくら(佐倉綾音)、東雲初穂(内田真礼)、望月あざみ(山村響)、アナスタシア・パルマ(福原綾香)、クラリス(早見沙織)|20s,Game,Female,Anime,Wafuu,10s
-愛ゆえに|真宮寺さくら(横山智佐)＆マリア・タチバナ(高乃麗)|90s,Female,Game
+愛ゆえに|真宮寺さくら(横山智佐)＆マリア・タチバナ(高乃麗)|90s,Female,Game,Anime
 涙よ、Au revoir|エリカ・フォンティーヌ(日高のり子)|00s,Female,Game
 健全ロボ ダイミダラー|遠藤会|10s,Anime
 ババーンと推参！バーンブレイバーン|ブレイバーン(鈴村健一)|20s,Male,Anime
@@ -634,79 +634,79 @@ Sing My Pleasure|ヴィヴィ(Vo.八木海莉)|20s,Female,Anime
 Let it Snow! Let it Snow! Let it Snow!||
 メグメル|eufonius|00s,Female,Game
 Joyful! プリキュアクリスマス|春野はるか・海藤みなみ・星川きらら・紅城トワ|10s,Female,Anime
-奇跡の鐘|帝国歌劇団|00s,Female,Game
+奇跡の鐘|帝国歌劇団|00s,Female,Game,Anime
 花帰葬|志方あきこ|00s,Female,Game
-エルフ|Ado|
-PPAP(ペンパイナッポーアッポーペン)「ロング」バージョン|ピコ太郎|
-テトリス|柊マグネタイト|
-モニタリング|DECO*27|
-風のノー・リプライ|鮎川麻弥|
-にゃん酷なにゃんこのテーゼ|高橋洋子|
-シャアが来る|堀光一路|
-ダイアの花|より子|
-ドラえもんのうた|大杉久美子|
-恋人を射ち堕とした日|Sound Horizon|
-ラ♪ラ♪ラ♪スイートプリキュア♪|工藤真由|
-ワンダフル↑パワフル↑ミュージック!!|池田彩|
-Alright! ハートキャッチプリキュア!|工藤真由|
-Tomorrow Song 〜あしたのうた〜|工藤真由|
-Crow Song|Girls Dead Monster|
-My Soul,Your Beats!|Lia|
-Brave Song|多田葵|
-Little Busters! 〜TV animation ver.〜|Rita|
-Alicemagic|Rita|
-雨のち晴れ|Rita|
-Song for friends|Rita|
-遥か彼方|Rita|
-Boys be smile|鈴湯|
-目覚めた朝にはきみが隣に|鈴湯|
-猫と硝子と円い月|笹瀬川佐々美(民安ともえ)|
-Interstellar Journey|Lea Sirk|
-WHITE NIGHT|Jake Miller|
-Nameless Faces|幾田りら|
-Philosophyz|水谷瑠奈(NanosizeMir)|
-闇の彼方へ|水谷瑠奈(NanosizeMir)|
-ささやかなはじまり (TV animation Ver.)|水谷瑠奈(NanosizeMir)|
-Rewrite|サイキックラバー|
-アルカテイル|鈴木このみ|
-Lasting Moment|鈴木このみ|
-アスタロア|鈴木このみ|
-残酷な天使のテーゼ|高橋洋子|
-あんなに一緒だったのに|See-Saw|
-静かな夜に|ラクス・クライン(田中理恵)|
-僕たちの行方|高橋瞳|
-君は僕に似ている|See-Saw|
-AURORA|藍井エイル|
-オルフェンズの涙|MISIA|
-ロマンスの神様|広瀬香美|
-紅蓮の弓矢|Linked Horizon|
-狂乱 Hey Kids!!|THE ORAL CIGARETTES|
-IGNITE|藍井エイル|
-メリッサ|ポルノグラフィティ|
-嘆きノ森|彩音|
-コンプレックス・イマージュ|彩音|
-You|雪野五月|
-緋色の薔薇|霜月はるか|
-NEVERLAND|松澤由美|
-太陽が呼んでいる|加藤いづみ|
-YOU GET TO BURNING|松澤由美|
-踊|Ado|
-花になって|緑黄色社会|
-エルの絵本 【魔女とラフレンツェ】|Sound Horizon|
-煌めく瞬間に捕われて|MANISH|
-Let It Go|Idina Menzel|
-雷神の系譜|Sound Horizon|
-Synchrogazer|水樹奈々|
-プリキュア5、フル・スロットル GO GO!|工藤真由|
-ガンバランスdeダンス|五條真由美withフラッピ＆チョッピーズ|
-The Story of Us|milet|
-もってけ!セーラーふく|泉こなた(平野綾)、柊かがみ(加藤英美里)、柊つかさ(福原香織)、高良みゆき(遠藤綾)|
-ムリムリ進化論|ナナヲアカリ|
-アオとキラメキ|スピラ・スピカ|
-ロ・ロ・ロ・ロシアン・ルーレット|中原めいこ|
-Rumbling hearts|栗林みな実|
-Precious Memories|栗林みな実|
-星空のワルツ|栗林みな実|
+エルフ|Ado|20s,Female
+PPAP(ペンパイナッポーアッポーペン)「ロング」バージョン|ピコ太郎|10s,Male,Meme
+テトリス|柊マグネタイト|20s,Vocaloid
+モニタリング|DECO*27|20s,Vocaloid
+風のノー・リプライ|鮎川麻弥|Showa,Female,Anime
+にゃん酷なにゃんこのテーゼ|高橋洋子|20s,Female,Anime,Meme
+シャアが来る|堀光一路|Showa,Male,Anime
+ダイアの花|より子|00s,Female,Anime
+ドラえもんのうた|大杉久美子|Showa,Female,Anime
+恋人を射ち堕とした日|Sound Horizon|00s
+ラ♪ラ♪ラ♪スイートプリキュア♪|工藤真由|10s,Female,Anime
+ワンダフル↑パワフル↑ミュージック!!|池田彩|10s,Female,Anime
+Alright! ハートキャッチプリキュア!|工藤真由|10s,Female,Anime
+Tomorrow Song 〜あしたのうた〜|工藤真由|10s,Female,Anime
+Crow Song|Girls Dead Monster|10s,Female,Anime
+My Soul,Your Beats!|Lia|10s,Female,Anime
+Brave Song|多田葵|10s,Female,Anime
+Little Busters! 〜TV animation ver.〜|Rita|00s,Female,Game,Anime
+Alicemagic|Rita|00s,Female,Game
+雨のち晴れ|Rita|00s,Female,Game
+Song for friends|Rita|00s,Female,Game
+遥か彼方|Rita|00s,Female,Game
+Boys be smile|鈴湯|10s,Female,Game
+目覚めた朝にはきみが隣に|鈴湯|10s,Female,Game
+猫と硝子と円い月|笹瀬川佐々美(民安ともえ)|00s,Female,Game
+Interstellar Journey|Lea Sirk|10s,Female,Game
+WHITE NIGHT|Jake Miller|10s,Male,Game
+Nameless Faces|幾田りら|20s,Female,Game
+Philosophyz|水谷瑠奈(NanosizeMir)|00s,Female,Game
+闇の彼方へ|水谷瑠奈(NanosizeMir)|00s,Female,Game
+ささやかなはじまり (TV animation Ver.)|水谷瑠奈(NanosizeMir)|10s,Female,Anime
+Rewrite|サイキックラバー|00s,Male,Game
+アルカテイル|鈴木このみ|10s,Female,Game
+Lasting Moment|鈴木このみ|10s,Female,Game
+アスタロア|鈴木このみ|10s,Female,Game
+残酷な天使のテーゼ|高橋洋子|90s,Female,Anime
+あんなに一緒だったのに|See-Saw|00s,Female,Anime
+静かな夜に|ラクス・クライン(田中理恵)|00s,Female,Anime
+僕たちの行方|高橋瞳|00s,Female,Anime
+君は僕に似ている|See-Saw|00s,Female,Anime
+AURORA|藍井エイル|10s,Female,Anime
+オルフェンズの涙|MISIA|10s,Female,Anime
+ロマンスの神様|広瀬香美|90s,Female
+紅蓮の弓矢|Linked Horizon|10s,,Anime
+狂乱 Hey Kids!!|THE ORAL CIGARETTES|10s,Male,Anime
+IGNITE|藍井エイル|10s,Female,Anime
+メリッサ|ポルノグラフィティ|00s,Male,Anime
+嘆きノ森|彩音|00s,Female,Game
+コンプレックス・イマージュ|彩音|00s,Female,Game
+You|雪野五月|00s,Female,Game,Anime
+緋色の薔薇|霜月はるか|00s,Female,Game
+NEVERLAND|松澤由美|00s,Female,Anime
+太陽が呼んでいる|加藤いづみ|90s,Female,Game
+YOU GET TO BURNING|松澤由美|90s,Female,Anime
+踊|Ado|20s,Female
+花になって|緑黄色社会|20s,Female,Anime
+エルの絵本 【魔女とラフレンツェ】|Sound Horizon|00s
+煌めく瞬間に捕われて|MANISH|90s,Female,Anime
+Let It Go|Idina Menzel|10s,Female
+雷神の系譜|Sound Horizon|00s
+Synchrogazer|水樹奈々|10s,Female,Anime
+プリキュア5、フル・スロットル GO GO!|工藤真由|00s,Female,Anime
+ガンバランスdeダンス|五條真由美withフラッピ＆チョッピーズ|00s,Female,Anime
+The Story of Us|milet|20s,Female,Anime
+もってけ!セーラーふく|泉こなた(平野綾)、柊かがみ(加藤英美里)、柊つかさ(福原香織)、高良みゆき(遠藤綾)|00s,Female,Anime
+ムリムリ進化論|ナナヲアカリ|20s,Female,Anime
+アオとキラメキ|スピラ・スピカ|20s,Female,Anime
+ロ・ロ・ロ・ロシアン・ルーレット|中原めいこ|Showa,Female,Anime
+Rumbling hearts|栗林みな実|00s,Female,Game,Anime
+Precious Memories|栗林みな実|00s,Female,Anime,Game
+星空のワルツ|栗林みな実|00s,Female,Anime
 片翼のイカロス|榊原ゆい|
 魔女と旋律の街|Fty|
 BOW AND ARROW|米津玄師|
