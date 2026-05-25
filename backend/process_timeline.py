@@ -98,6 +98,26 @@ def load_headers(headers_file):
         print(f"Warning: {headers_file} not found.")
     return headers_dict
 
+def load_tags(tags_file):
+    """從tags.txt讀取tags標籤"""
+    tags_map = {}
+    try:
+        with open(tags_file, 'r', encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                if line:
+                    parts = line.split('|')
+                    if len(parts) >= 3:
+                        song_name = parts[0]
+                        artist = parts[1]
+                        tags_str = parts[2]
+                        # 使用相同的 normalize_key 函數來匹配
+                        key = (normalize_key(song_name), normalize_key(artist))
+                        tags_map[key] = [t.strip() for t in tags_str.split(',') if t.strip()]
+    except FileNotFoundError:
+        print(f"Warning: {tags_file} not found.")
+    return tags_map
+
 def get_song_header(song_name, headers_dict):
     """判斷歌曲名稱的首字屬於哪個假名分類"""
     if not song_name:
@@ -218,7 +238,8 @@ def process_timeline(file_path, date_str, member_exclusive_dates, private_dates,
                         'source': source,
                         'is_copyright': is_copyright,
                         'az': get_song_header(song_name, headers_dict),
-                        'dates': []
+                        'dates': [],
+                        'tags': []  # 新增：初始化 tags 欄位
                     }
 
                 date_info = {
@@ -242,6 +263,7 @@ def main():
     exceptions_file = os.path.join(timeline_dir, 'exceptions.txt')
     acapella_file = os.path.join(timeline_dir, 'acapella.txt')
     headers_file = os.path.join(timeline_dir, 'headers.txt')
+    tags_file = os.path.join(timeline_dir, 'tags.txt')
     all_data = {}
 
     print("Starting process_timeline.py")
@@ -249,6 +271,10 @@ def main():
     # 讀取headers檔案
     headers_dict = load_headers(headers_file)
     print(f"Loaded headers dictionary with {len(headers_dict)} entries")
+    
+    # 讀取tags檔案
+    tags_map = load_tags(tags_file)
+    print(f"Loaded tags map with {len(tags_map)} entries")
     
     # 讀取例外規則
     member_exclusive_dates, private_dates, private_ids, copyright_songs = load_exceptions(exceptions_file)
@@ -260,7 +286,7 @@ def main():
     
     file_count = 0
     for filename in os.listdir(timeline_dir):
-        if filename in ['exceptions.txt', 'headers.txt', 'acapella.txt']:
+        if filename in ['exceptions.txt', 'headers.txt', 'acapella.txt', 'tags.txt']:
             continue
             
         file_path = os.path.join(timeline_dir, filename)
@@ -300,6 +326,13 @@ def main():
     
     print(f"Processed {file_count} files")
     print(f"Total unique songs: {len(all_data)}")
+
+    # 將 tags 加入到最終資料中（從 tags_map 查詢）
+    for key, song_data in all_data.items():
+        if key in tags_map:
+            song_data['tags'] = tags_map[key]
+        else:
+            song_data['tags'] = []
     
     # 輸出最終資料
     try:
