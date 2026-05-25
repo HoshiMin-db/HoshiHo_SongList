@@ -6469,7 +6469,7 @@
                 "time": "01:39:55",
                 "link": "https://www.youtube.com/watch?v=-babzJz1Zgk&t=5995s",
                 "is_member_exclusive": false,
-                "is_acapella": true,
+                "is_acapella": false,
                 "is_private": false
             }
         ]
