@@ -61,7 +61,7 @@ a:hover {
 }
 
 .main-content.shifted {
-    margin-left: clamp(160px, 30vw, 320px); /* match sidebar.expanded width */
+    margin-left: clamp(160px, 12vw, 200px); /* match sidebar.expanded width */
 }
 
 /* ==================== 頁面頭部 ==================== */
@@ -738,7 +738,7 @@ td.dates-container-cell { width: 40%; }
 }
 
 .sidebar.expanded {
-    width: clamp(160px, 30vw, 320px);
+    width: clamp(160px, 12vw, 200px);
 }
 
 .hamburger {
