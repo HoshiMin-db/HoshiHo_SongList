@@ -59,25 +59,32 @@ def get_all_video_ids():
 def update_exceptions_file(deleted_video_ids):
     """更新 exceptions.txt 文件"""
     try:
-        # 讀取現有的 exceptions.txt
-        existing_content = {}
+        # 讀取現有的 exceptions.txt（保留重複鍵與原有順序）
+        existing_lines = []  # list of (key, value) tuples
         if os.path.exists('timeline/exceptions.txt'):
             with open('timeline/exceptions.txt', 'r', encoding='utf-8') as f:
                 for line in f:
                     if '|' in line:
                         key, value = line.strip().split('|', 1)
-                        existing_content[key] = value
+                        existing_lines.append((key, value))
 
-        # 更新或添加已刪除影片的 ID
+        # 更新或添加已刪除影片的 ID：如果存在則取代該行，否則附加到檔尾
         deleted_ids_str = ','.join(sorted(deleted_video_ids))
-        existing_content['private_id'] = deleted_ids_str
+        replaced = False
+        for i, (k, v) in enumerate(existing_lines):
+            if k == 'private_id':
+                existing_lines[i] = ('private_id', deleted_ids_str)
+                replaced = True
+                break
+        if not replaced:
+            existing_lines.append(('private_id', deleted_ids_str))
 
         # 寫回文件，保持原有順序並確保換行正確
         with open('timeline/exceptions.txt', 'w', encoding='utf-8') as f:
-            for key, value in existing_content.items():
+            for key, value in existing_lines:
                 f.write(f"{key}|{value}\n")
-                
-        print(f"已更新 exceptions.txt，新增 {len(deleted_video_ids)} 個已刪除影片ID")
+
+        print(f"已更新 exceptions.txt，新增/更新 {len(deleted_video_ids)} 個已刪除影片ID")
     except Exception as e:
         print(f"更新 exceptions.txt 時發生錯誤: {e}")
 
