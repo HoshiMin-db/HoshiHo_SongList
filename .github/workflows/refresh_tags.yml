@@ -3,6 +3,9 @@ name: Refresh Tags from data.json
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   refresh-tags:
     runs-on: ubuntu-latest
