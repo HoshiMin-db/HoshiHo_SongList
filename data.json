@@ -16155,6 +16155,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20260523",
+                "time": "03:26:20",
+                "link": "https://www.youtube.com/watch?v=-babzJz1Zgk&t=12380s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -21130,7 +21138,7 @@
         ]
     },
     {
-        "song_name": "True My Heart(short.ver)",
+        "song_name": "True My Heart",
         "artist": "佐倉紗織",
         "source": "Nursery Rhyme - ナーサリィ☆ライム -",
         "is_copyright": false,
@@ -21274,23 +21282,6 @@
                 "date": "20260523",
                 "time": "03:18:54",
                 "link": "https://www.youtube.com/watch?v=-babzJz1Zgk&t=11934s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "バーチャルスター発生学(short ver)",
-        "artist": "上谷麻紀",
-        "source": "少女革命ウテナ",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20260523",
-                "time": "03:26:20",
-                "link": "https://www.youtube.com/watch?v=-babzJz1Zgk&t=12380s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
