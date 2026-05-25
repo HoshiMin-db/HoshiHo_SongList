@@ -602,7 +602,7 @@ UFO|ピンク・レディー|Showa,Female
 イミテイション・ゴールド|山口百恵|Showa,Female
 ひと夏の経験|山口百恵|Showa,Female
 嵐の素顔|工藤静香|Showa,Female
-プリンプリン物語|石川ひとみ|Showa,Female,Anim
+プリンプリン物語|石川ひとみ|Showa,Female,Anime
 恋はみずいろ|ポール・モーリア|Showa
 ラムのラブソング|松谷祐子|Showa,Female,Anime
 君の瞳に恋してる|Boys Town Gang|Showa
