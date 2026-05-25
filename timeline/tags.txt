@@ -3,9 +3,7 @@
 光と影を抱きしめたまま|田村直美|90s,Female,Anime
 GATE OF STEINER|佐々木恵梨|10s,Female,Anime,Game
 薔薇は美しく散る|鈴木宏子|Showa,Female,Anime
-キャンディ キャンディ|堀江美都子、ザ・チャープス|Showa,Female,Anime
 WHITE ALBUM Live at Campus Fes|小木曽雪菜(米澤円)|10s,Female,Anime,Game
-届かない恋 '13|上原れな|10s,Female,Anime,Game
 おしえて|伊集加代子&ネリー・シュワルツ（ヨーデル）|Showa,Female,Anime
 アンインストール|石川智晶|00s,Female,Anime
 Armonico|Armony|Female,Folk,Original
@@ -27,7 +25,6 @@ Agape|メロキュア|00s,Female,Anime
 BLACK DIAMOND|ほしな歌唄(CV.水樹奈々)|00s,Female,Anime
 バルカローレ|河井英里|00s,Female,Anime
 コッコロ|河井英里|00s,Female,Anime
-調和 oto~with reflection~|KOKIA|00s,Female,Anime
 時を刻む唄|Lia|00s,Female,Anime
 夢想歌|Suara|00s,Female,Anime,Folk
 君だけの旅路|Suara|00s,Female,Game,Folk
@@ -59,7 +56,6 @@ DANZEN！ふたりはプリキュア|五條真由美|00s,Female,Anime
 Ζ・刻をこえて|鮎川麻弥|Showa,Female,Anime
 星空のBelieve|鮎川麻弥|Showa,Female,Anime
 水の星へ愛をこめて|森口博子|Showa,Female,Anime
-アニメじゃない～夢を忘れた古い地球人よ～|新井正人|Showa,Male,Anime
 サイレント・ヴォイス|ひろえ純|Showa,Female,Anime
 復活のイデオン|たいらいさお|Showa,Male,Anime
 コスモスに君と|戸田恵子|Showa,Female,Anime
@@ -102,7 +98,7 @@ promise|広瀬香美|90s,Female,Meme
 secret base 〜君がくれたもの〜|ZONE|00s,Female,Anime
 ブルーバード|いきものがかり|00s,Female,Anime
 金魚花火|大塚 愛|00s,Female
-さくらんぼ|大塚 愛|00s,Female
+さくらんぼ|大塚愛|00s,Female
 花に亡霊|ヨルシカ|20s,Female,Anime
 恋愛サーキュレーション|千石撫子(花澤香菜)|00s,Female,Anime
 チキチキバンバン|QUEENDOM|20s,Anime,Meme
@@ -180,23 +176,19 @@ Weiß ～幻想への誘い～|霜月はるか†Revo(Sound Horizon)|00s,Female
 Schwarzweiß 〜霧の向こうに繋がる世界〜|霜月はるか†Revo(Sound Horizon)|00s,Female,Game
 心に届く詩|Lia|00s,Female,Game
 Heart-shaped chant|水樹奈々|00s,Female,Game
-夢は終わらない 〜こぼれ落ちる時の雫〜|吉田由香里|90s,Female,Game
 誰ガ為ノ世界|志方あきこ|10s,Female,Game
 Lilium|野間久美子|00s,Female,Anime
-調和 oto 〜with reflection〜|KOKIA|00s,Female,Anime
 御旗のもとに|巴里華撃団|00s,Game
 Give a Reason|林原めぐみ|90s,Female,Anime
 晴れてハレルヤ|奥井亜紀|90s,Female,Anime
-Wind Climbing 〜風にあそばれて〜|奥井亜紀|90s,Female,Anime
 奇跡の海|坂本真綾|90s,Female,Anime
 悠久の翼|原田ひとみ|00s,Female,Game
 白夜|松本英子|00s,Female,Anime
 澪音の世界|Sound Horizon|00s
-エルの絵本 【笛吹き男とパレード】|Sound Horizon|00s
+エルの絵本【笛吹き男とパレード】|Sound Horizon|00s
 光の旋律|Kalafina|10s,Female,Anime
 Reweave|鈴木このみ|10s,Female,Anime
 NOX LUX|MYTH & ROID|20s,Anime
-OPEN YOUR MIND 〜小さな羽根ひろげて〜|石田燿子|00s,Female,Anime
 群青|YOASOBI|20s,Female
 ココナッツの片想い|中原めいこ|Showa,Female
 そばかす|JUDY AND MARY|90s,Female,Anime
@@ -240,7 +232,6 @@ You Raise Me Up|Celtic Woman|00s,Female
 終端の王と異世界の騎士 ～The Endia & The Knights～|Sound Horizon|00s
 EXEC_PHANTASMAGORIA/.|みとせのりこ、志方あきこ、霜月はるか|00s,Female,Game
 EXEC_COSMOFLIPS/.|KOKIA|10s,Female,Game
-フクロウ 〜フクロウが知らせる客が来たと〜|KOKIA|00s,Female
 すずめ feat.十明|RADWIMPS|20s,Female,Anime
 pastel pure|ALI PROJECT|00s,Female,Anime
 いつも夢見て|劇団四季|Musical
@@ -372,10 +363,7 @@ WANNA BE AN ANGEL|新居昭乃|90s,Female,Anime
 風のファンタジア|Sherry|00s,Anime
 愛・おぼえていますか|飯島真理|Showa,Anime
 グッド・ニュース (No One Mourns the Wicked)|劇団四季|Musical
-魔法使いと私 (The Wizard and I)|劇団四季|Musical
-What Is This Feeling?||Anime
 ポピュラー (popular)|劇団四季|Musical
-Defying Gravity||Anime
 闇に生きる (No Good Deed)|劇団四季|Musical
 大嫌い！(What is this Feeling?)|劇団四季|Musical
 人生を踊り明かせ (Dancing Through Life)|劇団四季|Musical
@@ -578,7 +566,6 @@ ONENESS HARMONY|オルケリア|20s,Female,Anime
 PHANTOM MINDS|水樹奈々|10s,Female,Anime
 BRIGHT STREAM|水樹奈々|10s,Female,Anime
 Divine Spell|TRUE|10s,Female,Anime
-True My Heart(ショート)|佐倉紗織|00s,Female,Game
 Trio Dreams|キュアアイドル(松岡美里)・キュアウインク(髙橋ミナミ)・キュアキュンキュン(高森奈津美)|20s,Female,Anime
 カントリー・ロード|本名陽子|90s,Female,Anime
 勇者|YOASOBI|20s,Female,Anime
@@ -1008,21 +995,18 @@ It's My Life|Bon Jovi|00s,Male
 resonance|T.M.Revolution|00s,Anime
 Quel guardo il cavaliere|Gaetano Donizetti|Musical
 背中ごしにセンチメンタル|宮里久美|Showa,Female,Anime
-調和 oto ～with reflection～|KOKIA|
-夢は終わらない ～こぼれ落ちる時の雫～|吉田由香里|
-Wind Climbing ～風にあそばれて～|奥井亜紀|
-OPEN YOUR MIND ～小さな羽根ひろげて～|石田燿子|
-フクロウ ～フクロウが知らせる客が来たと～|KOKIA|
-What Is This Feeling?|Idina Menzel, Kristin Chenoweth|
-Defying Gravity|Idina Menzel, Kristin Chenoweth|
-魔法使いと私(The Wizard and I)|劇団四季|
-さくらんぼ|大塚愛|
-エルの絵本【笛吹き男とパレード】|Sound Horizon|
-届かない恋'13|上原れな|
-True My Heart|佐倉紗織|
-キャンディキャンディ|堀江美都子、ザ・チャープス|
-アニメじゃない ～夢を忘れた古い地球人よ～|新井正人|
-MOMENT|國府田マリ子|
+調和 oto ～with reflection～|KOKIA|00s,Female,Anime
+夢は終わらない ～こぼれ落ちる時の雫～|吉田由香里|90s,Female,Game
+Wind Climbing ～風にあそばれて～|奥井亜紀|90s,Female,Anime
+OPEN YOUR MIND ～小さな羽根ひろげて～|石田燿子|00s,Female,Anime
+フクロウ ～フクロウが知らせる客が来たと～|KOKIA|00s,Female
+What Is This Feeling?|Idina Menzel, Kristin Chenoweth|Musical
+Defying Gravity|Idina Menzel, Kristin Chenoweth|Musical
+魔法使いと私(The Wizard and I)|劇団四季|Musical
+届かない恋'13|上原れな|10s,Female,Anime,Game
+True My Heart|佐倉紗織|00s,Female,Game
+キャンディキャンディ|堀江美都子、ザ・チャープス|Showa,Female,Anime
+アニメじゃない ～夢を忘れた古い地球人よ～|新井正人|Showa,Male,Anime
 風のアンセム(feat. suis from ヨルシカ)|Eve|
 エルの楽園 ［→ side：A →］|Sound Horizon|
 プリティ・ケーキ・マジック|kaede+Cheek Fairy|
