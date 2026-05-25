@@ -3341,6 +3341,14 @@
                 "is_private": true
             },
             {
+                "date": "20260523",
+                "time": "01:29:12",
+                "link": "https://www.youtube.com/watch?v=-babzJz1Zgk&t=5352s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20241130",
                 "time": "00:19:23",
                 "link": "https://www.youtube.com/watch?v=m-6mCT8Z3Bo&t=1163s",
@@ -3508,7 +3516,7 @@
         "song_name": "さよならの夏",
         "artist": "手嶌葵",
         "source": "コクリコ坂から",
-        "is_copyright": true,
+        "is_copyright": false,
         "az": null,
         "dates": [
             {
@@ -3864,7 +3872,7 @@
         "song_name": "硝子の少年",
         "artist": "キンキキッズ",
         "source": "",
-        "is_copyright": true,
+        "is_copyright": false,
         "az": "が",
         "dates": [
             {
@@ -3912,6 +3920,14 @@
                 "date": "20251206",
                 "time": "07:36:16",
                 "link": "https://www.youtube.com/watch?v=QD7oNLRy-aU&t=27376s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20260523",
+                "time": "04:15:07",
+                "link": "https://www.youtube.com/watch?v=-babzJz1Zgk&t=15307s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
@@ -6447,6 +6463,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": true,
                 "is_private": false
+            },
+            {
+                "date": "20260523",
+                "time": "01:39:55",
+                "link": "https://www.youtube.com/watch?v=-babzJz1Zgk&t=5995s",
+                "is_member_exclusive": false,
+                "is_acapella": true,
+                "is_private": false
             }
         ]
     },
@@ -7279,6 +7303,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20260523",
+                "time": "01:34:02",
+                "link": "https://www.youtube.com/watch?v=-babzJz1Zgk&t=5642s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             },
             {
                 "date": "20240524",
@@ -10524,6 +10556,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20260523",
+                "time": "03:01:57",
+                "link": "https://www.youtube.com/watch?v=-babzJz1Zgk&t=10917s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             },
             {
                 "date": "20240629",
@@ -13915,6 +13955,14 @@
                 "is_private": true
             },
             {
+                "date": "20260523",
+                "time": "00:38:13",
+                "link": "https://www.youtube.com/watch?v=-babzJz1Zgk&t=2293s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20240608",
                 "time": "04:40:41",
                 "link": "https://www.youtube.com/watch?v=UoMwNx3aklM&t=16841s",
@@ -15238,6 +15286,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20260523",
+                "time": "00:20:23",
+                "link": "https://www.youtube.com/watch?v=-babzJz1Zgk&t=1223s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -17207,6 +17263,14 @@
                 "is_member_exclusive": true,
                 "is_acapella": true,
                 "is_private": false
+            },
+            {
+                "date": "20260523",
+                "time": "04:09:26",
+                "link": "https://www.youtube.com/watch?v=-babzJz1Zgk&t=14966s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             }
         ]
     },
@@ -18597,6 +18661,14 @@
                 "is_private": true
             },
             {
+                "date": "20260523",
+                "time": "02:46:58",
+                "link": "https://www.youtube.com/watch?v=-babzJz1Zgk&t=10018s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
                 "date": "20250705",
                 "time": "06:05:50",
                 "link": "https://www.youtube.com/watch?v=UNhFtu7NrHw&t=21950s",
@@ -18644,6 +18716,14 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
+            },
+            {
+                "date": "20260523",
+                "time": "02:34:09",
+                "link": "https://www.youtube.com/watch?v=-babzJz1Zgk&t=9249s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
             },
             {
                 "date": "20260228",
@@ -21033,6 +21113,233 @@
         ]
     },
     {
+        "song_name": "MOMENT",
+        "artist": "國府田マリ子",
+        "source": "ママレード・ボーイ",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260523",
+                "time": "00:57:25",
+                "link": "https://www.youtube.com/watch?v=-babzJz1Zgk&t=3445s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "True My Heart(short.ver)",
+        "artist": "佐倉紗織",
+        "source": "Nursery Rhyme - ナーサリィ☆ライム -",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260523",
+                "time": "01:10:16",
+                "link": "https://www.youtube.com/watch?v=-babzJz1Zgk&t=4216s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "風のアンセム(feat. suis from ヨルシカ)",
+        "artist": "Eve",
+        "source": "とんがり帽子のアトリエ",
+        "is_copyright": false,
+        "az": "か",
+        "dates": [
+            {
+                "date": "20260523",
+                "time": "01:21:58",
+                "link": "https://www.youtube.com/watch?v=-babzJz1Zgk&t=4918s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "記憶の海",
+        "artist": "yozuca*",
+        "source": "School Days",
+        "is_copyright": false,
+        "az": "き",
+        "dates": [
+            {
+                "date": "20260523",
+                "time": "02:04:58",
+                "link": "https://www.youtube.com/watch?v=-babzJz1Zgk&t=7498s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20250816",
+                "time": "07:28:50",
+                "link": "https://www.youtube.com/watch?v=NpuPpDD08GM&t=26930s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240209",
+                "time": "02:58:33",
+                "link": "https://www.youtube.com/watch?v=kMAS4-EXsps&t=10713s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "エルの絵本 【魔女とラフレンツェ】",
+        "artist": "Sound Horizon",
+        "source": "Elysion ～楽園幻想物語組曲～",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260523",
+                "time": "02:21:14",
+                "link": "https://www.youtube.com/watch?v=-babzJz1Zgk&t=8474s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20240608",
+                "time": "01:45:45",
+                "link": "https://www.youtube.com/watch?v=UoMwNx3aklM&t=6345s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            }
+        ]
+    },
+    {
+        "song_name": "Sacrifice",
+        "artist": "Sound Horizon",
+        "source": "Elysion ～楽園幻想物語組曲～",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260523",
+                "time": "02:40:10",
+                "link": "https://www.youtube.com/watch?v=-babzJz1Zgk&t=9610s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20231104",
+                "time": "00:56:22",
+                "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=3382s",
+                "is_member_exclusive": true,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "エルの楽園 ［→ side：A →］",
+        "artist": "Sound Horizon",
+        "source": "Elysion ～楽園幻想物語組曲～",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260523",
+                "time": "02:52:20",
+                "link": "https://www.youtube.com/watch?v=-babzJz1Zgk&t=10340s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "絶対運命黙示録・完全版",
+        "artist": "杉並児童合唱団",
+        "source": "少女革命ウテナ",
+        "is_copyright": false,
+        "az": "ぜ",
+        "dates": [
+            {
+                "date": "20260523",
+                "time": "03:18:54",
+                "link": "https://www.youtube.com/watch?v=-babzJz1Zgk&t=11934s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "バーチャルスター発生学(short ver)",
+        "artist": "上谷麻紀",
+        "source": "少女革命ウテナ",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260523",
+                "time": "03:26:20",
+                "link": "https://www.youtube.com/watch?v=-babzJz1Zgk&t=12380s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "fairytale",
+        "artist": "Kalafina",
+        "source": "空の境界(第六章)",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260523",
+                "time": "03:37:20",
+                "link": "https://www.youtube.com/watch?v=-babzJz1Zgk&t=13040s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            },
+            {
+                "date": "20260329",
+                "time": "01:48:20",
+                "link": "https://www.youtube.com/watch?v=fG1ugxfO35A&t=6500s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
+        "song_name": "プリティ・ケーキ・マジック",
+        "artist": "kaede+Cheek Fairy",
+        "source": "わがまま☆フェアリー ミルモでポン!",
+        "is_copyright": false,
+        "az": null,
+        "dates": [
+            {
+                "date": "20260523",
+                "time": "03:54:42",
+                "link": "https://www.youtube.com/watch?v=-babzJz1Zgk&t=14082s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": false
+            }
+        ]
+    },
+    {
         "song_name": "踊",
         "artist": "Ado",
         "source": "",
@@ -21076,23 +21383,6 @@
                 "date": "20250322",
                 "time": "00:17:02",
                 "link": "https://www.youtube.com/watch?v=2ioVSgO5mHk&t=1022s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
-            }
-        ]
-    },
-    {
-        "song_name": "エルの絵本 【魔女とラフレンツェ】",
-        "artist": "Sound Horizon",
-        "source": "",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20240608",
-                "time": "01:45:45",
-                "link": "https://www.youtube.com/watch?v=UoMwNx3aklM&t=6345s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
@@ -23764,7 +24054,7 @@
         "song_name": "あいつこそがテニスの王子様",
         "artist": "",
         "source": "ミュージカル・テニスの王子様",
-        "is_copyright": true,
+        "is_copyright": false,
         "az": null,
         "dates": [
             {
@@ -25698,31 +25988,6 @@
         ]
     },
     {
-        "song_name": "記憶の海",
-        "artist": "yozuca*",
-        "source": "School Days(アニメ)",
-        "is_copyright": false,
-        "az": "き",
-        "dates": [
-            {
-                "date": "20250816",
-                "time": "07:28:50",
-                "link": "https://www.youtube.com/watch?v=NpuPpDD08GM&t=26930s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            },
-            {
-                "date": "20240209",
-                "time": "02:58:33",
-                "link": "https://www.youtube.com/watch?v=kMAS4-EXsps&t=10713s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
         "song_name": "海色",
         "artist": "AKINO from bless4",
         "source": "艦隊これくしょん - 艦これ - (アニメ)",
@@ -26713,23 +26978,6 @@
         ]
     },
     {
-        "song_name": "fairytale",
-        "artist": "Kalafina",
-        "source": "空の境界",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20260329",
-                "time": "01:48:20",
-                "link": "https://www.youtube.com/watch?v=fG1ugxfO35A&t=6500s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
         "song_name": "Perseus - ペルセウス -",
         "artist": "島谷ひとみ",
         "source": "野球烈闘",
@@ -27071,23 +27319,6 @@
                 "date": "20231104",
                 "time": "00:38:06",
                 "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=2286s",
-                "is_member_exclusive": true,
-                "is_acapella": false,
-                "is_private": false
-            }
-        ]
-    },
-    {
-        "song_name": "Sacrifice",
-        "artist": "Sound Horizon",
-        "source": "",
-        "is_copyright": false,
-        "az": null,
-        "dates": [
-            {
-                "date": "20231104",
-                "time": "00:56:22",
-                "link": "https://www.youtube.com/watch?v=BSfIfNwkkIk&t=3382s",
                 "is_member_exclusive": true,
                 "is_acapella": false,
                 "is_private": false
