@@ -54,7 +54,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    margin-left: 60px;          
+    margin-left: clamp(48px, 12vw, 200px); /* match sidebar proportional width */
     padding: 20px;
     box-sizing: border-box;
     overflow: hidden;
@@ -724,7 +724,8 @@ td.dates-container-cell { width: 40%; }
 
 /* ==================== Sidebar 樣式 ==================== */
 .sidebar {
-    width: 50px;
+    /* scale sidebar width proportionally instead of fixed 50px */
+    width: clamp(48px, 12vw, 200px);
     height: 100vh;
     position: fixed;
     left: 0;
@@ -733,11 +734,11 @@ td.dates-container-cell { width: 40%; }
     border-right: 1px solid #e9ecef;
     transition: width 0.3s ease;
     z-index: 1000;
-    overflow: hidden;
+    overflow: visible; /* allow language selector visibility without scroll */
 }
 
 .sidebar.expanded {
-    width: 180px;
+    width: clamp(160px, 30vw, 320px);
 }
 
 .hamburger {
@@ -873,6 +874,7 @@ td.dates-container-cell { width: 40%; }
 @media screen and (max-width: 600px) {
     body {
         padding: 0;
+        overflow: auto;
     }
 
     .main-content {
