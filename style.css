@@ -39,6 +39,17 @@ a:hover {
     text-decoration: underline;
 }
 
+/* ==================== 動畫 ==================== */
+@keyframes blink {
+    0% { background-color: inherit; }
+    50% { background-color: #fff3cd; }
+    100% { background-color: inherit; }
+}
+
+.blink-animation {
+    animation: blink 1s ease-in-out 0s 3 forwards;
+}
+
 /* ==================== 主容器 ==================== */
 #app-container {
     display: flex;
@@ -94,17 +105,49 @@ a:hover {
 .search-container {
     position: relative;
     padding-bottom: 32px; /* give room for the absolutely positioned toggle */
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 #searchInput {
-    width: 100%;
+    flex: 1;
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 0;
     box-sizing: border-box;
     border: 2px solid #ddd;
     border-radius: 4px;
     font-size: 16px;
     transition: border-color 0.3s ease;
+}
+
+.random-button {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: 1px solid rgba(90,80,160,0.2);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.12s ease;
+    box-shadow: 0 1px 3px rgba(90,80,160,0.06);
+}
+
+.random-button:hover {
+    background-color: rgba(106, 90, 205, 0.08);
+    border-color: rgba(90,80,160,0.3);
+}
+
+.random-button:active {
+    transform: scale(0.95);
+}
+
+.random-button svg {
+    display: block;
 }
 
 /* 標籤切換按鈕 (置中箭頭) */
