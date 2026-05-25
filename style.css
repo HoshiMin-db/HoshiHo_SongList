@@ -54,14 +54,14 @@ a:hover {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    margin-left: clamp(48px, 12vw, 200px); /* match sidebar proportional width */
+    margin-left: 48px; /* match sidebar default width */
     padding: 20px;
     box-sizing: border-box;
     overflow: hidden;
 }
 
 .main-content.shifted {
-    margin-left: 200px;
+    margin-left: clamp(160px, 30vw, 320px); /* match sidebar.expanded width */
 }
 
 /* ==================== 頁面頭部 ==================== */
@@ -724,8 +724,8 @@ td.dates-container-cell { width: 40%; }
 
 /* ==================== Sidebar 樣式 ==================== */
 .sidebar {
-    /* scale sidebar width proportionally instead of fixed 50px */
-    width: clamp(48px, 12vw, 200px);
+    /* default: only show hamburger */
+    width: 48px;
     height: 100vh;
     position: fixed;
     left: 0;
