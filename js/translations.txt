@@ -39,3 +39,4 @@ Denpa|電波|Denpa song|電波ソング
 Meme|搞笑|Meme song|ネタ枠
 Wafuu|和風|Japanese-style|和風
 Musical|音樂劇|Musical|ミュージカル
+Touhou|東方|Touhou|東方
