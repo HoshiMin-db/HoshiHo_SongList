@@ -891,7 +891,7 @@ td.dates-container-cell { width: 40%; }
     }
 
     .virtual-scroll-container {
-        max-height: 55vh;
+        max-height: min(80vh, 720px);
     }
 
     .category-title {
