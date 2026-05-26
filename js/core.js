@@ -43,6 +43,13 @@ window.updateUILS = function(lang) {
                 : data['allTags'] || button.textContent;
         });
     }
+
+    // 更新隨機按鈕的翻譯
+    const randomButton = document.getElementById('randomButton');
+    if (randomButton && data['randomBtn']) {
+        randomButton.setAttribute('aria-label', data['randomBtn']);
+        randomButton.title = data['randomBtn'];
+    }
     
     document.documentElement.lang = lang;
 };
