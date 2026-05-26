@@ -271,6 +271,29 @@ table {
     table-layout: fixed;
 }
 
+/* 虛擬滾動修復 */
+table tbody {
+    position: relative;
+}
+
+/* 虛擬占位符行 */
+table tbody tr[style*="height"] {
+    border: none;
+    background: transparent;
+    pointer-events: none;
+}
+
+table tbody tr[style*="height"] td {
+    border: none;
+    padding: 0;
+    height: 100%;
+}
+
+/* 虛擬占位符中的 tags 隱藏 */
+table tbody tr[style*="height"] .song-tags {
+    display: none;
+}
+
 table, th, td {
     border: 1px solid #ddd;
 }
@@ -375,32 +398,41 @@ td.dates-container-cell { width: 40%; }
 
 /* tags 樣式 - 曲名下一行，隱藏狀態 */
 .song-tags {
-        font-size: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 3px;
-        margin-top: 4px;
-        max-height: 0;
-        overflow: hidden;
-        opacity: 0;
-        transition: max-height 0.3s ease, opacity 0.3s ease;
+    font-size: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    margin-top: 4px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    position: relative;
+    z-index: 5;
 }
-    
-/* 滑鼠移入時顯示 */
-table tbody td:hover .song-tags {
-        max-height: 50px;
-        opacity: 1;
-        overflow: visible;
+
+/* 滑鼠移入時顯示 - 改用 tr:hover */
+table tbody tr:hover .song-tags {
+    max-height: 50px;
+    opacity: 1;
+    overflow: visible;
 }
-    
+
+/* 懸停時提升層級 */
+table tbody tr:hover {
+    position: relative;
+    z-index: 10;
+}
+
 .song-tag {
-        background-color: #8a80cd;
-        color: #ffffff;
-        padding: 2px 6px;
-        border-radius: 3px;
-        white-space: nowrap;
-        display: inline-block;
-        font-weight: 500;
+    background-color: #8a80cd;
+    color: #ffffff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    white-space: nowrap;
+    display: inline-block;
+    font-weight: 500;
+    flex-shrink: 0;
 }
 
 /* ==================== 浮動播放器（index.html 用） ==================== */
