@@ -148,6 +148,15 @@ function createDateCell(row) {
     return dateCell;
 }
 
+// 新增：翻譯 tag 文本的函數
+function getTagTranslation(tag) {
+    // 使用 core.js 提供的 getTL 函數
+    if (window.getTL && typeof window.getTL === 'function') {
+        return window.getTL(tag) || tag;
+    }
+    return tag;
+}
+
 // 創建表格行
 function createTableRow(item, numDates) {
     const newRow = document.createElement("tr");
@@ -155,12 +164,39 @@ function createTableRow(item, numDates) {
     const initialCell = newRow.insertCell();
     initialCell.textContent = item.az || item.song_name.charAt(0).toUpperCase();
 
+    // 曲名儲存格
     const songNameCell = newRow.insertCell();
-    songNameCell.textContent = item.song_name;
-
+    
+    // 曲名容器
+    const songNameContainer = document.createElement("div");
+    
+    // 曲名
+    const songTitle = document.createElement("div");
+    songTitle.textContent = item.song_name;
+    
     if (item.is_copyright) {
-        songNameCell.style.color = "red";
+        songTitle.style.color = "red";
     }
+    
+    songNameContainer.appendChild(songTitle);
+    
+    // 添加 tags 到下一行（隱藏狀態）
+    if (item.tags && item.tags.length > 0) {
+        const tagsDiv = document.createElement("div");
+        tagsDiv.className = "song-tags";
+        
+        item.tags.forEach(tag => {
+            const tagSpan = document.createElement("span");
+            tagSpan.className = "song-tag";
+            tagSpan.dataset.originalTag = tag;
+            tagSpan.textContent = getTagTranslation(tag);
+            tagsDiv.appendChild(tagSpan);
+        });
+        
+        songNameContainer.appendChild(tagsDiv);
+    }
+    
+    songNameCell.appendChild(songNameContainer);
 
     newRow.insertCell().textContent = item.artist;
     newRow.insertCell().textContent = item.source || "";
@@ -178,7 +214,7 @@ function createTableRow(item, numDates) {
 
     // 創建日期容器單元格
     const datesContainerCell = newRow.insertCell();
-    datesContainerCell.className = 'dates-container-cell';  // 添加這行
+    datesContainerCell.className = 'dates-container-cell';
     datesContainerCell.colSpan = numDates + 1;
 
     // 創建可滾動的日期容器
@@ -283,11 +319,21 @@ document.addEventListener("DOMContentLoaded", function () {
     const searchInput = document.getElementById("searchInput");
     let allData = [];
     let totalSongCount = 0; // 新增：儲存總曲目數的變數
+    let selectedTags = new Set();
 
     async function fetchData() {
         try {
             const response = await fetch("data.json", { cache: "no-cache" });
             const data = await response.json();
+            
+            // 直接使用 data.json 中的 tags 欄位
+            // 如果 tags 為 undefined 或 null，設為空陣列
+            data.forEach(song => {
+                if (!song.tags || !Array.isArray(song.tags)) {
+                    song.tags = [];
+                }
+            });
+            
             allData = data;
 
             // 計算總曲目數（只在初次載入時計算一次）
@@ -307,41 +353,215 @@ document.addEventListener("DOMContentLoaded", function () {
             if (songCountElement) {
                 songCountElement.textContent = totalSongCount;
             }
+            
+            // 動態生成 tag 按鈕選項
+            const allTags = [...new Set(
+                data.flatMap(song => song.tags || [])
+            )];
+            allTags.sort(sortTagsForDisplay);
+            populateTagFilter(allTags);
         } catch (error) {
             console.error("Error fetching data:", error);
         }
     }
 
-    if (searchInput) {
-        searchInput.addEventListener(
-            "input",
-            debounce(function (e) {
-                const query = normalizeString(e.target.value.toLowerCase());
+    function updateTagSelection(tag) {
+        // 支援多選：空字串代表「全部」，會清除所有選擇
+        if (!tag) {
+            selectedTags.clear();
+        } else {
+            if (selectedTags.has(tag)) selectedTags.delete(tag);
+            else selectedTags.add(tag);
+        }
 
-                if (isValidDateFormat(query)) {
-                    const filteredData = allData.filter((row) =>
-                        row.dates.some(
-                            (date) =>
-                                date.date ===
-                                `${query.substring(4, 8)}${query.substring(
-                                    2,
-                                    4
-                                )}${query.substring(0, 2)}`
-                        )
-                    );
-                    displayData(filteredData);
-                } else {
-                    const filteredData = allData.filter(
-                        (row) =>
-                            normalizeString(row.song_name).includes(query) ||
-                            normalizeString(row.artist).includes(query) ||
-                            normalizeString(row.source).includes(query)
-                    );
-                    displayData(filteredData);
-                }
-            }, 800)
-        );
+        document.querySelectorAll('#tagButtons .tag-button').forEach(button => {
+            const t = button.dataset.tag;
+            if (!t) {
+                // 全部按鈕在沒有任何選擇時為 selected
+                button.classList.toggle('selected', selectedTags.size === 0);
+            } else {
+                button.classList.toggle('selected', selectedTags.has(t));
+            }
+        });
+    }
+
+    function createTagButton(tag) {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'tag-button';
+        button.dataset.tag = tag;
+        // 使用 getTL 函數翻譯按鈕文本
+        button.textContent = tag ? window.getTL(tag) || tag : window.getTL('allTags') || '全部';
+
+        // 初始 selected 樣式
+        if (!tag) {
+            if (selectedTags.size === 0) button.classList.add('selected');
+        } else if (selectedTags.has(tag)) {
+            button.classList.add('selected');
+        }
+
+        button.addEventListener('click', () => {
+            updateTagSelection(tag);
+            applyFilters();
+        });
+        return button;
+    }
+
+    function sortTagsForDisplay(a, b) {
+        // 只定義需要固定在最前面的標籤順序
+        const tagOrder = [
+            'Showa',
+            '90s',
+            '00s',
+            '10s',
+            '20s',
+            'Female',
+            'Male',
+            'Anime',
+            'Game'
+        ];
+    
+        const getPriority = (tag) => {
+            const index = tagOrder.indexOf(tag);
+            // 在名單內的照順序，不在名單內的一律給 999 丟到後面
+            return index !== -1 ? index : 999;
+        };
+    
+        const pa = getPriority(a);
+        const pb = getPriority(b);
+    
+        // 優先級不同就照優先級排；優先級相同（例如都是 999 的 genre）就自動按字母排序
+        return pa !== pb ? pa - pb : a.localeCompare(b, 'en');
+    }
+
+    function populateTagFilter(allTags) {
+        const tagButtons = document.getElementById('tagButtons');
+        if (!tagButtons) return;
+
+        tagButtons.innerHTML = '';
+
+        // 先加入「全部」按鈕
+        tagButtons.appendChild(createTagButton(''));
+
+        allTags.forEach(tag => {
+            tagButtons.appendChild(createTagButton(tag));
+        });
+    }
+
+    // 統一過濾函數
+    function applyFilters() {
+        const query = normalizeString(document.getElementById("searchInput").value.toLowerCase());
+    
+        const filteredData = allData.filter((row) => {
+            let searchMatch = true;
+            let tagMatch = true;
+    
+            if (selectedTags.size === 0) {
+                tagMatch = true;
+            } else {
+                // 將 OR (some) 邏輯改為 AND (every) 邏輯
+                // 檢查 selectedTags 中的「每一個」標籤是否都包含在 row.tags 中
+                tagMatch = Array.isArray(row.tags) && Array.from(selectedTags).every(t => row.tags.includes(t));
+            }
+    
+            if (isValidDateFormat(query)) {
+                searchMatch = row.dates.some(
+                    (date) =>
+                        date.date ===
+                        `${query.substring(4, 8)}${query.substring(2, 4)}${query.substring(0, 2)}`
+                );
+            } else if (query) {
+                searchMatch =
+                    normalizeString(row.song_name).includes(query) ||
+                    normalizeString(row.artist).includes(query) ||
+                    normalizeString(row.source).includes(query);
+            }
+    
+            return searchMatch && tagMatch;
+        });
+    
+        displayData(filteredData);
+    }
+    
+    // 搜尋欄監聽
+    if (searchInput) {
+        searchInput.addEventListener("input", debounce(applyFilters, 800));
     }
 
     fetchData();
-});
+
+    // 標籤顯示/隱藏切換按鈕
+    const tagToggle = document.getElementById('tagToggle');
+    const tagsFilterContainer = document.getElementById('tagsFilterContainer');
+    if (tagToggle && tagsFilterContainer) {
+        tagToggle.addEventListener('click', () => {
+            const isExpanded = tagToggle.getAttribute('aria-expanded') === 'true';
+            // 翻轉狀態
+            tagToggle.setAttribute('aria-expanded', String(!isExpanded));
+            tagsFilterContainer.classList.toggle('collapsed');
+        });
+    }
+
+    // 隨機按鈕功能
+    const randomButton = document.getElementById('randomButton');
+    if (randomButton) {
+        // 動態寫入 i18n 翻譯，若抓不到則給予預設值
+        const randomText = window.getTL('randomBtn') || '隨機';
+        randomButton.setAttribute('aria-label', randomText);
+        randomButton.title = randomText;
+        
+        randomButton.addEventListener('click', () => {
+            const songTable = document.getElementById('songTable');
+            const tbody = songTable?.getElementsByTagName('tbody')[0];
+            
+            if (!tbody) return;
+            
+            const rows = tbody.getElementsByTagName('tr');
+            if (rows.length === 0) return;
+            
+            // 隨機選擇一行
+            const randomIndex = Math.floor(Math.random() * rows.length);
+            const selectedRow = rows[randomIndex];
+            
+            // 先移除之前的動畫類（如果存在）
+            if (selectedRow.classList.contains('blink-animation')) {
+                selectedRow.classList.remove('blink-animation');
+            }
+            
+            // 滾動該行到視圖中心
+            selectedRow.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            // 等待滾動完成後再開始閃爍（滾動動畫約800ms）
+            setTimeout(() => {
+                selectedRow.classList.add('blink-animation');
+            }, 800);
+            
+            // 3秒後移除動畫類（動畫時長1s * 3 = 3s，加滾動延遲）
+            setTimeout(() => {
+                selectedRow.classList.remove('blink-animation');
+            }, 3800);
+        });
+    }
+    
+    // 新增：當語言改變時，更新所有 tags 顯示
+    const originalOnLanguageChange = window.onLanguageChange;
+    window.onLanguageChange = function(newLang) {
+        if (originalOnLanguageChange) {
+            originalOnLanguageChange(newLang);
+        }
+        
+        // 更新表格中所有的 tags 翻譯
+        document.querySelectorAll('.song-tag').forEach(tagSpan => {
+            const originalTag = tagSpan.dataset.originalTag;
+            if (originalTag) {
+                tagSpan.textContent = getTagTranslation(originalTag);
+            }
+        });
+        
+        // 更新過濾按鈕的翻譯
+        document.querySelectorAll('#tagButtons .tag-button').forEach(button => {
+            const tag = button.dataset.tag;
+            button.textContent = tag ? window.getTL(tag) || tag : window.getTL('allTags') || '全部';
+        });
+    };
+})
