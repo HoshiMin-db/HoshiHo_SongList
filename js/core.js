@@ -28,12 +28,19 @@ window.updateUILS = function(lang) {
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
         if (data[key]) {
-            if (el.tagName === 'INPUT') el.placeholder = data[key];
-            else el.innerText = data[key];
+            // 檢查是否為特殊按鈕（只更新 aria-label，不改顯示文字）
+            if (el.id === 'randomButton') {
+                el.setAttribute('aria-label', data[key]);
+                el.title = data[key];
+            } else if (el.tagName === 'INPUT') {
+                el.placeholder = data[key];
+            } else {
+                el.innerText = data[key];
+            }
         }
     });
     
-    // 更新 tag buttons 的翻譯
+    // 更新 tag buttons 的翻譯（替換顯示文字）
     const tagButtons = document.querySelectorAll('#tagButtons .tag-button');
     if (tagButtons.length) {
         tagButtons.forEach(button => {
@@ -42,13 +49,6 @@ window.updateUILS = function(lang) {
                 ? data[tag] || tag
                 : data['allTags'] || button.textContent;
         });
-    }
-
-    // 更新隨機按鈕的翻譯
-    const randomButton = document.getElementById('randomButton');
-    if (randomButton && data['randomBtn']) {
-        randomButton.setAttribute('aria-label', data['randomBtn']);
-        randomButton.title = data['randomBtn'];
     }
     
     document.documentElement.lang = lang;
