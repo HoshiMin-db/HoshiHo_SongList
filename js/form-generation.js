@@ -99,9 +99,6 @@ class VirtualScrollManager {
         this.lastRenderedStart = -1;
         this.domRowsMap = new Map();  // ← 快取行映射
         
-        // 設置 tbody 為容器（不用 position:absolute）
-        this.tbody.style.position = 'relative';
-        
         this.scrollContainer.addEventListener('scroll', () => this.handleScroll(), { passive: true });
         window.addEventListener('resize', () => this.recalculateVisible());
     }
@@ -157,6 +154,12 @@ class VirtualScrollManager {
             const rowData = this.displayedRowsData[i];
             const row = createTableRow(rowData, 3);
             row.dataset.rowIndex = i;
+            
+            // 根據真實的資料陣列索引來上色
+            if (i % 2 !== 0) {
+                row.classList.add('even-row');
+            }
+            
             this.tbody.appendChild(row);
             this.domRowsMap.set(i, row);
         }
