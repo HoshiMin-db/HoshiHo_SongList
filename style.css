@@ -272,10 +272,6 @@ table {
 }
 
 /* 虛擬滾動修復 */
-table tbody {
-    position: relative;
-}
-
 /* 虛擬占位符行 */
 table tbody tr[style*="height"] {
     border: none;
@@ -322,7 +318,7 @@ td {
     position: relative;
 }
 
-tr:nth-child(even) {
+tr.even-row {
     background-color: #f9f9f9;
 }
 
@@ -411,17 +407,10 @@ td.dates-container-cell { width: 40%; }
     z-index: 5;
 }
 
-/* 滑鼠移入時顯示 - 改用 tr:hover */
-table tbody tr:hover .song-tags {
+table tbody td:hover .song-tags {
     max-height: 50px;
     opacity: 1;
     overflow: visible;
-}
-
-/* 懸停時提升層級 */
-table tbody tr:hover {
-    position: relative;
-    z-index: 10;
 }
 
 .song-tag {
