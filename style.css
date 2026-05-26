@@ -98,13 +98,10 @@ a:hover {
     margin-bottom: 20px;
     background: white;
     padding: 20px;
+    padding-bottom: 32px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-/* make container relative so toggle can be positioned outside */
-.search-container {
     position: relative;
-    padding-bottom: 32px; /* give room for the absolutely positioned toggle */
     display: flex;
     align-items: center;
     gap: 10px;
@@ -268,7 +265,6 @@ a:hover {
 table {
     width: 100%;
     max-width: 100%;
-    width: 100%;
     border-collapse: collapse;
     background: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
