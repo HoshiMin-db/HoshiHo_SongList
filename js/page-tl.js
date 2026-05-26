@@ -77,6 +77,13 @@ function setLanguage(lang) {
     const searchInput = document.getElementById('searchInput');
     if (searchInput) searchInput.placeholder = data['searchPlaceholder'];
 
+    // 隨機按鈕翻譯
+    const randomButton = document.getElementById('randomButton');
+    if (randomButton) {
+        randomButton.setAttribute('aria-label', data['randomBtn']);
+        randomButton.title = data['randomBtn'];
+    }
+
     // 表格標題防錯
     const thAz = document.querySelector('th.az');
     if (thAz) thAz.innerText = data['az'];
