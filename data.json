@@ -3725,11 +3725,7 @@
                 "is_private": false
             }
         ],
-        "tags": [
-            "00s",
-            "Female",
-            "Anime"
-        ]
+        "tags": []
     },
     {
         "song_name": "運命 -SADAME-",
@@ -8051,7 +8047,8 @@
         "tags": [
             "10s",
             "Female",
-            "Game"
+            "Game",
+            "Folk"
         ]
     },
     {
@@ -10271,7 +10268,8 @@
         "tags": [
             "10s",
             "Female",
-            "Game"
+            "Game",
+            "Folk"
         ]
     },
     {
@@ -10393,7 +10391,8 @@
         "tags": [
             "00s",
             "Female",
-            "Game"
+            "Game",
+            "Folk"
         ]
     },
     {
@@ -10447,7 +10446,8 @@
         "tags": [
             "10s",
             "Female",
-            "Game"
+            "Game",
+            "Folk"
         ]
     },
     {
@@ -12780,7 +12780,8 @@
         "tags": [
             "00s",
             "Female",
-            "Game"
+            "Game",
+            "Folk"
         ]
     },
     {
@@ -17159,7 +17160,8 @@
         "tags": [
             "00s",
             "Female",
-            "Wafuu"
+            "Wafuu",
+            "Folk"
         ]
     },
     {
@@ -17905,11 +17907,7 @@
                 "is_private": true
             }
         ],
-        "tags": [
-            "10s",
-            "Male",
-            "Anime"
-        ]
+        "tags": []
     },
     {
         "song_name": "STONE OCEAN",
@@ -18746,10 +18744,7 @@
                 "is_private": false
             }
         ],
-        "tags": [
-            "00s",
-            "Game"
-        ]
+        "tags": []
     },
     {
         "song_name": "サクラ アマネク セカイ",
@@ -22202,10 +22197,7 @@
                 "is_private": true
             }
         ],
-        "tags": [
-            "Showa",
-            "Female"
-        ]
+        "tags": []
     },
     {
         "song_name": "チェッ・チェッ・チェッ",
@@ -22265,10 +22257,7 @@
                 "is_private": false
             }
         ],
-        "tags": [
-            "Showa",
-            "Female"
-        ]
+        "tags": []
     },
     {
         "song_name": "フライディ・チャイナタウン",
@@ -22423,10 +22412,7 @@
                 "is_private": true
             }
         ],
-        "tags": [
-            "Showa",
-            "Female"
-        ]
+        "tags": []
     },
     {
         "song_name": "鏡の中のアクトレス",
@@ -23317,11 +23303,7 @@
                 "is_private": false
             }
         ],
-        "tags": [
-            "10s",
-            "Female",
-            "Anime"
-        ]
+        "tags": []
     },
     {
         "song_name": "Brave Song",
@@ -24423,7 +24405,11 @@
                 "is_private": false
             }
         ],
-        "tags": []
+        "tags": [
+            "20s",
+            "Anime",
+            "Folk"
+        ]
     },
     {
         "song_name": "記憶の海",
@@ -24537,7 +24523,9 @@
                 "is_private": false
             }
         ],
-        "tags": []
+        "tags": [
+            "00s"
+        ]
     },
     {
         "song_name": "fairytale",
@@ -24585,7 +24573,10 @@
                 "is_private": false
             }
         ],
-        "tags": []
+        "tags": [
+            "00s",
+            "Anime"
+        ]
     },
     {
         "song_name": "踊",
@@ -24662,7 +24653,10 @@
                 "is_private": true
             }
         ],
-        "tags": []
+        "tags": [
+            "Showa",
+            "Female"
+        ]
     },
     {
         "song_name": "プレイバックPart2",
@@ -24680,7 +24674,10 @@
                 "is_private": true
             }
         ],
-        "tags": []
+        "tags": [
+            "Showa",
+            "Female"
+        ]
     },
     {
         "song_name": "煌めく瞬間に捕われて",
@@ -24738,7 +24735,8 @@
         ],
         "tags": [
             "10s",
-            "Female"
+            "Female",
+            "Musical"
         ]
     },
     {
@@ -25520,11 +25518,7 @@
                 "is_private": false
             }
         ],
-        "tags": [
-            "10s",
-            "Female",
-            "Anime"
-        ]
+        "tags": []
     },
     {
         "song_name": "Love with you ~愛のプレゼント~",
@@ -26529,7 +26523,10 @@
                 "is_private": true
             }
         ],
-        "tags": []
+        "tags": [
+            "00s",
+            "Game"
+        ]
     },
     {
         "song_name": "言葉にせずとも",
@@ -26903,7 +26900,11 @@
                 "is_private": false
             }
         ],
-        "tags": []
+        "tags": [
+            "10s",
+            "Male",
+            "Anime"
+        ]
     },
     {
         "song_name": "ジョジョ その血の記憶～END OF THE WORLD～",
@@ -27031,7 +27032,8 @@
         "tags": [
             "00s",
             "Female",
-            "Game"
+            "Game",
+            "Folk"
         ]
     },
     {
@@ -27305,7 +27307,11 @@
                 "is_private": true
             }
         ],
-        "tags": []
+        "tags": [
+            "10s",
+            "Female",
+            "Anime"
+        ]
     },
     {
         "song_name": "Go Tight!",
@@ -28362,7 +28368,11 @@
                 "is_private": true
             }
         ],
-        "tags": []
+        "tags": [
+            "10s",
+            "Female",
+            "Anime"
+        ]
     },
     {
         "song_name": "Los! Los! Los!",
@@ -29502,11 +29512,7 @@
                 "is_private": false
             }
         ],
-        "tags": [
-            "90s",
-            "Female",
-            "Anime"
-        ]
+        "tags": []
     },
     {
         "song_name": "僕は、鳥になる。",
@@ -30606,7 +30612,11 @@
                 "is_private": true
             }
         ],
-        "tags": []
+        "tags": [
+            "90s",
+            "Female",
+            "Anime"
+        ]
     },
     {
         "song_name": "アメフラシの歌 ～Beautiful Rain～",
@@ -31150,11 +31160,7 @@
                 "is_private": false
             }
         ],
-        "tags": [
-            "20s",
-            "Female",
-            "Game"
-        ]
+        "tags": []
     },
     {
         "song_name": "La vaguelette",
@@ -31555,7 +31561,11 @@
                 "is_private": false
             }
         ],
-        "tags": []
+        "tags": [
+            "20s",
+            "Female",
+            "Game"
+        ]
     },
     {
         "song_name": "盛れ！ミ・アモーレ",
@@ -31594,7 +31604,10 @@
                 "is_private": false
             }
         ],
-        "tags": []
+        "tags": [
+            "Showa",
+            "Female"
+        ]
     },
     {
         "song_name": "Perseus - ペルセウス -",
@@ -31612,7 +31625,11 @@
                 "is_private": false
             }
         ],
-        "tags": []
+        "tags": [
+            "00s",
+            "Female",
+            "Anime"
+        ]
     },
     {
         "song_name": "I Could Have Danced All Night",
