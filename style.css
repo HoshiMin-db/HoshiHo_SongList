@@ -824,10 +824,8 @@ table tbody td:hover .song-tags {
     transition: width 0.3s ease; 
     z-index: 1000; 
     overflow: visible; 
-    /* 如果手機高度太矮，防止選單與下方的語言選擇器重疊打架 */
-    display: flex;
-    flex-direction: column;
 }
+
 .sidebar.expanded {
     width: clamp(160px, 12vw, 200px);
 }
@@ -847,8 +845,8 @@ table tbody td:hover .song-tags {
     list-style: none;
     padding: 0;
     margin-top: 20px;
+    margin-bottom: 80px; 
     overflow: hidden; 
-    flex: 1; 
 }
 
 .sidebar-nav li {
@@ -887,14 +885,13 @@ table tbody td:hover .song-tags {
 
 /* 語言選擇器 */
 .language-switcher {
-    position: relative; 
-    bottom: 0; 
-    margin-bottom: 20px; 
+    position: absolute; 
+    bottom: 20px; 
+    left: 0; 
     width: 100%;          
     text-align: center; 
     padding: 10px 0; 
     border-top: 1px solid #dee2e6; 
-    flex-shrink: 0; 
 }
 
 .language-switcher select {
@@ -1021,22 +1018,6 @@ table tbody td:hover .song-tags {
 
     .track-list {
         max-height: 200px;
-    }
-
-    .external-links {
-        gap: 12px; 
-        justify-content: center; /* 讓按鈕在底部橫向居中 */
-        padding: 12px;
-    }
-
-    .external-link {
-        flex: 0 0 44px; /* 關鍵：強制鎖定按鈕寬度為 44px，不再隨卡片放大縮小 */
-        height: 44px;   /* 強制鎖定高度 */
-        padding: 0; 
-        border-radius: 50%; /* 改為精緻的圓形按鈕，在手機上視覺感極佳 */
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
     }
 
     .btn-text {
