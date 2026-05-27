@@ -1,7 +1,6 @@
 # 我的專案
   這是一個更新。v9.0  
-  寫得好爛嗚哇啊啊啊啊啊破防惹
-  加入了tag(不保證準確性)
+  寫得好爛嗚哇啊啊啊啊啊破防惹  加入了tag(不保證準確性)
 
 # 邏輯
   ## /backend  
@@ -17,10 +16,9 @@
   ## /js
   `core.js`  網頁邊欄、頁面翻譯  
   `disc_generation.js`  專輯卡片生成  
-  `form-generation.js`  歌單生成  
+  `form-generation.js`  搜尋欄、tag欄、歌單生成  
   `form-generation.old.js`  正常運行備份  
   `romaji.js`  日文轉換  
-  `search-bar.js`  搜尋欄、tags欄  
   `translations.txt`  頁面翻譯對照表
   `youtube-player.js`  Html播放器  
   ## /timeline
