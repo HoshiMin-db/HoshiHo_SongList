@@ -1,16 +1,58 @@
-// ==================== js/form-generation.js ====================
-// 跨檔案引用：引入搜尋元件，並共享完全相同的字串處理工具，完美支援排序功能
-import SearchBarManager, { normalizeString, sanitizeInput, isValidDateFormat } from "./search-bar.js";
+// ==================== js/form-generation.js (合併優化版) ====================
+import { convert_jp } from "./romaji.js";
 
-// 引用 youtube-player.js
+// ==================== [ 第一區：全域通用工具與正規化 ] ====================
+// 防抖函數
+function debounce(func, wait) {
+    let timeout;
+    return function () {
+        const context = this;
+        const args = arguments;
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(context, args), wait);
+    };
+}
+
+// 引用 youtube-player.js 全域綁定
 document.addEventListener("DOMContentLoaded", function () {
     window.closeFloatingPlayer = closeFloatingPlayer;
     window.openFloatingPlayer = openFloatingPlayer;
 });
 
-const SYMBOL_REGEX = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?～！＠＃＄％＾＆＊（）＿＋－＝［］｛｝；＇："＼｜，．＜＞／？〜∞→←↑↓]/;
+// 字串處理與日文正規化工具 (已移除重複段落，兩邊共用)
+const SYMBOL_REGEX = /[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\/?～！＠＃＄％＾＆＊（）＿＋－＝［］｛｝；＇：\"＼｜，．＜＞／？〜∞→←↑↓]/;
 const ENGLISH_REGEX = /[a-zA-Z]/;
 const NUMBER_REGEX = /[0-9０-９]/;
+const JAPANESE_HIRAGANA = /[\u3040-\u309F]/;
+const JAPANESE_KATAKANA = /[\u30A0-\u30FF]/;
+
+function sanitizeInput(input) {
+    if (typeof input !== "string") return "";
+    return input.replace(/[<>&'\"]/g, "")
+                .replace(/[\x00-\x1F\x7F]/g, "");
+}
+
+function normalizeString(str) {
+    if (!str) return "";
+    str = sanitizeInput(str);
+    if (JAPANESE_HIRAGANA.test(str) || JAPANESE_KATAKANA.test(str)) {
+        str = convert_jp(str);
+    }
+    str = str.replace(/\(cv\.(.*?)\)/gi, "($1)");
+    return str
+        .normalize("NFKC")
+        .replace(/[~\u301c\uff5e]/g, "~")
+        .replace(/，/g, ",")
+        .replace(/。/g, ".")
+        .replace(/['']/g, "'")
+        .replace(/…/g, "...")
+        .replace(/\s+/g, "")
+        .toLowerCase();
+}
+
+function isValidDateFormat(str) {
+    return /^\d{8}$/.test(str);
+}
 
 function formatDateFromString(dateStr) {
     return `${dateStr.substring(6, 8)}/${dateStr.substring(4, 6)}/${dateStr.substring(0, 4)}`;
@@ -28,410 +70,433 @@ function getCharacterType(text) {
 
 function getJapaneseSortKey(item) {
     if (item.az) return item.az;
-    return item.song_name.charAt(0);
+    return item.song_title || "";
 }
 
-function getSortWeight(type) {
-    const weights = {
-        symbol: 0,
-        number: 1,
-        english: 2,
-        japanese: 3,
-        other: 4,
-    };
-    return weights[type] ?? weights.other;
-}
-
-// ============ 修復版虛擬滾動管理器 ============
-class VirtualScrollManager {
-    constructor(scrollContainer, tbody, rowHeight = 62) {
-        this.scrollContainer = scrollContainer;
-        this.tbody = tbody;
-        this.rowHeight = rowHeight;
-        this.displayedRowsData = [];
-        // 基礎可見行數
-        this.visibleCount = Math.ceil(scrollContainer.clientHeight / rowHeight);
-        this.lastRenderedStart = -1;
-        this.domRowsMap = new Map();  
-        this.ticking = false; // 新增：用於 requestAnimationFrame 節流
-        
-        this.scrollContainer.addEventListener('scroll', () => this.handleScroll(), { passive: true });
-        window.addEventListener('resize', () => this.recalculateVisible());
-    }
-    
-    setDisplayData(rowsData) {
-        this.displayedRowsData = rowsData;
-        this.domRowsMap.clear();
-        this.tbody.style.minHeight = `${rowsData.length * this.rowHeight}px`;
-        this.scrollContainer.scrollTop = 0;
-        // 初始渲染
-        this.lastRenderedStart = -1; // 強制重新渲染
-        this.render(0);
-    }
-    
-    handleScroll() {
-        if (!this.ticking) {
-            window.requestAnimationFrame(() => {
-                const scrollTop = this.scrollContainer.scrollTop;
-                const currentBaseStartIdx = Math.floor(scrollTop / this.rowHeight);
-                // 只要滑動超過 1 行的距離，就觸發重新計算，確保緩衝區隨時跟上
-                if (Math.abs(currentBaseStartIdx - this.lastRenderedStart) >= 1) {
-                    this.render(currentBaseStartIdx);
-                }
-                this.ticking = false;
-            });
-            this.ticking = true;
-        }
-    }
-    
-    recalculateVisible() {
-        this.visibleCount = Math.ceil(this.scrollContainer.clientHeight / this.rowHeight);
-        const scrollTop = this.scrollContainer.scrollTop;
-        const currentBaseStartIdx = Math.floor(scrollTop / this.rowHeight);
-        this.lastRenderedStart = -1; // 視窗改變大小時強制重繪
-        this.render(currentBaseStartIdx);
-    }
-    
-    render(baseStartIdx) {
-        this.lastRenderedStart = baseStartIdx;
-        // 設定上下緩衝區 (Overscan)，避免快速滾動時破圖
-        const BUFFER_ROWS = 10; 
-        // 計算實際要渲染的起點與終點 (往上、往下各多畫 BUFFER_ROWS 行)
-        const renderStartIdx = Math.max(0, baseStartIdx - BUFFER_ROWS);
-        const renderEndIdx = Math.min(this.displayedRowsData.length, baseStartIdx + this.visibleCount + BUFFER_ROWS);
-        // 清空 tbody 但保留結構
-        this.tbody.innerHTML = '';
-        
-        // 創建虛擬占位符（頂部）使用 renderStartIdx 來計算高度
-        if (renderStartIdx > 0) {
-            const spacerTop = document.createElement('tr');
-            spacerTop.style.height = `${renderStartIdx * this.rowHeight}px`;
-            spacerTop.style.pointerEvents = 'none';
-            spacerTop.innerHTML = '<td colspan="5"></td>';
-            this.tbody.appendChild(spacerTop);
-        }
-        
-        // 只為「緩衝區 + 可見區」建立 DOM
-        for (let i = renderStartIdx; i < renderEndIdx; i++) {
-            const rowData = this.displayedRowsData[i];
-            const row = createTableRow(rowData, 3);
-            row.dataset.rowIndex = i;
-            if (i % 2 !== 0) {
-                row.classList.add('even-row');
-            }
-            
-            this.tbody.appendChild(row);
-            this.domRowsMap.set(i, row);
-        }
-        
-        // 創建虛擬占位符（底部）- 使用 renderEndIdx 來計算高度
-        if (renderEndIdx < this.displayedRowsData.length) {
-            const remainingRows = this.displayedRowsData.length - renderEndIdx;
-            const spacerBottom = document.createElement('tr');
-            spacerBottom.style.height = `${remainingRows * this.rowHeight}px`;
-            spacerBottom.style.pointerEvents = 'none';
-            spacerBottom.innerHTML = '<td colspan="5"></td>';
-            this.tbody.appendChild(spacerBottom);
-        }
-    }
-    
-    scrollToDataIndex(dataIndex) {
-        const scrollTop = dataIndex * this.rowHeight;
-        this.scrollContainer.scrollTop = scrollTop;
-    }
-    
-    getRowElement(dataIndex) {
-        return this.domRowsMap.get(dataIndex);
-    }
-}
-
-// 建立表格內容基礎函數保持不變...
-function createDateCell(row) {
-    const dateCell = document.createElement("div");
-    dateCell.className = "date-cell";
-    const link = document.createElement("a");
-    const formattedDate = formatDateFromString(row.date);
-    link.href = row.link;
-    link.textContent = formattedDate;
-    link.target = "_blank";
-    link.onclick = function(event) {
-        event.preventDefault();
-        if (window.isValidYouTubeURL && window.isValidYouTubeURL(link.href)) {
-            window.openFloatingPlayer(link.href);
-        } else {
-            console.error("Invalid URL or YouTube player not initialized:", link.href);
-        }
-    };
-    dateCell.appendChild(link);
-    if (row.is_member_exclusive) {
-        const lockIcon = document.createElement("span");
-        lockIcon.classList.add("lock-icon"); lockIcon.textContent = "🔒";
-        dateCell.appendChild(lockIcon);
-    }
-    if (row.is_acapella) dateCell.classList.add("acapella");
-    if (row.is_private) {
-        const privateIcon = document.createElement("span");
-        privateIcon.classList.add("private-icon"); privateIcon.textContent = "🚫";
-        dateCell.appendChild(privateIcon);
-    }
-    return dateCell;
-}
-
-function getTagTranslation(tag) {
-    if (window.getTL && typeof window.getTL === 'function') return window.getTL(tag) || tag;
-    return tag;
-}
-
-function createTableRow(item, numDates) {
-    const newRow = document.createElement("tr");
-    const initialCell = newRow.insertCell();
-    initialCell.textContent = item.az || item.song_name.charAt(0).toUpperCase();
-    const songNameCell = newRow.insertCell();
-    const songNameContainer = document.createElement("div");
-    const songTitle = document.createElement("div");
-    songTitle.textContent = item.song_name;
-    if (item.is_copyright) songTitle.style.color = "red";
-    songNameContainer.appendChild(songTitle);
-    if (item.tags && item.tags.length > 0) {
-        const tagsDiv = document.createElement("div");
-        tagsDiv.className = "song-tags";
-        item.tags.forEach(tag => {
-            const tagSpan = document.createElement("span");
-            tagSpan.className = "song-tag"; tagSpan.dataset.originalTag = tag;
-            tagSpan.textContent = getTagTranslation(tag);
-            tagsDiv.appendChild(tagSpan);
-        });
-        songNameContainer.appendChild(tagsDiv);
-    }
-    songNameCell.appendChild(songNameContainer);
-    newRow.insertCell().textContent = item.artist;
-    newRow.insertCell().textContent = item.source || "";
-    const sortedDates = item.dates.sort((a, b) => {
-        const dateA = new Date(`${a.date.substring(0, 4)}-${a.date.substring(4, 6)}-${a.date.substring(6, 8)}T${a.time}`);
-        const dateB = new Date(`${b.date.substring(0, 4)}-${b.date.substring(4, 6)}-${b.date.substring(6, 8)}T${b.time}`);
-        return dateB - dateA;
-    });
-    const datesContainerCell = newRow.insertCell();
-    datesContainerCell.className = 'dates-container-cell'; datesContainerCell.colSpan = numDates + 1;
-    const scrollContainer = document.createElement("div");
-    scrollContainer.className = "dates-container";
-    const initialDates = sortedDates.slice(0, numDates);
-    initialDates.forEach(dateInfo => scrollContainer.appendChild(createDateCell(dateInfo)));
-    if (sortedDates.length > numDates) {
-        const moreButton = document.createElement("button");
-        moreButton.textContent = "..."; moreButton.className = "more-button";
-        let isExpanded = false;
-        moreButton.onclick = () => {
-            if (!isExpanded) {
-                sortedDates.slice(numDates).forEach(dateInfo => {
-                    const dateCell = createDateCell(dateInfo);
-                    dateCell.classList.add("extra-date"); scrollContainer.appendChild(dateCell);
-                });
-                moreButton.textContent = "←"; isExpanded = true;
-            } else {
-                scrollContainer.querySelectorAll(".extra-date").forEach(cell => cell.remove());
-                moreButton.textContent = "..."; isExpanded = false;
-            }
-        };
-        const buttonContainer = document.createElement("div");
-        buttonContainer.className = "date-cell"; buttonContainer.appendChild(moreButton);
-        scrollContainer.appendChild(buttonContainer);
-    }
-    datesContainerCell.appendChild(scrollContainer);
-    return newRow;
-}
-
-// 排序處理函數（照常引用從 search-bar 引入的新版過濾工具）
-function sortData(data, sortConfig = {}) {
-    const { column = 'song_name', reverse = false } = sortConfig;
-    return [...data].sort((a, b) => {
-        let aVal, bVal;
-        if (column === 'az') {
-            aVal = getJapaneseSortKey(a); bVal = getJapaneseSortKey(b);
-        } else if (column === 'dates') {
-            aVal = a.dates && a.dates.length > 0 ? a.dates[0].date : '0';
-            bVal = b.dates && b.dates.length > 0 ? b.dates[0].date : '0';
-        } else {
-            aVal = a[column] || ''; bVal = b[column] || '';
-        }
-        if (typeof aVal === 'string') {
-            aVal = normalizeString(aVal); bVal = normalizeString(bVal);
-        }
-        if (aVal > bVal) return reverse ? -1 : 1;
-        if (aVal < bVal) return reverse ? 1 : -1;
-        return 0;
-    });
-}
-
-// ============ 主要控制器業務邏輯 ============
+// ==================== [ 第二區：主程式與虛擬滾動邏輯 ] ====================
 document.addEventListener("DOMContentLoaded", function () {
-    const scrollContainer = document.getElementById("virtualScrollContainer");
-    const songTable = document.getElementById("songTable");
-    const songTableBody = songTable.getElementsByTagName("tbody")[0];
-    
-    let allData = [];
-    let totalSongCount = 0;
-    let currentSortConfig = { column: 'song_name', reverse: false };
     let virtualScroller = null;
-    let searchBar = null; // 儲存搜尋列實例
+    let searchBarManager = null;
+    
+    // 透過表格欄位進行排序的狀態
+    let currentSortField = null; // 'az', 'title', 'artist', 'source', 'date'
+    let currentSortOrder = 'asc'; // 'asc' 或 'desc'
 
-    function initVirtualScroller() {
-        if (!virtualScroller) {
-            virtualScroller = new VirtualScrollManager(scrollContainer, songTableBody, 62);
-        }
-    }
-    
-    function getColumnFromHeader(headerElement) {
-        const columnMap = { 'az': 'az', 'song-title': 'song_name', 'artist': 'artist', 'source': 'source', 'date-header': 'dates' };
-        return columnMap[headerElement.className] || 'song_name';
-    }
-    
-    function setupTableHeaderSort() {
-        songTable.querySelectorAll('th').forEach(header => {
-            header.addEventListener('click', () => {
-                const column = getColumnFromHeader(header);
-                if (currentSortConfig.column === column) {
-                    currentSortConfig.reverse = !currentSortConfig.reverse;
-                } else {
-                    currentSortConfig.column = column; currentSortConfig.reverse = false;
-                }
-                applyFilters();
-            });
-        });
+    // 初始化快取多國語言翻譯
+    const originalTagsText = window.getTL('filterByTag') || '篩選 Tag：';
+    const tagLabelSpan = document.querySelector('.search-container .tag-toggle-wrapper span');
+    if (tagLabelSpan) tagLabelSpan.textContent = originalTagsText;
+
+    function getTagTranslation(tag) {
+        if (!tag) return '';
+        return window.getTL(tag) || tag;
     }
 
-    // 核心資料過濾、分組與排序管線（Pipeline）
-    function applyFilters() {
-        if (!searchBar) return;
-
-        // 從動態元件中取得目前搜尋詞與選擇的 Tags
-        const query = searchBar.getQuery();
-        const selectedTags = searchBar.getSelectedTags();
-        
-        const filteredData = allData.filter((row) => {
-            let searchMatch = true;
-            let tagMatch = true;
-            
-            if (selectedTags.size > 0) {
-                tagMatch = Array.isArray(row.tags) && Array.from(selectedTags).every(t => row.tags.includes(t));
-            }
-            
-            if (isValidDateFormat(query)) {
-                const formattedQuery = `${query.substring(4, 8)}${query.substring(2, 4)}${query.substring(0, 2)}`;
-                searchMatch = row.dates.some(date => date.date === formattedQuery);
-            } else if (query) {
-                searchMatch = normalizeString(row.song_name).includes(query) ||
-                              normalizeString(row.artist).includes(query) ||
-                              normalizeString(row.source).includes(query);
-            }
-            return searchMatch && tagMatch;
-        });
-        
-        const groupedData = filteredData.reduce((acc, row) => {
-            const key = `${normalizeString(row.song_name)}-${normalizeString(row.artist)}`;
-            if (!acc[key]) acc[key] = { ...row, dates: [] };
-            acc[key].dates.push(...row.dates);
-            return acc;
-        }, {});
-        
-        let sortedData = Object.values(groupedData).sort((a, b) => {
-            const aType = getCharacterType(a.song_name);
-            const bType = getCharacterType(b.song_name);
-            const weightDiff = getSortWeight(aType) - getSortWeight(bType);
-            if (weightDiff !== 0) return weightDiff;
-            
-            if (aType === "japanese" && bType === "japanese") {
-                const aKey = getJapaneseSortKey(a); const bKey = getJapaneseSortKey(b);
-                const groupCompare = aKey.localeCompare(bKey, 'ja-JP');
-                if (groupCompare !== 0) return groupCompare;
-            }
-            return a.song_name.localeCompare(b.song_name, 'ja-JP');
-        });
-        
-        if (currentSortConfig.column !== 'song_name') {
-            sortedData = sortData(sortedData, currentSortConfig);
-        }
-        
-        window.allDisplayedData = sortedData;
-        virtualScroller.setDisplayData(sortedData);
-    }
-    
-    // 初始化獨立的搜尋元件
-    searchBar = new SearchBarManager({
-        searchInputId: "searchInput",
-        tagToggleId: "tagToggle",
-        tagsFilterContainerId: "tagsFilterContainer",
-        tagButtonsId: "tagButtons",
-        onUpdate: applyFilters // 當條件變更時，觸發上面的過濾更新流程
-    });
-
-    function sortTagsForDisplay(a, b) {
-        const tagOrder = ['Showa', '90s', '00s', '10s', '20s', 'Female', 'Male', 'Anime', 'Game'];
-        const getPriority = (tag) => { const index = tagOrder.indexOf(tag); return index !== -1 ? index : 999; };
-        const pa = getPriority(a); const pb = getPriority(b);
-        return pa !== pb ? pa - pb : a.localeCompare(b, 'en');
-    }
-    
+    // 取得資料並初始化網頁
     async function fetchData() {
         try {
             const response = await fetch("data.json", { cache: "no-cache" });
-            const data = await response.json();
+            const json = await response.json();
             
-            data.forEach(song => { if (!song.tags || !Array.isArray(song.tags)) song.tags = []; });
-            allData = data;
+            // 資料清洗與預先計算正規化欄位
+            window.allSongData = json.map(item => {
+                if (!item.tags) item.tags = [];
+                
+                // 預先算出供搜尋用的快取欄位，避免在輸入時重複計算
+                item._search_title = normalizeString(item.song_title);
+                item._search_artist = normalizeString(item.artist);
+                item._search_source = normalizeString(item.source);
+                item._search_date = item.date ? item.date.replace(/\//g, "") : "";
+                
+                // 排序用的規範化 key
+                item._sort_title = normalizeString(getJapaneseSortKey(item));
+                item._sort_artist = normalizeString(item.artist || "");
+                item._sort_source = normalizeString(item.source || "");
+                
+                return item;
+            });
+
+            // 收集所有不重複的 Tags
+            const tagsSet = new Set();
+            window.allSongData.forEach(item => {
+                if (Array.isArray(item.tags)) {
+                    item.tags.forEach(t => { if(t) tagsSet.add(t); });
+                }
+            });
+            const uniqueTags = Array.from(tagsSet);
+
+            // 初始化虛擬滾動實例
+            const container = document.getElementById("virtualScrollContainer");
+            const tbody = document.querySelector("#songTable tbody");
             
-            totalSongCount = Object.keys(data.reduce((acc, row) => {
-                acc[`${normalizeString(row.song_name)}-${normalizeString(row.artist)}`] = true; return acc;
-            }, {})).length;
-            
-            initVirtualScroller();
+            if (window.VirtualScroller) {
+                virtualScroller = new window.VirtualScroller({
+                    containerElement: container,
+                    tbodyElement: tbody,
+                    rowHeight: 53,
+                    bufferCount: 5,
+                    renderRow: createTableRow
+                });
+            }
+
+            // 🛠️ 核心變更：直接在此 new 本地合併後的 SearchBarManager
+            searchBarManager = new SearchBarManager({
+                onUpdate: () => {
+                    applyFilters();
+                }
+            });
+
+            // 產生 Tag 按鈕
+            searchBarManager.populateTagFilter(uniqueTags);
+
+            // 執行初始排序與第一次篩選渲染
+            sortData('japanese', 'asc', false); 
             applyFilters();
-            
-            const songCountElement = document.getElementById("songCount");
-            if (songCountElement) songCountElement.textContent = totalSongCount;
-            
-            // 提取所有 Tags 並排序後，交由 searchBar 實例去渲染 DOM
-            const allTags = [...new Set(data.flatMap(song => song.tags || []))];
-            allTags.sort(sortTagsForDisplay);
-            searchBar.populateTagFilter(allTags);
-            
+
+            // 綁定表頭點擊排序事件
+            setupTableHeaderSort();
+            // 綁定隨機按鈕事件
+            setupRandomButton();
+
         } catch (error) {
-            console.error("Error fetching data:", error);
+            console.error("Error loading song data:", error);
         }
     }
-    
-    // 隨機抽選按鈕與多國語系切換邏輯保持不變...
-    const randomButton = document.getElementById('randomButton');
-    if (randomButton) {
+
+    // 建立單一表格列 DOM 結構
+    function createTableRow(item) {
+        const tr = document.createElement("tr");
+        
+        const tdAz = document.createElement("td");
+        tdAz.className = "az";
+        tdAz.textContent = item.az || "";
+        tr.appendChild(tdAz);
+
+        const tdTitle = document.createElement("td");
+        tdTitle.className = "song-title";
+        if (item.song_link) {
+            const a = document.createElement("a");
+            a.href = "#";
+            a.textContent = item.song_title;
+            a.addEventListener("click", (e) => {
+                e.preventDefault();
+                if (typeof window.openFloatingPlayer === "function") {
+                    window.openFloatingPlayer(item.song_link);
+                }
+            });
+            tdTitle.appendChild(a);
+        } else {
+            tdTitle.textContent = item.song_title;
+        }
+        tr.appendChild(tdTitle);
+
+        const tdArtist = document.createElement("td");
+        tdArtist.className = "artist";
+        tdArtist.textContent = item.artist || "";
+        tr.appendChild(tdArtist);
+
+        const tdSource = document.createElement("td");
+        tdSource.className = "source";
+        tdSource.textContent = item.source || "";
+        tr.appendChild(tdSource);
+
+        const tdDate = document.createElement("td");
+        tdDate.className = "date-cell";
+        tdDate.textContent = item.date || "";
+        tr.appendChild(tdDate);
+
+        // 渲染 Tags 欄位
+        const tdTags = document.createElement("td");
+        tdTags.className = "tags-cell";
+        if (Array.isArray(item.tags)) {
+            item.tags.forEach(tag => {
+                if (!tag) return;
+                const span = document.createElement("span");
+                span.className = "song-tag";
+                span.dataset.originalTag = tag;
+                span.textContent = getTagTranslation(tag);
+                tdTags.appendChild(span);
+            });
+        }
+        tr.appendChild(tdTags);
+
+        return tr;
+    }
+
+    // 核心篩選過濾器
+    function applyFilters() {
+        if (!window.allSongData) return;
+
+        // 從合併後的搜尋管理器取得目前的輸入狀態
+        const searchVal = searchBarManager ? searchBarManager.getSearchValue() : "";
+        const selectedTags = searchBarManager ? searchBarManager.getSelectedTags() : new Set();
+
+        let filtered = window.allSongData;
+
+        // 1. 標籤篩選
+        if (selectedTags.size > 0) {
+            filtered = filtered.filter(item => 
+                item.tags && Array.from(selectedTags).every(t => item.tags.includes(t))
+            );
+        }
+
+        // 2. 關鍵字關鍵篩選
+        if (searchVal) {
+            if (isValidDateFormat(searchVal)) {
+                // 如果是 8 位數純數字，精準比對日期
+                filtered = filtered.filter(item => item._search_date.includes(searchVal));
+            } else {
+                // 字串模糊比對
+                filtered = filtered.filter(item => 
+                    item._search_title.includes(searchVal) ||
+                    item._search_artist.includes(searchVal) ||
+                    item._search_source.includes(searchVal)
+                );
+            }
+        }
+
+        window.allDisplayedData = filtered;
+
+        // 更新總曲數計數器
+        const songCountEl = document.getElementById("songCount");
+        if (songCountEl) songCountEl.textContent = filtered.length;
+
+        // 將篩選後的資料餵給虛擬滾動更新畫面
+        if (virtualScroller) {
+            virtualScroller.updateData(filtered);
+        }
+    }
+
+    // 數據排序核心
+    function sortData(type, order = 'asc', performFilter = true) {
+        if (!window.allSongData) return;
+        
+        const modifier = order === 'asc' ? 1 : -1;
+
+        window.allSongData.sort((a, b) => {
+            // A-Z 區域名稱首字群組排序
+            if (type === 'japanese') {
+                const typeA = getCharacterType(getJapaneseSortKey(a));
+                const typeB = getCharacterType(getJapaneseSortKey(b));
+                
+                const typeOrder = { "symbol": 1, "number": 2, "english": 3, "japanese": 4, "other": 5 };
+                if (typeA !== typeB) {
+                    return typeOrder[typeA] - typeOrder[typeB];
+                }
+                
+                return a._sort_title.localeCompare(b._sort_title, 'ja') * modifier;
+            }
+
+            // 欄位點擊常規排序
+            let valA = "", valB = "";
+            if (type === 'title') { valA = a._sort_title; valB = b._sort_title; }
+            else if (type === 'artist') { valA = a._sort_artist; valB = b._sort_artist; }
+            else if (type === 'source') { valA = a._sort_source; valB = b._sort_source; }
+            else if (type === 'date') {
+                valA = a.date ? a.date.split('/').reverse().join('') : '00000000';
+                valB = b.date ? b.date.split('/').reverse().join('') : '00000000';
+            }
+
+            return valA.localeCompare(valB, 'ja') * modifier;
+        });
+
+        if (performFilter) {
+            applyFilters();
+        }
+    }
+
+    // 綁定點擊欄位標頭排序邏輯
+    function setupTableHeaderSort() {
+        const headers = {
+            '.az': 'japanese',
+            '.song-title': 'title',
+            '.artist': 'artist',
+            '.source': 'source',
+            '.date-header': 'date'
+        };
+
+        Object.entries(headers).forEach(([selector, field]) => {
+            const th = document.querySelector(`#songTable thead th${selector}`);
+            if (!th) return;
+
+            // 移除舊的監聽器防止重複綁定
+            th.replaceWith(th.cloneNode(true));
+            const newTh = document.querySelector(`#songTable thead th${selector}`);
+
+            newTh.addEventListener('click', () => {
+                if (currentSortField === field) {
+                    currentSortOrder = currentSortOrder === 'asc' ? 'desc' : 'asc';
+                } else {
+                    currentSortField = field;
+                    currentSortOrder = 'asc';
+                }
+
+                // 清除所有欄位激活狀態樣式
+                document.querySelectorAll('#songTable thead th').forEach(el => el.classList.remove('sort-asc', 'sort-desc'));
+                newTh.classList.add(currentSortOrder === 'asc' ? 'sort-asc' : 'sort-desc');
+
+                sortData(field, currentSortOrder, true);
+            });
+        });
+    }
+
+    // 隨機抽選按鈕功能
+    function setupRandomButton() {
+        const randomButton = document.getElementById('randomButton');
+        if (!randomButton) return;
+        
         const randomText = window.getTL('randomBtn') || '隨機';
-        randomButton.setAttribute('aria-label', randomText); randomButton.title = randomText;
+        randomButton.setAttribute('aria-label', randomText); 
+        randomButton.title = randomText;
+        
         randomButton.addEventListener('click', () => {
             if (!window.allDisplayedData || window.allDisplayedData.length === 0) return;
+            
             const randomIndex = Math.floor(Math.random() * window.allDisplayedData.length);
             virtualScroller.scrollToDataIndex(randomIndex);
+            
             setTimeout(() => {
                 const row = virtualScroller.getRowElement(randomIndex);
                 if (row) {
                     row.classList.add('blink-animation');
-                    setTimeout(() => row.classList.remove('blink-animation'), 3800);
+                    setTimeout(() => {
+                        row.classList.remove('blink-animation');
+                    }, 3800);
                 }
             }, 800);
         });
     }
     
+    // 語言切換同步處理
     const originalOnLanguageChange = window.onLanguageChange;
     window.onLanguageChange = function(newLang) {
-        if (originalOnLanguageChange) originalOnLanguageChange(newLang);
+        if (originalOnLanguageChange) {
+            originalOnLanguageChange(newLang);
+        }
+        
         document.querySelectorAll('.song-tag').forEach(tagSpan => {
             const originalTag = tagSpan.dataset.originalTag;
-            if (originalTag) tagSpan.textContent = getTagTranslation(originalTag);
+            if (originalTag) {
+                tagSpan.textContent = getTagTranslation(originalTag);
+            }
         });
+        
         document.querySelectorAll('#tagButtons .tag-button').forEach(button => {
             const tag = button.dataset.tag;
             button.textContent = tag ? window.getTL(tag) || tag : window.getTL('allTags') || '全部';
         });
     };
     
-    setupTableHeaderSort();
     fetchData();
 });
+
+// ==================== [ 第三區：搜尋與 Tag 篩選面板管理器 ] ====================
+class SearchBarManager {
+    constructor(options) {
+        this.onUpdate = options.onUpdate || function() {};
+        this.selectedTags = new Set();
+        
+        // 抓取 DOM 元素
+        this.searchInput = document.getElementById('searchInput');
+        this.tagToggle = document.getElementById('tagToggle');
+        this.tagButtons = document.getElementById('tagButtons');
+        
+        this.initEvents();
+    }
+
+    getSearchValue() {
+        return this.searchInput ? normalizeString(this.searchInput.value) : "";
+    }
+
+    getSelectedTags() {
+        return this.selectedTags;
+    }
+
+    initEvents() {
+        // 輸入框防抖監聽 (300ms)
+        if (this.searchInput) {
+            this.searchInput.addEventListener('input', debounce(() => {
+                this.onUpdate();
+            }, 300));
+        }
+
+        // Tag 展開收摺按鈕
+        if (this.tagToggle && this.tagButtons) {
+            this.tagToggle.addEventListener('click', () => {
+                const isExpanded = this.tagToggle.getAttribute('aria-expanded') === 'true';
+                this.tagToggle.setAttribute('aria-expanded', !isExpanded);
+                this.tagButtons.classList.toggle('show', !isExpanded);
+            });
+        }
+    }
+
+    // 更新選取的標籤集合狀態
+    updateTagSelection(tag) {
+        if (!tag) {
+            // 點擊「全部」則清空所有選取
+            this.selectedTags.clear();
+        } else {
+            if (this.selectedTags.has(tag)) {
+                this.selectedTags.delete(tag);
+            } else {
+                this.selectedTags.add(tag);
+            }
+        }
+        this.syncTagButtonStyles();
+    }
+
+    // 重新整理標籤按鈕的 CSS 選取樣式
+    syncTagButtonStyles() {
+        if (this.tagButtons) {
+            this.tagButtons.querySelectorAll('.tag-button').forEach(button => {
+                const t = button.dataset.tag;
+                if (!t) {
+                    button.classList.toggle('selected', this.selectedTags.size === 0);
+                } else {
+                    button.classList.toggle('selected', this.selectedTags.has(t));
+                }
+            });
+        }
+    }
+
+    // 建立單個標籤按鈕 DOM
+    createTagButton(tag) {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'tag-button';
+        button.dataset.tag = tag;
+        button.textContent = tag ? window.getTL(tag) || tag : window.getTL('allTags') || '全部';
+        
+        if (!tag) {
+            if (this.selectedTags.size === 0) button.classList.add('selected');
+        } else if (this.selectedTags.has(tag)) {
+            button.classList.add('selected');
+        }
+        
+        button.addEventListener('click', () => {
+            this.updateTagSelection(tag);
+            this.onUpdate(); // 觸發主程式重新篩選列表
+        });
+        
+        return button;
+    }
+
+    // 動態渲染所有標籤按鈕
+    populateTagFilter(allTags) {
+        if (!this.tagButtons) return;
+        
+        this.tagButtons.innerHTML = '';
+        
+        // 優先置入「全部」按鈕
+        const allButton = this.createTagButton('');
+        this.tagButtons.appendChild(allButton);
+        
+        // 依序置入其餘標籤
+        allTags.forEach(tag => {
+            if (tag) {
+                const btn = this.createTagButton(tag);
+                this.tagButtons.appendChild(btn);
+            }
+        });
+    }
+}
