@@ -918,10 +918,7 @@ table tbody td:hover .song-tags {
 @media screen and (max-width: 768px) {
     .main-content {
         padding: 10px;
-        /* --- 修正手機版寬度限制 --- */
-        margin-left: 0 !important; /* 重置桌機固定側邊欄的留白，讓內容置中 */
-        width: 100%;
-        max-width: 100vw;          /* 嚴格限制最大寬度為螢幕寬 */
+        width: auto;
         min-width: 0;              /* 關鍵：打破 Flexbox 因子元素橫向撐開的限制 */
         overflow-x: hidden;        /* 保險：防止任何微小的內容溢出主區塊 */
     }
@@ -992,9 +989,9 @@ table tbody td:hover .song-tags {
     .main-content {
         padding: 10px;
         min-height: 100vh;
-        width: 100%;
-        max-width: 100vw;
-        min-width: 0;       /* 再次確保極小螢幕下的限制 */
+        width: auto;
+        min-width: 0;
+        overflow-x: hidden;
     }
 
     .header h1 {
