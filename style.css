@@ -990,41 +990,44 @@ table tbody td:hover .song-tags {
     }
 
     .disc-container {
-        padding: 0 5px 10px 5px;
-        gap: 10px;
+        padding: 0 15px 15px 15px; /* 增加一點兩側的 padding */
+        gap: 15px;
+        scroll-snap-type: x mandatory; /* 讓卡片滑動時有吸附感 */
     }
 
+    /* 2. 調整卡片寬度，留下邊緣空間 */
     .disc-card {
-        flex: 0 0 100%;
+        flex: 0 0 85%; /* 關鍵：從 100% 改為 85%，這樣右側就能瞥見下一張卡片 */
         height: auto;
         min-height: 500px;
+        scroll-snap-align: center; /* 讓卡片滑動停下時自動置中 */
     }
 
-    .disc-video-container {
-        height: 180px;
-    }
-
-    .track-list {
-        max-height: 200px;
+    /* 3. 調整外部連結區域與按鈕 */
+    .external-links {
+        gap: 20px; /* 增加間距防誤觸 */
+        justify-content: center; 
+        padding: 15px;
     }
 
     .external-link {
-        padding: 10px 0; /* 減少內距 */
-        aspect-ratio: 1 / 1; /* 嘗試讓按鈕變正方形 (若空間允許) */
+        /* 取消繼承的 flex: 1，並移除 aspect-ratio，改用固定大小的圓形按鈕 */
+        flex: 0 0 48px; 
+        height: 48px;
+        padding: 0; 
+        border-radius: 50%; /* 變成圓型按鈕在手機上視覺負擔較小 */
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .btn-text {
-        display: none; /* 直接隱藏文字 */
+        display: none; 
     }
 
     .btn-icon {
-        margin-right: 0; /* 文字消失，Icon 居中 */
-        font-size: 1.2em; /* 放大表情符號讓它更好點擊 */
-    }
-    
-    .external-links {
-        gap: 15px; /* 在手機上按鈕變小了，可以加大間距防止誤觸 */
-        justify-content: center; /* 居中排列 */
+        margin-right: 0; 
+        font-size: 1.4em; /* 微調 Emoji 大小 */
     }
     
     .floating-player-container {
