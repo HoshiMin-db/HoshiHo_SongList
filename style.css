@@ -815,17 +815,19 @@ table tbody td:hover .song-tags {
 .sidebar {
     /* default: only show hamburger */
     width: 48px;
-    height: 100vh;
     position: fixed;
     left: 0;
     top: 0;
-    background-color: #f8f9fa;
-    border-right: 1px solid #e9ecef;
-    transition: width 0.3s ease;
-    z-index: 1000;
-    overflow: visible; /* allow language selector visibility without scroll */
+    bottom: 0; /* 用 bottom: 0 代替 height: 100vh */
+    background-color: #f8f9fa; 
+    border-right: 1px solid #e9ecef; 
+    transition: width 0.3s ease; 
+    z-index: 1000; 
+    overflow: visible; 
+    /* 如果手機高度太矮，防止選單與下方的語言選擇器重疊打架 */
+    display: flex;
+    flex-direction: column;
 }
-
 .sidebar.expanded {
     width: clamp(160px, 12vw, 200px);
 }
@@ -845,7 +847,8 @@ table tbody td:hover .song-tags {
     list-style: none;
     padding: 0;
     margin-top: 20px;
-    overflow: hidden;
+    overflow-y: auto; 
+    flex: 1; 
 }
 
 .sidebar-nav li {
