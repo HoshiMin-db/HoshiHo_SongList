@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // 字串處理與日文正規化工具 (已移除重複段落，兩邊共用)
-const SYMBOL_REGEX = /[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\/?～！＠＃＄％＾＆＊（）＿＋－＝［］｛｝；＇：\"＼｜，．＜＞／？〜∞→←↑↓]/;
+const SYMBOL_REGEX = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?～！＠＃＄％＾＆＊（）＿＋－＝［］｛｝；＇："＼｜，．＜＞／？〜∞→←↑↓]/;
 const ENGLISH_REGEX = /[a-zA-Z]/;
 const NUMBER_REGEX = /[0-9０-９]/;
 const JAPANESE_HIRAGANA = /[\u3040-\u309F]/;
