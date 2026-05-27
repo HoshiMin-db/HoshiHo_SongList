@@ -95,9 +95,11 @@ class VirtualScrollManager {
         this.tbody = tbody;
         this.rowHeight = rowHeight;
         this.displayedRowsData = [];
-        this.visibleCount = Math.ceil(scrollContainer.clientHeight / rowHeight) + 5;
+        // 基礎可見行數
+        this.visibleCount = Math.ceil(scrollContainer.clientHeight / rowHeight);
         this.lastRenderedStart = -1;
-        this.domRowsMap = new Map();  // ← 快取行映射
+        this.domRowsMap = new Map();  
+        this.ticking = false; // 新增：用於 requestAnimationFrame 節流
         
         this.scrollContainer.addEventListener('scroll', () => this.handleScroll(), { passive: true });
         window.addEventListener('resize', () => this.recalculateVisible());
@@ -114,48 +116,65 @@ class VirtualScrollManager {
         this.scrollContainer.scrollTop = 0;
         
         // 初始渲染
+        this.lastRenderedStart = -1; // 強制重新渲染
         this.render(0);
     }
     
     handleScroll() {
-        const scrollTop = this.scrollContainer.scrollTop;
-        const startIdx = Math.floor(scrollTop / this.rowHeight);
-        
-        if (this.lastRenderedStart !== startIdx && Math.abs(startIdx - this.lastRenderedStart) > 2) {
-            requestAnimationFrame(() => this.render(startIdx));
+        if (!this.ticking) {
+            window.requestAnimationFrame(() => {
+                const scrollTop = this.scrollContainer.scrollTop;
+                // 計算當前視窗「最頂部」應該是哪一筆資料
+                const currentBaseStartIdx = Math.floor(scrollTop / this.rowHeight);
+                
+                // 只要滑動超過 1 行的距離，就觸發重新計算，確保緩衝區隨時跟上
+                if (Math.abs(currentBaseStartIdx - this.lastRenderedStart) >= 1) {
+                    this.render(currentBaseStartIdx);
+                }
+                this.ticking = false;
+            });
+            this.ticking = true;
         }
     }
     
     recalculateVisible() {
-        this.visibleCount = Math.ceil(this.scrollContainer.clientHeight / this.rowHeight) + 5;
+        this.visibleCount = Math.ceil(this.scrollContainer.clientHeight / this.rowHeight);
         const scrollTop = this.scrollContainer.scrollTop;
-        const startIdx = Math.floor(scrollTop / this.rowHeight);
-        this.render(startIdx);
+        const currentBaseStartIdx = Math.floor(scrollTop / this.rowHeight);
+        
+        this.lastRenderedStart = -1; // 視窗改變大小時強制重繪
+        this.render(currentBaseStartIdx);
     }
     
-    render(startIdx) {
-        this.lastRenderedStart = startIdx;
-        const endIdx = Math.min(startIdx + this.visibleCount, this.displayedRowsData.length);
+    render(baseStartIdx) {
+        this.lastRenderedStart = baseStartIdx;
         
-        // ✅ 關鍵修改：清空 tbody 但保留結構
+        // 設定上下緩衝區 (Overscan)，避免快速滾動時破圖
+        const BUFFER_ROWS = 10; 
+        
+        // 計算實際要渲染的起點與終點 (往上、往下各多畫 BUFFER_ROWS 行)
+        const renderStartIdx = Math.max(0, baseStartIdx - BUFFER_ROWS);
+        const renderEndIdx = Math.min(this.displayedRowsData.length, baseStartIdx + this.visibleCount + BUFFER_ROWS);
+        
+        // 清空 tbody 但保留結構
         this.tbody.innerHTML = '';
         
-        // 創建虛擬占位符（頂部）
-        if (startIdx > 0) {
+        // 創建虛擬占位符（頂部）使用 renderStartIdx 來計算高度
+        if (renderStartIdx > 0) {
             const spacerTop = document.createElement('tr');
-            spacerTop.style.height = `${startIdx * this.rowHeight}px`;
+            spacerTop.style.height = `${renderStartIdx * this.rowHeight}px`;
             spacerTop.style.pointerEvents = 'none';
             spacerTop.innerHTML = '<td colspan="5"></td>';
             this.tbody.appendChild(spacerTop);
         }
         
-        // 只為可見行建立 DOM
-        for (let i = startIdx; i < endIdx; i++) {
+        // 只為「緩衝區 + 可見區」建立 DOM
+        for (let i = renderStartIdx; i < renderEndIdx; i++) {
             const rowData = this.displayedRowsData[i];
             const row = createTableRow(rowData, 3);
             row.dataset.rowIndex = i;
             
-            // 根據真實的資料陣列索引來上色
+            // 根據真實的資料陣列索引來上色，確保斑馬紋永不交錯
             if (i % 2 !== 0) {
                 row.classList.add('even-row');
             }
@@ -164,9 +183,9 @@ class VirtualScrollManager {
             this.domRowsMap.set(i, row);
         }
         
-        // 創建虛擬占位符（底部）
-        if (endIdx < this.displayedRowsData.length) {
-            const remainingRows = this.displayedRowsData.length - endIdx;
+        // 創建虛擬占位符（底部）- 使用 renderEndIdx 來計算高度
+        if (renderEndIdx < this.displayedRowsData.length) {
+            const remainingRows = this.displayedRowsData.length - renderEndIdx;
             const spacerBottom = document.createElement('tr');
             spacerBottom.style.height = `${remainingRows * this.rowHeight}px`;
             spacerBottom.style.pointerEvents = 'none';
