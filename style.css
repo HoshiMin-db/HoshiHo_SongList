@@ -938,8 +938,10 @@ table tbody td:hover .song-tags {
     }
 
     .disc-card {
-        flex: 0 0 280px;
-        height: 550px;
+        flex: 0 0 min(290px, 85%); 
+        height: auto;
+        min-height: 500px;
+        scroll-snap-align: center; /* 保持磁吸置中 */
     }
 
     .disc-video-container {
