@@ -393,12 +393,21 @@ function sortData(data, sortConfig = {}) {
             aVal = a.dates && a.dates.length > 0 ? a.dates[0].date : '0';
             bVal = b.dates && b.dates.length > 0 ? b.dates[0].date : '0';
         } else {
-            aVal = a[column] || '';
-            bVal = b[column] || '';
-        }
-        if (typeof aVal === 'string') {
-            aVal = normalizeString(aVal);
-            bVal = normalizeString(bVal);
+            // 【執行邏輯優化】排序點擊時，歌手與來源直接取用預處理文字
+            if (column === 'artist') {
+                aVal = a._normArtist;
+                bVal = b._normArtist;
+            } else if (column === 'source') {
+                aVal = a._normSource;
+                bVal = b._normSource;
+            } else {
+                aVal = a[column] || '';
+                bVal = b[column] || '';
+                if (typeof aVal === 'string') {
+                    aVal = normalizeString(aVal);
+                    bVal = normalizeString(bVal);
+                }
+            }
         }
         if (aVal > bVal) return reverse ? -1 : 1;
         if (aVal < bVal) return reverse ? 1 : -1;
@@ -468,27 +477,36 @@ document.addEventListener("DOMContentLoaded", function () {
         const query = searchBar.getQuery();
         const selectedTags = searchBar.getSelectedTags();
         
+        // 【執行邏輯優化】過濾階段：直接比對記憶體中已處理好的欄位
         const filteredData = allData.filter((row) => {
             let searchMatch = true;
             let tagMatch = true;
             
             if (selectedTags.size > 0) {
-                tagMatch = Array.isArray(row.tags) && Array.from(selectedTags).every(t => row.tags.includes(t));
+                // 改用快速中斷的迴圈，比 .every() 效能更佳
+                for (const t of selectedTags) {
+                    if (!row.tags.includes(t)) {
+                        tagMatch = false;
+                        break;
+                    }
+                }
             }
             
             if (isValidDateFormat(query)) {
                 const formattedQuery = `${query.substring(4, 8)}${query.substring(2, 4)}${query.substring(0, 2)}`;
                 searchMatch = row.dates.some(date => date.date === formattedQuery);
             } else if (query) {
-                searchMatch = normalizeString(row.song_name).includes(query) ||
-                              normalizeString(row.artist).includes(query) ||
-                              normalizeString(row.source).includes(query);
+                // 直接讀取帶有底線的預存純文字，不再重複呼叫繁重的 normalizeString()
+                searchMatch = row._normName.includes(query) ||
+                            row._normArtist.includes(query) ||
+                            row._normSource.includes(query);
             }
             return searchMatch && tagMatch;
         });
         
+        // 【執行邏輯優化】分組階段：直接使用預先產生的 _groupKey
         const groupedData = filteredData.reduce((acc, row) => {
-            const key = `${normalizeString(row.song_name)}-${normalizeString(row.artist)}`;
+            const key = row._groupKey;
             if (!acc[key]) acc[key] = { ...row, dates: [] };
             acc[key].dates.push(...row.dates);
             return acc;
@@ -528,18 +546,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
     async function fetchData() {
         try {
+            // 完全保留 no-cache，確保每次重新整理都向伺服器獲取最新資料
             const response = await fetch("data.json", { cache: "no-cache" });
             const data = await response.json();
             
-            data.forEach(song => {
-                if (!song.tags || !Array.isArray(song.tags)) song.tags = [];
+            // 【執行邏輯優化】在純記憶體(RAM)中進行一次性轉換，完全不佔用本機硬碟空間
+            allData = data.map(song => {
+                const tags = Array.isArray(song.tags) ? song.tags : [];
+                const normName = normalizeString(song.song_name || "");
+                const normArtist = normalizeString(song.artist || "");
+                const normSource = normalizeString(song.source || "");
+                return {
+                    ...song,
+                    tags: tags,
+                    _normName: normName,
+                    _normArtist: normArtist,
+                    _normSource: normSource,
+                    _groupKey: `${normName}-${normArtist}` // 預先綁定分組 Key，避免重複拼接
+                };
             });
-            allData = data;
             
-            totalSongCount = Object.keys(data.reduce((acc, row) => {
-                acc[`${normalizeString(row.song_name)}-${normalizeString(row.artist)}`] = true;
-                return acc;
-            }, {})).length;
+            // 【執行邏輯優化】利用高效能的 Set 結構，瞬間計算出不重複的歌數，不再繞路計算
+            const uniqueKeys = new Set(allData.map(song => song._groupKey));
+            totalSongCount = uniqueKeys.size;
             
             initVirtualScroller();
             applyFilters();
