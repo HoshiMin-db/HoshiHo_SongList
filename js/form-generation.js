@@ -101,6 +101,8 @@ class VirtualScrollManager {
         this.domRowsMap = new Map();
         this.ticking = false;
         
+        this.selectedRandomIndex = null; 
+        
         this.scrollContainer.addEventListener('scroll', () => this.handleScroll(), { passive: true });
         window.addEventListener('resize', () => this.recalculateVisible());
     }
@@ -111,6 +113,7 @@ class VirtualScrollManager {
         this.tbody.style.minHeight = `${rowsData.length * this.rowHeight}px`;
         this.scrollContainer.scrollTop = 0;
         this.lastRenderedStart = -1;
+        this.selectedRandomIndex = null; // 重置資料時清除隨機選中狀態
         this.render(0);
     }
     
@@ -159,6 +162,9 @@ class VirtualScrollManager {
             if (i % 2 !== 0) {
                 row.classList.add('even-row');
             }
+            if (i === this.selectedRandomIndex) {
+                row.classList.add('is-random-selected');
+            }
             this.tbody.appendChild(row);
             this.domRowsMap.set(i, row);
         }
@@ -173,9 +179,23 @@ class VirtualScrollManager {
         }
     }
     
-    scrollToDataIndex(dataIndex) {
-        const scrollTop = dataIndex * this.rowHeight;
-        this.scrollContainer.scrollTop = scrollTop;
+    scrollToDataIndexCentered(dataIndex) {
+        this.selectedRandomIndex = dataIndex; // 寫入選中狀態
+        
+        const containerHeight = this.scrollContainer.clientHeight;
+        const thead = this.scrollContainer.querySelector('thead');
+        const theadHeight = thead ? thead.offsetHeight : 0;
+        
+        // 置中公式：目標捲動高度 = (資料列累積高度 + 表頭佔位高度) - (容器高度 / 2) + (單列高度 / 2)
+        const targetScrollTop = (dataIndex * this.rowHeight) + theadHeight - (containerHeight / 2) + (this.rowHeight / 2);
+        
+        this.scrollContainer.scrollTo({
+            top: Math.max(0, targetScrollTop),
+            behavior: 'smooth'
+        });
+        
+        const currentBaseStartIdx = Math.floor(this.scrollContainer.scrollTop / this.rowHeight);
+        this.render(currentBaseStartIdx);
     }
     
     getRowElement(dataIndex) {
@@ -593,15 +613,11 @@ document.addEventListener("DOMContentLoaded", function () {
         randomButton.title = randomText;
         randomButton.addEventListener('click', () => {
             if (!window.allDisplayedData || window.allDisplayedData.length === 0) return;
+            
             const randomIndex = Math.floor(Math.random() * window.allDisplayedData.length);
-            virtualScroller.scrollToDataIndex(randomIndex);
-            setTimeout(() => {
-                const row = virtualScroller.getRowElement(randomIndex);
-                if (row) {
-                    row.classList.add('blink-animation');
-                    setTimeout(() => row.classList.remove('blink-animation'), 3800);
-                }
-            }, 800);
+            
+            // 置中滾動，不跳動、不遺失顏色
+            virtualScroller.scrollToDataIndexCentered(randomIndex);
         });
     }
     
