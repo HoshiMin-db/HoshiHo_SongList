@@ -97,7 +97,6 @@ promise|広瀬香美|90s,Female,Meme
 secret base 〜君がくれたもの〜|ZONE|00s,Female,Anime
 ブルーバード|いきものがかり|00s,Female,Anime
 金魚花火|大塚 愛|00s,Female
-さくらんぼ|大塚愛|00s,Female
 花に亡霊|ヨルシカ|20s,Female,Anime
 恋愛サーキュレーション|千石撫子(花澤香菜)|00s,Female,Anime
 チキチキバンバン|QUEENDOM|20s,Anime,Meme
@@ -992,38 +991,23 @@ OPEN YOUR MIND ～小さな羽根ひろげて～|石田燿子|00s,Female,Anime
 フクロウ ～フクロウが知らせる客が来たと～|KOKIA|00s,Female
 What Is This Feeling?|Idina Menzel, Kristin Chenoweth|Musical
 Defying Gravity|Idina Menzel, Kristin Chenoweth|Musical
-魔法使いと私(The Wizard and I)|劇団四季|Musical
-届かない恋'13|上原れな|10s,Female,Anime,Game
 True My Heart|佐倉紗織|00s,Female,Game
-キャンディキャンディ|堀江美都子、ザ・チャープス|Showa,Female,Anime
-アニメじゃない ～夢を忘れた古い地球人よ～|新井正人|Showa,Male,Anime
 風のアンセム(feat. suis from ヨルシカ)|Eve|20s,Anime,Folk
 エルの楽園 ［→ side：A →］|Sound Horizon|00s
 プリティ・ケーキ・マジック|kaede+Cheek Fairy|00s,Anime
-DESIRE - 情熱-|中森明菜|Showa,Female
-プレイバックPart2|山口百恵|Showa,Female
-檄！帝 ～最終章～|帝都花組&巴里花組+大神隊長|00s,Game
-ジョジョ～その血の運命～|富永TOMMY弘明|10s,Male,Anime
-LEVEL5- judgelight -|fripSide|10s,Female,Anime
-My Soul, Your Beats!|Lia|10s,Female,Anime
-マイ フレンド|ZARD|90s,Female,Anime
-ナド・クライ|HOYO-MiX ・ AURORA|20s,Female,Game
-異邦人 -シルクロードのテーマ-|久保田早紀|Showa,Female
-Perseus - ペルセウス -|島谷ひとみ|00s,Female,Anime
-キャンディ キャンディ|堀江美都子、ザ・チャープス|
-届かない恋 '13|上原れな|
-アニメじゃない～夢を忘れた古い地球人よ～|新井正人|
-Perseus-ペルセウス-|島谷ひとみ|
-さくらんぼ|大塚 愛|
-エルの絵本 【笛吹き男とパレード】|Sound Horizon|
-魔法使いと私 (The Wizard and I)|劇団四季|
-ジョジョ 〜その血の運命〜|富永TOMMY弘明|
-檄！帝～最終章～|帝都花組&巴里花組+大神隊長|
-異邦人 - シルクロードのテーマ -|久保田早紀|
-プレイバック Part2|山口百恵|
-DESIRE - 情熱 -|中森明菜|
-My Soul,Your Beats!|Lia|
-LEVEL5-judgelight-|fripSide|
-Perseus -ペルセウス-|島谷ひとみ|
-マイフレンド|ZARD|
-ナド・クライ|HOYO-MiX・AURORA|
+キャンディ キャンディ|堀江美都子、ザ・チャープス|Showa,Female,Anime
+届かない恋 '13|上原れな|10s,Female,Anime,Game
+アニメじゃない～夢を忘れた古い地球人よ～|新井正人|Showa,Male,Anime
+さくらんぼ|大塚 愛|00s,Female
+エルの絵本 【笛吹き男とパレード】|Sound Horizon|00s
+魔法使いと私 (The Wizard and I)|劇団四季|Musical
+ジョジョ 〜その血の運命〜|富永TOMMY弘明|10s,Male,Anime
+檄！帝～最終章～|帝都花組&巴里花組+大神隊長|00s,Game
+異邦人 - シルクロードのテーマ -|久保田早紀|Showa,Female
+プレイバック Part2|山口百恵|Showa,Female
+DESIRE - 情熱 -|中森明菜|Showa,Female
+My Soul,Your Beats!|Lia|10s,Female,Anime
+LEVEL5-judgelight-|fripSide|10s,Female,Anime
+Perseus -ペルセウス-|島谷ひとみ|00s,Female,Anime
+マイフレンド|ZARD|90s,Female,Anime
+ナド・クライ|HOYO-MiX・AURORA|20s,Female,Game
