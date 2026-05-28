@@ -39,15 +39,11 @@ a:hover {
     text-decoration: underline;
 }
 
-/* ==================== 動畫 ==================== */
-@keyframes blink {
-    0% { background-color: inherit; }
-    50% { background-color: #fff3cd; }
-    100% { background-color: inherit; }
-}
-
-.blink-animation {
-    animation: blink 1s ease-in-out 0s 3 forwards;
+/* ==================== 隨機選曲 ==================== */
+.is-random-selected {
+    background-color: #fff3cd !important;
+    /* 加上微小的轉場，讓色彩顯現時較為柔和，但絕不閃爍 */
+    transition: background-color 0.2s ease; 
 }
 
 /* ==================== 主容器 ==================== */
@@ -918,13 +914,6 @@ table tbody td:hover .song-tags {
 @media screen and (max-width: 768px) {
     .main-content {
         padding: 10px;
-        width: auto;
-        min-width: 0;              /* 關鍵：打破 Flexbox 因子元素橫向撐開的限制 */
-        overflow-x: hidden;        /* 保險：防止任何微小的內容溢出主區塊 */
-    }
-
-    .main-content.shifted {
-        margin-left: 0 !important; /* 手機版展開側邊欄時，通常改為浮動層，不應擠壓主內容 */
     }
 
     .header h1 {
@@ -989,9 +978,6 @@ table tbody td:hover .song-tags {
     .main-content {
         padding: 10px;
         min-height: 100vh;
-        width: auto;
-        min-width: 0;
-        overflow-x: hidden;
     }
 
     .header h1 {
@@ -1011,25 +997,10 @@ table tbody td:hover .song-tags {
     .category-description {
         display: none;
     }
-    
-    .category-section {
-        margin-bottom: 35px;
-    }
-    .category-section:last-child {
-        margin-bottom: 15px; /* 最後一個元素縮減留白，避免下方空洞 */
-    }
-
-    .discography-wrapper {
-        width: 100%;
-        max-width: 100%;
-        overflow-x: hidden;
-    }
 
     .disc-container {
         padding: 0 5px 15px 5px;
         gap: 15px;
-        width: 100%;
-        max-width: 100%;    /* 讓專輯橫向滾動條乖乖待在各自的分類區塊內 */
     }
 
     .disc-card {
