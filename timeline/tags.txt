@@ -666,7 +666,7 @@ IGNITE|藍井エイル|10s,Female,Anime
 コンプレックス・イマージュ|彩音|00s,Female,Game
 You|雪野五月|00s,Female,Game,Anime
 緋色の薔薇|霜月はるか|00s,Female,Game
-NEVERLAND|松澤由美|00s,Female,Anime
+NEVERLAND|松澤由美|00s,Female,Game
 太陽が呼んでいる|加藤いづみ|90s,Female,Game
 YOU GET TO BURNING|松澤由美|90s,Female,Anime
 踊|Ado|20s,Female
