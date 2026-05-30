@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function() {
     function parseVideoDetails(url) {
         try {
             const urlObj = new URL(url);
-            // 驗證 Host
             if (!VALID_HOSTS.some(host => urlObj.hostname === host || urlObj.hostname === 'www.' + host)) {
                 return null;
             }
@@ -23,25 +22,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
             if (!videoId) return null;
 
-            // 處理時間戳記 (支援 t=90, t=90s, t=1m30s)
+            // 時間戳記解析邏輯
             let startTime = 0;
             const tParam = urlObj.searchParams.get('t') || urlObj.searchParams.get('start');
             if (tParam) {
-                // 將 1m30s 轉成秒數
-                const timeMatch = tParam.match(/(?:(\d+)h)?(?:(\d+)m)?(?:(\d+)s?)?/);
-                if (timeMatch) {
-                    const h = parseInt(timeMatch[1] || 0) * 3600;
-                    const m = parseInt(timeMatch[2] || 0) * 60;
-                    const s = parseInt(timeMatch[3] || 0);
-                    startTime = h + m + s;
-                } else if (!isNaN(tParam)) {
-                    startTime = parseInt(tParam);
+                // 處理純數字或結尾為s的純數字 (例如 "90" 或 "90s")
+                if (/^\d+s?$/.test(tParam)) {
+                    startTime = parseInt(tParam, 10);
+                } else {
+                    // 處理複合格式 (例如 "1h30m20s")
+                    let h = 0, m = 0, s = 0;
+                    const hMatch = tParam.match(/(\d+)h/);
+                    const mMatch = tParam.match(/(\d+)m/);
+                    const sMatch = tParam.match(/(\d+)s/);
+                    if (hMatch) h = parseInt(hMatch[1], 10);
+                    if (mMatch) m = parseInt(mMatch[1], 10);
+                    if (sMatch) s = parseInt(sMatch[1], 10);
+                    startTime = (h * 3600) + (m * 60) + s;
                 }
             }
 
             return { videoId, startTime };
         } catch (e) {
-            return null; // 非法 URL 結構
+            return null; 
         }
     }
 
@@ -131,7 +134,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const userAgent = navigator.userAgent || navigator.vendor || window.opera;
         let appOpened = false;
-        const timeParam = details.startTime > 0 ? `&t=${details.startTime}s` : '';
+
+        const appTimeParam = details.startTime > 0 ? `&t=${details.startTime}&start=${details.startTime}` : '';
+        const videoId = details.videoId;
 
         // 使用 Visibility API 判斷是否成功跳轉出瀏覽器進入 App
         const visibilityHandler = () => {
@@ -139,23 +144,25 @@ document.addEventListener("DOMContentLoaded", function() {
         };
         document.addEventListener('visibilitychange', visibilityHandler, { once: true });
 
-        // 嘗試觸發 Deep Link，並將 timeParam 附加在 videoId 後面
+        // 嘗試觸發 Deep Link
         if (/android/i.test(userAgent)) {
-            // Android Intent Scheme
-            window.location.href = `intent://youtube.com/watch?v=${details.videoId}${timeParam}#Intent;package=com.google.android.youtube;scheme=https;end`;
+            // Android Intent Scheme 
+            window.location.href = `intent://youtube.com/watch?v=${videoId}${appTimeParam}#Intent;package=com.google.android.youtube;scheme=https;end`;
         } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-            // iOS Custom URL Scheme
-            window.location.href = `youtube://watch?v=${details.videoId}${timeParam}`;
+            // iOS Custom URL Scheme 
+            window.location.href = `youtube://watch?v=${videoId}${appTimeParam}`;
         } else {
             window.open(url, '_blank');
             return;
         }
 
-        // Fallback 機制：如果 3 秒後網頁依然在前景，代表用戶沒安裝 App，此時再開新分頁
+        // Fallback 機制：如果沒裝 App (3 秒後網頁依然在前景)，則在新分頁打開網頁版
         setTimeout(() => {
             document.removeEventListener('visibilitychange', visibilityHandler);
             if (!appOpened) {
-                window.open(url, '_blank');
+                // 網頁版 Fallback 時，加上標準的 s 確保網頁播放器 100% 讀取成功
+                const webTimeParam = details.startTime > 0 ? `&t=${details.startTime}s` : '';
+                window.open(`https://www.youtube.com/watch?v=${videoId}${webTimeParam}`, '_blank');
             }
         }, 3000);
     }
