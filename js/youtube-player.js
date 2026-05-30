@@ -131,6 +131,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const userAgent = navigator.userAgent || navigator.vendor || window.opera;
         let appOpened = false;
+        const timeParam = details.startTime > 0 ? `&t=${details.startTime}s` : '';
 
         // 使用 Visibility API 判斷是否成功跳轉出瀏覽器進入 App
         const visibilityHandler = () => {
@@ -138,13 +139,13 @@ document.addEventListener("DOMContentLoaded", function() {
         };
         document.addEventListener('visibilitychange', visibilityHandler, { once: true });
 
-        // 嘗試觸發 Deep Link
+        // 嘗試觸發 Deep Link，並將 timeParam 附加在 videoId 後面
         if (/android/i.test(userAgent)) {
-            // Android Intent Scheme (最穩定)
-            window.location.href = `intent://youtube.com/watch?v=${details.videoId}#Intent;package=com.google.android.youtube;scheme=https;end`;
+            // Android Intent Scheme
+            window.location.href = `intent://youtube.com/watch?v=${details.videoId}${timeParam}#Intent;package=com.google.android.youtube;scheme=https;end`;
         } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
             // iOS Custom URL Scheme
-            window.location.href = `youtube://watch?v=${details.videoId}`;
+            window.location.href = `youtube://watch?v=${details.videoId}${timeParam}`;
         } else {
             window.open(url, '_blank');
             return;
