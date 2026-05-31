@@ -35,7 +35,7 @@ window.updateUILS = function(lang) {
             } else if (el.tagName === 'INPUT') {
                 el.placeholder = data[key];
             } else {
-                el.innerText = data[key];
+                el.innerHTML = data[key];
             }
         }
     });
