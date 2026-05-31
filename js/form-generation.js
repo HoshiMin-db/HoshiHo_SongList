@@ -359,7 +359,14 @@ function createTableRow(item, numDates) {
     }
     songNameCell.appendChild(songNameContainer);
     newRow.insertCell().textContent = item.artist;
-    newRow.insertCell().textContent = item.source || "";
+    const sourceCell = newRow.insertCell();
+    const currentLang = localStorage.getItem('language') || 'zh-TW';
+    const preferEnglish = !currentLang.toLowerCase().startsWith('ja');
+    if (preferEnglish && item.source_en) {
+        sourceCell.textContent = item.source_en;
+    } else {
+        sourceCell.textContent = item.source || "";
+    }
     const sortedDates = item.dates.sort((a, b) => {
         const dateA = new Date(`${a.date.substring(0, 4)}-${a.date.substring(4, 6)}-${a.date.substring(6, 8)}T${a.time}`);
         const dateB = new Date(`${b.date.substring(0, 4)}-${b.date.substring(4, 6)}-${b.date.substring(6, 8)}T${b.time}`);
@@ -490,20 +497,19 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // 核心資料過濾、分組與排序管線
+    // 核心資料過濾與排序管線
     function applyFilters() {
         if (!searchBar) return;
 
         const query = searchBar.getQuery();
         const selectedTags = searchBar.getSelectedTags();
         
-        // 【執行邏輯優化】過濾階段：直接比對記憶體中已處理好的欄位
+        // 直接對 Python 處理好的 allData 進行過濾
         const filteredData = allData.filter((row) => {
             let searchMatch = true;
             let tagMatch = true;
             
             if (selectedTags.size > 0) {
-                // 改用快速中斷的迴圈，比 .every() 效能更佳
                 for (const t of selectedTags) {
                     if (!row.tags.includes(t)) {
                         tagMatch = false;
@@ -516,23 +522,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 const formattedQuery = `${query.substring(4, 8)}${query.substring(2, 4)}${query.substring(0, 2)}`;
                 searchMatch = row.dates.some(date => date.date === formattedQuery);
             } else if (query) {
-                // 直接讀取帶有底線的預存純文字，不再重複呼叫繁重的 normalizeString()
+                // 直接比對 _normSearchableSources，只要中任何一個出典寫法就顯示
                 searchMatch = row._normName.includes(query) ||
-                            row._normArtist.includes(query) ||
-                            row._normSource.includes(query);
+                              row._normArtist.includes(query) ||
+                              row._normSearchableSources.includes(query);
             }
             return searchMatch && tagMatch;
         });
         
-        // 【執行邏輯優化】分組階段：直接使用預先產生的 _groupKey
-        const groupedData = filteredData.reduce((acc, row) => {
-            const key = row._groupKey;
-            if (!acc[key]) acc[key] = { ...row, dates: [] };
-            acc[key].dates.push(...row.dates);
-            return acc;
-        }, {});
-        
-        let sortedData = Object.values(groupedData).sort((a, b) => {
+        // 直接排序並顯示
+        let sortedData = filteredData.sort((a, b) => {
             const aType = getCharacterType(a.song_name);
             const bType = getCharacterType(b.song_name);
             const weightDiff = getSortWeight(aType) - getSortWeight(bType);
@@ -554,7 +553,7 @@ document.addEventListener("DOMContentLoaded", function () {
         window.allDisplayedData = sortedData;
         virtualScroller.setDisplayData(sortedData);
     }
-    
+
     // 初始化搜尋與標籤管理
     searchBar = new SearchBarManager({
         searchInputId: "searchInput",
@@ -566,29 +565,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
     async function fetchData() {
         try {
-            // 完全保留 no-cache，確保每次重新整理都向伺服器獲取最新資料
             const response = await fetch("data.json", { cache: "no-cache" });
             const data = await response.json();
             
-            // 【執行邏輯優化】在純記憶體(RAM)中進行一次性轉換，完全不佔用本機硬碟空間
+            // 載入時一次性將所有需要搜尋的欄位做正規化
             allData = data.map(song => {
                 const tags = Array.isArray(song.tags) ? song.tags : [];
-                const normName = normalizeString(song.song_name || "");
-                const normArtist = normalizeString(song.artist || "");
-                const normSource = normalizeString(song.source || "");
                 return {
                     ...song,
                     tags: tags,
-                    _normName: normName,
-                    _normArtist: normArtist,
-                    _normSource: normSource,
-                    _groupKey: `${normName}-${normArtist}` // 預先綁定分組 Key，避免重複拼接
+                    _normName: normalizeString(song.song_name || ""),
+                    _normArtist: normalizeString(song.artist || ""),
+                    _normSource: normalizeString(song.source || ""),
+                    // 把 Python 準備好的多出典字串也正規化，確保無縫搜尋
+                    _normSearchableSources: normalizeString(song._searchableSources || "")
                 };
             });
             
-            // 【執行邏輯優化】利用高效能的 Set 結構，瞬間計算出不重複的歌數，不再繞路計算
-            const uniqueKeys = new Set(allData.map(song => song._groupKey));
-            totalSongCount = uniqueKeys.size;
+            totalSongCount = allData.length;
             
             initVirtualScroller();
             applyFilters();
@@ -624,7 +618,11 @@ document.addEventListener("DOMContentLoaded", function () {
     // 多國語系切換邏輯
     const originalOnLanguageChange = window.onLanguageChange;
     window.onLanguageChange = function(newLang) {
+        
+        // 1. 執行 core.js 原本的切換邏輯 (它會負責把 newLang 寫進 localStorage)
         if (originalOnLanguageChange) originalOnLanguageChange(newLang);
+        
+        // 2. 翻譯標籤
         document.querySelectorAll('.song-tag').forEach(tagSpan => {
             const originalTag = tagSpan.dataset.originalTag;
             if (originalTag) tagSpan.textContent = getTagTranslation(originalTag);
@@ -633,6 +631,11 @@ document.addEventListener("DOMContentLoaded", function () {
             const tag = button.dataset.tag;
             button.textContent = tag ? window.getTL(tag) || tag : window.getTL('allTags') || '全部';
         });
+        
+        // 3. 讓虛擬滾動器原地重新繪製
+        if (virtualScroller) {
+            virtualScroller.render(virtualScroller.lastRenderedStart);
+        }
     };
     
     setupTableHeaderSort();
