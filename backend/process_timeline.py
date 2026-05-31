@@ -137,6 +137,44 @@ def get_song_header(song_name, headers_dict):
             
     return None
 
+def select_best_source(sources):
+    """從多個出典寫法中選出最適合顯示的（主出典）。"""
+    if not sources:
+        return ""
+    
+    # 過濾掉空字串
+    valid_sources = [s for s in sources if s.strip()]
+    if not valid_sources:
+        return ""
+
+    def source_score(src):
+        score = 0
+        # 如果包含日文字符，給予極高權重
+        if re.search(r'[\u3040-\u309f\u30a0-\u30ff\u4e00-\u9faf]', src):
+            score += 1000
+        # 字串較長的通常資訊較完整，作為次要排序條件
+        score += len(src)
+        return score
+
+    # 依照分數由高到低排序，並回傳最高分的第一個
+    return sorted(valid_sources, key=source_score, reverse=True)[0]
+
+def select_english_source(sources):
+    """從多個出典寫法中選出純英文的出典。"""
+    if not sources:
+        return ""
+        
+    valid_sources = [s for s in sources if s.strip()]
+    
+    # 邏輯：過濾出「不包含」任何非 ASCII 字符（如中日文字符）的出典
+    eng_sources = [s for s in valid_sources if not re.search(r'[^\x00-\x7F]', s)]
+    
+    if eng_sources:
+        # 如果有多個純英文寫法，取長度最長的那個（通常資訊最完整）
+        return sorted(eng_sources, key=len, reverse=True)[0]
+        
+    return "" # 如果沒有純英文寫法，回傳空字串
+
 def normalize_key(text):
     if not text:
         return ''
@@ -144,17 +182,18 @@ def normalize_key(text):
     # 1. 全半形統一 (此步驟會將全形 ～ 自動轉為半形 ~)
     normalized = unicodedata.normalize('NFKC', text)
     
-    # 2. 波浪符號統一為 ~ (處理 NFKC 漏掉的特定 Unicode 波浪號)
-    # 使用正則表達式一次性取代，效率比用迴圈跑 .replace() 更高
+    # 2. 統一波浪號與破折號/減號，避免 Unicode 變體造成的差異
+    # 將全形減號、長破折號等都統一為標準半形 '-'
     normalized = re.sub(r'[〜\u301c\u223c]', '~', normalized)
+    normalized = re.sub(r'[－—–−]', '-', normalized)
     
     # 3. 大小寫不敏感
     normalized = normalized.casefold()
     
-    # 4. 去除前後空白，並將中間多個空白壓縮為單個空白
-    normalized = re.sub(r"\s+", ' ', normalized)
+    # 4. 移除「所有」空白字元 (與前端 JS 的搜尋邏輯完全同步)
+    normalized = re.sub(r"\s+", '', normalized)
     
-    return normalized.strip()
+    return normalized
 
 def process_timeline(file_path, date_str, member_exclusive_dates, private_dates, private_ids, acapella_songs, global_acapella_songs, acapella_songs_with_artist, copyright_songs, headers_dict):
     data = {}
@@ -296,30 +335,29 @@ def main():
             try:
                 print(f"Processing file: {filename}")
                 data = process_timeline(
-                    file_path, 
-                    date_str, 
-                    member_exclusive_dates, 
-                    private_dates, 
-                    private_ids,
-                    acapella_songs, 
-                    global_acapella_songs, 
-                    acapella_songs_with_artist, 
-                    copyright_songs, 
-                    headers_dict
+                    file_path, date_str, member_exclusive_dates, private_dates, 
+                    private_ids, acapella_songs, global_acapella_songs, 
+                    acapella_songs_with_artist, copyright_songs, headers_dict
                 )
                 
                 print(f"Processed {len(data)} songs from {filename}")
                 file_count += 1
                 
-                # 合併資料
+                # 【優化邏輯】合併資料並收集所有出現過的出典
                 for song_data in data:
                     key = (normalize_key(song_data['song_name']), normalize_key(song_data['artist']))
                     if key not in all_data:
                         all_data[key] = song_data
+                        # 初始化一個 Set 來存放這首歌的所有出典寫法
+                        all_data[key]['_all_sources'] = {song_data['source']} if song_data['source'] else set()
                     else:
                         existing_dates = all_data[key]['dates']
                         new_dates = [d for d in song_data['dates'] if d not in existing_dates]
                         all_data[key]['dates'].extend(new_dates)
+                        
+                        # 把新發現的出典寫法加進 Set 中
+                        if song_data['source']:
+                            all_data[key]['_all_sources'].add(song_data['source'])
             
             except Exception as e:
                 print(f"Error processing file {file_path}: {e}")
@@ -327,12 +365,22 @@ def main():
     print(f"Processed {file_count} files")
     print(f"Total unique songs: {len(all_data)}")
 
-    # 將 tags 加入到最終資料中（從 tags_map 查詢）
+    # 【最終整理】在輸出 JSON 前，決定主出典、英文出典與 tags
     for key, song_data in all_data.items():
-        if key in tags_map:
-            song_data['tags'] = tags_map[key]
+        song_data['tags'] = tags_map.get(key, [])
+        
+        sources = list(song_data.get('_all_sources', []))
+        if sources:
+            song_data['source'] = select_best_source(sources)            # 預設最佳出典 (偏好日文)
+            song_data['source_en'] = select_english_source(sources)      # 純英文出典
+            song_data['_searchableSources'] = "|".join(sources)
         else:
-            song_data['tags'] = []
+            song_data['source'] = ""
+            song_data['source_en'] = ""
+            song_data['_searchableSources'] = ""
+            
+        if '_all_sources' in song_data:
+            del song_data['_all_sources']
     
     # 輸出最終資料
     try:
