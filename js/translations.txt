@@ -1,6 +1,6 @@
 # HTML_ID | zh-TW | en | ja
 # --- 全域與頁面標題 ---
-title|🌟 HoshiHo 歌單 💐|🌟 HoshiHo Song List 💐|🌟 HoshiHo 歌曲リスト 💐
+title|🌟 HoshiHo 歌單 💐|🌟 HoshiHo Song List 💐|🌟 HoshiHo 歌<small>った</small>曲リスト 💐
 discography|🌟 HoshiHo 專輯 💐|🌟 HoshiHo Discography 💐|🌟 HoshiHo 作品リスト 💐
 totalSongs|總曲數：|Total Songs：|総曲数：
 searchPlaceholder|搜尋歌名、歌手、來源或日期(DDMMYYYY)...|Search song name, artist, source, or date (DDMMYYYY)...|曲名、歌手、出典、または日付(DDMMYYYY)を検索...
