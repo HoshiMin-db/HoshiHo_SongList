@@ -1,37 +1,67 @@
 /* style.css - 包含所有頁面的共用樣式 */
+
+/* ==================== 1. 核心變數定義 (Variables) ==================== */
+:root {
+    /* 字體 */
+    --main-font: 'Microsoft JhengHei', '微軟正黑體', sans-serif;
+    
+    /* 主題色彩 (Light Mode) */
+    --theme-primary: #6a5acd;       /* 主紫色 */
+    --theme-primary-hover: #5849b8;
+    --theme-secondary: #228be6;     /* 主藍色 */
+    --theme-secondary-hover: #1c7ed6;
+
+    /* 介面色彩 */
+    --bg-page: #f5f5f5;            /* 網頁底色 */
+    --bg-surface: #ffffff;         /* 卡片/表格底色 */
+    --bg-hover: #f8f9fa;           /* 列表懸停色 */
+    --bg-highlight: #fff3cd;       /* 隨機選中高亮色 */
+    --color-featured-orange: #c84b00;       /* 試聽 (XFD)、特選曲目、參與特殊企劃的橘金色 */
+    --color-featured-hover: #a03c00;
+    --color-purchase-green: #2b8a3e;        /* 購買按鈕的綠色 */
+    --color-purchase-hover: #206a30;
+    
+    /* 文字色彩 */
+    --text-main: #333333;          /* 主文字 */
+    --text-muted: #868e96;         /* 次要/輔助文字 */
+    --text-light: #ffffff;         /* 深色背景上的文字 */
+    
+    /* 邊框與陰影 */
+    --border-color: #ddd;
+    --border-light: #e9ecef;
+    --shadow-sm: 0 2px 5px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    /* 佈局 */
+    --sidebar-width: 48px;
+    --sidebar-expanded-width: clamp(160px, 12vw, 200px);
+}
+
+:lang(ja) {
+    --main-font: 'Yu Gothic', '游ゴシック', 'Microsoft JhengHei', sans-serif;
+}
+
+/* ==================== 2. 全域重置與基礎 ==================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* 定義字體變數 */
-:root {
-    --main-font: 'Microsoft JhengHei', '微軟正黑體', sans-serif;
-}
-
-/* 只有在日文模式下，覆蓋變數的值 */
-:lang(ja) {
-    --main-font: 'Yu Gothic', '游ゴシック', 'Microsoft JhengHei', sans-serif;
-}
-
-/* 統一應用到所有需要的元素 */
 body, button, input, select {
     font-family: var(--main-font);
     line-height: 1.5;
 }
 
-/* 剩下的 body 樣式 */
 body {
-    background-color: #f5f5f5;
-    color: #333;
+    background-color: var(--bg-page);
+    color: var(--text-main);
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 }
 
-/* ==================== 通用樣式 ==================== */
 a {
-    color: #6a5acd;
+    color: var(--theme-primary);
     text-decoration: none;
 }
 
@@ -39,14 +69,12 @@ a:hover {
     text-decoration: underline;
 }
 
-/* ==================== 隨機選曲 ==================== */
+/* 隨機選中曲目的高亮樣式（全端通用） */
 .is-random-selected {
-    background-color: #fff3cd !important;
-    /* 加上微小的轉場，讓色彩顯現時較為柔和，但絕不閃爍 */
-    transition: background-color 0.2s ease; 
+    background-color: var(--bg-highlight) !important;
 }
 
-/* ==================== 主容器 ==================== */
+/* ==================== 3. 佈局骨架 ==================== */
 #app-container {
     display: flex;
     min-height: 100vh;
@@ -62,41 +90,40 @@ a:hover {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin-left: 48px; /* match sidebar default width */
+    margin-left: var(--sidebar-width);
     padding: 20px;
     box-sizing: border-box;
+    min-width: 0; /* 關鍵：防止內容溢出導致整頁橫向滾動 */
 }
 
 .main-content.shifted {
-    margin-left: clamp(160px, 12vw, 200px); /* match sidebar.expanded width */
+    margin-left: var(--sidebar-expanded-width);
 }
 
-/* ==================== 頁面頭部 ==================== */
+/* ==================== 4. 共通元件 (頭部、搜尋、標籤) ==================== */
 .header {
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
+    color: var(--text-main);
 }
 
 .header h1 {
-    color: #6a5acd;
+    color: var(--theme-primary);
     font-size: 2em;
 }
 
 #totalSongs {
-    color: #868e96;
+    color: var(--text-muted);
     font-size: 0.9em;
     margin-top: 5px;
 }
 
-/* ==================== 搜尋框（index.html 用） ==================== */
 .search-container {
     margin-bottom: 20px;
-    background: white;
-    padding: 20px;
-    padding-bottom: 32px;
+    background: var(--bg-surface);
+    padding: 20px 20px 32px 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-sm);
     position: relative;
     display: flex;
     align-items: center;
@@ -106,12 +133,15 @@ a:hover {
 #searchInput {
     flex: 1;
     padding: 12px 20px;
-    margin: 0;
-    box-sizing: border-box;
-    border: 2px solid #ddd;
+    border: 2px solid var(--border-color);
     border-radius: 4px;
     font-size: 16px;
     transition: border-color 0.3s ease;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: var(--theme-primary);
 }
 
 .random-button {
@@ -126,7 +156,7 @@ a:hover {
     border-radius: 6px;
     cursor: pointer;
     font-size: 24px;
-    transition: background-color 0.15s ease, transform 0.12s ease;
+    transition: all 0.15s ease;
     box-shadow: 0 1px 3px rgba(106, 90, 205, 0.15);
 }
 
@@ -139,29 +169,12 @@ a:hover {
     transform: scale(0.95);
 }
 
-/* 標籤切換按鈕 (置中箭頭) */
 .tag-toggle-wrapper {
     position: absolute;
     left: 50%;
-    bottom: -14px; /* place outside the search container */
+    bottom: -14px;
     transform: translateX(-50%);
     z-index: 30;
-    display: block;
-}
-
-.tag-toggle {
-    background: none;
-    border: none;
-    font-size: 14px;
-    cursor: pointer;
-    line-height: 1;
-    padding: 4px 8px;
-    border-radius: 6px;
-    transition: transform 0.2s ease, background-color 0.15s ease;
-}
-
-.tag-toggle:hover {
-    background-color: rgba(0,0,0,0.04);
 }
 
 .tag-toggle {
@@ -171,23 +184,20 @@ a:hover {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: white;
+    background: var(--bg-surface);
     border: 1px solid rgba(90,80,160,0.08);
     border-radius: 6px;
+    cursor: pointer;
     box-shadow: 0 1px 3px rgba(90,80,160,0.06);
+    transition: all 0.2s ease;
 }
 
-.tag-toggle svg {
-    display: block;
+.tag-toggle:hover {
+    background-color: rgba(0,0,0,0.04);
 }
 
 .tag-toggle[aria-expanded="true"] {
     transform: rotate(180deg);
-}
-
-#searchInput:focus {
-    outline: none;
-    border-color: #6a5acd;
 }
 
 .tags-filter-container {
@@ -196,13 +206,12 @@ a:hover {
     flex-wrap: wrap;
     gap: 12px;
     margin-bottom: 20px;
-    background: linear-gradient(180deg, #ffffff 0%, #fbfbff 100%);
+    background: linear-gradient(180deg, var(--bg-surface) 0%, #fbfbff 100%);
     padding: 12px 18px;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(90,80,160,0.06);
 }
 
-/* 當 collapsed 時隱藏標籤列 */
 .tags-filter-container.collapsed {
     display: none;
 }
@@ -220,13 +229,13 @@ a:hover {
 
 .tag-button {
     padding: 6px 10px;
-    border: 1px solid #e6e6ef;
+    border: 1px solid var(--border-light);
     border-radius: 999px;
     background: #fbfbff;
-    color: #333;
+    color: var(--text-main);
     font-size: 12px;
     cursor: pointer;
-    transition: background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease, transform 0.12s ease;
+    transition: all 0.18s ease;
     line-height: 1;
 }
 
@@ -236,13 +245,13 @@ a:hover {
 }
 
 .tag-button.selected {
-    background: #6a5acd;
+    background: var(--theme-primary);
     border-color: #5946ad;
-    color: #fff;
+    color: var(--text-light);
     box-shadow: 0 2px 6px rgba(90,80,160,0.12);
 }
 
-/* ==================== 虛擬滾動容器（index.html 用） ==================== */
+/* ==================== 5. 表格系統 (index.html) ==================== */
 .virtual-scroll-container {
     flex: 1;
     max-height: min(70vh, 640px);
@@ -251,48 +260,36 @@ a:hover {
     margin-bottom: 20px;
 }
 
-.virtual-scroll-content {
-    width: 100%;
-    min-width: 100%;
-    position: relative;
-}
-
-/* ==================== 表格樣式（index.html 用） ==================== */
 table {
     width: 100%;
-    max-width: 100%;
     border-collapse: collapse;
-    background: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: var(--bg-surface);
+    box-shadow: var(--shadow-sm);
     table-layout: fixed;
 }
 
-/* 虛擬滾動修復 */
 /* 虛擬占位符行 */
 table tbody tr[style*="height"] {
     border: none;
     background: transparent;
     pointer-events: none;
 }
-
 table tbody tr[style*="height"] td {
     border: none;
     padding: 0;
     height: 100%;
 }
-
-/* 虛擬占位符中的 tags 隱藏 */
 table tbody tr[style*="height"] .song-tags {
     display: none;
 }
 
 table, th, td {
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
 }
 
 th {
-    background-color: #6a5acd;
-    color: white;
+    background-color: var(--theme-primary);
+    color: var(--text-light);
     cursor: pointer;
     padding: 12px;
     text-align: left;
@@ -302,7 +299,7 @@ th {
 }
 
 th:hover {
-    background-color: #5849b8;
+    background-color: var(--theme-primary-hover);
 }
 
 td {
@@ -314,30 +311,21 @@ td {
     position: relative;
 }
 
-tr.even-row {
-    background-color: #f9f9f9;
-}
-
-tr:hover {
-    background-color: #f5f5f5;
-}
-
+tr.even-row { background-color: #f9f9f9; }
+tr:hover { background-color: var(--bg-page); }
 td:hover {
     overflow: visible;
     white-space: normal;
-    background-color: #f8f8f8;
+    background-color: var(--bg-hover);
     z-index: 1;
 }
 
-/* 表格欄寬 */
 th:nth-child(1), td:nth-child(1) { width: 5%; }
 th:nth-child(2), td:nth-child(2) { width: 25%; }
 th:nth-child(3), td:nth-child(3) { width: 15%; }
 th:nth-child(4), td:nth-child(4) { width: 15%; }
-
 td.dates-container-cell { width: 40%; }
 
-/* 日期容器 */
 .dates-container {
     display: flex;
     overflow-x: auto;
@@ -345,23 +333,18 @@ td.dates-container-cell { width: 40%; }
     margin: 0;
     padding: 0;
     font-size: 11px;
-    -ms-overflow-style: none;
     scrollbar-width: none;
 }
-
-.dates-container::-webkit-scrollbar {
-    display: none;
-}
+.dates-container::-webkit-scrollbar { display: none; }
 
 .date-cell {
     flex: 0 0 auto;
     min-width: 100px;
     padding: 12px;
-    border-right: 1px solid #ddd;
+    border-right: 1px solid var(--border-color);
     text-align: center;
     font-size: 11px;
 }
-
 .date-cell:last-child {
     min-width: 50px;
     border-right: none;
@@ -369,7 +352,7 @@ td.dates-container-cell { width: 40%; }
 
 .more-button {
     background-color: #8a80cd;
-    color: white;
+    color: var(--text-light);
     border: none;
     padding: 2px 8px;
     cursor: pointer;
@@ -379,16 +362,12 @@ td.dates-container-cell { width: 40%; }
     line-height: 18px;
     transition: background-color 0.2s ease;
 }
-
 .more-button:hover {
-    background-color: #6a5acd;
+    background-color: var(--theme-primary);
 }
 
-.acapella {
-    background-color: #e0f7fa;
-}
+.acapella { background-color: #e0f7fa; }
 
-/* tags 樣式 - 曲名下一行，隱藏狀態 */
 .song-tags {
     font-size: 10px;
     display: flex;
@@ -398,20 +377,18 @@ td.dates-container-cell { width: 40%; }
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
+    transition: all 0.3s ease;
     position: relative;
     z-index: 5;
 }
-
 table tbody td:hover .song-tags {
     max-height: 50px;
     opacity: 1;
     overflow: visible;
 }
-
 .song-tag {
     background-color: #8a80cd;
-    color: #ffffff;
+    color: var(--text-light);
     padding: 2px 6px;
     border-radius: 3px;
     white-space: nowrap;
@@ -420,7 +397,7 @@ table tbody td:hover .song-tags {
     flex-shrink: 0;
 }
 
-/* ==================== 浮動播放器（index.html 用） ==================== */
+/* 浮動播放器 */
 .floating-player-container {
     position: fixed;
     bottom: 20px;
@@ -429,13 +406,12 @@ table tbody td:hover .song-tags {
     height: 360px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     display: none;
-    background-color: white;
+    background-color: var(--bg-surface);
     z-index: 1000;
     border-radius: 8px;
     overflow: hidden;
     cursor: move;
 }
-
 .close-btn {
     position: absolute;
     top: 5px;
@@ -446,42 +422,32 @@ table tbody td:hover .song-tags {
     width: 20px;
     height: 20px;
     cursor: pointer;
-    user-select: none;
     transition: background-color 0.2s ease;
     z-index: 10;
 }
+.close-btn:hover { background-color: var(--theme-primary-hover); }
 
-.close-btn:hover {
-    background-color: #5849b8;
-}
-
-/* ==================== Discography 容器（disc.html 用） ==================== */
+/* ==================== 6. 專輯系統 (disc.html) ==================== */
 .discography-wrapper {
     flex: 1;
     overflow-y: auto;
     padding: 0;
 }
-
-.category-section {
-    margin-bottom: 50px;
-}
-
+.category-section { margin-bottom: 50px; }
 .category-title {
     font-size: 1.8em;
     font-weight: bold;
-    color: #6a5acd;
+    color: var(--theme-primary);
     margin-bottom: 10px;
     padding-left: 20px;
 }
-
 .category-description {
-    color: #868e96;
+    color: var(--text-muted);
     margin-bottom: 20px;
     padding-left: 20px;
     font-size: 0.95em;
 }
 
-/* 專輯卡片容器（水平滾動）*/
 .disc-container {
     display: flex;
     gap: 25px;
@@ -490,44 +456,26 @@ table tbody td:hover .song-tags {
     overflow-y: hidden;
     scroll-behavior: smooth;
 }
+.disc-container::-webkit-scrollbar { height: 8px; }
+.disc-container::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; }
+.disc-container::-webkit-scrollbar-thumb { background: #888; border-radius: 10px; }
+.disc-container::-webkit-scrollbar-thumb:hover { background: #555; }
 
-.disc-container::-webkit-scrollbar {
-    height: 8px;
-}
-
-.disc-container::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 10px;
-}
-
-.disc-container::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 10px;
-}
-
-.disc-container::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
-/* ==================== 專輯卡片 ==================== */
 .disc-card {
     flex: 0 0 340px;
-    background: white;
+    background: var(--bg-surface);
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    box-shadow: var(--shadow-md);
+    transition: box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
     height: 600px;
 }
-
 .disc-card:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-    transform: none; /* 強制不進行位移 */
 }
 
-/* 卡片上部 - 影片區域 */
 .disc-video-container {
     width: 100%;
     height: 200px;
@@ -536,12 +484,7 @@ table tbody td:hover .song-tags {
     overflow: hidden;
     flex-shrink: 0;
 }
-
-.disc-video-container iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
+.disc-video-container iframe { width: 100%; height: 100%; border: none; }
 
 .disc-video-placeholder {
     width: 100%;
@@ -553,94 +496,60 @@ table tbody td:hover .song-tags {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    position: relative;
     transition: opacity 0.3s ease;
 }
-
-.disc-video-placeholder:hover {
-    opacity: 0.8;
-}
+.disc-video-placeholder:hover { opacity: 0.8; }
 
 .play-icon {
     width: 60px;
     height: 60px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9); /* 提高白底不透明度 */
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 30px;
-    color: #f59f00;
+    color: var(--color-featured-orange);  /* 使用新命名與高對比色 */
     transition: all 0.3s ease;
 }
-
 .disc-video-placeholder:hover .play-icon {
-    background: rgba(255, 255, 255, 1);
+    background: var(--bg-surface);
     transform: scale(1.1);
 }
 
-/* 卡片中部 - 專輯資訊 */
 .disc-header {
     padding: 15px 20px;
-    border-bottom: 2px solid #e9ecef;
+    border-bottom: 2px solid var(--border-light);
     flex-shrink: 0;
 }
-
 .disc-title {
     font-size: 1.4em;
     font-weight: bold;
-    color: #228be6;
+    color: var(--theme-secondary);
     margin: 0 0 5px 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
-.disc-type {
-    color: #868e96;
-    font-size: 0.85em;
-    margin: 0;
-}
-
+.disc-type { color: var(--text-muted); font-size: 0.85em; margin: 0; }
 .disc-circle {
     font-size: 0.8em;
-    color: #f59f00;
+    color: var(--color-featured-orange);
     font-style: italic;
     margin-top: 5px;
 }
+.disc-release-date { color: #999; font-size: 0.8em; margin-top: 3px; }
 
-.disc-release-date {
-    color: #999;
-    font-size: 0.8em;
-    margin-top: 3px;
-}
-
-/* 卡片下部 - 曲目列表 */
 .track-list {
     list-style: none;
-    padding: 0;
+    padding: 10px 0;
     margin: 0;
     flex: 1;
     overflow-y: auto;
-    padding: 10px 0;
 }
-
-.track-list::-webkit-scrollbar {
-    width: 6px;
-}
-
-.track-list::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-.track-list::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 3px;
-}
-
-.track-list::-webkit-scrollbar-thumb:hover {
-    background: #999;
-}
+.track-list::-webkit-scrollbar { width: 6px; }
+.track-list::-webkit-scrollbar-track { background: #f1f1f1; }
+.track-list::-webkit-scrollbar-thumb { background: #ccc; border-radius: 3px; }
 
 .track-item {
     padding: 8px 15px;
@@ -651,16 +560,13 @@ table tbody td:hover .song-tags {
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
-
-.track-item:hover {
-    background-color: #f8f9fa;
-}
+.track-item:hover { background-color: var(--bg-hover); }
 
 .track-number {
     width: 24px;
     height: 24px;
     background: #e7f5ff;
-    color: #228be6;
+    color: var(--theme-secondary);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -669,18 +575,13 @@ table tbody td:hover .song-tags {
     font-weight: 600;
     flex-shrink: 0;
 }
-
 .participation-badge {
-    color: #f59f00;
+    color: var(--color-featured-orange); 
     font-size: 0.9em;
-    opacity: 0.8;
+    opacity: 0.9; 
 }
 
-.track-info {
-    flex: 1;
-    min-width: 0;
-}
-
+.track-info { flex: 1; min-width: 0; }
 .track-title {
     font-weight: 500;
     color: #495057;
@@ -689,10 +590,9 @@ table tbody td:hover .song-tags {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
 .track-credit {
     font-size: 0.75em;
-    color: #868e96;
+    color: var(--text-muted);
     margin-top: 2px;
     white-space: nowrap;
     overflow: hidden;
@@ -700,380 +600,158 @@ table tbody td:hover .song-tags {
 }
 
 .track-item-participation .track-title {
-    color: #f59f00;
+    color: var(--color-featured-orange); 
     font-weight: 600;
 }
+.track-item-participation:hover { background-color: #fff8dc; }
 
-.track-item-participation:hover {
-    background-color: #fff8dc;
+/* 共用的藍色互動按鈕 (包含 Play 小按鈕與 Playlist 連結) */
+.play-button-small,
+.external-link-playlist {
+    background: var(--theme-secondary);
+    color: var(--text-light);
+}
+
+.play-button-small:hover,
+.external-link-playlist:hover {
+    background: var(--theme-secondary-hover);
 }
 
 .play-button-small {
-    width: 28px;        /* 固定寬度 */
-    height: 28px;       /* 固定高度 */
-    padding: 0;         /* 徹底清除內距，由寬高控制形狀 */
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;     /* 防止被 Flex 容器擠壓變形 */
-    
-    /* --- 字體鎖定 --- */
-    font-family: Arial, sans-serif; /* 符號類建議使用標準英文字型，渲染最穩定 */
-    font-size: 1.2em;
-    line-height: 1;
-    
-    /* --- 原有樣式 --- */
-    background: #228be6;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    width: 28px; height: 28px; padding: 0;
+    display: inline-flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    font-family: Arial, sans-serif; font-size: 1.2em; line-height: 1;
+    border: none; border-radius: 4px; cursor: pointer;
     transition: all 0.2s ease;
     box-shadow: 0 2px 4px rgba(34, 139, 230, 0.3);
 }
+.play-button-small:hover { transform: scale(1.1); }
+.play-button-small:active { transform: scale(0.95); }
 
-/* 確保 hover 時不會位移 */
-.play-button-small:hover {
-    background: #1c7ed6;
-    transform: scale(1.1); /* 使用縮放而非改變大小 */
-}
-
-.play-button-small:active {
-    transform: scale(0.95);
-}
-
-/* 卡片底部 - 外部連結 */
 .external-links {
     display: flex;
     gap: 8px;
     padding: 15px;
-    border-top: 2px solid #e9ecef;
-    flex-wrap: nowrap; /* 強制不換行 */
+    border-top: 2px solid var(--border-light);
+    flex-wrap: nowrap;
     justify-content: space-between;
 }
-
 .external-link {
-    flex: 1; /* 平分空間 */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 5px;
-    border-radius: 8px;
-    font-size: 0.85em;
-    font-weight: 600;
-    white-space: nowrap;
-    transition: all 0.2s ease;
-    min-width: 0; /* 允許縮小 */
-    text-decoration: none;
-    color: white;
-    border: none;
-    cursor: pointer;
+    flex: 1; display: flex; align-items: center; justify-content: center;
+    padding: 10px 5px; border-radius: 8px;
+    font-size: 0.85em; font-weight: 600; white-space: nowrap;
+    transition: background-color 0.2s ease;
+    min-width: 0; text-decoration: none; border: none; cursor: pointer;
+}
+.btn-icon { margin-right: 4px; }
+
+/* 試聽/XFD 按鈕 */
+.external-link-xfd { 
+    background: var(--color-featured-orange); 
+    color: var(--text-light); 
+}
+.external-link-xfd:hover { 
+    background: var(--color-featured-hover); 
 }
 
-.btn-icon {
-    margin-right: 4px; /* 文字存在時，Icon 往右推一點 */
+/* 購買按鈕 */
+.external-link-purchase { 
+    background: var(--color-purchase-green); 
+    color: var(--text-light); 
+}
+.external-link-purchase:hover { 
+    background: var(--color-purchase-hover); 
 }
 
-.external-link:hover {
-    background: #1c7ed6;
-}
+:lang(ja) .external-link { letter-spacing: -0.02em; font-feature-settings: "palt"; }
 
-.external-link-xfd {
-    background: #f59f00;
-}
-
-.external-link-xfd:hover {
-    background: #e89a00;
-}
-
-.external-link-purchase {
-    background: #51cf66;
-}
-
-.external-link-purchase:hover {
-    background: #40c057;
-}
-
-.external-link-playlist {
-    background: #228be6;
-}
-
-.external-link-playlist:hover {
-    background: #1c7ed6;
-}
-
-:lang(ja) .external-link {
-    letter-spacing: -0.02em;
-    font-feature-settings: "palt";
-}
-
-/* ==================== Sidebar 樣式 ==================== */
+/* ==================== 7. 側邊欄與語言選擇 (Sidebar) ==================== */
 .sidebar {
-    /* default: only show hamburger */
-    width: 48px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0; /* 用 bottom: 0 代替 height: 100vh */
-    background-color: #f8f9fa; 
-    border-right: 1px solid #e9ecef; 
-    transition: width 0.3s ease; 
-    z-index: 1000; 
-    overflow: visible; 
+    width: var(--sidebar-width);
+    position: fixed; left: 0; top: 0; bottom: 0;
+    background-color: var(--bg-hover);
+    border-right: 1px solid var(--border-light);
+    transition: width 0.3s ease;
+    z-index: 1000; overflow: visible;
 }
-
-.sidebar.expanded {
-    width: clamp(160px, 12vw, 200px);
-}
+.sidebar.expanded { width: var(--sidebar-expanded-width); }
 
 .hamburger {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 1.5em;
-    flex-shrink: 0;
+    width: 50px; height: 50px;
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer; font-size: 1.5em; flex-shrink: 0;
 }
-
 .sidebar-nav {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
-    margin-bottom: 80px; 
-    overflow: hidden; 
+    list-style: none; padding: 0; margin-top: 20px; margin-bottom: 80px; overflow: hidden;
 }
-
-.sidebar-nav li {
-    margin: 5px 0;
-}
-
+.sidebar-nav li { margin: 5px 0; }
 .sidebar-nav a {
-    text-decoration: none;
-    color: #495057;
-    font-size: 1.1em;
-    display: flex;
-    align-items: center;
-    padding: 8px 15px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    white-space: nowrap;
+    text-decoration: none; color: #495057; font-size: 1.1em;
+    display: flex; align-items: center; padding: 8px 15px;
+    border-radius: 5px; transition: all 0.3s ease; white-space: nowrap;
 }
+.sidebar-nav a:hover { background-color: var(--border-light); color: var(--theme-secondary); }
+.sidebar-nav a.active { background-color: var(--theme-secondary); color: var(--text-light); }
+.nav-icon { width: 20px; text-align: center; margin-right: 10px; flex-shrink: 0; }
 
-.sidebar-nav a:hover {
-    background-color: #e9ecef;
-    color: #228be6;
-}
-
-.sidebar-nav a.active {
-    background-color: #228be6;
-    color: white;
-}
-
-.nav-icon {
-    width: 20px;
-    text-align: center;
-    margin-right: 10px;
-    flex-shrink: 0;
-}
-
-
-/* 語言選擇器 */
 .language-switcher {
-    position: absolute; 
-    bottom: 20px; 
-    left: 0; 
-    width: 100%;          
-    text-align: center; 
-    padding: 10px 0; 
-    border-top: 1px solid #dee2e6; 
+    position: absolute; bottom: 20px; left: 0; width: 100%;
+    text-align: center; padding: 10px 0; border-top: 1px solid #dee2e6;
 }
-
 .language-switcher select {
-    padding: 8px;
-    width: 90%;
-    border: 1px solid #ced4da;
-    border-radius: 5px;
-    font-size: 1em;
-    background-color: #ffffff;
-    transition: border-color 0.3s ease;
+    padding: 8px; width: 90%; border: 1px solid #ced4da; border-radius: 5px;
+    font-size: 1em; background-color: var(--bg-surface); transition: border-color 0.3s ease;
 }
-
-.language-switcher select:hover {
-    border-color: #228be6;
-}
-
+.language-switcher select:hover { border-color: var(--theme-secondary); }
 .language-switcher select:focus {
-    outline: none;
-    border-color: #1c7ed6;
+    outline: none; border-color: var(--theme-secondary-hover);
     box-shadow: 0 0 5px rgba(28, 126, 214, 0.5);
 }
 
-/* ==================== 響應式設計 ==================== */
+/* ==================== 8. 響應式佈局 (RWD) ==================== */
 @media screen and (max-width: 768px) {
     .main-content {
-        padding: 10px;
-        width: auto; 
-        min-width: 0; 
-        overflow-x: hidden; 
+        padding: 10px; width: auto; overflow-x: hidden;
     }
-
-    .header h1 {
-        font-size: 1.5em;
-    }
-
-    .category-title {
-        font-size: 1.3em;
-        padding-left: 10px;
-    }
-
-    .category-description {
-        padding-left: 10px;
-        font-size: 0.9em;
-    }
-
-    .disc-container {
-        padding: 0 10px 15px 10px;
-        gap: 15px;
-    }
-
-    .disc-card {
-        flex: 0 0 min(290px, 85%); 
-        height: auto;
-        min-height: 500px;
-        scroll-snap-align: center; /* 保持磁吸置中 */
-    }
-
-    .disc-video-container {
-        height: 160px;
-    }
-
-    .btn-text {
-        display: none; 
-    }
-
-    .btn-icon {
-        margin-right: 0; 
-        font-size: 1.5em; /* 微調 Emoji 大小 */
-    }
-
-    table {
-        font-size: 0.9em;
-    }
-
-    th, td {
-        padding: 8px;
-    }
-
-    #searchInput {
-        font-size: 14px;
-        padding: 10px;
-    }
+    .header h1 { font-size: 1.5em; }
+    .category-title { font-size: 1.3em; padding-left: 10px; }
+    .category-description { padding-left: 10px; font-size: 0.9em; }
+    
+    .disc-container { padding: 0 10px 15px 10px; gap: 15px; }
+    .disc-card { flex: 0 0 min(290px, 85%); height: auto; min-height: 500px; scroll-snap-align: center; }
+    .disc-video-container { height: 160px; }
+    
+    .btn-text { display: none; }
+    .btn-icon { margin-right: 0; font-size: 1.5em; }
+    
+    table { font-size: 0.9em; }
+    th, td { padding: 8px; }
+    #searchInput { font-size: 14px; padding: 10px; }
 }
 
 @media screen and (max-width: 600px) {
-    body {
-        padding: 0;
-        overflow: auto; 
-    }
-
-    .main-content {
-        padding: 10px;
-        min-height: 100vh;
-        width: auto;
-        min-width: 0;
-        overflow-x: hidden;
-    }
-
-    .header h1 {
-        font-size: 1.3em;
-        margin-bottom: 15px;
-    }
-
-    .virtual-scroll-container {
-        max-height: min(80vh, 720px);
-    }
-
-    .category-title {
-        font-size: 1.1em;
-        padding-left: 5px;
-    }
-
-    .category-description {
-        display: none;
-    }
-
-    .category-section {
-        margin-bottom: 35px;
-    }
-    .category-section:last-child {
-        margin-bottom: 15px; /* 避免頁面末尾留下過大空隙露出 body 背景 */
-    }
-
-    .disc-container {
-        padding: 0 5px 15px 5px;
-        gap: 15px;
-    }
-
-    .disc-card {
-        flex: 0 0 270px; /* 固定寬度 270px，在 360px~400px 的手機螢幕上能完美露出右側下一張卡片 */
-        height: 550px;   /* 承襲 768px 的固定高度，確保排版整齊 */
-    }
-
-    .disc-video-container {
-        height: 160px; /* 配合 270px 寬度，稍微縮低影片高度比例更完美 */
-    }
-
-    .track-list {
-        max-height: 200px;
-    }
-
-    .btn-text {
-        display: none; 
-    }
-
-    .btn-icon {
-        margin-right: 0; 
-        font-size: 1.4em; /* 微調 Emoji 大小 */
-    }
+    body { padding: 0; overflow: auto; }
+    .main-content { min-height: 100vh; }
+    .header h1 { font-size: 1.3em; margin-bottom: 15px; }
     
-    .floating-player-container {
-        width: 100%;
-        height: auto;
-        bottom: 10px;
-        right: 10px;
-    }
-
-    .search-container {
-        padding: 10px;
-        margin-bottom: 15px;
-    }
-
-    #searchInput {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    table {
-        font-size: 0.8em; /* 從電腦版的 1.0em 縮減為 0.8 倍 */
-    }
-
-    /* 2. 縮小表頭與單元格的內距，釋放更多空間 */
-    th, td {
-        padding: 6px 4px; /* 原本是 8px */
-    }
-
-    /* 3. 針對 index 頁面特定的日期單元格微調 */
-    .date-cell {
-        min-width: 70px;  /* 稍微縮小最小寬度，防止表格被撐開 */
-        font-size: 9px;   /* 從原本手機版的 10px 再降一點 */
-    }
-
-    .more-button {
-        font-size: 10px;
-        padding: 2px 4px;
-        height: 16px;
-        line-height: 16px;
-    }
+    .virtual-scroll-container { max-height: min(80vh, 720px); }
+    
+    .category-title { font-size: 1.1em; padding-left: 5px; }
+    .category-description { display: none; }
+    .category-section { margin-bottom: 35px; }
+    .category-section:last-child { margin-bottom: 15px; }
+    
+    .disc-container { padding: 0 5px 15px 5px; }
+    .disc-card { flex: 0 0 270px; height: 550px; }
+    .track-list { max-height: 200px; }
+    .btn-icon { font-size: 1.4em; }
+    
+    .floating-player-container { width: 100%; height: auto; bottom: 10px; right: 10px; }
+    .search-container { padding: 10px; margin-bottom: 15px; }
+    
+    table { font-size: 0.8em; }
+    th, td { padding: 6px 4px; }
+    .date-cell { min-width: 70px; font-size: 9px; }
+    .more-button { font-size: 10px; padding: 2px 4px; height: 16px; line-height: 16px; }
 }
