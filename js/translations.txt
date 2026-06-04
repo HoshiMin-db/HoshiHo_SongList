@@ -26,7 +26,7 @@ navDisc|專輯|Discography|作品リスト
 # --- Tag 過濾 (動態生成) ---
 filterByTag|Tag：|Tag：|タグ：
 allTags|全部|All|すべて
-Showa|昭和年代|Showa Era|昭和
+Showa|昭和年代|Showa|昭和
 90s|90年代|1990s|90年代
 00s|00年代|2000s|00年代
 10s|10年代|2010s|10年代
@@ -36,9 +36,9 @@ Male|男性歌手|Male Vocal|男性ボーカル
 Anime|動畫|Anime|アニメ
 Game|遊戲|Game|ゲーム
 Original|原創|Original|オリジナル
-Folk|民族風|Folklore|民族
-Denpa|電波|Denpa song|電波ソング
-Meme|搞笑|Meme song|ネタ枠
-Wafuu|和風|Japanese-style|和風
+Folk|民族風|Ethnic|民族
+Denpa|電波|Denpa|電波ソング
+Meme|搞笑|Meme|ネタ枠
+Wafuu|和風|Wafu|和風
 Musical|音樂劇|Musical|ミュージカル
 Touhou|東方|Touhou|東方
