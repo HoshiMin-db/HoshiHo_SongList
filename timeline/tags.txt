@@ -181,7 +181,7 @@ Give a Reason|林原めぐみ|90s,Female,Anime
 晴れてハレルヤ|奥井亜紀|90s,Female,Anime
 奇跡の海|坂本真綾|90s,Female,Anime
 悠久の翼|原田ひとみ|00s,Female,Game
-白夜|松本英子|00s,Female,Anime
+白夜|松本英子|00s,Female,Anime,Folk
 澪音の世界|Sound Horizon|00s
 エルの絵本【笛吹き男とパレード】|Sound Horizon|00s
 光の旋律|Kalafina|10s,Female,Anime
