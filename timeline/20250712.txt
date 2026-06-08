@@ -8,10 +8,10 @@ ID = 81cDt2O_CmE
 06.    01:42:07    EXEC_PHANTASMAGORIA/.  / 『アルトネリコ 世界の終わりで詩い続ける少女』みとせのりこ、志方あきこ、霜月はるか
 07.    02:28:12    キミとアイドルプリキュア♪ Light Up!  / 『キミとアイドルプリキュア♪』石井あみ・熊田茜音・吉武千颯
 08.    02:37:43    君とつなぐオーケストラ  / 『プリンセッション・オーケストラ』オルケリア
-09.    02:50:26    BLACK DIAMOND  / 『しゅごキャラ！』ほしな歌唄(CV.水樹奈々)
+09.    02:50:26    BLACK DIAMOND  / 『しゅごキャラ！』ほしな歌唄(水樹奈々)
 10.    03:15:04    カルマ  / 『Tales of the Abyss』BUMP OF CHICKEN
 
-11.    03:22:03    大譜歌  / 『Tales of the Abyss』ティア・グランツ(CV.ゆかな)
+11.    03:22:03    大譜歌  / 『Tales of the Abyss』ティア・グランツ(ゆかな)
 12.    03:34:16    Starry Heavens  / 『Tales of Symphonia』Day After Tomorrow
 13.    03:39:59    そして僕にできるコト  / 『Tales of Symphonia』day after tomorrow
 14.    03:54:46    二人三脚  / 『Tales of Symphonia ~Knight of Ratatosk~』misono
