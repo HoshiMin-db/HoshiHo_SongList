@@ -22,7 +22,6 @@ YOU|YURIA|00s,Female,Anime
 Agape|メロキュア|00s,Female,Anime
 月光花|Janne da arc|00s,Male,Anime
 迷宮バタフライ|水樹奈々|00s,Female,Anime
-BLACK DIAMOND|ほしな歌唄(CV.水樹奈々)|00s,Female,Anime
 バルカローレ|河井英里|00s,Female,Anime
 コッコロ|河井英里|00s,Female,Anime
 時を刻む唄|Lia|00s,Female,Anime
@@ -317,7 +316,7 @@ Emporium|Armony|Original,Female,Folk
 bonny ebony black swan|love solfege（歌：Rose Panna）|20s,Female
 鏡合わせの翡翠|love solfege（歌：ほしほ）|20s,Female
 キミとアイドルプリキュア♪ Light Up!|石井あみ・熊田茜音・吉武千颯|20s,Anime
-大譜歌|ティア・グランツ(CV.ゆかな)|00s,Female,Game
+大譜歌|ティア・グランツ(ゆかな)|00s,Female,Game
 スカイクラッドの観測者|いとうかなこ|00s,Female,Game
 ファティマ|いとうかなこ|10s,Female,Anime
 disillusion|タイナカサチ|00s,Female,Anime
@@ -1011,19 +1010,18 @@ LEVEL5-judgelight-|fripSide|10s,Female,Anime
 Perseus -ペルセウス-|島谷ひとみ|00s,Female,Anime
 マイフレンド|ZARD|90s,Female,Anime
 ナド・クライ|HOYO-MiX・AURORA|20s,Female,Game
-届かない恋'13|上原れな|
-アニメじゃない ～夢を忘れた古い地球人よ～|新井正人|
-Perseus - ペルセウス -|島谷ひとみ|
-曇天|DOES|
-青空のナミダ|高橋瞳|
-AIZO|King Gnu|
-レイン|シド|
-嘘|シド|
-扉の向こうへ|YeLLOW Generation|
-檄！帝 ～最終章～|帝都花組&巴里花組+大神隊長|
-BLACK DIAMOND|ほしな歌唄(水樹奈々)|
-大譜歌|ティア・グランツ(ゆかな)|
-アンパンマンのマーチ|ドリーミング|
-ユーフォリア|牧野由依|
-さくらんぼ|大塚愛|
-プレイバックPart2|山口百恵|
+届かない恋'13|上原れな|10s,Female,Anime,Game
+アニメじゃない ～夢を忘れた古い地球人よ～|新井正人|Showa,Male,Anime
+Perseus - ペルセウス -|島谷ひとみ|00s,Female,Anime
+曇天|DOES|00s,Male,Anime
+青空のナミダ|高橋瞳|00s,Female,Anime
+AIZO|King Gnu|20s,Male,Anime
+レイン|シド|10s,Male,Anime
+嘘|シド|00s,Male,Anime
+扉の向こうへ|YeLLOW Generation|00s,Anime
+檄！帝 ～最終章～|帝都花組&巴里花組+大神隊長|00s,Game
+BLACK DIAMOND|ほしな歌唄(水樹奈々)|00s,Female,Anime
+アンパンマンのマーチ|ドリーミング|Showa,Anime
+ユーフォリア|牧野由依|00s,Female,Anime
+さくらんぼ|大塚愛|00s,Female
+プレイバックPart2|山口百恵|Showa,Female
