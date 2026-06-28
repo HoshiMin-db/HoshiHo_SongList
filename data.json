@@ -960,7 +960,7 @@
             "Game"
         ],
         "source_en": "ef - a fairy tale of the two.",
-        "_searchableSources": "ef|ef - a fairy tale of the two.|ef - a tale of memories.|ef - the first tale."
+        "_searchableSources": "ef - the first tale.|ef - a fairy tale of the two.|ef - a tale of memories.|ef"
     },
     {
         "song_name": "euphoric field",
@@ -1000,7 +1000,7 @@
             "Anime"
         ],
         "source_en": "ef - a tale of memories.",
-        "_searchableSources": "ef|ef - a tale of memories."
+        "_searchableSources": "ef - a tale of memories.|ef"
     },
     {
         "song_name": "ebullient future",
@@ -1032,7 +1032,7 @@
             "Anime"
         ],
         "source_en": "ef - a tale of melodies.",
-        "_searchableSources": "ef|ef - a tale of melodies."
+        "_searchableSources": "ef - a tale of melodies.|ef"
     },
     {
         "song_name": "colorless wind",
@@ -1193,7 +1193,7 @@
             "Game"
         ],
         "source_en": ".hack//G.U.",
-        "_searchableSources": ".hack//G.U.|hack//G.U."
+        "_searchableSources": "hack//G.U.|.hack//G.U."
     },
     {
         "song_name": "ブルーウォーター",
@@ -1504,7 +1504,7 @@
             "Game"
         ],
         "source_en": "WHITE ALBUM 2",
-        "_searchableSources": "WHITE ALBUM 2|WHITE ALBUM2|WHITE ALBUM2（アニメ）"
+        "_searchableSources": "WHITE ALBUM2（アニメ）|WHITE ALBUM2|WHITE ALBUM 2"
     },
     {
         "song_name": "POWDER SNOW",
@@ -1708,7 +1708,7 @@
     {
         "song_name": "Agape",
         "artist": "メロキュア",
-        "source": "円盤皇女ワるきゅーレ",
+        "source": "円盤皇女ワルキューレ",
         "is_copyright": false,
         "az": null,
         "dates": [
@@ -1783,7 +1783,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "円盤皇女ワるきゅーレ|円盤皇女ワルキューレ"
+        "_searchableSources": "円盤皇女ワルキューレ|円盤皇女ワるきゅーレ"
     },
     {
         "song_name": "Let it Snow! Let it Snow! Let it Snow!",
@@ -1948,7 +1948,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "わたしのアンネット|わたしとアンネット|アルプス物語 わたしのアンネット"
+        "_searchableSources": "わたしとアンネット|アルプス物語 わたしのアンネット|わたしのアンネット"
     },
     {
         "song_name": "エーデルワイスの白い花",
@@ -1996,7 +1996,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "わたしのアンネット|わたしとアンネット|アルプス物語 わたしのアンネット"
+        "_searchableSources": "わたしとアンネット|アルプス物語 わたしのアンネット|わたしのアンネット"
     },
     {
         "song_name": "ユニバーページ",
@@ -2426,7 +2426,7 @@
             "Anime"
         ],
         "source_en": "CITY HUNTER",
-        "_searchableSources": "CITY HUNTER|シティーハンター"
+        "_searchableSources": "シティーハンター|CITY HUNTER"
     },
     {
         "song_name": "Get Wild",
@@ -2490,7 +2490,7 @@
             "Anime"
         ],
         "source_en": "CITY HUNTER",
-        "_searchableSources": "CITY HUNTER|シティーハンター"
+        "_searchableSources": "シティーハンター|CITY HUNTER"
     },
     {
         "song_name": "raging waves",
@@ -2690,7 +2690,7 @@
     {
         "song_name": "ヒロガリズム",
         "artist": "石井あみ・吉武千颯",
-        "source": "ひろがるスカイ!プリキュア",
+        "source": "Go!プリンセスプリキュア",
         "is_copyright": false,
         "az": null,
         "dates": [
@@ -2716,7 +2716,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "ひろがるスカイ!プリキュア|Go!プリンセスプリキュア"
+        "_searchableSources": "Go!プリンセスプリキュア|ひろがるスカイ!プリキュア"
     },
     {
         "song_name": "夜に駆ける",
@@ -2925,7 +2925,7 @@
             "Folk"
         ],
         "source_en": "",
-        "_searchableSources": "イリスのアトリエ|イリスのアトリエ エターナルマナ"
+        "_searchableSources": "イリスのアトリエ エターナルマナ|イリスのアトリエ"
     },
     {
         "song_name": "FOOTSTEPS",
@@ -3029,7 +3029,7 @@
             "Game"
         ],
         "source_en": "Tales of Symphonia",
-        "_searchableSources": "テイルズ オブ シンフォニア(GC版)|Tales of Symphonia|テイルズ オブ シンフォニア"
+        "_searchableSources": "テイルズ オブ シンフォニア|Tales of Symphonia|テイルズ オブ シンフォニア(GC版)"
     },
     {
         "song_name": "そして僕にできるコト",
@@ -3109,7 +3109,7 @@
             "Game"
         ],
         "source_en": "Tales of Symphonia",
-        "_searchableSources": "Tales of Symphonia|テイルズ オブ シンフォニア(PS2版)|テイルズ オブ シンフォニア"
+        "_searchableSources": "テイルズ オブ シンフォニア|Tales of Symphonia|テイルズ オブ シンフォニア(PS2版)"
     },
     {
         "song_name": "二人三脚",
@@ -3172,8 +3172,8 @@
             "Female",
             "Game"
         ],
-        "source_en": "Tales of Symphonia ~Knight of Ratatosk~",
-        "_searchableSources": "Tales of Symphonia ~Knight of Ratatosk~|Tales of Symphonia -Knight of Ratatosk-|テイルズ オブ シンフォニア - ラタトスクの騎士 -"
+        "source_en": "Tales of Symphonia -Knight of Ratatosk-",
+        "_searchableSources": "Tales of Symphonia -Knight of Ratatosk-|テイルズ オブ シンフォニア - ラタトスクの騎士 -|Tales of Symphonia ~Knight of Ratatosk~"
     },
     {
         "song_name": "夢は終わらない 〜こぼれ落ちる時の雫〜",
@@ -3276,8 +3276,8 @@
             "Female",
             "Game"
         ],
-        "source_en": "Tales of Phantasia",
-        "_searchableSources": "Tales of Phantasia|テイルズ オブ ファンタジア (PS版)|テイルズ オブ ファンタジア(PS版)|TALES OF PHANTASIA|テイルズ オブ ファンタジア"
+        "source_en": "TALES OF PHANTASIA",
+        "_searchableSources": "テイルズ オブ ファンタジア|テイルズ オブ ファンタジア(PS版)|テイルズ オブ ファンタジア (PS版)|TALES OF PHANTASIA|Tales of Phantasia"
     },
     {
         "song_name": "Progress",
@@ -3341,7 +3341,7 @@
             "Game"
         ],
         "source_en": "Tales of Xillia",
-        "_searchableSources": "テイルズ オブ エクシリア|Tales of Xillia"
+        "_searchableSources": "Tales of Xillia|テイルズ オブ エクシリア"
     },
     {
         "song_name": "カルマ",
@@ -3422,7 +3422,7 @@
             "Game"
         ],
         "source_en": "Tales of the Abyss",
-        "_searchableSources": "Tales of the Abyss|テイルズ オブ ジ アビス"
+        "_searchableSources": "テイルズ オブ ジ アビス|Tales of the Abyss"
     },
     {
         "song_name": "まもりたい ～White Wishes～",
@@ -3669,7 +3669,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "機動戦士ガンダムSEED|ガンダムSEED"
+        "_searchableSources": "ガンダムSEED|機動戦士ガンダムSEED"
     },
     {
         "song_name": "君は僕に似ている",
@@ -3709,7 +3709,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "機動戦士ガンダムSEED DESTINY|ガンダムSEED"
+        "_searchableSources": "ガンダムSEED|機動戦士ガンダムSEED DESTINY"
     },
     {
         "song_name": "世界が終るまでは…",
@@ -3741,7 +3741,7 @@
             "Anime"
         ],
         "source_en": "SLAM DUNK",
-        "_searchableSources": "スラムダンク|SLAM DUNK"
+        "_searchableSources": "SLAM DUNK|スラムダンク"
     },
     {
         "song_name": "COLORS",
@@ -4309,7 +4309,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "ロードス島戦記- 英雄騎士伝 -|ロードス島戦記|ロードス島 英雄騎士伝|ロードス島戦記 - 英雄騎士伝 -"
+        "_searchableSources": "ロードス島戦記 - 英雄騎士伝 -|ロードス島 英雄騎士伝|ロードス島戦記- 英雄騎士伝 -|ロードス島戦記"
     },
     {
         "song_name": "風のファンタジア",
@@ -5092,7 +5092,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "魔法少女リリカルなのは|魔法少女リリカルなのはA's"
+        "_searchableSources": "魔法少女リリカルなのはA's|魔法少女リリカルなのは"
     },
     {
         "song_name": "BRAVE PHOENIX",
@@ -5124,7 +5124,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "魔法少女リリカルなのは|魔法少女リリカルなのはA's"
+        "_searchableSources": "魔法少女リリカルなのはA's|魔法少女リリカルなのは"
     },
     {
         "song_name": "Snow Rain",
@@ -5156,7 +5156,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "魔法少女リリカルなのは|魔法少女リリカルなのはA's"
+        "_searchableSources": "魔法少女リリカルなのはA's|魔法少女リリカルなのは"
     },
     {
         "song_name": "SECRET AMBITION",
@@ -5204,7 +5204,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "魔法少女リリカルなのは|魔法少女リリカルなのはStrikerS"
+        "_searchableSources": "魔法少女リリカルなのはStrikerS|魔法少女リリカルなのは"
     },
     {
         "song_name": "夏祭り",
@@ -5274,7 +5274,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "魔法少女リリカルなのは|魔法少女リリカルなのはStrikerS"
+        "_searchableSources": "魔法少女リリカルなのはStrikerS|魔法少女リリカルなのは"
     },
     {
         "song_name": "Beautiful Amulet",
@@ -5306,7 +5306,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "魔法少女リリカルなのは|魔法少女リリカルなのはStrikerS"
+        "_searchableSources": "魔法少女リリカルなのはStrikerS|魔法少女リリカルなのは"
     },
     {
         "song_name": "Pray",
@@ -5338,7 +5338,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "魔法少女リリカルなのは|魔法少女リリカルなのはStrikerS"
+        "_searchableSources": "魔法少女リリカルなのはStrikerS|魔法少女リリカルなのは"
     },
     {
         "song_name": "ONENESS HARMONY",
@@ -5906,7 +5906,7 @@
             "Female"
         ],
         "source_en": "",
-        "_searchableSources": "名探偵コナン|名探偵コナン 迷宮の十字路|名探偵コナン 迷宮の十字路(クロスロード)"
+        "_searchableSources": "名探偵コナン 迷宮の十字路(クロスロード)|名探偵コナン 迷宮の十字路|名探偵コナン"
     },
     {
         "song_name": "君と約束した優しいあの場所まで",
@@ -7489,7 +7489,7 @@
             "Folk"
         ],
         "source_en": "",
-        "_searchableSources": "うたわれるもの 偽りの仮面 (アニメ)|うたわれるもの 偽りの仮面|うたわれるもの"
+        "_searchableSources": "うたわれるもの 偽りの仮面|うたわれるもの|うたわれるもの 偽りの仮面 (アニメ)"
     },
     {
         "song_name": "Eternal Love 2003",
@@ -8044,7 +8044,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "エルガイム|重戦機エルガイム"
+        "_searchableSources": "重戦機エルガイム|エルガイム"
     },
     {
         "song_name": "風になる",
@@ -8889,7 +8889,7 @@
             "Game"
         ],
         "source_en": "TALES OF DESTINY",
-        "_searchableSources": "テイルズ オブ デスティニー|TALES OF DESTINY|Tales of Destiny"
+        "_searchableSources": "TALES OF DESTINY|Tales of Destiny|テイルズ オブ デスティニー"
     },
     {
         "song_name": "Lilium",
@@ -9115,7 +9115,7 @@
             "Wafuu"
         ],
         "source_en": "",
-        "_searchableSources": "サクラ大戦シリーズ|サクラ大戦"
+        "_searchableSources": "サクラ大戦|サクラ大戦シリーズ"
     },
     {
         "song_name": "御旗のもとに",
@@ -9186,7 +9186,7 @@
             "Game"
         ],
         "source_en": "",
-        "_searchableSources": "サクラ大戦3～巴里は燃えているか～|サクラ大戦3 〜巴里は燃えているか〜|サクラ大戦|サクラ大戦3"
+        "_searchableSources": "サクラ大戦3|サクラ大戦|サクラ大戦3～巴里は燃えているか～|サクラ大戦3 〜巴里は燃えているか〜"
     },
     {
         "song_name": "Give a Reason",
@@ -9314,7 +9314,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "スレイヤーズNEXT|スレイヤーズ NEXT|スレイヤーズ"
+        "_searchableSources": "スレイヤーズ NEXT|スレイヤーズNEXT|スレイヤーズ"
     },
     {
         "song_name": "晴れてハレルヤ",
@@ -10378,7 +10378,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "ロザリオとバンパイア CAPU2|ロザリオとバンパイア"
+        "_searchableSources": "ロザリオとバンパイア|ロザリオとバンパイア CAPU2"
     },
     {
         "song_name": "Dancing in the velvet moon",
@@ -11032,7 +11032,7 @@
             "Game"
         ],
         "source_en": "Muv-Luv Alternative",
-        "_searchableSources": "Muv-Luv Alternative(ゲーム)|Muv-Luv Alternative"
+        "_searchableSources": "Muv-Luv Alternative|Muv-Luv Alternative(ゲーム)"
     },
     {
         "song_name": "ビビデバ",
@@ -11474,7 +11474,7 @@
             "Folk"
         ],
         "source_en": "",
-        "_searchableSources": "アルトネリコ　世界の終わりで詩い続ける少女|アルトネリコ 世界の終わりで詩い続ける少女|アルトネリコ"
+        "_searchableSources": "アルトネリコ　世界の終わりで詩い続ける少女|アルトネリコ|アルトネリコ 世界の終わりで詩い続ける少女"
     },
     {
         "song_name": "エルの楽園 [→ side:E →]",
@@ -11585,7 +11585,7 @@
             "Folk"
         ],
         "source_en": "",
-        "_searchableSources": "アルトネリコ3 世界終焉の引鉄は少女の詩が弾く|アルトネリコ"
+        "_searchableSources": "アルトネリコ|アルトネリコ3 世界終焉の引鉄は少女の詩が弾く"
     },
     {
         "song_name": "Here",
@@ -11827,7 +11827,7 @@
     {
         "song_name": "水の星へ愛をこめて",
         "artist": "森口博子",
-        "source": "機動戦士Zガンダム",
+        "source": "機動戦士Ζガンダム",
         "is_copyright": false,
         "az": "み",
         "dates": [
@@ -11894,7 +11894,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "機動戦士Zガンダム|機動戦士Ζガンダム|Zガンダム"
+        "_searchableSources": "Zガンダム|機動戦士Ζガンダム|機動戦士Zガンダム"
     },
     {
         "song_name": "草原のマルコ",
@@ -12019,7 +12019,7 @@
     {
         "song_name": "CAT'S EYE",
         "artist": "杏里",
-        "source": "キャッツ・アイ",
+        "source": "キャッツ♥アイ",
         "is_copyright": false,
         "az": null,
         "dates": [
@@ -12046,7 +12046,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "キャッツ・アイ|キャッツ♥アイ"
+        "_searchableSources": "キャッツ♥アイ|キャッツ・アイ"
     },
     {
         "song_name": "Shuffle",
@@ -12230,7 +12230,7 @@
             "Game"
         ],
         "source_en": "",
-        "_searchableSources": "サクラ大戦2 〜君、死にたもうことなかれ〜|サクラ大戦2～君、死にたもうことなかれ～|サクラ大戦|サクラ大戦2"
+        "_searchableSources": "サクラ大戦2 〜君、死にたもうことなかれ〜|サクラ大戦|サクラ大戦2～君、死にたもうことなかれ～|サクラ大戦2"
     },
     {
         "song_name": "たった１つの想い",
@@ -12365,7 +12365,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "ガンダムW|新機動戦記ガンダムW Endless Waltz"
+        "_searchableSources": "新機動戦記ガンダムW Endless Waltz|ガンダムW"
     },
     {
         "song_name": "ダンバイン とぶ",
@@ -13091,7 +13091,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "機動戦士Ζガンダム|Zガンダム"
+        "_searchableSources": "Zガンダム|機動戦士Ζガンダム"
     },
     {
         "song_name": "祝福",
@@ -13139,7 +13139,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "ガンダム 水星の魔女|機動戦士ガンダム 水星の魔女"
+        "_searchableSources": "機動戦士ガンダム 水星の魔女|ガンダム 水星の魔女"
     },
     {
         "song_name": "となりのトトロ",
@@ -13282,7 +13282,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "夜桜四重奏 〜ハナノウタ〜|夜桜四重奏 ～ヨザクラカルテット～"
+        "_searchableSources": "夜桜四重奏 ～ヨザクラカルテット～|夜桜四重奏 〜ハナノウタ〜"
     },
     {
         "song_name": "残酷な天使のテーゼ",
@@ -13354,7 +13354,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "機動戦士Ζガンダム|Zガンダム"
+        "_searchableSources": "Zガンダム|機動戦士Ζガンダム"
     },
     {
         "song_name": "ETERNAL WIND〜ほほえみは光る風の中〜",
@@ -13482,7 +13482,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "伝説巨神イデオン|イデオン"
+        "_searchableSources": "イデオン|伝説巨神イデオン"
     },
     {
         "song_name": "JUST COMMUNICATION",
@@ -13546,7 +13546,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "新機動戦記ガンダムW|ガンダムW"
+        "_searchableSources": "ガンダムW|新機動戦記ガンダムW"
     },
     {
         "song_name": "LAST IMPRESSION",
@@ -13586,7 +13586,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "新機動戦記ガンダムW Endless Waltz 特別篇|ガンダムW|新機動戦記ガンダムW Endless Waltz"
+        "_searchableSources": "新機動戦記ガンダムW Endless Waltz|ガンダムW|新機動戦記ガンダムW Endless Waltz 特別篇"
     },
     {
         "song_name": "ターンAターン",
@@ -13714,7 +13714,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "機動戦士ガンダムSEED|ガンダムSEED"
+        "_searchableSources": "ガンダムSEED|機動戦士ガンダムSEED"
     },
     {
         "song_name": "暁の車",
@@ -13778,7 +13778,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "機動戦士ガンダムSEED|ガンダムSEED"
+        "_searchableSources": "ガンダムSEED|機動戦士ガンダムSEED"
     },
     {
         "song_name": "静かな夜に",
@@ -13810,7 +13810,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "機動戦士ガンダムSEED|ガンダムSEED"
+        "_searchableSources": "ガンダムSEED|機動戦士ガンダムSEED"
     },
     {
         "song_name": "僕たちの行方",
@@ -13842,7 +13842,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "機動戦士ガンダムSEED DESTINY|ガンダムSEED"
+        "_searchableSources": "ガンダムSEED|機動戦士ガンダムSEED DESTINY"
     },
     {
         "song_name": "Reason",
@@ -13890,7 +13890,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "機動戦士ガンダムSEED DESTINY|ガンダムSEED"
+        "_searchableSources": "ガンダムSEED|機動戦士ガンダムSEED DESTINY"
     },
     {
         "song_name": "AURORA",
@@ -13962,7 +13962,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "ガンダム 鉄血のオルフェンズ|機動戦士ガンダム 鉄血のオルフェンズ"
+        "_searchableSources": "機動戦士ガンダム 鉄血のオルフェンズ|ガンダム 鉄血のオルフェンズ"
     },
     {
         "song_name": "フリージア",
@@ -14002,7 +14002,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "ガンダム 鉄血のオルフェンズ|機動戦士ガンダム 鉄血のオルフェンズ"
+        "_searchableSources": "機動戦士ガンダム 鉄血のオルフェンズ|ガンダム 鉄血のオルフェンズ"
     },
     {
         "song_name": "YOU GET TO BURNING",
@@ -14201,7 +14201,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "空の境界|空の境界(第六章)"
+        "_searchableSources": "空の境界(第六章)|空の境界"
     },
     {
         "song_name": "FEEL×ALIVE",
@@ -14423,7 +14423,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "スレイヤーズEX.|スレイヤーズ|スレイヤーズEX"
+        "_searchableSources": "スレイヤーズEX|スレイヤーズ|スレイヤーズEX."
     },
     {
         "song_name": "灼熱の恋",
@@ -14463,7 +14463,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "スレイヤーズEX.|スレイヤーズEX"
+        "_searchableSources": "スレイヤーズEX|スレイヤーズEX."
     },
     {
         "song_name": "Crossing Field",
@@ -14725,7 +14725,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "ふたりはプリキュア|ふたりはプリキュア Max Heart|ふたりはプリキュア MaxHeart"
+        "_searchableSources": "ふたりはプリキュア MaxHeart|ふたりはプリキュア Max Heart|ふたりはプリキュア"
     },
     {
         "song_name": "ゲッチュウ！らぶらぶぅ？！ (Short Ver.)",
@@ -15104,7 +15104,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "ロード・エルメロイⅡ世の事件簿 -魔眼蒐集列車 Grace note-|ロード・エルメロイII世の事件簿"
+        "_searchableSources": "ロード・エルメロイII世の事件簿|ロード・エルメロイⅡ世の事件簿 -魔眼蒐集列車 Grace note-"
     },
     {
         "song_name": "空は高く風は歌う",
@@ -15199,7 +15199,7 @@
             "Female"
         ],
         "source_en": "",
-        "_searchableSources": "Elysion～楽園への前奏曲～|Elysion ～楽園幻想物語組曲～"
+        "_searchableSources": "Elysion ～楽園幻想物語組曲～|Elysion～楽園への前奏曲～"
     },
     {
         "song_name": "StarDust",
@@ -15685,7 +15685,7 @@
     {
         "song_name": "Sway to My Beat in Cosmos (銀河を独り揺蕩う)",
         "artist": "Chevy",
-        "source": "崩壊：スターレイル",
+        "source": "崩壊:スターレイル",
         "is_copyright": false,
         "az": null,
         "dates": [
@@ -15712,12 +15712,12 @@
             "Game"
         ],
         "source_en": "",
-        "_searchableSources": "崩壊：スターレイル|崩壊:スターレイル"
+        "_searchableSources": "崩壊:スターレイル|崩壊：スターレイル"
     },
     {
         "song_name": "Hope Is the Thing With Feathers (翼の生えた希望)",
         "artist": "Chevy",
-        "source": "崩壊：スターレイル",
+        "source": "崩壊:スターレイル",
         "is_copyright": false,
         "az": null,
         "dates": [
@@ -15744,12 +15744,12 @@
             "Game"
         ],
         "source_en": "",
-        "_searchableSources": "崩壊：スターレイル|崩壊:スターレイル"
+        "_searchableSources": "崩壊:スターレイル|崩壊：スターレイル"
     },
     {
         "song_name": "If I Can Stop One Heart From Breaking (傷つく誰かの心を守ることができたなら)",
         "artist": "Chevy",
-        "source": "崩壊：スターレイル",
+        "source": "崩壊:スターレイル",
         "is_copyright": false,
         "az": null,
         "dates": [
@@ -15776,7 +15776,7 @@
             "Game"
         ],
         "source_en": "",
-        "_searchableSources": "崩壊：スターレイル|崩壊:スターレイル"
+        "_searchableSources": "崩壊:スターレイル|崩壊：スターレイル"
     },
     {
         "song_name": "ReDreaming Angel",
@@ -16007,7 +16007,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "攻殻機動隊 STAND ALONE COMPLEX|攻殻機動隊"
+        "_searchableSources": "攻殻機動隊|攻殻機動隊 STAND ALONE COMPLEX"
     },
     {
         "song_name": "Philosophyz",
@@ -16175,7 +16175,7 @@
             "Anime"
         ],
         "source_en": "SLAM DUNK",
-        "_searchableSources": "スラムダンク|SLAM DUNK"
+        "_searchableSources": "SLAM DUNK|スラムダンク"
     },
     {
         "song_name": "まちぶせ",
@@ -16409,7 +16409,7 @@
             "Musical"
         ],
         "source_en": "",
-        "_searchableSources": "ウィキッド|ウィキッド ふたりの魔女|ウィキッド (Wicked)"
+        "_searchableSources": "ウィキッド ふたりの魔女|ウィキッド (Wicked)|ウィキッド"
     },
     {
         "song_name": "What Is This Feeling?",
@@ -16543,7 +16543,7 @@
             "Musical"
         ],
         "source_en": "",
-        "_searchableSources": "ウィキッド|ウィキッド ふたりの魔女|ウィキッド (Wicked)"
+        "_searchableSources": "ウィキッド ふたりの魔女|ウィキッド (Wicked)|ウィキッド"
     },
     {
         "song_name": "人生を踊り明かせ (Dancing Through Life)",
@@ -16741,7 +16741,7 @@
             "Game"
         ],
         "source_en": "Tales of Vesperia",
-        "_searchableSources": "テイルズ オブ ヴェスペリア|Tales of Vesperia"
+        "_searchableSources": "Tales of Vesperia|テイルズ オブ ヴェスペリア"
     },
     {
         "song_name": "ウィーアー！",
@@ -17387,7 +17387,7 @@
             "Denpa"
         ],
         "source_en": "VALKYRIE DRIVE - MERMAID -",
-        "_searchableSources": "VALKYRIE DRIVE|VALKYRIE DRIVE - MERMAID -"
+        "_searchableSources": "VALKYRIE DRIVE - MERMAID -|VALKYRIE DRIVE"
     },
     {
         "song_name": "ハム太郎とっとこうた",
@@ -17942,7 +17942,7 @@
             "Game"
         ],
         "source_en": "STEINS;GATE",
-        "_searchableSources": "STEINS;GATE(ゲーム)|STEINS;GATE"
+        "_searchableSources": "STEINS;GATE|STEINS;GATE(ゲーム)"
     },
     {
         "song_name": "迷夢",
@@ -18428,7 +18428,7 @@
             "Anime"
         ],
         "source_en": "SLAM DUNK",
-        "_searchableSources": "スラムダンク|SLAM DUNK"
+        "_searchableSources": "SLAM DUNK|スラムダンク"
     },
     {
         "song_name": "マイフレンド",
@@ -18476,7 +18476,7 @@
             "Anime"
         ],
         "source_en": "SLAM DUNK",
-        "_searchableSources": "スラムダンク|SLAM DUNK"
+        "_searchableSources": "SLAM DUNK|スラムダンク"
     },
     {
         "song_name": "Sincerely",
@@ -18851,14 +18851,6 @@
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": false
-            },
-            {
-                "date": "20240420",
-                "time": "04:45:25",
-                "link": "https://www.youtube.com/watch?v=xjSFVGe8eAo&t=17125s",
-                "is_member_exclusive": false,
-                "is_acapella": false,
-                "is_private": true
             }
         ],
         "tags": [
@@ -19059,7 +19051,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "機動戦士ガンダム0080 ポケットの中の戦争|ガンダム0080 ポケットの中の戦争"
+        "_searchableSources": "ガンダム0080 ポケットの中の戦争|機動戦士ガンダム0080 ポケットの中の戦争"
     },
     {
         "song_name": "You raise me up",
@@ -19169,7 +19161,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "新世紀エヴァンゲリオン劇場版 シト新生|エヴァンゲリオン|新世紀エヴァンゲリオン"
+        "_searchableSources": "エヴァンゲリオン|新世紀エヴァンゲリオン劇場版 シト新生|新世紀エヴァンゲリオン"
     },
     {
         "song_name": "ループ",
@@ -19233,7 +19225,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "ツバサ・クロニクル|ツバサ~RESERVoir CHRoNiCLE~|ツバサ・クロニクル(第1期)"
+        "_searchableSources": "ツバサ・クロニクル(第1期)|ツバサ・クロニクル|ツバサ~RESERVoir CHRoNiCLE~"
     },
     {
         "song_name": "風待ちジェット",
@@ -19281,7 +19273,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "ツバサ・クロニクル|ツバサ~RESERVoir CHRoNiCLE~|ツバサ・クロニクル(第2期)"
+        "_searchableSources": "ツバサ・クロニクル(第2期)|ツバサ~RESERVoir CHRoNiCLE~|ツバサ・クロニクル"
     },
     {
         "song_name": "わが﨟たし悪の華",
@@ -19395,7 +19387,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "幽遊白書|幽☆遊☆白書"
+        "_searchableSources": "幽☆遊☆白書|幽遊白書"
     },
     {
         "song_name": "アンバランスなKissをして",
@@ -19427,7 +19419,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "幽遊白書|幽☆遊☆白書"
+        "_searchableSources": "幽☆遊☆白書|幽遊白書"
     },
     {
         "song_name": "太陽がまた輝くとき",
@@ -19467,7 +19459,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "幽遊白書|幽☆遊☆白書"
+        "_searchableSources": "幽☆遊☆白書|幽遊白書"
     },
     {
         "song_name": "THE DAY",
@@ -19721,7 +19713,7 @@
     {
         "song_name": "甲賀忍法帖",
         "artist": "陰陽座",
-        "source": "バジリスク 〜甲賀忍法帖〜",
+        "source": "バジリスク ～甲賀忍法帖～",
         "is_copyright": false,
         "az": "こ",
         "dates": [
@@ -19780,7 +19772,7 @@
             "Wafuu"
         ],
         "source_en": "",
-        "_searchableSources": "バジリスク 〜甲賀忍法帖〜|バジリスク ～甲賀忍法帖～"
+        "_searchableSources": "バジリスク ～甲賀忍法帖～|バジリスク 〜甲賀忍法帖〜"
     },
     {
         "song_name": "Over the clouds",
@@ -20042,7 +20034,7 @@
             "Anime"
         ],
         "source_en": "Angel Beats!",
-        "_searchableSources": "Angel Beats!|Angel Beats"
+        "_searchableSources": "Angel Beats|Angel Beats!"
     },
     {
         "song_name": "Brave Song",
@@ -20171,7 +20163,7 @@
             "Game"
         ],
         "source_en": "Little Busters!",
-        "_searchableSources": "Little Busters!|リトルバスターズ！"
+        "_searchableSources": "リトルバスターズ！|Little Busters!"
     },
     {
         "song_name": "遥か彼方",
@@ -20429,6 +20421,14 @@
                 "date": "20250308",
                 "time": "02:45:28",
                 "link": "https://www.youtube.com/watch?v=OQO0FzogBp4&t=9928s",
+                "is_member_exclusive": false,
+                "is_acapella": false,
+                "is_private": true
+            },
+            {
+                "date": "20240420",
+                "time": "04:45:25",
+                "link": "https://www.youtube.com/watch?v=xjSFVGe8eAo&t=17125s",
                 "is_member_exclusive": false,
                 "is_acapella": false,
                 "is_private": true
@@ -21116,7 +21116,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "るろうに剣心 -明治剣客浪漫譚-|るろうに剣心  - 明治剣客浪漫譚 -"
+        "_searchableSources": "るろうに剣心  - 明治剣客浪漫譚 -|るろうに剣心 -明治剣客浪漫譚-"
     },
     {
         "song_name": "花は桜 君は美し",
@@ -21328,7 +21328,7 @@
             "Game"
         ],
         "source_en": "",
-        "_searchableSources": "サクラ大戦4|サクラ大戦4 〜恋せよ乙女〜"
+        "_searchableSources": "サクラ大戦4 〜恋せよ乙女〜|サクラ大戦4"
     },
     {
         "song_name": "花の巴里",
@@ -21384,7 +21384,7 @@
             "Game"
         ],
         "source_en": "",
-        "_searchableSources": "サクラ大戦3 〜巴里は燃えているか〜|サクラ大戦|サクラ大戦3"
+        "_searchableSources": "サクラ大戦3|サクラ大戦|サクラ大戦3 〜巴里は燃えているか〜"
     },
     {
         "song_name": "地上の戦士",
@@ -21856,7 +21856,7 @@
             "Anime"
         ],
         "source_en": "Fate/Zero",
-        "_searchableSources": "Fate/Zero 2ndシーズン|Fate/Zero"
+        "_searchableSources": "Fate/Zero|Fate/Zero 2ndシーズン"
     },
     {
         "song_name": "ピースサイン",
@@ -21912,7 +21912,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "セーラームーン|劇場版美少女戦士セーラームーンR"
+        "_searchableSources": "劇場版美少女戦士セーラームーンR|セーラームーン"
     },
     {
         "song_name": "そばかす",
@@ -22248,7 +22248,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "涼宮ハルヒの憂鬱|涼宮ハルヒの憂鬱 キャラクターソング"
+        "_searchableSources": "涼宮ハルヒの憂鬱 キャラクターソング|涼宮ハルヒの憂鬱"
     },
     {
         "song_name": "SWORD SUMMIT",
@@ -22344,7 +22344,7 @@
             "Female"
         ],
         "source_en": "",
-        "_searchableSources": "仙界伝 封神演義|封神演義"
+        "_searchableSources": "封神演義|仙界伝 封神演義"
     },
     {
         "song_name": "星間飛行",
@@ -23281,7 +23281,7 @@
             "Game"
         ],
         "source_en": "Tales of the Abyss",
-        "_searchableSources": "Tales of the Abyss|テイルズ オブ ジ アビス"
+        "_searchableSources": "テイルズ オブ ジ アビス|Tales of the Abyss"
     },
     {
         "song_name": "ファティマ",
@@ -23810,7 +23810,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "すごいよ!!マサルさん|セクシーコマンドー外伝 すごいよ!!マサルさん"
+        "_searchableSources": "セクシーコマンドー外伝 すごいよ!!マサルさん|すごいよ!!マサルさん"
     },
     {
         "song_name": "二千年... 若しくは... 二万年後の君へ・・・",
@@ -23953,7 +23953,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "キャンディ♡キャンディ|キャンディキャンディ"
+        "_searchableSources": "キャンディキャンディ|キャンディ♡キャンディ"
     },
     {
         "song_name": "WHITE ALBUM Live at Campus Fes",
@@ -24002,7 +24002,7 @@
             "Game"
         ],
         "source_en": "WHITE ALBUM 2",
-        "_searchableSources": "WHITE ALBUM 2|WHITE ALBUM2（ゲーム）"
+        "_searchableSources": "WHITE ALBUM2（ゲーム）|WHITE ALBUM 2"
     },
     {
         "song_name": "赤い砂漠の伝説",
@@ -24308,7 +24308,7 @@
     {
         "song_name": "暁を撃て",
         "artist": "JAM Project・栗林みな実",
-        "source": "Muv-Luv Alternative（アニメ）",
+        "source": "Muv-Luv Alternative(アニメ)",
         "is_copyright": false,
         "az": "あ",
         "dates": [
@@ -24334,7 +24334,7 @@
             "Game"
         ],
         "source_en": "",
-        "_searchableSources": "Muv-Luv Alternative（アニメ）|Muv-Luv Alternative(アニメ)"
+        "_searchableSources": "Muv-Luv Alternative(アニメ)|Muv-Luv Alternative（アニメ）"
     },
     {
         "song_name": "黒の予言書",
@@ -24523,7 +24523,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "スレイヤーズ TRY|スレイヤーズTRY|スレイヤーズ"
+        "_searchableSources": "スレイヤーズTRY|スレイヤーズ TRY|スレイヤーズ"
     },
     {
         "song_name": "真赤な誓い",
@@ -24652,7 +24652,7 @@
             "Anime"
         ],
         "source_en": "School Days",
-        "_searchableSources": "School Days|School Days(アニメ)"
+        "_searchableSources": "School Days(アニメ)|School Days"
     },
     {
         "song_name": "エルの絵本 【魔女とラフレンツェ】",
@@ -25722,7 +25722,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "ジョジョの奇妙な冒険 スターダストクルセイダース|ジョジョの奇妙な冒険"
+        "_searchableSources": "ジョジョの奇妙な冒険|ジョジョの奇妙な冒険 スターダストクルセイダース"
     },
     {
         "song_name": "ジョジョ 〜その血の運命〜",
@@ -25922,7 +25922,7 @@
             "Female"
         ],
         "source_en": "",
-        "_searchableSources": "アルトネリコ 世界の終わりで詩い続ける少女|アルトネリコ"
+        "_searchableSources": "アルトネリコ|アルトネリコ 世界の終わりで詩い続ける少女"
     },
     {
         "song_name": "キミがいれば",
@@ -26176,7 +26176,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "劇場版ツバサ・クロニクル 鳥カゴの国の姫君|(劇場版)ツバサ・クロニクル 鳥カゴの国の姫君|ツバサ・クロニクル"
+        "_searchableSources": "(劇場版)ツバサ・クロニクル 鳥カゴの国の姫君|劇場版ツバサ・クロニクル 鳥カゴの国の姫君|ツバサ・クロニクル"
     },
     {
         "song_name": "ALL MY LOVE",
@@ -26432,7 +26432,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "D.C.～ダ・カーポ～(アニメ)|D.C. ～ダ・カーポ～"
+        "_searchableSources": "D.C. ～ダ・カーポ～|D.C.～ダ・カーポ～(アニメ)"
     },
     {
         "song_name": "Catch You Catch Me",
@@ -26480,7 +26480,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "カードキャプターさくら クロウカード編|カードキャプターさくら"
+        "_searchableSources": "カードキャプターさくら|カードキャプターさくら クロウカード編"
     },
     {
         "song_name": "乾杯の歌(Libiamo ne' lieti calici)",
@@ -26608,7 +26608,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "サクラ大戦|サクラ大戦・歌謡ショウ"
+        "_searchableSources": "サクラ大戦・歌謡ショウ|サクラ大戦"
     },
     {
         "song_name": "涙よ、Au revoir",
@@ -27369,7 +27369,7 @@
             "00s"
         ],
         "source_en": "",
-        "_searchableSources": "カラフルキッス|カラフルキッス ～12コの胸キュン!～"
+        "_searchableSources": "カラフルキッス ～12コの胸キュン!～|カラフルキッス"
     },
     {
         "song_name": "Mirage Lullaby",
@@ -28730,7 +28730,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "ジョジョの奇妙な冒険(第3部)|ジョジョの奇妙な冒険 スターダストクルセイダース|ジョジョの奇妙な冒険"
+        "_searchableSources": "ジョジョの奇妙な冒険(第3部)|ジョジョの奇妙な冒険|ジョジョの奇妙な冒険 スターダストクルセイダース"
     },
     {
         "song_name": "STONE OCEAN",
@@ -28762,7 +28762,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "ジョジョの奇妙な冒険 ストーンオーシャン|ジョジョの奇妙な冒険(第6部)"
+        "_searchableSources": "ジョジョの奇妙な冒険(第6部)|ジョジョの奇妙な冒険 ストーンオーシャン"
     },
     {
         "song_name": "黄金の彼方 - Golden Horizon",
@@ -29351,7 +29351,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "スレイヤーズ TRY|スレイヤーズTRY"
+        "_searchableSources": "スレイヤーズTRY|スレイヤーズ TRY"
     },
     {
         "song_name": "Just be conscious",
@@ -29380,7 +29380,7 @@
     {
         "song_name": "MIDNIGHT BLUE",
         "artist": "林原めぐみ",
-        "source": "スレイヤーズ(劇場版)",
+        "source": "スレイヤーズ（劇場版）",
         "is_copyright": false,
         "az": null,
         "dates": [
@@ -29407,7 +29407,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "スレイヤーズ(劇場版)|スレイヤーズ（劇場版）"
+        "_searchableSources": "スレイヤーズ（劇場版）|スレイヤーズ(劇場版)"
     },
     {
         "song_name": "Revolution",
@@ -30129,7 +30129,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "魔法先生ネギま|魔法先生ネギま！"
+        "_searchableSources": "魔法先生ネギま！|魔法先生ネギま"
     },
     {
         "song_name": "星のダイアローグ",
@@ -30641,7 +30641,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "ギャラクシーエンジェル(第3期)|ギャラクシーエンジェル"
+        "_searchableSources": "ギャラクシーエンジェル|ギャラクシーエンジェル(第3期)"
     },
     {
         "song_name": "First Kiss",
@@ -30896,7 +30896,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "カードキャプターさくら さくらカード編|カードキャプターさくら"
+        "_searchableSources": "カードキャプターさくら|カードキャプターさくら さくらカード編"
     },
     {
         "song_name": "CLEAR",
@@ -31032,7 +31032,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "るろうに剣心  - 明治剣客浪漫譚 -|るろうに剣心"
+        "_searchableSources": "るろうに剣心|るろうに剣心  - 明治剣客浪漫譚 -"
     },
     {
         "song_name": "1/2",
@@ -31064,7 +31064,7 @@
             "Anime"
         ],
         "source_en": "",
-        "_searchableSources": "るろうに剣心  - 明治剣客浪漫譚 -|るろうに剣心"
+        "_searchableSources": "るろうに剣心|るろうに剣心  - 明治剣客浪漫譚 -"
     },
     {
         "song_name": "the Fourth Avenue Café",
@@ -31416,7 +31416,7 @@
             "Wafuu"
         ],
         "source_en": "",
-        "_searchableSources": "甲鉄城のカバネリ 海門決戦|甲鉄城のカバネリ"
+        "_searchableSources": "甲鉄城のカバネリ|甲鉄城のカバネリ 海門決戦"
     },
     {
         "song_name": "KABANERI OF THE IRON FORTRESS",
