@@ -488,8 +488,8 @@ Get Wild|TM NETWORK|Showa,Male,Anime
 星のダイアローグ|スタァライト九九組|10s,Female,Anime
 晴れ模様|安野希世乃|10s,Female,Anime
 さめない夢|大和田りつこ|Showa,Female,Anime
-ヒャダインのカカカタ☆カタオモイ-C|ヒャダイン|10s,Male,Anime
-ヒャダインのじょーじょーゆーじょー|ヒャダイン|10s,Male,Anime
+ヒャダインのカカカタ☆カタオモイ-C|ヒャダイン|10s,Male,Anime,Denpa
+ヒャダインのじょーじょーゆーじょー|ヒャダイン|10s,Male,Anime,Denpa
 Zzz|佐咲紗花|10s,Female,Anime
 七転八起☆至上主義！|KOTOKO|00s,Female,Anime
 Endless Story|田村ゆかり|00s,Female,Anime
@@ -1025,25 +1025,22 @@ BLACK DIAMOND|ほしな歌唄(水樹奈々)|00s,Female,Anime
 ユーフォリア|牧野由依|00s,Female,Anime
 さくらんぼ|大塚愛|00s,Female
 プレイバックPart2|山口百恵|Showa,Female
-ジョジョ～その血の運命～|富永TOMMY弘明|
-世界でいちばん熱い夏|プリンセス プリンセス|
-チョット|大黒摩季|
-ひぐらしのなく頃に|島みやえい子|
-対象a|anNina|
-孔雀|菅原圭|
-Stella|SEKAI NO OWARI|
-ハートにヒント！名探偵プリキュア！|石井あみ|
-マイ フレンド|ZARD|
-DANZEN！ふたりはプリキュア(Ver.Max Heart)|五條真由美|
-ロビンソン|スピッツ|
-secret base～君がくれたもの～|ZONE|
-ワニとシャンプー|ももいろクローバーZ|
-ANGELUS - アンジェラス -|MANISH|
-アクアテラリウム|やなぎなぎ|
-三つ葉の結びめ|やなぎなぎ|
-横顔|牧野由依|
-シンフォニー|牧野由依|
-インパーフェクト|オーイシマサヨシ|
-V.I.P|シド|
-Shangri-La|atsuko|
-LEVEL5- judgelight -|fripSide|
+ジョジョ～その血の運命～|富永TOMMY弘明|10s,Male,Anime
+DANZEN！ふたりはプリキュア(Ver.Max Heart)|五條真由美|00s,Female,Anime
+secret base～君がくれたもの～|ZONE|00s,Female,Anime
+LEVEL5- judgelight -|fripSide|10s,Female,Anime
+マイ フレンド|ZARD|90s,Female,Anime
+チョット|大黒摩季|90s,Female,
+ひぐらしのなく頃に|島みやえい子|00s,Female,Anime
+対象a|anNina|00s,Anime
+孔雀|菅原圭|20s,Female,Anime
+Stella|SEKAI NO OWARI|20s,Anime
+ハートにヒント！名探偵プリキュア！|石井あみ|20s,Female,Anime
+ロビンソン|スピッツ|90s,Male
+ワニとシャンプー|ももいろクローバーZ|10s,Female
+アクアテラリウム|やなぎなぎ|10s,Female,Anime
+三つ葉の結びめ|やなぎなぎ|10s,Female,Anime
+横顔|牧野由依|00s,Female,Anime
+シンフォニー|牧野由依|00s,Female,Anime
+インパーフェクト|オーイシマサヨシ|20s,Male,Anime
+V.I.P|シド|10s,Male,Anime
