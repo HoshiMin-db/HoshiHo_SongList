@@ -74,6 +74,8 @@ a:hover {
     background-color: var(--bg-highlight) !important;
 }
 
+.legend-red { color: red; }
+
 /* ==================== 3. 佈局骨架 ==================== */
 #app-container {
     display: flex;
@@ -116,6 +118,22 @@ a:hover {
     color: var(--text-muted);
     font-size: 0.9em;
     margin-top: 5px;
+}
+
+#songLegend {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8em;
+    color: var(--text-main);
+    font-size: 0.95em;
+}
+
+#songLegend .legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25em;
 }
 
 .search-container {
