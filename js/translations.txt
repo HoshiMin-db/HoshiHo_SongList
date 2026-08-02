@@ -11,7 +11,7 @@ legendRed|紅字|Red text|赤い字
 legendBlock|版權封鎖|Copyright block|著作権ブロック
 legendAcapella|藍背景|Blue background|青背景
 legendAcapellaDesc|清唱|A cappella|アカペラ
-legendMemberVideo|會員影片|Member video|会員限定
+legendMemberVideo|會員影片|Member video|メン限
 legendPrivateVideo|私人影片|Private video|プライベート
 
 # --- index.html 表格標頭 ---
