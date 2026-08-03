@@ -1,6 +1,8 @@
-# 我的專案
+# HoshiHo Song List
+  **正式網站傳送門**：[https://hoshimin-db.github.io/HoshiHo_SongList/](https://hoshimin-db.github.io/HoshiHo_SongList/)  
+  HoshiHo 唱過的歌清單加檢索。  
   這是一個更新。v9.1  
-  寫得好爛嗚哇啊啊啊啊啊破防惹  加入了tag(不保證準確性)
+  寫得好爛嗚哇啊啊啊啊啊破防惹  加入了tag(不保證準確性)  
 
 # 邏輯
   ## /backend  
