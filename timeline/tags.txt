@@ -1044,3 +1044,6 @@ Stella|SEKAI NO OWARI|20s,Anime
 シンフォニー|牧野由依|00s,Female,Anime
 インパーフェクト|オーイシマサヨシ|20s,Male,Anime
 V.I.P|シド|10s,Male,Anime
+Perseus-ペルセウス-|島谷ひとみ|
+魔法使いと私(The Wizard and I)|劇団四季|
+キャンディキャンディ|堀江美都子、ザ・チャープス|
