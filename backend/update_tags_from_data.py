@@ -18,13 +18,15 @@ def normalize_key(text):
         return ''
     # 1. 全半形統一
     normalized = unicodedata.normalize('NFKC', text)
-    # 2. 波浪符號統一為 ~
-    normalized = re.sub(r'[〜\u301c\u223c]', '~', normalized)
-    # 3. 大小寫不敏感
+    # 2. 統一波浪號為 ~
+    normalized = re.sub(r'[〜\u301c\u223c\uff5e]', '~', normalized)
+    # 3. 統一各種破折號為標準 '-'
+    normalized = re.sub(r'[－—–−]', '-', normalized)
+    # 4. 大小寫不敏感
     normalized = normalized.casefold()
-    # 4. 去除前後空白，並將中間多個空白壓縮為單個空白
-    normalized = re.sub(r"\s+", ' ', normalized)
-    return normalized.strip()
+    # 5. 移除所有空白字元（與前端搜尋邏輯一致）
+    normalized = re.sub(r"\s+", '', normalized)
+    return normalized
 
 with DATA_PATH.open("r", encoding="utf-8") as f:
     data = json.load(f)
