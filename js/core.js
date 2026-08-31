@@ -29,7 +29,7 @@ window.updateUILS = function(lang) {
         const key = el.getAttribute('data-i18n');
         if (data[key]) {
             // 檢查是否為特殊按鈕（只更新 aria-label，不改顯示文字）
-            if (el.id === 'randomButton') {
+            if (el.id === 'randomButton' || el.id === 'tagToggle') {
                 el.setAttribute('aria-label', data[key]);
                 el.title = data[key];
             } else if (el.tagName === 'INPUT') {

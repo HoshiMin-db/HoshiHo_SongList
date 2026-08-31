@@ -7,6 +7,7 @@ totalSongs|總曲數：|Total Songs：|総曲数：
 searchPlaceholder|搜尋歌名、歌手、來源或日期(DDMMYYYY)...|Search song name, artist, source, or date (DDMMYYYY)...|曲名、歌手、出典、または日付(DDMMYYYY)を検索...
 az|A-Z|A-Z|A-Z
 randomBtn|隨機|Random|ランダム
+tagBtn|Tags|Tags|タグ
 legendRed|紅字|Red text|赤い字
 legendBlock|版權封鎖|Copyright block|著作権ブロック
 legendAcapella|藍背景|Blue background|青背景
@@ -30,7 +31,7 @@ navHome|歌單|Song List|歌曲リスト
 navDisc|專輯|Discography|作品リスト
 
 # --- Tag 過濾 (動態生成) ---
-filterByTag|Tag：|Tag：|タグ：
+filterByTag|Tags：|Tags：|タグ：
 allTags|全部|All|すべて
 Showa|昭和年代|Showa|昭和
 90s|90年代|1990s|90年代
