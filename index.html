@@ -36,14 +36,8 @@
         </p>
         <div class="search-container">
             <input type="text" id="searchInput" data-i18n="searchPlaceholder" placeholder="搜尋歌名、歌手、來源或日期(DDMMYYYY) ...">
+            <button id="tagToggle" class="tag-toggle" data-i18n="tagBtn" aria-expanded="false" aria-label="Tags" title="Tags">🔖</button>
             <button id="randomButton" class="random-button" data-i18n="randomBtn" aria-label="隨機" title="隨機">🎲</button>
-            <div class="tag-toggle-wrapper">
-                <button id="tagToggle" class="tag-toggle" aria-expanded="false" aria-label="Toggle tags">
-                    <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <path d="M2 2L8 7L14 2" stroke="#6a5acd" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </button>
-            </div>
         </div>
         <div class="tags-filter-container collapsed" id="tagsFilterContainer">
             <span data-i18n="filterByTag">篩選 Tag：</span>

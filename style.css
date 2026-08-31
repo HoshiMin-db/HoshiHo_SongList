@@ -11,6 +11,21 @@
     --theme-secondary: #228be6;     /* 主藍色 */
     --theme-secondary-hover: #1c7ed6;
 
+    /* 按鈕與標籤顏色 */
+    --button-accent: #6a5acd;
+    --button-accent-hover: #5849b8;
+    --button-accent-soft: rgba(106, 90, 205, 0.1);
+    --button-accent-soft-hover: rgba(106, 90, 205, 0.2);
+    --button-accent-soft-active: rgba(106, 90, 205, 0.25);
+    --button-accent-border: rgba(90, 80, 160, 0.2);
+    --button-accent-border-hover: rgba(90, 80, 160, 0.3);
+    --button-accent-border-active: rgba(90, 80, 160, 0.45);
+    --button-accent-shadow: rgba(106, 90, 205, 0.15);
+    --tag-button-bg: #fbfbff;
+    --tag-button-bg-hover: #f5f4ff;
+    --tag-button-selected-bg: #6a5acd;
+    --tag-button-selected-border: #5946ad;
+
     /* 介面色彩 */
     --bg-page: #f5f5f5;            /* 網頁底色 */
     --bg-surface: #ffffff;         /* 卡片/表格底色 */
@@ -162,60 +177,47 @@ a:hover {
     border-color: var(--theme-primary);
 }
 
-.random-button {
+.random-button,
+.tag-toggle {
     flex-shrink: 0;
     width: 40px;
     height: 40px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(106, 90, 205, 0.1);
-    border: 1px solid rgba(90,80,160,0.2);
+    background-color: var(--button-accent-soft);
+    border: 1px solid var(--button-accent-border);
     border-radius: 6px;
     cursor: pointer;
     font-size: 24px;
     transition: all 0.15s ease;
-    box-shadow: 0 1px 3px rgba(106, 90, 205, 0.15);
+    box-shadow: 0 1px 3px var(--button-accent-shadow);
 }
 
-.random-button:hover {
-    background-color: rgba(106, 90, 205, 0.2);
-    border-color: rgba(90,80,160,0.3);
+.random-button:hover,
+.tag-toggle:hover {
+    background-color: var(--button-accent-soft-hover);
+    border-color: var(--button-accent-border-hover);
 }
 
-.random-button:active {
+.random-button:active,
+.tag-toggle:active {
     transform: scale(0.95);
 }
 
-.tag-toggle-wrapper {
-    position: absolute;
-    left: 50%;
-    bottom: -14px;
-    transform: translateX(-50%);
-    z-index: 30;
-}
-
 .tag-toggle {
-    width: 34px;
-    height: 28px;
-    padding: 4px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--bg-surface);
-    border: 1px solid rgba(90,80,160,0.08);
-    border-radius: 6px;
-    cursor: pointer;
-    box-shadow: 0 1px 3px rgba(90,80,160,0.06);
-    transition: all 0.2s ease;
+    order: 1;
 }
 
-.tag-toggle:hover {
-    background-color: rgba(0,0,0,0.04);
+.random-button {
+    order: 2;
 }
 
-.tag-toggle[aria-expanded="true"] {
-    transform: rotate(180deg);
+.tag-toggle[aria-expanded="true"],
+.tag-toggle[aria-expanded="true"]:hover {
+    background-color: var(--button-accent-soft-active);
+    border-color: var(--button-accent-border-active);
+    box-shadow: 0 1px 5px rgba(106, 90, 205, 0.18);
 }
 
 .tags-filter-container {
@@ -249,7 +251,7 @@ a:hover {
     padding: 6px 10px;
     border: 1px solid var(--border-light);
     border-radius: 999px;
-    background: #fbfbff;
+    background: var(--tag-button-bg);
     color: var(--text-main);
     font-size: 12px;
     cursor: pointer;
@@ -258,13 +260,13 @@ a:hover {
 }
 
 .tag-button:hover {
-    background: #f5f4ff;
+    background: var(--tag-button-bg-hover);
     transform: translateY(-1px);
 }
 
 .tag-button.selected {
-    background: var(--theme-primary);
-    border-color: #5946ad;
+    background: var(--tag-button-selected-bg);
+    border-color: var(--tag-button-selected-border);
     color: var(--text-light);
     box-shadow: 0 2px 6px rgba(90,80,160,0.12);
 }
