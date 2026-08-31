@@ -1044,27 +1044,25 @@ Stella|SEKAI NO OWARI|20s,Anime
 シンフォニー|牧野由依|00s,Female,Anime
 インパーフェクト|オーイシマサヨシ|20s,Male,Anime
 V.I.P|シド|10s,Male,Anime
-Perseus-ペルセウス-|島谷ひとみ|
-魔法使いと私(The Wizard and I)|劇団四季|
-キャンディキャンディ|堀江美都子、ザ・チャープス|
-異邦人 -シルクロードのテーマ-|久保田早紀|
-サザエさん|宇野ゆう子|
-My Soul, Your Beats!|Lia|
-Amore|ReoNa|
-ヨドバシカメラの歌||
-今日の日はさようなら|森山良子|
-机さする|青木遥|
-恋はみずいろ(L'amour est bleu)|ポール・モーリア|
-ヒカリ|堀江由衣|
-友情物語|Aice5|
-くじびきアンバランス|UNDER17|
-オハヨウ|双葉(斎藤千和)＆梨々(水樹奈々)＆美森(稲村優奈)|
-world's end, girl's rondo|分島花音|
-Blue Moon|ほしな歌唄(水樹奈々)|
-書の魔獣|Sound Horizon|
-さよならララ|いきものがかり|
-EXIT→RUNNING|林原めぐみ|
-departure!|小野正利|
-REASON|ゆず|
-表裏一体|ゆず|
-情熱のウォブル|Kicco|
+魔法使いと私(The Wizard and I)|劇団四季|Musical
+キャンディキャンディ|堀江美都子、ザ・チャープス|Showa,Female,Anime
+異邦人 -シルクロードのテーマ-|久保田早紀|Showa,Female
+サザエさん|宇野ゆう子|Showa,Female,Anime
+Amore|ReoNa|20s,Female,Anime
+ヨドバシカメラの歌|70s,Male,Meme
+今日の日はさようなら|森山良子|Showa,Female,Folk
+机さする|青木遥|20s,Female,Anime
+恋はみずいろ(L'amour est bleu)|ポール・モーリア|Showa
+ヒカリ|堀江由衣|00s,Female,Anime
+友情物語|Aice5|00s,Female,Anime
+くじびきアンバランス|UNDER17|00s,Anime
+オハヨウ|双葉(斎藤千和)＆梨々(水樹奈々)＆美森(稲村優奈)|00s,Female,Anime
+world's end, girl's rondo|分島花音|10s,Female,Anime
+Blue Moon|ほしな歌唄(水樹奈々)|00s,Female,Anime
+書の魔獣|Sound Horizon|00s
+さよならララ|いきものがかり|20s,Female,Anime
+EXIT→RUNNING|林原めぐみ|90s,Female,Anime
+departure!|小野正利|10s,Male,Anime
+REASON|ゆず|10s,Male,Anime
+表裏一体|ゆず|10s,Male,Anime
+情熱のウォブル|Kicco|00s,Female,Game
