@@ -32,4 +32,5 @@
 
 # 鳴謝
   時間軸：Avery、アスパラ、霜月ルーニァ  
+  ほし民icon：Hallo.artwork  
   程式碼：Claude、GPT、Gemini  
