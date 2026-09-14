@@ -397,10 +397,10 @@ Successful Mission|林原めぐみ|90s,Female,Anime
 I'll be there|林原めぐみ|90s,Female,Anime
 hesitation|林原めぐみ|90s,Female,Anime
 Lively Motion|林原めぐみ|90s,Female,Anime
-Happy day in hell||Anime
-Heaven 2 Hell||Anime
-Just Look My Way|Bryce|00s,Male,Game
-INSANE||Anime
+Happy day in hell||20s,Anime,Musical
+Heaven 2 Hell||20s,Anime,Musical
+Just Look My Way|Bryce|20s,Male,Anime
+INSANE||20s,Male,Anime
 Falling,The Star Light|山本美禰子|10s,Female,Game
 謎|小松未歩|90s,Female,Anime
 君がいない夏|DEEN|90s,Anime
