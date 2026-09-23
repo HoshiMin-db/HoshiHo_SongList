@@ -1,51 +1,209 @@
-# HTML_ID | zh-TW | en | ja
-# --- 全域與頁面標題 ---
-title|🌟 HoshiHo 歌單 💐|🌟 HoshiHo Song List 💐|🌟 HoshiHo 歌曲リスト 💐
-pageTitle|🌟 HoshiHo 歌單 💐|🌟 HoshiHo Song List 💐|🌟 HoshiHo 歌<span style="font-size: 0.6em;">った</span>曲リスト 💐 
-discography|🌟 HoshiHo 專輯 💐|🌟 HoshiHo Discography 💐|🌟 HoshiHo 作品リスト 💐
-totalSongs|總曲數：|Total Songs：|総曲数：
-searchPlaceholder|搜尋歌名、歌手、來源或日期(DDMMYYYY)...|Search song name, artist, source, or date (DDMMYYYY)...|曲名、歌手、出典、または日付(DDMMYYYY)を検索...
-az|A-Z|A-Z|A-Z
-randomBtn|隨機|Random|ランダム
-tagBtn|Tags|Tags|タグ
-legendRed|紅字|Red text|赤い字
-legendBlock|版權封鎖|Copyright block|著作権ブロック
-legendAcapella|藍背景|Blue background|青背景
-legendAcapellaDesc|清唱|A cappella|アカペラ
-legendMemberVideo|會員影片|Member video|メン限
-legendPrivateVideo|私人影片|Private video|プライベート
+## --- 全域與頁面標題 ---
+[title]
+zh-TW: 🌟 HoshiHo 歌單 💐
+en: 🌟 HoshiHo Song List 💐
+ja: 🌟 HoshiHo 歌曲リスト 💐
 
-# --- index.html 表格標頭 ---
-songTitle|曲名|Song Title|曲名
-artist|歌手|Artist|歌手
-source|出處|Source|出典
-date|日期|Date|日付
+[pageTitle]
+zh-TW: 🌟 HoshiHo 歌單 💐
+en: 🌟 HoshiHo Song List 💐
+ja: 🌟 HoshiHo 歌<span style="font-size: 0.6em;">った</span>曲リスト 💐
 
-# --- disc.html 專輯卡片按鈕 ---
-sample|試聽|Preview|試聴
-playlist|播放清單|Playlist|プレイリスト
-purchase|購買|Purchase|購入
+[discography]
+zh-TW: 🌟 HoshiHo 專輯 💐
+en: 🌟 HoshiHo Discography 💐
+ja: 🌟 HoshiHo 作品リスト 💐
 
-# --- 側邊欄導覽 (Sidebar) ---
-navHome|歌單|Song List|歌曲リスト
-navDisc|專輯|Discography|作品リスト
+[totalSongs]
+zh-TW: 總曲數：
+en: Total Songs：
+ja: 総曲数：
 
-# --- Tag 過濾 (動態生成) ---
-filterByTag|Tags：|Tags：|タグ：
-allTags|全部|All|すべて
-Showa|昭和年代|Showa|昭和
-90s|90年代|1990s|90年代
-00s|00年代|2000s|00年代
-10s|10年代|2010s|10年代
-20s|20年代|2020s|20年代
-Female|女性歌手|Female Vocal|女性ボーカル
-Male|男性歌手|Male Vocal|男性ボーカル
-Anime|動畫|Anime|アニメ
-Game|遊戲|Game|ゲーム
-Original|原創|Original|オリジナル
-Folk|民族風|Ethnic|民族
-Denpa|電波|Denpa|電波ソング
-Meme|搞笑|Meme|ネタ枠
-Wafuu|和風|Wafu|和風
-Musical|音樂劇|Musical|ミュージカル
-Touhou|東方|Touhou|東方
+[searchPlaceholder]
+zh-TW: 搜尋歌名、歌手、來源或日期(DDMMYYYY)...
+en: Search song name, artist, source, or date (DDMMYYYY)...
+ja: 曲名、歌手、出典、または日付(DDMMYYYY)を検索...
+
+[az]
+zh-TW: A-Z
+en: A-Z
+ja: A-Z
+
+[randomBtn]
+zh-TW: 隨機
+en: Random
+ja: ランダム
+
+[tagBtn]
+zh-TW: Tags
+en: Tags
+ja: タグ
+
+[legendRed]
+zh-TW: 紅字
+en: Red text
+ja: 赤い字
+
+[legendBlock]
+zh-TW: 版權封鎖
+en: Copyright block
+ja: 著作権ブロック
+
+[legendAcapella]
+zh-TW: 藍背景
+en: Blue background
+ja: 青背景
+
+[legendAcapellaDesc]
+zh-TW: 清唱
+en: A cappella
+ja: アカペラ
+
+[legendMemberVideo]
+zh-TW: 會員影片
+en: Member video
+ja: メン限
+
+[legendPrivateVideo]
+zh-TW: 私人影片
+en: Private video
+ja: プライベート
+
+## --- index.html 表格標頭 ---
+[songTitle]
+zh-TW: 曲名
+en: Song Title
+ja: 曲名
+
+[artist]
+zh-TW: 歌手
+en: Artist
+ja: 歌手
+
+[source]
+zh-TW: 出處
+en: Source
+ja: 出典
+
+[date]
+zh-TW: 日期
+en: Date
+ja: 日付
+
+## --- disc.html 專輯卡片按鈕 ---
+[sample]
+zh-TW: 試聽
+en: Preview
+ja: 試聴
+
+[playlist]
+zh-TW: 播放清單
+en: Playlist
+ja: プレイリスト
+
+[purchase]
+zh-TW: 購買
+en: Purchase
+ja: 購入
+
+## --- 側邊欄導覽 (Sidebar) ---
+[navHome]
+zh-TW: 歌單
+en: Song List
+ja: 歌曲リスト
+
+[navDisc]
+zh-TW: 專輯
+en: Discography
+ja: 作品リスト
+
+## --- Tag 過濾 (動態生成) ---
+[filterByTag]
+zh-TW: Tags：
+en: Tags：
+ja: タグ：
+
+[allTags]
+zh-TW: 全部
+en: All
+ja: すべて
+
+[Showa]
+zh-TW: 昭和年代
+en: Showa
+ja: 昭和
+
+[90s]
+zh-TW: 90年代
+en: 1990s
+ja: 90年代
+
+[00s]
+zh-TW: 00年代
+en: 2000s
+ja: 00年代
+
+[10s]
+zh-TW: 10年代
+en: 2010s
+ja: 10年代
+
+[20s]
+zh-TW: 20年代
+en: 2020s
+ja: 20年代
+
+[Female]
+zh-TW: 女性歌手
+en: Female Vocal
+ja: 女性ボーカル
+
+[Male]
+zh-TW: 男性歌手
+en: Male Vocal
+ja: 男性ボーカル
+
+[Anime]
+zh-TW: 動畫
+en: Anime
+ja: アニメ
+
+[Game]
+zh-TW: 遊戲
+en: Game
+ja: ゲーム
+
+[Original]
+zh-TW: 原創
+en: Original
+ja: オリジナル
+
+[Folk]
+zh-TW: 民族風
+en: Ethnic
+ja: 民族
+
+[Denpa]
+zh-TW: 電波
+en: Denpa
+ja: 電波ソング
+
+[Meme]
+zh-TW: 搞笑
+en: Meme
+ja: ネタ枠
+
+[Wafuu]
+zh-TW: 和風
+en: Wafu
+ja: 和風
+
+[Musical]
+zh-TW: 音樂劇
+en: Musical
+ja: ミュージカル
+
+[Touhou]
+zh-TW: 東方
+en: Touhou
+ja: 東方

@@ -2,21 +2,53 @@
 
 let translations = {};
 
-// 1. 解析 TXT 轉為內部 Dict
+// TXT 解析器（只有以 ## 開頭的行才會被當成註解忽視）
 function parseTranslations(text) {
-    const lines = text.split('\n');
     const dict = { 'zh-TW': {}, 'en': {}, 'ja': {} };
-    
+    const lines = text.split(/\r?\n/);
+
+    let currentKey = null;
+    let currentLang = null;
+    let contentBuffer = [];
+
+    function saveCurrent() {
+        if (currentKey && currentLang) {
+            dict[currentLang][currentKey] = contentBuffer.join('\n').trim();
+        }
+    }
+
     lines.forEach(line => {
-        if (!line.trim() || line.startsWith('#')) return;
-        const parts = line.split('|').map(s => s.trim());
-        if (parts.length >= 2) {
-            const id = parts[0];
-            dict['zh-TW'][id] = parts[1] || id;
-            dict['en'][id] = parts[2] || id;
-            dict['ja'][id] = parts[3] || id;
+        const trimmedLine = line.trim();
+
+        // 1. 只有以 ## 開頭的行才會被當成系統註解跳過
+        if (trimmedLine.startsWith('##')) return;
+
+        // 2. 檢查是否為 [ID] 標題
+        const headerMatch = trimmedLine.match(/^\[([^\]]+)\]$/);
+        if (headerMatch) {
+            saveCurrent();
+            currentKey = headerMatch[1].trim();
+            currentLang = null;
+            contentBuffer = [];
+            return;
+        }
+
+        // 3. 檢查是否為 語言標籤 (zh-TW:, en:, ja:)
+        const langMatch = line.match(/^\s*(zh-TW|en|ja)\s*[:：]\s*(.*)/);
+        if (langMatch) {
+            saveCurrent();
+            currentLang = langMatch[1];
+            contentBuffer = [langMatch[2]]; // 冒號後面的內容
+            return;
+        }
+
+        // 4. 收集普通內文（包含單個 # 的內容，如 #tag 或 # 標題）
+        if (currentKey && currentLang) {
+            contentBuffer.push(line);
         }
     });
+
+    saveCurrent();
     return dict;
 }
 
