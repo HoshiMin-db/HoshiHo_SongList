@@ -108,7 +108,7 @@ function createAlbumCard(album) {
     const hasLinks = !!generateExternalLinksHtml(album);
     
     return `
-        <div class="disc-card ${isParticipation ? 'disc-card-participation' : 'disc-card-main'}">
+        <div class="disc-card ${isParticipation ? 'disc-card-participation' : 'disc-card-main'} ${hasTracks ? '' : 'no-track-list'}">
             <div class="disc-video-container" style="aspect-ratio: 16/9; background: #000;">${videoContainerHtml}</div>
             <div class="disc-header">
                 <div class="disc-title">${escapeHtml(album.title)}</div>
