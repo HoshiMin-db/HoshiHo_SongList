@@ -104,6 +104,9 @@ function createAlbumCard(album) {
         videoContainerHtml = `<div style="width:100%;height:100%;background:#333;"></div>`;
     }
 
+    const hasTracks = Array.isArray(album.tracks) && album.tracks.length > 0;
+    const hasLinks = !!generateExternalLinksHtml(album);
+    
     return `
         <div class="disc-card ${isParticipation ? 'disc-card-participation' : 'disc-card-main'}">
             <div class="disc-video-container" style="aspect-ratio: 16/9; background: #000;">${videoContainerHtml}</div>
