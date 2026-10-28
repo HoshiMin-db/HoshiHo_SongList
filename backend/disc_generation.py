@@ -62,9 +62,9 @@ def parse_disc_file():
 
     # 初始化固定結構，確保 ID 不會變動
     discography = {
+        "solo": {"name": "Solo", "description": "個人作品", "albums": []},
         "armony": {"name": "Armony", "description": "音樂企劃Armony的作品", "albums": []},
-        "other_circles": {"name": "Other Circles", "description": "參與其他社團的作品", "albums": []},
-        "solo": {"name": "Solo Works", "description": "個人作品", "albums": []}
+        "other_circles": {"name": "Other Circles", "description": "參與其他社團的作品", "albums": []}
     }
 
     current_id = None
