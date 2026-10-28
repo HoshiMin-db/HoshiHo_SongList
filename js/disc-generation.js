@@ -132,13 +132,18 @@ async function generateDiscography() {
     if (!discography) return;
 
     let allHtml = '';
+    const descriptionKeys = {
+        solo: 'soloDescription',
+        armony: 'armonyDescription',
+        other_circles: 'otherCirclesDescription'
+    };
     Object.entries(discography).forEach(([key, category]) => {
         if (category.albums.length === 0) return;
         const albumsHtml = category.albums.map(album => createAlbumCard(album)).join('');
         allHtml += `
             <div class="category-section" id="${key}">
                 <h2 class="category-title">${category.name}</h2>
-                <p class="category-description">${category.description}</p>
+                <p class="category-description" data-i18n="${descriptionKeys[key]}">${category.description}</p>
                 <div class="disc-container">${albumsHtml}</div>
             </div>
         `;
