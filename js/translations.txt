@@ -99,7 +99,7 @@ ja: 試聴
 [playlist]
 zh-TW: 播放清單
 en: Playlist
-ja: プレイリスト
+ja: ﾌﾟﾚｲﾘｽﾄ
 
 [purchase]
 zh-TW: 購買
