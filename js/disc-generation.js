@@ -71,12 +71,11 @@ function createAlbumCard(album) {
     const isParticipation = !!album.circle;
     const xfdVideoId = album.xfdVideoId;
 
-    // 生成曲目列表，點擊調用 window.playInCard[cite: 8]
-    const tracksList = album.tracks.map((track, index) => {
+    const tracksList = (album.tracks || []).map((track, index) => {
         const isPartic = album.participationIndices && album.participationIndices.includes(index);
         const badge = isPartic ? '<span class="participation-badge">✦</span>' : '';
         const trackUrl = `https://www.youtube.com/watch?v=${track.videoId}`;
-        
+
         return `
             <li class="track-item ${isPartic ? 'track-item-participation' : ''}">
                 <span class="track-number">${index + 1}</span>
@@ -90,11 +89,11 @@ function createAlbumCard(album) {
         `;
     }).join('');
 
-    // 影片容器初始化：使用 window.createYoutubeEmbedFromId[cite: 8]
+    const linksHtml = generateExternalLinksHtml(album);
+
     let videoContainerHtml = '';
     if (xfdVideoId) {
-        const thumb = getYouTubeThumbnail(xfdVideoId, 'hqdefault'); // 使用高品質縮圖
-        // 初始只顯示背景圖和一個中央播放按鈕樣式
+        const thumb = getYouTubeThumbnail(xfdVideoId, 'hqdefault');
         videoContainerHtml = `
             <div class="video-placeholder" 
                  style="width:100%; height:100%; background: url('${thumb}') center/cover; cursor:pointer; position:relative; display:flex; align-items:center; justify-content:center;"
@@ -110,14 +109,13 @@ function createAlbumCard(album) {
             <div class="disc-video-container" style="aspect-ratio: 16/9; background: #000;">${videoContainerHtml}</div>
             <div class="disc-header">
                 <div class="disc-title">${escapeHtml(album.title)}</div>
-                <!-- 根據是否為社團參與切換 CSS 類名 -->
                 <div class="${isParticipation ? 'disc-circle' : 'disc-subtitle'}">
                     ${isParticipation ? escapeHtml(album.circle) : album.type}
                 </div>
                 <div class="disc-release-date">${album.releaseDate}</div>
             </div>
-            <ul class="track-list">${tracksList}</ul>
-            <div class="external-links">${generateExternalLinksHtml(album)}</div>
+            ${tracksList ? `<ul class="track-list">${tracksList}</ul>` : ''}
+            ${linksHtml ? `<div class="external-links">${linksHtml}</div>` : ''}
         </div>
     `;
 }
