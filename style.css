@@ -488,11 +488,25 @@ table tbody td:hover .song-tags {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: var(--shadow-md);
-    transition: box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
-    height: 600px;
+    height: 600px;  /* 一般專輯維持固定 */
 }
+
+.disc-card.no-track-list {
+    height: auto;
+    min-height: 360px;
+    max-height: none;
+}
+
+.disc-card.no-track-list .track-list {
+    display: none;
+}
+
+.disc-card.no-track-list .external-links {
+    margin-top: 0;
+}
+
 .disc-card:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
