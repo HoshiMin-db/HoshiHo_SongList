@@ -1,4 +1,30 @@
 {
+  "solo": {
+    "name": "Solo",
+    "description": "個人作品",
+    "albums": [
+      {
+        "title": "Blume Glück",
+        "releaseDate": "2026.03.08",
+        "ytUrl": "",
+        "purchaseUrl": "https://linkco.re/nngEZ4z8",
+        "xfdVideoId": "65XEjzQllUs",
+        "tracks": [],
+        "participationIndices": [],
+        "type": "1st Original"
+      },
+      {
+        "title": "Whispers of the Blue Star",
+        "releaseDate": "2026.04.14",
+        "ytUrl": "",
+        "purchaseUrl": "",
+        "xfdVideoId": "oFsQeJ_C_Vw",
+        "tracks": [],
+        "participationIndices": [],
+        "type": "2nd Original"
+      }
+    ]
+  },
   "armony": {
     "name": "Armony",
     "description": "音樂企劃Armony的作品",
@@ -261,32 +287,6 @@
           8
         ],
         "circle": "Bernis"
-      }
-    ]
-  },
-  "solo": {
-    "name": "Solo Works",
-    "description": "個人作品",
-    "albums": [
-      {
-        "title": "Blume Glück",
-        "releaseDate": "2026.03.08",
-        "ytUrl": "",
-        "purchaseUrl": "https://linkco.re/nngEZ4z8",
-        "xfdVideoId": "65XEjzQllUs",
-        "tracks": [],
-        "participationIndices": [],
-        "type": "1st Original"
-      },
-      {
-        "title": "Whispers of the Blue Star",
-        "releaseDate": "2026.04.14",
-        "ytUrl": "",
-        "purchaseUrl": "",
-        "xfdVideoId": "oFsQeJ_C_Vw",
-        "tracks": [],
-        "participationIndices": [],
-        "type": "2nd Original"
       }
     ]
   }
