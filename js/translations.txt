@@ -90,7 +90,7 @@ zh-TW: 日期
 en: Date
 ja: 日付
 
-## --- disc.html 專輯卡片按鈕 ---
+## --- disc.html ---
 [sample]
 zh-TW: 試聽
 en: Preview
@@ -105,6 +105,21 @@ ja: プレイリスト
 zh-TW: 購買
 en: Purchase
 ja: 購入
+
+[soloDescription]
+zh-TW: 個人原創曲
+en: Solo Original Songs
+ja: 個人オリジナル曲
+
+[armonyDescription]
+zh-TW: 音樂組合 Armony 的作品
+en: Works by Armony
+ja: 音楽ユニット Armony の作品
+
+[otherCirclesDescription]
+zh-TW: 參與其他社團的作品
+en: Collaborative Works
+ja: 他サークル参加作品
 
 ## --- 側邊欄導覽 (Sidebar) ---
 [navHome]
