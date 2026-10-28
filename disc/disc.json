@@ -5,7 +5,7 @@
     "albums": [
       {
         "title": "Armonico",
-        "releaseDate": "2023.11.27",
+        "releaseDate": "2023.10.29",
         "ytUrl": "OLAK5uy_kOh2CM5W2S4GFO1zxmY2HIHtHcLT3Yi4k",
         "purchaseUrl": "https://linkco.re/61a6UMRe",
         "xfdVideoId": "6AFPVERA12k",
@@ -36,7 +36,7 @@
       },
       {
         "title": "Gracia",
-        "releaseDate": "2024.05.04",
+        "releaseDate": "2024.04.28",
         "ytUrl": "OLAK5uy_nhCNha90hSCm8TC5AEWGfgezjItSPwUFw",
         "purchaseUrl": "https://linkco.re/zUpguMMu",
         "xfdVideoId": "9Op9F0XJSFA",
@@ -71,7 +71,7 @@
       },
       {
         "title": "Triquetra",
-        "releaseDate": "2024.11.04",
+        "releaseDate": "2024.10.27",
         "ytUrl": "OLAK5uy_l0Qmu7NiDBcGWxcInCxR25x3c8Gkoi7_c",
         "purchaseUrl": "https://linkco.re/5B09uFbP",
         "xfdVideoId": "lnnJSORmOeA",
@@ -267,6 +267,27 @@
   "solo": {
     "name": "Solo Works",
     "description": "個人作品",
-    "albums": []
+    "albums": [
+      {
+        "title": "Blume Glück",
+        "releaseDate": "2026.03.08",
+        "ytUrl": "",
+        "purchaseUrl": "https://linkco.re/nngEZ4z8",
+        "xfdVideoId": "65XEjzQllUs",
+        "tracks": [],
+        "participationIndices": [],
+        "type": "1st Original"
+      },
+      {
+        "title": "Whispers of the Blue Star",
+        "releaseDate": "2026.04.14",
+        "ytUrl": "",
+        "purchaseUrl": "",
+        "xfdVideoId": "oFsQeJ_C_Vw",
+        "tracks": [],
+        "participationIndices": [],
+        "type": "2nd Original"
+      }
+    ]
   }
 }
