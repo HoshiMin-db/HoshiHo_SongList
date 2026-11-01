@@ -329,7 +329,20 @@
         "ytUrl": "",
         "purchaseUrl": "https://minimalsky.booth.pm/items/9039625",
         "xfdVideoId": "C7jTxJCEKw4",
-        "tracks": [],
+        "tracks": [
+          {
+            "title": "聖火塔の幻影",
+            "videoId": ""
+          },
+          {
+            "title": "星火燎原",
+            "videoId": ""
+          },
+          {
+            "title": "Pyre",
+            "videoId": ""
+          }
+        ],
         "participationIndices": [
           2
         ],
