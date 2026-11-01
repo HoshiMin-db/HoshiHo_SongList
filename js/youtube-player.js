@@ -97,7 +97,8 @@ document.addEventListener("DOMContentLoaded", function() {
         container.innerHTML = `
             <iframe src="${finalUrl}" 
                     allow="${YT_ALLOW_POLICIES}" 
-                    allowfullscreen 
+                    allowfullscreen
+                    loading="lazy"
                     style="width: 100%; height: 100%; border: none;"></iframe>
         `;
     }
@@ -112,9 +113,16 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function playInCardById(element, videoId) {
+        const card = element.closest('.disc-card');
+        const container = card?.querySelector('.disc-video-container');
+        if (!container) return;
+    
+        if (container.dataset.playerLoaded === 'true') return;
+    
         const embedUrl = createYoutubeEmbedFromId(videoId);
         if (embedUrl) {
-            injectIframe(element.closest('.disc-card')?.querySelector('.disc-video-container'), embedUrl);
+            injectIframe(container, embedUrl);
+            container.dataset.playerLoaded = 'true';
         }
     }
 
