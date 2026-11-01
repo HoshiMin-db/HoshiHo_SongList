@@ -74,8 +74,9 @@ function createAlbumCard(album) {
     const tracksList = (album.tracks || []).map((track, index) => {
         const isPartic = album.participationIndices && album.participationIndices.includes(index);
         const badge = isPartic ? '<span class="participation-badge">✦</span>' : '';
-        const trackUrl = `https://www.youtube.com/watch?v=${track.videoId}`;
-
+        const hasVideoId = !!(track && track.videoId);
+        const trackUrl = hasVideoId ? `https://www.youtube.com/watch?v=${track.videoId}` : '';
+    
         return `
             <li class="track-item ${isPartic ? 'track-item-participation' : ''}">
                 <span class="track-number">${index + 1}</span>
@@ -84,7 +85,10 @@ function createAlbumCard(album) {
                     <div class="track-title">${escapeHtml(track.title)}</div>
                     <div class="track-credit">${track.credits || ''}</div>
                 </div>
-                <button class="play-button-small" onclick="window.playInCard(this, '${trackUrl}')">▷</button>
+                ${hasVideoId
+                    ? `<button class="play-button-small" onclick="window.playInCard(this, '${trackUrl}')">▷</button>`
+                    : ''
+                }
             </li>
         `;
     }).join('');
