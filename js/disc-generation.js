@@ -141,6 +141,7 @@ async function generateDiscography() {
         armony: 'armonyDescription',
         other_circles: 'otherCirclesDescription'
     };
+
     Object.entries(discography).forEach(([key, category]) => {
         if (category.albums.length === 0) return;
         const albumsHtml = category.albums.map(album => createAlbumCard(album)).join('');
@@ -155,11 +156,36 @@ async function generateDiscography() {
 
     container.innerHTML = allHtml;
 
-    // 生成後立即觸發一次翻譯，填充所有 data-i18n 標籤
+    // 先做 observer
+    setupDiscCardObserver();
+
+    // 再執行 i18n
     if (window.updateUILS) {
         const currentLang = localStorage.getItem('language') || 'zh-TW';
         window.updateUILS(currentLang);
     }
+}
+
+function setupDiscCardObserver() {
+    const cards = document.querySelectorAll('.disc-card');
+    if (!cards.length) return;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            const card = entry.target;
+            if (entry.isIntersecting) {
+                card.dataset.visible = 'true';
+            } else {
+                card.dataset.visible = 'false';
+            }
+        });
+    }, {
+        root: null,
+        threshold: 0.2,
+        rootMargin: '200px 0px'
+    });
+
+    cards.forEach(card => observer.observe(card));
 }
 
 // 7. 等待依賴項載入並初始化[cite: 4, 8]
