@@ -60,7 +60,6 @@ def parse_disc_file():
     if not os.path.exists(DISC_FILE_PATH):
         raise FileNotFoundError(f"找不到檔案: {DISC_FILE_PATH}")
 
-    # 初始化固定結構，確保 ID 不會變動
     discography = {
         "solo": {"name": "Solo", "description": "個人作品", "albums": []},
         "armony": {"name": "Armony", "description": "音樂企劃Armony的作品", "albums": []},
@@ -68,17 +67,16 @@ def parse_disc_file():
     }
 
     current_id = None
-    
-    # 使用 utf-8-sig 處理可能存在的 BOM
+    current_album = None
+
     with open(DISC_FILE_PATH, 'r', encoding='utf-8-sig') as f:
         for line in f:
             trimmed = line.strip()
-            
-            # 1. 跳過空行與註釋
+
             if not trimmed or trimmed.startswith('//'):
                 continue
 
-            # 2. 處理分類標籤 (對應固定 ID)
+            # 分類標籤
             if trimmed.startswith('[') and trimmed.endswith(']'):
                 cat_name = trimmed[1:-1].strip()
                 if cat_name == 'Armony':
@@ -88,12 +86,25 @@ def parse_disc_file():
                 elif cat_name == 'Solo Works':
                     current_id = 'solo'
                 else:
-                    current_id = None # 未定義的分類則忽略其內容
+                    current_id = None
+
+                current_album = None
                 continue
 
-            # 3. 處理內容行
+            # 手動補曲目列表
+            if trimmed.startswith('@tracks:'):
+                if current_id is None or current_album is None:
+                    continue
+
+                names = [p.strip() for p in trimmed[len('@tracks:'):].split('|') if p.strip()]
+                current_album["tracks"] = [
+                    {"title": name, "videoId": ""}
+                    for name in names
+                ]
+                continue
+
+            # 一張專輯資料
             if current_id and '|' in trimmed:
-                # 補齊欄位，確保不會因為欄位不足而報錯
                 fields = (trimmed.split('|') + [None] * 7)[:7]
                 title = fields[0].strip() if fields[0] else ""
                 field2 = fields[1].strip() if fields[1] else ""
@@ -103,9 +114,9 @@ def parse_disc_file():
                 xfd_id = extract_youtube_id(fields[5]) if fields[5] else ""
                 participation = fields[6].strip() if fields[6] else ""
 
-                if not title: continue
+                if not title:
+                    continue
 
-                # 建立基礎物件
                 album = {
                     "title": title,
                     "releaseDate": release_date,
@@ -116,16 +127,15 @@ def parse_disc_file():
                     "participationIndices": []
                 }
 
-                # 根據不同分類使用不同鍵名 (比照舊版邏輯)
                 if current_id == 'other_circles':
                     album["circle"] = field2
-                    # 處理參與索引
                     if participation:
                         album["participationIndices"] = [int(i.strip()) for i in participation.split(',') if i.strip().isdigit()]
                 else:
                     album["type"] = field2
-                
+
                 discography[current_id]["albums"].append(album)
+                current_album = album
 
     return discography
 
