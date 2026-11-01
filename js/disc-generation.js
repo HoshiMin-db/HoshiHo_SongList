@@ -100,10 +100,11 @@ function createAlbumCard(album) {
         const thumb = getYouTubeThumbnail(xfdVideoId, 'hqdefault');
         videoContainerHtml = `
             <div class="video-placeholder" 
-                 style="width:100%; height:100%; background: url('${thumb}') center/cover; cursor:pointer; position:relative; display:flex; align-items:center; justify-content:center;"
+                 style="width:100%; height:100%; background: url('${thumb}') center/cover; ..."
                  onclick="window.playInCardById(this, '${xfdVideoId}')">
-                <div class="play-overlay-icon" style="font-size: 50px; color: white; opacity: 0.8; filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));">▶</div>
+                <div class="play-overlay-icon">▶</div>
             </div>`;
+    }
     } else {
         videoContainerHtml = `<div style="width:100%;height:100%;background:#333;"></div>`;
     }
