@@ -125,6 +125,41 @@
         ],
         "participationIndices": [],
         "type": "3rd EP"
+      },
+      {
+        "title": "Thousand Nights",
+        "releaseDate": "2026.10.25",
+        "ytUrl": "OLAK5uy_lZjIzLm6yuHqrFzlaQF1o8uEjt25rQuSU",
+        "purchaseUrl": "https://linkco.re/U2R9MuE0",
+        "xfdVideoId": "cW4u_hG662o",
+        "tracks": [
+          {
+            "title": "Thousand Nights",
+            "videoId": "y7FHQ1irx4I"
+          },
+          {
+            "title": "Caravan",
+            "videoId": "jnXwz-N8mo8"
+          },
+          {
+            "title": "Eden",
+            "videoId": "ZLq9z0nY8N4"
+          },
+          {
+            "title": "Thousand Nights-Off Vocal",
+            "videoId": "DEfUDIs8800"
+          },
+          {
+            "title": "Caravan-Off Vocal",
+            "videoId": "ce518Dri7kg"
+          },
+          {
+            "title": "Eden-Off Vocal",
+            "videoId": "CJlTBd5z6ew"
+          }
+        ],
+        "participationIndices": [],
+        "type": "4th EP"
       }
     ]
   },
@@ -287,6 +322,18 @@
           8
         ],
         "circle": "Bernis"
+      },
+      {
+        "title": "聖火塔の幻影",
+        "releaseDate": "2026.10.25",
+        "ytUrl": "",
+        "purchaseUrl": "https://minimalsky.booth.pm/items/9039625",
+        "xfdVideoId": "C7jTxJCEKw4",
+        "tracks": [],
+        "participationIndices": [
+          2
+        ],
+        "circle": "Minimal Sky"
       }
     ]
   }
