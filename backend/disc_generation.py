@@ -2,18 +2,14 @@ import json
 import os
 import re
 from urllib.parse import urlparse, parse_qs
-from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
 # 環境變數與憑證設定
-google_sheets_credentials = os.getenv('GOOGLE_SHEETS_CREDENTIALS')
 google_api_key = os.getenv('GOOGLE_API_KEY')
 
-if not google_sheets_credentials or not google_api_key:
+if not google_api_key:
     raise ValueError("缺少 Google API 憑證或 API 密鑰")
 
-credentials_info = json.loads(google_sheets_credentials)
-credentials = service_account.Credentials.from_service_account_info(credentials_info)
 youtube = build('youtube', 'v3', developerKey=google_api_key)
 
 # 路徑定位 (確保 GitHub Actions 執行時能找到根目錄的 disc 資料夾)[cite: 1]
