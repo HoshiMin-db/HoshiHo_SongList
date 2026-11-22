@@ -1,19 +1,13 @@
 import os
 import json
 from googleapiclient.discovery import build
-from google.oauth2 import service_account
 from googleapiclient.errors import HttpError
 
 # 從環境變量中讀取 Google API 憑證
-google_sheets_credentials = os.getenv('GOOGLE_SHEETS_CREDENTIALS')
 google_api_key = os.getenv('GOOGLE_API_KEY')
 
-if not google_sheets_credentials or not google_api_key:
+if not google_api_key:
     raise ValueError("缺少Google API憑證或API密鑰")
-
-try:
-    credentials_info = json.loads(google_sheets_credentials)
-    credentials = service_account.Credentials.from_service_account_info(credentials_info)
 except Exception as e:
     raise ValueError("無效的Google Sheets憑證") from e
 
