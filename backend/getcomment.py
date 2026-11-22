@@ -199,7 +199,7 @@ def get_video_ids_from_channel(channel_id):
                             stream_date = get_jst_date(video_details['snippet']['publishedAt'])
                         
                         video_info.append((video_id, stream_date))
-                        print(f"DEBUG: 已加入清單: {video_id} - {title} - {stream_date.date()}")
+                        print(f"DEBUG: 已加入清單: {video_id} - {title} - {stream_date}")
             
             if published_time < thirty_days_ago:
                 break
