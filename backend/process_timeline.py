@@ -321,15 +321,21 @@ def parse_timeline_line(line):
     if not remainder:
         raise ValueError(f"時間戳後沒有歌曲內容：{raw_line}")
 
-    # 舊格式使用 | 分隔欄位。
+    # 舊格式：時間 | 歌名 | 歌手 | 出典
     if "|" in remainder:
         fields = [field.strip() for field in remainder.split("|")]
-        song_name = fields[0] if fields else ""
+
+        # 時間戳與第一個 | 之間可能有分隔符，
+        # 移除它造成的開頭空欄。
+        while fields and not fields[0]:
+            fields.pop(0)
+
+        if not fields or not fields[0]:
+            raise ValueError(f"舊格式缺少歌曲名稱：{raw_line}")
+
+        song_name = fields[0]
         artist = fields[1] if len(fields) > 1 else ""
         source = fields[2] if len(fields) > 2 else ""
-
-        if not song_name:
-            raise ValueError(f"舊格式缺少歌曲名稱：{raw_line}")
 
         return {
             "time": time_str,
