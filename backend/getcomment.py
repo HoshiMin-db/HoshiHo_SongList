@@ -259,15 +259,63 @@ def clean_html(raw_html):
     clean_text = html.unescape(clean_text)  # 轉換HTML實體為普通字符
     return clean_text
 
-def save_to_file(video_id, comment, date):
-    """保存留言到年份資料夾；相同影片 ID 不重複寫入。"""
+def get_timeline_file_path(video_id, date):
+    """檢查同一天的時間軸檔案；相同影片跳過，不同影片使用下一個檔名。"""
+    date_prefix = date.strftime("%Y%m%d")
+    year_dir = os.path.join("timeline", str(date.year))
+
+    # 同時檢查年份資料夾和舊版根目錄，避免遷移時重複存檔。
+    directories = [year_dir, "timeline"]
+    filename_pattern = re.compile(
+        rf"^{re.escape(date_prefix)}(?:_(\d+))?\.txt$"
+    )
+    id_pattern = re.compile(r"^\s*ID\s*=\s*([A-Za-z0-9_-]+)\s*$")
+
+    used_numbers = set()
+
+    for directory in directories:
+        if not os.path.isdir(directory):
+            continue
+
+        for filename in sorted(os.listdir(directory)):
+            match = filename_pattern.fullmatch(filename)
+            if not match:
+                continue
+
+            # 沒有後綴的日期.txt 視為第 1 個檔案。
+            number = int(match.group(1)) if match.group(1) else 1
+            used_numbers.add(number)
+
+            file_path = os.path.join(directory, filename)
+
+            # 只讀取這個日期的檔案，尋找其中的影片 ID。
+            try:
+                with open(file_path, "r", encoding="utf-8") as file:
+                    for line in file:
+                        id_match = id_pattern.fullmatch(line.strip())
+                        if id_match:
+                            if id_match.group(1) == video_id:
+                                return None
+                            break
+            except (OSError, UnicodeError) as exc:
+                # 不確定檔案內容時，仍保留它已占用的編號，避免覆蓋。
+                print(f"Warning: 無法讀取 {file_path}: {exc}")
+
+    os.makedirs(year_dir, exist_ok=True)
+
+    # 找第一個未使用的檔名：日期.txt、日期_2.txt、日期_3.txt……
+    number = 1
+    while number in used_numbers:
+        number += 1
+
+    suffix = "" if number == 1 else f"_{number}"
+    filename = f"{date_prefix}{suffix}.txt"
+    return os.path.join(year_dir, filename)
+
+def save_to_file(video_id, comment, file_path):
+    """將留言存到指定路徑。"""
     if not comment:
         print(f"未找到時間戳留言，視頻ID：{video_id}")
-        return
-
-    file_path = get_timeline_file_path(video_id, date)
-    if file_path is None:
-        print(f"影片已存在，跳過：{video_id} ({date})")
         return
 
     clean_comment = clean_html(comment)
@@ -292,19 +340,14 @@ def main():
     
     # 處理每個影片
     for video_id, video_date in video_info:
-        file_name = f"{video_date:%Y%m%d}.txt"
-        year_dir = os.path.join('timeline', str(video_date.year))
-        file_path = os.path.join(year_dir, file_name)
+        file_path = get_timeline_file_path(video_id, video_date)
 
-        # 遷移期間也檢查舊的 timeline/YYYYMMDD.txt，避免重複抓取
-        legacy_file_path = os.path.join('timeline', file_name)
-
-        if os.path.exists(file_path) or os.path.exists(legacy_file_path):
-            print(f"DEBUG: 檔案已存在，跳過 {video_id} ({video_date})")
+        if file_path is None:
+            print(f"DEBUG: 同一影片已存在，跳過 {video_id} ({video_date})")
             continue
 
         if timestamp_comment := get_timestamp_comment(video_id):
-            save_to_file(video_id, timestamp_comment, video_date)
+            save_to_file(video_id, timestamp_comment, file_path)
 
 if __name__ == '__main__':
     main()
