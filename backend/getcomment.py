@@ -14,9 +14,6 @@ google_api_key = os.getenv('GOOGLE_API_KEY')
 if not google_api_key:
     raise ValueError("缺少Google API憑證或API密鑰")
 
-except Exception as e:
-    raise ValueError("無效的Google Sheets憑證") from e
-
 # YouTube Data API 客戶端
 youtube = build('youtube', 'v3', developerKey=google_api_key)
 
