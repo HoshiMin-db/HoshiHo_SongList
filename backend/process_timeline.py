@@ -324,43 +324,58 @@ def main():
     print("Loaded acapella settings")
     
     file_count = 0
-    for filename in os.listdir(timeline_dir):
-        if filename in ['exceptions.txt', 'headers.txt', 'acapella.txt', 'tags.txt']:
-            continue
-            
-        file_path = os.path.join(timeline_dir, filename)
-        match = re.match(r'(\d{8})(?:_\d+)?\.txt', filename)
-        if match:
-            date_str = match.group(1)
-            try:
-                print(f"Processing file: {filename}")
-                data = process_timeline(
-                    file_path, date_str, member_exclusive_dates, private_dates, 
-                    private_ids, acapella_songs, global_acapella_songs, 
-                    acapella_songs_with_artist, copyright_songs, headers_dict
+
+    # 遞迴尋找 timeline/ 根目錄和年份子目錄中的日期檔案
+    timeline_files = []
+    for current_dir, _, filenames in os.walk(timeline_dir):
+        for filename in filenames:
+            match = re.fullmatch(r'(\d{8})(?:_\d+)?\.txt', filename)
+            if match:
+                file_path = os.path.join(current_dir, filename)
+                date_str = match.group(1)
+                timeline_files.append((file_path, filename, date_str))
+
+    # 依日期與路徑排序，讓每次處理順序固定
+    timeline_files.sort(key=lambda item: (item[2], item[0]))
+
+    for file_path, filename, date_str in timeline_files:
+        try:
+            print(f"Processing file: {file_path}")
+            data = process_timeline(
+                file_path, date_str, member_exclusive_dates, private_dates,
+                private_ids, acapella_songs, global_acapella_songs,
+                acapella_songs_with_artist, copyright_songs, headers_dict
+            )
+
+            print(f"Processed {len(data)} songs from {filename}")
+            file_count += 1
+
+            # 合併資料並收集所有出現過的出典
+            for song_data in data:
+                key = (
+                    normalize_key(song_data['song_name']),
+                    normalize_key(song_data['artist'])
                 )
-                
-                print(f"Processed {len(data)} songs from {filename}")
-                file_count += 1
-                
-                # 【優化邏輯】合併資料並收集所有出現過的出典
-                for song_data in data:
-                    key = (normalize_key(song_data['song_name']), normalize_key(song_data['artist']))
-                    if key not in all_data:
-                        all_data[key] = song_data
-                        # 初始化一個 Set 來存放這首歌的所有出典寫法
-                        all_data[key]['_all_sources'] = {song_data['source']} if song_data['source'] else set()
-                    else:
-                        existing_dates = all_data[key]['dates']
-                        new_dates = [d for d in song_data['dates'] if d not in existing_dates]
-                        all_data[key]['dates'].extend(new_dates)
-                        
-                        # 把新發現的出典寫法加進 Set 中
-                        if song_data['source']:
-                            all_data[key]['_all_sources'].add(song_data['source'])
-            
-            except Exception as e:
-                print(f"Error processing file {file_path}: {e}")
+
+                if key not in all_data:
+                    all_data[key] = song_data
+                    all_data[key]['_all_sources'] = (
+                        {song_data['source']} if song_data['source'] else set()
+                    )
+                else:
+                    existing_dates = all_data[key]['dates']
+                    new_dates = [
+                        date_info
+                        for date_info in song_data['dates']
+                        if date_info not in existing_dates
+                    ]
+                    all_data[key]['dates'].extend(new_dates)
+
+                    if song_data['source']:
+                        all_data[key]['_all_sources'].add(song_data['source'])
+
+        except Exception as e:
+            print(f"Error processing file {file_path}: {e}")
     
     print(f"Processed {file_count} files")
     print(f"Total unique songs: {len(all_data)}")
