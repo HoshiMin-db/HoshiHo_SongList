@@ -51,32 +51,51 @@ def load_exceptions(exceptions_file):
             parts = [part.strip() for part in line.split("|")]
             rule = parts[0]
 
-            if rule == "member_exclusive_dates" and len(parts) >= 2:
-                member_exclusive_dates.update(
-                    value.strip()
-                    for value in parts[1].split(",")
-                    if value.strip()
-                )
-            elif rule == "private" and len(parts) >= 2:
-                private_dates.update(
-                    value.strip()
-                    for value in parts[1].split(",")
-                    if value.strip()
-                )
-            elif rule == "private_id" and len(parts) >= 2:
-                private_ids.update(
-                    value.strip()
-                    for value in parts[1].split(",")
-                    if value.strip()
-                )
+            if rule == "member_exclusive_dates":
+                if len(parts) >= 2:
+                    member_exclusive_dates.update(
+                        value.strip()
+                        for value in parts[1].split(",")
+                        if value.strip()
+                    )
+                else:
+                    print(
+                        f"Warning: exceptions.txt 第 {line_number} 行格式不完整，已略過"
+                    )
+
+            elif rule == "private":
+                if len(parts) >= 2:
+                    private_dates.update(
+                        value.strip()
+                        for value in parts[1].split(",")
+                        if value.strip()
+                    )
+                else:
+                    print(
+                        f"Warning: exceptions.txt 第 {line_number} 行格式不完整，已略過"
+                    )
+
+            elif rule == "private_id":
+                if len(parts) >= 2:
+                    private_ids.update(
+                        value.strip()
+                        for value in parts[1].split(",")
+                        if value.strip()
+                    )
+                else:
+                    print(
+                        f"Warning: exceptions.txt 第 {line_number} 行格式不完整，已略過"
+                    )
+
             elif rule == "copyright":
-                if len(parts) >= 3:
+                if len(parts) >= 3 and parts[1] and parts[2]:
                     copyright_songs.add((parts[1], parts[2]))
-                elif len(parts) == 2:
+                elif len(parts) == 2 and parts[1]:
                     copyright_songs.add((parts[1], None))
                 else:
                     print(
-                        f"Warning: exceptions.txt 第 {line_number} 行格式不完整"
+                        f"Warning: exceptions.txt 第 {line_number} 行 "
+                        f"copyright 格式不完整，已略過：{line}"
                     )
 
     return (
@@ -94,8 +113,8 @@ def load_acapella(acapella_file):
     acapella_songs_with_artist = {}
 
     with open(acapella_file, "r", encoding="utf-8") as file:
-        for line in file:
-            line = line.strip()
+        for line_number, raw_line in enumerate(file, start=1):
+            line = raw_line.strip()
             if not line:
                 continue
 
@@ -104,15 +123,26 @@ def load_acapella(acapella_file):
             if len(parts) == 1:
                 if parts[0]:
                     global_acapella_songs.add(parts[0])
-            elif len(parts) == 2:
+                continue
+
+            if len(parts) == 2:
                 song_name, artist = parts
                 if song_name and artist:
                     acapella_songs_with_artist.setdefault(artist, set()).add(
                         song_name
                     )
-            elif len(parts) >= 3:
+                else:
+                    print(
+                        f"Warning: acapella.txt 第 {line_number} 行格式不完整，已略過"
+                    )
+                continue
+
+            if len(parts) >= 3:
                 song_name, artist, dates = parts[:3]
-                if not song_name or not artist:
+                if not song_name or not artist or not dates:
+                    print(
+                        f"Warning: acapella.txt 第 {line_number} 行格式不完整，已略過"
+                    )
                     continue
 
                 for date_str in dates.split(","):
@@ -124,6 +154,11 @@ def load_acapella(acapella_file):
                     acapella_songs[date_str].setdefault(artist, set()).add(
                         song_name
                     )
+                continue
+
+            print(
+                f"Warning: acapella.txt 第 {line_number} 行格式不正確，已略過"
+            )
 
     return (
         acapella_songs,
@@ -138,12 +173,13 @@ def load_headers(headers_file):
 
     try:
         with open(headers_file, "r", encoding="utf-8") as file:
-            for line in file:
-                line = line.strip()
+            for line_number, raw_line in enumerate(file, start=1):
+                line = raw_line.strip()
                 if not line or "|" not in line:
                     continue
 
                 kana, words_text = line.split("|", 1)
+                kana = kana.strip()
                 words = []
 
                 for word in words_text.split(","):
@@ -153,7 +189,14 @@ def load_headers(headers_file):
                     if word:
                         words.append(word)
 
-                headers_dict[kana.strip()] = words
+                if not kana:
+                    print(
+                        f"Warning: headers.txt 第 {line_number} 行缺少分類，已略過"
+                    )
+                    continue
+
+                headers_dict[kana] = words
+
     except FileNotFoundError:
         print(f"Warning: 找不到設定檔 {headers_file}")
 
@@ -186,18 +229,28 @@ def load_tags(tags_file):
 
                 parts = line.split("|", 2)
                 if len(parts) != 3:
-                    print(f"Warning: tags.txt 第 {line_number} 行格式不正確")
+                    print(
+                        f"Warning: tags.txt 第 {line_number} 行格式不正確，已略過"
+                    )
                     continue
 
                 song_name, artist, tags_text = (
                     part.strip() for part in parts
                 )
+
+                if not song_name:
+                    print(
+                        f"Warning: tags.txt 第 {line_number} 行缺少歌名，已略過"
+                    )
+                    continue
+
                 key = (normalize_key(song_name), normalize_key(artist))
                 tags_map[key] = [
                     tag.strip()
                     for tag in tags_text.split(",")
                     if tag.strip()
                 ]
+
     except FileNotFoundError:
         print(f"Warning: 找不到設定檔 {tags_file}")
 
@@ -231,14 +284,11 @@ def source_score(source):
 
 def select_best_source(sources):
     """選出主要出典；同分時用固定文字排序打破平手。"""
-    valid_sources = sorted(
-        {
-            source.strip()
-            for source in sources
-            if source and source.strip()
-        },
-        key=lambda source: (source.casefold(), source),
-    )
+    valid_sources = {
+        source.strip()
+        for source in sources
+        if source and source.strip()
+    }
 
     if not valid_sources:
         return ""
@@ -255,33 +305,37 @@ def select_best_source(sources):
 
 def select_english_source(sources):
     """選出最長的純 ASCII 出典；同長度時固定排序。"""
-    english_sources = [
+    english_sources = {
         source.strip()
         for source in sources
         if source
         and source.strip()
         and not re.search(r"[^\x00-\x7F]", source)
-    ]
+    }
 
     if not english_sources:
         return ""
 
     return min(
-        set(english_sources),
+        english_sources,
         key=lambda source: (-len(source), source.casefold(), source),
     )
 
 
 def extract_video_id(lines, file_path):
-    """從時間軸檔案中尋找 ID = VIDEO_ID。"""
-    id_pattern = re.compile(r"^\s*ID\s*=\s*([A-Za-z0-9_-]+)\s*$")
+    """
+    從檔案中尋找 YouTube 影片 ID。
+
+    預期格式為 ID = 加上標準 11 字元 YouTube video ID。
+    """
+    id_pattern = re.compile(r"^\s*ID\s*=\s*([A-Za-z0-9_-]{11})\s*$")
 
     for line in lines:
         match = id_pattern.fullmatch(line.strip())
         if match:
             return match.group(1)
 
-    raise ValueError(f"找不到有效的影片 ID：{file_path}")
+    raise ValueError(f"找不到有效的 YouTube 影片 ID：{file_path}")
 
 
 def parse_timeline_line(line):
@@ -294,12 +348,15 @@ def parse_timeline_line(line):
     支援新格式：
         01.  00:12:34  歌名 / 『出典』歌手
         00:12:34　歌名 / 歌手
+
+    不像歌曲的行回傳 None；格式看似時間軸但內容不完整時拋出
+    ValueError，由 process_timeline 印出 warning 後略過。
     """
     raw_line = line.strip()
     if not raw_line:
         return None
 
-    # 移除「01.」這類曲目編號。
+    # 移除「01.」或「01．」這類曲目編號。
     line_without_number = re.sub(
         r"^\s*\d+[.．]\s*",
         "",
@@ -311,27 +368,30 @@ def parse_timeline_line(line):
         line_without_number,
     )
 
-    # 非時間戳行，例如留言標題或說明文字。
+    # 不含時間戳的標題、說明或直播事件文字不是歌曲行。
     if not timestamp_match:
         return None
 
     time_str = timestamp_match.group(1).replace("：", ":")
     remainder = timestamp_match.group(2).strip()
 
+    # 只有時間戳的行通常是事件標記或不完整留言，略過即可。
     if not remainder:
-        raise ValueError(f"時間戳後沒有歌曲內容：{raw_line}")
+        print(
+            f"Warning: 只有時間戳、沒有歌曲內容，已略過：{raw_line}"
+        )
+        return None
 
     # 舊格式：時間 | 歌名 | 歌手 | 出典
     if "|" in remainder:
         fields = [field.strip() for field in remainder.split("|")]
 
-        # 時間戳與第一個 | 之間可能有分隔符，
-        # 移除它造成的開頭空欄。
+        # 時間戳與第一個 | 之間可能有分隔符，移除開頭空欄。
         while fields and not fields[0]:
             fields.pop(0)
 
         if not fields or not fields[0]:
-            raise ValueError(f"舊格式缺少歌曲名稱：{raw_line}")
+            raise ValueError("舊格式缺少歌曲名稱")
 
         song_name = fields[0]
         artist = fields[1] if len(fields) > 1 else ""
@@ -347,7 +407,10 @@ def parse_timeline_line(line):
     # 新格式可能在時間和歌曲之間使用全形空格或一般空格。
     song_info = remainder.strip(" \t\u3000")
     if not song_info:
-        raise ValueError(f"時間戳後沒有歌曲內容：{raw_line}")
+        print(
+            f"Warning: 只有時間戳、沒有歌曲內容，已略過：{raw_line}"
+        )
+        return None
 
     source = ""
     artist = ""
@@ -357,19 +420,20 @@ def parse_timeline_line(line):
         r"^(.*?)\s*/\s*『(.*?)』\s*(.*)$",
         song_info,
     )
+
     if source_match:
         song_name = source_match.group(1).strip()
         source = source_match.group(2).strip()
         artist = source_match.group(3).strip()
     else:
-        # 格式：歌名 / 歌手；限定分隔符兩側有空格，
-        # 避免拆開 EXEC_PHANTASMAGORIA/. 之類歌曲名稱。
+        # 格式：歌名 / 歌手。
+        # 限定斜線兩側有空格，避免拆開 EXEC_PHANTASMAGORIA/. 等歌名。
         parts = re.split(r"\s+/\s+", song_info, maxsplit=1)
         song_name = parts[0].strip()
         artist = parts[1].strip() if len(parts) > 1 else ""
 
     if not song_name:
-        raise ValueError(f"新格式缺少歌曲名稱：{raw_line}")
+        raise ValueError("新格式缺少歌曲名稱")
 
     return {
         "time": time_str,
@@ -391,17 +455,18 @@ def process_timeline(
     copyright_songs,
     headers_dict,
 ):
-    """解析單一直播時間軸檔案。"""
+    """解析單一直播時間軸檔案。只有無有效 ID 或無歌曲時才視為重大錯誤。"""
     with open(file_path, "r", encoding="utf-8") as file:
         lines = file.readlines()
 
     if not lines:
         raise ValueError(f"檔案是空的：{file_path}")
 
+    # 無有效影片 ID 是檔案級重大錯誤。
     video_id = extract_video_id(lines, file_path)
     is_deleted = video_id in private_ids
 
-    # 檢查日期格式，避免錯誤檔名悄悄產生錯誤資料。
+    # 檔名日期無效屬檔案級錯誤。
     datetime.strptime(date_str, "%Y%m%d")
 
     songs = {}
@@ -413,11 +478,16 @@ def process_timeline(
                 continue
 
             time_str = parsed["time"]
-            song_name = parsed["song_name"]
-            artist = parsed["artist"]
-            source = parsed["source"]
+            song_name = parsed["song_name"].strip()
+            artist = parsed["artist"].strip()
+            source = parsed["source"].strip()
 
+            if not song_name:
+                raise ValueError("歌曲名稱是空字串")
+
+            # 時間格式錯誤只影響該行，不中止整個檔案。
             link = create_link(video_id, time_str)
+
             normalized_key = (
                 normalize_key(song_name),
                 normalize_key(artist),
@@ -436,9 +506,9 @@ def process_timeline(
                 )
             )
 
-            song_data = songs.setdefault(
-                normalized_key,
-                {
+            song_data = songs.get(normalized_key)
+            if song_data is None:
+                song_data = {
                     "song_name": song_name,
                     "artist": artist,
                     "source": source,
@@ -449,8 +519,9 @@ def process_timeline(
                     "az": get_song_header(song_name, headers_dict),
                     "dates": [],
                     "tags": [],
-                },
-            )
+                    "_all_sources": set(),
+                }
+                songs[normalized_key] = song_data
 
             date_info = {
                 "date": date_str,
@@ -464,23 +535,25 @@ def process_timeline(
             if date_info not in song_data["dates"]:
                 song_data["dates"].append(date_info)
 
-            # 同一場直播內，同一首歌若出現不同出典也要保留。
             if source:
-                song_data.setdefault("_all_sources", set()).add(source)
+                song_data["_all_sources"].add(source)
 
-        except Exception as exc:
-            raise ValueError(
-                f"{file_path} 第 {line_number} 行解析失敗：{exc}"
-            ) from exc
+        except (ValueError, IndexError, KeyError, TypeError) as exc:
+            print(
+                f"Warning: 跳過 {file_path} 第 {line_number} 行：{exc}；"
+                f"內容：{line.strip()}"
+            )
+            continue
 
+    # 有有效 ID 但完全沒有解析出歌曲，也是檔案級重大錯誤。
     if not songs:
-        raise ValueError(f"沒有解析到任何歌曲：{file_path}")
+        raise ValueError(f"檔案沒有任何可解析的歌曲：{file_path}")
 
     return list(songs.values())
 
 
 def find_timeline_files(timeline_dir):
-    """遞迴尋找根目錄及年份資料夾中的日期檔案，並固定處理順序。"""
+    """遞迴尋找日期檔案，並依日期、後綴及路徑固定排序。"""
     timeline_files = []
     filename_pattern = re.compile(r"(\d{8})(?:_(\d+))?\.txt")
 
@@ -495,8 +568,14 @@ def find_timeline_files(timeline_dir):
             date_str = match.group(1)
             suffix = int(match.group(2)) if match.group(2) else 0
 
-            # 檢查日期是否真實有效。
-            datetime.strptime(date_str, "%Y%m%d")
+            try:
+                datetime.strptime(date_str, "%Y%m%d")
+            except ValueError:
+                print(
+                    f"Warning: 日期檔名日期無效，已略過："
+                    f"{Path(current_dir) / filename}"
+                )
+                continue
 
             file_path = Path(current_dir) / filename
             timeline_files.append(
@@ -516,19 +595,20 @@ def main():
     headers_file = TIMELINE_DIR / "headers.txt"
     tags_file = TIMELINE_DIR / "tags.txt"
 
-    # 必要設定檔缺失時停止，避免產生不完整輸出。
     for required_file in (exceptions_file, acapella_file):
         if not required_file.is_file():
             raise FileNotFoundError(f"找不到必要設定檔：{required_file}")
 
     headers_dict = load_headers(headers_file)
     tags_map = load_tags(tags_file)
+
     (
         member_exclusive_dates,
         private_dates,
         private_ids,
         copyright_songs,
     ) = load_exceptions(exceptions_file)
+
     (
         acapella_songs,
         global_acapella_songs,
@@ -553,7 +633,8 @@ def main():
     for date_str, _, file_path, filename in timeline_files:
         print(f"Processing file: {file_path}")
 
-        # 有任何檔案解析失敗就停止，不覆蓋既有 data.json。
+        # 缺少有效影片 ID 或整檔無歌曲屬檔案級重大錯誤。
+        # 不捕捉這類錯誤，避免用不完整資料覆蓋 data.json。
         data = process_timeline(
             file_path,
             date_str,
@@ -578,25 +659,24 @@ def main():
 
             if key not in all_data:
                 all_data[key] = song_data
-                all_data[key]["_all_sources"] = set()
             else:
                 existing_dates = all_data[key]["dates"]
                 for date_info in song_data["dates"]:
                     if date_info not in existing_dates:
                         existing_dates.append(date_info)
 
-            if song_data["source"]:
-                all_data[key]["_all_sources"].add(song_data["source"])
+                # 合併這首歌的不同出典。
+                all_data[key]["_all_sources"].update(
+                    song_data.get("_all_sources", set())
+                )
 
-            # 同一首歌的不同直播資料都可能提供出典。
-            all_data[key]["_all_sources"].update(
-                song_data.get("_all_sources", set())
-            )
+    if not all_data:
+        raise RuntimeError("沒有解析到任何歌曲，取消寫入 data.json")
 
     print(f"Processed {processed_file_count} timeline files")
     print(f"Total unique songs: {len(all_data)}")
 
-    # 固定 tags、來源與日期輸出順序，確保重跑時 JSON 不會無故變動。
+    # 固定 tags、來源與日期輸出順序，避免重跑時 JSON 無故變動。
     for key, song_data in all_data.items():
         song_data["tags"] = tags_map.get(key, [])
 
