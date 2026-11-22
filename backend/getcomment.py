@@ -260,29 +260,22 @@ def clean_html(raw_html):
     return clean_text
 
 def save_to_file(video_id, comment, date):
-    """保存留言到文件"""
+    """保存留言到年份資料夾；相同影片 ID 不重複寫入。"""
     if not comment:
         print(f"未找到時間戳留言，視頻ID：{video_id}")
         return
-        
-    output_dir = os.path.join('timeline', str(date.year))
-    os.makedirs(output_dir, exist_ok=True)
-    
-    file_name = date.strftime('%Y%m%d') + '.txt'
-    file_path = os.path.join(output_dir, file_name)
-    
-    # 檢查文件是否已存在
-    if os.path.exists(file_path):
-        print(f"日期為 {file_name} 的文件已存在，跳過。")
+
+    file_path = get_timeline_file_path(video_id, date)
+    if file_path is None:
+        print(f"影片已存在，跳過：{video_id} ({date})")
         return
-    
-    # 清理HTML標籤
+
     clean_comment = clean_html(comment)
-    
-    with open(file_path, 'w', encoding='utf-8') as f:
-        f.write(f'ID = {video_id}\n')
-        f.write(clean_comment)
-        
+
+    with open(file_path, "w", encoding="utf-8") as file:
+        file.write(f"ID = {video_id}\n")
+        file.write(clean_comment)
+
     print(f"已保存時間戳留言到 {file_path}")
 
 def main():
