@@ -268,7 +268,7 @@ def save_to_file(video_id, comment, date):
         print(f"未找到時間戳留言，視頻ID：{video_id}")
         return
         
-    output_dir = 'timeline'
+    output_dir = os.path.join('timeline', str(date.year))
     os.makedirs(output_dir, exist_ok=True)
     
     file_name = date.strftime('%Y%m%d') + '.txt'
@@ -291,9 +291,6 @@ def save_to_file(video_id, comment, date):
 def main():
     channel_id = 'UCDqn3HdMA5zwlYvsQ1YSG4Q'
     playlist_id = 'PL7H5HbMMfm_lUoLIkPAZkhF_W0oDf5WEk'
-    start_time = datetime.now(timezone.utc)
-    
-    print(f"DEBUG: 開始時間: {start_time}")
     
     # 收集所有影片資訊
     video_info = get_video_ids_from_channel(channel_id)
@@ -306,12 +303,16 @@ def main():
     # 處理每個影片
     for video_id, video_date in video_info:
         file_name = f"{video_date:%Y%m%d}.txt"
-        file_path = os.path.join('timeline', file_name)
-        
-        if os.path.exists(file_path):
+        year_dir = os.path.join('timeline', str(video_date.year))
+        file_path = os.path.join(year_dir, file_name)
+
+        # 遷移期間也檢查舊的 timeline/YYYYMMDD.txt，避免重複抓取
+        legacy_file_path = os.path.join('timeline', file_name)
+
+        if os.path.exists(file_path) or os.path.exists(legacy_file_path):
             print(f"DEBUG: 檔案已存在，跳過 {video_id} ({video_date})")
             continue
-        
+
         if timestamp_comment := get_timestamp_comment(video_id):
             save_to_file(video_id, timestamp_comment, video_date)
 
